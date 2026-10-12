@@ -1,0 +1,39 @@
+plugins {
+    id 'application'
+}
+
+def launcherClass = 'com.mygame.desktop.DesktopLauncher'
+
+application {
+    mainClass = launcherClass
+}
+
+sourceSets.main.java.srcDirs = ['src/']
+
+dependencies {
+    implementation project(':core')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
+
+run {
+    setIgnoreExitValue(true)
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': launcherClass
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    destinationDirectory = file("$rootProject.projectDir/dist")
+}

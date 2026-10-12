@@ -1,0 +1,18 @@
+allprojects {
+    apply plugin: 'idea'
+
+    group = 'com.mygame'
+    version = '0.1.0'
+
+    ext {
+        gdxVersion = '1.12.1'
+        gdxControllersVersion = '2.2.2'
+    }
+
+    repositories {
+        mavenCentral()
+        google()
+        maven { url = 'https://oss.sonatype.org/content/repositories/releases/' }
+        maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+}
