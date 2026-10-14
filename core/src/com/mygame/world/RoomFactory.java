@@ -4,8 +4,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.mygame.assets.Assets;
 import com.mygame.levels.LevelInfo;
 import com.mygame.levels.Levels;
-import com.mygame.world.Interactable;
-import com.mygame.world.Room;
 
 /**
  * Фабрика комнат: по номеру уровня создаёт комнату.
@@ -13,8 +11,8 @@ import com.mygame.world.Room;
  * (с названием главы и заметкой о её фишке из лора).
  * Когда будешь делать новую главу — просто добавь case в createRoom().
  *
- * Цвет сцены (tint) плавно идёт от серого к тёплому по мере прохождения:
- * мир постепенно обретает цвет.
+ * Цвет комнаты плавно идёт от серого к цветному по мере прохождения
+ * (серые и цветные тайлы смешиваются): мир постепенно обретает цвет.
  */
 public class RoomFactory {
 
@@ -33,25 +31,26 @@ public class RoomFactory {
 
     // ------- Общие настройки пустой комнаты ----------------
 
-    private static Color progressTint(int index) {
-        float t = index / (float) (Levels.COUNT - 1);
-        return new Color(0.45f + 0.55f * t, 0.45f + 0.53f * t, 0.52f + 0.40f * t, 1f);
+    /** Насколько цвет уже вернулся в мир: 0 в начале игры, 1 в финале. */
+    private static float colorAmountFor(int index) {
+        return index / (float) (Levels.COUNT - 1);
     }
 
     private static Room base(Assets assets, String name, int index) {
         Room r = new Room(assets, COLS, ROWS);
         r.buildBorders();
         r.setName(name);
-        r.setTint(progressTint(index));
+        r.setTint(Color.WHITE);
+        r.setColorAmount(colorAmountFor(index));
 
         // Дверь в правой стене, ряды 7–8
         int doorCol = COLS - 1;
         r.openDoorTiles(doorCol, 7, 8);
         r.setDoor(
-                doorCol * Room.TILE - 10,
-                7 * Room.TILE,
-                Room.TILE + 10,
-                2 * Room.TILE
+            doorCol * Room.TILE - 10,
+            7 * Room.TILE,
+            Room.TILE + 10,
+            2 * Room.TILE
         );
         return r;
     }
@@ -62,9 +61,9 @@ public class RoomFactory {
         Room r = base(assets, Levels.ALL[index].title, index);
 
         r.addInteractable(new Interactable(assets, 350, 380,
-                "Ты не помнишь этот год.\nВсё вокруг — чёрно-белое."));
+            "Ты не помнишь этот год.\nВсё вокруг — чёрно-белое."));
         r.addInteractable(new Interactable(assets, 750, 300,
-                "Чтобы вернуть цвет, нужно вспомнить всё, что было.\nНачни с малого — найди предметы вокруг."));
+            "Чтобы вернуть цвет, нужно вспомнить всё, что было.\nНачни с малого — найди предметы вокруг."));
 
         return r;
     }
@@ -77,11 +76,11 @@ public class RoomFactory {
         for (int rr = 8; rr <= 11; rr++) r.setWall(15, rr, true);
 
         r.addInteractable(new Interactable(assets, 260, 200,
-                "Наколенники на стуле.\n\"Без них я бы не вышел на сцену.\""));
+            "Наколенники на стуле.\n\"Без них я бы не вышел на сцену.\""));
         r.addInteractable(new Interactable(assets, 500, 500,
-                "Тейп, бинты, чей-то недопитый чай.\n\"Каждый виток — шаг к цели.\""));
+            "Тейп, бинты, чей-то недопитый чай.\n\"Каждый виток — шаг к цели.\""));
         r.addInteractable(new Interactable(assets, 950, 400,
-                "Энергетик на подоконнике.\n\"Горький, но необходимый.\""));
+            "Энергетик на подоконнике.\n\"Горький, но необходимый.\""));
 
         return r;
     }
@@ -94,11 +93,11 @@ public class RoomFactory {
         for (int[] t : trees) r.setWall(t[0], t[1], true);
 
         r.addInteractable(new Interactable(assets, 320, 550,
-                "Костёр. Здесь вы просидели до утра\nи говорили обо всём на свете."));
+            "Костёр. Здесь вы просидели до утра\nи говорили обо всём на свете."));
         r.addInteractable(new Interactable(assets, 600, 240,
-                "Рация.\n\"Первый, первый, ответь...\""));
+            "Рация.\n\"Первый, первый, ответь...\""));
         r.addInteractable(new Interactable(assets, 900, 550,
-                "Гитара у палатки.\nПомнишь ту песню, что пели хором?"));
+            "Гитара у палатки.\nПомнишь ту песню, что пели хором?"));
 
         return r;
     }
@@ -107,7 +106,7 @@ public class RoomFactory {
         Room r = base(assets, Levels.ALL[index].title, index);
 
         r.addInteractable(new Interactable(assets, 620, 360,
-                "Ты собрала весь год.\nСвет постепенно возвращается."));
+            "Ты собрала весь год.\nСвет постепенно возвращается."));
 
         return r;
     }
@@ -119,12 +118,12 @@ public class RoomFactory {
 
         if (info.chapter) {
             r.addInteractable(new Interactable(assets, 400, 360,
-                    "Здесь будет глава «" + info.title + "».\nФишка: " + info.mechanic + "."));
+                "Здесь будет глава «" + info.title + "».\nФишка: " + info.mechanic + "."));
             r.addInteractable(new Interactable(assets, 800, 300,
-                    "Сюда добавим предметы главы\nи диалоги из лора."));
+                "Сюда добавим предметы главы\nи диалоги из лора."));
         } else {
             r.addInteractable(new Interactable(assets, 500, 360,
-                    info.title + ": милый момент ваших отношений.\nЗдесь будет воспоминание."));
+                info.title + ": милый момент ваших отношений.\nЗдесь будет воспоминание."));
         }
         return r;
     }

@@ -1,6 +1,7 @@
 package com.mygame.world;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygame.assets.Assets;
@@ -12,6 +13,10 @@ import java.util.List;
 /**
  * Комната: тайловая сетка пола/стен, список объектов, дверь.
  * Тайл = 48 px, размеры задаются в RoomFactory.
+ *
+ * Картинки тайлов существуют в двух вариантах: серый и цветной.
+ * colorAmount (0..1) решает, насколько цвет уже «вернулся»:
+ * сначала рисуется серый тайл, поверх него цветной с прозрачностью colorAmount.
  */
 public class Room {
 
@@ -26,6 +31,7 @@ public class Room {
     private Rectangle doorBounds;
     private String name = "";
     private Color tint = Color.WHITE;
+    private float colorAmount = 0f;
 
     public Room(Assets assets, int cols, int rows) {
         this.assets = assets;
@@ -39,6 +45,12 @@ public class Room {
 
     public void setTint(Color c) { this.tint = c; }
     public Color getTint() { return tint; }
+
+    /** 0 — комната полностью серая, 1 — полностью цветная. */
+    public void setColorAmount(float amount) {
+        this.colorAmount = Math.max(0f, Math.min(1f, amount));
+    }
+    public float getColorAmount() { return colorAmount; }
 
     public void setWall(int c, int r, boolean isWall) {
         if (c >= 0 && c < cols && r >= 0 && r < rows) {
@@ -72,40 +84,38 @@ public class Room {
     public float getPixelWidth()  { return cols * TILE; }
     public float getPixelHeight() { return rows * TILE; }
 
+    /** Рисует серую текстуру, а поверх неё цветную с прозрачностью colorAmount. */
+    private void drawPair(SpriteBatch batch, Texture[] pair, float x, float y, float w, float h) {
+        batch.setColor(1f, 1f, 1f, 1f);
+        batch.draw(pair[0], x, y, w, h);
+        if (colorAmount > 0.01f) {
+            batch.setColor(1f, 1f, 1f, colorAmount);
+            batch.draw(pair[1], x, y, w, h);
+            batch.setColor(1f, 1f, 1f, 1f);
+        }
+    }
+
     public void draw(SpriteBatch batch) {
         // Пол
         for (int c = 0; c < cols; c++) {
             for (int r = 0; r < rows; r++) {
-                float x = c * TILE;
-                float y = r * TILE;
                 if (walls[c][r]) continue;
-                // Лёгкая шахматка для читаемости пола
-                boolean alt = ((c + r) & 1) == 0;
-                batch.draw(alt ? assets.floor : assets.floorAlt, x, y, TILE, TILE);
+                drawPair(batch, assets.tileFloor, c * TILE, r * TILE, TILE, TILE);
             }
         }
 
-        // Дверь (если открыта — золотая, если закрыта — тёмная)
+        // Дверь: закрыта (тёмно-фиолетовая) или открыта (тёплый свет)
         if (doorBounds != null) {
-            if (isComplete()) {
-                batch.draw(assets.doorOpen, doorBounds.x, doorBounds.y,
-                        doorBounds.width, doorBounds.height);
-            } else {
-                batch.draw(assets.doorLocked, doorBounds.x, doorBounds.y,
-                        doorBounds.width, doorBounds.height);
-            }
+            Texture[] pair = isComplete() ? assets.tileDoorOpen : assets.tileDoorClosed;
+            drawPair(batch, pair, doorBounds.x, doorBounds.y,
+                     doorBounds.width, doorBounds.height);
         }
 
-        // Стены поверх пола + тонкая подсветка сверху
+        // Стены
         for (int c = 0; c < cols; c++) {
             for (int r = 0; r < rows; r++) {
                 if (!walls[c][r]) continue;
-                float x = c * TILE;
-                float y = r * TILE;
-                batch.draw(assets.wall, x, y, TILE, TILE);
-                if (r + 1 < rows && !walls[c][r + 1]) {
-                    batch.draw(assets.wallTop, x, y, TILE, 6f);
-                }
+                drawPair(batch, assets.tileWall, c * TILE, r * TILE, TILE, TILE);
             }
         }
 

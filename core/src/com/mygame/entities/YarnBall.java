@@ -20,7 +20,7 @@ import com.mygame.world.Trail;
  */
 public class YarnBall {
 
-    public static final float RADIUS = 18f;
+    public static final float RADIUS = 22f;
     private static final float SPEED = 330f;
     private static final float[] STEER_ANGLES = {0f, 20f, -20f, 40f, -40f, 60f, -60f, 80f, -80f};
 

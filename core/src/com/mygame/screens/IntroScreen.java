@@ -9,7 +9,6 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
-import com.mygame.screens.MapScreen;
 
 /**
  * ЗАГЛУШКА вступительной сценки: несколько строк текста на чёрном экране.

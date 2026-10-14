@@ -13,8 +13,6 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
 import com.mygame.assets.Assets;
-import com.mygame.screens.IntroScreen;
-import com.mygame.screens.MapScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,7 +98,7 @@ public class MainMenuScreen extends ScreenAdapter {
             float x = (W - layout.width) / 2f;
             float textTop = top - i * gap;
             bounds.add(new Rectangle(x - 40f, textTop - layout.height - 16f,
-                    layout.width + 80f, layout.height + 32f));
+                                     layout.width + 80f, layout.height + 32f));
         }
     }
 
@@ -148,7 +146,7 @@ public class MainMenuScreen extends ScreenAdapter {
         }
 
         boolean activate = Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
-                || Gdx.input.isKeyJustPressed(Input.Keys.SPACE);
+                        || Gdx.input.isKeyJustPressed(Input.Keys.SPACE);
         if (Gdx.input.justTouched() && hover >= 0) {
             selected = hover;
             activate = true;

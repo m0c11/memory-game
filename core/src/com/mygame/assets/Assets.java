@@ -36,9 +36,22 @@ public class Assets implements Disposable {
     /** Квадратная вырезка светящегося шара с мягким ореолом. */
     public TextureRegion orb;
 
+    /** Узлы карты: [0] закрыт, [1] доступен, [2] пройден. Рисуются аддитивно (чёрное = прозрачно). */
+    public Texture[] nodeChapter = new Texture[3];
+    public Texture[] nodeKey = new Texture[3];
+
+    /** Тайлы комнат парами: [0] серый вариант, [1] цветной. Цвет «возвращается» по мере игры. */
+    public Texture[] tileFloor = new Texture[2];
+    public Texture[] tileWall = new Texture[2];
+    public Texture[] tileDoorClosed = new Texture[2];
+    public Texture[] tileDoorOpen = new Texture[2];
+
+    /** Рамка диалога. */
+    public Texture dialoguePanel;
+
     /** Круглая маска света: прозрачный центр, чёрный край (рисуется поверх карты). */
     public Texture light;
-    /** Клубок ниток — герой карты. */
+    /** Клубок ниток — герой (картинка chars/yarn_ball.png с прозрачным фоном). */
     public Texture yarnBall;
 
     // Шрифты
@@ -64,7 +77,23 @@ public class Assets implements Disposable {
         mapOrb        = loadImage("map/orb.png");
         orb           = createOrbRegion(mapOrb);
         light         = createLightMask(256);
-        yarnBall      = createYarnBall(64);
+        yarnBall      = loadImage("chars/yarn_ball.png");
+
+        String[] states = {"locked", "available", "done"};
+        for (int i = 0; i < 3; i++) {
+            nodeChapter[i] = loadImage("map/node_chapter_" + states[i] + ".png");
+            nodeKey[i]     = loadImage("map/node_key_" + states[i] + ".png");
+        }
+
+        // Тайлы: 01 — деревянный пол, 04 — стена, 09 — закрытая дверь, 10 — открытая (светится)
+        String[] sets = {"grey", "color"};
+        for (int i = 0; i < 2; i++) {
+            tileFloor[i]      = loadImage("tiles/" + sets[i] + "_01.png");
+            tileWall[i]       = loadImage("tiles/" + sets[i] + "_04.png");
+            tileDoorClosed[i] = loadImage("tiles/" + sets[i] + "_09.png");
+            tileDoorOpen[i]   = loadImage("tiles/" + sets[i] + "_10.png");
+        }
+        dialoguePanel = loadImage("ui/dialogue.png");
 
         fontSmall  = createFont(16);
         fontMedium = createFont(22);
@@ -83,8 +112,9 @@ public class Assets implements Disposable {
     }
 
     private Texture loadImage(String path) {
-        Texture tex = new Texture(Gdx.files.internal(path));
-        tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        // Мипмапы нужны, чтобы большие картинки при уменьшении не «рябили»
+        Texture tex = new Texture(Gdx.files.internal(path), true);
+        tex.setFilter(Texture.TextureFilter.MipMapLinearLinear, Texture.TextureFilter.Linear);
         return tex;
     }
 
@@ -161,14 +191,14 @@ public class Assets implements Disposable {
     private BitmapFont createFont(int size) {
         // Ищем системный шрифт с кириллицей. Пробуем стандартные пути для Linux/Mac/Windows.
         String[] candidates = {
-                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-                "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-                "/usr/share/fonts/TTF/DejaVuSans.ttf",
-                "/usr/share/fonts/dejavu/DejaVuSans.ttf",
-                "/System/Library/Fonts/Supplemental/Arial.ttf",
-                "/Library/Fonts/Arial.ttf",
-                "C:/Windows/Fonts/segoeui.ttf",
-                "C:/Windows/Fonts/arial.ttf"
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+            "/usr/share/fonts/TTF/DejaVuSans.ttf",
+            "/usr/share/fonts/dejavu/DejaVuSans.ttf",
+            "/System/Library/Fonts/Supplemental/Arial.ttf",
+            "/Library/Fonts/Arial.ttf",
+            "C:/Windows/Fonts/segoeui.ttf",
+            "C:/Windows/Fonts/arial.ttf"
         };
 
         for (String path : candidates) {
@@ -177,12 +207,12 @@ public class Assets implements Disposable {
 
             FreeTypeFontGenerator gen = new FreeTypeFontGenerator(handle);
             FreeTypeFontGenerator.FreeTypeFontParameter param =
-                    new FreeTypeFontGenerator.FreeTypeFontParameter();
+                new FreeTypeFontGenerator.FreeTypeFontParameter();
             param.size = size;
             param.characters = FreeTypeFontGenerator.DEFAULT_CHARS
-                    + "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
-                    + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-                    + "←→↑↓";
+                + "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+                + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+                + "←→↑↓";
             param.minFilter = Texture.TextureFilter.Linear;
             param.magFilter = Texture.TextureFilter.Linear;
             param.color = Color.WHITE;
@@ -193,8 +223,8 @@ public class Assets implements Disposable {
         }
 
         Gdx.app.error("Assets",
-                "Системный шрифт не найден — кириллица может не отрисоваться. " +
-                        "Установи пакет fonts-dejavu или добавь .ttf вручную.");
+            "Системный шрифт не найден — кириллица может не отрисоваться. " +
+            "Установи пакет fonts-dejavu или добавь .ttf вручную.");
         BitmapFont fallback = new BitmapFont();
         fallback.getData().setScale(size / 15f);
         return fallback;
@@ -217,6 +247,17 @@ public class Assets implements Disposable {
         mapOrb.dispose();
         light.dispose();
         yarnBall.dispose();
+        for (int i = 0; i < 3; i++) {
+            nodeChapter[i].dispose();
+            nodeKey[i].dispose();
+        }
+        for (int i = 0; i < 2; i++) {
+            tileFloor[i].dispose();
+            tileWall[i].dispose();
+            tileDoorClosed[i].dispose();
+            tileDoorOpen[i].dispose();
+        }
+        dialoguePanel.dispose();
         fontSmall.dispose();
         fontMedium.dispose();
         fontMenu.dispose();

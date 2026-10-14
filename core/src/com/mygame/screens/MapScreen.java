@@ -6,6 +6,7 @@ import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -17,8 +18,6 @@ import com.mygame.assets.Assets;
 import com.mygame.entities.YarnBall;
 import com.mygame.levels.LevelInfo;
 import com.mygame.levels.Levels;
-import com.mygame.screens.GameScreen;
-import com.mygame.screens.MainMenuScreen;
 import com.mygame.world.MapWorld;
 import com.mygame.world.Trail;
 
@@ -45,12 +44,13 @@ public class MapScreen extends ScreenAdapter {
     // Мир
     private static final float WORLD_W = 4200f;       // ширина мира; высота — по пропорциям картинки
     private static final float CORRIDOR_PAD = 22f;     // на сколько расширяем нить (ширина коридора)
-    private static final int   THREAD_THRESHOLD = 80;  // яркость пикселя, с которой он считается нитью
+    private static final int   THREAD_THRESHOLD = 100; // значение синего канала, с которого пиксель считается нитью
     private static final float LOCK_RADIUS = 52f;      // непроходимый круг вокруг закрытого узла
+    private static final float NODE_CARVE_RADIUS = 46f; // вокруг каждого узла всегда можно стоять
 
     // Размер картинки, в которой заданы refX/refY узлов (см. Levels)
     private static final float REF_W = 1024f;
-    private static final float REF_H = 559f;
+    private static final float REF_H = 547f;
 
     // Свет и взаимодействие
     private static final float LIGHT_RADIUS = 340f;
@@ -122,15 +122,22 @@ public class MapScreen extends ScreenAdapter {
         unlockedMax = Math.min(completed, Levels.COUNT - 1);
 
         world = new MapWorld(Gdx.files.internal("map/thread.png"),
-                WORLD_W, CORRIDOR_PAD, THREAD_THRESHOLD);
+                             WORLD_W, CORRIDOR_PAD, THREAD_THRESHOLD);
+        for (int i = 0; i < Levels.COUNT; i++) {
+            world.carveDisc(nodeX(i), nodeY(i), NODE_CARVE_RADIUS);
+        }
         lockClosedNodes();
 
         trail = new Trail(world.width, world.height);
         trail.load(game.save.getTrail());
 
         ball = new YarnBall();
-        if (game.save.hasBallPosition()
-                && world.isWalkable(game.save.getBallX(), game.save.getBallY())) {
+        if (justCompleted == 0) {
+            // «Мост»: точка над «i» — отдельный островок. После первого уровня нить
+            // сама переносит клубок на букву, ходить через разрыв не нужно.
+            ball.setPosition(nodeX(1), nodeY(1));
+        } else if (game.save.hasBallPosition()
+            && world.isWalkable(game.save.getBallX(), game.save.getBallY())) {
             ball.setPosition(game.save.getBallX(), game.save.getBallY());
         } else {
             ball.setPosition(nodeX(unlockedMax), nodeY(unlockedMax));
@@ -218,12 +225,12 @@ public class MapScreen extends ScreenAdapter {
         }
         if (debug && Gdx.input.justTouched()) {
             System.out.printf("Позиция на картинке 1024x559: refX=%.0f, refY=%.0f%n",
-                    mouse.x / world.width * REF_W,
-                    (world.height - mouse.y) / world.height * REF_H);
+                mouse.x / world.width * REF_W,
+                (world.height - mouse.y) / world.height * REF_H);
         }
 
         if (controlsEnabled() && Gdx.input.isKeyJustPressed(Input.Keys.E)
-                && focus >= 0 && distanceToNode(focus) <= ENTER_RADIUS) {
+            && focus >= 0 && distanceToNode(focus) <= ENTER_RADIUS) {
             game.setScreen(new GameScreen(game, focus));
             return true;
         }
@@ -331,7 +338,7 @@ public class MapScreen extends ScreenAdapter {
                 Vector2 a = pts.get(i - 1);
                 Vector2 b = pts.get(i);
                 if ((a.x < x0 && b.x < x0) || (a.x > x1 && b.x > x1)
-                        || (a.y < y0 && b.y < y0) || (a.y > y1 && b.y > y1)) continue;
+                    || (a.y < y0 && b.y < y0) || (a.y > y1 && b.y > y1)) continue;
                 if (a.dst2(b) > link2) continue;
                 segment(a.x, a.y, b.x, b.y, width);
             }
@@ -353,44 +360,56 @@ public class MapScreen extends ScreenAdapter {
         if (len < 0.01f) return;
         float angle = MathUtils.atan2(dy, dx) * MathUtils.radiansToDegrees;
         game.batch.draw(pixelRegion,
-                x1, y1 - width / 2f,
-                0f, width / 2f,
-                len, width,
-                1f, 1f, angle);
+            x1, y1 - width / 2f,
+            0f, width / 2f,
+            len, width,
+            1f, 1f, angle);
     }
 
     // ---------- узлы ----------
 
     private void drawNodes() {
+        Assets a = game.assets;
         for (int i = 0; i < Levels.COUNT; i++) {
             LevelInfo info = Levels.ALL[i];
             float x = nodeX(i);
             float y = nodeY(i);
             float l = lit[i];
 
-            float base = info.chapter ? 150f : 108f;
-            float flicker = 0.92f + 0.08f * (float) Math.sin(time * 3f + i * 1.7f);
+            Texture[] set = info.chapter ? a.nodeChapter : a.nodeKey;
+            float display = info.chapter ? 150f : 124f;
+            float flicker = 0.93f + 0.07f * (float) Math.sin(time * 3f + i * 1.7f);
 
-            float scale = 0.5f + 0.5f * l;
+            float scale = 1f;
             if (i == focus) {
-                scale *= 1.2f + 0.06f * (float) Math.sin(time * 3f);
+                scale = 1.12f + 0.05f * (float) Math.sin(time * 3f);
             }
-            float size = base * scale;
+            float size = display * scale;
 
-            game.batch.setColor(1f, 1f, 1f, Math.min(1f, l * flicker));
-            game.batch.draw(game.assets.orb, x - size / 2f, y - size / 2f, size, size);
-
-            if (l > 0.5f) {
-                for (int p = 0; p < 5; p++) {
-                    float ang = time * 0.8f + p * 1.2566f + i;
-                    float rad = 26f + 9f * (float) Math.sin(time * 2f + p + i);
-                    float px = x + (float) Math.cos(ang) * rad;
-                    float py = y + (float) Math.sin(ang) * rad;
-                    game.batch.setColor(1f, 0.85f, 0.5f, 0.7f * l);
-                    game.batch.draw(game.assets.pixel, px, py, 3f, 3f);
-                }
+            // Мягкое золотое свечение под открытыми узлами
+            if (l > 0.3f) {
+                float glow = size * 1.7f;
+                game.batch.setColor(1f, 1f, 1f, 0.55f * l * flicker);
+                game.batch.draw(a.orb, x - glow / 2f, y - glow / 2f, glow, glow);
             }
+
+            // Три состояния плавно перетекают друг в друга: закрыт -> доступен -> пройден
+            float t1 = MathUtils.clamp((l - 0.12f) / 0.3f, 0f, 1f);
+            float t2 = MathUtils.clamp((l - 0.6f) / 0.4f, 0f, 1f);
+            float aLocked = 1f - t1;
+            float aAvail = t1 * (1f - t2);
+            float aDone = t2;
+
+            drawNodeSprite(set[0], x, y, size, aLocked);
+            drawNodeSprite(set[1], x, y, size, aAvail * flicker);
+            drawNodeSprite(set[2], x, y, size, aDone * flicker);
         }
+    }
+
+    private void drawNodeSprite(Texture tex, float x, float y, float size, float alpha) {
+        if (alpha <= 0.01f) return;
+        game.batch.setColor(1f, 1f, 1f, Math.min(1f, alpha));
+        game.batch.draw(tex, x - size / 2f, y - size / 2f, size, size);
     }
 
     // ---------- темнота ----------
@@ -465,7 +484,7 @@ public class MapScreen extends ScreenAdapter {
             BitmapFont s = a.fontSmall;
             s.setColor(0.7f, 0.7f, 0.76f, 0.9f);
             s.draw(game.batch, "ВОСПОМИНАНИЯ  " + Math.min(completed, Levels.COUNT)
-                    + " / " + Levels.COUNT, 36f, VIEW_H - 30f);
+                + " / " + Levels.COUNT, 36f, VIEW_H - 30f);
 
             s.setColor(0.45f, 0.45f, 0.5f, 0.9f);
             layout.setText(s, "WASD — идти      E — войти      Esc — меню");
@@ -476,8 +495,8 @@ public class MapScreen extends ScreenAdapter {
             BitmapFont s = a.fontSmall;
             s.setColor(0.4f, 1f, 0.6f, 1f);
             s.draw(game.batch, String.format("refX=%.0f  refY=%.0f  (клик — вывод в консоль)",
-                    mouse.x / world.width * REF_W,
-                    (world.height - mouse.y) / world.height * REF_H), 36f, VIEW_H - 60f);
+                mouse.x / world.width * REF_W,
+                (world.height - mouse.y) / world.height * REF_H), 36f, VIEW_H - 60f);
         }
 
         a.fontMenu.setColor(Color.WHITE);

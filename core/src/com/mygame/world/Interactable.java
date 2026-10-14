@@ -1,11 +1,12 @@
 package com.mygame.world;
 
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygame.assets.Assets;
 
 /**
  * Объект, с которым можно взаимодействовать через E.
- * После использования становится "выключенным" и показывает более бледную текстуру.
+ * Выглядит как мягко пульсирующий огонёк. После использования гаснет почти полностью.
  */
 public class Interactable {
 
@@ -25,11 +26,23 @@ public class Interactable {
     }
 
     public void draw(SpriteBatch batch) {
+        float cx = getCenterX();
+        float cy = getCenterY();
+        float t = System.nanoTime() / 1_000_000_000f;
+
+        // Свечение рисуем аддитивно, чёрное на картинке становится прозрачным
+        batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
         if (used) {
-            batch.draw(assets.interactableUsed, x, y, SIZE, SIZE);
+            float size = 44f;
+            batch.setColor(1f, 1f, 1f, 0.18f);
+            batch.draw(assets.orb, cx - size / 2f, cy - size / 2f, size, size);
         } else {
-            batch.draw(assets.interactable, x, y, SIZE, SIZE);
+            float size = 96f + 10f * (float) Math.sin(t * 3f + x * 0.01f);
+            batch.setColor(1f, 1f, 1f, 0.95f);
+            batch.draw(assets.orb, cx - size / 2f, cy - size / 2f, size, size);
         }
+        batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+        batch.setColor(1f, 1f, 1f, 1f);
     }
 
     public void use() { used = true; }

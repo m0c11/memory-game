@@ -29,7 +29,7 @@ public class MapWorld {
      * @param image       картинка нити (светлая нить на чёрном)
      * @param worldWidth  ширина мира в игровых единицах
      * @param dilateWorld на сколько единиц расширять нить в каждую сторону (ширина коридора)
-     * @param threshold   яркость 0..255, начиная с которой пиксель считается нитью
+     * @param threshold   значение синего канала 0..255, начиная с которого пиксель считается нитью
      */
     public MapWorld(FileHandle image, float worldWidth, float dilateWorld, int threshold) {
         Pixmap pm = new Pixmap(image);
@@ -49,10 +49,10 @@ public class MapWorld {
             for (int mx = 0; mx < maskW; mx++) {
                 int sx = Math.min(tw - 1, (int) ((mx + 0.5f) * tw / maskW));
                 int p = pm.getPixel(sx, sy);
-                int r = (p >>> 24) & 0xff;
-                int g = (p >>> 16) & 0xff;
+                // Берём синий канал: нить светлая (в нём яркая), а тёплое
+                // золотое свечение вокруг неё почти не содержит синего.
                 int b = (p >>> 8) & 0xff;
-                thin[my * maskW + mx] = Math.max(r, Math.max(g, b)) >= threshold;
+                thin[my * maskW + mx] = b >= threshold;
             }
         }
         pm.dispose();
@@ -91,6 +91,32 @@ public class MapWorld {
             }
         }
         return out;
+    }
+
+    /**
+     * Делает круг вокруг точки проходимым в любом случае.
+     * Нужно для узлов: так до них точно можно дойти, а точка над «i»
+     * (отдельный островок нити) получает достаточно места для клубка.
+     */
+    public void carveDisc(float x, float y, float radius) {
+        float worldPerPixelX = width / maskW;
+        float worldPerPixelY = height / maskH;
+        int cx = (int) (x / width * maskW);
+        int cy = (int) ((height - y) / height * maskH);
+        int rx = (int) Math.ceil(radius / worldPerPixelX);
+        int ry = (int) Math.ceil(radius / worldPerPixelY);
+        for (int dy = -ry; dy <= ry; dy++) {
+            for (int dx = -rx; dx <= rx; dx++) {
+                float wx = dx * worldPerPixelX;
+                float wy = dy * worldPerPixelY;
+                if (wx * wx + wy * wy > radius * radius) continue;
+                int mx = cx + dx;
+                int my = cy + dy;
+                if (mx >= 0 && my >= 0 && mx < maskW && my < maskH) {
+                    walkable[my * maskW + mx] = true;
+                }
+            }
+        }
     }
 
     /** Задаёт закрытые узлы: вокруг каждого образуется непроходимый круг. */

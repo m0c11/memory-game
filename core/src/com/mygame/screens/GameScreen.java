@@ -11,8 +11,6 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
 import com.mygame.entities.Player;
 import com.mygame.levels.Levels;
-import com.mygame.screens.EndScreen;
-import com.mygame.screens.MapScreen;
 import com.mygame.ui.DialogueBox;
 import com.mygame.world.Interactable;
 import com.mygame.world.Room;
@@ -63,7 +61,7 @@ public class GameScreen extends ScreenAdapter {
         // Приветствие только в самом первом уровне
         if (levelIndex == 0) {
             dialogue.show("Ты просыпаешься в мире, где нет ни одного цвета.\n" +
-                    "Что-то важное потерялось... попробуй вспомнить.");
+                          "Что-то важное потерялось... попробуй вспомнить.");
         }
     }
 
@@ -80,8 +78,8 @@ public class GameScreen extends ScreenAdapter {
     private boolean handleInput() {
         if (dialogue.isVisible()) {
             if (Gdx.input.isKeyJustPressed(Input.Keys.E)
-                    || Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
-                    || Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
+                || Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
+                || Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
                 dialogue.hide();
             }
             return false;
@@ -89,7 +87,7 @@ public class GameScreen extends ScreenAdapter {
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)) {
             // Выход на карту без засчитывания уровня
-            game.setScreen(new com.mygame.screens.MapScreen(game));
+            game.setScreen(new MapScreen(game));
             return true;
         }
 
@@ -114,8 +112,8 @@ public class GameScreen extends ScreenAdapter {
 
         // Выход из уровня только если комната "собрана"
         if (!dialogue.isVisible()
-                && room.isComplete()
-                && room.isPlayerAtDoor(player)) {
+            && room.isComplete()
+            && room.isPlayerAtDoor(player)) {
             finishLevel();
             return true;
         }
