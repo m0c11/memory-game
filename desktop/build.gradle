@@ -9,6 +9,7 @@ application {
 }
 
 sourceSets.main.java.srcDirs = ['src/']
+sourceSets.main.resources.srcDirs = [rootProject.file('assets').path]
 
 dependencies {
     implementation project(':core')

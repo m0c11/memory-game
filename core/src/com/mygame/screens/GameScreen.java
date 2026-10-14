@@ -10,13 +10,18 @@ import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
 import com.mygame.entities.Player;
+import com.mygame.levels.Levels;
+import com.mygame.screens.EndScreen;
+import com.mygame.screens.MapScreen;
 import com.mygame.ui.DialogueBox;
 import com.mygame.world.Interactable;
 import com.mygame.world.Room;
 import com.mygame.world.RoomFactory;
 
 /**
- * Главный игровой экран: комната, игрок, диалоги, переходы между комнатами.
+ * Игровой экран одного уровня: комната, игрок, диалоги.
+ * Когда все предметы собраны и игрок вошёл в дверь, уровень засчитывается
+ * и игра возвращается на карту (после последнего уровня — на финальный экран).
  */
 public class GameScreen extends ScreenAdapter {
 
@@ -24,20 +29,22 @@ public class GameScreen extends ScreenAdapter {
     public static final float H = 720f;
 
     private final MyGame game;
+    private final int levelIndex;
+
     private OrthographicCamera camera;
     private FitViewport viewport;
 
     private Player player;
     private Room room;
     private DialogueBox dialogue;
-    private int roomIndex = 0;
 
     // Для плавного появления названия комнаты сверху
     private float roomNameTimer = 0f;
     private final GlyphLayout layout = new GlyphLayout();
 
-    public GameScreen(MyGame game) {
+    public GameScreen(MyGame game, int levelIndex) {
         this.game = game;
+        this.levelIndex = levelIndex;
     }
 
     @Override
@@ -48,43 +55,42 @@ public class GameScreen extends ScreenAdapter {
         camera.update();
 
         dialogue = new DialogueBox(game.assets);
-        loadRoom(0);
 
-        // Приветственный диалог
-        dialogue.show("Ты просыпаешься в мире, где нет ни одного цвета.\n" +
-                "Что-то важное потерялось... попробуй вспомнить.");
-    }
-
-    private void loadRoom(int index) {
-        roomIndex = index;
-        room = RoomFactory.createRoom(index, game.assets);
+        room = RoomFactory.createRoom(levelIndex, game.assets);
         player = new Player(200, H / 2f - Player.HEIGHT / 2f, game.assets);
         roomNameTimer = 0f;
+
+        // Приветствие только в самом первом уровне
+        if (levelIndex == 0) {
+            dialogue.show("Ты просыпаешься в мире, где нет ни одного цвета.\n" +
+                    "Что-то важное потерялось... попробуй вспомнить.");
+        }
     }
 
     @Override
     public void render(float delta) {
         delta = Math.min(delta, 1f / 30f);
 
-        handleInput();
-        update(delta);
+        if (handleInput()) return;
+        if (update(delta)) return;
         draw();
     }
 
-    private void handleInput() {
+    /** @return true, если экран был сменён и дальше рисовать не нужно. */
+    private boolean handleInput() {
         if (dialogue.isVisible()) {
             if (Gdx.input.isKeyJustPressed(Input.Keys.E)
                     || Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
                     || Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
                 dialogue.hide();
             }
-            return;
+            return false;
         }
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)) {
-            game.setScreen(new MainMenuScreen(game));
-            dispose();
-            return;
+            // Выход на карту без засчитывания уровня
+            game.setScreen(new com.mygame.screens.MapScreen(game));
+            return true;
         }
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.E)) {
@@ -94,9 +100,11 @@ public class GameScreen extends ScreenAdapter {
                 dialogue.show(target.getText());
             }
         }
+        return false;
     }
 
-    private void update(float delta) {
+    /** @return true, если экран был сменён и дальше рисовать не нужно. */
+    private boolean update(float delta) {
         roomNameTimer += delta;
 
         if (!dialogue.isVisible()) {
@@ -104,22 +112,23 @@ public class GameScreen extends ScreenAdapter {
         }
         dialogue.update(delta);
 
-        // Переход только если комната "собрана"
+        // Выход из уровня только если комната "собрана"
         if (!dialogue.isVisible()
                 && room.isComplete()
                 && room.isPlayerAtDoor(player)) {
-            nextRoom();
+            finishLevel();
+            return true;
         }
+        return false;
     }
 
-    private void nextRoom() {
-        int next = roomIndex + 1;
-        if (next >= RoomFactory.ROOM_COUNT) {
+    private void finishLevel() {
+        game.save.completeLevel(levelIndex);
+        if (levelIndex >= Levels.COUNT - 1) {
             game.setScreen(new EndScreen(game));
-            dispose();
-            return;
+        } else {
+            game.setScreen(new MapScreen(game, levelIndex));
         }
-        loadRoom(next);
     }
 
     private void draw() {
@@ -133,8 +142,7 @@ public class GameScreen extends ScreenAdapter {
         game.batch.begin();
 
         // Применяем "цвет" комнаты ко всей сцене
-        Color tint = room.getTint();
-        game.batch.setColor(tint);
+        game.batch.setColor(room.getTint());
         room.draw(game.batch);
         player.draw(game.batch);
         game.batch.setColor(Color.WHITE);
