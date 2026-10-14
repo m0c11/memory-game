@@ -53,6 +53,8 @@ public class Assets implements Disposable {
 
     /** Круглая маска света: прозрачный центр, чёрный край (рисуется поверх карты). */
     public Texture light;
+    /** Звезда точки сохранения (в духе Undertale). */
+    public Texture saveStar;
     /** Клубок ниток — герой (картинка chars/yarn_ball.png с прозрачным фоном). */
     public Texture yarnBall;
 
@@ -87,6 +89,7 @@ public class Assets implements Disposable {
         mapOrb        = loadImage("map/orb.png");
         orb           = createOrbRegion(mapOrb);
         light         = createLightMask(256);
+        saveStar      = createSaveStar(128);
         yarnBall      = loadImage("chars/yarn_ball.png");
 
         String[] states = {"locked", "available", "done"};
@@ -191,6 +194,40 @@ public class Assets implements Disposable {
         return tex;
     }
 
+    /**
+     * Звезда сохранения: четырёхлучевой блик (астроида |x|^0.5+|y|^0.5=1)
+     * с мягким свечением. Как точка сохранения в Undertale.
+     */
+    private Texture createSaveStar(int size) {
+        Pixmap pm = new Pixmap(size, size, Pixmap.Format.RGBA8888);
+        pm.setBlending(Pixmap.Blending.None);
+        float c = (size - 1) / 2f;
+        for (int y = 0; y < size; y++) {
+            for (int x = 0; x < size; x++) {
+                float nx = (x - c) / c;
+                float ny = (y - c) / c;
+                float d = (float) (Math.pow(Math.abs(nx), 0.5) + Math.pow(Math.abs(ny), 0.5));
+                float a;
+                if (d <= 1f) {
+                    a = 1f;                       // тело звезды
+                } else {
+                    a = Math.max(0f, 1f - (d - 1f) / 0.9f); // ореол
+                    a *= a;
+                }
+                if (a <= 0.001f) {
+                    pm.setColor(0f, 0f, 0f, 0f);
+                } else {
+                    pm.setColor(1f, 0.98f, 0.8f, a);
+                }
+                pm.drawPixel(x, y);
+            }
+        }
+        Texture tex = new Texture(pm);
+        tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        pm.dispose();
+        return tex;
+    }
+
     /** Простой клубок: золотой круг с «намотанными» нитками и бликом. */
     private Texture createYarnBall(int size) {
         Pixmap pm = new Pixmap(size, size, Pixmap.Format.RGBA8888);
@@ -282,6 +319,7 @@ public class Assets implements Disposable {
         mapThread.dispose();
         mapOrb.dispose();
         light.dispose();
+        saveStar.dispose();
         yarnBall.dispose();
         for (int i = 0; i < 3; i++) {
             nodeChapter[i].dispose();

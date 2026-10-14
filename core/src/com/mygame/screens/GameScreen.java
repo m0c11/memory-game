@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
 import com.mygame.assets.Assets;
@@ -17,8 +18,12 @@ import com.mygame.levels.Levels;
 import com.mygame.mechanics.DistractionMeter;
 import com.mygame.ui.DialogueBox;
 import com.mygame.world.Interactable;
+import com.mygame.world.Portal;
 import com.mygame.world.Room;
 import com.mygame.world.RoomFactory;
+import com.mygame.world.SavePoint;
+
+import java.util.List;
 
 /**
  * Игровой экран одного уровня: комната, игрок, диалоги.
@@ -49,11 +54,13 @@ public class GameScreen extends ScreenAdapter {
     private FitViewport viewport;
 
     private Player player;
-    private Room room;
+    private List<Room> rooms;
+    private int roomIndex;
     private DialogueBox dialogue;
 
     private final boolean distractionLevel;
     private DistractionMeter meter;
+    private float portalCooldown = 0f;
 
     // Обратная связь механики
     private float shakeTimer = 0f;
@@ -83,23 +90,37 @@ public class GameScreen extends ScreenAdapter {
         camera.update();
 
         dialogue = new DialogueBox(game.assets);
-        room = RoomFactory.createRoom(levelIndex, game.assets);
-        player = new Player(200, H / 2f - Player.HEIGHT / 2f, game.assets);
+        rooms = RoomFactory.createRooms(levelIndex, game.assets);
+        roomIndex = 0;
+        float startX = 200f;
+        float startY = H / 2f - Player.HEIGHT / 2f;
+        if (levelIndex == 1 && !rooms.isEmpty()) {
+            // В актовом зале начинаем в зрительном зале снизу.
+            startX = 576f;
+            startY = 60f;
+        }
+        player = new Player(startX, startY, game.assets);
         roomNameTimer = 0f;
 
-        savedColorAmount = room.getColorAmount();
+        if (!rooms.isEmpty()) {
+            savedColorAmount = rooms.get(0).getColorAmount();
+        }
 
         if (distractionLevel) {
             meter = new DistractionMeter();
             player.setSpeedScale(DISTRACTION_SPEED);
-            dialogue.show("Подготовка к Студвесне. Сцена уже близко.\n" +
-                          "Иди: WASD или стрелки. Собери все предметы (E — взять).\n" +
-                          "Следи за шкалой тревоги: как заполнится — жми ПРОБЕЛ.\n" +
-                          "Промедлишь — споткнёшься.");
+            dialogue.show(game.assets.yarnBall,
+                          "Актовый зал перед Студвесной.\n" +
+                          "WASD — идти, Z — взять предмет (или сохранить у звёздочки).\n" +
+                          "Поднимись на сцену по лестнице, загляни в левую и правую кулисы.\n" +
+                          "Собери все воспоминания — тогда выйдешь на сцену.\n" +
+                          "Шкала тревоги: как заполнится — жми ПРОБЕЛ.");
         } else if (levelIndex == 0) {
             // Приветствие только в самом первом уровне
-            dialogue.show("Ты просыпаешься в мире, где нет ни одного цвета.\n" +
-                          "Что-то важное потерялось... попробуй вспомнить.");
+            dialogue.show(game.assets.yarnBall,
+                          "Ты просыпаешься в мире, где нет ни одного цвета.\n" +
+                          "Что-то важное потерялось... попробуй вспомнить.\n" +
+                          "Собери предметы (Z) и найди звёздочку сохранения.");
         }
     }
 
@@ -112,14 +133,24 @@ public class GameScreen extends ScreenAdapter {
         draw(delta);
     }
 
+    /** Подтверждение в духе Undertale: Z (а также E / Enter / Пробел). */
+    private boolean confirmPressed() {
+        return Gdx.input.isKeyJustPressed(Input.Keys.Z)
+            || Gdx.input.isKeyJustPressed(Input.Keys.E)
+            || Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
+            || Gdx.input.isKeyJustPressed(Input.Keys.SPACE);
+    }
+
+    /** Взаимодействие с объектами и звёздочкой. */
+    private boolean interactPressed() {
+        return Gdx.input.isKeyJustPressed(Input.Keys.Z)
+            || Gdx.input.isKeyJustPressed(Input.Keys.E);
+    }
+
     /** @return true, если экран был сменён и дальше рисовать не нужно. */
     private boolean handleInput() {
         if (dialogue.isVisible()) {
-            if (Gdx.input.isKeyJustPressed(Input.Keys.E)
-                || Gdx.input.isKeyJustPressed(Input.Keys.ENTER)
-                || Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
-                dialogue.hide();
-            }
+            if (confirmPressed()) dialogue.advance();
             return false;
         }
 
@@ -133,14 +164,64 @@ public class GameScreen extends ScreenAdapter {
             meter.press();
         }
 
-        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) {
-            Interactable target = room.findClosestInteractable(player.getCenterX(), player.getCenterY());
-            if (target != null && !target.isUsed()) {
-                target.use();
-                dialogue.show(target.getText());
-            }
+        if (interactPressed()) {
+            interact();
         }
         return false;
+    }
+
+    /** Выбирает ближайшую цель: звёздочка сохранения или предмет. */
+    private Room currentRoom() {
+        if (rooms == null || rooms.isEmpty()) return null;
+        if (roomIndex < 0) roomIndex = 0;
+        if (roomIndex >= rooms.size()) roomIndex = rooms.size() - 1;
+        return rooms.get(roomIndex);
+    }
+
+    private void switchRoom(Portal p) {
+        if (rooms == null || p == null) return;
+        if (p.targetRoom < 0 || p.targetRoom >= rooms.size()) return;
+        roomIndex = p.targetRoom;
+        player.setPosition(p.spawnX, p.spawnY);
+        portalCooldown = 0.45f;
+        roomNameTimer = 0f;
+        if (distractionLevel) {
+            Room cur = currentRoom();
+            if (cur != null && savedColorAmount >= 0f) {
+                cur.setColorAmount(savedColorAmount * (1f - grayT));
+            }
+        }
+        play(game.assets.sfxStep, 0.5f);
+    }
+
+    private void interact() {
+        Room room = currentRoom();
+        if (room == null) return;
+        float px = player.getCenterX();
+        float py = player.getCenterY();
+
+        SavePoint sp = room.getSavePoint();
+        float dSave = sp != null ? distance(px, py, sp.getCenterX(), sp.getCenterY()) : Float.MAX_VALUE;
+
+        Interactable target = room.findClosestInteractable(px, py);
+        float dInteract = target != null
+            ? distance(px, py, target.getCenterX(), target.getCenterY())
+            : Float.MAX_VALUE;
+
+        if (sp != null && dSave <= dInteract && dSave <= SavePoint.INTERACT_RADIUS) {
+            game.save.saveCheckpoint(levelIndex);
+            dialogue.show("Звёздочка теплится в ладонях.\nСохранено. Оставайся решительной.");
+            play(game.assets.sfxChime, 0.7f);
+        } else if (target != null && !target.isUsed()) {
+            target.use();
+            dialogue.show(target.getText());
+        }
+    }
+
+    private float distance(float x1, float y1, float x2, float y2) {
+        float dx = x2 - x1;
+        float dy = y2 - y1;
+        return (float) Math.sqrt(dx * dx + dy * dy);
     }
 
     /** @return true, если экран был сменён и дальше рисовать не нужно. */
@@ -163,7 +244,10 @@ public class GameScreen extends ScreenAdapter {
         float grayTarget = overwhelmedPhase > 0 ? 1f : 0f;
         grayT += (grayTarget - grayT) * Math.min(1f, delta * 2.5f);
         if (distractionLevel) {
-            room.setColorAmount(savedColorAmount * (1f - grayT));
+            Room roomCur = currentRoom();
+            if (roomCur != null) {
+                roomCur.setColorAmount(savedColorAmount * (1f - grayT));
+            }
         }
 
         // Механика тревожной шкалы (на паузе, пока открыт диалог)
@@ -183,18 +267,56 @@ public class GameScreen extends ScreenAdapter {
             meter.clearEvents();
         }
 
+        Room curRoom = currentRoom();
         if (!visible && !(distractionLevel && meter.isFrozen())) {
-            player.update(delta, room);
+            if (curRoom != null) {
+                player.update(delta, curRoom);
+            }
         }
         dialogue.update(delta);
 
         if (owTimer > 0f) owTimer -= delta;
 
-        // Выход из уровня: комната собрана, героиня у двери.
+        // Переключение между локациями уровня по порталам
+        if (!dialogue.isVisible() && portalCooldown > 0f) {
+            portalCooldown -= delta;
+        }
+        if (!dialogue.isVisible() && portalCooldown <= 0f && curRoom != null) {
+            Portal portal = curRoom.portalAt(player.getBounds());
+            if (portal != null) {
+                switchRoom(portal);
+                return false;
+            }
+        }
+
+        // Проверка, собраны ли все воспоминания во всех локациях
+        boolean allComplete = true;
+        if (rooms != null) {
+            for (Room r : rooms) {
+                if (!r.isComplete()) {
+                    allComplete = false;
+                    break;
+                }
+            }
+        } else if (curRoom != null) {
+            allComplete = curRoom.isComplete();
+        }
+
+        // Выход из уровня
+        boolean atExit = false;
+        if (curRoom != null) {
+            Rectangle fin = curRoom.getFinishBounds();
+            if (fin != null) {
+                atExit = fin.overlaps(player.getBounds());
+            } else {
+                atExit = curRoom.isPlayerAtDoor(player);
+            }
+        }
+
         if (!dialogue.isVisible()
             && overwhelmedPhase == 0
-            && room.isComplete()
-            && room.isPlayerAtDoor(player)) {
+            && allComplete
+            && atExit) {
             if (Levels.hasBoss(levelIndex)) {
                 game.setScreen(new BossScreen(game, levelIndex));
             } else {
@@ -209,7 +331,8 @@ public class GameScreen extends ScreenAdapter {
 
     private void startOverwhelmed() {
         overwhelmedPhase = 1;
-        dialogue.show("Слёзы подступают. Ещё чуть-чуть — и я сорвусь.");
+        dialogue.show(game.assets.yarnBall,
+                      "Слёзы подступают. Ещё чуть-чуть — и я сорвусь.");
     }
 
     private void play(Sound sound, float volume) {
@@ -247,8 +370,11 @@ public class GameScreen extends ScreenAdapter {
         game.batch.begin();
 
         // Применяем "цвет" комнаты ко всей сцене
-        game.batch.setColor(room.getTint());
-        room.draw(game.batch);
+        Room drawRoom = currentRoom();
+        if (drawRoom != null) {
+            game.batch.setColor(drawRoom.getTint());
+            drawRoom.draw(game.batch);
+        }
         player.draw(game.batch);
         game.batch.setColor(Color.WHITE);
 
@@ -258,6 +384,9 @@ public class GameScreen extends ScreenAdapter {
             game.batch.draw(game.assets.pixel, 0, 0, W, H);
             game.batch.setColor(Color.WHITE);
         }
+
+        // Атмосфера в духе Undertale: прожектор и темнота по краям
+        drawAtmosphere();
 
         drawRoomName();
 
@@ -269,8 +398,67 @@ public class GameScreen extends ScreenAdapter {
         game.batch.setProjectionMatrix(camera.combined);
         game.batch.begin();
         if (distractionLevel) drawDistractionHud(delta);
+        drawSavePrompt();
+        drawPixelFrame();
         dialogue.draw(game.batch, W, H);
         game.batch.end();
+    }
+
+    /**
+     * Мягкий прожектор вокруг героини: маска света растянута на весь экран,
+     * центр прозрачный, края уходят в темноту.
+     */
+    private void drawAtmosphere() {
+        Assets a = game.assets;
+        float cx = player.getCenterX();
+        float cy = player.getCenterY();
+
+        // Радиус подбираем так, чтобы дальний угол экрана уходил в темноту,
+        // а вокруг героини оставалось светлое пятно.
+        float far = 0f;
+        far = Math.max(far, distance(cx, cy, 0f, 0f));
+        far = Math.max(far, distance(cx, cy, W, 0f));
+        far = Math.max(far, distance(cx, cy, 0f, H));
+        far = Math.max(far, distance(cx, cy, W, H));
+        float r = far * 1.12f;
+
+        game.batch.setColor(Color.WHITE);
+        game.batch.draw(a.light, cx - r, cy - r, r * 2f, r * 2f);
+    }
+
+    /** Тёмная пиксельная рамка-виньетка по краям экрана. */
+    private void drawPixelFrame() {
+        Assets a = game.assets;
+        float t = 12f;
+        game.batch.setColor(0.02f, 0.02f, 0.04f, 0.92f);
+        game.batch.draw(a.pixel, 0f, 0f, W, t);
+        game.batch.draw(a.pixel, 0f, H - t, W, t);
+        game.batch.draw(a.pixel, 0f, 0f, t, H);
+        game.batch.draw(a.pixel, W - t, 0f, t, H);
+
+        game.batch.setColor(0.4f, 0.4f, 0.48f, 0.35f);
+        float l = 1.5f;
+        game.batch.draw(a.pixel, t, t, W - 2f * t, l);
+        game.batch.draw(a.pixel, t, H - t - l, W - 2f * t, l);
+        game.batch.draw(a.pixel, t, t, l, H - 2f * t);
+        game.batch.draw(a.pixel, W - t - l, t, l, H - 2f * t);
+        game.batch.setColor(Color.WHITE);
+    }
+
+    /** Подсказка «[Z] сохранить», когда героиня стоит у звёздочки. */
+    private void drawSavePrompt() {
+        Room room = currentRoom();
+        SavePoint sp = room != null ? room.getSavePoint() : null;
+        if (sp == null) return;
+        float d = distance(player.getCenterX(), player.getCenterY(), sp.getCenterX(), sp.getCenterY());
+        if (d > SavePoint.INTERACT_RADIUS) return;
+
+        Assets a = game.assets;
+        float blink = 0.55f + 0.45f * (float) Math.abs(Math.sin(roomNameTimer * 3f));
+        a.fontMedium.setColor(1f, 0.9f, 0.55f, blink);
+        layout.setText(a.fontMedium, "[ Z ]  сохранить");
+        a.fontMedium.draw(game.batch, layout, (W - layout.width) / 2f, 120f);
+        a.fontMedium.setColor(Color.WHITE);
     }
 
     // ---------- элементы интерфейса механики ----------
@@ -333,7 +521,7 @@ public class GameScreen extends ScreenAdapter {
         // Подсказка снизу
         String hint = meter.hasSupport()
             ? "Он рядом. Дышать стало легче."
-            : "WASD — идти. E — взять предмет. Шкала полна — ПРОБЕЛ.";
+            : "WASD — идти. Z — взять предмет. Шкала полна — ПРОБЕЛ.";
         a.fontSmall.setColor(0.7f, 0.7f, 0.76f, 0.9f);
         layout.setText(a.fontSmall, hint);
         a.fontSmall.draw(game.batch, layout, (W - layout.width) / 2f, 26f);
@@ -341,7 +529,8 @@ public class GameScreen extends ScreenAdapter {
     }
 
     private void drawRoomName() {
-        if (room.getName() == null) return;
+        Room room = currentRoom();
+        if (room == null || room.getName() == null) return;
         float a = 1f - Math.min(1f, Math.max(0f, (roomNameTimer - 2.0f) / 1.5f));
         if (a <= 0.01f) return;
 

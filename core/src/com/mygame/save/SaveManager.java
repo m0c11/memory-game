@@ -24,6 +24,7 @@ public class SaveManager {
     private static final String KEY_BALL_X = "ballX";
     private static final String KEY_BALL_Y = "ballY";
     private static final String KEY_TRAIL = "trail";
+    private static final String KEY_CHECKPOINT = "checkpointLevel";
 
     private final Preferences prefs;
 
@@ -48,7 +49,23 @@ public class SaveManager {
         prefs.remove(KEY_BALL_X);
         prefs.remove(KEY_BALL_Y);
         prefs.remove(KEY_TRAIL);
+        prefs.remove(KEY_CHECKPOINT);
         prefs.flush();
+    }
+
+    /**
+     * Контрольное сохранение у звезды (в духе Undertale).
+     * Прогресс (число пройденных уровней) не меняется — просто фиксируем
+     * состояние и запоминаем, где сохранились.
+     */
+    public void saveCheckpoint(int levelIndex) {
+        prefs.putBoolean(KEY_STARTED, true);
+        prefs.putInteger(KEY_CHECKPOINT, levelIndex);
+        prefs.flush();
+    }
+
+    public int getCheckpoint() {
+        return prefs.getInteger(KEY_CHECKPOINT, 0);
     }
 
     /** Отмечает уровень пройденным. Повторное прохождение прогресс не уменьшает. */

@@ -28,10 +28,25 @@ public class Room {
     private final boolean[][] walls;
 
     private final List<Interactable> interactables = new ArrayList<>();
+    private final List<Portal> portals = new ArrayList<>();
+    private final List<Accent> accentsUnder = new ArrayList<>();
+    private final List<Accent> accentsOver = new ArrayList<>();
+    private SavePoint savePoint;
     private Rectangle doorBounds;
+    private Rectangle finishBounds;
     private String name = "";
     private Color tint = Color.WHITE;
     private float colorAmount = 0f;
+
+    /** Прямоугольная заливка цветом поверх пола или стен (для сцены, занавеса, кресел). */
+    public static class Accent {
+        public final Rectangle rect;
+        public final Color color;
+        public Accent(float x, float y, float w, float h, Color color) {
+            this.rect = new Rectangle(x, y, w, h);
+            this.color = color.cpy();
+        }
+    }
 
     public Room(Assets assets, int cols, int rows) {
         this.assets = assets;
@@ -79,7 +94,40 @@ public class Room {
         doorBounds = new Rectangle(x, y, w, h);
     }
 
+    /** Зона выхода из уровня (например, центр сцены). Если не задана — используется дверь. */
+    public void setFinish(float x, float y, float w, float h) {
+        finishBounds = new Rectangle(x, y, w, h);
+    }
+
+    public Rectangle getFinishBounds() { return finishBounds; }
+
     public void addInteractable(Interactable i) { interactables.add(i); }
+
+    /** Проход в другую локацию уровня. */
+    public void addPortal(Portal p) { portals.add(p); }
+    public List<Portal> getPortals() { return portals; }
+
+    public Portal portalAt(Rectangle bounds) {
+        for (Portal p : portals) {
+            if (p.bounds.overlaps(bounds)) return p;
+        }
+        return null;
+    }
+
+    public void addAccentUnder(float x, float y, float w, float h, Color color) {
+        accentsUnder.add(new Accent(x, y, w, h, color));
+    }
+
+    public void addAccentOver(float x, float y, float w, float h, Color color) {
+        accentsOver.add(new Accent(x, y, w, h, color));
+    }
+
+    /** Точка сохранения. Не считается предметом и не влияет на прохождение комнаты. */
+    public void setSavePoint(float x, float y) {
+        this.savePoint = new SavePoint(assets, x, y);
+    }
+
+    public SavePoint getSavePoint() { return savePoint; }
 
     public float getPixelWidth()  { return cols * TILE; }
     public float getPixelHeight() { return rows * TILE; }
@@ -104,6 +152,9 @@ public class Room {
             }
         }
 
+        // Оверлеи поверх пола (настил сцены, струи света и т.п.)
+        drawAccents(batch, accentsUnder);
+
         // Дверь: закрыта (тёмно-фиолетовая) или открыта (тёплый свет)
         if (doorBounds != null) {
             Texture[] pair = isComplete() ? assets.tileDoorOpen : assets.tileDoorClosed;
@@ -119,10 +170,32 @@ public class Room {
             }
         }
 
+        // Оверлеи поверх стен (занавес, ряды кресел)
+        drawAccents(batch, accentsOver);
+
+        // Проходы между локациями — как открытые двери
+        for (Portal p : portals) {
+            drawPair(batch, assets.tileDoorOpen,
+                     p.bounds.x, p.bounds.y, p.bounds.width, p.bounds.height);
+        }
+
+        // Точка сохранения
+        if (savePoint != null) {
+            savePoint.draw(batch);
+        }
+
         // Объекты
         for (Interactable i : interactables) {
             i.draw(batch);
         }
+    }
+
+    private void drawAccents(SpriteBatch batch, List<Accent> accents) {
+        for (Accent a : accents) {
+            batch.setColor(a.color);
+            batch.draw(assets.pixel, a.rect.x, a.rect.y, a.rect.width, a.rect.height);
+        }
+        batch.setColor(Color.WHITE);
     }
 
     /** Проверка коллизии прямоугольника с сеткой стен. */
