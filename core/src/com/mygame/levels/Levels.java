@@ -14,6 +14,11 @@ public final class Levels {
 
     public static final int COUNT = 12;
 
+    /** Уровни, которые заканчиваются боссом (ритм-танец). */
+    public static boolean hasBoss(int index) {
+        return index == 1;
+    }
+
     public static final LevelInfo[] ALL = {
         // 0
         new LevelInfo("Пробуждение",
@@ -22,8 +27,8 @@ public final class Levels {
             false, 398, 191),
         // 1
         new LevelInfo("Подготовка к Студвесне",
-            "Ходить, прихрамывая, ради сцены.",
-            "Ритмичные клики (клик-пауза-клик), хромота, босс-танец",
+            "Собраться с силами ради сцены.",
+            "Тревожная шкала (жми ПРОБЕЛ, когда заполнится), босс — танец",
             true, 374, 250),
         // 2
         new LevelInfo("Ключ I",

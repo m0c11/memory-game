@@ -76,11 +76,13 @@ public class RoomFactory {
         for (int rr = 8; rr <= 11; rr++) r.setWall(15, rr, true);
 
         r.addInteractable(new Interactable(assets, 260, 200,
-            "Наколенники на стуле.\n\"Без них я бы не вышел на сцену.\""));
+            "Наколенники на стуле.\n\"Без них я бы не вышла на сцену.\""));
         r.addInteractable(new Interactable(assets, 500, 500,
-            "Тейп, бинты, чей-то недопитый чай.\n\"Каждый виток — шаг к цели.\""));
+            "Тейп лежит на столе рядом с бинтами.\n\"Каждый виток — это шаг к цели.\""));
         r.addInteractable(new Interactable(assets, 950, 400,
             "Энергетик на подоконнике.\n\"Горький, но необходимый.\""));
+        r.addInteractable(new Interactable(assets, 220, 560,
+            "Курилка. Здесь нашлось старое фото — вы смеётесь.\n\"Здесь я выдыхала перед самым важным.\""));
 
         return r;
     }

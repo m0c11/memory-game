@@ -1,6 +1,8 @@
 package com.mygame.assets;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -60,6 +62,14 @@ public class Assets implements Disposable {
     public BitmapFont fontMenu;
     public BitmapFont fontLarge;
 
+    // Звуки (assets/sfx/*.wav, сгенерированы процедурно)
+    public Sound sfxStep;
+    public Sound sfxThud;
+    public Sound sfxChime;
+
+    // Музыка боссов (assets/music/*.mp3)
+    public Music bossMusic;
+
     public Assets() {
         player           = createTexture(24, 32, Color.valueOf("FFD34E"));
         floor            = createTexture(48, 48, Color.valueOf("32323B"));
@@ -99,6 +109,32 @@ public class Assets implements Disposable {
         fontMedium = createFont(22);
         fontMenu   = createFont(30);
         fontLarge  = createFont(40);
+
+        sfxStep  = loadSound("sfx/step.wav");
+        sfxThud  = loadSound("sfx/thud.wav");
+        sfxChime = loadSound("sfx/chime.wav");
+
+        bossMusic = loadMusic("music/boos_1_level.mp3");
+    }
+
+    private Sound loadSound(String path) {
+        try {
+            return Gdx.audio.newSound(Gdx.files.internal(path));
+        } catch (Exception e) {
+            Gdx.app.error("Assets", "Не удалось загрузить звук " + path, e);
+            return null;
+        }
+    }
+
+    private Music loadMusic(String path) {
+        try {
+            Music music = Gdx.audio.newMusic(Gdx.files.internal(path));
+            music.setVolume(0.85f);
+            return music;
+        } catch (Exception e) {
+            Gdx.app.error("Assets", "Не удалось загрузить музыку " + path, e);
+            return null;
+        }
     }
 
     private Texture createTexture(int w, int h, Color color) {
@@ -262,5 +298,9 @@ public class Assets implements Disposable {
         fontMedium.dispose();
         fontMenu.dispose();
         fontLarge.dispose();
+        if (sfxStep != null) sfxStep.dispose();
+        if (sfxThud != null) sfxThud.dispose();
+        if (sfxChime != null) sfxChime.dispose();
+        if (bossMusic != null) bossMusic.dispose();
     }
 }

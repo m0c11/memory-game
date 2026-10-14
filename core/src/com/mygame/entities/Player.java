@@ -29,6 +29,7 @@ public class Player {
     private final Vector2 position;
     private final Vector2 velocity;
     private float rotation = 0f;
+    private float speedScale = 1f;
 
     public Player(float x, float y, Assets assets) {
         this.region = new TextureRegion(assets.yarnBall);
@@ -36,9 +37,17 @@ public class Player {
         this.velocity = new Vector2();
     }
 
-    public void update(float delta, Room room) {
-        Vector2 input = readInput();
+    /** Множитель максимальной скорости (например, 0.7 — «прихрамывающая» походка). */
+    public void setSpeedScale(float scale) {
+        this.speedScale = scale;
+    }
 
+    public void update(float delta, Room room) {
+        update(delta, room, readInput());
+    }
+
+    /** Движение с внешним вектором ввода (например, наведение мышью). */
+    public void update(float delta, Room room, Vector2 input) {
         if (input.len2() > 0.01f) {
             input.nor();
             velocity.x += input.x * ACCEL * delta;
@@ -47,8 +56,9 @@ public class Player {
             applyFriction(delta);
         }
 
-        if (velocity.len() > MAX_SPEED) {
-            velocity.setLength(MAX_SPEED);
+        float maxSpeed = MAX_SPEED * speedScale;
+        if (velocity.len() > maxSpeed) {
+            velocity.setLength(maxSpeed);
         }
 
         moveWithCollision(delta, room);
