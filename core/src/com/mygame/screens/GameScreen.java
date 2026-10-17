@@ -7,12 +7,15 @@ import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygame.MyGame;
 import com.mygame.assets.Assets;
+import com.mygame.effects.ParticleSystem;
 import com.mygame.entities.Player;
 import com.mygame.levels.Levels;
 import com.mygame.mechanics.DistractionMeter;
@@ -44,6 +47,9 @@ public class GameScreen extends ScreenAdapter {
     /** Скорость героини в этой главе (доля от обычной). */
     private static final float DISTRACTION_SPEED = 0.85f;
 
+    /** Насколько цветным уровень начинается (воспоминания ещё не собраны). */
+    private static final float COLOR_START = 0.12f;
+
     private static final float SHAKE_TIME = 0.4f;
     private static final float SHAKE_MAG = 14f;
 
@@ -61,6 +67,14 @@ public class GameScreen extends ScreenAdapter {
     private final boolean distractionLevel;
     private DistractionMeter meter;
     private float portalCooldown = 0f;
+
+    // Эффекты
+    private ParticleSystem particles;
+    private float dustTimer = 0f;
+    private final java.util.ArrayList<FloatText> floatTexts = new java.util.ArrayList<>();
+
+    // Подсветка интерактива рядом с игроком
+    private float interactHighlightAlpha = 0f;
 
     // Обратная связь механики
     private float shakeTimer = 0f;
@@ -101,15 +115,20 @@ public class GameScreen extends ScreenAdapter {
         }
         player = new Player(startX, startY, game.assets);
         roomNameTimer = 0f;
+        particles = new ParticleSystem(game.assets.orb);
 
         if (!rooms.isEmpty()) {
             savedColorAmount = rooms.get(0).getColorAmount();
+        }
+        if (distractionLevel) {
+            // В этой главе цвет возвращается по мере собранных воспоминаний
+            savedColorAmount = COLOR_START;
         }
 
         if (distractionLevel) {
             meter = new DistractionMeter();
             player.setSpeedScale(DISTRACTION_SPEED);
-            dialogue.show(game.assets.yarnBall,
+            dialogue.show(game.assets.girlPortrait,
                           "Актовый зал перед Студвесной.\n" +
                           "WASD — идти, Z — взять предмет (или сохранить у звёздочки).\n" +
                           "Поднимись на сцену по лестнице, загляни в левую и правую кулисы.\n" +
@@ -117,7 +136,7 @@ public class GameScreen extends ScreenAdapter {
                           "Шкала тревоги: как заполнится — жми ПРОБЕЛ.");
         } else if (levelIndex == 0) {
             // Приветствие только в самом первом уровне
-            dialogue.show(game.assets.yarnBall,
+            dialogue.show(game.assets.girlPortrait,
                           "Ты просыпаешься в мире, где нет ни одного цвета.\n" +
                           "Что-то важное потерялось... попробуй вспомнить.\n" +
                           "Собери предметы (Z) и найди звёздочку сохранения.");
@@ -214,6 +233,16 @@ public class GameScreen extends ScreenAdapter {
             play(game.assets.sfxChime, 0.7f);
         } else if (target != null && !target.isUsed()) {
             target.use();
+            // Искры при сборе предмета
+            if (particles != null) {
+                particles.burst(target.getCenterX(), target.getCenterY(),
+                              new Color(1f, 0.9f, 0.5f, 1f), 12);
+            }
+            // Плавающий текст
+            if (particles != null) {
+                addFloatText(target.getCenterX(), target.getCenterY() + 16f,
+                    "Воспоминание найдено");
+            }
             dialogue.show(target.getText());
         }
     }
@@ -238,6 +267,12 @@ public class GameScreen extends ScreenAdapter {
             visible = dialogue.isVisible();
         } else if (overwhelmedPhase == 2 && dialogueWasVisible && !visible) {
             overwhelmedPhase = 0;
+        }
+
+        // Каждое найденное воспоминание добавляет цвета всему уровню
+        if (distractionLevel) {
+            float target = collectedColor();
+            savedColorAmount += (target - savedColorAmount) * Math.min(1f, delta * 2f);
         }
 
         // Плавное «расцвечивание» обратно после срыва
@@ -275,6 +310,19 @@ public class GameScreen extends ScreenAdapter {
         }
         dialogue.update(delta);
 
+        // Обновление частиц
+        if (particles != null) {
+            particles.update(delta);
+            // Пыль в воздухе
+            dustTimer -= delta;
+            if (dustTimer <= 0f) {
+                dustTimer = 0.15f;
+                float px = player.getCenterX() + MathUtils.random(-200f, 200f);
+                float py = player.getCenterY() + MathUtils.random(-150f, 150f);
+                particles.dust(px, py);
+            }
+        }
+
         if (owTimer > 0f) owTimer -= delta;
 
         // Переключение между локациями уровня по порталам
@@ -286,6 +334,14 @@ public class GameScreen extends ScreenAdapter {
             if (portal != null) {
                 switchRoom(portal);
                 return false;
+            }
+        }
+
+        // Обновление анимации дверей во всех локациях
+        if (rooms != null) {
+            for (Room r : rooms) {
+                r.updateDoor(delta);
+                r.updateLights(delta);
             }
         }
 
@@ -317,6 +373,11 @@ public class GameScreen extends ScreenAdapter {
             && overwhelmedPhase == 0
             && allComplete
             && atExit) {
+            // Запускаем анимацию открытия двери перед переходом
+            if (curRoom != null) {
+                curRoom.setDoorOpenTarget(1f);
+                curRoom.updateDoor(delta);
+            }
             if (Levels.hasBoss(levelIndex)) {
                 game.setScreen(new BossScreen(game, levelIndex));
             } else {
@@ -325,13 +386,33 @@ public class GameScreen extends ScreenAdapter {
             return true;
         }
 
+        // Обновление плавающих текстов
+        updateFloatTexts(delta);
+
+        // Подсветка ближайшего интерактива
+        updateInteractableHighlight(delta);
+
         dialogueWasVisible = dialogue.isVisible();
         return false;
     }
 
+    /** Цвет уровня: от COLOR_START до 1 по доле использованных предметов во всех локациях. */
+    private float collectedColor() {
+        int used = 0;
+        int total = 0;
+        if (rooms != null) {
+            for (Room r : rooms) {
+                used += r.getUsedCount();
+                total += r.getTotalCount();
+            }
+        }
+        float progress = total > 0 ? used / (float) total : 0f;
+        return COLOR_START + (1f - COLOR_START) * progress;
+    }
+
     private void startOverwhelmed() {
         overwhelmedPhase = 1;
-        dialogue.show(game.assets.yarnBall,
+        dialogue.show(game.assets.girlPortrait,
                       "Слёзы подступают. Ещё чуть-чуть — и я сорвусь.");
     }
 
@@ -340,6 +421,10 @@ public class GameScreen extends ScreenAdapter {
     }
 
     private void finishLevel() {
+        // Конфетти при завершении
+        if (particles != null) {
+            particles.confetti(player.getCenterX(), player.getCenterY());
+        }
         game.save.completeLevel(levelIndex);
         if (levelIndex >= Levels.COUNT - 1) {
             game.setScreen(new EndScreen(game));
@@ -375,8 +460,18 @@ public class GameScreen extends ScreenAdapter {
             game.batch.setColor(drawRoom.getTint());
             drawRoom.draw(game.batch);
         }
+
+        drawPlayerShadow();
         player.draw(game.batch);
         game.batch.setColor(Color.WHITE);
+
+        // Частицы
+        if (particles != null) {
+            particles.draw(game.batch);
+        }
+
+        // Плавающие тексты (над игрой, под UI)
+        drawFloatTexts(game.batch);
 
         // Серый налёт при срыве (ч/б)
         if (grayT > 0.01f) {
@@ -387,6 +482,12 @@ public class GameScreen extends ScreenAdapter {
 
         // Атмосфера в духе Undertale: прожектор и темнота по краям
         drawAtmosphere();
+
+        // Концертный свет (над сценой, аддитивно) — рисуем ПОСЛЕ атмосферы, чтобы не затемнялось
+        drawLights();
+
+        // Подсветка ближайшего интерактива, если игрок рядом — тоже после атмосферы
+        drawInteractableHighlight();
 
         drawRoomName();
 
@@ -424,6 +525,39 @@ public class GameScreen extends ScreenAdapter {
 
         game.batch.setColor(Color.WHITE);
         game.batch.draw(a.light, cx - r, cy - r, r * 2f, r * 2f);
+    }
+
+    /** Мягкая тень под героиней — добавляет глубину. */
+    private void drawPlayerShadow() {
+        float cx = player.getCenterX();
+        float cy = player.getCenterY() - Player.HEIGHT / 2f + 2f;
+        float shadowW = 26f;
+        float shadowH = 8f;
+
+        // Рисуем тень как тёмный эллипс (два слоя для мягкости)
+        game.batch.setColor(0f, 0f, 0f, 0.25f);
+        game.batch.draw(game.assets.pixel, cx - shadowW / 2f, cy - shadowH / 2f, shadowW, shadowH);
+        game.batch.setColor(0f, 0f, 0f, 0.15f);
+        game.batch.draw(game.assets.pixel, cx - shadowW / 2f - 2f, cy - shadowH / 2f - 1f, shadowW + 4f, shadowH + 2f);
+        game.batch.setColor(Color.WHITE);
+    }
+
+    /** Стробоскопный свет над сценой — круги мигают и скачут по сцене. */
+    private void drawLights() {
+        Room room = currentRoom();
+        if (room == null) return;
+        for (Room.LightCue c : room.getLightCues()) {
+            // Круг виден только в течение flashDuration после каждого интервала
+            float flashPhase = (c.flashTimer % c.flashInterval) / c.flashInterval;
+            if (flashPhase > c.flashDuration / c.flashInterval) continue;
+
+            float alpha = 0.5f + 0.4f * (1f - flashPhase / (c.flashDuration / c.flashInterval));
+            game.batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
+            game.batch.setColor(c.color.r, c.color.g, c.color.b, alpha);
+            game.batch.draw(game.assets.light, c.x - c.w / 2f, c.y - c.h / 2f, c.w, c.h);
+            game.batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+            game.batch.setColor(Color.WHITE);
+        }
     }
 
     /** Тёмная пиксельная рамка-виньетка по краям экрана. */
@@ -543,5 +677,105 @@ public class GameScreen extends ScreenAdapter {
     @Override
     public void resize(int width, int height) {
         viewport.update(width, height);
+    }
+
+    // ---------- Плавающий текст при сборе предметов ----------
+
+    private static class FloatText {
+        float x, y;
+        String text;
+        float life = 1.2f;
+        float vy = -40f;
+        float alpha = 1f;
+
+        FloatText(float x, float y, String text) {
+            this.x = x;
+            this.y = y;
+            this.text = text;
+        }
+
+        void update(float delta) {
+            life -= delta;
+            y += vy * delta;
+            vy += 20f * delta; // легкое ускорение вверх
+            alpha = Math.max(0f, life / 1.2f);
+        }
+
+        boolean isDead() {
+            return life <= 0f;
+        }
+
+        void draw(SpriteBatch batch, BitmapFont font) {
+            if (life <= 0f) return;
+            font.setColor(1f, 0.9f, 0.5f, alpha);
+            GlyphLayout gl = new GlyphLayout();
+            gl.setText(font, text);
+            font.draw(batch, text, x - gl.width / 2f, y);
+            font.setColor(Color.WHITE);
+        }
+    }
+
+    private void addFloatText(float x, float y, String text) {
+        floatTexts.add(new FloatText(x, y, text));
+    }
+
+    private void updateFloatTexts(float delta) {
+        java.util.Iterator<FloatText> it = floatTexts.iterator();
+        while (it.hasNext()) {
+            FloatText ft = it.next();
+            ft.update(delta);
+            if (ft.isDead()) it.remove();
+        }
+    }
+
+    private void drawFloatTexts(SpriteBatch batch) {
+        for (FloatText ft : floatTexts) {
+            ft.draw(batch, game.assets.fontMedium);
+        }
+    }
+
+    /** Рисует мягкое свечение вокруг ближайшего интерактива, если игрок рядом. */
+    private void drawInteractableHighlight() {
+        Room room = currentRoom();
+        if (room == null) return;
+        float px = player.getCenterX();
+        float py = player.getCenterY();
+
+        Interactable target = room.findClosestInteractable(px, py);
+        if (target == null || target.isUsed()) return;
+
+        float d = distance(px, py, target.getCenterX(), target.getCenterY());
+        if (d > Interactable.INTERACT_RADIUS + 20f) return;
+
+        // Яркость свечения зависит от расстояния
+        float glowAlpha = Math.max(0f, 1f - d / (Interactable.INTERACT_RADIUS + 20f));
+        float pulse = 0.6f + 0.4f * (float) Math.abs(Math.sin(roomNameTimer * 5f));
+        glowAlpha *= pulse;
+
+        float size = 44f + 8f * (float) Math.sin(roomNameTimer * 4f);
+        game.batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE);
+        game.batch.setColor(0.5f, 0.9f, 1f, glowAlpha * 0.6f);
+        game.batch.draw(game.assets.orb, target.getCenterX() - size / 2f,
+                        target.getCenterY() - size / 2f, size, size);
+        game.batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+        game.batch.setColor(Color.WHITE);
+    }
+
+    /** Обновляет значение подсветки интерактива (для будущих эффектов звука). */
+    private void updateInteractableHighlight(float delta) {
+        Room room = currentRoom();
+        if (room == null) return;
+        float px = player.getCenterX();
+        float py = player.getCenterY();
+
+        Interactable target = room.findClosestInteractable(px, py);
+        float targetAlpha = 0f;
+        if (target != null && !target.isUsed()) {
+            float d = distance(px, py, target.getCenterX(), target.getCenterY());
+            if (d < Interactable.INTERACT_RADIUS) {
+                targetAlpha = 0.5f;
+            }
+        }
+        interactHighlightAlpha += (targetAlpha - interactHighlightAlpha) * Math.min(1f, delta * 5f);
     }
 }

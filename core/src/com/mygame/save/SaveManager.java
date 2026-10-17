@@ -77,6 +77,13 @@ public class SaveManager {
         }
     }
 
+    /** Разблокирует все уровни (для тестирования). */
+    public void unlockAll() {
+        prefs.putBoolean(KEY_STARTED, true);
+        prefs.putInteger(KEY_COMPLETED, Levels.COUNT);
+        prefs.flush();
+    }
+
     // ---------- состояние карты ----------
 
     public boolean hasBallPosition() {

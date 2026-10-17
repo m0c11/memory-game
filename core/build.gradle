@@ -3,6 +3,7 @@ plugins {
 }
 
 sourceSets.main.java.srcDirs = ['src/']
+sourceSets.test.java.srcDirs = ['src/test/java']
 
 dependencies {
     api "com.badlogicgames.gdx:gdx:$gdxVersion"
@@ -13,4 +14,13 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
     sourceCompatibility = '17'
     targetCompatibility = '17'
+}
+
+/** Запуск unit-тестов без графического контекста (JUnit не используется). */
+task runTests(type: JavaExec) {
+    dependsOn 'compileTestJava'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.mygame.test.AllTests'
+    standardOutput = System.out
+    errorOutput = System.err
 }

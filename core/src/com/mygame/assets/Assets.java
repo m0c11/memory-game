@@ -51,12 +51,24 @@ public class Assets implements Disposable {
     /** Рамка диалога. */
     public Texture dialoguePanel;
 
+    /** Кэш тайлов и реквизита театра (assets/stage), загружаются по имени при первом обращении. */
+    private final java.util.Map<String, Texture[]> stageCache = new java.util.HashMap<>();
+
     /** Круглая маска света: прозрачный центр, чёрный край (рисуется поверх карты). */
     public Texture light;
     /** Звезда точки сохранения (в духе Undertale). */
     public Texture saveStar;
     /** Клубок ниток — герой (картинка chars/yarn_ball.png с прозрачным фоном). */
     public Texture yarnBall;
+
+    /** Героиня (assets/chars/girl): стойка анфас и в профиль, 9 кадров ходьбы, портрет для диалога. */
+    public Texture girlIdleFront;
+    public Texture girlIdleSide;
+    public Texture[] girlWalk = new Texture[9];
+    public Texture girlPortrait;
+
+    /** Мягкая круглая тень под ногами (центр тёмный, край прозрачный). */
+    public Texture shadow;
 
     // Шрифты
     public BitmapFont fontSmall;
@@ -71,6 +83,12 @@ public class Assets implements Disposable {
 
     // Музыка боссов (assets/music/*.mp3)
     public Music bossMusic;
+
+    // ---------- Пакман-босс (assets/pacman/*.png) ----------
+    public Texture pacmanDot;                    // маленькая точка
+    public Texture[] pacmanPlayer = new Texture[9]; // кадры героя (движение)
+    public Texture[] pacmanPower = new Texture[4];  // уязвимый призрак (по одному на каждого)
+    public Texture[] pacmanGhosts = new Texture[4]; // нормальный призрак (по одному на каждого)
 
     public Assets() {
         player           = createTexture(24, 32, Color.valueOf("FFD34E"));
@@ -91,6 +109,14 @@ public class Assets implements Disposable {
         light         = createLightMask(256);
         saveStar      = createSaveStar(128);
         yarnBall      = loadImage("chars/yarn_ball.png");
+
+        girlIdleFront = loadImage("chars/girl/idle_front.png");
+        girlIdleSide  = loadImage("chars/girl/idle_side.png");
+        for (int i = 0; i < girlWalk.length; i++) {
+            girlWalk[i] = loadImage("chars/girl/walk_" + i + ".png");
+        }
+        girlPortrait  = loadImage("chars/girl/portrait.png");
+        shadow        = createShadow(64);
 
         String[] states = {"locked", "available", "done"};
         for (int i = 0; i < 3; i++) {
@@ -118,6 +144,38 @@ public class Assets implements Disposable {
         sfxChime = loadSound("sfx/chime.wav");
 
         bossMusic = loadMusic("music/boos_1_level.mp3");
+
+        // Текстуры пакман-босса
+        pacmanDot = loadImage("pacman/dot_0.png");
+        for (int i = 0; i < pacmanPlayer.length; i++) {
+            pacmanPlayer[i] = loadImage("pacman/player_" + i + ".png");
+        }
+        for (int i = 0; i < pacmanPower.length; i++) {
+            pacmanPower[i] = loadImage("pacman/ghost_" + i + "_power.png");
+            pacmanGhosts[i] = loadImage("pacman/ghost_" + i + "_0.png");
+        }
+    }
+
+    /**
+     * Пара текстур для тайла или реквизита театра: [0] серая, [1] цветная.
+     * Файлы лежат в assets/stage/grey/NAME.png и assets/stage/color/NAME.png
+     * (создаются скриптом tools/prep_stage_assets.py). Реквизит (имена prop_*)
+     * рисуется без сглаживания, чтобы пиксели оставались чёткими.
+     */
+    public Texture[] stagePair(String name) {
+        Texture[] pair = stageCache.get(name);
+        if (pair == null) {
+            Texture.TextureFilter filter = name.startsWith("prop_")
+                ? Texture.TextureFilter.Nearest : Texture.TextureFilter.Linear;
+            String[] dirs = {"grey", "color"};
+            pair = new Texture[2];
+            for (int i = 0; i < 2; i++) {
+                pair[i] = new Texture(Gdx.files.internal("stage/" + dirs[i] + "/" + name + ".png"));
+                pair[i].setFilter(filter, filter);
+            }
+            stageCache.put(name, pair);
+        }
+        return pair;
     }
 
     private Sound loadSound(String path) {
@@ -147,6 +205,27 @@ public class Assets implements Disposable {
         Texture tex = new Texture(pixmap);
         tex.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
         pixmap.dispose();
+        return tex;
+    }
+
+    /** Радиальный градиент для тени под ногами. */
+    private Texture createShadow(int size) {
+        Pixmap pm = new Pixmap(size, size, Pixmap.Format.RGBA8888);
+        pm.setBlending(Pixmap.Blending.None);
+        float c = (size - 1) / 2f;
+        for (int y = 0; y < size; y++) {
+            for (int x = 0; x < size; x++) {
+                float dx = x - c;
+                float dy = y - c;
+                float d = (float) Math.sqrt(dx * dx + dy * dy) / (size / 2f);
+                float a = Math.max(0f, 1f - d);
+                pm.setColor(0f, 0f, 0f, a * a * 0.75f);
+                pm.drawPixel(x, y);
+            }
+        }
+        Texture tex = new Texture(pm);
+        tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        pm.dispose();
         return tex;
     }
 
@@ -321,6 +400,11 @@ public class Assets implements Disposable {
         light.dispose();
         saveStar.dispose();
         yarnBall.dispose();
+        girlIdleFront.dispose();
+        girlIdleSide.dispose();
+        for (Texture t : girlWalk) t.dispose();
+        girlPortrait.dispose();
+        shadow.dispose();
         for (int i = 0; i < 3; i++) {
             nodeChapter[i].dispose();
             nodeKey[i].dispose();
@@ -332,6 +416,11 @@ public class Assets implements Disposable {
             tileDoorOpen[i].dispose();
         }
         dialoguePanel.dispose();
+        for (Texture[] pair : stageCache.values()) {
+            pair[0].dispose();
+            pair[1].dispose();
+        }
+        stageCache.clear();
         fontSmall.dispose();
         fontMedium.dispose();
         fontMenu.dispose();
@@ -340,5 +429,11 @@ public class Assets implements Disposable {
         if (sfxThud != null) sfxThud.dispose();
         if (sfxChime != null) sfxChime.dispose();
         if (bossMusic != null) bossMusic.dispose();
+
+        // Текстуры пакман-босса
+        if (pacmanDot != null) pacmanDot.dispose();
+        for (Texture t : pacmanPlayer) if (t != null) t.dispose();
+        for (Texture t : pacmanPower) if (t != null) t.dispose();
+        for (Texture t : pacmanGhosts) if (t != null) t.dispose();
     }
 }

@@ -22,6 +22,9 @@ public class RoomFactory {
     public static final int COLS = 26;
     public static final int ROWS = 15;
 
+    /** Количество домиков на уровне 5. */
+    public static final int HORROR_HOUSE_COUNT = 4;
+
     public static Room createRoom(int index, Assets assets) {
         switch (index) {
             case 0:  return roomAwakening(assets, index);
@@ -111,27 +114,18 @@ public class RoomFactory {
             for (int c = 15; c <= 22; c++) r.setWall(c, rr, true);
         }
 
-        // ---- Оформление ----
-        // Деревянный настил сцены
-        r.addAccentUnder(T, 9 * T, 24 * T, 5 * T, new Color(0.26f, 0.17f, 0.12f, 0.55f));
-        // Передний край сцены затемняем по бокам от лестницы
-        r.addAccentOver(T, 8 * T, 10 * T, T, new Color(0.05f, 0.04f, 0.07f, 0.85f));
-        r.addAccentOver(15 * T, 8 * T, 10 * T, T, new Color(0.05f, 0.04f, 0.07f, 0.85f));
-        // Лестница: светлее + ступени
-        r.addAccentOver(11 * T, 8 * T, 4 * T, T, new Color(0.45f, 0.38f, 0.30f, 0.6f));
-        for (int i = 1; i <= 3; i++) {
-            r.addAccentOver(11 * T + 6, 8 * T + i * 11, 4 * T - 12, 2,
-                            new Color(0.08f, 0.06f, 0.09f, 0.7f));
-        }
-        // Тёмно-красный занавес: задник сцены и верх
-        r.addAccentOver(T, 13 * T, 24 * T, T, new Color(0.42f, 0.10f, 0.14f, 0.75f));
-        r.addAccentOver(0, 14 * T, COLS * T, T, new Color(0.5f, 0.12f, 0.16f, 0.9f));
-        // Боковые кулисы-занавеси
-        r.addAccentOver(T, 9 * T, T, 5 * T, new Color(0.42f, 0.10f, 0.14f, 0.6f));
-        r.addAccentOver(24 * T, 9 * T, T, 5 * T, new Color(0.42f, 0.10f, 0.14f, 0.6f));
-        // Ряды кресел затемняем
-        r.addAccentOver(3 * T, 2 * T, 8 * T, 3 * T, new Color(0.17f, 0.09f, 0.13f, 0.6f));
-        r.addAccentOver(15 * T, 2 * T, 8 * T, 3 * T, new Color(0.17f, 0.09f, 0.13f, 0.6f));
+        // ---- Оформление из JSON (assets/rooms/hall.json) ----
+        RoomLayout.apply(r, assets, "rooms/hall.json");
+
+        // Концертный свет над сценой (цветные прожекторы, "настраивают свет")
+        r.addLightCue(new Room.LightCue(13 * T, 13.5f * T, 200, 160,
+            new Color(1f, 0.3f, 0.3f, 1f)));   // красный
+        r.addLightCue(new Room.LightCue(7 * T, 13.5f * T, 180, 140,
+            new Color(0.3f, 0.5f, 1f, 1f)));    // синий
+        r.addLightCue(new Room.LightCue(10 * T, 13f * T, 220, 180,
+            new Color(1f, 0.9f, 0.4f, 1f)));    // тёплый белый
+        r.addLightCue(new Room.LightCue(16 * T, 13.2f * T, 160, 120,
+            new Color(0.8f, 0.3f, 1f, 1f)));    // фиолетовый
 
         // ---- Проходы в кулисы ----
         r.addPortal(new Portal(0, 11 * T, T, 2 * T, 1, 200, 520));
@@ -175,9 +169,7 @@ public class RoomFactory {
         r.addPortal(new Portal(25 * T, 11 * T, T, 2 * T, 0, 150, 520));
 
         // Тёплый свет гримёрки и зеркала на дальней стене.
-        r.addAccentUnder(0, 0, COLS * T, ROWS * T, new Color(0.22f, 0.11f, 0.11f, 0.22f));
-        r.addAccentOver(3 * T, 14 * T + 9, 9 * T, 30, new Color(0.72f, 0.78f, 0.82f, 0.45f));
-        r.addAccentOver(14 * T, 14 * T + 9, 9 * T, 30, new Color(0.72f, 0.78f, 0.82f, 0.45f));
+        RoomLayout.apply(r, assets, "rooms/dressing.json");
 
         r.setSavePoint(120, 240);
         r.addInteractable(new Interactable(assets, 600, 420,
@@ -209,9 +201,7 @@ public class RoomFactory {
         r.addPortal(new Portal(0, 11 * T, T, 2 * T, 0, 1100, 520));
 
         // Прохладный полумрак и стопки коробок.
-        r.addAccentUnder(0, 0, COLS * T, ROWS * T, new Color(0.10f, 0.12f, 0.20f, 0.22f));
-        r.addAccentOver(8 * T, 6 * T, 2 * T, 2 * T, new Color(0.35f, 0.26f, 0.16f, 0.7f));
-        r.addAccentOver(17 * T, 4 * T, 2 * T, 2 * T, new Color(0.35f, 0.26f, 0.16f, 0.7f));
+        RoomLayout.apply(r, assets, "rooms/backstage.json");
 
         r.setSavePoint(1120, 240);
         r.addInteractable(new Interactable(assets, 330, 300,
@@ -295,5 +285,170 @@ public class RoomFactory {
                 info.title + ": милый момент ваших отношений.\nЗдесь будет воспоминание."));
         }
         return r;
+    }
+
+    // ==================== УРОВЕНЬ 5: ШКОЛА АКТИВА (ХОРРОР) ====================
+
+    /**
+     * База отдыха — это основная локация уровня 5 (большой открытый мир).
+     * Домики — отдельные комнаты, в которые заходит игрок через порталы на базе.
+     */
+
+    /** Все домики уровня 5. */
+    public static List<Room> horrorHouses(Assets assets, int index) {
+        List<Room> houses = new java.util.ArrayList<>();
+        for (int h = 0; h < HORROR_HOUSE_COUNT; h++) {
+            houses.add(horrorHouse(assets, index, h));
+        }
+        return houses;
+    }
+
+    /** Один домик: комната с кроватями, бутылками под кроватями и дверью выхода. */
+    public static Room horrorHouse(Assets assets, int index, int houseNum) {
+        Room r = base(assets, Levels.ALL[index].title + " · домик " + (houseNum + 1), index);
+        final float T = Room.TILE;
+
+        // ---------- ОБЛИК ДОМИКА: стены ----------
+        houseWalls(r, houseNum, T);
+
+        // Проходы в стенах (дверные проёмы между кроватями)
+        houseWallDoors(r, houseNum, T);
+
+        // ---------- Дверь выхода из домика (внизу комнаты) ----------
+        r.setDoor(12 * T, T, 2 * T, T);
+
+        // ---------- НАПОЛНЕНИЕ: бутылки под кроватями ----------
+        // houseItems(assets, r, houseNum, T);  // убрано для теста — только 1 бутылка на базе
+
+        return r;
+    }
+
+    // ------- Облик домиков (стены) -------
+
+    private static void houseWalls(Room r, int houseNum, float T) {
+        switch (houseNum) {
+            case 0: houseWallsA(r, T); break;
+            case 1: houseWallsB(r, T); break;
+            case 2: houseWallsC(r, T); break;
+            case 3: houseWallsD(r, T); break;
+        }
+    }
+
+    private static void houseWallsA(Room r, float T) {
+        // Кровати по периметру
+        for (int c = 2; c <= 8; c++) r.setWall(c, 3, true);
+        for (int c = 17; c <= 23; c++) r.setWall(c, 3, true);
+        for (int c = 2; c <= 8; c++) r.setWall(c, 11, true);
+        for (int c = 17; c <= 23; c++) r.setWall(c, 11, true);
+        for (int rr = 4; rr <= 10; rr++) r.setWall(2, rr, true);
+        for (int rr = 4; rr <= 10; rr++) r.setWall(23, rr, true);
+    }
+
+    private static void houseWallsB(Room r, float T) {
+        // Только верхний и нижний ряд
+        for (int c = 2; c <= 8; c++) r.setWall(c, 3, true);
+        for (int c = 17; c <= 23; c++) r.setWall(c, 3, true);
+        for (int c = 2; c <= 8; c++) r.setWall(c, 11, true);
+        for (int c = 17; c <= 23; c++) r.setWall(c, 11, true);
+    }
+
+    private static void houseWallsC(Room r, float T) {
+        // Только боковые ряды + пара в центре
+        for (int rr = 4; rr <= 10; rr++) r.setWall(2, rr, true);
+        for (int rr = 4; rr <= 10; rr++) r.setWall(23, rr, true);
+        for (int c = 6; c <= 9; c++) r.setWall(c, 5, true);
+        for (int c = 6; c <= 9; c++) r.setWall(c, 9, true);
+    }
+
+    private static void houseWallsD(Room r, float T) {
+        // Минималистично: пара кроватей в углу
+        for (int c = 3; c <= 5; c++) r.setWall(c, 4, true);
+        for (int c = 3; c <= 5; c++) r.setWall(c, 5, true);
+        for (int rr = 9; rr <= 11; rr++) r.setWall(19, rr, true);
+        for (int rr = 9; rr <= 11; rr++) r.setWall(20, rr, true);
+    }
+
+    // ------- Проходы в стенах -------
+
+    private static void houseWallDoors(Room r, int houseNum, float T) {
+        switch (houseNum) {
+            case 0:
+                r.openDoorTiles(5, 3, 3);
+                r.openDoorTiles(20, 3, 3);
+                r.openDoorTiles(5, 11, 11);
+                r.openDoorTiles(20, 11, 11);
+                r.openDoorTiles(2, 6, 6);
+                r.openDoorTiles(23, 6, 6);
+                break;
+            case 1:
+                r.openDoorTiles(5, 3, 3);
+                r.openDoorTiles(20, 3, 3);
+                r.openDoorTiles(5, 11, 11);
+                r.openDoorTiles(20, 11, 11);
+                break;
+            case 2:
+                r.openDoorTiles(2, 5, 5);
+                r.openDoorTiles(23, 5, 5);
+                r.openDoorTiles(7, 5, 5);
+                r.openDoorTiles(7, 9, 9);
+                break;
+            case 3:
+                r.openDoorTiles(4, 4, 4);
+                r.openDoorTiles(19, 9, 9);
+                break;
+        }
+    }
+
+    // ------- Наполнение домиков (предметы) -------
+
+    private static void houseItems(Assets assets, Room r, int houseNum, float T) {
+        switch (houseNum) {
+            case 0: houseItemsA(assets, r, T); break;
+            case 1: houseItemsB(assets, r, T); break;
+            case 2: houseItemsC(assets, r, T); break;
+            case 3: houseItemsD(assets, r, T); break;
+        }
+    }
+
+    private static void houseItemsA(Assets assets, Room r, float T) {
+        r.addInteractable(new Interactable(assets, 3 * T + 24, 4 * T + 24,
+            "Под кроватью — бутылка!\n«На чёрный день»."));
+        r.addInteractable(new Interactable(assets, 7 * T + 24, 4 * T + 24,
+            "Бутылка под кроватью.\n«На всякий случай»."));
+        r.addInteractable(new Interactable(assets, 3 * T + 24, 10 * T + 24,
+            "Ещё одна бутылка.\n«Запас никогда не помешает»."));
+        r.addInteractable(new Interactable(assets, 7 * T + 24, 10 * T + 24,
+            "Бутылка найдена!\n«Тихо, все спят»."));
+    }
+
+    private static void houseItemsB(Assets assets, Room r, float T) {
+        r.addInteractable(new Interactable(assets, 18 * T + 24, 4 * T + 24,
+            "Под кроватью — бутылка.\n«Для храбрости»."));
+        r.addInteractable(new Interactable(assets, 22 * T + 24, 4 * T + 24,
+            "Бутылка под кроватью.\n«Секретный запас»."));
+        r.addInteractable(new Interactable(assets, 18 * T + 24, 10 * T + 24,
+            "Ещё одна!\n«Чем больше, тем лучше»."));
+    }
+
+    private static void houseItemsC(Assets assets, Room r, float T) {
+        r.addInteractable(new Interactable(assets, 4 * T + 24, 5 * T + 24,
+            "Под кроватью — бутылка!\n«На чёрный день»."));
+        r.addInteractable(new Interactable(assets, 19 * T + 24, 5 * T + 24,
+            "Бутылка под кроватью.\n«На всякий случай»."));
+        r.addInteractable(new Interactable(assets, 4 * T + 24, 9 * T + 24,
+            "Ещё одна бутылка.\n«Запас никогда не помешает»."));
+        r.addInteractable(new Interactable(assets, 19 * T + 24, 9 * T + 24,
+            "Бутылка найдена!\n«Тихо, все спят»."));
+    }
+
+    private static void houseItemsD(Assets assets, Room r, float T) {
+        r.addInteractable(new Interactable(assets, 15 * T + 24, 4 * T + 24,
+            "Под кроватью — бутылка.\n«Для храбрости»."));
+        r.addInteractable(new Interactable(assets, 20 * T + 24, 4 * T + 24,
+            "Бутылка под кроватью.\n«Секретный запас»."));
+        r.addInteractable(new Interactable(assets, 15 * T + 24, 10 * T + 24,
+            "Ещё одна!\n«Чем больше, тем лучше»."));
+        r.addInteractable(new Interactable(assets, 20 * T + 24, 10 * T + 24,
+            "Последняя бутылка!\n«Теперь можно и выпить»."));
     }
 }

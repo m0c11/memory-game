@@ -84,6 +84,7 @@ public class MapScreen extends ScreenAdapter {
     private float fade = 0f;
     private float awakenTimer = 0f;
     private boolean debug = false;
+    private boolean allUnlocked = false;
 
     public MapScreen(MyGame game) {
         this(game, -1, false);
@@ -159,6 +160,10 @@ public class MapScreen extends ScreenAdapter {
     }
 
     private void lockClosedNodes() {
+        if (allUnlocked) {
+            world.setLockedNodes(new float[0], new float[0], LOCK_RADIUS);
+            return;
+        }
         int count = Levels.COUNT - 1 - unlockedMax;
         float[] xs = new float[count];
         float[] ys = new float[count];
@@ -223,6 +228,14 @@ public class MapScreen extends ScreenAdapter {
         if (Gdx.input.isKeyJustPressed(Input.Keys.F3)) {
             debug = !debug;
         }
+        if (Gdx.input.isKeyJustPressed(Input.Keys.F4)) {
+            allUnlocked = !allUnlocked;
+            if (allUnlocked) {
+                game.save.unlockAll();
+                unlockedMax = Levels.COUNT - 1;
+                lockClosedNodes();
+            }
+        }
         if (debug && Gdx.input.justTouched()) {
             System.out.printf("Позиция на картинке 1024x559: refX=%.0f, refY=%.0f%n",
                 mouse.x / world.width * REF_W,
@@ -231,7 +244,11 @@ public class MapScreen extends ScreenAdapter {
 
         if (controlsEnabled() && Gdx.input.isKeyJustPressed(Input.Keys.E)
             && focus >= 0 && distanceToNode(focus) <= ENTER_RADIUS) {
-            game.setScreen(new GameScreen(game, focus));
+            if (focus == 5) {
+                game.setScreen(new HorrorBaseScreen(game));
+            } else {
+                game.setScreen(new GameScreen(game, focus));
+            }
             return true;
         }
         return false;
