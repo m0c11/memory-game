@@ -1,0 +1,228 @@
+[
+  {
+    "file": "01_auditorium_chair.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "02_folding_chair_open.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "03_folding_chair_folded.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "04_music_stand.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "05_microphone_stand.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "06_sound_desk.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "07_mixing_console.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": [
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 1024x768.",
+        "severity": 2,
+        "pointer": "/images/25"
+      }
+    ]
+  },
+  {
+    "file": "08_audio_laptop.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": [
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 1024x640.",
+        "severity": 2,
+        "pointer": "/images/9"
+      }
+    ]
+  },
+  {
+    "file": "09_wall_display.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "10_stage_wedge_monitor.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "11_column_speaker.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "12_stage_spotlight.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "13_audio_cable_coil.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "14_red_sports_bag.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "15_kneepads_pair.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "16_water_bottle.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": [
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x192.",
+        "severity": 2,
+        "pointer": "/images/7"
+      }
+    ]
+  },
+  {
+    "file": "17_performance_programme.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": [
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x512.",
+        "severity": 2,
+        "pointer": "/images/4"
+      }
+    ]
+  },
+  {
+    "file": "18_stage_platform.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "19_stage_deck_module.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "20_stage_stairs_left.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "21_stage_stairs_right.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "22_carpet_floor_tile.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "23_seating_terrace.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "24_acoustic_wall.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "25_recessed_door_wall.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "26_curtain_left.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "27_curtain_right.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "28_stage_valance.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "29_black_backdrop.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "30_projection_screen.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "31_ceiling_panel.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "32_ceiling_strip_light.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  },
+  {
+    "file": "33_ceiling_soffit.glb",
+    "errors": 0,
+    "warnings": 0,
+    "messages": []
+  }
+]
