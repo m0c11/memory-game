@@ -1,0 +1,131 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/18_stage_platform.glb" id="1_platform"]
+[ext_resource type="PackedScene" path="res://assets/models/20_stage_stairs_left.glb" id="2_steps_left"]
+[ext_resource type="PackedScene" path="res://assets/models/21_stage_stairs_right.glb" id="3_steps_right"]
+[ext_resource type="PackedScene" path="res://assets/models/26_curtain_left.glb" id="4_curtain_left"]
+[ext_resource type="PackedScene" path="res://assets/models/27_curtain_right.glb" id="5_curtain_right"]
+[ext_resource type="PackedScene" path="res://assets/models/28_stage_valance.glb" id="6_valance"]
+[ext_resource type="PackedScene" path="res://assets/models/29_black_backdrop.glb" id="7_backdrop"]
+[ext_resource type="PackedScene" path="res://assets/models/30_projection_screen.glb" id="8_screen"]
+
+[sub_resource type="BoxShape3D" id="BoxShape_platform"]
+size = Vector3(11.012, 0.734, 4)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape_steps"]
+points = PackedVector3Array(-0.5315, 0, 0.65, 0.5315, 0, 0.65, -0.5315, 0, -0.60125, 0.5315, 0, -0.60125, -0.5315, 0.734, -0.60125, 0.5315, 0.734, -0.60125)
+
+[sub_resource type="StandardMaterial3D" id="Material_landing_fascia"]
+albedo_color = Color(0.065, 0.095, 0.17, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="Material_landing_wood"]
+albedo_color = Color(0.62, 0.39, 0.17, 1)
+roughness = 0.65
+
+[sub_resource type="BoxMesh" id="BoxMesh_landing"]
+material = SubResource("Material_landing_fascia")
+size = Vector3(1.1, 0.704, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_landing_top"]
+material = SubResource("Material_landing_wood")
+size = Vector3(1.1, 0.03, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape_landing"]
+size = Vector3(1.1, 0.734, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape_curtain"]
+size = Vector3(1.63, 3.86, 0.24)
+
+[sub_resource type="BoxShape3D" id="BoxShape_backdrop"]
+size = Vector3(10, 3.66, 0.15)
+
+[node name="Stage" type="Node3D"]
+
+[node name="Platform" type="StaticBody3D" parent="."]
+position = Vector3(0, 0, -4.5)
+
+[node name="Model" parent="Platform" instance=ExtResource("1_platform")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform"]
+position = Vector3(0, 0.367, 0)
+shape = SubResource("BoxShape_platform")
+
+[node name="StairsLeft" type="StaticBody3D" parent="."]
+position = Vector3(-6.025, 0, -1.9)
+
+[node name="Model" parent="StairsLeft" instance=ExtResource("2_steps_left")]
+
+[node name="WalkableRamp" type="CollisionShape3D" parent="StairsLeft"]
+shape = SubResource("ConvexPolygonShape_steps")
+
+[node name="StairsRight" type="StaticBody3D" parent="."]
+position = Vector3(6.025, 0, -1.9)
+
+[node name="Model" parent="StairsRight" instance=ExtResource("3_steps_right")]
+
+[node name="WalkableRamp" type="CollisionShape3D" parent="StairsRight"]
+shape = SubResource("ConvexPolygonShape_steps")
+
+[node name="LandingLeft" type="StaticBody3D" parent="."]
+position = Vector3(-6.025, 0, -3)
+
+[node name="Fascia" type="MeshInstance3D" parent="LandingLeft"]
+position = Vector3(0, 0.352, 0)
+mesh = SubResource("BoxMesh_landing")
+
+[node name="Deck" type="MeshInstance3D" parent="LandingLeft"]
+position = Vector3(0, 0.719, 0)
+mesh = SubResource("BoxMesh_landing_top")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LandingLeft"]
+position = Vector3(0, 0.367, 0)
+shape = SubResource("BoxShape_landing")
+
+[node name="LandingRight" type="StaticBody3D" parent="."]
+position = Vector3(6.025, 0, -3)
+
+[node name="Fascia" type="MeshInstance3D" parent="LandingRight"]
+position = Vector3(0, 0.352, 0)
+mesh = SubResource("BoxMesh_landing")
+
+[node name="Deck" type="MeshInstance3D" parent="LandingRight"]
+position = Vector3(0, 0.719, 0)
+mesh = SubResource("BoxMesh_landing_top")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LandingRight"]
+position = Vector3(0, 0.367, 0)
+shape = SubResource("BoxShape_landing")
+
+[node name="CurtainLeft" type="StaticBody3D" parent="."]
+position = Vector3(-4.8, 0.734, -3.5)
+
+[node name="Model" parent="CurtainLeft" instance=ExtResource("4_curtain_left")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CurtainLeft"]
+position = Vector3(0, 1.93, 0)
+shape = SubResource("BoxShape_curtain")
+
+[node name="CurtainRight" type="StaticBody3D" parent="."]
+position = Vector3(4.8, 0.734, -3.5)
+
+[node name="Model" parent="CurtainRight" instance=ExtResource("5_curtain_right")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CurtainRight"]
+position = Vector3(0, 1.93, 0)
+shape = SubResource("BoxShape_curtain")
+
+[node name="Valance" parent="." instance=ExtResource("6_valance")]
+position = Vector3(0, 4.55, -3.5)
+
+[node name="Backdrop" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.734, -6.35)
+
+[node name="Model" parent="Backdrop" instance=ExtResource("7_backdrop")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Backdrop"]
+position = Vector3(0, 1.83, 0)
+shape = SubResource("BoxShape_backdrop")
+
+[node name="ProjectionScreen" parent="." instance=ExtResource("8_screen")]
+position = Vector3(0, 2, -6.2)

@@ -1,0 +1,128 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/23_seating_terrace.glb" id="1_terrace"]
+[ext_resource type="PackedScene" path="res://scenes/architecture/seat_row.tscn" id="2_row"]
+[ext_resource type="PackedScene" path="res://scenes/props/auditorium_chair.tscn" id="3_chair"]
+[ext_resource type="PackedScene" path="res://assets/models/22_carpet_floor_tile.glb" id="4_floor"]
+
+[sub_resource type="ConvexPolygonShape3D" id="Shape_ramp"]
+points = PackedVector3Array(-8, -0.1, 1, 8, -0.1, 1, -8, 0, 1, 8, 0, 1, -8, -0.1, 9.45, 8, -0.1, 9.45, -8, 1.126, 9.45, 8, 1.126, 9.45)
+
+[sub_resource type="BoxShape3D" id="Shape_rear"]
+size = Vector3(16, 1.126, 1.55)
+
+[sub_resource type="BoxShape3D" id="Shape_underfloor"]
+size = Vector3(16, 0.1, 1.8)
+
+[node name="Seating" type="Node3D"]
+
+[node name="Terraces" type="Node3D" parent="."]
+
+[node name="LowerLeft" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(-6, 0, 3.3)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="LowerMiddleLeft" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(-2, 0, 3.3)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="LowerMiddleRight" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(2, 0, 3.3)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="LowerRight" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(6, 0, 3.3)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="UpperLeft" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(-6, 0.48, 6.9)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="UpperMiddleLeft" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(-2, 0.48, 6.9)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="UpperMiddleRight" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(2, 0.48, 6.9)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="UpperRight" parent="Terraces" instance=ExtResource("1_terrace")]
+position = Vector3(6, 0.48, 6.9)
+rotation = Vector3(0, 3.141593, 0)
+scale = Vector3(1, 1, 1.333333)
+
+[node name="RearWalkway" parent="Terraces" instance=ExtResource("4_floor")]
+position = Vector3(0, 1.126, 9.85)
+scale = Vector3(8, 1, 1.15)
+
+[node name="SmoothStairCollision" type="StaticBody3D" parent="."]
+
+[node name="Ramp" type="CollisionShape3D" parent="SmoothStairCollision"]
+shape = SubResource("Shape_ramp")
+
+[node name="RearLanding" type="CollisionShape3D" parent="SmoothStairCollision"]
+position = Vector3(0, 0.563, 10.225)
+shape = SubResource("Shape_rear")
+
+[node name="Rows" type="Node3D" parent="."]
+
+[node name="Row01" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 0.166, 2.1)
+
+[node name="Row02" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 0.326, 3.3)
+
+[node name="Row03" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 0.486, 4.5)
+
+[node name="Row04" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 0.646, 5.7)
+
+[node name="Row05" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 0.806, 6.9)
+
+[node name="Row06BesideSoundDesk" type="Node3D" parent="Rows"]
+position = Vector3(0, 0.966, 8.1)
+
+[node name="Seat01" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(-1.5, 0, 0)
+
+[node name="Seat02" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(-0.7, 0, 0)
+
+[node name="Seat03" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(0.1, 0, 0)
+
+[node name="Seat04" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(0.9, 0, 0)
+
+[node name="Seat05" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(1.7, 0, 0)
+
+[node name="Seat06" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(2.5, 0, 0)
+
+[node name="Seat07" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(3.3, 0, 0)
+
+[node name="Seat08" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(4.1, 0, 0)
+
+[node name="Right01" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(6.3, 0, 0)
+
+[node name="Right02" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(7.1, 0, 0)
+
+[node name="Left01" parent="Rows/Row06BesideSoundDesk" instance=ExtResource("3_chair")]
+position = Vector3(-7.2, 0, 0)
+
+[node name="Row07" parent="Rows" instance=ExtResource("2_row")]
+position = Vector3(0, 1.126, 9.3)

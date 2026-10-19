@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/10_stage_wedge_monitor.glb" id="1_model"]
+
+[sub_resource type="ConvexPolygonShape3D" id="Shape_wedge"]
+points = PackedVector3Array(-0.24, 0.015, -0.16, 0.24, 0.015, -0.16, -0.24, 0.015, 0.17, 0.24, 0.015, 0.17, -0.24, 0.28, -0.06, 0.24, 0.28, -0.06, -0.24, 0.09, 0.17, 0.24, 0.09, 0.17)
+
+[node name="FloorMonitor" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_model")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Shape_wedge")

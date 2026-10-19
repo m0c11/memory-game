@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/auditorium_chair.tscn" id="1_chair"]
+
+[node name="SeatRow" type="Node3D"]
+
+[node name="Seat01" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-5.5, 0, 0)
+
+[node name="Seat02" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-4.7, 0, 0)
+
+[node name="Seat03" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-3.9, 0, 0)
+
+[node name="Seat04" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-3.1, 0, 0)
+
+[node name="Seat05" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-2.3, 0, 0)
+
+[node name="Seat06" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-1.5, 0, 0)
+
+[node name="Seat07" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-0.7, 0, 0)
+
+[node name="Seat08" parent="." instance=ExtResource("1_chair")]
+position = Vector3(0.1, 0, 0)
+
+[node name="Seat09" parent="." instance=ExtResource("1_chair")]
+position = Vector3(0.9, 0, 0)
+
+[node name="Seat10" parent="." instance=ExtResource("1_chair")]
+position = Vector3(1.7, 0, 0)
+
+[node name="Seat11" parent="." instance=ExtResource("1_chair")]
+position = Vector3(2.5, 0, 0)
+
+[node name="Seat12" parent="." instance=ExtResource("1_chair")]
+position = Vector3(3.3, 0, 0)
+
+[node name="Seat13" parent="." instance=ExtResource("1_chair")]
+position = Vector3(4.1, 0, 0)
+
+[node name="RightSide01" parent="." instance=ExtResource("1_chair")]
+position = Vector3(6.3, 0, 0)
+
+[node name="RightSide02" parent="." instance=ExtResource("1_chair")]
+position = Vector3(7.1, 0, 0)
+
+[node name="LeftSide" parent="." instance=ExtResource("1_chair")]
+position = Vector3(-7.2, 0, 0)
