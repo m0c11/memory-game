@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4nxivwarnc8p"
-path="res://.godot/imported/01_auditorium_chair_navy_fabric_base.png-7079ac04d7134b985b8e35728fb03a6a.ctex"
+path.s3tc="res://.godot/imported/01_auditorium_chair_navy_fabric_base.png-7079ac04d7134b985b8e35728fb03a6a.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "6966df3936ead0bab8c5ee23d7f3e623"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/models/01_auditorium_chair_navy_fabric_base.png"
-dest_files=["res://.godot/imported/01_auditorium_chair_navy_fabric_base.png-7079ac04d7134b985b8e35728fb03a6a.ctex"]
+dest_files=["res://.godot/imported/01_auditorium_chair_navy_fabric_base.png-7079ac04d7134b985b8e35728fb03a6a.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buuivydv3mh06"
-path="res://.godot/imported/23_seating_terrace_cream_trim_orm.png-ccbd7021970b0c44f8f926e206dd1202.ctex"
+path.s3tc="res://.godot/imported/23_seating_terrace_cream_trim_orm.png-ccbd7021970b0c44f8f926e206dd1202.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "cb1c59802d511a7c8a518718574ed4fa"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/models/23_seating_terrace_cream_trim_orm.png"
-dest_files=["res://.godot/imported/23_seating_terrace_cream_trim_orm.png-ccbd7021970b0c44f8f926e206dd1202.ctex"]
+dest_files=["res://.godot/imported/23_seating_terrace_cream_trim_orm.png-ccbd7021970b0c44f8f926e206dd1202.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

@@ -27,6 +27,7 @@ roughness = 0.9
 [sub_resource type="BoxMesh" id="EndWallMesh"]
 material = SubResource("CreamMaterial")
 size = Vector3(16.2, 6, 0.2)
+add_uv2 = true
 
 [node name="HallShell" type="Node3D"]
 
@@ -185,10 +186,12 @@ scale = Vector3(0.458333, 1.142857, 1)
 [node name="RearWall" type="MeshInstance3D" parent="."]
 position = Vector3(0, 3, 11)
 layers = 2
+gi_mode = 1
 mesh = SubResource("EndWallMesh")
 
 [node name="StageRearWall" type="MeshInstance3D" parent="."]
 position = Vector3(0, 3, -7)
+gi_mode = 1
 mesh = SubResource("EndWallMesh")
 
 [node name="FrontDoorPiers" type="Node3D" parent="."]

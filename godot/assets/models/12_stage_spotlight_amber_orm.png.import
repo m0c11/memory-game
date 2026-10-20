@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4k5ebesv8qws"
-path="res://.godot/imported/12_stage_spotlight_amber_orm.png-227f1a85f1774584dcbbca757496d706.ctex"
+path.s3tc="res://.godot/imported/12_stage_spotlight_amber_orm.png-227f1a85f1774584dcbbca757496d706.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "7878768bc6eda7615cd878c6a2b1b8a7"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/models/12_stage_spotlight_amber_orm.png"
-dest_files=["res://.godot/imported/12_stage_spotlight_amber_orm.png-227f1a85f1774584dcbbca757496d706.ctex"]
+dest_files=["res://.godot/imported/12_stage_spotlight_amber_orm.png-227f1a85f1774584dcbbca757496d706.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -40,4 +41,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
