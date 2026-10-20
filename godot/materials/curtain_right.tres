@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://shaders/curtain_fabric.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/models/27_curtain_right_navy_fabric_base.png" id="2_color"]
+[ext_resource type="Texture2D" path="res://assets/models/27_curtain_right_navy_fabric_normal.png" id="3_normal"]
+[ext_resource type="Texture2D" path="res://assets/models/27_curtain_right_navy_fabric_orm.png" id="4_orm"]
+
+[resource]
+resource_name = "Right curtain — subtle fabric motion"
+shader = ExtResource("1_shader")
+shader_parameter/fabric_color = ExtResource("2_color")
+shader_parameter/fabric_normal = ExtResource("3_normal")
+shader_parameter/fabric_orm = ExtResource("4_orm")
+shader_parameter/fabric_height = 3.8
+shader_parameter/sway_amplitude = 0.018
+shader_parameter/sway_speed = 0.68
+shader_parameter/phase_offset = 2.4
+shader_parameter/normal_strength = 0.3

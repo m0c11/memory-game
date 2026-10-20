@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3]
+[gd_scene load_steps=21 format=3]
 
 [ext_resource type="PackedScene" path="res://assets/models/18_stage_platform.glb" id="1_platform"]
 [ext_resource type="PackedScene" path="res://assets/models/20_stage_stairs_left.glb" id="2_steps_left"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" path="res://assets/models/29_black_backdrop.glb" id="7_backdrop"]
 [ext_resource type="PackedScene" path="res://assets/models/30_projection_screen.glb" id="8_screen"]
 [ext_resource type="Material" path="res://materials/stage_maple.tres" id="9_wood"]
+[ext_resource type="Material" path="res://materials/curtain_left.tres" id="10_curtain_left"]
+[ext_resource type="Material" path="res://materials/curtain_right.tres" id="11_curtain_right"]
 
 [sub_resource type="BoxShape3D" id="BoxShape_platform"]
 size = Vector3(11.012, 0.734, 4)
@@ -112,6 +114,14 @@ position = Vector3(-4.8, 0.734, -3.5)
 
 [node name="Model" parent="CurtainLeft" instance=ExtResource("4_curtain_left")]
 
+[node name="26_curtain_left__bottom_hem" parent="CurtainLeft/Model/26_curtain_left" index="0"]
+material_override = ExtResource("10_curtain_left")
+extra_cull_margin = 0.03
+
+[node name="26_curtain_left__folded_fabric" parent="CurtainLeft/Model/26_curtain_left" index="1"]
+material_override = ExtResource("10_curtain_left")
+extra_cull_margin = 0.03
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CurtainLeft"]
 position = Vector3(0, 1.93, 0)
 shape = SubResource("BoxShape_curtain")
@@ -120,6 +130,14 @@ shape = SubResource("BoxShape_curtain")
 position = Vector3(4.8, 0.734, -3.5)
 
 [node name="Model" parent="CurtainRight" instance=ExtResource("5_curtain_right")]
+
+[node name="27_curtain_right__bottom_hem" parent="CurtainRight/Model/27_curtain_right" index="0"]
+material_override = ExtResource("11_curtain_right")
+extra_cull_margin = 0.03
+
+[node name="27_curtain_right__folded_fabric" parent="CurtainRight/Model/27_curtain_right" index="1"]
+material_override = ExtResource("11_curtain_right")
+extra_cull_margin = 0.03
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CurtainRight"]
 position = Vector3(0, 1.93, 0)
@@ -141,3 +159,5 @@ shape = SubResource("BoxShape_backdrop")
 position = Vector3(0, 2, -6.2)
 
 [editable path="Platform/Model"]
+[editable path="CurtainLeft/Model"]
+[editable path="CurtainRight/Model"]

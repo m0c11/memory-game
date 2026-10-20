@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3]
+
+[sub_resource type="Gradient" id="Gradient_soft_disc"]
+offsets = PackedFloat32Array(0, 0.25, 1)
+colors = PackedColorArray(1, 1, 1, 0.65, 1, 1, 1, 0.3, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="Texture_soft_disc"]
+gradient = SubResource("Gradient_soft_disc")
+width = 32
+height = 32
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="Material_dust"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("Texture_soft_disc")
+billboard_mode = 3
+billboard_keep_scale = true
+disable_receive_shadows = true
+
+[sub_resource type="QuadMesh" id="Mesh_dust"]
+material = SubResource("Material_dust")
+size = Vector2(0.035, 0.035)
+
+[sub_resource type="Gradient" id="Gradient_lifetime"]
+offsets = PackedFloat32Array(0, 0.2, 0.75, 1)
+colors = PackedColorArray(1, 0.88, 0.68, 0, 1, 0.88, 0.68, 0.42, 1, 0.88, 0.68, 0.42, 1, 0.88, 0.68, 0)
+
+[sub_resource type="Curve" id="Curve_size"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(0.25, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="StageDust" type="CPUParticles3D"]
+cast_shadow = 0
+amount = 40
+lifetime = 14.0
+preprocess = 14.0
+randomness = 0.35
+local_coords = true
+fixed_fps = 30
+mesh = SubResource("Mesh_dust")
+emission_shape = 3
+emission_box_extents = Vector3(1.1, 1.2, 0.8)
+direction = Vector3(0.4, -0.15, 0.2)
+spread = 65.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 0.025
+initial_velocity_max = 0.055
+scale_amount_min = 0.35
+scale_amount_max = 1.0
+scale_amount_curve = SubResource("Curve_size")
+color_ramp = SubResource("Gradient_lifetime")
