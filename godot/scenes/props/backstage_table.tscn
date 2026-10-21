@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Material" path="res://materials/stage_maple.tres" id="1_wood"]
+[ext_resource type="Material" path="res://materials/backstage_metal.tres" id="2_metal"]
+
+[sub_resource type="BoxMesh" id="Box"]
+size = Vector3(1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="Shape"]
+size = Vector3(1.95, 0.82, 0.7)
+
+[node name="BackstageTable" type="StaticBody3D"]
+
+[node name="Top" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.785, 0)
+scale = Vector3(1.95, 0.07, 0.7)
+mesh = SubResource("Box")
+material_override = ExtResource("1_wood")
+
+[node name="LegFrontLeft" type="MeshInstance3D" parent="."]
+position = Vector3(-0.87, 0.375, 0.24)
+scale = Vector3(0.065, 0.75, 0.065)
+mesh = SubResource("Box")
+material_override = ExtResource("2_metal")
+
+[node name="LegFrontRight" type="MeshInstance3D" parent="."]
+position = Vector3(0.87, 0.375, 0.24)
+scale = Vector3(0.065, 0.75, 0.065)
+mesh = SubResource("Box")
+material_override = ExtResource("2_metal")
+
+[node name="LegRearLeft" type="MeshInstance3D" parent="."]
+position = Vector3(-0.87, 0.375, -0.24)
+scale = Vector3(0.065, 0.75, 0.065)
+mesh = SubResource("Box")
+material_override = ExtResource("2_metal")
+
+[node name="LegRearRight" type="MeshInstance3D" parent="."]
+position = Vector3(0.87, 0.375, -0.24)
+scale = Vector3(0.065, 0.75, 0.065)
+mesh = SubResource("Box")
+material_override = ExtResource("2_metal")
+
+[node name="RearBrace" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.2, -0.24)
+scale = Vector3(1.8, 0.045, 0.045)
+mesh = SubResource("Box")
+material_override = ExtResource("2_metal")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.41, 0)
+shape = SubResource("Shape")

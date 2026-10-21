@@ -1,0 +1,138 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/props/piano_octave.tscn" id="1_keys"]
+
+[sub_resource type="StandardMaterial3D" id="PinkPaint"]
+albedo_color = Color(0.77, 0.32, 0.46, 1)
+roughness = 0.68
+
+[sub_resource type="StandardMaterial3D" id="PinkLid"]
+albedo_color = Color(0.85, 0.41, 0.54, 1)
+roughness = 0.62
+
+[sub_resource type="StandardMaterial3D" id="Brass"]
+albedo_color = Color(0.53, 0.38, 0.15, 1)
+metallic = 0.65
+roughness = 0.4
+
+[sub_resource type="StandardMaterial3D" id="Dark"]
+albedo_color = Color(0.055, 0.04, 0.045, 1)
+roughness = 0.6
+
+[sub_resource type="BoxMesh" id="Box"]
+size = Vector3(1, 1, 1)
+
+[sub_resource type="CylinderMesh" id="Leg"]
+material = SubResource("PinkPaint")
+top_radius = 0.065
+bottom_radius = 0.04
+height = 0.72
+radial_segments = 12
+
+[sub_resource type="BoxShape3D" id="Shape"]
+size = Vector3(1.45, 1.02, 1.95)
+
+[node name="PinkGrandPiano" type="StaticBody3D"]
+
+[node name="Body" type="CSGPolygon3D" parent="."]
+position = Vector3(0, 0.73, 0)
+rotation = Vector3(1.5707963, 0, 0)
+polygon = PackedVector2Array(-0.7, 0.58, -0.7, -0.72, -0.66, -0.91, -0.53, -1.02, -0.32, -1.04, -0.12, -0.99, 0.02, -0.88, 0.1, -0.68, 0.15, -0.44, 0.26, -0.23, 0.43, -0.09, 0.61, 0.03, 0.7, 0.19, 0.7, 0.58)
+depth = 0.2
+material = SubResource("PinkPaint")
+
+[node name="Lid" type="CSGPolygon3D" parent="."]
+position = Vector3(0, 0.94, 0)
+rotation = Vector3(1.5707963, 0, 0)
+polygon = PackedVector2Array(-0.71, 0.59, -0.71, -0.72, -0.67, -0.92, -0.54, -1.03, -0.32, -1.05, -0.11, -1, 0.03, -0.89, 0.11, -0.69, 0.16, -0.45, 0.27, -0.24, 0.44, -0.1, 0.62, 0.02, 0.71, 0.18, 0.71, 0.59)
+depth = 0.025
+material = SubResource("PinkLid")
+
+[node name="LidHinge" type="MeshInstance3D" parent="."]
+position = Vector3(-0.685, 0.974, -0.15)
+scale = Vector3(0.018, 0.015, 1.35)
+mesh = SubResource("Box")
+material_override = SubResource("Brass")
+
+[node name="KeyboardBed" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.755, 0.725)
+scale = Vector3(1.4, 0.09, 0.33)
+mesh = SubResource("Box")
+material_override = SubResource("PinkPaint")
+
+[node name="Keys01" parent="." instance=ExtResource("1_keys")]
+position = Vector3(-0.532, 0.813, 0.725)
+
+[node name="Keys02" parent="." instance=ExtResource("1_keys")]
+position = Vector3(-0.266, 0.813, 0.725)
+
+[node name="Keys03" parent="." instance=ExtResource("1_keys")]
+position = Vector3(0, 0.813, 0.725)
+
+[node name="Keys04" parent="." instance=ExtResource("1_keys")]
+position = Vector3(0.266, 0.813, 0.725)
+
+[node name="LeftCheek" type="MeshInstance3D" parent="."]
+position = Vector3(-0.625, 0.823, 0.725)
+scale = Vector3(0.15, 0.06, 0.33)
+mesh = SubResource("Box")
+material_override = SubResource("PinkLid")
+
+[node name="RightCheek" type="MeshInstance3D" parent="."]
+position = Vector3(0.625, 0.823, 0.725)
+scale = Vector3(0.15, 0.06, 0.33)
+mesh = SubResource("Box")
+material_override = SubResource("PinkLid")
+
+[node name="MusicRest" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.11, 0.3)
+rotation = Vector3(-0.18, 0, 0)
+scale = Vector3(0.72, 0.28, 0.025)
+mesh = SubResource("Box")
+material_override = SubResource("PinkPaint")
+
+[node name="LegLeft" type="MeshInstance3D" parent="."]
+position = Vector3(-0.57, 0.36, 0.43)
+mesh = SubResource("Leg")
+
+[node name="LegRight" type="MeshInstance3D" parent="."]
+position = Vector3(0.57, 0.36, 0.43)
+mesh = SubResource("Leg")
+
+[node name="TailLeg" type="MeshInstance3D" parent="."]
+position = Vector3(-0.33, 0.36, -0.83)
+mesh = SubResource("Leg")
+
+[node name="PedalSupport" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.39, 0.4)
+scale = Vector3(0.07, 0.64, 0.06)
+mesh = SubResource("Box")
+material_override = SubResource("PinkPaint")
+
+[node name="PedalBase" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.085, 0.43)
+scale = Vector3(0.3, 0.055, 0.14)
+mesh = SubResource("Box")
+material_override = SubResource("Dark")
+
+[node name="PedalLeft" type="MeshInstance3D" parent="."]
+position = Vector3(-0.09, 0.08, 0.57)
+scale = Vector3(0.045, 0.025, 0.2)
+mesh = SubResource("Box")
+material_override = SubResource("Brass")
+
+[node name="PedalCenter" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.08, 0.57)
+scale = Vector3(0.045, 0.025, 0.2)
+mesh = SubResource("Box")
+material_override = SubResource("Brass")
+
+[node name="PedalRight" type="MeshInstance3D" parent="."]
+position = Vector3(0.09, 0.08, 0.57)
+scale = Vector3(0.045, 0.025, 0.2)
+mesh = SubResource("Box")
+material_override = SubResource("Brass")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.51, -0.08)
+shape = SubResource("Shape")

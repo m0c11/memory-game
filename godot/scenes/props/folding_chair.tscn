@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/02_folding_chair_open.glb" id="1_model"]
+
+[sub_resource type="BoxShape3D" id="Shape"]
+size = Vector3(0.48, 0.88, 0.5)
+
+[node name="FoldingChair" type="StaticBody3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_model")]
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.44, 0)
+shape = SubResource("Shape")

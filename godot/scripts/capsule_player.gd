@@ -2,6 +2,8 @@ extends CharacterBody3D
 ## Геометрия, коллизия и камера сохранены в capsule_player.tscn.
 ## Скрипт только двигает готового игрока и переключает камеры.
 
+signal location_changed(location_name: String)
+
 @export var walk_speed: float = 3.5
 @export var sprint_speed: float = 5.5
 @export var acceleration: float = 18.0
@@ -15,10 +17,24 @@ extends CharacterBody3D
 var first_person: bool = false
 var gravity: float = float(ProjectSettings.get_setting("physics/3d/default_gravity", 9.8))
 var spawn_transform: Transform3D
+var overview_camera: Camera3D
 
 
 func _ready() -> void:
 	spawn_transform = global_transform
+	overview_camera = get_tree().get_first_node_in_group("overview_camera") as Camera3D
+
+
+func enter_location(arrival: Marker3D, camera: Camera3D, location_name: String) -> void:
+	# Rooms, cameras and arrival markers already exist in the saved level.
+	overview_camera = camera
+	spawn_transform = arrival.global_transform
+	_reset_position()
+	if first_person:
+		first_person_camera.make_current()
+	else:
+		overview_camera.make_current()
+	location_changed.emit(location_name)
 
 
 func _physics_process(delta: float) -> void:
@@ -32,10 +48,17 @@ func _physics_process(delta: float) -> void:
 
 	var input_vector := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var direction := Vector3(input_vector.x, 0.0, input_vector.y)
-	# В общем виде W направляет к сцене; от первого лица — по взгляду.
+	# Движение следует взгляду: в зале W направляет к сцене,
+	# в кулисах — в глубину текущего обзорного ракурса.
 	if first_person:
 		direction = global_transform.basis * direction
 		direction.y = 0.0
+	elif is_instance_valid(overview_camera):
+		var forward := -overview_camera.global_basis.z
+		forward.y = 0.0
+		var right := overview_camera.global_basis.x
+		right.y = 0.0
+		direction = right.normalized() * input_vector.x - forward.normalized() * input_vector.y
 
 	var speed: float = sprint_speed if Input.is_action_pressed("sprint") else walk_speed
 	velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
@@ -67,7 +90,6 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _toggle_camera() -> void:
 	if first_person:
-		var overview_camera := get_tree().get_first_node_in_group("overview_camera") as Camera3D
 		if not is_instance_valid(overview_camera):
 			return
 		first_person = false
@@ -91,3 +113,6 @@ func _reset_position() -> void:
 	velocity = Vector3.ZERO
 	visual.rotation = Vector3.ZERO
 	head.rotation = Vector3.ZERO
+	if not first_person:
+		visual.rotation.y = rotation.y
+		rotation.y = 0.0

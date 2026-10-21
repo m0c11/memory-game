@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Material" path="res://materials/stage_maple.tres" id="1_wood"]
+[ext_resource type="Material" path="res://materials/backstage_metal.tres" id="2_metal"]
+
+[sub_resource type="BoxMesh" id="Board"]
+material = ExtResource("1_wood")
+size = Vector3(1.8, 0.14, 0.045)
+
+[sub_resource type="CylinderMesh" id="Peg"]
+material = ExtResource("2_metal")
+top_radius = 0.018
+bottom_radius = 0.018
+height = 0.12
+radial_segments = 8
+
+[node name="WallHooks" type="Node3D"]
+
+[node name="Board" type="MeshInstance3D" parent="."]
+mesh = SubResource("Board")
+
+[node name="Hook01" type="MeshInstance3D" parent="."]
+position = Vector3(-0.7, 0.015, 0.07)
+rotation = Vector3(1.2, 0, 0)
+mesh = SubResource("Peg")
+
+[node name="Hook02" type="MeshInstance3D" parent="."]
+position = Vector3(-0.35, 0.015, 0.07)
+rotation = Vector3(1.2, 0, 0)
+mesh = SubResource("Peg")
+
+[node name="Hook03" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.015, 0.07)
+rotation = Vector3(1.2, 0, 0)
+mesh = SubResource("Peg")
+
+[node name="Hook04" type="MeshInstance3D" parent="."]
+position = Vector3(0.35, 0.015, 0.07)
+rotation = Vector3(1.2, 0, 0)
+mesh = SubResource("Peg")
+
+[node name="Hook05" type="MeshInstance3D" parent="."]
+position = Vector3(0.7, 0.015, 0.07)
+rotation = Vector3(1.2, 0, 0)
+mesh = SubResource("Peg")

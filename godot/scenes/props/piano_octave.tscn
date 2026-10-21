@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3]
+
+[sub_resource type="StandardMaterial3D" id="Ivory"]
+albedo_color = Color(0.94, 0.9, 0.79, 1)
+roughness = 0.35
+
+[sub_resource type="StandardMaterial3D" id="Ebony"]
+albedo_color = Color(0.025, 0.027, 0.03, 1)
+roughness = 0.32
+
+[sub_resource type="BoxMesh" id="WhiteKey"]
+material = SubResource("Ivory")
+size = Vector3(0.037, 0.025, 0.24)
+
+[sub_resource type="BoxMesh" id="BlackKey"]
+material = SubResource("Ebony")
+size = Vector3(0.022, 0.04, 0.14)
+
+[node name="PianoOctave" type="Node3D"]
+
+[node name="C" type="MeshInstance3D" parent="."]
+position = Vector3(0.019, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="D" type="MeshInstance3D" parent="."]
+position = Vector3(0.057, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="E" type="MeshInstance3D" parent="."]
+position = Vector3(0.095, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="F" type="MeshInstance3D" parent="."]
+position = Vector3(0.133, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="G" type="MeshInstance3D" parent="."]
+position = Vector3(0.171, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="A" type="MeshInstance3D" parent="."]
+position = Vector3(0.209, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="B" type="MeshInstance3D" parent="."]
+position = Vector3(0.247, 0, 0)
+mesh = SubResource("WhiteKey")
+
+[node name="Cs" type="MeshInstance3D" parent="."]
+position = Vector3(0.038, 0.028, -0.045)
+mesh = SubResource("BlackKey")
+
+[node name="Ds" type="MeshInstance3D" parent="."]
+position = Vector3(0.076, 0.028, -0.045)
+mesh = SubResource("BlackKey")
+
+[node name="Fs" type="MeshInstance3D" parent="."]
+position = Vector3(0.152, 0.028, -0.045)
+mesh = SubResource("BlackKey")
+
+[node name="Gs" type="MeshInstance3D" parent="."]
+position = Vector3(0.19, 0.028, -0.045)
+mesh = SubResource("BlackKey")
+
+[node name="As" type="MeshInstance3D" parent="."]
+position = Vector3(0.228, 0.028, -0.045)
+mesh = SubResource("BlackKey")

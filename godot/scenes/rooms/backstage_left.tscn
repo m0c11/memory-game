@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/architecture/backstage_shell.tscn" id="1_shell"]
+[ext_resource type="PackedScene" path="res://scenes/architecture/backstage_lighting.tscn" id="2_light"]
+[ext_resource type="PackedScene" path="res://scenes/props/vanity_station.tscn" id="3_vanity"]
+[ext_resource type="PackedScene" path="res://scenes/props/backstage_stool.tscn" id="4_stool"]
+[ext_resource type="PackedScene" path="res://scenes/props/wall_hooks.tscn" id="5_hooks"]
+[ext_resource type="PackedScene" path="res://scenes/props/backstage_door.tscn" id="6_door"]
+[ext_resource type="PackedScene" path="res://scenes/interactions/room_portal.tscn" id="7_exit"]
+[ext_resource type="PackedScene" path="res://assets/models/14_red_sports_bag.glb" id="8_bag"]
+[ext_resource type="PackedScene" path="res://assets/models/16_water_bottle.glb" id="9_water"]
+[ext_resource type="PackedScene" path="res://assets/models/17_performance_programme.glb" id="10_programme"]
+
+[node name="BackstageLeft" type="Node3D"]
+
+[node name="Shell" parent="." instance=ExtResource("1_shell")]
+
+[node name="Lighting" parent="." instance=ExtResource("2_light")]
+
+[node name="VanityLeft" parent="." instance=ExtResource("3_vanity")]
+position = Vector3(-1.1, 0, -2.08)
+
+[node name="VanityRight" parent="." instance=ExtResource("3_vanity")]
+position = Vector3(1.1, 0, -2.08)
+
+[node name="VanityStoolLeft" parent="." instance=ExtResource("4_stool")]
+position = Vector3(-1.1, 0, -1.2)
+
+[node name="VanityStoolRight" parent="." instance=ExtResource("4_stool")]
+position = Vector3(1.1, 0, -1.2)
+
+[node name="HooksLeft" parent="." instance=ExtResource("5_hooks")]
+position = Vector3(-1.1, 1.7, 2.45)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="HooksRight" parent="." instance=ExtResource("5_hooks")]
+position = Vector3(1.1, 1.7, 2.45)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="NearStool01" parent="." instance=ExtResource("4_stool")]
+position = Vector3(-1.8, 0, 1.95)
+
+[node name="NearStool02" parent="." instance=ExtResource("4_stool")]
+position = Vector3(-0.7, 0, 1.9)
+
+[node name="NearStool03" parent="." instance=ExtResource("4_stool")]
+position = Vector3(0.5, 0, 1.95)
+
+[node name="SportsBag" parent="." instance=ExtResource("8_bag")]
+position = Vector3(-1.8, 0.485, 1.95)
+rotation = Vector3(0, 0.25, 0)
+
+[node name="WaterBottle" parent="." instance=ExtResource("9_water")]
+position = Vector3(-1.8, 0.82, -2.0)
+
+[node name="Programme" parent="." instance=ExtResource("10_programme")]
+position = Vector3(1.6, 0.821, -1.95)
+rotation = Vector3(0, -0.15, 0)
+
+[node name="Door" parent="." instance=ExtResource("6_door")]
+position = Vector3(2.94, 0, 0)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="Frame" parent="Door" index="0"]
+layers = 8
+
+[node name="Leaf" parent="Door" index="1"]
+layers = 8
+
+[node name="Handle" parent="Door" index="2"]
+layers = 8
+
+[node name="Sign" parent="Door" index="3"]
+layers = 8
+
+[node name="Arrival" type="Marker3D" parent="."]
+position = Vector3(1.25, 0.03, 0)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="OverviewCamera" type="Camera3D" parent="."]
+position = Vector3(5.6, 3.5, 0.6)
+rotation = Vector3(-0.34, 1.47, 0)
+cull_mask = 1048563
+fov = 53.0
+near = 0.05
+far = 20.0
+
+[node name="Exit" parent="." instance=ExtResource("7_exit")]
+position = Vector3(2.25, 0.95, 0)
+rotation = Vector3(0, 1.5707963, 0)
+prompt_text = "E — вернуться в зал"
+
+[editable path="Door"]

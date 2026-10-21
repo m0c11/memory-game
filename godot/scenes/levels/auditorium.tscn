@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3]
+[gd_scene load_steps=32 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/architecture/hall_shell.tscn" id="1_shell"]
 [ext_resource type="PackedScene" path="res://scenes/architecture/stage.tscn" id="2_stage"]
@@ -22,6 +22,9 @@
 [ext_resource type="Environment" path="res://materials/hall_environment.tres" id="21_environment"]
 [ext_resource type="LightmapGIData" path="res://assets/lighting/auditorium.lmbake" id="22_lightmap"]
 [ext_resource type="PackedScene" path="res://scenes/effects/stage_dust.tscn" id="23_dust"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/backstage_left.tscn" id="24_left_room"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/backstage_right.tscn" id="25_right_room"]
+[ext_resource type="PackedScene" path="res://scenes/interactions/room_portal.tscn" id="26_portal"]
 
 [sub_resource type="StyleBoxFlat" id="Style_header"]
 content_margin_left = 20.0
@@ -52,6 +55,9 @@ size = Vector3(1.7, 0.95, 0.48)
 [sub_resource type="CylinderShape3D" id="Shape_music_stand"]
 height = 1.35
 radius = 0.25
+
+[sub_resource type="BoxShape3D" id="Shape_entrance_reach"]
+size = Vector3(1.15, 1.9, 1.9)
 
 [node name="Auditorium" type="Node3D"]
 
@@ -333,6 +339,72 @@ far = 80.0
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector3(0.2, 0.03, -0.55)
 
+[node name="Backstage" type="Node3D" parent="."]
+
+[node name="Left" parent="Backstage" instance=ExtResource("24_left_room")]
+position = Vector3(-20, 0, -4)
+
+[node name="Exit" parent="Backstage/Left"]
+destination_path = NodePath("../../../ReturnPoints/Left")
+camera_path = NodePath("../../../Cameras/ReferenceCamera")
+location_name = "Актовый зал"
+
+[node name="Right" parent="Backstage" instance=ExtResource("25_right_room")]
+position = Vector3(20, 0, -4)
+
+[node name="Exit" parent="Backstage/Right"]
+destination_path = NodePath("../../../ReturnPoints/Right")
+camera_path = NodePath("../../../Cameras/ReferenceCamera")
+location_name = "Актовый зал"
+
+[node name="ReturnPoints" type="Node3D" parent="."]
+
+[node name="Left" type="Marker3D" parent="ReturnPoints"]
+position = Vector3(-7.25, 0.03, -0.3)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="Right" type="Marker3D" parent="ReturnPoints"]
+position = Vector3(7.25, 0.03, -0.3)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="Passages" type="Node3D" parent="."]
+
+[node name="LeftEntrance" parent="Passages" instance=ExtResource("26_portal")]
+position = Vector3(-7.25, 0.95, -1.35)
+destination_path = NodePath("../../Backstage/Left/Arrival")
+camera_path = NodePath("../../Backstage/Left/OverviewCamera")
+location_name = "Левая кулиса · гримёрная"
+prompt_text = "E — войти в левую кулису"
+
+[node name="Reach" parent="Passages/LeftEntrance" index="0"]
+shape = SubResource("Shape_entrance_reach")
+
+[node name="RightEntrance" parent="Passages" instance=ExtResource("26_portal")]
+position = Vector3(7.25, 0.95, -1.35)
+destination_path = NodePath("../../Backstage/Right/Arrival")
+camera_path = NodePath("../../Backstage/Right/OverviewCamera")
+location_name = "Правая кулиса · рояль"
+prompt_text = "E — войти в правую кулису"
+
+[node name="Reach" parent="Passages/RightEntrance" index="0"]
+shape = SubResource("Shape_entrance_reach")
+
+[node name="LeftDoorSign" type="Label3D" parent="Passages"]
+position = Vector3(-7.25, 2.35, -2.42)
+pixel_size = 0.002
+font_size = 42
+modulate = Color(0.96, 0.86, 0.65, 1)
+text = "ЛЕВАЯ КУЛИСА"
+outline_size = 8
+
+[node name="RightDoorSign" type="Label3D" parent="Passages"]
+position = Vector3(7.25, 2.35, -2.42)
+pixel_size = 0.002
+font_size = 42
+modulate = Color(0.96, 0.86, 0.65, 1)
+text = "ПРАВАЯ КУЛИСА"
+outline_size = 8
+
 [node name="Interface" type="CanvasLayer" parent="."]
 
 [node name="Title" type="PanelContainer" parent="Interface"]
@@ -377,5 +449,12 @@ theme_override_styles/panel = SubResource("Style_controls")
 layout_mode = 2
 theme_override_colors/font_color = Color(0.86, 0.89, 0.94, 1)
 theme_override_font_sizes/font_size = 15
-text = "WASD / стрелки — идти    Shift — бег    Пробел — прыжок    Tab — камера    R — к началу    Esc — курсор"
+text = "WASD — идти   Shift — бег   Пробел — прыжок   E — дверь   Tab — камера   R — к входу   Esc — курсор"
 horizontal_alignment = 1
+
+[connection signal="location_changed" from="Player" to="Interface/Title/Text/Subtitle" method="set_text"]
+
+[editable path="Backstage/Left"]
+[editable path="Backstage/Right"]
+[editable path="Passages/LeftEntrance"]
+[editable path="Passages/RightEntrance"]
