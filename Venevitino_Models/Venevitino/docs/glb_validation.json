@@ -1,0 +1,479 @@
+{
+  "files": 59,
+  "passed": 59,
+  "errors": 0,
+  "results": [
+    {
+      "file": "backpack.glb",
+      "bytes": 508516,
+      "meshes": 1,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "bed_blue.glb",
+      "bytes": 4278928,
+      "meshes": 1,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "bed_green.glb",
+      "bytes": 4271328,
+      "meshes": 1,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "birch_a.glb",
+      "bytes": 2711968,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "birch_b.glb",
+      "bytes": 2711976,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "books_notebook.glb",
+      "bytes": 496892,
+      "meshes": 13,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "broadleaf_tree.glb",
+      "bytes": 3037364,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "bush_large.glb",
+      "bytes": 1960036,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "bush_small.glb",
+      "bytes": 1640292,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "cabin_ceiling.glb",
+      "bytes": 3151752,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "cabin_floor.glb",
+      "bytes": 3927504,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "cabin_furnished.glb",
+      "bytes": 21153504,
+      "meshes": 53,
+      "materials": 28,
+      "embedded_images": 84,
+      "errors": []
+    },
+    {
+      "file": "cabin_gutters.glb",
+      "bytes": 149240,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "cabin_porch.glb",
+      "bytes": 5975668,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "cabin_roof.glb",
+      "bytes": 7349736,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "cabin_shell.glb",
+      "bytes": 16414260,
+      "meshes": 23,
+      "materials": 12,
+      "embedded_images": 36,
+      "errors": []
+    },
+    {
+      "file": "cabin_wall_back.glb",
+      "bytes": 5574740,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "cabin_wall_front.glb",
+      "bytes": 5658128,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "cabin_wall_left.glb",
+      "bytes": 5664896,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "cabin_wall_right.glb",
+      "bytes": 5664896,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "canopy.glb",
+      "bytes": 8397568,
+      "meshes": 2,
+      "materials": 8,
+      "embedded_images": 24,
+      "errors": []
+    },
+    {
+      "file": "chair.glb",
+      "bytes": 5148380,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "coat_hook.glb",
+      "bytes": 303088,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "door_hinged_090x210.glb",
+      "bytes": 5216020,
+      "meshes": 2,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "duffel_bag.glb",
+      "bytes": 415808,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "enamel_mug.glb",
+      "bytes": 231056,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "fallen_log.glb",
+      "bytes": 4084836,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "folded_towel.glb",
+      "bytes": 273936,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "glass_bottle.glb",
+      "bytes": 410620,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "grass_clump.glb",
+      "bytes": 1324656,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "ground_tile_8m.glb",
+      "bytes": 641292,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "guest_seated_a.glb",
+      "bytes": 900352,
+      "meshes": 1,
+      "materials": 7,
+      "embedded_images": 21,
+      "errors": []
+    },
+    {
+      "file": "guest_seated_b.glb",
+      "bytes": 915976,
+      "meshes": 1,
+      "materials": 7,
+      "embedded_images": 21,
+      "errors": []
+    },
+    {
+      "file": "hand_flashlight.glb",
+      "bytes": 328496,
+      "meshes": 11,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "nightstand.glb",
+      "bytes": 7362712,
+      "meshes": 1,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "organizer_static.glb",
+      "bytes": 1075940,
+      "meshes": 12,
+      "materials": 9,
+      "embedded_images": 27,
+      "errors": []
+    },
+    {
+      "file": "park_bench.glb",
+      "bytes": 5161720,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "path_curve_90.glb",
+      "bytes": 1544068,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "path_straight_4m.glb",
+      "bytes": 2248772,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "phone.glb",
+      "bytes": 218140,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "picnic_table.glb",
+      "bytes": 5171768,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "pine_tree.glb",
+      "bytes": 4735620,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "potted_plant.glb",
+      "bytes": 2417176,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "reeds_cattails.glb",
+      "bytes": 2107964,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "river_bank_6m.glb",
+      "bytes": 665176,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "river_dock.glb",
+      "bytes": 5228952,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "river_water_12m.glb",
+      "bytes": 243276,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "rock_cluster.glb",
+      "bytes": 677304,
+      "meshes": 1,
+      "materials": 1,
+      "embedded_images": 3,
+      "errors": []
+    },
+    {
+      "file": "room_table.glb",
+      "bytes": 5150476,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "sneakers_pair.glb",
+      "bytes": 501728,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "street_lamp.glb",
+      "bytes": 211712,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "suitcase.glb",
+      "bytes": 303240,
+      "meshes": 1,
+      "materials": 3,
+      "embedded_images": 9,
+      "errors": []
+    },
+    {
+      "file": "volleyball_court.glb",
+      "bytes": 816700,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "volleyball_net.glb",
+      "bytes": 3057572,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "wall_lamp.glb",
+      "bytes": 150912,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "wall_section.glb",
+      "bytes": 4453044,
+      "meshes": 1,
+      "materials": 2,
+      "embedded_images": 6,
+      "errors": []
+    },
+    {
+      "file": "wardrobe.glb",
+      "bytes": 7393124,
+      "meshes": 3,
+      "materials": 5,
+      "embedded_images": 15,
+      "errors": []
+    },
+    {
+      "file": "wildflowers.glb",
+      "bytes": 1610564,
+      "meshes": 1,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    },
+    {
+      "file": "window_120x140.glb",
+      "bytes": 1140112,
+      "meshes": 3,
+      "materials": 4,
+      "embedded_images": 12,
+      "errors": []
+    }
+  ]
+}

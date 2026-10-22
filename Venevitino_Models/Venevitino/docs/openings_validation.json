@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "door_opening",
+      "ray_hits_wall": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "case": "window_opening",
+      "ray_hits_wall": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "case": "solid_wall",
+      "ray_hits_wall": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "case": "header_above_door",
+      "ray_hits_wall": true,
+      "expected": true,
+      "pass": true
+    }
+  ]
+}
