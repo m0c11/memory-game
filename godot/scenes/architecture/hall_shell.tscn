@@ -1,0 +1,345 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/22_carpet_floor_tile.glb" id="1_floor"]
+[ext_resource type="PackedScene" path="res://assets/models/24_acoustic_wall.glb" id="2_wall"]
+[ext_resource type="PackedScene" path="res://assets/models/25_recessed_door_wall.glb" id="3_door"]
+[ext_resource type="PackedScene" path="res://assets/models/31_ceiling_panel.glb" id="4_ceiling"]
+
+[sub_resource type="BoxShape3D" id="FloorShape"]
+size = Vector3(16, 0.3, 18)
+
+[sub_resource type="BoxShape3D" id="SideWallShape"]
+size = Vector3(0.2, 6, 18)
+
+[sub_resource type="BoxShape3D" id="EndWallShape"]
+size = Vector3(16.2, 6, 0.2)
+
+[sub_resource type="BoxShape3D" id="CeilingShape"]
+size = Vector3(16, 0.2, 18)
+
+[sub_resource type="BoxShape3D" id="DoorPierShape"]
+size = Vector3(1.44, 6, 0.3)
+
+[sub_resource type="StandardMaterial3D" id="CreamMaterial"]
+albedo_color = Color(0.77, 0.71, 0.56, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="EndWallMesh"]
+material = SubResource("CreamMaterial")
+size = Vector3(16.2, 6, 0.2)
+add_uv2 = true
+
+[node name="HallShell" type="Node3D"]
+
+[node name="CarpetFloor" parent="." instance=ExtResource("1_floor")]
+position = Vector3(0, 0, 2)
+scale = Vector3(8, 1, 9)
+
+[node name="SideWalls" type="Node3D" parent="."]
+
+[node name="LeftLower01" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, -5.7)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower02" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, -3.3)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower03" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, -0.9)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower04" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, 1.5)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower05" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, 3.9)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower06" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, 6.3)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower07" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, 8.7)
+rotation = Vector3(0, 1.5707963, 0)
+
+[node name="LeftLower08" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 0, 10.45)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(0.458333, 1, 1)
+
+[node name="LeftUpper01" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, -5.7)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper02" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, -3.3)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper03" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, -0.9)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper04" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, 1.5)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper05" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, 3.9)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper06" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, 6.3)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper07" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, 8.7)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="LeftUpper08" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(-8, 2.8, 10.45)
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(0.458333, 1.142857, 1)
+
+[node name="RightLower01" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, -5.7)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower02" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, -3.3)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower03" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, -0.9)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower04" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, 1.5)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower05" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, 3.9)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower06" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, 6.3)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower07" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, 8.7)
+rotation = Vector3(0, -1.5707963, 0)
+
+[node name="RightLower08" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 0, 10.45)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(0.458333, 1, 1)
+
+[node name="RightUpper01" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, -5.7)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper02" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, -3.3)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper03" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, -0.9)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper04" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, 1.5)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper05" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, 3.9)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper06" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, 6.3)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper07" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, 8.7)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(1, 1.142857, 1)
+
+[node name="RightUpper08" parent="SideWalls" instance=ExtResource("2_wall")]
+position = Vector3(8, 2.8, 10.45)
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(0.458333, 1.142857, 1)
+
+[node name="RearWall" type="MeshInstance3D" parent="."]
+position = Vector3(0, 3, 11)
+layers = 2
+gi_mode = 1
+mesh = SubResource("EndWallMesh")
+
+[node name="StageRearWall" type="MeshInstance3D" parent="."]
+position = Vector3(0, 3, -7)
+gi_mode = 1
+mesh = SubResource("EndWallMesh")
+
+[node name="FrontDoorPiers" type="Node3D" parent="."]
+
+[node name="LeftDoor" parent="FrontDoorPiers" instance=ExtResource("3_door")]
+position = Vector3(-7.25, 0, -2.6)
+scale = Vector3(0.58, 1, 1)
+
+[node name="LeftUpperPanel" parent="FrontDoorPiers" instance=ExtResource("2_wall")]
+position = Vector3(-7.25, 2.8, -2.6)
+scale = Vector3(0.58, 1.142857, 1)
+
+[node name="RightDoor" parent="FrontDoorPiers" instance=ExtResource("3_door")]
+position = Vector3(7.25, 0, -2.6)
+scale = Vector3(0.58, 1, 1)
+
+[node name="RightUpperPanel" parent="FrontDoorPiers" instance=ExtResource("2_wall")]
+position = Vector3(7.25, 2.8, -2.6)
+scale = Vector3(0.58, 1.142857, 1)
+
+[node name="Ceiling" type="Node3D" parent="."]
+
+[node name="Panel01" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, -5.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel02" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, -5.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel03" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, -5.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel04" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, -5.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel05" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, -2.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel06" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, -2.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel07" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, -2.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel08" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, -2.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel09" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, 0.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel10" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, 0.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel11" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, 0.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel12" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, 0.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel13" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, 3.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel14" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, 3.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel15" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, 3.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel16" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, 3.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel17" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, 6.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel18" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, 6.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel19" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, 6.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel20" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, 6.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel21" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-6, 6, 9.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel22" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(-2, 6, 9.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel23" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(2, 6, 9.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="Panel24" parent="Ceiling" instance=ExtResource("4_ceiling")]
+position = Vector3(6, 6, 9.5)
+scale = Vector3(1.333333, 1, 1.25)
+
+[node name="ShellCollision" type="StaticBody3D" parent="."]
+
+[node name="Floor" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(0, -0.16, 2)
+shape = SubResource("FloorShape")
+
+[node name="LeftWall" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(-8, 3, 2)
+shape = SubResource("SideWallShape")
+
+[node name="RightWall" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(8, 3, 2)
+shape = SubResource("SideWallShape")
+
+[node name="RearWall" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(0, 3, 11)
+shape = SubResource("EndWallShape")
+
+[node name="StageRearWall" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(0, 3, -7)
+shape = SubResource("EndWallShape")
+
+[node name="Ceiling" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(0, 6.1, 2)
+shape = SubResource("CeilingShape")
+
+[node name="LeftDoorPier" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(-7.28, 3, -2.6)
+shape = SubResource("DoorPierShape")
+
+[node name="RightDoorPier" type="CollisionShape3D" parent="ShellCollision"]
+position = Vector3(7.28, 3, -2.6)
+shape = SubResource("DoorPierShape")

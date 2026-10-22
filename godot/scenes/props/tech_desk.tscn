@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/06_sound_desk.glb" id="1_desk"]
+[ext_resource type="PackedScene" path="res://assets/models/07_mixing_console.glb" id="2_mixer"]
+[ext_resource type="PackedScene" path="res://assets/models/08_audio_laptop.glb" id="3_laptop"]
+[ext_resource type="PackedScene" path="res://assets/models/17_performance_programme.glb" id="4_programme"]
+
+[sub_resource type="BoxShape3D" id="Shape_top"]
+size = Vector3(2.175, 0.045, 0.74)
+
+[sub_resource type="BoxShape3D" id="Shape_support"]
+size = Vector3(0.06525, 0.85, 0.76)
+
+[sub_resource type="BoxShape3D" id="Shape_back"]
+size = Vector3(2.059, 0.55, 0.032)
+
+[node name="TechDesk" type="Node3D"]
+
+[node name="Desk" parent="." instance=ExtResource("1_desk")]
+scale = Vector3(1.45, 1, 1)
+
+[node name="Mixer" parent="." instance=ExtResource("2_mixer")]
+position = Vector3(-0.39, 0.768, 0.025)
+
+[node name="Laptop" parent="." instance=ExtResource("3_laptop")]
+position = Vector3(0.53, 0.768, -0.07)
+
+[node name="Programme" parent="." instance=ExtResource("4_programme")]
+position = Vector3(0.83, 0.769, 0.12)
+rotation = Vector3(0, -0.12, 0)
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+[node name="Desktop" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, 0.745, 0)
+shape = SubResource("Shape_top")
+
+[node name="LeftSupport" type="CollisionShape3D" parent="Collision"]
+position = Vector3(-1.06575, 0.425, 0)
+shape = SubResource("Shape_support")
+
+[node name="RightSupport" type="CollisionShape3D" parent="Collision"]
+position = Vector3(1.06575, 0.425, 0)
+shape = SubResource("Shape_support")
+
+[node name="BackPanel" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, 0.4, -0.337)
+shape = SubResource("Shape_back")

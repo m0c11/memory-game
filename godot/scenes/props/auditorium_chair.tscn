@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/01_auditorium_chair.glb" id="1_model"]
+[ext_resource type="Material" path="res://materials/blue_upholstery.tres" id="2_fabric"]
+
+[sub_resource type="BoxShape3D" id="Shape_seat"]
+size = Vector3(0.48, 0.145, 0.46)
+
+[sub_resource type="BoxShape3D" id="Shape_back"]
+size = Vector3(0.455, 0.55, 0.13)
+
+[sub_resource type="BoxShape3D" id="Shape_arm"]
+size = Vector3(0.09, 0.34, 0.42)
+
+[sub_resource type="BoxShape3D" id="Shape_leg"]
+size = Vector3(0.055, 0.39, 0.1)
+
+[node name="AuditoriumChair" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_model")]
+rotation = Vector3(0, 3.1415927, 0)
+
+[node name="01_auditorium_chair__back_shell" parent="Model/01_auditorium_chair" index="2"]
+material_override = ExtResource("2_fabric")
+
+[node name="01_auditorium_chair__blue_backrest" parent="Model/01_auditorium_chair" index="4"]
+material_override = ExtResource("2_fabric")
+
+[node name="01_auditorium_chair__blue_seat" parent="Model/01_auditorium_chair" index="5"]
+material_override = ExtResource("2_fabric")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+[node name="Seat" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, 0.4825, -0.006)
+shape = SubResource("Shape_seat")
+
+[node name="Back" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, 0.79, 0.16)
+rotation = Vector3(0.075, 0, 0)
+shape = SubResource("Shape_back")
+
+[node name="LeftArm" type="CollisionShape3D" parent="Collision"]
+position = Vector3(-0.285, 0.51, 0.015)
+shape = SubResource("Shape_arm")
+
+[node name="RightArm" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.285, 0.51, 0.015)
+shape = SubResource("Shape_arm")
+
+[node name="LeftLeg" type="CollisionShape3D" parent="Collision"]
+position = Vector3(-0.285, 0.235, 0.07)
+shape = SubResource("Shape_leg")
+
+[node name="RightLeg" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.285, 0.235, 0.07)
+shape = SubResource("Shape_leg")
+
+[editable path="Model"]

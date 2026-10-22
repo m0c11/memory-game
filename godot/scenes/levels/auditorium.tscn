@@ -1,0 +1,460 @@
+[gd_scene load_steps=32 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/architecture/hall_shell.tscn" id="1_shell"]
+[ext_resource type="PackedScene" path="res://scenes/architecture/stage.tscn" id="2_stage"]
+[ext_resource type="PackedScene" path="res://scenes/architecture/seating.tscn" id="3_seating"]
+[ext_resource type="PackedScene" path="res://scenes/player/capsule_player.tscn" id="4_player"]
+[ext_resource type="PackedScene" path="res://scenes/props/tech_desk.tscn" id="5_desk"]
+[ext_resource type="PackedScene" path="res://scenes/props/floor_monitor.tscn" id="6_monitor"]
+[ext_resource type="PackedScene" path="res://scenes/props/microphone.tscn" id="7_microphone"]
+[ext_resource type="PackedScene" path="res://scenes/props/wall_display.tscn" id="8_display"]
+[ext_resource type="PackedScene" path="res://assets/models/03_folding_chair_folded.glb" id="9_folded"]
+[ext_resource type="PackedScene" path="res://assets/models/04_music_stand.glb" id="10_stand"]
+[ext_resource type="PackedScene" path="res://assets/models/14_red_sports_bag.glb" id="11_bag"]
+[ext_resource type="PackedScene" path="res://assets/models/15_kneepads_pair.glb" id="12_pads"]
+[ext_resource type="PackedScene" path="res://assets/models/16_water_bottle.glb" id="13_water"]
+[ext_resource type="PackedScene" path="res://assets/models/11_column_speaker.glb" id="14_speaker"]
+[ext_resource type="PackedScene" path="res://assets/models/12_stage_spotlight.glb" id="15_spot_fixture"]
+[ext_resource type="PackedScene" path="res://assets/models/32_ceiling_strip_light.glb" id="16_strip"]
+[ext_resource type="PackedScene" path="res://assets/models/33_ceiling_soffit.glb" id="17_soffit"]
+[ext_resource type="PackedScene" path="res://assets/models/13_audio_cable_coil.glb" id="18_cable"]
+[ext_resource type="PackedScene" path="res://assets/models/17_performance_programme.glb" id="20_programme"]
+[ext_resource type="Environment" path="res://materials/hall_environment.tres" id="21_environment"]
+[ext_resource type="LightmapGIData" path="res://assets/lighting/auditorium.lmbake" id="22_lightmap"]
+[ext_resource type="PackedScene" path="res://scenes/effects/stage_dust.tscn" id="23_dust"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/backstage_left.tscn" id="24_left_room"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/backstage_right.tscn" id="25_right_room"]
+[ext_resource type="PackedScene" path="res://scenes/interactions/room_portal.tscn" id="26_portal"]
+
+[sub_resource type="StyleBoxFlat" id="Style_header"]
+content_margin_left = 20.0
+content_margin_top = 13.0
+content_margin_right = 20.0
+content_margin_bottom = 13.0
+bg_color = Color(0.035, 0.05, 0.09, 0.86)
+border_width_left = 3
+border_color = Color(0.9, 0.7, 0.4, 1)
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+
+[sub_resource type="StyleBoxFlat" id="Style_controls"]
+content_margin_left = 18.0
+content_margin_top = 11.0
+content_margin_right = 18.0
+content_margin_bottom = 11.0
+bg_color = Color(0.035, 0.05, 0.09, 0.85)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+
+[sub_resource type="BoxShape3D" id="Shape_bag"]
+size = Vector3(0.74, 0.43, 0.4)
+
+[sub_resource type="BoxShape3D" id="Shape_folded_chairs"]
+size = Vector3(1.7, 0.95, 0.48)
+
+[sub_resource type="CylinderShape3D" id="Shape_music_stand"]
+height = 1.35
+radius = 0.25
+
+[sub_resource type="BoxShape3D" id="Shape_entrance_reach"]
+size = Vector3(1.15, 1.9, 1.9)
+
+[node name="Auditorium" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("21_environment")
+
+[node name="BakedLighting" type="LightmapGI" parent="."]
+quality = 1
+bounces = 3
+bounce_indirect_energy = 1.1
+directional = true
+interior = true
+environment_mode = 0
+generate_probes_subdiv = 1
+max_texture_size = 2048
+light_data = ExtResource("22_lightmap")
+
+[node name="RoomReflections" type="ReflectionProbe" parent="."]
+position = Vector3(0, 3, 2)
+size = Vector3(15.9, 5.9, 17.9)
+intensity = 0.55
+interior = true
+box_projection = true
+max_distance = 30.0
+enable_shadows = false
+
+[node name="Architecture" type="Node3D" parent="."]
+
+[node name="Hall" parent="Architecture" instance=ExtResource("1_shell")]
+
+[node name="Stage" parent="Architecture" instance=ExtResource("2_stage")]
+
+[node name="Seating" parent="Architecture" instance=ExtResource("3_seating")]
+
+[node name="Equipment" type="Node3D" parent="."]
+
+[node name="SoundDesk" parent="Equipment" instance=ExtResource("5_desk")]
+position = Vector3(-4.1, 0.966, 8.1)
+
+[node name="StageMonitorLeft" parent="Equipment" instance=ExtResource("6_monitor")]
+position = Vector3(-3.5, 0.734, -2.94)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="StageMonitorRight" parent="Equipment" instance=ExtResource("6_monitor")]
+position = Vector3(3.5, 0.734, -2.94)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="Microphone" parent="Equipment" instance=ExtResource("7_microphone")]
+position = Vector3(4.25, 0.734, -2.9)
+rotation = Vector3(0, -0.35, 0)
+
+[node name="MicrophoneCable" parent="Equipment" instance=ExtResource("18_cable")]
+position = Vector3(4.75, 0.734, -2.95)
+
+[node name="WallDisplayLeft" parent="Equipment" instance=ExtResource("8_display")]
+position = Vector3(-7.8, 3.2, -0.65)
+rotation = Vector3(0, 1.570796, 0)
+scale = Vector3(1.6, 1.6, 1.6)
+
+[node name="WallDisplayRight" parent="Equipment" instance=ExtResource("8_display")]
+position = Vector3(7.8, 3.2, -0.65)
+rotation = Vector3(0, -1.570796, 0)
+scale = Vector3(1.6, 1.6, 1.6)
+
+[node name="ColumnSpeakerLeft" parent="Equipment" instance=ExtResource("14_speaker")]
+position = Vector3(-6.5, 3.25, -2.45)
+scale = Vector3(1.5, 1.5, 1.5)
+
+[node name="ColumnSpeakerRight" parent="Equipment" instance=ExtResource("14_speaker")]
+position = Vector3(6.5, 3.25, -2.45)
+scale = Vector3(1.5, 1.5, 1.5)
+
+[node name="BackstageProps" type="Node3D" parent="."]
+
+[node name="FoldedChairs" type="StaticBody3D" parent="BackstageProps"]
+position = Vector3(3.2, 0.734, -5.65)
+
+[node name="Chair01" parent="BackstageProps/FoldedChairs" instance=ExtResource("9_folded")]
+position = Vector3(-0.55, 0, 0)
+rotation = Vector3(0, -0.22, 0)
+
+[node name="Chair02" parent="BackstageProps/FoldedChairs" instance=ExtResource("9_folded")]
+
+[node name="Chair03" parent="BackstageProps/FoldedChairs" instance=ExtResource("9_folded")]
+position = Vector3(0.55, 0, 0)
+rotation = Vector3(0, 0.22, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="BackstageProps/FoldedChairs"]
+position = Vector3(0, 0.475, 0)
+shape = SubResource("Shape_folded_chairs")
+
+[node name="MusicStand" type="StaticBody3D" parent="BackstageProps"]
+position = Vector3(2.1, 0.734, -5.55)
+
+[node name="Model" parent="BackstageProps/MusicStand" instance=ExtResource("10_stand")]
+
+[node name="Collision" type="CollisionShape3D" parent="BackstageProps/MusicStand"]
+position = Vector3(0, 0.675, 0)
+shape = SubResource("Shape_music_stand")
+
+[node name="Memories" type="Node3D" parent="."]
+
+[node name="SportsBag" type="StaticBody3D" parent="Memories"]
+position = Vector3(-6.9, 0, -0.8)
+rotation = Vector3(0, 0.3, 0)
+
+[node name="Model" parent="Memories/SportsBag" instance=ExtResource("11_bag")]
+
+[node name="Collision" type="CollisionShape3D" parent="Memories/SportsBag"]
+position = Vector3(0, 0.215, 0)
+shape = SubResource("Shape_bag")
+
+[node name="Kneepads" parent="Memories" instance=ExtResource("12_pads")]
+position = Vector3(-6.1, 0, -0.7)
+rotation = Vector3(0, -0.4, 0)
+
+[node name="WaterBottle" parent="Memories" instance=ExtResource("13_water")]
+position = Vector3(-6.45, 0, -0.9)
+
+[node name="ProgrammeOnStage" parent="Memories" instance=ExtResource("20_programme")]
+position = Vector3(-4.25, 0.734, -3.1)
+rotation = Vector3(0, 0.4, 0)
+
+[node name="Lighting" type="Node3D" parent="."]
+
+[node name="RoomFill" type="DirectionalLight3D" parent="Lighting"]
+rotation = Vector3(-1.05, -0.35, 0)
+light_color = Color(0.75, 0.82, 1, 1)
+light_energy = 0.08
+light_bake_mode = 0
+
+[node name="StageWarmLeft" type="SpotLight3D" parent="Lighting"]
+position = Vector3(-3.2, 5.45, -2.4)
+rotation = Vector3(-1.02, -0.1, 0)
+light_color = Color(1, 0.79, 0.57, 1)
+light_energy = 5.5
+light_size = 0.35
+light_bake_mode = 2
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_normal_bias = 0.5
+spot_range = 10.0
+spot_angle = 48.0
+spot_attenuation = 0.7
+
+[node name="StageWarmRight" type="SpotLight3D" parent="Lighting"]
+position = Vector3(3.2, 5.45, -2.4)
+rotation = Vector3(-1.02, 0.1, 0)
+light_color = Color(1, 0.85, 0.67, 1)
+light_energy = 5.5
+light_size = 0.35
+light_bake_mode = 2
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_normal_bias = 0.5
+spot_range = 10.0
+spot_angle = 48.0
+spot_attenuation = 0.7
+
+[node name="StageSoftFill" type="OmniLight3D" parent="Lighting"]
+position = Vector3(0, 4.6, -5)
+light_color = Color(1, 0.85, 0.66, 1)
+light_energy = 0.7
+light_size = 0.5
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 7.0
+omni_attenuation = 0.8
+
+[node name="AudienceFillLeft" type="OmniLight3D" parent="Lighting"]
+position = Vector3(-4, 5.5, 4.2)
+light_color = Color(0.83, 0.9, 1, 1)
+light_energy = 2.2
+light_size = 0.8
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 9.0
+
+[node name="AudienceFillRight" type="OmniLight3D" parent="Lighting"]
+position = Vector3(4, 5.5, 4.2)
+light_color = Color(0.83, 0.9, 1, 1)
+light_energy = 2.2
+light_size = 0.8
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 9.0
+
+[node name="FrontFillLeft" type="OmniLight3D" parent="Lighting"]
+position = Vector3(-4, 5.5, 0.6)
+light_color = Color(1, 0.93, 0.83, 1)
+light_energy = 1.6
+light_size = 0.8
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 8.0
+
+[node name="FrontFillRight" type="OmniLight3D" parent="Lighting"]
+position = Vector3(4, 5.5, 0.6)
+light_color = Color(1, 0.93, 0.83, 1)
+light_energy = 1.6
+light_size = 0.8
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 8.0
+
+[node name="RearFill" type="OmniLight3D" parent="Lighting"]
+position = Vector3(0, 5.5, 8.4)
+light_color = Color(0.85, 0.92, 1, 1)
+light_energy = 2.3
+light_size = 1.0
+light_bake_mode = 2
+shadow_enabled = false
+omni_range = 9.0
+
+[node name="Fixtures" type="Node3D" parent="Lighting"]
+
+[node name="StageSpotLeft" parent="Lighting/Fixtures" instance=ExtResource("15_spot_fixture")]
+position = Vector3(-3.2, 5.1, -2.4)
+rotation = Vector3(0.4, 3.141593, 0)
+
+[node name="StageSpotRight" parent="Lighting/Fixtures" instance=ExtResource("15_spot_fixture")]
+position = Vector3(3.2, 5.1, -2.4)
+rotation = Vector3(0.4, 3.141593, 0)
+
+[node name="SoffitLeft" parent="Lighting/Fixtures" instance=ExtResource("17_soffit")]
+position = Vector3(-5.3, 5.65, -1.7)
+
+[node name="SoffitCenter" parent="Lighting/Fixtures" instance=ExtResource("17_soffit")]
+position = Vector3(0, 5.65, -1.7)
+scale = Vector3(2, 1, 1)
+
+[node name="SoffitRight" parent="Lighting/Fixtures" instance=ExtResource("17_soffit")]
+position = Vector3(5.3, 5.65, -1.7)
+
+[node name="CeilingStripLeft01" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(-4, 5.95, 1)
+scale = Vector3(4, 1, 1)
+
+[node name="CeilingStripRight01" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(4, 5.95, 1)
+scale = Vector3(4, 1, 1)
+
+[node name="CeilingStripLeft02" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(-4, 5.95, 4.6)
+scale = Vector3(4, 1, 1)
+
+[node name="CeilingStripRight02" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(4, 5.95, 4.6)
+scale = Vector3(4, 1, 1)
+
+[node name="CeilingStripLeft03" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(-4, 5.95, 8.2)
+scale = Vector3(4, 1, 1)
+
+[node name="CeilingStripRight03" parent="Lighting/Fixtures" instance=ExtResource("16_strip")]
+position = Vector3(4, 5.95, 8.2)
+scale = Vector3(4, 1, 1)
+
+[node name="Atmosphere" type="Node3D" parent="."]
+
+[node name="DustLeft" parent="Atmosphere" instance=ExtResource("23_dust")]
+position = Vector3(-2.8, 2.6, -4.4)
+
+[node name="DustRight" parent="Atmosphere" instance=ExtResource("23_dust")]
+position = Vector3(2.8, 2.6, -4.4)
+rotation = Vector3(0, 1.3, 0)
+
+[node name="Cameras" type="Node3D" parent="."]
+
+[node name="ReferenceCamera" type="Camera3D" parent="Cameras" groups=["overview_camera"]]
+position = Vector3(0, 5.4, 14)
+rotation = Vector3(-0.28, 0, 0)
+cull_mask = 1048573
+current = true
+fov = 43.0
+near = 0.05
+far = 80.0
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+position = Vector3(0.2, 0.03, -0.55)
+
+[node name="Backstage" type="Node3D" parent="."]
+
+[node name="Left" parent="Backstage" instance=ExtResource("24_left_room")]
+position = Vector3(-20, 0, -4)
+
+[node name="Exit" parent="Backstage/Left"]
+destination_path = NodePath("../../../ReturnPoints/Left")
+camera_path = NodePath("../../../Cameras/ReferenceCamera")
+location_name = "Актовый зал"
+
+[node name="Right" parent="Backstage" instance=ExtResource("25_right_room")]
+position = Vector3(20, 0, -4)
+
+[node name="Exit" parent="Backstage/Right"]
+destination_path = NodePath("../../../ReturnPoints/Right")
+camera_path = NodePath("../../../Cameras/ReferenceCamera")
+location_name = "Актовый зал"
+
+[node name="ReturnPoints" type="Node3D" parent="."]
+
+[node name="Left" type="Marker3D" parent="ReturnPoints"]
+position = Vector3(-7.25, 0.03, -0.3)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="Right" type="Marker3D" parent="ReturnPoints"]
+position = Vector3(7.25, 0.03, -0.3)
+rotation = Vector3(0, 3.141593, 0)
+
+[node name="Passages" type="Node3D" parent="."]
+
+[node name="LeftEntrance" parent="Passages" instance=ExtResource("26_portal")]
+position = Vector3(-7.25, 0.95, -1.35)
+destination_path = NodePath("../../Backstage/Left/Arrival")
+camera_path = NodePath("../../Backstage/Left/OverviewCamera")
+location_name = "Левая кулиса · гримёрная"
+prompt_text = "E — войти в левую кулису"
+
+[node name="Reach" parent="Passages/LeftEntrance" index="0"]
+shape = SubResource("Shape_entrance_reach")
+
+[node name="RightEntrance" parent="Passages" instance=ExtResource("26_portal")]
+position = Vector3(7.25, 0.95, -1.35)
+destination_path = NodePath("../../Backstage/Right/Arrival")
+camera_path = NodePath("../../Backstage/Right/OverviewCamera")
+location_name = "Правая кулиса · рояль"
+prompt_text = "E — войти в правую кулису"
+
+[node name="Reach" parent="Passages/RightEntrance" index="0"]
+shape = SubResource("Shape_entrance_reach")
+
+[node name="LeftDoorSign" type="Label3D" parent="Passages"]
+position = Vector3(-7.25, 2.35, -2.42)
+pixel_size = 0.002
+font_size = 42
+modulate = Color(0.96, 0.86, 0.65, 1)
+text = "ЛЕВАЯ КУЛИСА"
+outline_size = 8
+
+[node name="RightDoorSign" type="Label3D" parent="Passages"]
+position = Vector3(7.25, 2.35, -2.42)
+pixel_size = 0.002
+font_size = 42
+modulate = Color(0.96, 0.86, 0.65, 1)
+text = "ПРАВАЯ КУЛИСА"
+outline_size = 8
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="Title" type="PanelContainer" parent="Interface"]
+offset_left = 24.0
+offset_top = 22.0
+offset_right = 310.0
+offset_bottom = 95.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_header")
+
+[node name="Text" type="VBoxContainer" parent="Interface/Title"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Chapter" type="Label" parent="Interface/Title/Text"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.8, 0.54, 1)
+theme_override_font_sizes/font_size = 22
+text = "01  /  СТУДВЕСНА"
+
+[node name="Subtitle" type="Label" parent="Interface/Title/Text"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.86, 0.93, 1)
+theme_override_font_sizes/font_size = 14
+text = "За пять минут до выхода"
+
+[node name="Controls" type="PanelContainer" parent="Interface"]
+anchors_preset = 12
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -507.0
+offset_top = -42.0
+offset_right = 507.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_controls")
+
+[node name="Text" type="Label" parent="Interface/Controls"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.86, 0.89, 0.94, 1)
+theme_override_font_sizes/font_size = 15
+text = "WASD — идти   Shift — бег   Пробел — прыжок   E — дверь   Tab — камера   R — к входу   Esc — курсор"
+horizontal_alignment = 1
+
+[connection signal="location_changed" from="Player" to="Interface/Title/Text/Subtitle" method="set_text"]
+
+[editable path="Backstage/Left"]
+[editable path="Backstage/Right"]
+[editable path="Passages/LeftEntrance"]
+[editable path="Passages/RightEntrance"]
