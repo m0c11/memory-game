@@ -59,6 +59,11 @@ func run() -> void:
 	scene = load("res://scenes/levels/venevitino.tscn").instantiate()
 	root.add_child(scene)
 	current_scene = scene
+	# Patrol behavior is covered separately; keep this test focused on every hiding place.
+	var patrols = scene.get_node("Organizers")
+	patrols.process_mode = Node.PROCESS_MODE_DISABLED
+	for guard in patrols.guards:
+		guard.collision_layer = 0
 	player = scene.get_node("Player")
 	hunt = scene.get_node("BottleHunt")
 	hunt.hunt_completed.connect(_on_hunt_completed)

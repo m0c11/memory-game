@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3]
+[gd_scene load_steps=15 format=3]
 
 [ext_resource type="Environment" path="res://materials/venevitino/night_environment.tres" id="e1"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/terrain.tscn" id="e2"]
@@ -13,9 +13,10 @@
 [ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/lush_vegetation.tscn" id="e11"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/collectibles/placements.tscn" id="e12"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/collectibles/hunt.tscn" id="e13"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/organizers/patrols.tscn" id="e14"]
 
 
-[node name="Venevitino" type="Node3D"]
+[node name="Venevitino" type="Node3D" groups=["venevitino_navigation_source"]]
 
 
 [node name="Environment" type="WorldEnvironment" parent="."]
@@ -70,6 +71,8 @@ rotation = Vector3(0, -0.882, 0)
 [node name="Bottles" parent="." instance=ExtResource("e12")]
 
 [node name="BottleHunt" parent="." instance=ExtResource("e13")]
+
+[node name="Organizers" parent="." instance=ExtResource("e14")]
 
 [node name="MapCamera" type="Camera3D" groups=["overview_camera"] parent="."]
 position = Vector3(94, 230, 120)

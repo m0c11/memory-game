@@ -9,6 +9,7 @@
 script = ExtResource("e2")
 walk_speed = 4.0
 sprint_speed = 7.0
+collision_mask = 3
 
 [node name="FirstPersonCamera" parent="Head"]
 far = 280.0

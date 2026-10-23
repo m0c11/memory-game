@@ -22,6 +22,10 @@ func walk(action,n):
  Input.action_press(action);await frames(n);Input.action_release(action);await frames(8)
 func run():
  scene=load("res://scenes/levels/venevitino.tscn").instantiate();root.add_child(scene);current_scene=scene;player=scene.get_node("Player")
+ # Isolate architectural traversal; organizer_smoke covers moving patrols and encounters.
+ var patrols=scene.get_node("Organizers")
+ patrols.process_mode=Node.PROCESS_MODE_DISABLED
+ for guard in patrols.guards:guard.collision_layer=0
  await frames(20)
  check("spawn_on_ground",player.is_on_floor() and abs(player.position.y)<.08,str(player.position))
  check("first_person_default",player.first_person and root.get_camera_3d()==player.first_person_camera)
