@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/backpack.glb" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/collectibles/bottle.tscn" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="Canvas"]
+albedo_color = Color(0.22, 0.26, 0.13, 1)
+roughness = 0.95
+
+[sub_resource type="BoxMesh" id="Pocket"]
+material = SubResource("Canvas")
+size = Vector3(0.1, 0.16, 0.14)
+
+[node name="BackpackCache" type="Node3D"]
+
+[node name="Backpack" parent="." instance=ExtResource("1")]
+
+[node name="SidePocket" type="MeshInstance3D" parent="."]
+position = Vector3(0.17, 0.12, 0)
+mesh = SubResource("Pocket")
+
+[node name="Bottle" parent="." instance=ExtResource("2")]
+position = Vector3(0.18, 0.04, 0)
+pickup_prompt = "E — достать бутылку из рюкзака"
+discovery_text = "В боковом кармане рюкзака"

@@ -5,6 +5,8 @@ extends "res://scripts/capsule_player.gd"
 var night_environment: Environment
 var night_ambient_color: Color
 var night_ambient_energy: float
+# Logical input state also works without a window in physics tests.
+var interaction_enabled: bool = true
 
 func _ready() -> void:
 	super._ready()
@@ -23,10 +25,16 @@ func _unhandled_input(event: InputEvent) -> void:
 		flashlight.visible = not flashlight.visible
 		get_viewport().set_input_as_handled()
 	else:
+		if event.is_action_pressed("ui_cancel"):
+			interaction_enabled = false
+		elif first_person and event is InputEventMouseButton:
+			if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+				interaction_enabled = true
 		super._unhandled_input(event)
 
 func _toggle_camera() -> void:
 	super._toggle_camera()
+	interaction_enabled = first_person
 	# The overview shows the full authored plan; walking uses scene-defined distances.
 	for geometry in get_tree().get_nodes_in_group("distance_culled"):
 		geometry.visibility_range_end = float(geometry.get_meta("render_distance")) if first_person else 0.0

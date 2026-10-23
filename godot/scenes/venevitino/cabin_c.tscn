@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/venevitino/cabin_structure.tscn" id="e1"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/bed_green.tscn" id="e2"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" path="res://scenes/venevitino/nightstand.tscn" id="e7"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/duffel_bag.glb" id="e8"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/books_notebook.glb" id="e9"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/glass_bottle.glb" id="e10"]
 
 
 [node name="CabinC" type="Node3D"]
@@ -125,15 +124,5 @@ visibility_range_end = 95.0
 visibility_range_end_margin = 5.0
 metadata/render_distance = 95.0
 
-[node name="Bottle" parent="." instance=ExtResource("e10")]
-position = Vector3(-1.80000, 1.10000, 0.30000)
-rotation = Vector3(0.00000, 0.00000, 0.00000)
-
-[node name="glass_bottle_Mesh" parent="Bottle/glass_bottle" groups=["distance_culled"]]
-visibility_range_end = 95.0
-visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
-
 [editable path="Bag"]
 [editable path="Book"]
-[editable path="Bottle"]
