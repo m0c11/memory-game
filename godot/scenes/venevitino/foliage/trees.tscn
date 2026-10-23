@@ -1,0 +1,3704 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/broadleaf_tree.res" id="1_rh2fy"]
+[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/pine_tree.res" id="2_bp768"]
+[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/birch_b.res" id="3_e0rnk"]
+[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/birch_a.res" id="4_bqqxd"]
+
+[sub_resource type="MultiMesh" id="MultiMesh_hx733"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.76743186, 0, 0.86170393, -2.3080006, 0, 1.4505, 0, 0, -0.86170393, 0, 0.76743186, -5.4400024)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_a5t12"]
+height = 5.802
+radius = 0.21924101
+
+[sub_resource type="MultiMesh" id="MultiMesh_8mn14"]
+transform_format = 1
+instance_count = 3
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.5918352, 0, 1.1838005, 4.908001, 0, 1.4925, 0, 0, -1.1838005, 0, -0.5918352, -5.4400024, -1.0059376, 0, 0.34297764, -2.3080006, 0, 1.46, 0, 0, -0.34297764, 0, -1.0059376, 3.3600006, 0.9312124, 0, -0.47066656, -3.677, 0, 1.336, 0, 0, 0.47066656, 0, 0.9312124, -1.082901)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_a7au2"]
+height = 5.97
+radius = 0.251465
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_co566"]
+height = 5.84
+radius = 0.20193201
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jqiji"]
+height = 5.344
+radius = 0.198246
+
+[sub_resource type="MultiMesh" id="MultiMesh_7s1n2"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(1.374875, 0, 0.2956324, -1.1920013, 0, 1.3878, 0, 0, -0.2956324, 0, 1.374875, -5.4400024, 0.6426258, 0, -0.6664366, 3.251999, 0, 1.3784, 0, 0, 0.6664366, 0, 0.6426258, 3.3600006)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s0ath"]
+height = 5.5512
+radius = 0.26719698
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_syh2d"]
+height = 5.5136
+radius = 0.17590201
+
+[sub_resource type="MultiMesh" id="MultiMesh_eusmn"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.5928088, 0, 0.8781332, -5.5320015, 0, 1.197, 0, 0, -0.8781332, 0, -0.5928088, -5.4400024)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pxcxm"]
+height = 4.788
+radius = 0.201305
+
+[sub_resource type="MultiMesh" id="MultiMesh_wr0ww"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.0086789, 0, 0.37116292, 3.7080002, 0, 1.2669, 0, 0, -0.37116292, 0, -1.0086789, -5.4400024)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s0enh"]
+height = 5.0676
+radius = 0.20421201
+
+[sub_resource type="MultiMesh" id="MultiMesh_rypdt"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.3371243, 0, -1.384136, 4.908001, 0, 1.3883, 0, 0, 1.384136, 0, 0.3371243, 3.3600006)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_t3cos"]
+height = 5.5532
+radius = 0.270674
+
+[sub_resource type="MultiMesh" id="MultiMesh_3rjpy"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.7855061, 0, -0.9507938, -1.1920013, 0, 1.1886, 0, 0, 0.9507938, 0, -0.7855061, 3.3600006)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s338h"]
+height = 4.7544
+radius = 0.23432699
+
+[sub_resource type="MultiMesh" id="MultiMesh_5xt7d"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.1896822, 0, -0.24126637, 3.7080002, 0, 1.2959, 0, 0, 0.24126637, 0, 1.1896822, 3.3600006)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_p6twk"]
+height = 5.1836
+radius = 0.23064099
+
+[sub_resource type="MultiMesh" id="MultiMesh_lh0vv"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.47149086, 0, -0.87051505, -7.9400005, 0, 1.0899, 0, 0, 0.87051505, 0, -0.47149086, 0.5400009, 1.0829991, 0, 0.7720189, 5.26, 0, 1.4525, 0, 0, -0.7720189, 0, 1.0829991, -3.0599976)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ln0km"]
+height = 4.3596
+radius = 0.1881
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1ypra"]
+height = 5.81
+radius = 0.2527
+
+[sub_resource type="MultiMesh" id="MultiMesh_jdh4u"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.8273256, 0, 0.56527543, 0.8600006, 0, 1.2313, 0, 0, -0.56527543, 0, 0.8273256, 0.5400009)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ns08x"]
+height = 4.9252
+radius = 0.19037999
+
+[sub_resource type="MultiMesh" id="MultiMesh_i2cv0"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.389225, 0, -0.9716403, -3.540001, 0, 1.1649, 0, 0, 0.9716403, 0, 0.389225, -3.0599976)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hdx3o"]
+height = 4.6596
+radius = 0.198873
+
+[sub_resource type="MultiMesh" id="MultiMesh_8ejhu"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.33115482, 0, -1.3405019, -6.34, 0, 1.3428, 0, 0, 1.3405019, 0, -0.33115482, 0.5400009, -0.13143475, 0, 1.1478999, 2.9000015, 0, 1.4331, 0, 0, -1.1478999, 0, -0.13143475, 0.5400009)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mcyll"]
+height = 5.3712
+radius = 0.262352
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qwmko"]
+height = 5.7324
+radius = 0.21952601
+
+[sub_resource type="MultiMesh" id="MultiMesh_mp32g"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.16608816, 0, 1.0828365, -1.5, 0, 1.0697, 0, 0, -1.0828365, 0, 0.16608816, -3.0599976)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0m7wv"]
+height = 4.2788
+radius = 0.208145
+
+[sub_resource type="MultiMesh" id="MultiMesh_6feyj"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.61667776, 0, -1.1272428, -4.299999, 0, 1.292, 0, 0, 1.1272428, 0, -0.61667776, 0.5400009)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bq5b3"]
+height = 5.168
+radius = 0.24413098
+
+[sub_resource type="MultiMesh" id="MultiMesh_vypry"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.042763, 0, -0.55486846, 7.299999, 0, 1.2492, 0, 0, 0.55486846, 0, -1.042763, -3.0599976)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_75fb5"]
+height = 4.9968
+radius = 0.224428
+
+[sub_resource type="MultiMesh" id="MultiMesh_qfkdt"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.1881218, 0, 0.60082656, -0.6000061, 0, 1.1561, 0, 0, -0.60082656, 0, -1.1881218, -7.7680054)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gs6fm"]
+height = 4.6244
+radius = 0.25296602
+
+[sub_resource type="MultiMesh" id="MultiMesh_ebxt8"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.7194265, 0, 0.6461536, -6.9360046, 0, 1.3988, 0, 0, -0.6461536, 0, -0.7194265, -6.472)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5ipu1"]
+height = 5.5952
+radius = 0.18373
+
+[sub_resource type="MultiMesh" id="MultiMesh_po3ow"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.23129025, 0, 1.3763009, 6.3399963, 0, 1.2254, 0, 0, -1.3763009, 0, 0.23129025, 0.59199524)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_iguxu"]
+height = 4.9016
+radius = 0.265164
+
+[sub_resource type="MultiMesh" id="MultiMesh_l0fpp"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.8461398, 0, -0.9259136, 0.0039978027, 0, 1.1695, 0, 0, 0.9259136, 0, 0.8461398, 7.328003)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_umv7m"]
+height = 4.678
+radius = 0.238317
+
+[sub_resource type="MultiMesh" id="MultiMesh_ocyyl"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.28938714, 0, 0.9540776, -2.9256, 0, 1.1909, 0, 0, -0.9540776, 0, 0.28938714, 0.3039999)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7o41v"]
+height = 4.7636
+radius = 0.18943
+
+[sub_resource type="MultiMesh" id="MultiMesh_n6c42"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.7698687, 0, 1.0512427, -3.0370002, 0, 1.4649, 0, 0, -1.0512427, 0, -0.7698687, 1.4988003)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_aa7j1"]
+height = 5.8596
+radius = 0.24757
+
+[sub_resource type="MultiMesh" id="MultiMesh_rjywy"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.43107083, 0, 0.9078562, -3.0816998, 0, 1.0805, 0, 0, -0.9078562, 0, -0.43107083, 7.2379)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_objtu"]
+height = 4.322
+radius = 0.19095
+
+[sub_resource type="MultiMesh" id="MultiMesh_dycs7"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.1345437, 0, 0.89440984, -3.5857, 0, 1.3679, 0, 0, -0.89440984, 0, -1.1345437, -3.0867996)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4c5f1"]
+height = 5.4716
+radius = 0.274493
+
+[sub_resource type="MultiMesh" id="MultiMesh_pcpdh"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.1471833, 0, -0.7949521, -3.5159001, 0, 1.2696, 0, 0, 0.7949521, 0, 1.1471833, 3.080799)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sko6p"]
+height = 5.0784
+radius = 0.265183
+
+[sub_resource type="MultiMesh" id="MultiMesh_tcf6g"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.5942382, 0, -0.85716385, -2.8312998, 0, 1.1556, 0, 0, 0.85716385, 0, -0.5942382, -6.3465004)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_snth7"]
+height = 4.6224
+radius = 0.19816999
+
+[sub_resource type="MultiMesh" id="MultiMesh_nk71j"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.3431319, 0, -1.1482261, -3.0917, 0, 1.2872, 0, 0, 1.1482261, 0, -0.3431319, 0.32080078, -1.3329233, 0, -0.33468798, 5.7544003, 0, 1.4492, 0, 0, 0.33468798, 0, -1.3329233, 1.2008018)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d837b"]
+height = 5.1488
+radius = 0.227696
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nonh4"]
+height = 5.7968
+radius = 0.261117
+
+[sub_resource type="MultiMesh" id="MultiMesh_0ptm2"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.81310904, 0, 0.5760781, -3.2768998, 0, 1.2533, 0, 0, -0.5760781, 0, 0.81310904, 6.0466003)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rinan"]
+height = 5.0132
+radius = 0.189335
+
+[sub_resource type="MultiMesh" id="MultiMesh_upvi2"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.0001912, 0, 0.116038546, -2.9675002, 0, 1.2687, 0, 0, -0.116038546, 0, 1.0001912, -3.348198)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_o40y3"]
+height = 5.0748
+radius = 0.19131099
+
+[sub_resource type="MultiMesh" id="MultiMesh_d2ctm"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.92854553, 0, 0.6838667, -3.5321999, 0, 1.4814, 0, 0, -0.6838667, 0, 0.92854553, -7.4994965, 0.8015783, 0, 1.0130249, -3.7024999, 0, 1.1729, 0, 0, -1.0130249, 0, 0.8015783, 0.51129913)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xrya5"]
+height = 5.9256
+radius = 0.219108
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qnn12"]
+height = 4.6916
+radius = 0.245442
+
+[sub_resource type="MultiMesh" id="MultiMesh_1xdva"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.0549937, 0, -0.23614675, -3.4586, 0, 1.4542, 0, 0, 0.23614675, 0, -1.0549937, 4.726097)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_op4pg"]
+height = 5.8168
+radius = 0.20540899
+
+[sub_resource type="MultiMesh" id="MultiMesh_dx31p"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.4167771, 0, -0.28010044, -3.5812001, 0, 1.2965, 0, 0, 0.28010044, 0, 1.4167771, -3.9425964)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fsxfy"]
+height = 5.186
+radius = 0.274398
+
+[sub_resource type="MultiMesh" id="MultiMesh_vjtam"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.8430635, 0, -0.49669537, -3.8502998, 0, 1.0534, 0, 0, 0.49669537, 0, -0.8430635, 1.882103)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0jl7i"]
+height = 4.2136
+radius = 0.18591501
+
+[sub_resource type="MultiMesh" id="MultiMesh_4tv80"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.8573468, 0, 0.84475416, -3.9628, 0, 1.1735, 0, 0, -0.84475416, 0, 0.8573468, 7.6927032)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5xsrc"]
+height = 4.694
+radius = 0.22868401
+
+[sub_resource type="MultiMesh" id="MultiMesh_0rlhg"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.229918, 0, -0.10626406, -3.9357, 0, 1.1705, 0, 0, 0.10626406, 0, 1.229918, -1.2180939)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_smnjt"]
+height = 4.682
+radius = 0.234555
+
+[sub_resource type="MultiMesh" id="MultiMesh_6gk2h"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.534342, 0, 1.3339593, -3.4942002, 0, 1.0685, 0, 0, -1.3339593, 0, 0.534342, -5.4884033)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ki71o"]
+height = 4.274
+radius = 0.27303
+
+[sub_resource type="MultiMesh" id="MultiMesh_8cfhc"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.55687493, 0, 1.2735738, -3.9106002, 0, 1.4258, 0, 0, -1.2735738, 0, -0.55687493, 0.97579956)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pn0yv"]
+height = 5.7032
+radius = 0.2641
+
+[sub_resource type="MultiMesh" id="MultiMesh_r8wi8"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.019283064, 0, 1.1212342, -3.0110002, 0, 1.3446, 0, 0, -1.1212342, 0, 0.019283064, 6.414505)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_54j2b"]
+height = 5.3784
+radius = 0.213066
+
+[sub_resource type="MultiMesh" id="MultiMesh_ohkhl"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.69561464, 0, 0.7772888, -3.1494002, 0, 1.3482, 0, 0, -0.7772888, 0, -0.69561464, -3.0921936)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ai80h"]
+height = 5.3928
+radius = 0.198189
+
+[sub_resource type="MultiMesh" id="MultiMesh_y5xd0"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.3023509, 0, -1.3839579, -3.5036998, 0, 1.0567, 0, 0, 1.3839579, 0, -0.3023509, 1.2380981)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_msg0c"]
+height = 4.2268
+radius = 0.269154
+
+[sub_resource type="MultiMesh" id="MultiMesh_1w2ej"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.9136223, 0, -1.0082294, -3.7445998, 0, 1.3058, 0, 0, 1.0082294, 0, 0.9136223, 7.0261993)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xf6xx"]
+height = 5.2232
+radius = 0.258514
+
+[sub_resource type="MultiMesh" id="MultiMesh_kg7bf"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.82823724, 0, -0.64082044, -3.4371, 0, 1.0958, 0, 0, 0.64082044, 0, -0.82823724, -1.1517944, -0.75988567, 0, -1.169275, -3.0439, 0, 1.4075, 0, 0, 1.169275, 0, -0.75988567, 3.4978027)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ikobu"]
+height = 4.3832
+radius = 0.198968
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d0dek"]
+height = 5.63
+radius = 0.264955
+
+[sub_resource type="MultiMesh" id="MultiMesh_mqrp4"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.2773213, 0, 0.041646082, -3.4782, 0, 1.2083, 0, 0, -0.041646082, 0, -1.2773213, -5.928604, -0.63553333, 0, 1.0351781, -3.0563998, 0, 1.4879, 0, 0, -1.0351781, 0, -0.63553333, 6.872299)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_airkc"]
+height = 4.8332
+radius = 0.24282
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_acqbc"]
+height = 5.9516
+radius = 0.230793
+
+[sub_resource type="MultiMesh" id="MultiMesh_qf6w1"]
+transform_format = 1
+instance_count = 3
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.92467105, 0, -0.2621003, -2.8335, 0, 1.2923, 0, 0, 0.2621003, 0, -0.92467105, -2.5140991, -1.325724, 0, 0.035528198, -3.6532001, 0, 1.1533, 0, 0, -0.035528198, 0, -1.325724, 2.8130035, -0.69916147, 0, 1.0592648, 3.8583002, 0, 1.3784, 0, 0, -1.0592648, 0, -0.69916147, 7.5899963)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dhuxg"]
+height = 5.1692
+radius = 0.18260899
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ie6cs"]
+height = 4.6132
+radius = 0.251978
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2jxkd"]
+height = 5.5136
+radius = 0.241148
+
+[sub_resource type="MultiMesh" id="MultiMesh_sacfe"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.87711585, 0, 0.85358006, -3.1373, 0, 1.2266, 0, 0, -0.85358006, 0, 0.87711585, -6.5859985)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xof2c"]
+height = 4.9064
+radius = 0.232541
+
+[sub_resource type="MultiMesh" id="MultiMesh_vdt0s"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.3222444, 0, -1.1304685, -5.2201004, 0, 1.067, 0, 0, 1.1304685, 0, -0.3222444, -2.7214966, -0.41446406, 0, 0.9313409, 5.5422993, 0, 1.1146, 0, 0, -0.9313409, 0, -0.41446406, -0.063797)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gscna"]
+height = 4.268
+radius = 0.22334501
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ovsig"]
+height = 4.4584
+radius = 0.193686
+
+[sub_resource type="MultiMesh" id="MultiMesh_ydw8v"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.36530542, 0, -1.3220584, -0.2303009, 0, 1.1625, 0, 0, 1.3220584, 0, -0.36530542, 7.001404)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yre1u"]
+height = 4.65
+radius = 0.260604
+
+[sub_resource type="MultiMesh" id="MultiMesh_6v8yf"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.3949223, 0, 1.1492376, -4.4228, 0, 1.4806, 0, 0, -1.1492376, 0, 0.3949223, -2.227707, 0.27929106, 0, 0.9204608, 5.4750004, 0, 1.1444, 0, 0, -0.9204608, 0, 0.27929106, -0.040100098)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2o3aa"]
+height = 5.9224
+radius = 0.230888
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3fwra"]
+height = 4.5776
+radius = 0.182761
+
+[sub_resource type="MultiMesh" id="MultiMesh_5gn34"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.1341959, 0, 0.030281762, 0.4389, 0, 1.1316, 0, 0, -0.030281762, 0, -1.1341959, -2.5019002)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_c1kq2"]
+height = 4.5264
+radius = 0.21557401
+
+[sub_resource type="MultiMesh" id="MultiMesh_fa8tc"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.4987956, 0, 0.8079315, 1.404602, 0, 1.053, 0, 0, -0.8079315, 0, 0.4987956, 6.8878994)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_h0ev7"]
+height = 4.212
+radius = 0.180405
+
+[sub_resource type="MultiMesh" id="MultiMesh_q8i6r"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.2182299, 0, -0.75040275, -2.9521027, 0, 1.445, 0, 0, 0.75040275, 0, 1.2182299, 3.1320953)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_p8abh"]
+height = 5.78
+radius = 0.271852
+
+[sub_resource type="MultiMesh" id="MultiMesh_xry8l"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.0774969, 0, 0.0025781118, 3.152298, 0, 1.1991, 0, 0, -0.0025781118, 0, -1.0774969, -0.17419434)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_r7k2v"]
+height = 4.7964
+radius = 0.204725
+
+[sub_resource type="MultiMesh" id="MultiMesh_ljcuk"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(1.1779829, 0, 0.027334109, 4.9547005, 0, 1.2288, 0, 0, -0.027334109, 0, 1.1779829, -1.1898956)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_eex31"]
+height = 4.9152
+radius = 0.223877
+
+[sub_resource type="MultiMesh" id="MultiMesh_jyeeq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.7196195, 0, -1.2150953, -6.8633995, 0, 1.1375, 0, 0, 1.2150953, 0, -0.7196195, 2.3117065)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_x4rkm"]
+height = 4.55
+radius = 0.268318
+
+[sub_resource type="MultiMesh" id="MultiMesh_xwhes"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.71485955, 0, 0.6779342, 6.203598, 0, 1.1396, 0, 0, -0.6779342, 0, -0.71485955, -0.29640007)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1xrfg"]
+height = 4.5584
+radius = 0.187188
+
+[sub_resource type="MultiMesh" id="MultiMesh_dvo5x"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.2391601, 0, 0.743114, -5.521103, 0, 1.441, 0, 0, -0.743114, 0, -1.2391601, -7.6471024)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lckip"]
+height = 5.764
+radius = 0.274531
+
+[sub_resource type="MultiMesh" id="MultiMesh_poult"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.71471995, 0, 0.7655146, -5.597801, 0, 1.0611, 0, 0, -0.7655146, 0, 0.71471995, 3.042801)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bgtxt"]
+height = 4.2444
+radius = 0.19898699
+
+[sub_resource type="MultiMesh" id="MultiMesh_sltt8"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.3016931, 0, -0.27729014, 5.6501007, 0, 1.2233, 0, 0, 0.27729014, 0, 1.3016931, 0.5007019)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fi00a"]
+height = 4.8932
+radius = 0.25287098
+
+[sub_resource type="MultiMesh" id="MultiMesh_wqknb"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.1520693, 0, 0.70507216, 4.410103, 0, 1.417, 0, 0, -0.70507216, 0, 1.1520693, 0.5576992)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ctlj8"]
+height = 5.668
+radius = 0.256633
+
+[sub_resource type="MultiMesh" id="MultiMesh_y87ax"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.0016813, 0, 0.6235371, 3.1457062, 0, 1.3001, 0, 0, -0.6235371, 0, -1.0016813, 4.0859985)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7vpxd"]
+height = 5.2004
+radius = 0.22418101
+
+[sub_resource type="MultiMesh" id="MultiMesh_nnnv2"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.2938856, 0, 0.39556184, -6.4245987, 0, 1.4588, 0, 0, -0.39556184, 0, -1.2938856, -1.5758057)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kdk0h"]
+height = 5.8352
+radius = 0.25707
+
+[sub_resource type="MultiMesh" id="MultiMesh_6ka4b"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.9883382, 0, -0.3062546, 5.0926056, 0, 1.0832, 0, 0, 0.3062546, 0, 0.9883382, -7.0506973)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m75d5"]
+height = 4.3328
+radius = 0.196593
+
+[sub_resource type="MultiMesh" id="MultiMesh_0b8el"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.9724273, 0, -0.067971624, 7.194702, 0, 1.43, 0, 0, 0.067971624, 0, 0.9724273, 2.1539001)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_65f06"]
+height = 5.72
+radius = 0.185212
+
+[sub_resource type="MultiMesh" id="MultiMesh_1ioom"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.2996868, 0, 0.57153, 1.992096, 0, 1.3226, 0, 0, -0.57153, 0, -1.2996868, 7.708702, 1.0533873, 0, 0.3432457, 7.7962036, 0, 1.1169, 0, 0, -0.3432457, 0, 1.0533873, -6.8928986)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0gvrv"]
+height = 5.2904
+radius = 0.269762
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ovjlx"]
+height = 4.4676
+radius = 0.210501
+
+[sub_resource type="MultiMesh" id="MultiMesh_kjgh0"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-1.3993728, 0, 0.050949313, 6.4008026, 0, 1.4618, 0, 0, -0.050949313, 0, -1.3993728, -0.13639832)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pm8n2"]
+height = 5.8472
+radius = 0.266057
+
+[sub_resource type="MultiMesh" id="MultiMesh_pqb6u"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.34787768, 0, -1.3268542, 3.6295013, 0, 1.3551, 0, 0, 1.3268542, 0, 0.34787768, -1.0608063)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ago8x"]
+height = 5.4204
+radius = 0.260623
+
+[sub_resource type="MultiMesh" id="MultiMesh_8te60"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.7646994, 0, 1.1177492, 6.6592007, 0, 1.3833, 0, 0, -1.1177492, 0, -0.7646994, -3.4687996, -0.9705956, 0, -0.4975648, -2.8589, 0, 1.3406, 0, 0, 0.4975648, 0, -0.9705956, 5.5345993)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_v3kcx"]
+height = 5.5332
+radius = 0.257317
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4sjyr"]
+height = 5.3624
+radius = 0.20723301
+
+[sub_resource type="MultiMesh" id="MultiMesh_haf1k"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.66106176, 0, 0.79091465, -2.557907, 0, 1.3608, 0, 0, -0.79091465, 0, -0.66106176, -1.7662964)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ws4qy"]
+height = 5.4432
+radius = 0.195852
+
+[sub_resource type="MultiMesh" id="MultiMesh_ujl0b"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.47890678, 0, -1.159166, -0.30969238, 0, 1.2324, 0, 0, 1.159166, 0, -0.47890678, 4.2656, 1.2807357, 0, 0.6390115, 3.5077972, 0, 1.1257, 0, 0, -0.6390115, 0, 1.2807357, 2.2451)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_drti6"]
+height = 4.9296
+radius = 0.238298
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_l34em"]
+height = 4.5028
+radius = 0.271947
+
+[sub_resource type="MultiMesh" id="MultiMesh_ucjmv"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.93888336, 0, -0.06307973, 4.7073994, 0, 1.3753, 0, 0, 0.06307973, 0, 0.93888336, -6.9636993, 1.2630653, 0, 0.31271008, 6.2248993, 0, 1.1626, 0, 0, -0.31271008, 0, 1.2630653, 5.6914063)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_onuii"]
+height = 5.5012
+radius = 0.17879
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xhy47"]
+height = 4.6504
+radius = 0.24722801
+
+[sub_resource type="MultiMesh" id="MultiMesh_y8x3u"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.22521497, 0, 1.2723209, -5.8058014, 0, 1.0614, 0, 0, -1.2723209, 0, 0.22521497, 3.0328064)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2l1vg"]
+height = 4.2456
+radius = 0.24549899
+
+[sub_resource type="MultiMesh" id="MultiMesh_w1bkv"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.34643117, 0, 1.19531, -1.7814941, 0, 1.1254, 0, 0, -1.19531, 0, 0.34643117, -6.020096)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_f0c1s"]
+height = 4.5016
+radius = 0.23645501
+
+[sub_resource type="MultiMesh" id="MultiMesh_xhxv4"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.94841045, 0, 0.11618019, 5.314699, 0, 1.3013, 0, 0, -0.11618019, 0, -0.94841045, 4.2644043)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jhl25"]
+height = 5.2052
+radius = 0.181545
+
+[sub_resource type="MultiMesh" id="MultiMesh_hm2uk"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.7308615, 0, -0.8518353, 0.4972992, 0, 1.3228, 0, 0, 0.8518353, 0, 0.7308615, -4.316696)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_k00dv"]
+height = 5.2912
+radius = 0.213256
+
+[sub_resource type="MultiMesh" id="MultiMesh_0pxg2"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.49624833, 0, -0.9086164, -6.259903, 0, 1.3562, 0, 0, 0.9086164, 0, -0.49624833, -2.6848984)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_65n88"]
+height = 5.4248
+radius = 0.19670701
+
+[sub_resource type="MultiMesh" id="MultiMesh_ujit5"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.1017569, 0, 0.45313072, -6.7099, 0, 1.2523, 0, 0, -0.45313072, 0, -1.1017569, 6.393303)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_a32da"]
+height = 5.0092
+radius = 0.226347
+
+[sub_resource type="MultiMesh" id="MultiMesh_utls4"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(1.4358834, 0, 0.006892293, -2.2220993, 0, 1.1726, 0, 0, -0.006892293, 0, 1.4358834, -3.5172997)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7wgc7"]
+height = 4.6904
+radius = 0.272821
+
+[sub_resource type="MultiMesh" id="MultiMesh_617j4"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-1.1223965, 0, -0.24252632, 1.0332031, 0, 1.1312, 0, 0, 0.24252632, 0, -1.1223965, 1.7486, 1.1725898, 0, 0.19320434, 0.12739563, 0, 1.347, 0, 0, -0.19320434, 0, 1.1725898, -4.2481003)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hv10c"]
+height = 4.5248
+radius = 0.218177
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ufu5p"]
+height = 5.388
+radius = 0.225796
+
+[sub_resource type="MultiMesh" id="MultiMesh_t2jsk"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.038271412, 0, -1.4009773, 3.568901, 0, 1.4661, 0, 0, 1.4009773, 0, 0.038271412, -5.9855003)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6ttlm"]
+height = 5.8644
+radius = 0.266285
+
+[sub_resource type="MultiMesh" id="MultiMesh_i1831"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(1.0292783, 0, -0.28384775, -6.214897, 0, 1.2303, 0, 0, 0.28384775, 0, 1.0292783, 3.3408966)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_b7p84"]
+height = 4.9212
+radius = 0.20286301
+
+[sub_resource type="MultiMesh" id="MultiMesh_x6pk2"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(1.0241817, 0, -0.29238617, -7.8565063, 0, 1.2298, 0, 0, 0.29238617, 0, 1.0241817, -2.6927032)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vn2c4"]
+height = 4.9192
+radius = 0.20236899
+
+[sub_resource type="MultiMesh" id="MultiMesh_67lgg"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.21575993, 0, -1.2855194, 6.205597, 0, 1.1364, 0, 0, 1.2855194, 0, -0.21575993, -5.2581024)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nogch"]
+height = 4.5456
+radius = 0.24766502
+
+[sub_resource type="MultiMesh" id="MultiMesh_6qwd1"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.7778999, 0, 1.0784127, -0.3771057, 0, 1.4646, 0, 0, -1.0784127, 0, -0.7778999, -6.253296)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bql0w"]
+height = 5.8584
+radius = 0.252643
+
+[sub_resource type="MultiMesh" id="MultiMesh_x2pvw"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.5602006, 0, 0.9705254, 5.5463, 0, 1.3106, 0, 0, -0.9705254, 0, 0.5602006, -0.49890137)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lxrj5"]
+height = 5.2424
+radius = 0.21291399
+
+[sub_resource type="MultiMesh" id="MultiMesh_r1kgt"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.9176016, 0, -0.77066875, 2.8614006, 0, 1.1445, 0, 0, 0.77066875, 0, 0.9176016, -5.572403, -0.3470099, 0, -1.3710684, -2.7845001, 0, 1.4505, 0, 0, 1.3710684, 0, -0.3470099, 3.3175964)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1gfe8"]
+height = 4.578
+radius = 0.227677
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kbewi"]
+height = 5.802
+radius = 0.268717
+
+[sub_resource type="MultiMesh" id="MultiMesh_m21o3"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.9372698, 0, -1.0135608, 5.052799, 0, 1.1668, 0, 0, 1.0135608, 0, 0.9372698, -1.9837036)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nbv1q"]
+height = 4.6672
+radius = 0.26229498
+
+[sub_resource type="MultiMesh" id="MultiMesh_eu1in"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.8771951, 0, 0.29634345, -4.0129013, 0, 1.0608, 0, 0, -0.29634345, 0, -0.8771951, -2.0774994)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fjlhp"]
+height = 4.2432
+radius = 0.175921
+
+[sub_resource type="MultiMesh" id="MultiMesh_r0tsv"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.8301287, 0, -0.4697029, -5.9109955, 0, 1.4428, 0, 0, 0.4697029, 0, -0.8301287, -1.6100998)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rl65e"]
+height = 5.7712
+radius = 0.181222
+
+[sub_resource type="MultiMesh" id="MultiMesh_57oe8"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.9394085, 0, 0.90092963, -0.7317047, 0, 1.2394, 0, 0, -0.90092963, 0, -0.9394085, 1.0386047)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_haadc"]
+height = 4.9576
+radius = 0.24730399
+
+[sub_resource type="MultiMesh" id="MultiMesh_x2hdm"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-1.0023818, 0, -0.096330516, -6.2503967, 0, 1.4973, 0, 0, 0.096330516, 0, -1.0023818, 4.685501)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xp8h8"]
+height = 5.9892
+radius = 0.19133
+
+[sub_resource type="MultiMesh" id="MultiMesh_m5142"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.898706, 0, -0.7971508, 0.7496033, 0, 1.1365, 0, 0, 0.7971508, 0, 0.898706, 6.5080004)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dqt02"]
+height = 4.546
+radius = 0.228247
+
+[sub_resource type="MultiMesh" id="MultiMesh_ddv8b"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.6504723, 0, 0.9320651, -6.436798, 0, 1.326, 0, 0, -0.9320651, 0, -0.6504723, -6.6556015)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_u01gg"]
+height = 5.304
+radius = 0.215954
+
+[sub_resource type="MultiMesh" id="MultiMesh_cnuph"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.9567427, 0, -0.30637324, -6.4482, 0, 1.3182, 0, 0, 0.30637324, 0, -0.9567427, 0.97869873)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wlpm5"]
+height = 5.2728
+radius = 0.19087401
+
+[sub_resource type="MultiMesh" id="MultiMesh_5vpwi"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.19660296, 0, -1.0730377, -0.3152008, 0, 1.3875, 0, 0, 1.0730377, 0, 0.19660296, -3.6544952)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lwj1q"]
+height = 5.55
+radius = 0.207271
+
+[sub_resource type="MultiMesh" id="MultiMesh_31k1m"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-1.2317907, 0, -0.13892378, -2.205799, 0, 1.0529, 0, 0, 0.13892378, 0, -1.2317907, 5.0382004, -0.8230056, 0, -0.524631, 7.8670006, 0, 1.4417, 0, 0, 0.524631, 0, -0.8230056, 4.4909)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_n4isg"]
+height = 4.2116
+radius = 0.23552398
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mnwt2"]
+height = 5.7668
+radius = 0.18544
+
+[sub_resource type="MultiMesh" id="MultiMesh_t3yhl"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.3665837, 0, 0.15190181, -1.5852051, 0, 1.2743, 0, 0, -0.15190181, 0, 1.3665837, 1.8620987)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ck0vx"]
+height = 5.0972
+radius = 0.26125
+
+[sub_resource type="MultiMesh" id="MultiMesh_bx4kv"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.1253445, 0, 0.07438077, -1.1215057, 0, 1.4629, 0, 0, -0.07438077, 0, 1.1253445, 1.1060028)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nfm6v"]
+height = 5.8516
+radius = 0.21428199
+
+[sub_resource type="MultiMesh" id="MultiMesh_rfsm6"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.6172103, 0, -0.73502886, 2.603201, 0, 1.3342, 0, 0, 0.73502886, 0, -0.6172103, -4.042198)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_egbku"]
+height = 5.3368
+radius = 0.182362
+
+[sub_resource type="MultiMesh" id="MultiMesh_usve7"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(1.3282509, 0, 0.13206227, 1.7630997, 0, 1.2583, 0, 0, -0.13206227, 0, 1.3282509, -1.4287033)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4ru03"]
+height = 5.0332
+radius = 0.253612
+
+[sub_resource type="MultiMesh" id="MultiMesh_okbap"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.8963455, 0, 0.78409654, -5.286804, 0, 1.3326, 0, 0, -0.78409654, 0, 0.8963455, 6.355194)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nryya"]
+height = 5.3304
+radius = 0.22627099
+
+[sub_resource type="MultiMesh" id="MultiMesh_yy8xx"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(1.0003245, 0, 0.13801028, 0.314003, 0, 1.257, 0, 0, -0.13801028, 0, 1.0003245, 2.2938995)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pvdry"]
+height = 5.028
+radius = 0.19186199
+
+[sub_resource type="MultiMesh" id="MultiMesh_o3mc5"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.4911396, 0, -0.933367, -6.5926056, 0, 1.4292, 0, 0, 0.933367, 0, -0.4911396, 4.267807)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xyl8q"]
+height = 5.7168
+radius = 0.200393
+
+[sub_resource type="MultiMesh" id="MultiMesh_0wkyh"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-1.2385025, 0, -0.36582157, 4.5613995, 0, 1.4425, 0, 0, 0.36582157, 0, -1.2385025, 7.7039948)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qnbjb"]
+height = 5.77
+radius = 0.24536599
+
+[sub_resource type="MultiMesh" id="MultiMesh_op2ys"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.47422233, 0, -0.86561084, -7.869507, 0, 1.4676, 0, 0, 0.86561084, 0, -0.47422233, -7.0656013, 1.2859737, 0, 0.070413, 2.3240967, 0, 1.3309, 0, 0, -0.070413, 0, 1.2859737, -6.4776993)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_h4e75"]
+height = 5.8704
+radius = 0.18753
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kxkmg"]
+height = 5.3236
+radius = 0.244701
+
+[sub_resource type="MultiMesh" id="MultiMesh_3hpje"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.0779971, 0, 0.23066866, -0.81840515, 0, 1.3637, 0, 0, -0.23066866, 0, 1.0779971, 5.4107)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m453c"]
+height = 5.4548
+radius = 0.209456
+
+[sub_resource type="MultiMesh" id="MultiMesh_b7a11"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.6191267, 0, 0.7323682, -3.8014984, 0, 1.1987, 0, 0, -0.7323682, 0, -0.6191267, -5.1997986, -0.39493278, 0, 1.0473112, -5.304199, 0, 1.2069, 0, 0, -1.0473112, 0, -0.39493278, 0.25759888)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_afm6o"]
+height = 4.7948
+radius = 0.18221
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vyqkw"]
+height = 4.8276
+radius = 0.212667
+
+[sub_resource type="MultiMesh" id="MultiMesh_3t2b1"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-1.0333191, 0, -0.6635026, 1.9338074, 0, 1.3519, 0, 0, 0.6635026, 0, -1.0333191, 6.824005)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cvx7k"]
+height = 5.4076
+radius = 0.23332001
+
+[sub_resource type="MultiMesh" id="MultiMesh_j3jsq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.0873342, 0, 0.12327607, 3.878006, 0, 1.2888, 0, 0, -0.12327607, 0, -1.0873342, 5.374405)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4l7qt"]
+height = 5.1552
+radius = 0.207917
+
+[sub_resource type="MultiMesh" id="MultiMesh_rq4jx"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.6995601, 0, 0.6670316, -7.692499, 0, 1.3929, 0, 0, -0.6670316, 0, 0.6995601, -5.6952972)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0hvnx"]
+height = 5.5716
+radius = 0.183654
+
+[sub_resource type="MultiMesh" id="MultiMesh_yed5s"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.09946855, 0, 1.0506017, -3.7378998, 0, 1.3, 0, 0, -1.0506017, 0, 0.09946855, -5.5019073)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s0fed"]
+height = 5.2
+radius = 0.200507
+
+[sub_resource type="MultiMesh" id="MultiMesh_n0ytl"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.8700993, 0, 0.34985134, -6.563507, 0, 1.4723, 0, 0, -0.34985134, 0, 0.8700993, 6.7796936)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_motas"]
+height = 5.8892
+radius = 0.17818199
+
+[sub_resource type="MultiMesh" id="MultiMesh_aybsp"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.0818927, 0, 0.5135698, 2.2034988, 0, 1.4566, 0, 0, -0.5135698, 0, 1.0818927, 7.022499)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_op66u"]
+height = 5.8264
+radius = 0.227544
+
+[sub_resource type="MultiMesh" id="MultiMesh_ngc88"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.2726871, 0, 1.2211237, -5.745903, 0, 1.0504, 0, 0, -1.2211237, 0, -0.2726871, -5.3713074)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_snkob"]
+height = 4.2016
+radius = 0.237728
+
+[sub_resource type="MultiMesh" id="MultiMesh_lf7ac"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.7359876, 0, -1.2205746, 0.17900085, 0, 1.1949, 0, 0, 1.2205746, 0, 0.7359876, -7.185299)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2g2l4"]
+height = 4.7796
+radius = 0.270807
+
+[sub_resource type="MultiMesh" id="MultiMesh_clu8j"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.61446726, 0, 0.86691916, 5.1734924, 0, 1.1944, 0, 0, -0.86691916, 0, -0.61446726, -3.100998)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_f4abf"]
+height = 4.7776
+radius = 0.201894
+
+[sub_resource type="MultiMesh" id="MultiMesh_4nfho"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.1673069, 0, -0.5914629, 1.6038971, 0, 1.1433, 0, 0, 0.5914629, 0, 1.1673069, 7.035202)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rmvsv"]
+height = 4.5732
+radius = 0.248634
+
+[sub_resource type="MultiMesh" id="MultiMesh_2v2t6"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.37993363, 0, -1.1016235, -1.7559052, 0, 1.1244, 0, 0, 1.1016235, 0, 0.37993363, 1.7859955)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hmjwg"]
+height = 4.4976
+radius = 0.221407
+
+[sub_resource type="MultiMesh" id="MultiMesh_xbwk7"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.10930716, 0, -1.4037507, 1.9128036, 0, 1.0856, 0, 0, 1.4037507, 0, 0.10930716, 2.4274006)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_huq62"]
+height = 4.3424
+radius = 0.26752
+
+[sub_resource type="MultiMesh" id="MultiMesh_unna1"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(-0.8150077, 0, -0.8477844, -0.18089294, 0, 1.0919, 0, 0, 0.8477844, 0, -0.8150077, -7.5354004, -0.82222235, 0, 0.93086755, -7.328903, 0, 1.3429, 0, 0, -0.93086755, 0, -0.82222235, -2.9776)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ylesl"]
+height = 4.3676
+radius = 0.22344
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8pqw1"]
+height = 5.3716
+radius = 0.23598
+
+[sub_resource type="MultiMesh" id="MultiMesh_ywgac"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.16883303, 0, 1.4096253, -4.2971954, 0, 1.1435, 0, 0, -1.4096253, 0, -0.16883303, 2.0042)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_76sry"]
+height = 4.574
+radius = 0.269743
+
+[sub_resource type="MultiMesh" id="MultiMesh_n86dp"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.22576131, 0, -1.2528211, 2.1858063, 0, 1.1927, 0, 0, 1.2528211, 0, -0.22576131, -1.4120026)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_au1m0"]
+height = 4.7708
+radius = 0.24187
+
+[sub_resource type="MultiMesh" id="MultiMesh_pgjvq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.7181384, 0, 0.9066426, 3.558899, 0, 1.4923, 0, 0, -0.9066426, 0, 0.7181384, -7.177101)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6doko"]
+height = 5.9692
+radius = 0.219754
+
+[sub_resource type="MultiMesh" id="MultiMesh_qre3x"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.945096, 0, 0.6248861, -7.9888, 0, 1.2852, 0, 0, -0.6248861, 0, 0.945096, -5.2206)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1rkhk"]
+height = 5.1408
+radius = 0.21527
+
+[sub_resource type="MultiMesh" id="MultiMesh_elr5g"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.1367142, 0, -1.3329071, 7.762207, 0, 1.3277, 0, 0, 1.3329071, 0, 0.1367142, -5.3591995)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6f1yh"]
+height = 5.3108
+radius = 0.254581
+
+[sub_resource type="MultiMesh" id="MultiMesh_snvtt"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.8821515, 0, 0.29791945, 5.2409973, 0, 1.3328, 0, 0, -0.29791945, 0, -0.8821515, -0.31489944)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ksktg"]
+height = 5.3312
+radius = 0.176909
+
+[sub_resource type="MultiMesh" id="MultiMesh_i3uoq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.95721954, 0, 0.81364644, -7.4300995, 0, 1.4527, 0, 0, -0.81364644, 0, 0.95721954, 5.5486)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_n45yi"]
+height = 5.8108
+radius = 0.23869699
+
+[sub_resource type="MultiMesh" id="MultiMesh_165oo"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.1862271, 0, -0.12694171, -0.36790085, 0, 1.4073, 0, 0, 0.12694171, 0, -1.1862271, 3.0039978)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7cia3"]
+height = 5.6292
+radius = 0.22667
+
+[sub_resource type="MultiMesh" id="MultiMesh_2mljk"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.9454524, 0, -0.54121363, 0.26390076, 0, 1.424, 0, 0, 0.54121363, 0, -0.9454524, -7.9681015)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_js04m"]
+height = 5.696
+radius = 0.20698601
+
+[sub_resource type="MultiMesh" id="MultiMesh_wmmey"]
+transform_format = 1
+instance_count = 2
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.23097529, 0, -0.9558901, 2.322998, 0, 1.1145, 0, 0, 0.9558901, 0, -0.23097529, -3.0861053, -1.1858863, 0, -0.4076635, -2.7301025, 0, 1.179, 0, 0, 0.4076635, 0, -1.1858863, 4.090805)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_onhjw"]
+height = 4.458
+radius = 0.186846
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fjbqf"]
+height = 4.716
+radius = 0.23825999
+
+[sub_resource type="MultiMesh" id="MultiMesh_8vfq1"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.2220353, 0, -0.6241496, 5.461197, 0, 1.4946, 0, 0, 0.6241496, 0, -1.2220353, -6.5622997)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bordp"]
+height = 5.9784
+radius = 0.260718
+
+[sub_resource type="MultiMesh" id="MultiMesh_s6hqi"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-1.2277511, 0, -0.3541186, 4.6732025, 0, 1.4946, 0, 0, 0.3541186, 0, -1.2277511, 5.935501)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5gqh5"]
+height = 5.9784
+radius = 0.242782
+
+[sub_resource type="MultiMesh" id="MultiMesh_tjkhl"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(0.47071227, 0, -1.18708, -5.7230988, 0, 1.1165, 0, 0, 1.18708, 0, 0.47071227, -7.9165)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vlwc5"]
+height = 4.466
+radius = 0.24262999
+
+[sub_resource type="MultiMesh" id="MultiMesh_5k15k"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(1.3005966, 0, 0.23411687, -1.896801, 0, 1.1778, 0, 0, -0.23411687, 0, 1.3005966, 3.4259987)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m6s8q"]
+height = 4.7112
+radius = 0.25108498
+
+[sub_resource type="MultiMesh" id="MultiMesh_x66wd"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(0.20363337, 0, -1.029861, 0.09820557, 0, 1.269, 0, 0, 1.029861, 0, 0.20363337, 4.441803)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ffpbp"]
+height = 5.076
+radius = 0.19946201
+
+[sub_resource type="MultiMesh" id="MultiMesh_cx0av"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.5900715, 0, -1.000681, 5.1829996, 0, 1.2564, 0, 0, 1.000681, 0, -0.5900715, 3.648697)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_csxe1"]
+height = 5.0256
+radius = 0.220723
+
+[sub_resource type="MultiMesh" id="MultiMesh_3x58m"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.0137713, 0, -0.8599838, -4.644699, 0, 1.4141, 0, 0, 0.8599838, 0, -1.0137713, 5.7201996)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1gv30"]
+height = 5.6564
+radius = 0.25258598
+
+[sub_resource type="MultiMesh" id="MultiMesh_qxxa8"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(-0.4250472, 0, 1.0498179, -1.7832985, 0, 1.3347, 0, 0, -1.0498179, 0, -0.4250472, 1.1846008)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xtkhg"]
+height = 5.3388
+radius = 0.21519399
+
+[sub_resource type="MultiMesh" id="MultiMesh_s1asq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.4740028, 0, 0.90892863, 3.5175018, 0, 1.1708, 0, 0, -0.90892863, 0, 0.4740028, -4.9750004)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_t0xmx"]
+height = 4.6832
+radius = 0.194769
+
+[sub_resource type="MultiMesh" id="MultiMesh_cqasq"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.1883656, 0, -0.035644125, -0.6502991, 0, 1.3214, 0, 0, 0.035644125, 0, 1.1883656, -7.0473022)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_86sej"]
+height = 5.2856
+radius = 0.225891
+
+[sub_resource type="MultiMesh" id="MultiMesh_8i5ku"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.9892411, 0, -0.3029839, -7.9752007, 0, 1.1557, 0, 0, 0.3029839, 0, -0.9892411, -6.2622986)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sv44r"]
+height = 4.6228
+radius = 0.196574
+
+[sub_resource type="MultiMesh" id="MultiMesh_ggojk"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("1_rh2fy")
+buffer = PackedFloat32Array(1.3833575, 0, -0.2717685, 2.6744995, 0, 1.2444, 0, 0, 0.2717685, 0, 1.3833575, -2.4132996)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q8kvo"]
+height = 4.9776
+radius = 0.26786202
+
+[sub_resource type="MultiMesh" id="MultiMesh_oysej"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-0.79714155, 0, -1.1100276, 2.2438965, 0, 1.3556, 0, 0, 1.1100276, 0, -0.79714155, 4.982193)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d51ex"]
+height = 5.4224
+radius = 0.25965402
+
+[sub_resource type="MultiMesh" id="MultiMesh_7j0sw"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(-0.8129628, 0, 0.62509346, 7.554199, 0, 1.2471, 0, 0, -0.62509346, 0, -0.8129628, -6.8407)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0g3wf"]
+height = 4.9884
+radius = 0.194845
+
+[sub_resource type="MultiMesh" id="MultiMesh_al4bo"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(0.59371763, 0, -1.0524875, 3.4209003, 0, 1.2125, 0, 0, 1.0524875, 0, 0.59371763, 4.2725067)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dxxmj"]
+height = 4.85
+radius = 0.229596
+
+[sub_resource type="MultiMesh" id="MultiMesh_j7cwi"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("2_bp768")
+buffer = PackedFloat32Array(-1.1112865, 0, 0.34192657, 6.3032, 0, 1.1982, 0, 0, -0.34192657, 0, -1.1112865, -2.2910004)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ff7on"]
+height = 4.7928
+radius = 0.22091301
+
+[sub_resource type="MultiMesh" id="MultiMesh_q4hlh"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("4_bqqxd")
+buffer = PackedFloat32Array(1.1940978, 0, 0.37199605, -6.3457947, 0, 1.1158, 0, 0, -0.37199605, 0, 1.1940978, -6.439499)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jh4f3"]
+height = 4.4632
+radius = 0.237633
+
+[sub_resource type="MultiMesh" id="MultiMesh_h4ye1"]
+transform_format = 1
+instance_count = 1
+mesh = ExtResource("3_e0rnk")
+buffer = PackedFloat32Array(0.5328545, 0, -1.2539825, 1.3799, 0, 1.2001, 0, 0, 1.2539825, 0, 0.5328545, -0.6271057)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6pfap"]
+height = 4.8004
+radius = 0.25887498
+
+[node name="Trees" type="Node3D" unique_id=657700231]
+
+[node name="broadleaf_tree_01_04" type="MultiMeshInstance3D" parent="." unique_id=567507031 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_hx733")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_04" unique_id=1395051318]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_01_04/Trunks" unique_id=1373279815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3080006, 2.901, -5.4400024)
+shape = SubResource("CylinderShape3D_a5t12")
+
+[node name="pine_tree_01_04" type="MultiMeshInstance3D" parent="." unique_id=1342041632 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8mn14")
+metadata/render_distance = 95.0
+metadata/plant_count = 3
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_04" unique_id=679531175]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_04/Trunks" unique_id=56388327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.908001, 2.985, -5.4400024)
+shape = SubResource("CylinderShape3D_a7au2")
+
+[node name="Trunk001" type="CollisionShape3D" parent="pine_tree_01_04/Trunks" unique_id=788726918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3080006, 2.92, 3.3600006)
+shape = SubResource("CylinderShape3D_co566")
+
+[node name="Trunk002" type="CollisionShape3D" parent="pine_tree_01_04/Trunks" unique_id=322666955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.677, 2.672, -1.082901)
+shape = SubResource("CylinderShape3D_jqiji")
+
+[node name="birch_b_02_04" type="MultiMeshInstance3D" parent="." unique_id=1007064125 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_7s1n2")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_02_04" unique_id=403328905]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_02_04/Trunks" unique_id=2016389126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920013, 2.7756, -5.4400024)
+shape = SubResource("CylinderShape3D_s0ath")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_02_04/Trunks" unique_id=1124692820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.251999, 2.7568, 3.3600006)
+shape = SubResource("CylinderShape3D_syh2d")
+
+[node name="birch_b_03_04" type="MultiMeshInstance3D" parent="." unique_id=1632960133 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_eusmn")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_03_04" unique_id=1031660728]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_03_04/Trunks" unique_id=285667233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5320015, 2.394, -5.4400024)
+shape = SubResource("CylinderShape3D_pxcxm")
+
+[node name="pine_tree_03_04" type="MultiMeshInstance3D" parent="." unique_id=1578578675 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_wr0ww")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_03_04" unique_id=587825252]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_03_04/Trunks" unique_id=784058410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7080002, 2.5338, -5.4400024)
+shape = SubResource("CylinderShape3D_s0enh")
+
+[node name="birch_b_01_04" type="MultiMeshInstance3D" parent="." unique_id=513850374 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_rypdt")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_04" unique_id=2055008664]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_04/Trunks" unique_id=1552677501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.908001, 2.7766, 3.3600006)
+shape = SubResource("CylinderShape3D_t3cos")
+
+[node name="birch_a_02_04" type="MultiMeshInstance3D" parent="." unique_id=697138139 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_3rjpy")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_02_04" unique_id=418525004]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_02_04/Trunks" unique_id=1504082425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920013, 2.3772, 3.3600006)
+shape = SubResource("CylinderShape3D_s338h")
+
+[node name="broadleaf_tree_03_04" type="MultiMeshInstance3D" parent="." unique_id=1620710248 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_5xt7d")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_03_04" unique_id=1921726164]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_03_04/Trunks" unique_id=1598368443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7080002, 2.5918, 3.3600006)
+shape = SubResource("CylinderShape3D_p6twk")
+
+[node name="broadleaf_tree_01_07" type="MultiMeshInstance3D" parent="." unique_id=1327569252 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_lh0vv")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_07" unique_id=1626425351]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_01_07/Trunks" unique_id=141283114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9400005, 2.1798, 0.5400009)
+shape = SubResource("CylinderShape3D_ln0km")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_01_07/Trunks" unique_id=1254628127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.26, 2.905, -3.0599976)
+shape = SubResource("CylinderShape3D_1ypra")
+
+[node name="pine_tree_01_07" type="MultiMeshInstance3D" parent="." unique_id=1054360694 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_jdh4u")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_07" unique_id=1701890006]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_07/Trunks" unique_id=791785753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8600006, 2.4626, 0.5400009)
+shape = SubResource("CylinderShape3D_ns08x")
+
+[node name="birch_b_01_07" type="MultiMeshInstance3D" parent="." unique_id=1335283904 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_i2cv0")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_07" unique_id=1391000116]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_07/Trunks" unique_id=1248162031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.540001, 2.3298, -3.0599976)
+shape = SubResource("CylinderShape3D_hdx3o")
+
+[node name="broadleaf_tree_02_07" type="MultiMeshInstance3D" parent="." unique_id=103808793 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8ejhu")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_02_07" unique_id=1819936345]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_02_07/Trunks" unique_id=812620010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.34, 2.6856, 0.5400009)
+shape = SubResource("CylinderShape3D_mcyll")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_02_07/Trunks" unique_id=884360575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9000015, 2.8662, 0.5400009)
+shape = SubResource("CylinderShape3D_qwmko")
+
+[node name="pine_tree_02_07" type="MultiMeshInstance3D" parent="." unique_id=1518214569 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_mp32g")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_02_07" unique_id=907132737]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_02_07/Trunks" unique_id=831959245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 2.1394, -3.0599976)
+shape = SubResource("CylinderShape3D_0m7wv")
+
+[node name="birch_b_03_07" type="MultiMeshInstance3D" parent="." unique_id=257817903 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_6feyj")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_03_07" unique_id=1188626264]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_03_07/Trunks" unique_id=1391310915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.299999, 2.584, 0.5400009)
+shape = SubResource("CylinderShape3D_bq5b3")
+
+[node name="birch_a_02_07" type="MultiMeshInstance3D" parent="." unique_id=1411260129 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_vypry")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_02_07" unique_id=1296603057]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_02_07/Trunks" unique_id=976456073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.299999, 2.4984, -3.0599976)
+shape = SubResource("CylinderShape3D_75fb5")
+
+[node name="birch_a_08_09" type="MultiMeshInstance3D" parent="." unique_id=1541418036 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_qfkdt")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_08_09" unique_id=1190555800]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_08_09/Trunks" unique_id=356932706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6000061, 2.3122, -7.7680054)
+shape = SubResource("CylinderShape3D_gs6fm")
+
+[node name="birch_a_08_13" type="MultiMeshInstance3D" parent="." unique_id=933921836 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ebxt8")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_08_13" unique_id=130602483]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_08_13/Trunks" unique_id=1897510141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9360046, 2.7976, -6.472)
+shape = SubResource("CylinderShape3D_5ipu1")
+
+[node name="birch_a_06_09" type="MultiMeshInstance3D" parent="." unique_id=751716713 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_po3ow")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_06_09" unique_id=1015192463]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_06_09/Trunks" unique_id=1127176983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3399963, 2.4508, 0.59199524)
+shape = SubResource("CylinderShape3D_iguxu")
+
+[node name="broadleaf_tree_06_12" type="MultiMeshInstance3D" parent="." unique_id=1554796270 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_l0fpp")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_12" unique_id=1058714638]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_06_12/Trunks" unique_id=313624715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0039978027, 2.339, 7.328003)
+shape = SubResource("CylinderShape3D_umv7m")
+
+[node name="broadleaf_tree_00_00" type="MultiMeshInstance3D" parent="." unique_id=1569562045 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ocyyl")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_00" unique_id=448943141]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_00/Trunks" unique_id=1170685519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9256, 2.3818, 0.3039999)
+shape = SubResource("CylinderShape3D_7o41v")
+
+[node name="broadleaf_tree_00_01" type="MultiMeshInstance3D" parent="." unique_id=1578564787 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_n6c42")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_01" unique_id=1049633808]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_01/Trunks" unique_id=529541056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0370002, 2.9298, 1.4988003)
+shape = SubResource("CylinderShape3D_aa7j1")
+
+[node name="birch_b_00_01" type="MultiMeshInstance3D" parent="." unique_id=1701966868 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_rjywy")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_01" unique_id=595463848]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_01/Trunks" unique_id=1539018491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0816998, 2.161, 7.2379)
+shape = SubResource("CylinderShape3D_objtu")
+
+[node name="broadleaf_tree_00_02" type="MultiMeshInstance3D" parent="." unique_id=51858622 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_dycs7")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_02" unique_id=1881348989]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_02/Trunks" unique_id=1445832150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5857, 2.7358, -3.0867996)
+shape = SubResource("CylinderShape3D_4c5f1")
+
+[node name="pine_tree_00_02" type="MultiMeshInstance3D" parent="." unique_id=808548838 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_pcpdh")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_02" unique_id=163507369]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_02/Trunks" unique_id=934110207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5159001, 2.5392, 3.080799)
+shape = SubResource("CylinderShape3D_sko6p")
+
+[node name="broadleaf_tree_00_03" type="MultiMeshInstance3D" parent="." unique_id=1689989980 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_tcf6g")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_03" unique_id=1126783796]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_03/Trunks" unique_id=1826328023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8312998, 2.3112, -6.3465004)
+shape = SubResource("CylinderShape3D_snth7")
+
+[node name="birch_b_00_03" type="MultiMeshInstance3D" parent="." unique_id=865001718 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_nk71j")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_03" unique_id=824460492]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_03/Trunks" unique_id=826746381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0917, 2.5744, 0.32080078)
+shape = SubResource("CylinderShape3D_d837b")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_00_03/Trunks" unique_id=87922645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7544003, 2.8984, 1.2008018)
+shape = SubResource("CylinderShape3D_nonh4")
+
+[node name="birch_a_00_03" type="MultiMeshInstance3D" parent="." unique_id=1923097738 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_0ptm2")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_00_03" unique_id=1827870920]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_00_03/Trunks" unique_id=988176836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2768998, 2.5066, 6.0466003)
+shape = SubResource("CylinderShape3D_rinan")
+
+[node name="pine_tree_00_04" type="MultiMeshInstance3D" parent="." unique_id=1164929994 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_upvi2")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_04" unique_id=1776122313]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_04/Trunks" unique_id=2032010291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9675002, 2.5374, -3.348198)
+shape = SubResource("CylinderShape3D_o40y3")
+
+[node name="birch_a_00_06" type="MultiMeshInstance3D" parent="." unique_id=1606245146 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_d2ctm")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_00_06" unique_id=1238556292]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_00_06/Trunks" unique_id=1832122597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5321999, 2.9628, -7.4994965)
+shape = SubResource("CylinderShape3D_xrya5")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_a_00_06/Trunks" unique_id=174687900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7024999, 2.3458, 0.51129913)
+shape = SubResource("CylinderShape3D_qnn12")
+
+[node name="broadleaf_tree_00_06" type="MultiMeshInstance3D" parent="." unique_id=825167871 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_1xdva")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_06" unique_id=72859289]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_06/Trunks" unique_id=885098252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4586, 2.9084, 4.726097)
+shape = SubResource("CylinderShape3D_op4pg")
+
+[node name="pine_tree_00_07" type="MultiMeshInstance3D" parent="." unique_id=1921811466 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_dx31p")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_07" unique_id=383112632]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_07/Trunks" unique_id=1526371530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5812001, 2.593, -3.9425964)
+shape = SubResource("CylinderShape3D_fsxfy")
+
+[node name="birch_b_00_07" type="MultiMeshInstance3D" parent="." unique_id=1397193924 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_vjtam")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_07" unique_id=316236198]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_07/Trunks" unique_id=363047694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8502998, 2.1068, 1.882103)
+shape = SubResource("CylinderShape3D_0jl7i")
+
+[node name="birch_a_00_07" type="MultiMeshInstance3D" parent="." unique_id=138805417 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_4tv80")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_00_07" unique_id=151254989]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_00_07/Trunks" unique_id=1803394935]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9628, 2.347, 7.6927032)
+shape = SubResource("CylinderShape3D_5xsrc")
+
+[node name="broadleaf_tree_00_08" type="MultiMeshInstance3D" parent="." unique_id=776810070 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_0rlhg")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_08" unique_id=957327438]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_08/Trunks" unique_id=1137880716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9357, 2.341, -1.2180939)
+shape = SubResource("CylinderShape3D_smnjt")
+
+[node name="pine_tree_00_09" type="MultiMeshInstance3D" parent="." unique_id=452971149 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_6gk2h")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_09" unique_id=985359453]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_09/Trunks" unique_id=1999059654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4942002, 2.137, -5.4884033)
+shape = SubResource("CylinderShape3D_ki71o")
+
+[node name="birch_b_00_09" type="MultiMeshInstance3D" parent="." unique_id=670415961 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8cfhc")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_09" unique_id=857883015]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_09/Trunks" unique_id=993624686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9106002, 2.8516, 0.97579956)
+shape = SubResource("CylinderShape3D_pn0yv")
+
+[node name="broadleaf_tree_00_09" type="MultiMeshInstance3D" parent="." unique_id=1421773291 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_r8wi8")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_09" unique_id=675621634]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_09/Trunks" unique_id=969332338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0110002, 2.6892, 6.414505)
+shape = SubResource("CylinderShape3D_54j2b")
+
+[node name="broadleaf_tree_00_10" type="MultiMeshInstance3D" parent="." unique_id=663037734 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ohkhl")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_10" unique_id=212087109]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_10/Trunks" unique_id=1373455062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1494002, 2.6964, -3.0921936)
+shape = SubResource("CylinderShape3D_ai80h")
+
+[node name="pine_tree_00_10" type="MultiMeshInstance3D" parent="." unique_id=1190391225 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_y5xd0")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_10" unique_id=1575100034]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_10/Trunks" unique_id=1364478662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5036998, 2.1134, 1.2380981)
+shape = SubResource("CylinderShape3D_msg0c")
+
+[node name="birch_b_00_10" type="MultiMeshInstance3D" parent="." unique_id=1168172407 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_1w2ej")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_10" unique_id=1826709365]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_10/Trunks" unique_id=1438430878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7445998, 2.6116, 7.0261993)
+shape = SubResource("CylinderShape3D_xf6xx")
+
+[node name="birch_b_00_11" type="MultiMeshInstance3D" parent="." unique_id=1280275252 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_kg7bf")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_11" unique_id=1375972499]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_11/Trunks" unique_id=272275168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4371, 2.1916, -1.1517944)
+shape = SubResource("CylinderShape3D_ikobu")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_00_11/Trunks" unique_id=925060600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0439, 2.815, 3.4978027)
+shape = SubResource("CylinderShape3D_d0dek")
+
+[node name="broadleaf_tree_00_12" type="MultiMeshInstance3D" parent="." unique_id=1864652238 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_mqrp4")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_12" unique_id=1271945158]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_12/Trunks" unique_id=1316121443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4782, 2.4166, -5.928604)
+shape = SubResource("CylinderShape3D_airkc")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_00_12/Trunks" unique_id=419899135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0563998, 2.9758, 6.872299)
+shape = SubResource("CylinderShape3D_acqbc")
+
+[node name="broadleaf_tree_00_13" type="MultiMeshInstance3D" parent="." unique_id=1167489417 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_qf6w1")
+metadata/render_distance = 95.0
+metadata/plant_count = 3
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_13" unique_id=2085854926]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_13/Trunks" unique_id=1288395096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8335, 2.5846, -2.5140991)
+shape = SubResource("CylinderShape3D_dhuxg")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_00_13/Trunks" unique_id=753086147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6532001, 2.3066, 2.8130035)
+shape = SubResource("CylinderShape3D_ie6cs")
+
+[node name="Trunk002" type="CollisionShape3D" parent="broadleaf_tree_00_13/Trunks" unique_id=1527296347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8583002, 2.7568, 7.5899963)
+shape = SubResource("CylinderShape3D_2jxkd")
+
+[node name="broadleaf_tree_00_14" type="MultiMeshInstance3D" parent="." unique_id=728346730 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_sacfe")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_14" unique_id=845580013]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_00_14/Trunks" unique_id=1374521134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1373, 2.4532, -6.5859985)
+shape = SubResource("CylinderShape3D_xof2c")
+
+[node name="pine_tree_01_12" type="MultiMeshInstance3D" parent="." unique_id=41978316 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_vdt0s")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_12" unique_id=138373240]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_12/Trunks" unique_id=93691780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2201004, 2.134, -2.7214966)
+shape = SubResource("CylinderShape3D_gscna")
+
+[node name="Trunk001" type="CollisionShape3D" parent="pine_tree_01_12/Trunks" unique_id=156558321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5422993, 2.2292, -0.063797)
+shape = SubResource("CylinderShape3D_ovsig")
+
+[node name="birch_a_10_06" type="MultiMeshInstance3D" parent="." unique_id=1295877861 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ydw8v")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_06" unique_id=8183999]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_06/Trunks" unique_id=913934399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2303009, 2.325, 7.001404)
+shape = SubResource("CylinderShape3D_yre1u")
+
+[node name="birch_a_01_11" type="MultiMeshInstance3D" parent="." unique_id=2090412410 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_6v8yf")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_01_11" unique_id=1517619229]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_01_11/Trunks" unique_id=417971319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4228, 2.9612, -2.227707)
+shape = SubResource("CylinderShape3D_2o3aa")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_a_01_11/Trunks" unique_id=1307116234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4750004, 2.2888, -0.040100098)
+shape = SubResource("CylinderShape3D_3fwra")
+
+[node name="broadleaf_tree_01_00" type="MultiMeshInstance3D" parent="." unique_id=544908023 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_5gn34")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_00" unique_id=584821124]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_01_00/Trunks" unique_id=121378946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4389, 2.2632, -2.5019002)
+shape = SubResource("CylinderShape3D_c1kq2")
+
+[node name="broadleaf_tree_04_01" type="MultiMeshInstance3D" parent="." unique_id=1661881489 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_fa8tc")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_04_01" unique_id=265769800]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_04_01/Trunks" unique_id=1878814337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.404602, 2.106, 6.8878994)
+shape = SubResource("CylinderShape3D_h0ev7")
+
+[node name="broadleaf_tree_06_10" type="MultiMeshInstance3D" parent="." unique_id=1194941544 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_q8i6r")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_10" unique_id=871305222]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_06_10/Trunks" unique_id=1171867835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9521027, 2.89, 3.1320953)
+shape = SubResource("CylinderShape3D_p8abh")
+
+[node name="birch_a_10_09" type="MultiMeshInstance3D" parent="." unique_id=1892710741 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_xry8l")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_09" unique_id=1325284875]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_09/Trunks" unique_id=2092056623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.152298, 2.3982, -0.17419434)
+shape = SubResource("CylinderShape3D_r7k2v")
+
+[node name="birch_b_01_14" type="MultiMeshInstance3D" parent="." unique_id=1318365329 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ljcuk")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_14" unique_id=966789371]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_14/Trunks" unique_id=787269349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9547005, 2.4576, -1.1898956)
+shape = SubResource("CylinderShape3D_eex31")
+
+[node name="birch_a_02_12" type="MultiMeshInstance3D" parent="." unique_id=121050011 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_jyeeq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_02_12" unique_id=335809784]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_02_12/Trunks" unique_id=1546323162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8633995, 2.275, 2.3117065)
+shape = SubResource("CylinderShape3D_x4rkm")
+
+[node name="birch_a_07_01" type="MultiMeshInstance3D" parent="." unique_id=605197186 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_xwhes")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_07_01" unique_id=503316675]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_07_01/Trunks" unique_id=659614043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.203598, 2.2792, -0.29640007)
+shape = SubResource("CylinderShape3D_1xrfg")
+
+[node name="pine_tree_10_07" type="MultiMeshInstance3D" parent="." unique_id=1005092344 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_dvo5x")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_10_07" unique_id=2001288667]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_10_07/Trunks" unique_id=1792743157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.521103, 2.882, -7.6471024)
+shape = SubResource("CylinderShape3D_lckip")
+
+[node name="pine_tree_02_11" type="MultiMeshInstance3D" parent="." unique_id=994684769 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_poult")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_02_11" unique_id=218174260]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_02_11/Trunks" unique_id=2067146657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.597801, 2.1222, 3.042801)
+shape = SubResource("CylinderShape3D_bgtxt")
+
+[node name="broadleaf_tree_10_10" type="MultiMeshInstance3D" parent="." unique_id=468783832 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_sltt8")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_10_10" unique_id=2033243895]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_10_10/Trunks" unique_id=1925317803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6501007, 2.4466, 0.5007019)
+shape = SubResource("CylinderShape3D_fi00a")
+
+[node name="pine_tree_06_01" type="MultiMeshInstance3D" parent="." unique_id=1964688973 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_wqknb")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_06_01" unique_id=252116468]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_06_01/Trunks" unique_id=1792459809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.410103, 2.834, 0.5576992)
+shape = SubResource("CylinderShape3D_ctlj8")
+
+[node name="birch_a_08_07" type="MultiMeshInstance3D" parent="." unique_id=1559683383 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_y87ax")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_08_07" unique_id=908356506]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_08_07/Trunks" unique_id=1201847674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1457062, 2.6002, 4.0859985)
+shape = SubResource("CylinderShape3D_7vpxd")
+
+[node name="birch_a_02_14" type="MultiMeshInstance3D" parent="." unique_id=318060248 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_nnnv2")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_02_14" unique_id=1095346701]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_02_14/Trunks" unique_id=468031839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4245987, 2.9176, -1.5758057)
+shape = SubResource("CylinderShape3D_kdk0h")
+
+[node name="birch_b_08_04" type="MultiMeshInstance3D" parent="." unique_id=519502701 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_6ka4b")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_08_04" unique_id=373405906]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_08_04/Trunks" unique_id=203381410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0926056, 2.1664, -7.0506973)
+shape = SubResource("CylinderShape3D_m75d5")
+
+[node name="pine_tree_09_10" type="MultiMeshInstance3D" parent="." unique_id=2046973722 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_0b8el")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_09_10" unique_id=1643899356]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_09_10/Trunks" unique_id=975904441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.194702, 2.86, 2.1539001)
+shape = SubResource("CylinderShape3D_65f06")
+
+[node name="broadleaf_tree_09_04" type="MultiMeshInstance3D" parent="." unique_id=1134441030 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_1ioom")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_04" unique_id=692364457]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_09_04/Trunks" unique_id=916005342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.992096, 2.6452, 7.708702)
+shape = SubResource("CylinderShape3D_0gvrv")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_09_04/Trunks" unique_id=1439797082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7962036, 2.2338, -6.8928986)
+shape = SubResource("CylinderShape3D_ovjlx")
+
+[node name="broadleaf_tree_07_02" type="MultiMeshInstance3D" parent="." unique_id=1954920560 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_kjgh0")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_07_02" unique_id=1994410239]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_07_02/Trunks" unique_id=958670838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4008026, 2.9236, -0.13639832)
+shape = SubResource("CylinderShape3D_pm8n2")
+
+[node name="pine_tree_08_14" type="MultiMeshInstance3D" parent="." unique_id=726555487 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_pqb6u")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_08_14" unique_id=95425761]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_08_14/Trunks" unique_id=1790623859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6295013, 2.7102, -1.0608063)
+shape = SubResource("CylinderShape3D_ago8x")
+
+[node name="birch_a_01_02" type="MultiMeshInstance3D" parent="." unique_id=1786306562 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8te60")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_01_02" unique_id=999362178]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_01_02/Trunks" unique_id=1857547243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6592007, 2.7666, -3.4687996)
+shape = SubResource("CylinderShape3D_v3kcx")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_a_01_02/Trunks" unique_id=1808682031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8589, 2.6812, 5.5345993)
+shape = SubResource("CylinderShape3D_4sjyr")
+
+[node name="birch_b_10_14" type="MultiMeshInstance3D" parent="." unique_id=1405918657 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_haf1k")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_10_14" unique_id=536728336]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_10_14/Trunks" unique_id=1981604921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.557907, 2.7216, -1.7662964)
+shape = SubResource("CylinderShape3D_ws4qy")
+
+[node name="birch_a_09_01" type="MultiMeshInstance3D" parent="." unique_id=934820142 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ujl0b")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_09_01" unique_id=1338609304]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_09_01/Trunks" unique_id=646101028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30969238, 2.4648, 4.2656)
+shape = SubResource("CylinderShape3D_drti6")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_a_09_01/Trunks" unique_id=5387374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5077972, 2.2514, 2.2451)
+shape = SubResource("CylinderShape3D_l34em")
+
+[node name="pine_tree_01_11" type="MultiMeshInstance3D" parent="." unique_id=156568399 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ucjmv")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_11" unique_id=1565723042]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_11/Trunks" unique_id=1641675468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7073994, 2.7506, -6.9636993)
+shape = SubResource("CylinderShape3D_onuii")
+
+[node name="Trunk001" type="CollisionShape3D" parent="pine_tree_01_11/Trunks" unique_id=951034070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2248993, 2.3252, 5.6914063)
+shape = SubResource("CylinderShape3D_xhy47")
+
+[node name="broadleaf_tree_11_11" type="MultiMeshInstance3D" parent="." unique_id=1140319303 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_y8x3u")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_11_11" unique_id=800414502]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_11_11/Trunks" unique_id=180621463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8058014, 2.1228, 3.0328064)
+shape = SubResource("CylinderShape3D_2l1vg")
+
+[node name="birch_a_10_14" type="MultiMeshInstance3D" parent="." unique_id=1842292217 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_w1bkv")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_14" unique_id=1341342511]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_14/Trunks" unique_id=1457450570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7814941, 2.2508, -6.020096)
+shape = SubResource("CylinderShape3D_f0c1s")
+
+[node name="broadleaf_tree_01_12" type="MultiMeshInstance3D" parent="." unique_id=679207223 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_xhxv4")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_12" unique_id=995393681]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_01_12/Trunks" unique_id=1389149945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.314699, 2.6026, 4.2644043)
+shape = SubResource("CylinderShape3D_jhl25")
+
+[node name="birch_b_08_08" type="MultiMeshInstance3D" parent="." unique_id=310696798 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_hm2uk")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_08_08" unique_id=404402840]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_08_08/Trunks" unique_id=1091057548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4972992, 2.6456, -4.316696)
+shape = SubResource("CylinderShape3D_k00dv")
+
+[node name="birch_b_09_04" type="MultiMeshInstance3D" parent="." unique_id=1762321941 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_0pxg2")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_09_04" unique_id=316220697]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_09_04/Trunks" unique_id=2109544850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.259903, 2.7124, -2.6848984)
+shape = SubResource("CylinderShape3D_65n88")
+
+[node name="pine_tree_09_05" type="MultiMeshInstance3D" parent="." unique_id=551298759 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ujit5")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_09_05" unique_id=1819477134]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_09_05/Trunks" unique_id=707213684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7099, 2.5046, 6.393303)
+shape = SubResource("CylinderShape3D_a32da")
+
+[node name="birch_a_04_02" type="MultiMeshInstance3D" parent="." unique_id=1984945443 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_utls4")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_04_02" unique_id=415373779]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_04_02/Trunks" unique_id=1270589445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2220993, 2.3452, -3.5172997)
+shape = SubResource("CylinderShape3D_7wgc7")
+
+[node name="birch_b_08_03" type="MultiMeshInstance3D" parent="." unique_id=559903869 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_617j4")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_08_03" unique_id=1279120830]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_08_03/Trunks" unique_id=508393638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0332031, 2.2624, 1.7486)
+shape = SubResource("CylinderShape3D_hv10c")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_08_03/Trunks" unique_id=130427716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12739563, 2.694, -4.2481003)
+shape = SubResource("CylinderShape3D_ufu5p")
+
+[node name="broadleaf_tree_07_01" type="MultiMeshInstance3D" parent="." unique_id=1195637208 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_t2jsk")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_07_01" unique_id=909962352]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_07_01/Trunks" unique_id=1196356946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.568901, 2.9322, -5.9855003)
+shape = SubResource("CylinderShape3D_6ttlm")
+
+[node name="birch_b_04_04" type="MultiMeshInstance3D" parent="." unique_id=328915834 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_i1831")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_04_04" unique_id=1946329094]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_04_04/Trunks" unique_id=705999236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.214897, 2.4606, 3.3408966)
+shape = SubResource("CylinderShape3D_b7p84")
+
+[node name="birch_b_11_12" type="MultiMeshInstance3D" parent="." unique_id=1735810560 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_x6pk2")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_11_12" unique_id=1157001059]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_11_12/Trunks" unique_id=1675292415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8565063, 2.4596, -2.6927032)
+shape = SubResource("CylinderShape3D_vn2c4")
+
+[node name="broadleaf_tree_08_07" type="MultiMeshInstance3D" parent="." unique_id=294894538 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_67lgg")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_07" unique_id=1392019257]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_08_07/Trunks" unique_id=1446637102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.205597, 2.2728, -5.2581024)
+shape = SubResource("CylinderShape3D_nogch")
+
+[node name="birch_a_10_08" type="MultiMeshInstance3D" parent="." unique_id=724029503 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_6qwd1")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_08" unique_id=369918157]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_08/Trunks" unique_id=1483986970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3771057, 2.9292, -6.253296)
+shape = SubResource("CylinderShape3D_bql0w")
+
+[node name="birch_a_00_08" type="MultiMeshInstance3D" parent="." unique_id=524364802 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_x2pvw")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_00_08" unique_id=634490376]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_00_08/Trunks" unique_id=861129451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5463, 2.6212, -0.49890137)
+shape = SubResource("CylinderShape3D_lxrj5")
+
+[node name="pine_tree_01_10" type="MultiMeshInstance3D" parent="." unique_id=1095506213 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_r1kgt")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_10" unique_id=367065095]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_10/Trunks" unique_id=786261560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8614006, 2.289, -5.572403)
+shape = SubResource("CylinderShape3D_1gfe8")
+
+[node name="Trunk001" type="CollisionShape3D" parent="pine_tree_01_10/Trunks" unique_id=380324977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7845001, 2.901, 3.3175964)
+shape = SubResource("CylinderShape3D_kbewi")
+
+[node name="broadleaf_tree_01_10" type="MultiMeshInstance3D" parent="." unique_id=1085068771 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_m21o3")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_10" unique_id=1444369246]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_01_10/Trunks" unique_id=1734227106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.052799, 2.3336, -1.9837036)
+shape = SubResource("CylinderShape3D_nbv1q")
+
+[node name="birch_b_02_09" type="MultiMeshInstance3D" parent="." unique_id=180467521 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_eu1in")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_02_09" unique_id=978726192]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_02_09/Trunks" unique_id=1271994247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0129013, 2.1216, -2.0774994)
+shape = SubResource("CylinderShape3D_fjlhp")
+
+[node name="broadleaf_tree_11_07" type="MultiMeshInstance3D" parent="." unique_id=1433071570 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_r0tsv")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_11_07" unique_id=1634207624]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_11_07/Trunks" unique_id=1585967970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9109955, 2.8856, -1.6100998)
+shape = SubResource("CylinderShape3D_rl65e")
+
+[node name="broadleaf_tree_08_08" type="MultiMeshInstance3D" parent="." unique_id=478755536 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_57oe8")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_08" unique_id=1539597437]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_08_08/Trunks" unique_id=1460760138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7317047, 2.4788, 1.0386047)
+shape = SubResource("CylinderShape3D_haadc")
+
+[node name="birch_b_10_02" type="MultiMeshInstance3D" parent="." unique_id=810354261 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_x2hdm")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_10_02" unique_id=1448634446]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_10_02/Trunks" unique_id=91120875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2503967, 2.9946, 4.685501)
+shape = SubResource("CylinderShape3D_xp8h8")
+
+[node name="birch_a_10_00" type="MultiMeshInstance3D" parent="." unique_id=1337250588 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_m5142")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_00" unique_id=1016149863]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_00/Trunks" unique_id=1513560444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7496033, 2.273, 6.5080004)
+shape = SubResource("CylinderShape3D_dqt02")
+
+[node name="birch_a_11_07" type="MultiMeshInstance3D" parent="." unique_id=481375907 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ddv8b")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_11_07" unique_id=1099103670]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_11_07/Trunks" unique_id=1921862096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.436798, 2.652, -6.6556015)
+shape = SubResource("CylinderShape3D_u01gg")
+
+[node name="birch_b_02_13" type="MultiMeshInstance3D" parent="." unique_id=1764442350 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_cnuph")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_02_13" unique_id=1616423305]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_02_13/Trunks" unique_id=305117471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4482, 2.6364, 0.97869873)
+shape = SubResource("CylinderShape3D_wlpm5")
+
+[node name="birch_a_01_14" type="MultiMeshInstance3D" parent="." unique_id=435945758 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_5vpwi")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_01_14" unique_id=1788936709]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_01_14/Trunks" unique_id=901692088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3152008, 2.775, -3.6544952)
+shape = SubResource("CylinderShape3D_lwj1q")
+
+[node name="birch_b_03_00" type="MultiMeshInstance3D" parent="." unique_id=1876679960 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_31k1m")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_03_00" unique_id=2045318258]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_03_00/Trunks" unique_id=1571049217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.205799, 2.1058, 5.0382004)
+shape = SubResource("CylinderShape3D_n4isg")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_03_00/Trunks" unique_id=521452957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8670006, 2.8834, 4.4909)
+shape = SubResource("CylinderShape3D_mnwt2")
+
+[node name="broadleaf_tree_08_05" type="MultiMeshInstance3D" parent="." unique_id=2129470157 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_t3yhl")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_05" unique_id=56949526]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_08_05/Trunks" unique_id=116460676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5852051, 2.5486, 1.8620987)
+shape = SubResource("CylinderShape3D_ck0vx")
+
+[node name="pine_tree_08_04" type="MultiMeshInstance3D" parent="." unique_id=179416123 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_bx4kv")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_08_04" unique_id=1339726078]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_08_04/Trunks" unique_id=1429961252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1215057, 2.9258, 1.1060028)
+shape = SubResource("CylinderShape3D_nfm6v")
+
+[node name="birch_b_01_03" type="MultiMeshInstance3D" parent="." unique_id=931417191 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_rfsm6")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_03" unique_id=993601200]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_03/Trunks" unique_id=407282441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.603201, 2.6684, -4.042198)
+shape = SubResource("CylinderShape3D_egbku")
+
+[node name="birch_a_03_07" type="MultiMeshInstance3D" parent="." unique_id=1696885964 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_usve7")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_03_07" unique_id=382564203]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_03_07/Trunks" unique_id=1384827852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7630997, 2.5166, -1.4287033)
+shape = SubResource("CylinderShape3D_4ru03")
+
+[node name="broadleaf_tree_09_10" type="MultiMeshInstance3D" parent="." unique_id=681278660 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_okbap")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_10" unique_id=216176317]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_09_10/Trunks" unique_id=1033235618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.286804, 2.6652, 6.355194)
+shape = SubResource("CylinderShape3D_nryya")
+
+[node name="birch_a_06_00" type="MultiMeshInstance3D" parent="." unique_id=1251205793 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_yy8xx")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_06_00" unique_id=1087906764]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_06_00/Trunks" unique_id=2043120133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.314003, 2.514, 2.2938995)
+shape = SubResource("CylinderShape3D_pvdry")
+
+[node name="broadleaf_tree_09_09" type="MultiMeshInstance3D" parent="." unique_id=998039995 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_o3mc5")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_09" unique_id=338959108]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_09_09/Trunks" unique_id=507534968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5926056, 2.8584, 4.267807)
+shape = SubResource("CylinderShape3D_xyl8q")
+
+[node name="birch_b_01_13" type="MultiMeshInstance3D" parent="." unique_id=2096126658 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_0wkyh")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_13" unique_id=1559131101]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_13/Trunks" unique_id=1922542736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5613995, 2.885, 7.7039948)
+shape = SubResource("CylinderShape3D_qnbjb")
+
+[node name="pine_tree_10_02" type="MultiMeshInstance3D" parent="." unique_id=1426082416 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_op2ys")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_10_02" unique_id=967547539]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_10_02/Trunks" unique_id=2145927473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.869507, 2.9352, -7.0656013)
+shape = SubResource("CylinderShape3D_h4e75")
+
+[node name="Trunk001" type="CollisionShape3D" parent="pine_tree_10_02/Trunks" unique_id=1998247327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3240967, 2.6618, -6.4776993)
+shape = SubResource("CylinderShape3D_kxkmg")
+
+[node name="broadleaf_tree_08_00" type="MultiMeshInstance3D" parent="." unique_id=1389960614 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_3hpje")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_00" unique_id=240054837]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_08_00/Trunks" unique_id=216400442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81840515, 2.7274, 5.4107)
+shape = SubResource("CylinderShape3D_m453c")
+
+[node name="broadleaf_tree_09_02" type="MultiMeshInstance3D" parent="." unique_id=146838416 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_b7a11")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_02" unique_id=764033467]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_09_02/Trunks" unique_id=1029481352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8014984, 2.3974, -5.1997986)
+shape = SubResource("CylinderShape3D_afm6o")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_09_02/Trunks" unique_id=1691355651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.304199, 2.4138, 0.25759888)
+shape = SubResource("CylinderShape3D_vyqkw")
+
+[node name="birch_b_09_13" type="MultiMeshInstance3D" parent="." unique_id=1519264879 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_3t2b1")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_09_13" unique_id=707152289]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_09_13/Trunks" unique_id=1084008711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9338074, 2.7038, 6.824005)
+shape = SubResource("CylinderShape3D_cvx7k")
+
+[node name="pine_tree_09_11" type="MultiMeshInstance3D" parent="." unique_id=1233232074 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_j3jsq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_09_11" unique_id=2107180829]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_09_11/Trunks" unique_id=1870647084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.878006, 2.5776, 5.374405)
+shape = SubResource("CylinderShape3D_4l7qt")
+
+[node name="birch_b_01_05" type="MultiMeshInstance3D" parent="." unique_id=870270275 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_rq4jx")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_05" unique_id=1986034491]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_05/Trunks" unique_id=1362873141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.692499, 2.7858, -5.6952972)
+shape = SubResource("CylinderShape3D_0hvnx")
+
+[node name="birch_b_10_11" type="MultiMeshInstance3D" parent="." unique_id=1527666389 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_yed5s")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_10_11" unique_id=215047534]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_10_11/Trunks" unique_id=160582899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7378998, 2.6, -5.5019073)
+shape = SubResource("CylinderShape3D_s0fed")
+
+[node name="birch_a_11_13" type="MultiMeshInstance3D" parent="." unique_id=459345968 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_n0ytl")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_11_13" unique_id=1262650873]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_11_13/Trunks" unique_id=2078836498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.563507, 2.9446, 6.7796936)
+shape = SubResource("CylinderShape3D_motas")
+
+[node name="pine_tree_05_01" type="MultiMeshInstance3D" parent="." unique_id=1459366613 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_aybsp")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_05_01" unique_id=625353288]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_05_01/Trunks" unique_id=1362181559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2034988, 2.9132, 7.022499)
+shape = SubResource("CylinderShape3D_op66u")
+
+[node name="pine_tree_06_11" type="MultiMeshInstance3D" parent="." unique_id=259255356 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 184)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ngc88")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_06_11" unique_id=595066423]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_06_11/Trunks" unique_id=929222568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.745903, 2.1008, -5.3713074)
+shape = SubResource("CylinderShape3D_snkob")
+
+[node name="birch_b_09_02" type="MultiMeshInstance3D" parent="." unique_id=934853158 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_lf7ac")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_09_02" unique_id=1883934355]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_09_02/Trunks" unique_id=241832082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17900085, 2.3898, -7.185299)
+shape = SubResource("CylinderShape3D_2g2l4")
+
+[node name="broadleaf_tree_08_12" type="MultiMeshInstance3D" parent="." unique_id=1708094445 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_clu8j")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_12" unique_id=944717072]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_08_12/Trunks" unique_id=794353061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1734924, 2.3888, -3.100998)
+shape = SubResource("CylinderShape3D_f4abf")
+
+[node name="pine_tree_10_10" type="MultiMeshInstance3D" parent="." unique_id=531451306 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_4nfho")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_10_10" unique_id=1531213444]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_10_10/Trunks" unique_id=1556054049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6038971, 2.2866, 7.035202)
+shape = SubResource("CylinderShape3D_rmvsv")
+
+[node name="birch_a_08_12" type="MultiMeshInstance3D" parent="." unique_id=1187165460 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_2v2t6")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_08_12" unique_id=1832684381]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_08_12/Trunks" unique_id=476441359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7559052, 2.2488, 1.7859955)
+shape = SubResource("CylinderShape3D_hmjwg")
+
+[node name="pine_tree_04_01" type="MultiMeshInstance3D" parent="." unique_id=1568091116 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_xbwk7")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_04_01" unique_id=316298606]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_04_01/Trunks" unique_id=678766485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9128036, 2.1712, 2.4274006)
+shape = SubResource("CylinderShape3D_huq62")
+
+[node name="broadleaf_tree_10_12" type="MultiMeshInstance3D" parent="." unique_id=1689789723 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_unna1")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_10_12" unique_id=884230456]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_10_12/Trunks" unique_id=1220068516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18089294, 2.1838, -7.5354004)
+shape = SubResource("CylinderShape3D_ylesl")
+
+[node name="Trunk001" type="CollisionShape3D" parent="broadleaf_tree_10_12/Trunks" unique_id=23542325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.328903, 2.6858, -2.9776)
+shape = SubResource("CylinderShape3D_8pqw1")
+
+[node name="pine_tree_11_00" type="MultiMeshInstance3D" parent="." unique_id=554657367 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ywgac")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_11_00" unique_id=1629706199]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_11_00/Trunks" unique_id=1533644413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2971954, 2.287, 2.0042)
+shape = SubResource("CylinderShape3D_76sry")
+
+[node name="birch_b_09_14" type="MultiMeshInstance3D" parent="." unique_id=1023943251 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 232)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_n86dp")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_09_14" unique_id=145730053]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_09_14/Trunks" unique_id=1819951412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1858063, 2.3854, -1.4120026)
+shape = SubResource("CylinderShape3D_au1m0")
+
+[node name="birch_a_02_02" type="MultiMeshInstance3D" parent="." unique_id=1539493421 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_pgjvq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_02_02" unique_id=772708824]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_02_02/Trunks" unique_id=2009899370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.558899, 2.9846, -7.177101)
+shape = SubResource("CylinderShape3D_6doko")
+
+[node name="birch_a_10_03" type="MultiMeshInstance3D" parent="." unique_id=367278784 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_qre3x")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_03" unique_id=573442057]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_03/Trunks" unique_id=1097464753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9888, 2.5704, -5.2206)
+shape = SubResource("CylinderShape3D_1rkhk")
+
+[node name="birch_b_09_05" type="MultiMeshInstance3D" parent="." unique_id=1917814297 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_elr5g")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_09_05" unique_id=1282269596]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_09_05/Trunks" unique_id=2046923807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.762207, 2.6554, -5.3591995)
+shape = SubResource("CylinderShape3D_6f1yh")
+
+[node name="pine_tree_09_03" type="MultiMeshInstance3D" parent="." unique_id=1215149661 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_snvtt")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_09_03" unique_id=1418638686]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_09_03/Trunks" unique_id=59768758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2409973, 2.6656, -0.31489944)
+shape = SubResource("CylinderShape3D_ksktg")
+
+[node name="birch_a_11_00" type="MultiMeshInstance3D" parent="." unique_id=1353739710 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_i3uoq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_11_00" unique_id=464259921]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_11_00/Trunks" unique_id=1733225792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4300995, 2.9054, 5.5486)
+shape = SubResource("CylinderShape3D_n45yi")
+
+[node name="pine_tree_01_13" type="MultiMeshInstance3D" parent="." unique_id=876639697 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_165oo")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_01_13" unique_id=157365355]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_01_13/Trunks" unique_id=869732130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36790085, 2.8146, 3.0039978)
+shape = SubResource("CylinderShape3D_7cia3")
+
+[node name="birch_b_07_02" type="MultiMeshInstance3D" parent="." unique_id=1998526183 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_2mljk")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_07_02" unique_id=1688417154]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_07_02/Trunks" unique_id=408374037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26390076, 2.848, -7.9681015)
+shape = SubResource("CylinderShape3D_js04m")
+
+[node name="birch_b_10_13" type="MultiMeshInstance3D" parent="." unique_id=2108820346 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 216)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_wmmey")
+metadata/render_distance = 95.0
+metadata/plant_count = 2
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_10_13" unique_id=1959186027]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_10_13/Trunks" unique_id=251194277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.322998, 2.229, -3.0861053)
+shape = SubResource("CylinderShape3D_onhjw")
+
+[node name="Trunk001" type="CollisionShape3D" parent="birch_b_10_13/Trunks" unique_id=1484036722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7301025, 2.358, 4.090805)
+shape = SubResource("CylinderShape3D_fjbqf")
+
+[node name="pine_tree_09_01" type="MultiMeshInstance3D" parent="." unique_id=1963732111 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8vfq1")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_09_01" unique_id=514496935]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_09_01/Trunks" unique_id=1344889491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.461197, 2.9892, -6.5622997)
+shape = SubResource("CylinderShape3D_bordp")
+
+[node name="birch_a_08_04" type="MultiMeshInstance3D" parent="." unique_id=1304246949 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_s6hqi")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_08_04" unique_id=2127778998]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_08_04/Trunks" unique_id=174341312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6732025, 2.9892, 5.935501)
+shape = SubResource("CylinderShape3D_5gqh5")
+
+[node name="broadleaf_tree_06_02" type="MultiMeshInstance3D" parent="." unique_id=935757420 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_tjkhl")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_02" unique_id=1496048023]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_06_02/Trunks" unique_id=412204641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7230988, 2.233, -7.9165)
+shape = SubResource("CylinderShape3D_vlwc5")
+
+[node name="pine_tree_02_03" type="MultiMeshInstance3D" parent="." unique_id=885183703 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_5k15k")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_02_03" unique_id=1177241132]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_02_03/Trunks" unique_id=198526633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.896801, 2.3556, 3.4259987)
+shape = SubResource("CylinderShape3D_m6s8q")
+
+[node name="birch_a_10_07" type="MultiMeshInstance3D" parent="." unique_id=1309107941 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_x66wd")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_10_07" unique_id=412076055]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_10_07/Trunks" unique_id=1034336925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09820557, 2.538, 4.441803)
+shape = SubResource("CylinderShape3D_ffpbp")
+
+[node name="birch_b_00_05" type="MultiMeshInstance3D" parent="." unique_id=916217659 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_cx0av")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_00_05" unique_id=789914628]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_00_05/Trunks" unique_id=1812570519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1829996, 2.5128, 3.648697)
+shape = SubResource("CylinderShape3D_csxe1")
+
+[node name="pine_tree_02_01" type="MultiMeshInstance3D" parent="." unique_id=1248638097 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_3x58m")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_02_01" unique_id=633806515]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_02_01/Trunks" unique_id=515896649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.644699, 2.8282, 5.7201996)
+shape = SubResource("CylinderShape3D_1gv30")
+
+[node name="birch_b_03_01" type="MultiMeshInstance3D" parent="." unique_id=217778456 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_qxxa8")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_03_01" unique_id=1383789382]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_03_01/Trunks" unique_id=1762482008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7832985, 2.6694, 1.1846008)
+shape = SubResource("CylinderShape3D_xtkhg")
+
+[node name="birch_b_10_01" type="MultiMeshInstance3D" parent="." unique_id=547446055 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_s1asq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_10_01" unique_id=1318578129]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_10_01/Trunks" unique_id=951501241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5175018, 2.3416, -4.9750004)
+shape = SubResource("CylinderShape3D_t0xmx")
+
+[node name="broadleaf_tree_02_05" type="MultiMeshInstance3D" parent="." unique_id=2094184236 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_cqasq")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_02_05" unique_id=704591348]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_02_05/Trunks" unique_id=1655652649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6502991, 2.6428, -7.0473022)
+shape = SubResource("CylinderShape3D_86sej")
+
+[node name="pine_tree_02_12" type="MultiMeshInstance3D" parent="." unique_id=20792895 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_8i5ku")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_02_12" unique_id=205581035]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_02_12/Trunks" unique_id=698474220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9752007, 2.3114, -6.2622986)
+shape = SubResource("CylinderShape3D_sv44r")
+
+[node name="broadleaf_tree_06_09" type="MultiMeshInstance3D" parent="." unique_id=973097153 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_ggojk")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_09" unique_id=2082738771]
+
+[node name="Trunk000" type="CollisionShape3D" parent="broadleaf_tree_06_09/Trunks" unique_id=662161052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6744995, 2.4888, -2.4132996)
+shape = SubResource("CylinderShape3D_q8kvo")
+
+[node name="pine_tree_10_08" type="MultiMeshInstance3D" parent="." unique_id=1962953228 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_oysej")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_10_08" unique_id=1259756009]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_10_08/Trunks" unique_id=134705177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2438965, 2.7112, 4.982193)
+shape = SubResource("CylinderShape3D_d51ex")
+
+[node name="birch_a_01_01" type="MultiMeshInstance3D" parent="." unique_id=1718021642 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_7j0sw")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_01_01" unique_id=211040536]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_01_01/Trunks" unique_id=1195003767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.554199, 2.4942, -6.8407)
+shape = SubResource("CylinderShape3D_0g3wf")
+
+[node name="pine_tree_00_12" type="MultiMeshInstance3D" parent="." unique_id=28034096 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_al4bo")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_00_12" unique_id=984510181]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_00_12/Trunks" unique_id=356336513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4209003, 2.425, 4.2725067)
+shape = SubResource("CylinderShape3D_dxxmj")
+
+[node name="pine_tree_04_02" type="MultiMeshInstance3D" parent="." unique_id=331459204 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_j7cwi")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="pine_tree_04_02" unique_id=1701465435]
+
+[node name="Trunk000" type="CollisionShape3D" parent="pine_tree_04_02/Trunks" unique_id=1742183767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3032, 2.3964, -2.2910004)
+shape = SubResource("CylinderShape3D_ff7on")
+
+[node name="birch_a_11_03" type="MultiMeshInstance3D" parent="." unique_id=2100370940 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 56)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_q4hlh")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_a_11_03" unique_id=388259419]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_a_11_03/Trunks" unique_id=2095902119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3457947, 2.2316, -6.439499)
+shape = SubResource("CylinderShape3D_jh4f3")
+
+[node name="birch_b_01_09" type="MultiMeshInstance3D" parent="." unique_id=888947540 groups=["distance_culled"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 152)
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+multimesh = SubResource("MultiMesh_h4ye1")
+metadata/render_distance = 95.0
+metadata/plant_count = 1
+
+[node name="Trunks" type="StaticBody3D" parent="birch_b_01_09" unique_id=1630967681]
+
+[node name="Trunk000" type="CollisionShape3D" parent="birch_b_01_09/Trunks" unique_id=1450317974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3799, 2.4002, -0.6271057)
+shape = SubResource("CylinderShape3D_6pfap")

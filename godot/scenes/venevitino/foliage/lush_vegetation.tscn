@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/trees.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/shrubs.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/groundcover.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/riverbank.tscn" id="4"]
+
+[node name="LushVegetation" type="Node3D"]
+
+[node name="Trees" parent="." instance=ExtResource("1")]
+
+[node name="Shrubs" parent="." instance=ExtResource("2")]
+
+[node name="Groundcover" parent="." instance=ExtResource("3")]
+
+[node name="Riverbank" parent="." instance=ExtResource("4")]

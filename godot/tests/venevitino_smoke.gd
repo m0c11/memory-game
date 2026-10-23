@@ -33,8 +33,8 @@ func run():
  await key(KEY_F);check("flashlight_on",player.flashlight.visible)
  await key(KEY_TAB);check("overview",not player.first_person and root.get_camera_3d()==scene.get_node("MapCamera"))
  var geometries=get_nodes_in_group("distance_culled")
- check("overview_full_distance",geometries[0].visibility_range_end==0)
- await key(KEY_TAB);check("first_person_restore",player.first_person and geometries[0].visibility_range_end>0)
+ check("overview_full_distance",not geometries.is_empty() and geometries.all(func(g):return g.visibility_range_end==0))
+ await key(KEY_TAB);check("first_person_restore",player.first_person and geometries.all(func(g):return is_equal_approx(g.visibility_range_end,float(g.get_meta("render_distance")))))
  var roompaths=[]
  for group in ["WestCabins", "EastCabins"]:
   for cabin in scene.get_node(group).get_children():roompaths.append(group+"/"+str(cabin.name))

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=12 format=3]
 
 [ext_resource type="Environment" path="res://materials/venevitino/night_environment.tres" id="e1"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/terrain.tscn" id="e2"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" path="res://scenes/venevitino/lighting.tscn" id="e8"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/vegetation.tscn" id="e9"]
 [ext_resource type="PackedScene" path="res://scenes/venevitino/player.tscn" id="e10"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/foliage/lush_vegetation.tscn" id="e11"]
 
 
 [node name="Venevitino" type="Node3D"]
@@ -57,6 +58,8 @@ rotation = Vector3(0.00000, 0.00000, 0.00000)
 [node name="Vegetation" parent="." instance=ExtResource("e9")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="LushVegetation" parent="." instance=ExtResource("e11")]
 
 [node name="Player" parent="." instance=ExtResource("e10")]
 position = Vector3(53.24000, 0.03, 225.28000)
