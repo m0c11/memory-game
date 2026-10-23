@@ -1,0 +1,1862 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/path_tile.tscn" id="e1"]
+
+
+[node name="Paths" type="Node3D"]
+
+
+[node name="Path00_00" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 225.50000)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_01" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 221.75102)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_02" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 218.00204)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_03" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 214.25306)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_04" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 210.50408)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_05" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 206.75510)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_06" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 203.00612)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_07" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 199.25714)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_08" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 195.50816)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_09" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 191.75918)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_10" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 188.01020)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_11" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 184.26122)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_12" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 180.51224)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_13" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 176.76327)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_14" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 173.01429)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_15" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 169.26531)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_16" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 165.51633)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_17" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 161.76735)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_18" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 158.01837)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_19" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 154.26939)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_20" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 150.52041)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_21" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 146.77143)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_22" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 143.02245)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_23" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 139.27347)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_24" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 135.52449)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_25" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 131.77551)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_26" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 128.02653)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_27" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 124.27755)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_28" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 120.52857)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_29" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 116.77959)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_30" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 113.03061)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_31" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 109.28163)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_32" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 105.53265)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_33" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 101.78367)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_34" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 98.03469)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_35" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 94.28571)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_36" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 90.53673)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_37" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 86.78776)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_38" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 83.03878)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_39" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 79.28980)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_40" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 75.54082)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_41" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 71.79184)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_42" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 68.04286)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_43" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 64.29388)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_44" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 60.54490)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_45" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 56.79592)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_46" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 53.04694)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_47" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 49.29796)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_48" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 45.54898)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path00_49" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.01500, 41.80000)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93724)
+
+[node name="Path01_00" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 44.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_01" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 47.73333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_02" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 51.46667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_03" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 55.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_04" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 58.93333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_05" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 62.66667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_06" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 66.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_07" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 70.13333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_08" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 73.86667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_09" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 77.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_10" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 81.33333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_11" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 85.06667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_12" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 88.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_13" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 92.53333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_14" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 96.26667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_15" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 100.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_16" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 103.73333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_17" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 107.46667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_18" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 111.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_19" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 114.93333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_20" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 118.66667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_21" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 122.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_22" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 126.13333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_23" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 129.86667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_24" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 133.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_25" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 137.33333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_26" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 141.06667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_27" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 144.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_28" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 148.53333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_29" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 152.26667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_30" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 156.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_31" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 159.73333)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_32" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 163.46667)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path01_33" parent="." instance=ExtResource("e1")]
+position = Vector3(8.80000, 0.01900, 167.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.93333)
+
+[node name="Path02_00" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_01" parent="." instance=ExtResource("e1")]
+position = Vector3(15.67500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_02" parent="." instance=ExtResource("e1")]
+position = Vector3(19.25000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_03" parent="." instance=ExtResource("e1")]
+position = Vector3(22.82500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_04" parent="." instance=ExtResource("e1")]
+position = Vector3(26.40000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_05" parent="." instance=ExtResource("e1")]
+position = Vector3(29.97500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_06" parent="." instance=ExtResource("e1")]
+position = Vector3(33.55000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_07" parent="." instance=ExtResource("e1")]
+position = Vector3(37.12500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_08" parent="." instance=ExtResource("e1")]
+position = Vector3(40.70000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_09" parent="." instance=ExtResource("e1")]
+position = Vector3(44.27500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_10" parent="." instance=ExtResource("e1")]
+position = Vector3(47.85000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_11" parent="." instance=ExtResource("e1")]
+position = Vector3(51.42500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_12" parent="." instance=ExtResource("e1")]
+position = Vector3(55.00000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_13" parent="." instance=ExtResource("e1")]
+position = Vector3(58.57500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_14" parent="." instance=ExtResource("e1")]
+position = Vector3(62.15000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_15" parent="." instance=ExtResource("e1")]
+position = Vector3(65.72500, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path02_16" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.02300, 155.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_00" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_01" parent="." instance=ExtResource("e1")]
+position = Vector3(15.67500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_02" parent="." instance=ExtResource("e1")]
+position = Vector3(19.25000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_03" parent="." instance=ExtResource("e1")]
+position = Vector3(22.82500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_04" parent="." instance=ExtResource("e1")]
+position = Vector3(26.40000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_05" parent="." instance=ExtResource("e1")]
+position = Vector3(29.97500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_06" parent="." instance=ExtResource("e1")]
+position = Vector3(33.55000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_07" parent="." instance=ExtResource("e1")]
+position = Vector3(37.12500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_08" parent="." instance=ExtResource("e1")]
+position = Vector3(40.70000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_09" parent="." instance=ExtResource("e1")]
+position = Vector3(44.27500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_10" parent="." instance=ExtResource("e1")]
+position = Vector3(47.85000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_11" parent="." instance=ExtResource("e1")]
+position = Vector3(51.42500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_12" parent="." instance=ExtResource("e1")]
+position = Vector3(55.00000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_13" parent="." instance=ExtResource("e1")]
+position = Vector3(58.57500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_14" parent="." instance=ExtResource("e1")]
+position = Vector3(62.15000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_15" parent="." instance=ExtResource("e1")]
+position = Vector3(65.72500, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path03_16" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.02700, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.89375)
+
+[node name="Path04_00" parent="." instance=ExtResource("e1")]
+position = Vector3(9.90000, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_01" parent="." instance=ExtResource("e1")]
+position = Vector3(13.69310, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_02" parent="." instance=ExtResource("e1")]
+position = Vector3(17.48621, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_03" parent="." instance=ExtResource("e1")]
+position = Vector3(21.27931, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_04" parent="." instance=ExtResource("e1")]
+position = Vector3(25.07241, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_05" parent="." instance=ExtResource("e1")]
+position = Vector3(28.86552, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_06" parent="." instance=ExtResource("e1")]
+position = Vector3(32.65862, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_07" parent="." instance=ExtResource("e1")]
+position = Vector3(36.45172, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_08" parent="." instance=ExtResource("e1")]
+position = Vector3(40.24483, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_09" parent="." instance=ExtResource("e1")]
+position = Vector3(44.03793, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_10" parent="." instance=ExtResource("e1")]
+position = Vector3(47.83103, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_11" parent="." instance=ExtResource("e1")]
+position = Vector3(51.62414, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_12" parent="." instance=ExtResource("e1")]
+position = Vector3(55.41724, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_13" parent="." instance=ExtResource("e1")]
+position = Vector3(59.21034, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_14" parent="." instance=ExtResource("e1")]
+position = Vector3(63.00345, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_15" parent="." instance=ExtResource("e1")]
+position = Vector3(66.79655, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_16" parent="." instance=ExtResource("e1")]
+position = Vector3(70.58966, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_17" parent="." instance=ExtResource("e1")]
+position = Vector3(74.38276, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_18" parent="." instance=ExtResource("e1")]
+position = Vector3(78.17586, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_19" parent="." instance=ExtResource("e1")]
+position = Vector3(81.96897, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_20" parent="." instance=ExtResource("e1")]
+position = Vector3(85.76207, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_21" parent="." instance=ExtResource("e1")]
+position = Vector3(89.55517, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_22" parent="." instance=ExtResource("e1")]
+position = Vector3(93.34828, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_23" parent="." instance=ExtResource("e1")]
+position = Vector3(97.14138, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_24" parent="." instance=ExtResource("e1")]
+position = Vector3(100.93448, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_25" parent="." instance=ExtResource("e1")]
+position = Vector3(104.72759, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_26" parent="." instance=ExtResource("e1")]
+position = Vector3(108.52069, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_27" parent="." instance=ExtResource("e1")]
+position = Vector3(112.31379, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_28" parent="." instance=ExtResource("e1")]
+position = Vector3(116.10690, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path04_29" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.03100, 113.30000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94828)
+
+[node name="Path05_00" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_01" parent="." instance=ExtResource("e1")]
+position = Vector3(15.77931, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_02" parent="." instance=ExtResource("e1")]
+position = Vector3(19.45862, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_03" parent="." instance=ExtResource("e1")]
+position = Vector3(23.13793, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_04" parent="." instance=ExtResource("e1")]
+position = Vector3(26.81724, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_05" parent="." instance=ExtResource("e1")]
+position = Vector3(30.49655, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_06" parent="." instance=ExtResource("e1")]
+position = Vector3(34.17586, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_07" parent="." instance=ExtResource("e1")]
+position = Vector3(37.85517, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_08" parent="." instance=ExtResource("e1")]
+position = Vector3(41.53448, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_09" parent="." instance=ExtResource("e1")]
+position = Vector3(45.21379, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_10" parent="." instance=ExtResource("e1")]
+position = Vector3(48.89310, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_11" parent="." instance=ExtResource("e1")]
+position = Vector3(52.57241, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_12" parent="." instance=ExtResource("e1")]
+position = Vector3(56.25172, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_13" parent="." instance=ExtResource("e1")]
+position = Vector3(59.93103, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_14" parent="." instance=ExtResource("e1")]
+position = Vector3(63.61034, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_15" parent="." instance=ExtResource("e1")]
+position = Vector3(67.28966, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_16" parent="." instance=ExtResource("e1")]
+position = Vector3(70.96897, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_17" parent="." instance=ExtResource("e1")]
+position = Vector3(74.64828, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_18" parent="." instance=ExtResource("e1")]
+position = Vector3(78.32759, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_19" parent="." instance=ExtResource("e1")]
+position = Vector3(82.00690, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_20" parent="." instance=ExtResource("e1")]
+position = Vector3(85.68621, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_21" parent="." instance=ExtResource("e1")]
+position = Vector3(89.36552, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_22" parent="." instance=ExtResource("e1")]
+position = Vector3(93.04483, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_23" parent="." instance=ExtResource("e1")]
+position = Vector3(96.72414, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_24" parent="." instance=ExtResource("e1")]
+position = Vector3(100.40345, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_25" parent="." instance=ExtResource("e1")]
+position = Vector3(104.08276, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_26" parent="." instance=ExtResource("e1")]
+position = Vector3(107.76207, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_27" parent="." instance=ExtResource("e1")]
+position = Vector3(111.44138, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_28" parent="." instance=ExtResource("e1")]
+position = Vector3(115.12069, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path05_29" parent="." instance=ExtResource("e1")]
+position = Vector3(118.80000, 0.03500, 85.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91983)
+
+[node name="Path06_00" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_01" parent="." instance=ExtResource("e1")]
+position = Vector3(15.81724, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_02" parent="." instance=ExtResource("e1")]
+position = Vector3(19.53448, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_03" parent="." instance=ExtResource("e1")]
+position = Vector3(23.25172, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_04" parent="." instance=ExtResource("e1")]
+position = Vector3(26.96897, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_05" parent="." instance=ExtResource("e1")]
+position = Vector3(30.68621, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_06" parent="." instance=ExtResource("e1")]
+position = Vector3(34.40345, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_07" parent="." instance=ExtResource("e1")]
+position = Vector3(38.12069, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_08" parent="." instance=ExtResource("e1")]
+position = Vector3(41.83793, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_09" parent="." instance=ExtResource("e1")]
+position = Vector3(45.55517, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_10" parent="." instance=ExtResource("e1")]
+position = Vector3(49.27241, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_11" parent="." instance=ExtResource("e1")]
+position = Vector3(52.98966, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_12" parent="." instance=ExtResource("e1")]
+position = Vector3(56.70690, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_13" parent="." instance=ExtResource("e1")]
+position = Vector3(60.42414, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_14" parent="." instance=ExtResource("e1")]
+position = Vector3(64.14138, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_15" parent="." instance=ExtResource("e1")]
+position = Vector3(67.85862, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_16" parent="." instance=ExtResource("e1")]
+position = Vector3(71.57586, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_17" parent="." instance=ExtResource("e1")]
+position = Vector3(75.29310, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_18" parent="." instance=ExtResource("e1")]
+position = Vector3(79.01034, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_19" parent="." instance=ExtResource("e1")]
+position = Vector3(82.72759, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_20" parent="." instance=ExtResource("e1")]
+position = Vector3(86.44483, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_21" parent="." instance=ExtResource("e1")]
+position = Vector3(90.16207, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_22" parent="." instance=ExtResource("e1")]
+position = Vector3(93.87931, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_23" parent="." instance=ExtResource("e1")]
+position = Vector3(97.59655, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_24" parent="." instance=ExtResource("e1")]
+position = Vector3(101.31379, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_25" parent="." instance=ExtResource("e1")]
+position = Vector3(105.03103, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_26" parent="." instance=ExtResource("e1")]
+position = Vector3(108.74828, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_27" parent="." instance=ExtResource("e1")]
+position = Vector3(112.46552, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_28" parent="." instance=ExtResource("e1")]
+position = Vector3(116.18276, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path06_29" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.03900, 129.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92931)
+
+[node name="Path07_00" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 132.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_01" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 135.77143)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_02" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 139.54286)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_03" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 143.31429)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_04" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 147.08571)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_05" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 150.85714)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_06" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 154.62857)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_07" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 158.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_08" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 162.17143)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_09" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 165.94286)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_10" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 169.71429)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_11" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 173.48571)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_12" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 177.25714)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_13" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 181.02857)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_14" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 184.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_15" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 188.57143)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_16" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 192.34286)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_17" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 196.11429)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_18" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 199.88571)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_19" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 203.65714)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_20" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 207.42857)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path07_21" parent="." instance=ExtResource("e1")]
+position = Vector3(119.90000, 0.04300, 211.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.94286)
+
+[node name="Path08_00" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_01" parent="." instance=ExtResource("e1")]
+position = Vector3(73.00526, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_02" parent="." instance=ExtResource("e1")]
+position = Vector3(76.71053, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_03" parent="." instance=ExtResource("e1")]
+position = Vector3(80.41579, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_04" parent="." instance=ExtResource("e1")]
+position = Vector3(84.12105, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_05" parent="." instance=ExtResource("e1")]
+position = Vector3(87.82632, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_06" parent="." instance=ExtResource("e1")]
+position = Vector3(91.53158, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_07" parent="." instance=ExtResource("e1")]
+position = Vector3(95.23684, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_08" parent="." instance=ExtResource("e1")]
+position = Vector3(98.94211, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_09" parent="." instance=ExtResource("e1")]
+position = Vector3(102.64737, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_10" parent="." instance=ExtResource("e1")]
+position = Vector3(106.35263, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_11" parent="." instance=ExtResource("e1")]
+position = Vector3(110.05789, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_12" parent="." instance=ExtResource("e1")]
+position = Vector3(113.76316, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_13" parent="." instance=ExtResource("e1")]
+position = Vector3(117.46842, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_14" parent="." instance=ExtResource("e1")]
+position = Vector3(121.17368, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_15" parent="." instance=ExtResource("e1")]
+position = Vector3(124.87895, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_16" parent="." instance=ExtResource("e1")]
+position = Vector3(128.58421, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_17" parent="." instance=ExtResource("e1")]
+position = Vector3(132.28947, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_18" parent="." instance=ExtResource("e1")]
+position = Vector3(135.99474, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path08_19" parent="." instance=ExtResource("e1")]
+position = Vector3(139.70000, 0.04700, 213.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.92632)
+
+[node name="Path09_00" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_01" parent="." instance=ExtResource("e1")]
+position = Vector3(72.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_02" parent="." instance=ExtResource("e1")]
+position = Vector3(76.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_03" parent="." instance=ExtResource("e1")]
+position = Vector3(80.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_04" parent="." instance=ExtResource("e1")]
+position = Vector3(83.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_05" parent="." instance=ExtResource("e1")]
+position = Vector3(87.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_06" parent="." instance=ExtResource("e1")]
+position = Vector3(91.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_07" parent="." instance=ExtResource("e1")]
+position = Vector3(94.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_08" parent="." instance=ExtResource("e1")]
+position = Vector3(98.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_09" parent="." instance=ExtResource("e1")]
+position = Vector3(102.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_10" parent="." instance=ExtResource("e1")]
+position = Vector3(105.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_11" parent="." instance=ExtResource("e1")]
+position = Vector3(109.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_12" parent="." instance=ExtResource("e1")]
+position = Vector3(113.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_13" parent="." instance=ExtResource("e1")]
+position = Vector3(116.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_14" parent="." instance=ExtResource("e1")]
+position = Vector3(120.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_15" parent="." instance=ExtResource("e1")]
+position = Vector3(124.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_16" parent="." instance=ExtResource("e1")]
+position = Vector3(127.96667, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_17" parent="." instance=ExtResource("e1")]
+position = Vector3(131.63333, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path09_18" parent="." instance=ExtResource("e1")]
+position = Vector3(135.30000, 0.05100, 140.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_00" parent="." instance=ExtResource("e1")]
+position = Vector3(69.30000, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_01" parent="." instance=ExtResource("e1")]
+position = Vector3(72.96667, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_02" parent="." instance=ExtResource("e1")]
+position = Vector3(76.63333, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_03" parent="." instance=ExtResource("e1")]
+position = Vector3(80.30000, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_04" parent="." instance=ExtResource("e1")]
+position = Vector3(83.96667, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_05" parent="." instance=ExtResource("e1")]
+position = Vector3(87.63333, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_06" parent="." instance=ExtResource("e1")]
+position = Vector3(91.30000, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_07" parent="." instance=ExtResource("e1")]
+position = Vector3(94.96667, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_08" parent="." instance=ExtResource("e1")]
+position = Vector3(98.63333, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_09" parent="." instance=ExtResource("e1")]
+position = Vector3(102.30000, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_10" parent="." instance=ExtResource("e1")]
+position = Vector3(105.96667, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_11" parent="." instance=ExtResource("e1")]
+position = Vector3(109.63333, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="Path11_12" parent="." instance=ExtResource("e1")]
+position = Vector3(113.30000, 0.05900, 50.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.91667)
+
+[node name="DoorPath00_0" parent="." instance=ExtResource("e1")]
+position = Vector3(25.30000, 0.07000, 74.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath00_1" parent="." instance=ExtResource("e1")]
+position = Vector3(25.30000, 0.07000, 78.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath01_0" parent="." instance=ExtResource("e1")]
+position = Vector3(35.20000, 0.07000, 74.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath01_1" parent="." instance=ExtResource("e1")]
+position = Vector3(35.20000, 0.07000, 78.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath02_0" parent="." instance=ExtResource("e1")]
+position = Vector3(46.86000, 0.07000, 74.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath02_1" parent="." instance=ExtResource("e1")]
+position = Vector3(46.86000, 0.07000, 78.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath03_0" parent="." instance=ExtResource("e1")]
+position = Vector3(56.10000, 0.07000, 74.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath03_1" parent="." instance=ExtResource("e1")]
+position = Vector3(56.10000, 0.07000, 78.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath04_0" parent="." instance=ExtResource("e1")]
+position = Vector3(25.30000, 0.07000, 83.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath04_1" parent="." instance=ExtResource("e1")]
+position = Vector3(25.30000, 0.07000, 86.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath05_0" parent="." instance=ExtResource("e1")]
+position = Vector3(35.20000, 0.07000, 83.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath05_1" parent="." instance=ExtResource("e1")]
+position = Vector3(35.20000, 0.07000, 86.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath06_0" parent="." instance=ExtResource("e1")]
+position = Vector3(46.86000, 0.07000, 83.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath06_1" parent="." instance=ExtResource("e1")]
+position = Vector3(46.86000, 0.07000, 86.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath07_0" parent="." instance=ExtResource("e1")]
+position = Vector3(56.10000, 0.07000, 83.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath07_1" parent="." instance=ExtResource("e1")]
+position = Vector3(56.10000, 0.07000, 86.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath08_0" parent="." instance=ExtResource("e1")]
+position = Vector3(20.46000, 0.07000, 128.94000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath08_1" parent="." instance=ExtResource("e1")]
+position = Vector3(20.46000, 0.07000, 132.44000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath09_0" parent="." instance=ExtResource("e1")]
+position = Vector3(29.26000, 0.07000, 128.94000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath09_1" parent="." instance=ExtResource("e1")]
+position = Vector3(29.26000, 0.07000, 132.44000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath10_0" parent="." instance=ExtResource("e1")]
+position = Vector3(38.50000, 0.07000, 128.94000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath10_1" parent="." instance=ExtResource("e1")]
+position = Vector3(38.50000, 0.07000, 132.44000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath11_0" parent="." instance=ExtResource("e1")]
+position = Vector3(47.30000, 0.07000, 128.94000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath11_1" parent="." instance=ExtResource("e1")]
+position = Vector3(47.30000, 0.07000, 132.44000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath12_0" parent="." instance=ExtResource("e1")]
+position = Vector3(19.14000, 0.07000, 140.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath12_1" parent="." instance=ExtResource("e1")]
+position = Vector3(19.14000, 0.07000, 144.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath13_0" parent="." instance=ExtResource("e1")]
+position = Vector3(30.58000, 0.07000, 140.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath13_1" parent="." instance=ExtResource("e1")]
+position = Vector3(30.58000, 0.07000, 144.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath14_0" parent="." instance=ExtResource("e1")]
+position = Vector3(41.36000, 0.07000, 140.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath14_1" parent="." instance=ExtResource("e1")]
+position = Vector3(41.36000, 0.07000, 144.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath15_0" parent="." instance=ExtResource("e1")]
+position = Vector3(21.34000, 0.07000, 152.26000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath15_1" parent="." instance=ExtResource("e1")]
+position = Vector3(21.34000, 0.07000, 155.76000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath16_0" parent="." instance=ExtResource("e1")]
+position = Vector3(31.68000, 0.07000, 152.26000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath16_1" parent="." instance=ExtResource("e1")]
+position = Vector3(31.68000, 0.07000, 155.76000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath17_0" parent="." instance=ExtResource("e1")]
+position = Vector3(42.46000, 0.07000, 152.26000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath17_1" parent="." instance=ExtResource("e1")]
+position = Vector3(42.46000, 0.07000, 155.76000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath18_0" parent="." instance=ExtResource("e1")]
+position = Vector3(127.36000, 0.07000, 147.84000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath18_1" parent="." instance=ExtResource("e1")]
+position = Vector3(123.86000, 0.07000, 147.84000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath19_0" parent="." instance=ExtResource("e1")]
+position = Vector3(126.83200, 0.07000, 152.68000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath19_1" parent="." instance=ExtResource("e1")]
+position = Vector3(123.33200, 0.07000, 152.68000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath20_0" parent="." instance=ExtResource("e1")]
+position = Vector3(126.30400, 0.07000, 157.52000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath20_1" parent="." instance=ExtResource("e1")]
+position = Vector3(122.80400, 0.07000, 157.52000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath21_0" parent="." instance=ExtResource("e1")]
+position = Vector3(125.77600, 0.07000, 162.36000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath21_1" parent="." instance=ExtResource("e1")]
+position = Vector3(122.27600, 0.07000, 162.36000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath22_0" parent="." instance=ExtResource("e1")]
+position = Vector3(125.24800, 0.07000, 167.20000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath22_1" parent="." instance=ExtResource("e1")]
+position = Vector3(121.74800, 0.07000, 167.20000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath23_0" parent="." instance=ExtResource("e1")]
+position = Vector3(124.72000, 0.07000, 172.04000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath23_1" parent="." instance=ExtResource("e1")]
+position = Vector3(121.22000, 0.07000, 172.04000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath24_0" parent="." instance=ExtResource("e1")]
+position = Vector3(124.19200, 0.07000, 176.88000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath24_1" parent="." instance=ExtResource("e1")]
+position = Vector3(120.69200, 0.07000, 176.88000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath25_0" parent="." instance=ExtResource("e1")]
+position = Vector3(123.66400, 0.07000, 181.72000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath25_1" parent="." instance=ExtResource("e1")]
+position = Vector3(120.16400, 0.07000, 181.72000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath26_0" parent="." instance=ExtResource("e1")]
+position = Vector3(123.13600, 0.07000, 186.56000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath26_1" parent="." instance=ExtResource("e1")]
+position = Vector3(119.63600, 0.07000, 186.56000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath27_0" parent="." instance=ExtResource("e1")]
+position = Vector3(122.60800, 0.07000, 191.40000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath27_1" parent="." instance=ExtResource("e1")]
+position = Vector3(119.10800, 0.07000, 191.40000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath28_0" parent="." instance=ExtResource("e1")]
+position = Vector3(122.08000, 0.07000, 196.24000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath28_1" parent="." instance=ExtResource("e1")]
+position = Vector3(118.58000, 0.07000, 196.24000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath29_0" parent="." instance=ExtResource("e1")]
+position = Vector3(121.55200, 0.07000, 201.08000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath29_1" parent="." instance=ExtResource("e1")]
+position = Vector3(118.05200, 0.07000, 201.08000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath30_0" parent="." instance=ExtResource("e1")]
+position = Vector3(121.02400, 0.07000, 205.92000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath30_1" parent="." instance=ExtResource("e1")]
+position = Vector3(117.52400, 0.07000, 205.92000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath31_0" parent="." instance=ExtResource("e1")]
+position = Vector3(118.38000, 0.07000, 156.20000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath31_1" parent="." instance=ExtResource("e1")]
+position = Vector3(121.88000, 0.07000, 156.20000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath32_0" parent="." instance=ExtResource("e1")]
+position = Vector3(117.67600, 0.07000, 161.48000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath32_1" parent="." instance=ExtResource("e1")]
+position = Vector3(121.17600, 0.07000, 161.48000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath33_0" parent="." instance=ExtResource("e1")]
+position = Vector3(116.97200, 0.07000, 166.76000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath33_1" parent="." instance=ExtResource("e1")]
+position = Vector3(120.47200, 0.07000, 166.76000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath34_0" parent="." instance=ExtResource("e1")]
+position = Vector3(116.26800, 0.07000, 172.04000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath34_1" parent="." instance=ExtResource("e1")]
+position = Vector3(119.76800, 0.07000, 172.04000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath35_0" parent="." instance=ExtResource("e1")]
+position = Vector3(115.56400, 0.07000, 177.32000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath35_1" parent="." instance=ExtResource("e1")]
+position = Vector3(119.06400, 0.07000, 177.32000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath36_0" parent="." instance=ExtResource("e1")]
+position = Vector3(114.86000, 0.07000, 182.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath36_1" parent="." instance=ExtResource("e1")]
+position = Vector3(118.36000, 0.07000, 182.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath37_0" parent="." instance=ExtResource("e1")]
+position = Vector3(114.15600, 0.07000, 187.88000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath37_1" parent="." instance=ExtResource("e1")]
+position = Vector3(117.65600, 0.07000, 187.88000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath38_0" parent="." instance=ExtResource("e1")]
+position = Vector3(113.45200, 0.07000, 193.16000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath38_1" parent="." instance=ExtResource("e1")]
+position = Vector3(116.95200, 0.07000, 193.16000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath39_0" parent="." instance=ExtResource("e1")]
+position = Vector3(112.74800, 0.07000, 198.44000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath39_1" parent="." instance=ExtResource("e1")]
+position = Vector3(116.24800, 0.07000, 198.44000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath40_0" parent="." instance=ExtResource("e1")]
+position = Vector3(112.04400, 0.07000, 203.72000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="DoorPath40_1" parent="." instance=ExtResource("e1")]
+position = Vector3(115.54400, 0.07000, 203.72000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 0.87500)
+
+[node name="EntryApproach0" parent="." instance=ExtResource("e1")]
+position = Vector3(53.24, 0.08, 226.6)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach1" parent="." instance=ExtResource("e1")]
+position = Vector3(55.91666666666667, 0.08, 224.4)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach2" parent="." instance=ExtResource("e1")]
+position = Vector3(58.593333333333334, 0.08, 222.2)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach3" parent="." instance=ExtResource("e1")]
+position = Vector3(61.269999999999996, 0.08, 220.0)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach4" parent="." instance=ExtResource("e1")]
+position = Vector3(63.946666666666665, 0.08, 217.8)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach5" parent="." instance=ExtResource("e1")]
+position = Vector3(66.62333333333333, 0.08, 215.6)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)
+
+[node name="EntryApproach6" parent="." instance=ExtResource("e1")]
+position = Vector3(69.3, 0.08, 213.4)
+rotation = Vector3(0, 2.2587596389000884, 0)
+scale = Vector3(1, 1, 0.8661893717760436)

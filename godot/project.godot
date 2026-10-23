@@ -2,10 +2,10 @@
 config_version=5
 
 [application]
-config/name="Год 19 → 20 · Студвесна"
-run/main_scene="res://scenes/levels/auditorium.tscn"
+config/name="Воспоминания · Веневитино"
+run/main_scene="res://scenes/levels/venevitino.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/description="Актовый зал ВГУ — редактируемая сцена первого уровня."
+config/description="Редактируемые уровни: актовый зал ВГУ и ночная база Веневитино."
 
 [display]
 window/size/viewport_width=1280
@@ -15,6 +15,10 @@ window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 
 [input]
+toggle_flashlight={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":70)]
+}
 interact={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"physical_keycode":69)]

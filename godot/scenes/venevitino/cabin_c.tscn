@@ -1,0 +1,139 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/cabin_structure.tscn" id="e1"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/bed_green.tscn" id="e2"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/bed_blue.tscn" id="e3"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/room_table.tscn" id="e4"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/chair.tscn" id="e5"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/wardrobe.tscn" id="e6"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/nightstand.tscn" id="e7"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/duffel_bag.glb" id="e8"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/books_notebook.glb" id="e9"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/glass_bottle.glb" id="e10"]
+
+
+[node name="CabinC" type="Node3D"]
+
+
+[node name="Structure" parent="." instance=ExtResource("e1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bed00" parent="." instance=ExtResource("e2")]
+position = Vector3(-1.60000, 0.50000, -1.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bed01" parent="." instance=ExtResource("e3")]
+position = Vector3(0.00000, 0.50000, -1.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bed02" parent="." instance=ExtResource("e2")]
+position = Vector3(1.60000, 0.50000, -1.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Table" parent="." instance=ExtResource("e4")]
+position = Vector3(0.00000, 0.50000, 0.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Chair" parent="." instance=ExtResource("e5")]
+position = Vector3(0.00000, 0.50000, 1.50000)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+
+[node name="Wardrobe" parent="." instance=ExtResource("e6")]
+position = Vector3(-1.75000, 0.50000, 2.45000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Nightstand" parent="." instance=ExtResource("e7")]
+position = Vector3(-1.80000, 0.50000, 0.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bag" parent="." instance=ExtResource("e8")]
+position = Vector3(1.75000, 0.50000, 2.35000)
+rotation = Vector3(0.00000, 0.30000, 0.00000)
+
+[node name="duffel_bag_Mesh" parent="Bag/duffel_bag" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Book" parent="." instance=ExtResource("e9")]
+position = Vector3(0.00000, 1.28000, 0.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Cover" parent="Book/books_notebook/Book" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Cover_001" parent="Book/books_notebook/Book" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Pages" parent="Book/books_notebook/Book" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Spine" parent="Book/books_notebook/Book" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Cover_002" parent="Book/books_notebook/Book_001" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Cover_003" parent="Book/books_notebook/Book_001" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Pages_001" parent="Book/books_notebook/Book_001" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Spine_001" parent="Book/books_notebook/Book_001" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Cover_004" parent="Book/books_notebook/Book_002" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Cover_005" parent="Book/books_notebook/Book_002" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Pages_002" parent="Book/books_notebook/Book_002" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Spine_002" parent="Book/books_notebook/Book_002" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="books_notebook_Mesh" parent="Book/books_notebook" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Bottle" parent="." instance=ExtResource("e10")]
+position = Vector3(-1.80000, 1.10000, 0.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="glass_bottle_Mesh" parent="Bottle/glass_bottle" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[editable path="Bag"]
+[editable path="Book"]
+[editable path="Bottle"]

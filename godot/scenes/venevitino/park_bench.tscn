@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/park_bench.glb" id="e1"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(1.80000, 0.90000, 0.55000)
+
+[node name="ParkBench" type="Node3D"]
+
+
+[node name="Model" parent="." instance=ExtResource("e1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="park_bench_Mesh" parent="Model/park_bench" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+shape = SubResource("r1")
+
+[editable path="Model"]

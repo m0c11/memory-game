@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/picnic_table.glb" id="e1"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(2.12000, 0.76000, 1.61500)
+
+[node name="PicnicTable" type="Node3D"]
+
+
+[node name="Model" parent="." instance=ExtResource("e1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="picnic_table_Mesh" parent="Model/picnic_table" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.00000, 0.38000, 0.00000)
+shape = SubResource("r1")
+
+[editable path="Model"]

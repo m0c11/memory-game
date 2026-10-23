@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/cabin_a.tscn" id="e1"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/cabin_b.tscn" id="e2"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/cabin_c.tscn" id="e3"]
+
+
+[node name="EastCabins" type="Node3D"]
+
+
+[node name="Cabin01" parent="." instance=ExtResource("e1")]
+position = Vector3(133.76000, 0.00000, 147.84000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin02" parent="." instance=ExtResource("e2")]
+position = Vector3(133.23200, 0.00000, 152.68000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin03" parent="." instance=ExtResource("e3")]
+position = Vector3(132.70400, 0.00000, 157.52000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin04" parent="." instance=ExtResource("e1")]
+position = Vector3(132.17600, 0.00000, 162.36000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin05" parent="." instance=ExtResource("e2")]
+position = Vector3(131.64800, 0.00000, 167.20000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin06" parent="." instance=ExtResource("e3")]
+position = Vector3(131.12000, 0.00000, 172.04000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin07" parent="." instance=ExtResource("e1")]
+position = Vector3(130.59200, 0.00000, 176.88000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin08" parent="." instance=ExtResource("e2")]
+position = Vector3(130.06400, 0.00000, 181.72000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin09" parent="." instance=ExtResource("e3")]
+position = Vector3(129.53600, 0.00000, 186.56000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin10" parent="." instance=ExtResource("e1")]
+position = Vector3(129.00800, 0.00000, 191.40000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin11" parent="." instance=ExtResource("e2")]
+position = Vector3(128.48000, 0.00000, 196.24000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin12" parent="." instance=ExtResource("e3")]
+position = Vector3(127.95200, 0.00000, 201.08000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin13" parent="." instance=ExtResource("e1")]
+position = Vector3(127.42400, 0.00000, 205.92000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin14" parent="." instance=ExtResource("e2")]
+position = Vector3(111.98000, 0.00000, 156.20000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin15" parent="." instance=ExtResource("e3")]
+position = Vector3(111.27600, 0.00000, 161.48000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin16" parent="." instance=ExtResource("e1")]
+position = Vector3(110.57200, 0.00000, 166.76000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin17" parent="." instance=ExtResource("e2")]
+position = Vector3(109.86800, 0.00000, 172.04000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin18" parent="." instance=ExtResource("e3")]
+position = Vector3(109.16400, 0.00000, 177.32000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin19" parent="." instance=ExtResource("e1")]
+position = Vector3(108.46000, 0.00000, 182.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin20" parent="." instance=ExtResource("e2")]
+position = Vector3(107.75600, 0.00000, 187.88000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin21" parent="." instance=ExtResource("e3")]
+position = Vector3(107.05200, 0.00000, 193.16000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin22" parent="." instance=ExtResource("e1")]
+position = Vector3(106.34800, 0.00000, 198.44000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)
+
+[node name="Cabin23" parent="." instance=ExtResource("e2")]
+position = Vector3(105.64400, 0.00000, 203.72000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(0.82000, 1.00000, 0.82000)

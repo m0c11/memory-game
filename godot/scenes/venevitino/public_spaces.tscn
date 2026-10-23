@@ -1,0 +1,380 @@
+[gd_scene load_steps=30 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/canopy.tscn" id="e1"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/volleyball_court.glb" id="e2"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/volleyball_net.glb" id="e3"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/utility_building.tscn" id="e4"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/park_bench.tscn" id="e5"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/river_dock.glb" id="e6"]
+[ext_resource type="Material" path="res://materials/venevitino/wood.tres" id="e7"]
+[ext_resource type="Material" path="res://materials/venevitino/water.tres" id="e8"]
+[ext_resource type="Material" path="res://materials/venevitino/utility.tres" id="e9"]
+[ext_resource type="Material" path="res://materials/venevitino/roof.tres" id="e10"]
+[ext_resource type="Material" path="res://materials/venevitino/path.tres" id="e11"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(0.15000, 2.60000, 0.15000)
+
+[sub_resource type="BoxShape3D" id="r2"]
+size = Vector3(0.15000, 2.60000, 0.15000)
+
+[sub_resource type="BoxShape3D" id="r3"]
+size = Vector3(5.00000, 0.16000, 2.00000)
+
+[sub_resource type="ConvexPolygonShape3D" id="r4"]
+points = PackedVector3Array(1.4, 0, -1, 1.4, 0, 1, 3, 0, -1, 3, 0, 1, 1.4, 0.35, -1, 1.4, 0.35, 1)
+
+[sub_resource type="BoxShape3D" id="r5"]
+size = Vector3(5.00000, 2.00000, 0.20000)
+
+[sub_resource type="BoxShape3D" id="r6"]
+size = Vector3(5.00000, 2.00000, 0.20000)
+
+[sub_resource type="BoxShape3D" id="r7"]
+size = Vector3(0.20000, 2.00000, 2.40000)
+
+[sub_resource type="BoxShape3D" id="r8"]
+size = Vector3(12.00000, 0.50000, 13.00000)
+
+[sub_resource type="BoxMesh" id="r9"]
+size = Vector3(12.00000, 0.50000, 13.00000)
+
+[sub_resource type="BoxShape3D" id="r10"]
+size = Vector3(1.50000, 6.00000, 1.50000)
+
+[sub_resource type="BoxMesh" id="r11"]
+size = Vector3(1.50000, 6.00000, 1.50000)
+
+[sub_resource type="BoxShape3D" id="r12"]
+size = Vector3(3.00000, 2.00000, 3.00000)
+
+[sub_resource type="BoxMesh" id="r13"]
+size = Vector3(3.00000, 2.00000, 3.00000)
+
+[sub_resource type="BoxMesh" id="r14"]
+size = Vector3(15.00000, 0.04000, 10.00000)
+
+[sub_resource type="BoxShape3D" id="r15"]
+size = Vector3(0.65000, 2.60000, 0.65000)
+
+[sub_resource type="BoxMesh" id="r16"]
+size = Vector3(0.65000, 2.60000, 0.65000)
+
+[sub_resource type="BoxShape3D" id="r17"]
+size = Vector3(0.65000, 2.60000, 0.65000)
+
+[sub_resource type="BoxMesh" id="r18"]
+size = Vector3(0.65000, 2.60000, 0.65000)
+
+[node name="PublicSpaces" type="Node3D"]
+
+
+[node name="DanceShelter" parent="." instance=ExtResource("e1")]
+position = Vector3(94.60000, 0.00000, 79.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="RiversideShelter" parent="." instance=ExtResource("e1")]
+position = Vector3(23.10000, 0.00000, 103.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="VolleyballSurface" parent="." instance=ExtResource("e2")]
+position = Vector3(96.80000, 0.09, 96.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="volleyball_court_Mesh" parent="VolleyballSurface/volleyball_court" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="VolleyballNet" parent="." instance=ExtResource("e3")]
+position = Vector3(96.80000, 0.00000, 96.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="volleyball_net_Mesh" parent="VolleyballNet/volleyball_net" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="NetPost0" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="NetPost0"]
+position = Vector3(92.20000, 1.30000, 96.80000)
+shape = SubResource("r1")
+
+[node name="NetPost2" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="NetPost2"]
+position = Vector3(101.40000, 1.30000, 96.80000)
+shape = SubResource("r2")
+
+[node name="TennisSurface" parent="." instance=ExtResource("e2")]
+position = Vector3(62.70000, 0.05500, 192.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="volleyball_court_Mesh" parent="TennisSurface/volleyball_court" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="TennisNet" parent="." instance=ExtResource("e3")]
+position = Vector3(62.70000, 0.00000, 192.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 0.45000, 1.00000)
+
+[node name="volleyball_net_Mesh" parent="TennisNet/volleyball_net" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Building00" parent="." instance=ExtResource("e4")]
+position = Vector3(89.10000, 0.00000, 45.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(5.00000, 1.00000, 1.00000)
+
+[node name="Building01" parent="." instance=ExtResource("e4")]
+position = Vector3(105.60000, 0.00000, 55.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(2.00000, 1.00000, 1.00000)
+
+[node name="Building02" parent="." instance=ExtResource("e4")]
+position = Vector3(115.50000, 0.00000, 66.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(0.70000, 1.00000, 1.30000)
+
+[node name="Building03" parent="." instance=ExtResource("e4")]
+position = Vector3(29.70000, 0.00000, 86.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(2.00000, 1.00000, 1.00000)
+
+[node name="Building04" parent="." instance=ExtResource("e4")]
+position = Vector3(20.46000, 0.00000, 93.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.30000)
+
+[node name="Building05" parent="." instance=ExtResource("e4")]
+position = Vector3(48.40000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.30000, 0.00000)
+scale = Vector3(1.50000, 1.00000, 1.50000)
+
+[node name="Building06" parent="." instance=ExtResource("e4")]
+position = Vector3(105.60000, 0.00000, 134.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(2.50000, 1.00000, 2.40000)
+
+[node name="Building07" parent="." instance=ExtResource("e4")]
+position = Vector3(94.38000, 0.00000, 124.96000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.10000, 1.00000, 1.00000)
+
+[node name="Building08" parent="." instance=ExtResource("e4")]
+position = Vector3(77.00000, 0.00000, 130.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building09" parent="." instance=ExtResource("e4")]
+position = Vector3(90.20000, 0.00000, 134.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building10" parent="." instance=ExtResource("e4")]
+position = Vector3(130.02000, 0.00000, 135.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building11" parent="." instance=ExtResource("e4")]
+position = Vector3(154.00000, 0.00000, 147.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.20000, 1.00000, 1.00000)
+
+[node name="Building12" parent="." instance=ExtResource("e4")]
+position = Vector3(148.50000, 0.00000, 161.70000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(0.70000, 1.00000, 1.50000)
+
+[node name="Building13" parent="." instance=ExtResource("e4")]
+position = Vector3(88.00000, 0.00000, 192.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.20000, 1.00000, 1.00000)
+
+[node name="Building14" parent="." instance=ExtResource("e4")]
+position = Vector3(58.30000, 0.00000, 214.50000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building15" parent="." instance=ExtResource("e4")]
+position = Vector3(67.76000, 0.00000, 214.50000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building16" parent="." instance=ExtResource("e4")]
+position = Vector3(79.42000, 0.00000, 217.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building17" parent="." instance=ExtResource("e4")]
+position = Vector3(88.66000, 0.00000, 217.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building18" parent="." instance=ExtResource("e4")]
+position = Vector3(100.54000, 0.00000, 218.90000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Building19" parent="." instance=ExtResource("e4")]
+position = Vector3(117.48000, 0.00000, 217.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.00000)
+
+[node name="Bench0" parent="." instance=ExtResource("e5")]
+position = Vector3(80.30000, 0.00000, 80.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bench1" parent="." instance=ExtResource("e5")]
+position = Vector3(106.70000, 0.00000, 83.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Bench2" parent="." instance=ExtResource("e5")]
+position = Vector3(82.50000, 0.00000, 105.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bench3" parent="." instance=ExtResource("e5")]
+position = Vector3(104.50000, 0.00000, 105.60000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Bench4" parent="." instance=ExtResource("e5")]
+position = Vector3(12.10000, 0.00000, 118.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bench5" parent="." instance=ExtResource("e5")]
+position = Vector3(12.10000, 0.00000, 158.40000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Bench6" parent="." instance=ExtResource("e5")]
+position = Vector3(113.30000, 0.00000, 140.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Bench7" parent="." instance=ExtResource("e5")]
+position = Vector3(135.30000, 0.00000, 184.80000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="Pier" parent="." instance=ExtResource("e6")]
+position = Vector3(-1.00000, 0.05000, 89.10000)
+rotation = Vector3(0.00000, 1.57080, 0.00000)
+
+[node name="river_dock_Mesh" parent="Pier/river_dock" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="PierDeck" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="PierDeck"]
+position = Vector3(-1.00000, 0.27000, 89.10000)
+shape = SubResource("r3")
+
+[node name="PierRamp" type="StaticBody3D" parent="."]
+position = Vector3(0.00000, 0.00000, 89.10000)
+
+[node name="Shape" type="CollisionShape3D" parent="PierRamp"]
+shape = SubResource("r4")
+
+[node name="PierEdge0" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="PierEdge0"]
+position = Vector3(-1.00000, 1.00000, 87.95000)
+shape = SubResource("r5")
+
+[node name="PierEdge1" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="PierEdge1"]
+position = Vector3(-1.00000, 1.00000, 90.25000)
+shape = SubResource("r6")
+
+[node name="PierEnd" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="PierEnd"]
+position = Vector3(-3.60000, 1.00000, 89.10000)
+shape = SubResource("r7")
+
+[node name="Bathhouse" parent="." instance=ExtResource("e4")]
+position = Vector3(12.10000, 0.00000, 96.80000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+scale = Vector3(1.00000, 1.00000, 1.50000)
+
+[node name="Reservoir" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Reservoir"]
+position = Vector3(156.20000, 0.00000, 127.16000)
+shape = SubResource("r8")
+
+[node name="Mesh" type="MeshInstance3D" parent="Reservoir"]
+position = Vector3(156.20000, 0.00000, 127.16000)
+mesh = SubResource("r9")
+material_override = ExtResource("e8")
+
+[node name="TowerShaft" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="TowerShaft"]
+position = Vector3(143.00000, 3.00000, 136.40000)
+shape = SubResource("r10")
+
+[node name="Mesh" type="MeshInstance3D" parent="TowerShaft"]
+position = Vector3(143.00000, 3.00000, 136.40000)
+mesh = SubResource("r11")
+material_override = ExtResource("e9")
+
+[node name="TowerTank" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="TowerTank"]
+position = Vector3(143.00000, 6.40000, 136.40000)
+shape = SubResource("r12")
+
+[node name="Mesh" type="MeshInstance3D" parent="TowerTank"]
+position = Vector3(143.00000, 6.40000, 136.40000)
+mesh = SubResource("r13")
+material_override = ExtResource("e10")
+
+[node name="Parking" type="MeshInstance3D" parent="."]
+position = Vector3(73.70000, 0.00000, 159.50000)
+mesh = SubResource("r14")
+material_override = ExtResource("e11")
+
+[node name="EntryPillar0" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="EntryPillar0"]
+position = Vector3(45.10000, 1.30000, 226.60000)
+shape = SubResource("r15")
+
+[node name="Mesh" type="MeshInstance3D" parent="EntryPillar0"]
+position = Vector3(45.10000, 1.30000, 226.60000)
+mesh = SubResource("r16")
+material_override = ExtResource("e7")
+
+[node name="EntryPillar1" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="EntryPillar1"]
+position = Vector3(61.60000, 1.30000, 226.60000)
+shape = SubResource("r17")
+
+[node name="Mesh" type="MeshInstance3D" parent="EntryPillar1"]
+position = Vector3(61.60000, 1.30000, 226.60000)
+mesh = SubResource("r18")
+material_override = ExtResource("e7")
+
+[editable path="VolleyballSurface"]
+[editable path="VolleyballNet"]
+[editable path="TennisSurface"]
+[editable path="TennisNet"]
+[editable path="Pier"]

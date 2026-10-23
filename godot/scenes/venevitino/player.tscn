@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player/capsule_player.tscn" id="e1"]
+[ext_resource type="Script" path="res://scripts/venevitino_player.gd" id="e2"]
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/hand_flashlight.glb" id="e3"]
+
+
+[node name="VenevitinoPlayer" instance=ExtResource("e1")]
+script = ExtResource("e2")
+walk_speed = 4.0
+sprint_speed = 7.0
+
+[node name="FirstPersonCamera" parent="Head"]
+far = 280.0
+fov = 74.0
+
+[node name="Flashlight" type="SpotLight3D" parent="Head/FirstPersonCamera"]
+position = Vector3(0.18, -0.14, -0.2)
+light_color = Color(1, 0.88, 0.67, 1)
+light_energy = 4.0
+light_bake_mode = 0
+spot_range = 24.0
+spot_angle = 30.0
+spot_angle_attenuation = 0.7
+shadow_enabled = true
+shadow_bias = 0.03
+
+[node name="TorchModel" parent="Head/FirstPersonCamera" instance=ExtResource("e3")]
+position = Vector3(0.28000, -0.23000, -0.42000)
+rotation = Vector3(0.00000, 3.14159, 0.00000)
+scale = Vector3(0.80000, 0.80000, 0.80000)
+
+[node name="Bezel" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Body" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip_001" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip_002" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip_003" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip_004" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Grip_005" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Lens" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Reflector" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[node name="Switch" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+cast_shadow = 0
+
+[editable path="Head/FirstPersonCamera/TorchModel"]

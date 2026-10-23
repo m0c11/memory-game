@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Environment" path="res://materials/venevitino/night_environment.tres" id="e1"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/terrain.tscn" id="e2"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/perimeter.tscn" id="e3"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/paths.tscn" id="e4"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/west_cabins.tscn" id="e5"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/east_cabins.tscn" id="e6"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/public_spaces.tscn" id="e7"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/lighting.tscn" id="e8"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/vegetation.tscn" id="e9"]
+[ext_resource type="PackedScene" path="res://scenes/venevitino/player.tscn" id="e10"]
+
+
+[node name="Venevitino" type="Node3D"]
+
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = ExtResource("e1")
+
+[node name="Moon" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-42, -30, 0)
+light_color = Color(0.48, 0.62, 0.95, 1)
+light_energy = 0.35
+light_bake_mode = 0
+shadow_enabled = true
+directional_shadow_max_distance = 65.0
+
+[node name="Terrain" parent="." instance=ExtResource("e2")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Perimeter" parent="." instance=ExtResource("e3")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Paths" parent="." instance=ExtResource("e4")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="WestCabins" parent="." instance=ExtResource("e5")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="EastCabins" parent="." instance=ExtResource("e6")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="PublicSpaces" parent="." instance=ExtResource("e7")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lighting" parent="." instance=ExtResource("e8")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Vegetation" parent="." instance=ExtResource("e9")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Player" parent="." instance=ExtResource("e10")]
+position = Vector3(53.24000, 0.03, 225.28000)
+rotation = Vector3(0, -0.882, 0)
+
+[node name="MapCamera" type="Camera3D" groups=["overview_camera"] parent="."]
+position = Vector3(94, 230, 120)
+rotation_degrees = Vector3(-90, 0, 0)
+projection = 1
+size = 260.0
+far = 500.0
+
+[node name="ReferenceCamera" type="Camera3D" parent="."]
+position = Vector3(15.5, 1.75, 141)
+rotation_degrees = Vector3(-3, -37, 0)
+fov = 72.0
+far = 220.0
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+
+[node name="Hint" type="Label" parent="Interface"]
+offset_left = 24.0
+offset_top = 674.0
+offset_right = 1256.0
+offset_bottom = 708.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.92, 0.89, 0.8, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "WASD — идти   Shift — бег   Мышь — осмотреться   F — фонарик   Tab — вид сверху   R — ко входу   Esc — курсор"
+horizontal_alignment = 1

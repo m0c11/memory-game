@@ -1,0 +1,82 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/path_lamp.tscn" id="e1"]
+
+
+[node name="PathLighting" type="Node3D"]
+
+
+[node name="Lamp00" parent="." instance=ExtResource("e1")]
+position = Vector3(67.10000, 0.00000, 221.10000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp01" parent="." instance=ExtResource("e1")]
+position = Vector3(71.50000, 0.00000, 202.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp02" parent="." instance=ExtResource("e1")]
+position = Vector3(67.10000, 0.00000, 182.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp03" parent="." instance=ExtResource("e1")]
+position = Vector3(71.50000, 0.00000, 165.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp04" parent="." instance=ExtResource("e1")]
+position = Vector3(68.20000, 0.00000, 145.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp05" parent="." instance=ExtResource("e1")]
+position = Vector3(71.50000, 0.00000, 121.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp06" parent="." instance=ExtResource("e1")]
+position = Vector3(67.10000, 0.00000, 102.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp07" parent="." instance=ExtResource("e1")]
+position = Vector3(72.60000, 0.00000, 82.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp08" parent="." instance=ExtResource("e1")]
+position = Vector3(67.10000, 0.00000, 62.70000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp09" parent="." instance=ExtResource("e1")]
+position = Vector3(13.20000, 0.00000, 82.50000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp10" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.00000, 116.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp11" parent="." instance=ExtResource("e1")]
+position = Vector3(12.10000, 0.00000, 143.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp12" parent="." instance=ExtResource("e1")]
+position = Vector3(115.50000, 0.00000, 149.60000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp13" parent="." instance=ExtResource("e1")]
+position = Vector3(123.20000, 0.00000, 169.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp14" parent="." instance=ExtResource("e1")]
+position = Vector3(115.50000, 0.00000, 191.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp15" parent="." instance=ExtResource("e1")]
+position = Vector3(108.90000, 0.00000, 114.40000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp16" parent="." instance=ExtResource("e1")]
+position = Vector3(106.70000, 0.00000, 80.30000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Lamp17" parent="." instance=ExtResource("e1")]
+position = Vector3(133.10000, 0.00000, 134.20000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="EntryLamp" parent="." instance=ExtResource("e1")]
+position = Vector3(49, 0, 225)

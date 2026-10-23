@@ -1,0 +1,906 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/venevitino/ground_tile.tscn" id="e1"]
+[ext_resource type="Material" path="res://materials/venevitino/water.tres" id="e2"]
+[ext_resource type="Material" path="res://materials/venevitino/sand.tres" id="e3"]
+
+[sub_resource type="BoxMesh" id="r1"]
+size = Vector3(40.00000, 0.10000, 260.00000)
+
+[sub_resource type="BoxMesh" id="r2"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r3"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r4"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r5"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r6"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r7"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r8"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r9"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r10"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r11"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r12"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r13"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r14"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r15"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r16"]
+size = Vector3(5.00000, 0.10000, 16.00000)
+
+[sub_resource type="BoxShape3D" id="r17"]
+size = Vector3(0.60000, 5.00000, 86.00000)
+
+[sub_resource type="BoxShape3D" id="r18"]
+size = Vector3(0.60000, 5.00000, 148.00000)
+
+[sub_resource type="BoxShape3D" id="r19"]
+size = Vector3(0.60000, 5.00000, 240.00000)
+
+[sub_resource type="BoxShape3D" id="r20"]
+size = Vector3(188.00000, 5.00000, 0.60000)
+
+[sub_resource type="BoxShape3D" id="r21"]
+size = Vector3(188.00000, 5.00000, 0.60000)
+
+[node name="Ground" type="Node3D"]
+
+
+[node name="Tile00_00" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_01" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_02" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_03" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_04" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_05" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_06" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_07" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_08" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_09" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_10" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_11" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_12" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_13" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile00_14" parent="." instance=ExtResource("e1")]
+position = Vector3(8.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_00" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_01" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_02" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_03" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_04" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_05" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_06" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_07" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_08" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_09" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_10" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_11" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_12" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_13" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile01_14" parent="." instance=ExtResource("e1")]
+position = Vector3(24.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_00" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_01" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_02" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_03" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_04" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_05" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_06" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_07" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_08" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_09" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_10" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_11" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_12" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_13" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile02_14" parent="." instance=ExtResource("e1")]
+position = Vector3(40.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_00" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_01" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_02" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_03" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_04" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_05" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_06" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_07" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_08" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_09" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_10" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_11" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_12" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_13" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile03_14" parent="." instance=ExtResource("e1")]
+position = Vector3(56.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_00" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_01" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_02" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_03" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_04" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_05" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_06" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_07" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_08" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_09" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_10" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_11" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_12" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_13" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile04_14" parent="." instance=ExtResource("e1")]
+position = Vector3(72.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_00" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_01" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_02" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_03" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_04" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_05" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_06" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_07" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_08" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_09" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_10" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_11" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_12" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_13" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile05_14" parent="." instance=ExtResource("e1")]
+position = Vector3(88.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_00" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_01" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_02" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_03" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_04" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_05" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_06" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_07" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_08" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_09" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_10" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_11" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_12" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_13" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile06_14" parent="." instance=ExtResource("e1")]
+position = Vector3(104.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_00" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_01" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_02" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_03" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_04" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_05" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_06" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_07" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_08" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_09" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_10" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_11" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_12" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_13" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile07_14" parent="." instance=ExtResource("e1")]
+position = Vector3(120.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_00" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_01" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_02" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_03" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_04" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_05" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_06" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_07" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_08" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_09" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_10" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_11" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_12" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_13" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile08_14" parent="." instance=ExtResource("e1")]
+position = Vector3(136.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_00" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_01" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_02" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_03" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_04" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_05" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_06" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_07" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_08" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_09" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_10" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_11" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_12" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_13" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile09_14" parent="." instance=ExtResource("e1")]
+position = Vector3(152.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_00" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_01" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_02" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_03" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_04" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_05" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_06" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_07" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_08" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_09" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_10" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_11" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_12" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_13" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile10_14" parent="." instance=ExtResource("e1")]
+position = Vector3(168.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_00" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 8.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_01" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 24.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_02" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 40.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_03" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 56.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_04" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 72.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_05" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 88.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_06" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 104.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_07" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 120.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_08" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 136.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_09" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 152.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_10" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 168.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_11" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 184.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_12" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 200.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_13" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 216.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="Tile11_14" parent="." instance=ExtResource("e1")]
+position = Vector3(184.00000, 0.00000, 232.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="River" type="MeshInstance3D" parent="."]
+position = Vector3(-20.00000, -0.35000, 120.00000)
+mesh = SubResource("r1")
+material_override = ExtResource("e2")
+
+[node name="Bank0" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 8.00000)
+mesh = SubResource("r2")
+material_override = ExtResource("e3")
+
+[node name="Bank1" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 24.00000)
+mesh = SubResource("r3")
+material_override = ExtResource("e3")
+
+[node name="Bank2" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 40.00000)
+mesh = SubResource("r4")
+material_override = ExtResource("e3")
+
+[node name="Bank3" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 56.00000)
+mesh = SubResource("r5")
+material_override = ExtResource("e3")
+
+[node name="Bank4" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 72.00000)
+mesh = SubResource("r6")
+material_override = ExtResource("e3")
+
+[node name="Bank5" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 88.00000)
+mesh = SubResource("r7")
+material_override = ExtResource("e3")
+
+[node name="Bank6" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 104.00000)
+mesh = SubResource("r8")
+material_override = ExtResource("e3")
+
+[node name="Bank7" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 120.00000)
+mesh = SubResource("r9")
+material_override = ExtResource("e3")
+
+[node name="Bank8" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 136.00000)
+mesh = SubResource("r10")
+material_override = ExtResource("e3")
+
+[node name="Bank9" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 152.00000)
+mesh = SubResource("r11")
+material_override = ExtResource("e3")
+
+[node name="Bank10" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 168.00000)
+mesh = SubResource("r12")
+material_override = ExtResource("e3")
+
+[node name="Bank11" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 184.00000)
+mesh = SubResource("r13")
+material_override = ExtResource("e3")
+
+[node name="Bank12" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 200.00000)
+mesh = SubResource("r14")
+material_override = ExtResource("e3")
+
+[node name="Bank13" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 216.00000)
+mesh = SubResource("r15")
+material_override = ExtResource("e3")
+
+[node name="Bank14" type="MeshInstance3D" parent="."]
+position = Vector3(1.00000, -0.02000, 232.00000)
+mesh = SubResource("r16")
+material_override = ExtResource("e3")
+
+[node name="RiverNorth" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="RiverNorth"]
+position = Vector3(-0.40000, 2.00000, 43.00000)
+shape = SubResource("r17")
+
+[node name="RiverSouth" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="RiverSouth"]
+position = Vector3(-0.40000, 2.00000, 166.00000)
+shape = SubResource("r18")
+
+[node name="EastEdge" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="EastEdge"]
+position = Vector3(188.00000, 2.00000, 120.00000)
+shape = SubResource("r19")
+
+[node name="NorthEdge" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="NorthEdge"]
+position = Vector3(94.00000, 2.00000, 0.00000)
+shape = SubResource("r20")
+
+[node name="SouthEdge" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="SouthEdge"]
+position = Vector3(94.00000, 2.00000, 239.00000)
+shape = SubResource("r21")

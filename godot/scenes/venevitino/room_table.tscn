@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/venevitino/models/room_table.glb" id="e1"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(1.30000, 0.78000, 0.72000)
+
+[node name="RoomTable" type="Node3D"]
+
+
+[node name="Model" parent="." instance=ExtResource("e1")]
+position = Vector3(0.00000, 0.00000, 0.00000)
+rotation = Vector3(0.00000, 0.00000, 0.00000)
+
+[node name="room_table_Mesh" parent="Model/room_table" groups=["distance_culled"]]
+visibility_range_end = 95.0
+visibility_range_end_margin = 5.0
+metadata/render_distance = 95.0
+
+[node name="Collision" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0.00000, 0.39000, 0.00000)
+shape = SubResource("r1")
+
+[editable path="Model"]

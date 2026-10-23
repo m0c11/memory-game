@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" path="res://materials/venevitino/ground.tres" id="e1"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(16.00000, 0.20000, 16.00000)
+
+[sub_resource type="BoxMesh" id="r2"]
+size = Vector3(16.00000, 0.20000, 16.00000)
+
+[node name="GroundTile" type="Node3D"]
+
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Ground"]
+position = Vector3(0.00000, -0.10000, 0.00000)
+shape = SubResource("r1")
+
+[node name="Mesh" type="MeshInstance3D" parent="Ground"]
+position = Vector3(0.00000, -0.10000, 0.00000)
+mesh = SubResource("r2")
+material_override = ExtResource("e1")

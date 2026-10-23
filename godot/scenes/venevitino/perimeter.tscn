@@ -1,0 +1,1708 @@
+[gd_scene load_steps=211 format=3]
+
+[ext_resource type="Material" path="res://materials/venevitino/wood.tres" id="e1"]
+
+[sub_resource type="BoxShape3D" id="r1"]
+size = Vector3(0.12000, 1.30000, 97.94448)
+
+[sub_resource type="BoxMesh" id="r2"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r3"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r4"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r5"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r6"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r7"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r8"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r9"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r10"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r11"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r12"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r13"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r14"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r15"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r16"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r17"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r18"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r19"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r20"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r21"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r22"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r23"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r24"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r25"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r26"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r27"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r28"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r29"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r30"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r31"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r32"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r33"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r34"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r35"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r36"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r37"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r38"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r39"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r40"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r41"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r42"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r43"]
+size = Vector3(0.08000, 0.10000, 97.94448)
+
+[sub_resource type="BoxMesh" id="r44"]
+size = Vector3(0.08000, 0.10000, 97.94448)
+
+[sub_resource type="BoxShape3D" id="r45"]
+size = Vector3(0.12000, 1.30000, 87.86818)
+
+[sub_resource type="BoxMesh" id="r46"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r47"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r48"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r49"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r50"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r51"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r52"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r53"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r54"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r55"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r56"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r57"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r58"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r59"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r60"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r61"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r62"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r63"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r64"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r65"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r66"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r67"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r68"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r69"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r70"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r71"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r72"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r73"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r74"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r75"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r76"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r77"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r78"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r79"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r80"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r81"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r82"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r83"]
+size = Vector3(0.08000, 0.10000, 87.86818)
+
+[sub_resource type="BoxMesh" id="r84"]
+size = Vector3(0.08000, 0.10000, 87.86818)
+
+[sub_resource type="BoxShape3D" id="r85"]
+size = Vector3(0.12000, 1.30000, 121.92467)
+
+[sub_resource type="BoxMesh" id="r86"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r87"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r88"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r89"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r90"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r91"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r92"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r93"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r94"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r95"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r96"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r97"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r98"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r99"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r100"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r101"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r102"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r103"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r104"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r105"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r106"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r107"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r108"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r109"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r110"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r111"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r112"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r113"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r114"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r115"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r116"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r117"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r118"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r119"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r120"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r121"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r122"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r123"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r124"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r125"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r126"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r127"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r128"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r129"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r130"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r131"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r132"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r133"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r134"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r135"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r136"]
+size = Vector3(0.08000, 0.10000, 121.92467)
+
+[sub_resource type="BoxMesh" id="r137"]
+size = Vector3(0.08000, 0.10000, 121.92467)
+
+[sub_resource type="BoxShape3D" id="r138"]
+size = Vector3(0.12000, 1.30000, 111.40692)
+
+[sub_resource type="BoxMesh" id="r139"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r140"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r141"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r142"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r143"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r144"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r145"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r146"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r147"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r148"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r149"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r150"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r151"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r152"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r153"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r154"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r155"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r156"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r157"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r158"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r159"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r160"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r161"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r162"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r163"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r164"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r165"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r166"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r167"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r168"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r169"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r170"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r171"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r172"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r173"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r174"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r175"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r176"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r177"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r178"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r179"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r180"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r181"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r182"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r183"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r184"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r185"]
+size = Vector3(0.08000, 0.10000, 111.40692)
+
+[sub_resource type="BoxMesh" id="r186"]
+size = Vector3(0.08000, 0.10000, 111.40692)
+
+[sub_resource type="BoxShape3D" id="r187"]
+size = Vector3(0.12000, 1.30000, 45.10000)
+
+[sub_resource type="BoxMesh" id="r188"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r189"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r190"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r191"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r192"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r193"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r194"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r195"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r196"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r197"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r198"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r199"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r200"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r201"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r202"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r203"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r204"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r205"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r206"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r207"]
+size = Vector3(0.13000, 1.30000, 0.13000)
+
+[sub_resource type="BoxMesh" id="r208"]
+size = Vector3(0.08000, 0.10000, 45.10000)
+
+[sub_resource type="BoxMesh" id="r209"]
+size = Vector3(0.08000, 0.10000, 45.10000)
+
+[node name="Perimeter" type="Node3D"]
+
+
+[node name="Fence0" type="Node3D" parent="."]
+position = Vector3(70.07000, 0.00000, 24.86000)
+rotation = Vector3(0.00000, 1.28386, 0.00000)
+
+[node name="Barrier" type="StaticBody3D" parent="Fence0"]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Fence0/Barrier"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+shape = SubResource("r1")
+
+[node name="Post0" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -48.97224)
+mesh = SubResource("r2")
+material_override = ExtResource("e1")
+
+[node name="Post1" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -46.52363)
+mesh = SubResource("r3")
+material_override = ExtResource("e1")
+
+[node name="Post2" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -44.07502)
+mesh = SubResource("r4")
+material_override = ExtResource("e1")
+
+[node name="Post3" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -41.62641)
+mesh = SubResource("r5")
+material_override = ExtResource("e1")
+
+[node name="Post4" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -39.17779)
+mesh = SubResource("r6")
+material_override = ExtResource("e1")
+
+[node name="Post5" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -36.72918)
+mesh = SubResource("r7")
+material_override = ExtResource("e1")
+
+[node name="Post6" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -34.28057)
+mesh = SubResource("r8")
+material_override = ExtResource("e1")
+
+[node name="Post7" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -31.83196)
+mesh = SubResource("r9")
+material_override = ExtResource("e1")
+
+[node name="Post8" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -29.38335)
+mesh = SubResource("r10")
+material_override = ExtResource("e1")
+
+[node name="Post9" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -26.93473)
+mesh = SubResource("r11")
+material_override = ExtResource("e1")
+
+[node name="Post10" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -24.48612)
+mesh = SubResource("r12")
+material_override = ExtResource("e1")
+
+[node name="Post11" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -22.03751)
+mesh = SubResource("r13")
+material_override = ExtResource("e1")
+
+[node name="Post12" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -19.58890)
+mesh = SubResource("r14")
+material_override = ExtResource("e1")
+
+[node name="Post13" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -17.14028)
+mesh = SubResource("r15")
+material_override = ExtResource("e1")
+
+[node name="Post14" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -14.69167)
+mesh = SubResource("r16")
+material_override = ExtResource("e1")
+
+[node name="Post15" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -12.24306)
+mesh = SubResource("r17")
+material_override = ExtResource("e1")
+
+[node name="Post16" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -9.79445)
+mesh = SubResource("r18")
+material_override = ExtResource("e1")
+
+[node name="Post17" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -7.34584)
+mesh = SubResource("r19")
+material_override = ExtResource("e1")
+
+[node name="Post18" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -4.89722)
+mesh = SubResource("r20")
+material_override = ExtResource("e1")
+
+[node name="Post19" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, -2.44861)
+mesh = SubResource("r21")
+material_override = ExtResource("e1")
+
+[node name="Post20" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+mesh = SubResource("r22")
+material_override = ExtResource("e1")
+
+[node name="Post21" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 2.44861)
+mesh = SubResource("r23")
+material_override = ExtResource("e1")
+
+[node name="Post22" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 4.89722)
+mesh = SubResource("r24")
+material_override = ExtResource("e1")
+
+[node name="Post23" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 7.34584)
+mesh = SubResource("r25")
+material_override = ExtResource("e1")
+
+[node name="Post24" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 9.79445)
+mesh = SubResource("r26")
+material_override = ExtResource("e1")
+
+[node name="Post25" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 12.24306)
+mesh = SubResource("r27")
+material_override = ExtResource("e1")
+
+[node name="Post26" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 14.69167)
+mesh = SubResource("r28")
+material_override = ExtResource("e1")
+
+[node name="Post27" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 17.14028)
+mesh = SubResource("r29")
+material_override = ExtResource("e1")
+
+[node name="Post28" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 19.58890)
+mesh = SubResource("r30")
+material_override = ExtResource("e1")
+
+[node name="Post29" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 22.03751)
+mesh = SubResource("r31")
+material_override = ExtResource("e1")
+
+[node name="Post30" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 24.48612)
+mesh = SubResource("r32")
+material_override = ExtResource("e1")
+
+[node name="Post31" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 26.93473)
+mesh = SubResource("r33")
+material_override = ExtResource("e1")
+
+[node name="Post32" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 29.38335)
+mesh = SubResource("r34")
+material_override = ExtResource("e1")
+
+[node name="Post33" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 31.83196)
+mesh = SubResource("r35")
+material_override = ExtResource("e1")
+
+[node name="Post34" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 34.28057)
+mesh = SubResource("r36")
+material_override = ExtResource("e1")
+
+[node name="Post35" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 36.72918)
+mesh = SubResource("r37")
+material_override = ExtResource("e1")
+
+[node name="Post36" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 39.17779)
+mesh = SubResource("r38")
+material_override = ExtResource("e1")
+
+[node name="Post37" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 41.62641)
+mesh = SubResource("r39")
+material_override = ExtResource("e1")
+
+[node name="Post38" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 44.07502)
+mesh = SubResource("r40")
+material_override = ExtResource("e1")
+
+[node name="Post39" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 46.52363)
+mesh = SubResource("r41")
+material_override = ExtResource("e1")
+
+[node name="Post40" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.65000, 48.97224)
+mesh = SubResource("r42")
+material_override = ExtResource("e1")
+
+[node name="Rail0" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+mesh = SubResource("r43")
+material_override = ExtResource("e1")
+
+[node name="Rail1" type="MeshInstance3D" parent="Fence0"]
+position = Vector3(0.00000, 1.05000, 0.00000)
+mesh = SubResource("r44")
+material_override = ExtResource("e1")
+
+[node name="Fence1" type="Node3D" parent="."]
+position = Vector3(143.33000, 0.00000, 73.92000)
+rotation = Vector3(0.00000, 0.64150, 0.00000)
+
+[node name="Barrier" type="StaticBody3D" parent="Fence1"]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Fence1/Barrier"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+shape = SubResource("r45")
+
+[node name="Post0" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -43.93409)
+mesh = SubResource("r46")
+material_override = ExtResource("e1")
+
+[node name="Post1" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -41.49331)
+mesh = SubResource("r47")
+material_override = ExtResource("e1")
+
+[node name="Post2" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -39.05252)
+mesh = SubResource("r48")
+material_override = ExtResource("e1")
+
+[node name="Post3" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -36.61174)
+mesh = SubResource("r49")
+material_override = ExtResource("e1")
+
+[node name="Post4" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -34.17096)
+mesh = SubResource("r50")
+material_override = ExtResource("e1")
+
+[node name="Post5" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -31.73017)
+mesh = SubResource("r51")
+material_override = ExtResource("e1")
+
+[node name="Post6" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -29.28939)
+mesh = SubResource("r52")
+material_override = ExtResource("e1")
+
+[node name="Post7" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -26.84861)
+mesh = SubResource("r53")
+material_override = ExtResource("e1")
+
+[node name="Post8" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -24.40783)
+mesh = SubResource("r54")
+material_override = ExtResource("e1")
+
+[node name="Post9" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -21.96704)
+mesh = SubResource("r55")
+material_override = ExtResource("e1")
+
+[node name="Post10" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -19.52626)
+mesh = SubResource("r56")
+material_override = ExtResource("e1")
+
+[node name="Post11" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -17.08548)
+mesh = SubResource("r57")
+material_override = ExtResource("e1")
+
+[node name="Post12" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -14.64470)
+mesh = SubResource("r58")
+material_override = ExtResource("e1")
+
+[node name="Post13" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -12.20391)
+mesh = SubResource("r59")
+material_override = ExtResource("e1")
+
+[node name="Post14" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -9.76313)
+mesh = SubResource("r60")
+material_override = ExtResource("e1")
+
+[node name="Post15" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -7.32235)
+mesh = SubResource("r61")
+material_override = ExtResource("e1")
+
+[node name="Post16" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -4.88157)
+mesh = SubResource("r62")
+material_override = ExtResource("e1")
+
+[node name="Post17" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, -2.44078)
+mesh = SubResource("r63")
+material_override = ExtResource("e1")
+
+[node name="Post18" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+mesh = SubResource("r64")
+material_override = ExtResource("e1")
+
+[node name="Post19" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 2.44078)
+mesh = SubResource("r65")
+material_override = ExtResource("e1")
+
+[node name="Post20" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 4.88157)
+mesh = SubResource("r66")
+material_override = ExtResource("e1")
+
+[node name="Post21" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 7.32235)
+mesh = SubResource("r67")
+material_override = ExtResource("e1")
+
+[node name="Post22" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 9.76313)
+mesh = SubResource("r68")
+material_override = ExtResource("e1")
+
+[node name="Post23" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 12.20391)
+mesh = SubResource("r69")
+material_override = ExtResource("e1")
+
+[node name="Post24" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 14.64470)
+mesh = SubResource("r70")
+material_override = ExtResource("e1")
+
+[node name="Post25" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 17.08548)
+mesh = SubResource("r71")
+material_override = ExtResource("e1")
+
+[node name="Post26" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 19.52626)
+mesh = SubResource("r72")
+material_override = ExtResource("e1")
+
+[node name="Post27" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 21.96704)
+mesh = SubResource("r73")
+material_override = ExtResource("e1")
+
+[node name="Post28" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 24.40783)
+mesh = SubResource("r74")
+material_override = ExtResource("e1")
+
+[node name="Post29" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 26.84861)
+mesh = SubResource("r75")
+material_override = ExtResource("e1")
+
+[node name="Post30" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 29.28939)
+mesh = SubResource("r76")
+material_override = ExtResource("e1")
+
+[node name="Post31" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 31.73017)
+mesh = SubResource("r77")
+material_override = ExtResource("e1")
+
+[node name="Post32" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 34.17096)
+mesh = SubResource("r78")
+material_override = ExtResource("e1")
+
+[node name="Post33" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 36.61174)
+mesh = SubResource("r79")
+material_override = ExtResource("e1")
+
+[node name="Post34" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 39.05252)
+mesh = SubResource("r80")
+material_override = ExtResource("e1")
+
+[node name="Post35" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 41.49331)
+mesh = SubResource("r81")
+material_override = ExtResource("e1")
+
+[node name="Post36" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.65000, 43.93409)
+mesh = SubResource("r82")
+material_override = ExtResource("e1")
+
+[node name="Rail0" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+mesh = SubResource("r83")
+material_override = ExtResource("e1")
+
+[node name="Rail1" type="MeshInstance3D" parent="Fence1"]
+position = Vector3(0.00000, 1.05000, 0.00000)
+mesh = SubResource("r84")
+material_override = ExtResource("e1")
+
+[node name="Fence2" type="Node3D" parent="."]
+position = Vector3(171.27000, 0.00000, 170.06000)
+rotation = Vector3(0.00000, 0.02707, 0.00000)
+
+[node name="Barrier" type="StaticBody3D" parent="Fence2"]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Fence2/Barrier"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+shape = SubResource("r85")
+
+[node name="Post0" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -60.96233)
+mesh = SubResource("r86")
+material_override = ExtResource("e1")
+
+[node name="Post1" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -58.47407)
+mesh = SubResource("r87")
+material_override = ExtResource("e1")
+
+[node name="Post2" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -55.98582)
+mesh = SubResource("r88")
+material_override = ExtResource("e1")
+
+[node name="Post3" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -53.49756)
+mesh = SubResource("r89")
+material_override = ExtResource("e1")
+
+[node name="Post4" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -51.00930)
+mesh = SubResource("r90")
+material_override = ExtResource("e1")
+
+[node name="Post5" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -48.52104)
+mesh = SubResource("r91")
+material_override = ExtResource("e1")
+
+[node name="Post6" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -46.03278)
+mesh = SubResource("r92")
+material_override = ExtResource("e1")
+
+[node name="Post7" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -43.54452)
+mesh = SubResource("r93")
+material_override = ExtResource("e1")
+
+[node name="Post8" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -41.05627)
+mesh = SubResource("r94")
+material_override = ExtResource("e1")
+
+[node name="Post9" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -38.56801)
+mesh = SubResource("r95")
+material_override = ExtResource("e1")
+
+[node name="Post10" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -36.07975)
+mesh = SubResource("r96")
+material_override = ExtResource("e1")
+
+[node name="Post11" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -33.59149)
+mesh = SubResource("r97")
+material_override = ExtResource("e1")
+
+[node name="Post12" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -31.10323)
+mesh = SubResource("r98")
+material_override = ExtResource("e1")
+
+[node name="Post13" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -28.61497)
+mesh = SubResource("r99")
+material_override = ExtResource("e1")
+
+[node name="Post14" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -26.12671)
+mesh = SubResource("r100")
+material_override = ExtResource("e1")
+
+[node name="Post15" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -23.63846)
+mesh = SubResource("r101")
+material_override = ExtResource("e1")
+
+[node name="Post16" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -21.15020)
+mesh = SubResource("r102")
+material_override = ExtResource("e1")
+
+[node name="Post17" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -18.66194)
+mesh = SubResource("r103")
+material_override = ExtResource("e1")
+
+[node name="Post18" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -16.17368)
+mesh = SubResource("r104")
+material_override = ExtResource("e1")
+
+[node name="Post19" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -13.68542)
+mesh = SubResource("r105")
+material_override = ExtResource("e1")
+
+[node name="Post20" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -11.19716)
+mesh = SubResource("r106")
+material_override = ExtResource("e1")
+
+[node name="Post21" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -8.70890)
+mesh = SubResource("r107")
+material_override = ExtResource("e1")
+
+[node name="Post22" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -6.22065)
+mesh = SubResource("r108")
+material_override = ExtResource("e1")
+
+[node name="Post23" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -3.73239)
+mesh = SubResource("r109")
+material_override = ExtResource("e1")
+
+[node name="Post24" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, -1.24413)
+mesh = SubResource("r110")
+material_override = ExtResource("e1")
+
+[node name="Post25" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 1.24413)
+mesh = SubResource("r111")
+material_override = ExtResource("e1")
+
+[node name="Post26" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 3.73239)
+mesh = SubResource("r112")
+material_override = ExtResource("e1")
+
+[node name="Post27" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 6.22065)
+mesh = SubResource("r113")
+material_override = ExtResource("e1")
+
+[node name="Post28" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 8.70890)
+mesh = SubResource("r114")
+material_override = ExtResource("e1")
+
+[node name="Post29" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 11.19716)
+mesh = SubResource("r115")
+material_override = ExtResource("e1")
+
+[node name="Post30" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 13.68542)
+mesh = SubResource("r116")
+material_override = ExtResource("e1")
+
+[node name="Post31" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 16.17368)
+mesh = SubResource("r117")
+material_override = ExtResource("e1")
+
+[node name="Post32" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 18.66194)
+mesh = SubResource("r118")
+material_override = ExtResource("e1")
+
+[node name="Post33" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 21.15020)
+mesh = SubResource("r119")
+material_override = ExtResource("e1")
+
+[node name="Post34" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 23.63846)
+mesh = SubResource("r120")
+material_override = ExtResource("e1")
+
+[node name="Post35" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 26.12671)
+mesh = SubResource("r121")
+material_override = ExtResource("e1")
+
+[node name="Post36" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 28.61497)
+mesh = SubResource("r122")
+material_override = ExtResource("e1")
+
+[node name="Post37" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 31.10323)
+mesh = SubResource("r123")
+material_override = ExtResource("e1")
+
+[node name="Post38" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 33.59149)
+mesh = SubResource("r124")
+material_override = ExtResource("e1")
+
+[node name="Post39" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 36.07975)
+mesh = SubResource("r125")
+material_override = ExtResource("e1")
+
+[node name="Post40" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 38.56801)
+mesh = SubResource("r126")
+material_override = ExtResource("e1")
+
+[node name="Post41" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 41.05627)
+mesh = SubResource("r127")
+material_override = ExtResource("e1")
+
+[node name="Post42" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 43.54452)
+mesh = SubResource("r128")
+material_override = ExtResource("e1")
+
+[node name="Post43" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 46.03278)
+mesh = SubResource("r129")
+material_override = ExtResource("e1")
+
+[node name="Post44" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 48.52104)
+mesh = SubResource("r130")
+material_override = ExtResource("e1")
+
+[node name="Post45" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 51.00930)
+mesh = SubResource("r131")
+material_override = ExtResource("e1")
+
+[node name="Post46" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 53.49756)
+mesh = SubResource("r132")
+material_override = ExtResource("e1")
+
+[node name="Post47" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 55.98582)
+mesh = SubResource("r133")
+material_override = ExtResource("e1")
+
+[node name="Post48" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 58.47407)
+mesh = SubResource("r134")
+material_override = ExtResource("e1")
+
+[node name="Post49" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.65000, 60.96233)
+mesh = SubResource("r135")
+material_override = ExtResource("e1")
+
+[node name="Rail0" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+mesh = SubResource("r136")
+material_override = ExtResource("e1")
+
+[node name="Rail1" type="MeshInstance3D" parent="Fence2"]
+position = Vector3(0.00000, 1.05000, 0.00000)
+mesh = SubResource("r137")
+material_override = ExtResource("e1")
+
+[node name="Fence3" type="Node3D" parent="."]
+position = Vector3(117.26000, 0.00000, 228.80000)
+rotation = Vector3(0.00000, -1.61030, 0.00000)
+
+[node name="Barrier" type="StaticBody3D" parent="Fence3"]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Fence3/Barrier"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+shape = SubResource("r138")
+
+[node name="Post0" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -55.70346)
+mesh = SubResource("r139")
+material_override = ExtResource("e1")
+
+[node name="Post1" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -53.22775)
+mesh = SubResource("r140")
+material_override = ExtResource("e1")
+
+[node name="Post2" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -50.75204)
+mesh = SubResource("r141")
+material_override = ExtResource("e1")
+
+[node name="Post3" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -48.27633)
+mesh = SubResource("r142")
+material_override = ExtResource("e1")
+
+[node name="Post4" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -45.80062)
+mesh = SubResource("r143")
+material_override = ExtResource("e1")
+
+[node name="Post5" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -43.32491)
+mesh = SubResource("r144")
+material_override = ExtResource("e1")
+
+[node name="Post6" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -40.84920)
+mesh = SubResource("r145")
+material_override = ExtResource("e1")
+
+[node name="Post7" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -38.37350)
+mesh = SubResource("r146")
+material_override = ExtResource("e1")
+
+[node name="Post8" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -35.89779)
+mesh = SubResource("r147")
+material_override = ExtResource("e1")
+
+[node name="Post9" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -33.42208)
+mesh = SubResource("r148")
+material_override = ExtResource("e1")
+
+[node name="Post10" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -30.94637)
+mesh = SubResource("r149")
+material_override = ExtResource("e1")
+
+[node name="Post11" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -28.47066)
+mesh = SubResource("r150")
+material_override = ExtResource("e1")
+
+[node name="Post12" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -25.99495)
+mesh = SubResource("r151")
+material_override = ExtResource("e1")
+
+[node name="Post13" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -23.51924)
+mesh = SubResource("r152")
+material_override = ExtResource("e1")
+
+[node name="Post14" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -21.04353)
+mesh = SubResource("r153")
+material_override = ExtResource("e1")
+
+[node name="Post15" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -18.56782)
+mesh = SubResource("r154")
+material_override = ExtResource("e1")
+
+[node name="Post16" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -16.09211)
+mesh = SubResource("r155")
+material_override = ExtResource("e1")
+
+[node name="Post17" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -13.61640)
+mesh = SubResource("r156")
+material_override = ExtResource("e1")
+
+[node name="Post18" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -11.14069)
+mesh = SubResource("r157")
+material_override = ExtResource("e1")
+
+[node name="Post19" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -8.66498)
+mesh = SubResource("r158")
+material_override = ExtResource("e1")
+
+[node name="Post20" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -6.18927)
+mesh = SubResource("r159")
+material_override = ExtResource("e1")
+
+[node name="Post21" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -3.71356)
+mesh = SubResource("r160")
+material_override = ExtResource("e1")
+
+[node name="Post22" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, -1.23785)
+mesh = SubResource("r161")
+material_override = ExtResource("e1")
+
+[node name="Post23" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 1.23785)
+mesh = SubResource("r162")
+material_override = ExtResource("e1")
+
+[node name="Post24" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 3.71356)
+mesh = SubResource("r163")
+material_override = ExtResource("e1")
+
+[node name="Post25" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 6.18927)
+mesh = SubResource("r164")
+material_override = ExtResource("e1")
+
+[node name="Post26" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 8.66498)
+mesh = SubResource("r165")
+material_override = ExtResource("e1")
+
+[node name="Post27" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 11.14069)
+mesh = SubResource("r166")
+material_override = ExtResource("e1")
+
+[node name="Post28" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 13.61640)
+mesh = SubResource("r167")
+material_override = ExtResource("e1")
+
+[node name="Post29" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 16.09211)
+mesh = SubResource("r168")
+material_override = ExtResource("e1")
+
+[node name="Post30" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 18.56782)
+mesh = SubResource("r169")
+material_override = ExtResource("e1")
+
+[node name="Post31" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 21.04353)
+mesh = SubResource("r170")
+material_override = ExtResource("e1")
+
+[node name="Post32" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 23.51924)
+mesh = SubResource("r171")
+material_override = ExtResource("e1")
+
+[node name="Post33" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 25.99495)
+mesh = SubResource("r172")
+material_override = ExtResource("e1")
+
+[node name="Post34" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 28.47066)
+mesh = SubResource("r173")
+material_override = ExtResource("e1")
+
+[node name="Post35" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 30.94637)
+mesh = SubResource("r174")
+material_override = ExtResource("e1")
+
+[node name="Post36" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 33.42208)
+mesh = SubResource("r175")
+material_override = ExtResource("e1")
+
+[node name="Post37" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 35.89779)
+mesh = SubResource("r176")
+material_override = ExtResource("e1")
+
+[node name="Post38" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 38.37350)
+mesh = SubResource("r177")
+material_override = ExtResource("e1")
+
+[node name="Post39" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 40.84920)
+mesh = SubResource("r178")
+material_override = ExtResource("e1")
+
+[node name="Post40" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 43.32491)
+mesh = SubResource("r179")
+material_override = ExtResource("e1")
+
+[node name="Post41" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 45.80062)
+mesh = SubResource("r180")
+material_override = ExtResource("e1")
+
+[node name="Post42" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 48.27633)
+mesh = SubResource("r181")
+material_override = ExtResource("e1")
+
+[node name="Post43" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 50.75204)
+mesh = SubResource("r182")
+material_override = ExtResource("e1")
+
+[node name="Post44" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 53.22775)
+mesh = SubResource("r183")
+material_override = ExtResource("e1")
+
+[node name="Post45" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.65000, 55.70346)
+mesh = SubResource("r184")
+material_override = ExtResource("e1")
+
+[node name="Rail0" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+mesh = SubResource("r185")
+material_override = ExtResource("e1")
+
+[node name="Rail1" type="MeshInstance3D" parent="Fence3"]
+position = Vector3(0.00000, 1.05000, 0.00000)
+mesh = SubResource("r186")
+material_override = ExtResource("e1")
+
+[node name="Fence4" type="Node3D" parent="."]
+position = Vector3(22.55000, 0.00000, 226.60000)
+rotation = Vector3(0.00000, -1.57080, 0.00000)
+
+[node name="Barrier" type="StaticBody3D" parent="Fence4"]
+
+
+[node name="Shape" type="CollisionShape3D" parent="Fence4/Barrier"]
+position = Vector3(0.00000, 0.65000, 0.00000)
+shape = SubResource("r187")
+
+[node name="Post0" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -22.55000)
+mesh = SubResource("r188")
+material_override = ExtResource("e1")
+
+[node name="Post1" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -20.17632)
+mesh = SubResource("r189")
+material_override = ExtResource("e1")
+
+[node name="Post2" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -17.80263)
+mesh = SubResource("r190")
+material_override = ExtResource("e1")
+
+[node name="Post3" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -15.42895)
+mesh = SubResource("r191")
+material_override = ExtResource("e1")
+
+[node name="Post4" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -13.05526)
+mesh = SubResource("r192")
+material_override = ExtResource("e1")
+
+[node name="Post5" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -10.68158)
+mesh = SubResource("r193")
+material_override = ExtResource("e1")
+
+[node name="Post6" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -8.30789)
+mesh = SubResource("r194")
+material_override = ExtResource("e1")
+
+[node name="Post7" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -5.93421)
+mesh = SubResource("r195")
+material_override = ExtResource("e1")
+
+[node name="Post8" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -3.56053)
+mesh = SubResource("r196")
+material_override = ExtResource("e1")
+
+[node name="Post9" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, -1.18684)
+mesh = SubResource("r197")
+material_override = ExtResource("e1")
+
+[node name="Post10" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 1.18684)
+mesh = SubResource("r198")
+material_override = ExtResource("e1")
+
+[node name="Post11" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 3.56053)
+mesh = SubResource("r199")
+material_override = ExtResource("e1")
+
+[node name="Post12" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 5.93421)
+mesh = SubResource("r200")
+material_override = ExtResource("e1")
+
+[node name="Post13" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 8.30789)
+mesh = SubResource("r201")
+material_override = ExtResource("e1")
+
+[node name="Post14" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 10.68158)
+mesh = SubResource("r202")
+material_override = ExtResource("e1")
+
+[node name="Post15" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 13.05526)
+mesh = SubResource("r203")
+material_override = ExtResource("e1")
+
+[node name="Post16" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 15.42895)
+mesh = SubResource("r204")
+material_override = ExtResource("e1")
+
+[node name="Post17" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 17.80263)
+mesh = SubResource("r205")
+material_override = ExtResource("e1")
+
+[node name="Post18" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 20.17632)
+mesh = SubResource("r206")
+material_override = ExtResource("e1")
+
+[node name="Post19" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.65000, 22.55000)
+mesh = SubResource("r207")
+material_override = ExtResource("e1")
+
+[node name="Rail0" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 0.45000, 0.00000)
+mesh = SubResource("r208")
+material_override = ExtResource("e1")
+
+[node name="Rail1" type="MeshInstance3D" parent="Fence4"]
+position = Vector3(0.00000, 1.05000, 0.00000)
+mesh = SubResource("r209")
+material_override = ExtResource("e1")
