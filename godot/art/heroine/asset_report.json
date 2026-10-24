@@ -1,0 +1,21 @@
+{
+  "height_m": 1.65,
+  "triangles": 64606,
+  "mesh_objects": 64,
+  "bones": 28,
+  "animations": [
+    "idle"
+  ],
+  "source_textures": "User supplied heroine_beautiful_godot.zip",
+  "forward": "-Z in Godot",
+  "notes": [
+    "No runtime generation",
+    "Not yet locomotion animated",
+    "Studio excluded from GLB",
+    "Original textures embedded; complexion vertex colour multiplies skin texture"
+  ],
+  "export_mesh_objects": 16,
+  "embedded_images": 33,
+  "export_triangles": 64597,
+  "validation": "GLB weights and buffers validated; see README for Godot verification"
+}

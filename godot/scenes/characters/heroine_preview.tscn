@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/characters/heroine.tscn" id="1_heroine"]
+
+[sub_resource type="Environment" id="Environment_studio"]
+background_mode = 1
+background_color = Color(0.13, 0.15, 0.18, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.85, 0.89, 1, 1)
+ambient_light_energy = 0.3
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="Material_floor"]
+albedo_color = Color(0.10, 0.09, 0.08, 1)
+roughness = 0.9
+
+[sub_resource type="PlaneMesh" id="Mesh_floor"]
+material = SubResource("Material_floor")
+size = Vector2(200, 200)
+
+[sub_resource type="StandardMaterial3D" id="Material_plinth"]
+albedo_color = Color(0.17, 0.19, 0.21, 1)
+roughness = 0.72
+
+[sub_resource type="CylinderMesh" id="Mesh_plinth"]
+material = SubResource("Material_plinth")
+top_radius = 0.53
+bottom_radius = 0.55
+height = 0.05
+radial_segments = 64
+
+[node name="HeroinePreview" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_studio")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.054, 0)
+mesh = SubResource("Mesh_floor")
+
+[node name="Plinth" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.025, 0)
+mesh = SubResource("Mesh_plinth")
+
+[node name="Heroine" parent="." instance=ExtResource("1_heroine")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(2.4, 1.8, -4.5)
+rotation_degrees = Vector3(-10.65, 151.93, 0)
+projection = 1
+size = 2.05
+current = true
+near = 0.05
+
+[node name="Key" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-42, 148, 0)
+light_color = Color(1, 0.88, 0.77, 1)
+light_energy = 0.4
+shadow_enabled = true
+shadow_bias = 0.025
+
+[node name="Fill" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-22, -122, 0)
+light_color = Color(0.74, 0.84, 1, 1)
+light_energy = 0.1
+
+[node name="Rim" type="OmniLight3D" parent="."]
+position = Vector3(-0.7, 2.1, 1.5)
+light_color = Color(1, 0.79, 0.56, 1)
+light_energy = 0.35
+omni_range = 4.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="CanvasLayer"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 600.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 28
+text = "Героиня · 3D"
+
+[node name="Subtitle" type="Label" parent="CanvasLayer"]
+offset_left = 30.0
+offset_top = 65.0
+offset_right = 600.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.75, 0.78, 0.82, 1)
+theme_override_font_sizes/font_size = 17
+text = "Костюм, водолазка и светлый ободок"

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/characters/heroine/heroine.glb" id="1_model"]
+
+[node name="Heroine" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_model")]
+
+[node name="AnimationPlayer" parent="Model" index="1"]
+autoplay = "idle"
+
+[editable path="Model"]
