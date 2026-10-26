@@ -1,0 +1,3325 @@
+[gd_scene load_steps=39 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/ground.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/fence_section.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/vehicle_gate_closed.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/parked.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/buildings/modern_cabin.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/buildings/old_dorm.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/buildings/glass_pavilion.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/buildings/administration.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/bench_south.tscn" id="9"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/bench_north.tscn" id="10"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/noticeboard.tscn" id="11"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/bin.tscn" id="12"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/street_lamp.tscn" id="13"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/pine_tall.tscn" id="14"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/oak.tscn" id="15"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/birch.tscn" id="16"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/maple.tscn" id="17"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/linden.tscn" id="18"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/pine_broad.tscn" id="19"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/bush_round.png" id="20"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/bush_long.png" id="21"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/flowers_yellow.png" id="22"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/grass_tuft.png" id="23"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/flowers_white.png" id="24"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/bush_irregular.png" id="25"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/vegetation/shrub_sparse.png" id="26"]
+
+[sub_resource type="RectangleShape2D" id="Shape0"]
+size = Vector2(2208, 16)
+
+[sub_resource type="RectangleShape2D" id="Shape1"]
+size = Vector2(16, 1568)
+
+[sub_resource type="RectangleShape2D" id="Shape2"]
+size = Vector2(16, 1568)
+
+[sub_resource type="RectangleShape2D" id="Shape3"]
+size = Vector2(2208, 16)
+
+[sub_resource type="RectangleShape2D" id="Shape4"]
+size = Vector2(52, 40)
+
+[sub_resource type="RectangleShape2D" id="Shape5"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape6"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape7"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape8"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape9"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape10"]
+size = Vector2(52, 42)
+
+[sub_resource type="RectangleShape2D" id="Shape11"]
+size = Vector2(52, 40)
+
+[node name="Camp" type="Node2D" groups=["polet_location"]]
+texture_filter = 1
+y_sort_enabled = true
+metadata/camera_bounds = Rect2(0, 0, 2304, 1792)
+
+[node name="Markers" type="Node2D" parent="."]
+
+
+[node name="Ground" parent="." instance=ExtResource("1")]
+
+
+[node name="Perimeter" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="North0" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(96, 128)
+
+[node name="North1" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(160, 128)
+
+[node name="North2" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(224, 128)
+
+[node name="North3" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(288, 128)
+
+[node name="North4" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(352, 128)
+
+[node name="North5" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(416, 128)
+
+[node name="North6" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(480, 128)
+
+[node name="North7" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(544, 128)
+
+[node name="North8" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(608, 128)
+
+[node name="North9" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(672, 128)
+
+[node name="North10" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(736, 128)
+
+[node name="North11" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(800, 128)
+
+[node name="North12" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(864, 128)
+
+[node name="North13" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(928, 128)
+
+[node name="North14" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(992, 128)
+
+[node name="North15" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1056, 128)
+
+[node name="North16" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1120, 128)
+
+[node name="North17" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1184, 128)
+
+[node name="North18" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1248, 128)
+
+[node name="North19" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1312, 128)
+
+[node name="North20" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1376, 128)
+
+[node name="North21" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1440, 128)
+
+[node name="North22" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1504, 128)
+
+[node name="North23" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1568, 128)
+
+[node name="North24" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1632, 128)
+
+[node name="North25" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1696, 128)
+
+[node name="North26" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1760, 128)
+
+[node name="North27" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1824, 128)
+
+[node name="North28" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1888, 128)
+
+[node name="North29" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1952, 128)
+
+[node name="North30" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2016, 128)
+
+[node name="North31" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2080, 128)
+
+[node name="North32" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2144, 128)
+
+[node name="North33" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2208, 128)
+
+[node name="South0" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(96, 1664)
+
+[node name="South1" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(160, 1664)
+
+[node name="South2" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(224, 1664)
+
+[node name="South3" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(288, 1664)
+
+[node name="South4" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(352, 1664)
+
+[node name="South5" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(416, 1664)
+
+[node name="South6" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(480, 1664)
+
+[node name="South7" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(544, 1664)
+
+[node name="South8" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(608, 1664)
+
+[node name="South9" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(672, 1664)
+
+[node name="South10" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(736, 1664)
+
+[node name="South11" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(800, 1664)
+
+[node name="South14" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(992, 1664)
+
+[node name="South15" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1056, 1664)
+
+[node name="South16" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1120, 1664)
+
+[node name="South17" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1184, 1664)
+
+[node name="South18" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1248, 1664)
+
+[node name="South19" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1312, 1664)
+
+[node name="South20" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1376, 1664)
+
+[node name="South21" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1440, 1664)
+
+[node name="South22" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1504, 1664)
+
+[node name="South23" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1568, 1664)
+
+[node name="South24" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1632, 1664)
+
+[node name="South25" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1696, 1664)
+
+[node name="South26" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1760, 1664)
+
+[node name="South27" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1824, 1664)
+
+[node name="South28" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1888, 1664)
+
+[node name="South29" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(1952, 1664)
+
+[node name="South30" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2016, 1664)
+
+[node name="South31" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2080, 1664)
+
+[node name="South32" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2144, 1664)
+
+[node name="South33" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2208, 1664)
+
+[node name="West0" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 160)
+rotation = 1.5707963267948966
+
+[node name="West1" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 224)
+rotation = 1.5707963267948966
+
+[node name="West2" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 288)
+rotation = 1.5707963267948966
+
+[node name="West3" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 352)
+rotation = 1.5707963267948966
+
+[node name="West4" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 416)
+rotation = 1.5707963267948966
+
+[node name="West5" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 480)
+rotation = 1.5707963267948966
+
+[node name="West6" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 544)
+rotation = 1.5707963267948966
+
+[node name="West7" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 608)
+rotation = 1.5707963267948966
+
+[node name="West8" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 672)
+rotation = 1.5707963267948966
+
+[node name="West9" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 736)
+rotation = 1.5707963267948966
+
+[node name="West10" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 800)
+rotation = 1.5707963267948966
+
+[node name="West11" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 864)
+rotation = 1.5707963267948966
+
+[node name="West12" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 928)
+rotation = 1.5707963267948966
+
+[node name="West13" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 992)
+rotation = 1.5707963267948966
+
+[node name="West14" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1056)
+rotation = 1.5707963267948966
+
+[node name="West15" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1120)
+rotation = 1.5707963267948966
+
+[node name="West16" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1184)
+rotation = 1.5707963267948966
+
+[node name="West17" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1248)
+rotation = 1.5707963267948966
+
+[node name="West18" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1312)
+rotation = 1.5707963267948966
+
+[node name="West19" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1376)
+rotation = 1.5707963267948966
+
+[node name="West20" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1440)
+rotation = 1.5707963267948966
+
+[node name="West21" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1504)
+rotation = 1.5707963267948966
+
+[node name="West22" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1568)
+rotation = 1.5707963267948966
+
+[node name="West23" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(64, 1632)
+rotation = 1.5707963267948966
+
+[node name="East0" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 160)
+rotation = 1.5707963267948966
+
+[node name="East1" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 224)
+rotation = 1.5707963267948966
+
+[node name="East2" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 288)
+rotation = 1.5707963267948966
+
+[node name="East3" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 352)
+rotation = 1.5707963267948966
+
+[node name="East4" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 416)
+rotation = 1.5707963267948966
+
+[node name="East5" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 480)
+rotation = 1.5707963267948966
+
+[node name="East6" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 544)
+rotation = 1.5707963267948966
+
+[node name="East7" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 608)
+rotation = 1.5707963267948966
+
+[node name="East8" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 672)
+rotation = 1.5707963267948966
+
+[node name="East9" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 736)
+rotation = 1.5707963267948966
+
+[node name="East10" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 800)
+rotation = 1.5707963267948966
+
+[node name="East11" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 864)
+rotation = 1.5707963267948966
+
+[node name="East12" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 928)
+rotation = 1.5707963267948966
+
+[node name="East13" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 992)
+rotation = 1.5707963267948966
+
+[node name="East14" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1056)
+rotation = 1.5707963267948966
+
+[node name="East15" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1120)
+rotation = 1.5707963267948966
+
+[node name="East16" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1184)
+rotation = 1.5707963267948966
+
+[node name="East17" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1248)
+rotation = 1.5707963267948966
+
+[node name="East18" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1312)
+rotation = 1.5707963267948966
+
+[node name="East19" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1376)
+rotation = 1.5707963267948966
+
+[node name="East20" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1440)
+rotation = 1.5707963267948966
+
+[node name="East21" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1504)
+rotation = 1.5707963267948966
+
+[node name="East22" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1568)
+rotation = 1.5707963267948966
+
+[node name="East23" parent="Perimeter" instance=ExtResource("2")]
+position = Vector2(2240, 1632)
+rotation = 1.5707963267948966
+
+[node name="Boundary" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+
+[node name="Shape0" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(1152.0, 120.0)
+shape = SubResource("Shape0")
+
+[node name="Shape1" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(56.0, 896.0)
+shape = SubResource("Shape1")
+
+[node name="Shape2" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(2248.0, 896.0)
+shape = SubResource("Shape2")
+
+[node name="Shape3" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(1152.0, 1672.0)
+shape = SubResource("Shape3")
+
+[node name="Gate" parent="." instance=ExtResource("3")]
+position = Vector2(896, 1664)
+
+[node name="Bicycle" parent="." instance=ExtResource("4")]
+position = Vector2(1016, 1632)
+
+[node name="GateNotice" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(896, 1628)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "К воротам"
+metadata/link = ""
+metadata/blocked_message = "Поездка на велосипеде появится позже. Сейчас можно осмотреть лагерь."
+
+[node name="Trigger" type="CollisionShape2D" parent="GateNotice"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape4")
+
+[node name="Entrance" type="Marker2D" parent="Markers"]
+position = Vector2(896, 1576)
+
+[node name="Cabin1" parent="." instance=ExtResource("5")]
+position = Vector2(448, 448)
+
+[node name="EnterCabin1" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(480, 470)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в корпус 1"
+metadata/link = "Cabin1"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterCabin1"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape5")
+
+[node name="Cabin1" type="Marker2D" parent="Markers"]
+position = Vector2(480, 500)
+
+[node name="Cabin2" parent="." instance=ExtResource("5")]
+position = Vector2(1248, 448)
+
+[node name="EnterCabin2" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(1280, 470)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в корпус 2"
+metadata/link = "Cabin2"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterCabin2"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape6")
+
+[node name="Cabin2" type="Marker2D" parent="Markers"]
+position = Vector2(1280, 500)
+
+[node name="Cabin3" parent="." instance=ExtResource("5")]
+position = Vector2(448, 960)
+
+[node name="EnterCabin3" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(480, 982)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в корпус 3"
+metadata/link = "Cabin3"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterCabin3"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape7")
+
+[node name="Cabin3" type="Marker2D" parent="Markers"]
+position = Vector2(480, 1012)
+
+[node name="Cabin4" parent="." instance=ExtResource("5")]
+position = Vector2(1248, 960)
+
+[node name="EnterCabin4" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(1280, 982)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в корпус 4"
+metadata/link = "Cabin4"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterCabin4"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape8")
+
+[node name="Cabin4" type="Marker2D" parent="Markers"]
+position = Vector2(1280, 1012)
+
+[node name="Dorm" parent="." instance=ExtResource("6")]
+position = Vector2(448, 1440)
+
+[node name="EnterDorm" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(448, 1462)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в общагу"
+metadata/link = "Dorm"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterDorm"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape9")
+
+[node name="Dorm" type="Marker2D" parent="Markers"]
+position = Vector2(448, 1492)
+
+[node name="Glass" parent="." instance=ExtResource("7")]
+position = Vector2(1792, 1216)
+
+[node name="EnterGlass" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(1824, 1238)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Войти в стекляшку"
+metadata/link = "Glass"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="EnterGlass"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape10")
+
+[node name="Glass" type="Marker2D" parent="Markers"]
+position = Vector2(1824, 1268)
+
+[node name="Administration" parent="." instance=ExtResource("8")]
+position = Vector2(1888, 1536)
+
+[node name="ClosedAdministration" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(1888, 1558)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Проверить дверь админки"
+metadata/link = ""
+metadata/blocked_message = "Админка закрыта. Внутрь пока не попасть."
+
+[node name="Trigger" type="CollisionShape2D" parent="ClosedAdministration"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape11")
+
+[node name="Fixture0" parent="." instance=ExtResource("9")]
+position = Vector2(760, 1168)
+
+[node name="Fixture1" parent="." instance=ExtResource("9")]
+position = Vector2(1032, 1168)
+
+[node name="Fixture2" parent="." instance=ExtResource("10")]
+position = Vector2(760, 1264)
+
+[node name="Fixture3" parent="." instance=ExtResource("10")]
+position = Vector2(1032, 1264)
+
+[node name="Fixture4" parent="." instance=ExtResource("11")]
+position = Vector2(796, 1570)
+
+[node name="Fixture5" parent="." instance=ExtResource("12")]
+position = Vector2(768, 1488)
+
+[node name="Fixture6" parent="." instance=ExtResource("9")]
+position = Vector2(1056, 1536)
+
+[node name="Fixture7" parent="." instance=ExtResource("9")]
+position = Vector2(1936, 1280)
+
+[node name="Fixture8" parent="." instance=ExtResource("12")]
+position = Vector2(1700, 1290)
+
+[node name="Lamp0" parent="." instance=ExtResource("13")]
+position = Vector2(800, 400)
+
+[node name="Lamp1" parent="." instance=ExtResource("13")]
+position = Vector2(992, 640)
+
+[node name="Lamp2" parent="." instance=ExtResource("13")]
+position = Vector2(800, 912)
+
+[node name="Lamp3" parent="." instance=ExtResource("13")]
+position = Vector2(992, 1056)
+
+[node name="Lamp4" parent="." instance=ExtResource("13")]
+position = Vector2(800, 1376)
+
+[node name="Lamp5" parent="." instance=ExtResource("13")]
+position = Vector2(992, 1568)
+
+[node name="Lamp6" parent="." instance=ExtResource("13")]
+position = Vector2(1696, 1328)
+
+[node name="Lamp7" parent="." instance=ExtResource("13")]
+position = Vector2(1440, 544)
+
+[node name="Tree000" parent="." instance=ExtResource("14")]
+position = Vector2(1368, 1472)
+
+[node name="Tree001" parent="." instance=ExtResource("15")]
+position = Vector2(1880, 264)
+
+[node name="Tree002" parent="." instance=ExtResource("15")]
+position = Vector2(136, 1136)
+
+[node name="Tree003" parent="." instance=ExtResource("16")]
+position = Vector2(2040, 888)
+
+[node name="Tree004" parent="." instance=ExtResource("17")]
+position = Vector2(1872, 776)
+
+[node name="Tree005" parent="." instance=ExtResource("14")]
+position = Vector2(2016, 448)
+
+[node name="Tree006" parent="." instance=ExtResource("17")]
+position = Vector2(1672, 864)
+
+[node name="Tree007" parent="." instance=ExtResource("15")]
+position = Vector2(2120, 1504)
+
+[node name="Tree008" parent="." instance=ExtResource("14")]
+position = Vector2(1936, 336)
+
+[node name="Tree009" parent="." instance=ExtResource("17")]
+position = Vector2(1600, 520)
+
+[node name="Tree010" parent="." instance=ExtResource("18")]
+position = Vector2(1640, 1448)
+
+[node name="Tree011" parent="." instance=ExtResource("16")]
+position = Vector2(1592, 608)
+
+[node name="Tree012" parent="." instance=ExtResource("19")]
+position = Vector2(1992, 736)
+
+[node name="Tree013" parent="." instance=ExtResource("16")]
+position = Vector2(1424, 1384)
+
+[node name="Tree014" parent="." instance=ExtResource("14")]
+position = Vector2(256, 1584)
+
+[node name="Tree015" parent="." instance=ExtResource("17")]
+position = Vector2(160, 1424)
+
+[node name="Tree016" parent="." instance=ExtResource("14")]
+position = Vector2(1600, 824)
+
+[node name="Tree017" parent="." instance=ExtResource("18")]
+position = Vector2(656, 1584)
+
+[node name="Tree018" parent="." instance=ExtResource("15")]
+position = Vector2(1968, 608)
+
+[node name="Tree019" parent="." instance=ExtResource("16")]
+position = Vector2(2128, 960)
+
+[node name="Tree020" parent="." instance=ExtResource("18")]
+position = Vector2(1560, 920)
+
+[node name="Tree021" parent="." instance=ExtResource("16")]
+position = Vector2(1504, 568)
+
+[node name="Tree022" parent="." instance=ExtResource("14")]
+position = Vector2(304, 1120)
+
+[node name="Tree023" parent="." instance=ExtResource("18")]
+position = Vector2(1928, 528)
+
+[node name="Tree024" parent="." instance=ExtResource("17")]
+position = Vector2(1328, 592)
+
+[node name="Tree025" parent="." instance=ExtResource("16")]
+position = Vector2(1080, 616)
+
+[node name="Tree026" parent="." instance=ExtResource("16")]
+position = Vector2(2096, 552)
+
+[node name="Tree027" parent="." instance=ExtResource("15")]
+position = Vector2(112, 280)
+
+[node name="Tree028" parent="." instance=ExtResource("15")]
+position = Vector2(2144, 624)
+
+[node name="Tree029" parent="." instance=ExtResource("15")]
+position = Vector2(1576, 696)
+
+[node name="Tree030" parent="." instance=ExtResource("14")]
+position = Vector2(1680, 376)
+
+[node name="Tree031" parent="." instance=ExtResource("16")]
+position = Vector2(2160, 1288)
+
+[node name="Tree032" parent="." instance=ExtResource("18")]
+position = Vector2(1512, 1152)
+
+[node name="Tree033" parent="." instance=ExtResource("14")]
+position = Vector2(1792, 496)
+
+[node name="Tree034" parent="." instance=ExtResource("18")]
+position = Vector2(1584, 328)
+
+[node name="Tree035" parent="." instance=ExtResource("19")]
+position = Vector2(2104, 384)
+
+[node name="Tree036" parent="." instance=ExtResource("16")]
+position = Vector2(1840, 624)
+
+[node name="Tree037" parent="." instance=ExtResource("14")]
+position = Vector2(2168, 1088)
+
+[node name="Tree038" parent="." instance=ExtResource("18")]
+position = Vector2(2168, 488)
+
+[node name="Tree039" parent="." instance=ExtResource("17")]
+position = Vector2(1560, 1384)
+
+[node name="Tree040" parent="." instance=ExtResource("19")]
+position = Vector2(2184, 192)
+
+[node name="Tree041" parent="." instance=ExtResource("14")]
+position = Vector2(752, 688)
+
+[node name="Tree042" parent="." instance=ExtResource("15")]
+position = Vector2(1248, 1128)
+
+[node name="Tree043" parent="." instance=ExtResource("16")]
+position = Vector2(680, 1112)
+
+[node name="Tree044" parent="." instance=ExtResource("15")]
+position = Vector2(128, 696)
+
+[node name="Tree045" parent="." instance=ExtResource("16")]
+position = Vector2(2048, 1040)
+
+[node name="Tree046" parent="." instance=ExtResource("18")]
+position = Vector2(1056, 1360)
+
+[node name="Tree047" parent="." instance=ExtResource("14")]
+position = Vector2(1728, 664)
+
+[node name="Tree048" parent="." instance=ExtResource("15")]
+position = Vector2(536, 608)
+
+[node name="Tree049" parent="." instance=ExtResource("19")]
+position = Vector2(1224, 1400)
+
+[node name="Tree050" parent="." instance=ExtResource("17")]
+position = Vector2(112, 1288)
+
+[node name="Tree051" parent="." instance=ExtResource("19")]
+position = Vector2(112, 840)
+
+[node name="Tree052" parent="." instance=ExtResource("17")]
+position = Vector2(1560, 416)
+
+[node name="Tree053" parent="." instance=ExtResource("18")]
+position = Vector2(1784, 304)
+
+[node name="Tree054" parent="." instance=ExtResource("16")]
+position = Vector2(1432, 1088)
+
+[node name="Tree055" parent="." instance=ExtResource("17")]
+position = Vector2(512, 1128)
+
+[node name="Tree056" parent="." instance=ExtResource("19")]
+position = Vector2(1800, 920)
+
+[node name="Tree057" parent="." instance=ExtResource("14")]
+position = Vector2(392, 1120)
+
+[node name="Tree058" parent="." instance=ExtResource("17")]
+position = Vector2(1768, 576)
+
+[node name="Tree059" parent="." instance=ExtResource("18")]
+position = Vector2(304, 624)
+
+[node name="Tree060" parent="." instance=ExtResource("19")]
+position = Vector2(1800, 816)
+
+[node name="Tree061" parent="." instance=ExtResource("17")]
+position = Vector2(216, 1096)
+
+[node name="Tree062" parent="." instance=ExtResource("14")]
+position = Vector2(128, 1536)
+
+[node name="Tree063" parent="." instance=ExtResource("19")]
+position = Vector2(1752, 424)
+
+[node name="Tree064" parent="." instance=ExtResource("19")]
+position = Vector2(760, 848)
+
+[node name="Tree065" parent="." instance=ExtResource("17")]
+position = Vector2(2032, 336)
+
+[node name="Tree066" parent="." instance=ExtResource("14")]
+position = Vector2(144, 608)
+
+[node name="Tree067" parent="." instance=ExtResource("18")]
+position = Vector2(1776, 216)
+
+[node name="Tree068" parent="." instance=ExtResource("15")]
+position = Vector2(2144, 280)
+
+[node name="Tree069" parent="." instance=ExtResource("19")]
+position = Vector2(2184, 1400)
+
+[node name="Tree070" parent="." instance=ExtResource("17")]
+position = Vector2(2176, 752)
+
+[node name="Tree071" parent="." instance=ExtResource("15")]
+position = Vector2(112, 448)
+
+[node name="Tree072" parent="." instance=ExtResource("16")]
+position = Vector2(2088, 1144)
+
+[node name="Tree073" parent="." instance=ExtResource("14")]
+position = Vector2(1112, 1440)
+
+[node name="Tree074" parent="." instance=ExtResource("15")]
+position = Vector2(1928, 192)
+
+[node name="Tree075" parent="." instance=ExtResource("14")]
+position = Vector2(1192, 616)
+
+[node name="Tree076" parent="." instance=ExtResource("17")]
+position = Vector2(1624, 256)
+
+[node name="Tree077" parent="." instance=ExtResource("15")]
+position = Vector2(1552, 1480)
+
+[node name="Tree078" parent="." instance=ExtResource("17")]
+position = Vector2(752, 248)
+
+[node name="Tree079" parent="." instance=ExtResource("14")]
+position = Vector2(1904, 896)
+
+[node name="Tree080" parent="." instance=ExtResource("19")]
+position = Vector2(2016, 224)
+
+[node name="Tree081" parent="." instance=ExtResource("15")]
+position = Vector2(504, 1600)
+
+[node name="Tree082" parent="." instance=ExtResource("19")]
+position = Vector2(2136, 856)
+
+[node name="Tree083" parent="." instance=ExtResource("14")]
+position = Vector2(1856, 392)
+
+[node name="Tree084" parent="." instance=ExtResource("16")]
+position = Vector2(1320, 1376)
+
+[node name="Tree085" parent="." instance=ExtResource("14")]
+position = Vector2(2168, 1176)
+
+[node name="Tree086" parent="." instance=ExtResource("19")]
+position = Vector2(1728, 752)
+
+[node name="Tree087" parent="." instance=ExtResource("15")]
+position = Vector2(144, 192)
+
+[node name="Tree088" parent="." instance=ExtResource("17")]
+position = Vector2(1640, 448)
+
+[node name="Tree089" parent="." instance=ExtResource("14")]
+position = Vector2(120, 992)
+
+[node name="Tree090" parent="." instance=ExtResource("17")]
+position = Vector2(1968, 832)
+
+[node name="Tree091" parent="." instance=ExtResource("16")]
+position = Vector2(2184, 1592)
+
+[node name="Tree092" parent="." instance=ExtResource("17")]
+position = Vector2(1800, 712)
+
+[node name="Tree093" parent="." instance=ExtResource("16")]
+position = Vector2(448, 616)
+
+[node name="Tree094" parent="." instance=ExtResource("19")]
+position = Vector2(1016, 1456)
+
+[node name="Tree095" parent="." instance=ExtResource("14")]
+position = Vector2(1184, 1480)
+
+[node name="Tree096" parent="." instance=ExtResource("15")]
+position = Vector2(2096, 696)
+
+[node name="Tree097" parent="." instance=ExtResource("15")]
+position = Vector2(2072, 784)
+
+[node name="Tree098" parent="." instance=ExtResource("17")]
+position = Vector2(2096, 1608)
+
+[node name="Tree099" parent="." instance=ExtResource("18")]
+position = Vector2(392, 1616)
+
+[node name="Tree100" parent="." instance=ExtResource("18")]
+position = Vector2(2104, 1352)
+
+[node name="Tree101" parent="." instance=ExtResource("18")]
+position = Vector2(160, 1216)
+
+[node name="Tree102" parent="." instance=ExtResource("14")]
+position = Vector2(2040, 1272)
+
+[node name="Tree103" parent="." instance=ExtResource("14")]
+position = Vector2(1368, 1152)
+
+[node name="Tree104" parent="." instance=ExtResource("14")]
+position = Vector2(664, 592)
+
+[node name="Tree105" parent="." instance=ExtResource("14")]
+position = Vector2(728, 1368)
+
+[node name="Tree106" parent="." instance=ExtResource("19")]
+position = Vector2(1552, 1072)
+
+[node name="Tree107" parent="." instance=ExtResource("18")]
+position = Vector2(1552, 192)
+
+[node name="Tree108" parent="." instance=ExtResource("16")]
+position = Vector2(1144, 1104)
+
+[node name="Tree109" parent="." instance=ExtResource("16")]
+position = Vector2(160, 1616)
+
+[node name="Tree110" parent="." instance=ExtResource("17")]
+position = Vector2(216, 568)
+
+[node name="Tree111" parent="." instance=ExtResource("19")]
+position = Vector2(1688, 536)
+
+[node name="Tree112" parent="." instance=ExtResource("16")]
+position = Vector2(1456, 1472)
+
+[node name="Tree113" parent="." instance=ExtResource("15")]
+position = Vector2(1152, 1360)
+
+[node name="Tree114" parent="." instance=ExtResource("18")]
+position = Vector2(1424, 624)
+
+[node name="Tree115" parent="." instance=ExtResource("18")]
+position = Vector2(1920, 688)
+
+[node name="Tree116" parent="." instance=ExtResource("19")]
+position = Vector2(1320, 1080)
+
+[node name="Tree117" parent="." instance=ExtResource("15")]
+position = Vector2(1272, 1472)
+
+[node name="Tree118" parent="." instance=ExtResource("16")]
+position = Vector2(144, 368)
+
+[node name="Tree119" parent="." instance=ExtResource("17")]
+position = Vector2(1696, 192)
+
+[node name="Tree120" parent="." instance=ExtResource("16")]
+position = Vector2(2096, 192)
+
+[node name="Tree121" parent="." instance=ExtResource("19")]
+position = Vector2(1704, 280)
+
+[node name="Tree122" parent="." instance=ExtResource("14")]
+position = Vector2(776, 600)
+
+[node name="Undergrowth000" type="Sprite2D" parent="."]
+position = Vector2(1532, 1176)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth001" type="Sprite2D" parent="."]
+position = Vector2(1404, 664)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth002" type="Sprite2D" parent="."]
+position = Vector2(1532, 1000)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth003" type="Sprite2D" parent="."]
+position = Vector2(1336, 1376)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth004" type="Sprite2D" parent="."]
+position = Vector2(1808, 292)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth005" type="Sprite2D" parent="."]
+position = Vector2(1636, 596)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth006" type="Sprite2D" parent="."]
+position = Vector2(1352, 604)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth007" type="Sprite2D" parent="."]
+position = Vector2(196, 1560)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth008" type="Sprite2D" parent="."]
+position = Vector2(2136, 1472)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth009" type="Sprite2D" parent="."]
+position = Vector2(1972, 952)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth010" type="Sprite2D" parent="."]
+position = Vector2(1448, 1372)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth011" type="Sprite2D" parent="."]
+position = Vector2(2004, 340)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth012" type="Sprite2D" parent="."]
+position = Vector2(2108, 1596)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth013" type="Sprite2D" parent="."]
+position = Vector2(1412, 660)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth014" type="Sprite2D" parent="."]
+position = Vector2(1064, 1444)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth015" type="Sprite2D" parent="."]
+position = Vector2(1564, 912)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth016" type="Sprite2D" parent="."]
+position = Vector2(2120, 1196)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth017" type="Sprite2D" parent="."]
+position = Vector2(1988, 432)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth018" type="Sprite2D" parent="."]
+position = Vector2(1300, 1072)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth019" type="Sprite2D" parent="."]
+position = Vector2(1680, 424)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth020" type="Sprite2D" parent="."]
+position = Vector2(464, 636)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth021" type="Sprite2D" parent="."]
+position = Vector2(1276, 1452)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth022" type="Sprite2D" parent="."]
+position = Vector2(124, 1300)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth023" type="Sprite2D" parent="."]
+position = Vector2(1408, 1448)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth024" type="Sprite2D" parent="."]
+position = Vector2(1408, 1144)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth025" type="Sprite2D" parent="."]
+position = Vector2(232, 640)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth026" type="Sprite2D" parent="."]
+position = Vector2(2008, 1624)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth027" type="Sprite2D" parent="."]
+position = Vector2(1748, 252)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth028" type="Sprite2D" parent="."]
+position = Vector2(1628, 436)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth029" type="Sprite2D" parent="."]
+position = Vector2(1956, 908)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth030" type="Sprite2D" parent="."]
+position = Vector2(176, 432)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth031" type="Sprite2D" parent="."]
+position = Vector2(176, 336)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth032" type="Sprite2D" parent="."]
+position = Vector2(1128, 604)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth033" type="Sprite2D" parent="."]
+position = Vector2(1672, 888)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth034" type="Sprite2D" parent="."]
+position = Vector2(1524, 1004)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth035" type="Sprite2D" parent="."]
+position = Vector2(2140, 1360)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth036" type="Sprite2D" parent="."]
+position = Vector2(324, 1560)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth037" type="Sprite2D" parent="."]
+position = Vector2(1696, 616)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth038" type="Sprite2D" parent="."]
+position = Vector2(2172, 1436)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth039" type="Sprite2D" parent="."]
+position = Vector2(1804, 640)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth040" type="Sprite2D" parent="."]
+position = Vector2(1652, 700)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth041" type="Sprite2D" parent="."]
+position = Vector2(480, 580)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth042" type="Sprite2D" parent="."]
+position = Vector2(116, 1596)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth043" type="Sprite2D" parent="."]
+position = Vector2(1628, 700)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth044" type="Sprite2D" parent="."]
+position = Vector2(1728, 696)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth045" type="Sprite2D" parent="."]
+position = Vector2(1540, 416)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth046" type="Sprite2D" parent="."]
+position = Vector2(164, 1412)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth047" type="Sprite2D" parent="."]
+position = Vector2(336, 1560)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth048" type="Sprite2D" parent="."]
+position = Vector2(1144, 1456)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth049" type="Sprite2D" parent="."]
+position = Vector2(756, 328)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth050" type="Sprite2D" parent="."]
+position = Vector2(2144, 860)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth051" type="Sprite2D" parent="."]
+position = Vector2(1816, 260)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth052" type="Sprite2D" parent="."]
+position = Vector2(1736, 292)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth053" type="Sprite2D" parent="."]
+position = Vector2(1568, 420)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth054" type="Sprite2D" parent="."]
+position = Vector2(2160, 1384)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth055" type="Sprite2D" parent="."]
+position = Vector2(2088, 472)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth056" type="Sprite2D" parent="."]
+position = Vector2(268, 1576)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth057" type="Sprite2D" parent="."]
+position = Vector2(1928, 572)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth058" type="Sprite2D" parent="."]
+position = Vector2(1792, 876)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth059" type="Sprite2D" parent="."]
+position = Vector2(176, 1036)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth060" type="Sprite2D" parent="."]
+position = Vector2(1416, 1124)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth061" type="Sprite2D" parent="."]
+position = Vector2(1548, 344)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth062" type="Sprite2D" parent="."]
+position = Vector2(152, 440)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth063" type="Sprite2D" parent="."]
+position = Vector2(2048, 284)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth064" type="Sprite2D" parent="."]
+position = Vector2(1676, 300)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth065" type="Sprite2D" parent="."]
+position = Vector2(1700, 652)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth066" type="Sprite2D" parent="."]
+position = Vector2(696, 1156)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth067" type="Sprite2D" parent="."]
+position = Vector2(1692, 952)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth068" type="Sprite2D" parent="."]
+position = Vector2(2140, 1408)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth069" type="Sprite2D" parent="."]
+position = Vector2(2036, 936)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth070" type="Sprite2D" parent="."]
+position = Vector2(1112, 632)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth071" type="Sprite2D" parent="."]
+position = Vector2(776, 568)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth072" type="Sprite2D" parent="."]
+position = Vector2(1100, 1452)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth073" type="Sprite2D" parent="."]
+position = Vector2(548, 1176)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth074" type="Sprite2D" parent="."]
+position = Vector2(1856, 440)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth075" type="Sprite2D" parent="."]
+position = Vector2(324, 604)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth076" type="Sprite2D" parent="."]
+position = Vector2(1536, 224)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth077" type="Sprite2D" parent="."]
+position = Vector2(2044, 1108)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth078" type="Sprite2D" parent="."]
+position = Vector2(796, 840)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth079" type="Sprite2D" parent="."]
+position = Vector2(552, 604)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth080" type="Sprite2D" parent="."]
+position = Vector2(1424, 1112)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth081" type="Sprite2D" parent="."]
+position = Vector2(260, 1144)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth082" type="Sprite2D" parent="."]
+position = Vector2(1212, 1508)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth083" type="Sprite2D" parent="."]
+position = Vector2(1592, 320)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth084" type="Sprite2D" parent="."]
+position = Vector2(288, 1072)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth085" type="Sprite2D" parent="."]
+position = Vector2(2092, 1568)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth086" type="Sprite2D" parent="."]
+position = Vector2(1332, 592)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth087" type="Sprite2D" parent="."]
+position = Vector2(1660, 244)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth088" type="Sprite2D" parent="."]
+position = Vector2(216, 1552)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth089" type="Sprite2D" parent="."]
+position = Vector2(2056, 792)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth090" type="Sprite2D" parent="."]
+position = Vector2(2184, 840)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth091" type="Sprite2D" parent="."]
+position = Vector2(1480, 1508)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth092" type="Sprite2D" parent="."]
+position = Vector2(1736, 868)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth093" type="Sprite2D" parent="."]
+position = Vector2(2128, 1496)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth094" type="Sprite2D" parent="."]
+position = Vector2(1492, 1116)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth095" type="Sprite2D" parent="."]
+position = Vector2(188, 556)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth096" type="Sprite2D" parent="."]
+position = Vector2(1248, 1092)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth097" type="Sprite2D" parent="."]
+position = Vector2(168, 328)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth098" type="Sprite2D" parent="."]
+position = Vector2(1528, 1156)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth099" type="Sprite2D" parent="."]
+position = Vector2(500, 1076)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth100" type="Sprite2D" parent="."]
+position = Vector2(1696, 1396)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth101" type="Sprite2D" parent="."]
+position = Vector2(128, 560)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth102" type="Sprite2D" parent="."]
+position = Vector2(704, 652)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth103" type="Sprite2D" parent="."]
+position = Vector2(468, 616)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth104" type="Sprite2D" parent="."]
+position = Vector2(1900, 880)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth105" type="Sprite2D" parent="."]
+position = Vector2(792, 760)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth106" type="Sprite2D" parent="."]
+position = Vector2(1656, 516)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth107" type="Sprite2D" parent="."]
+position = Vector2(1996, 612)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth108" type="Sprite2D" parent="."]
+position = Vector2(1596, 648)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth109" type="Sprite2D" parent="."]
+position = Vector2(2096, 732)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth110" type="Sprite2D" parent="."]
+position = Vector2(728, 852)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth111" type="Sprite2D" parent="."]
+position = Vector2(608, 608)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth112" type="Sprite2D" parent="."]
+position = Vector2(1224, 1076)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth113" type="Sprite2D" parent="."]
+position = Vector2(156, 1444)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth114" type="Sprite2D" parent="."]
+position = Vector2(2076, 1088)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth115" type="Sprite2D" parent="."]
+position = Vector2(1092, 1380)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth116" type="Sprite2D" parent="."]
+position = Vector2(2124, 284)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth117" type="Sprite2D" parent="."]
+position = Vector2(320, 1160)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth118" type="Sprite2D" parent="."]
+position = Vector2(720, 632)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth119" type="Sprite2D" parent="."]
+position = Vector2(356, 640)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth120" type="Sprite2D" parent="."]
+position = Vector2(780, 784)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth121" type="Sprite2D" parent="."]
+position = Vector2(1600, 1420)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth122" type="Sprite2D" parent="."]
+position = Vector2(1540, 752)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth123" type="Sprite2D" parent="."]
+position = Vector2(1292, 1092)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth124" type="Sprite2D" parent="."]
+position = Vector2(1748, 256)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth125" type="Sprite2D" parent="."]
+position = Vector2(804, 660)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth126" type="Sprite2D" parent="."]
+position = Vector2(1524, 980)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth127" type="Sprite2D" parent="."]
+position = Vector2(1756, 504)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth128" type="Sprite2D" parent="."]
+position = Vector2(2092, 1428)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth129" type="Sprite2D" parent="."]
+position = Vector2(148, 476)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth130" type="Sprite2D" parent="."]
+position = Vector2(2120, 364)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth131" type="Sprite2D" parent="."]
+position = Vector2(1564, 1340)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth132" type="Sprite2D" parent="."]
+position = Vector2(1736, 836)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth133" type="Sprite2D" parent="."]
+position = Vector2(196, 1452)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth134" type="Sprite2D" parent="."]
+position = Vector2(160, 1360)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth135" type="Sprite2D" parent="."]
+position = Vector2(156, 480)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth136" type="Sprite2D" parent="."]
+position = Vector2(1736, 504)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth137" type="Sprite2D" parent="."]
+position = Vector2(1728, 760)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth138" type="Sprite2D" parent="."]
+position = Vector2(1600, 864)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth139" type="Sprite2D" parent="."]
+position = Vector2(1164, 1100)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth140" type="Sprite2D" parent="."]
+position = Vector2(324, 1160)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth141" type="Sprite2D" parent="."]
+position = Vector2(1584, 1464)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth142" type="Sprite2D" parent="."]
+position = Vector2(148, 928)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth143" type="Sprite2D" parent="."]
+position = Vector2(1380, 596)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth144" type="Sprite2D" parent="."]
+position = Vector2(1692, 708)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth145" type="Sprite2D" parent="."]
+position = Vector2(716, 1404)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth146" type="Sprite2D" parent="."]
+position = Vector2(180, 560)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth147" type="Sprite2D" parent="."]
+position = Vector2(1992, 348)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth148" type="Sprite2D" parent="."]
+position = Vector2(1064, 648)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth149" type="Sprite2D" parent="."]
+position = Vector2(2036, 984)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth150" type="Sprite2D" parent="."]
+position = Vector2(1740, 276)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth151" type="Sprite2D" parent="."]
+position = Vector2(2044, 1168)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth152" type="Sprite2D" parent="."]
+position = Vector2(2136, 272)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth153" type="Sprite2D" parent="."]
+position = Vector2(2020, 608)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth154" type="Sprite2D" parent="."]
+position = Vector2(428, 624)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth155" type="Sprite2D" parent="."]
+position = Vector2(156, 1216)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth156" type="Sprite2D" parent="."]
+position = Vector2(2052, 1164)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth157" type="Sprite2D" parent="."]
+position = Vector2(740, 916)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth158" type="Sprite2D" parent="."]
+position = Vector2(452, 1076)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth159" type="Sprite2D" parent="."]
+position = Vector2(1268, 1360)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth160" type="Sprite2D" parent="."]
+position = Vector2(256, 1548)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth161" type="Sprite2D" parent="."]
+position = Vector2(1120, 1380)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth162" type="Sprite2D" parent="."]
+position = Vector2(1156, 1452)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth163" type="Sprite2D" parent="."]
+position = Vector2(700, 1184)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth164" type="Sprite2D" parent="."]
+position = Vector2(1920, 352)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth165" type="Sprite2D" parent="."]
+position = Vector2(2064, 1452)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth166" type="Sprite2D" parent="."]
+position = Vector2(372, 576)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth167" type="Sprite2D" parent="."]
+position = Vector2(2116, 1140)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth168" type="Sprite2D" parent="."]
+position = Vector2(1612, 848)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth169" type="Sprite2D" parent="."]
+position = Vector2(2012, 268)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth170" type="Sprite2D" parent="."]
+position = Vector2(648, 596)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth171" type="Sprite2D" parent="."]
+position = Vector2(1940, 840)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth172" type="Sprite2D" parent="."]
+position = Vector2(1700, 280)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth173" type="Sprite2D" parent="."]
+position = Vector2(1556, 1020)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth174" type="Sprite2D" parent="."]
+position = Vector2(2052, 592)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth175" type="Sprite2D" parent="."]
+position = Vector2(788, 640)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth176" type="Sprite2D" parent="."]
+position = Vector2(2188, 216)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth177" type="Sprite2D" parent="."]
+position = Vector2(996, 1480)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth178" type="Sprite2D" parent="."]
+position = Vector2(388, 1092)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth179" type="Sprite2D" parent="."]
+position = Vector2(1580, 284)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth180" type="Sprite2D" parent="."]
+position = Vector2(412, 1076)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth181" type="Sprite2D" parent="."]
+position = Vector2(2044, 616)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth182" type="Sprite2D" parent="."]
+position = Vector2(1524, 948)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth183" type="Sprite2D" parent="."]
+position = Vector2(1664, 572)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth184" type="Sprite2D" parent="."]
+position = Vector2(2004, 964)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth185" type="Sprite2D" parent="."]
+position = Vector2(1260, 1376)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth186" type="Sprite2D" parent="."]
+position = Vector2(1160, 1456)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth187" type="Sprite2D" parent="."]
+position = Vector2(2016, 580)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth188" type="Sprite2D" parent="."]
+position = Vector2(1468, 1188)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth189" type="Sprite2D" parent="."]
+position = Vector2(1536, 216)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth190" type="Sprite2D" parent="."]
+position = Vector2(1804, 232)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth191" type="Sprite2D" parent="."]
+position = Vector2(1680, 264)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth192" type="Sprite2D" parent="."]
+position = Vector2(116, 840)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth193" type="Sprite2D" parent="."]
+position = Vector2(1544, 1132)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth194" type="Sprite2D" parent="."]
+position = Vector2(1420, 652)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth195" type="Sprite2D" parent="."]
+position = Vector2(2108, 328)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth196" type="Sprite2D" parent="."]
+position = Vector2(2044, 868)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth197" type="Sprite2D" parent="."]
+position = Vector2(480, 1152)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth198" type="Sprite2D" parent="."]
+position = Vector2(2108, 1124)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth199" type="Sprite2D" parent="."]
+position = Vector2(1260, 1080)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth200" type="Sprite2D" parent="."]
+position = Vector2(1528, 1196)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth201" type="Sprite2D" parent="."]
+position = Vector2(164, 400)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth202" type="Sprite2D" parent="."]
+position = Vector2(1648, 728)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth203" type="Sprite2D" parent="."]
+position = Vector2(1948, 296)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth204" type="Sprite2D" parent="."]
+position = Vector2(764, 212)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth205" type="Sprite2D" parent="."]
+position = Vector2(344, 1100)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth206" type="Sprite2D" parent="."]
+position = Vector2(684, 1100)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth207" type="Sprite2D" parent="."]
+position = Vector2(2028, 1096)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth208" type="Sprite2D" parent="."]
+position = Vector2(524, 616)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth209" type="Sprite2D" parent="."]
+position = Vector2(2112, 1456)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth210" type="Sprite2D" parent="."]
+position = Vector2(560, 576)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth211" type="Sprite2D" parent="."]
+position = Vector2(1476, 1396)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth212" type="Sprite2D" parent="."]
+position = Vector2(600, 1120)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth213" type="Sprite2D" parent="."]
+position = Vector2(200, 1276)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth214" type="Sprite2D" parent="."]
+position = Vector2(1548, 248)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth215" type="Sprite2D" parent="."]
+position = Vector2(1908, 340)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth216" type="Sprite2D" parent="."]
+position = Vector2(1908, 244)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth217" type="Sprite2D" parent="."]
+position = Vector2(200, 1480)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth218" type="Sprite2D" parent="."]
+position = Vector2(140, 456)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth219" type="Sprite2D" parent="."]
+position = Vector2(1360, 1152)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth220" type="Sprite2D" parent="."]
+position = Vector2(172, 1124)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth221" type="Sprite2D" parent="."]
+position = Vector2(1836, 252)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth222" type="Sprite2D" parent="."]
+position = Vector2(1144, 612)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth223" type="Sprite2D" parent="."]
+position = Vector2(116, 1152)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth224" type="Sprite2D" parent="."]
+position = Vector2(1536, 1076)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth225" type="Sprite2D" parent="."]
+position = Vector2(312, 556)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth226" type="Sprite2D" parent="."]
+position = Vector2(1116, 1148)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth227" type="Sprite2D" parent="."]
+position = Vector2(1828, 768)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth228" type="Sprite2D" parent="."]
+position = Vector2(1812, 704)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth229" type="Sprite2D" parent="."]
+position = Vector2(736, 412)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth230" type="Sprite2D" parent="."]
+position = Vector2(1872, 796)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth231" type="Sprite2D" parent="."]
+position = Vector2(2144, 1560)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth232" type="Sprite2D" parent="."]
+position = Vector2(1924, 508)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth233" type="Sprite2D" parent="."]
+position = Vector2(1892, 400)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth234" type="Sprite2D" parent="."]
+position = Vector2(568, 1108)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth235" type="Sprite2D" parent="."]
+position = Vector2(2180, 1568)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth236" type="Sprite2D" parent="."]
+position = Vector2(208, 1504)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth237" type="Sprite2D" parent="."]
+position = Vector2(1004, 1408)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth238" type="Sprite2D" parent="."]
+position = Vector2(120, 1304)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth239" type="Sprite2D" parent="."]
+position = Vector2(1532, 236)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth240" type="Sprite2D" parent="."]
+position = Vector2(2136, 1552)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth241" type="Sprite2D" parent="."]
+position = Vector2(1520, 1088)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth242" type="Sprite2D" parent="."]
+position = Vector2(2108, 708)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth243" type="Sprite2D" parent="."]
+position = Vector2(600, 612)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth244" type="Sprite2D" parent="."]
+position = Vector2(1324, 632)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth245" type="Sprite2D" parent="."]
+position = Vector2(1136, 1380)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth246" type="Sprite2D" parent="."]
+position = Vector2(1108, 1456)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth247" type="Sprite2D" parent="."]
+position = Vector2(1860, 264)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth248" type="Sprite2D" parent="."]
+position = Vector2(2032, 556)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth249" type="Sprite2D" parent="."]
+position = Vector2(2184, 868)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth250" type="Sprite2D" parent="."]
+position = Vector2(2136, 552)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth251" type="Sprite2D" parent="."]
+position = Vector2(1620, 1364)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth252" type="Sprite2D" parent="."]
+position = Vector2(524, 1604)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth253" type="Sprite2D" parent="."]
+position = Vector2(1796, 560)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth254" type="Sprite2D" parent="."]
+position = Vector2(744, 700)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth255" type="Sprite2D" parent="."]
+position = Vector2(156, 1076)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth256" type="Sprite2D" parent="."]
+position = Vector2(1592, 256)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth257" type="Sprite2D" parent="."]
+position = Vector2(160, 884)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth258" type="Sprite2D" parent="."]
+position = Vector2(1564, 760)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth259" type="Sprite2D" parent="."]
+position = Vector2(308, 1056)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth260" type="Sprite2D" parent="."]
+position = Vector2(1144, 1088)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth261" type="Sprite2D" parent="."]
+position = Vector2(2028, 584)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth262" type="Sprite2D" parent="."]
+position = Vector2(148, 1556)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth263" type="Sprite2D" parent="."]
+position = Vector2(1808, 536)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth264" type="Sprite2D" parent="."]
+position = Vector2(1924, 652)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth265" type="Sprite2D" parent="."]
+position = Vector2(160, 1448)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth266" type="Sprite2D" parent="."]
+position = Vector2(1612, 328)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth267" type="Sprite2D" parent="."]
+position = Vector2(1844, 728)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth268" type="Sprite2D" parent="."]
+position = Vector2(1228, 1152)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth269" type="Sprite2D" parent="."]
+position = Vector2(1720, 396)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth270" type="Sprite2D" parent="."]
+position = Vector2(1260, 1196)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth271" type="Sprite2D" parent="."]
+position = Vector2(1412, 1504)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth272" type="Sprite2D" parent="."]
+position = Vector2(252, 664)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth273" type="Sprite2D" parent="."]
+position = Vector2(2180, 1396)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth274" type="Sprite2D" parent="."]
+position = Vector2(188, 1480)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth275" type="Sprite2D" parent="."]
+position = Vector2(1664, 916)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth276" type="Sprite2D" parent="."]
+position = Vector2(132, 796)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth277" type="Sprite2D" parent="."]
+position = Vector2(1420, 1384)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth278" type="Sprite2D" parent="."]
+position = Vector2(776, 816)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth279" type="Sprite2D" parent="."]
+position = Vector2(660, 1148)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth280" type="Sprite2D" parent="."]
+position = Vector2(1352, 588)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth281" type="Sprite2D" parent="."]
+position = Vector2(1364, 600)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth282" type="Sprite2D" parent="."]
+position = Vector2(1744, 336)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth283" type="Sprite2D" parent="."]
+position = Vector2(1968, 828)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth284" type="Sprite2D" parent="."]
+position = Vector2(1980, 1624)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth285" type="Sprite2D" parent="."]
+position = Vector2(1876, 564)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth286" type="Sprite2D" parent="."]
+position = Vector2(1748, 308)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth287" type="Sprite2D" parent="."]
+position = Vector2(132, 1036)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth288" type="Sprite2D" parent="."]
+position = Vector2(1772, 636)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth289" type="Sprite2D" parent="."]
+position = Vector2(1984, 892)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth290" type="Sprite2D" parent="."]
+position = Vector2(1000, 1448)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth291" type="Sprite2D" parent="."]
+position = Vector2(724, 780)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth292" type="Sprite2D" parent="."]
+position = Vector2(1596, 928)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth293" type="Sprite2D" parent="."]
+position = Vector2(132, 1016)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth294" type="Sprite2D" parent="."]
+position = Vector2(2116, 456)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth295" type="Sprite2D" parent="."]
+position = Vector2(608, 1156)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth296" type="Sprite2D" parent="."]
+position = Vector2(220, 1056)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth297" type="Sprite2D" parent="."]
+position = Vector2(748, 576)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth298" type="Sprite2D" parent="."]
+position = Vector2(1392, 1116)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth299" type="Sprite2D" parent="."]
+position = Vector2(1252, 1348)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth300" type="Sprite2D" parent="."]
+position = Vector2(168, 1484)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth301" type="Sprite2D" parent="."]
+position = Vector2(2012, 828)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth302" type="Sprite2D" parent="."]
+position = Vector2(760, 676)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth303" type="Sprite2D" parent="."]
+position = Vector2(1572, 704)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth304" type="Sprite2D" parent="."]
+position = Vector2(1540, 404)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth305" type="Sprite2D" parent="."]
+position = Vector2(1956, 824)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth306" type="Sprite2D" parent="."]
+position = Vector2(1672, 1396)
+texture = ExtResource("24")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth307" type="Sprite2D" parent="."]
+position = Vector2(552, 1600)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth308" type="Sprite2D" parent="."]
+position = Vector2(1692, 1472)
+texture = ExtResource("21")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth309" type="Sprite2D" parent="."]
+position = Vector2(164, 1184)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth310" type="Sprite2D" parent="."]
+position = Vector2(1396, 1148)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth311" type="Sprite2D" parent="."]
+position = Vector2(2068, 544)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth312" type="Sprite2D" parent="."]
+position = Vector2(1636, 256)
+texture = ExtResource("20")
+centered = false
+offset = Vector2(-32, -29)
+z_index = -2
+
+[node name="Undergrowth313" type="Sprite2D" parent="."]
+position = Vector2(2188, 1040)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth314" type="Sprite2D" parent="."]
+position = Vector2(1340, 1416)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth315" type="Sprite2D" parent="."]
+position = Vector2(1552, 952)
+texture = ExtResource("25")
+centered = false
+offset = Vector2(-32, -61)
+z_index = -2
+
+[node name="Undergrowth316" type="Sprite2D" parent="."]
+position = Vector2(1684, 808)
+texture = ExtResource("22")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth317" type="Sprite2D" parent="."]
+position = Vector2(152, 336)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth318" type="Sprite2D" parent="."]
+position = Vector2(2128, 1068)
+texture = ExtResource("23")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2
+
+[node name="Undergrowth319" type="Sprite2D" parent="."]
+position = Vector2(700, 1092)
+texture = ExtResource("26")
+centered = false
+offset = Vector2(-16, -29)
+z_index = -2

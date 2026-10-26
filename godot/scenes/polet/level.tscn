@@ -1,0 +1,152 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/polet/level.gd" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/camp.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/corridor.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/cabin_room.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/cabin_room_clean.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/dorm.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/glass_pavilion.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/player.tscn" id="8"]
+
+[node name="Polet" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1")
+
+[node name="World" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Camp" parent="World" instance=ExtResource("2")]
+metadata/location_id = "camp"
+metadata/display_name = "территория лагеря"
+metadata/connections = {"Cabin1": ["corridor_1", "Entrance"], "Cabin2": ["corridor_2", "Entrance"], "Cabin3": ["corridor_3", "Entrance"], "Cabin4": ["corridor_4", "Entrance"], "Dorm": ["dorm", "Entrance"], "Glass": ["glass", "Entrance"]}
+
+[node name="Corridor1" parent="World" instance=ExtResource("3")]
+position = Vector2(4096, 0)
+metadata/location_id = "corridor_1"
+metadata/display_name = "корпус 1 · коридор"
+metadata/connections = {"exit": ["camp", "Cabin1"], "room": ["room_1", "Entrance"]}
+
+[node name="Room1" parent="World" instance=ExtResource("4")]
+position = Vector2(4096, 1024)
+metadata/location_id = "room_1"
+metadata/display_name = "корпус 1 · комната"
+metadata/connections = {"exit": ["corridor_1", "RoomReturn"]}
+
+[node name="Corridor2" parent="World" instance=ExtResource("3")]
+position = Vector2(5120, 0)
+metadata/location_id = "corridor_2"
+metadata/display_name = "корпус 2 · коридор"
+metadata/connections = {"exit": ["camp", "Cabin2"], "room": ["room_2", "Entrance"]}
+
+[node name="Room2" parent="World" instance=ExtResource("5")]
+position = Vector2(5120, 1024)
+metadata/location_id = "room_2"
+metadata/display_name = "корпус 2 · комната"
+metadata/connections = {"exit": ["corridor_2", "RoomReturn"]}
+
+[node name="Corridor3" parent="World" instance=ExtResource("3")]
+position = Vector2(6144, 0)
+metadata/location_id = "corridor_3"
+metadata/display_name = "корпус 3 · коридор"
+metadata/connections = {"exit": ["camp", "Cabin3"], "room": ["room_3", "Entrance"]}
+
+[node name="Room3" parent="World" instance=ExtResource("5")]
+position = Vector2(6144, 1024)
+metadata/location_id = "room_3"
+metadata/display_name = "корпус 3 · комната"
+metadata/connections = {"exit": ["corridor_3", "RoomReturn"]}
+
+[node name="Corridor4" parent="World" instance=ExtResource("3")]
+position = Vector2(7168, 0)
+metadata/location_id = "corridor_4"
+metadata/display_name = "корпус 4 · коридор"
+metadata/connections = {"exit": ["camp", "Cabin4"], "room": ["room_4", "Entrance"]}
+
+[node name="Room4" parent="World" instance=ExtResource("5")]
+position = Vector2(7168, 1024)
+metadata/location_id = "room_4"
+metadata/display_name = "корпус 4 · комната"
+metadata/connections = {"exit": ["corridor_4", "RoomReturn"]}
+
+[node name="Dorm" parent="World" instance=ExtResource("6")]
+position = Vector2(4096, 2048)
+metadata/location_id = "dorm"
+metadata/display_name = "общага вожатых"
+metadata/connections = {"exit": ["camp", "Dorm"]}
+
+[node name="Glass" parent="World" instance=ExtResource("7")]
+position = Vector2(5120, 2048)
+metadata/location_id = "glass"
+metadata/display_name = "стекляшка"
+metadata/connections = {"exit": ["camp", "Glass"]}
+
+[node name="Player" parent="World" instance=ExtResource("8")]
+position = Vector2(896, 1576)
+
+[node name="OverviewCamera" type="Camera2D" parent="."]
+position = Vector2(1152, 896)
+zoom = Vector2(0.4, 0.4)
+enabled = true
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+
+[node name="HeaderBackground" type="ColorRect" parent="Interface"]
+offset_left = 16.0
+offset_top = 14.0
+offset_right = 540.0
+offset_bottom = 100.0
+color = Color(0.04, 0.07, 0.09, 0.85)
+mouse_filter = 2
+
+[node name="Location" type="Label" parent="Interface"]
+offset_left = 30.0
+offset_top = 22.0
+offset_right = 600.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 24
+text = "ПОЛЁТ · территория лагеря"
+
+[node name="Controls" type="Label" parent="Interface"]
+offset_left = 30.0
+offset_top = 59.0
+offset_right = 700.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 15
+text = "WASD / стрелки · Shift — бег · E — войти\nTab — обзор территории · R — к воротам"
+
+[node name="Prompt" type="Label" parent="Interface"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_shadow_color = Color(0,0,0,1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+
+[node name="OverviewLegend" type="Label" parent="Interface"]
+visible = false
+offset_left = 30.0
+offset_top = 14.0
+offset_right = 1240.0
+offset_bottom = 50.0
+horizontal_alignment = 1
+theme_override_colors/font_shadow_color = Color(0,0,0,1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 17
+text = "ПОЛЁТ · обзор территории     |     Tab / Esc — вернуться к персонажу"

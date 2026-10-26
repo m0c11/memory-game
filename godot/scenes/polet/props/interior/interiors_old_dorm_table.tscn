@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/old_dorm/table.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="Shape0"]
+size = Vector2(56, 23)
+
+[node name="table" type="StaticBody2D"]
+texture_filter = 1
+collision_layer = 1
+collision_mask = 0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(-32, -61)
+
+[node name="Footprint0" type="CollisionShape2D" parent="."]
+position = Vector2(0.0, -11.5)
+shape = SubResource("Shape0")

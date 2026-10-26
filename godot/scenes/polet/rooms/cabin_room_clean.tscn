@@ -1,0 +1,991 @@
+[gd_scene load_steps=23 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/tile_floor_tile.png" id="1"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/wall.png" id="2"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/buildings/modern_cabin/sage_wall_tile.png" id="3"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/window.png" id="4"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/radiator.png" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_bed_north_made.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_nightstand.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_bed_south_made.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_table_ew.tscn" id="9"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_chair_south.tscn" id="10"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_chair_north.tscn" id="11"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_wardrobe.tscn" id="12"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/ceiling_light.png" id="13"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/skirting.png" id="14"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/door_open.png" id="15"]
+
+[sub_resource type="RectangleShape2D" id="Shape0"]
+size = Vector2(400, 8)
+
+[sub_resource type="RectangleShape2D" id="Shape1"]
+size = Vector2(8, 256)
+
+[sub_resource type="RectangleShape2D" id="Shape2"]
+size = Vector2(8, 256)
+
+[sub_resource type="RectangleShape2D" id="Shape3"]
+size = Vector2(176, 8)
+
+[sub_resource type="RectangleShape2D" id="Shape4"]
+size = Vector2(176, 8)
+
+[sub_resource type="RectangleShape2D" id="Shape5"]
+size = Vector2(32, 8)
+
+[sub_resource type="RectangleShape2D" id="Shape6"]
+size = Vector2(48, 32)
+
+[node name="CleanCabinRoom" type="Node2D" groups=["polet_location"]]
+texture_filter = 1
+y_sort_enabled = true
+metadata/camera_bounds = Rect2(-64, 0, 640, 384)
+
+[node name="Markers" type="Node2D" parent="."]
+
+
+[node name="Backdrop" type="Polygon2D" parent="."]
+z_index = -20
+polygon = PackedVector2Array(-192, -128, 832, -128, 832, 512, -192, 512)
+color = Color(0.10, 0.13, 0.15, 1)
+
+[node name="Architecture" type="Node2D" parent="."]
+z_index = -3
+
+[node name="FloorDetails" type="Node2D" parent="."]
+z_index = -10
+
+[node name="Item000" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item001" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item002" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item003" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item004" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item005" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item006" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item007" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item008" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item009" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item010" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item011" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 96)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item012" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item013" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item014" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item015" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item016" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item017" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item018" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item019" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item020" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item021" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item022" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item023" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 128)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item024" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item025" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item026" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item027" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item028" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item029" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item030" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item031" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item032" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item033" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item034" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item035" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 160)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item036" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item037" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item038" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item039" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item040" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item041" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item042" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item043" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item044" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item045" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item046" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item047" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 192)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item048" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item049" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item050" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item051" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item052" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item053" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item054" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item055" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item056" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item057" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item058" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item059" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 224)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item060" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item061" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item062" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item063" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item064" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item065" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item066" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item067" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item068" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item069" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item070" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item071" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 256)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item072" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item073" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item074" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item075" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item076" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item077" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item078" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item079" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item080" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item081" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item082" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item083" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 288)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item084" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(64, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item085" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(96, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item086" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(128, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item087" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(160, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item088" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(192, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item089" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(224, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item090" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(256, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item091" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(288, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item092" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(320, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item093" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(352, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item094" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(384, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item095" type="Sprite2D" parent="FloorDetails"]
+position = Vector2(416, 320)
+texture = ExtResource("1")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item096" type="Sprite2D" parent="Architecture"]
+position = Vector2(64, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item097" type="Sprite2D" parent="Architecture"]
+position = Vector2(96, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item098" type="Sprite2D" parent="Architecture"]
+position = Vector2(128, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item099" type="Sprite2D" parent="Architecture"]
+position = Vector2(160, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item100" type="Sprite2D" parent="Architecture"]
+position = Vector2(192, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item101" type="Sprite2D" parent="Architecture"]
+position = Vector2(224, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item102" type="Sprite2D" parent="Architecture"]
+position = Vector2(256, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item103" type="Sprite2D" parent="Architecture"]
+position = Vector2(288, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item104" type="Sprite2D" parent="Architecture"]
+position = Vector2(320, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item105" type="Sprite2D" parent="Architecture"]
+position = Vector2(352, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item106" type="Sprite2D" parent="Architecture"]
+position = Vector2(384, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item107" type="Sprite2D" parent="Architecture"]
+position = Vector2(416, 96)
+texture = ExtResource("2")
+centered = false
+offset = Vector2(0, -64)
+
+[node name="Item108" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 96)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item109" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 128)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item110" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 160)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item111" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 192)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item112" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 224)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item113" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 256)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item114" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 288)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item115" type="Sprite2D" parent="Architecture"]
+position = Vector2(32, 320)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item116" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 96)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item117" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 128)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item118" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 160)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item119" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 192)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item120" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 224)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item121" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 256)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item122" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 288)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item123" type="Sprite2D" parent="Architecture"]
+position = Vector2(448, 320)
+texture = ExtResource("3")
+centered = false
+offset = Vector2(0, 0)
+
+[node name="Item124" type="Sprite2D" parent="Architecture"]
+position = Vector2(144, 93)
+texture = ExtResource("4")
+centered = false
+offset = Vector2(-32, -61)
+
+[node name="Item125" type="Sprite2D" parent="Architecture"]
+position = Vector2(368, 93)
+texture = ExtResource("4")
+centered = false
+offset = Vector2(-32, -61)
+
+[node name="Item126" type="Sprite2D" parent="Architecture"]
+position = Vector2(160, 109)
+texture = ExtResource("5")
+centered = false
+offset = Vector2(-32, -29)
+
+[node name="Item127" type="Sprite2D" parent="Architecture"]
+position = Vector2(384, 109)
+texture = ExtResource("5")
+centered = false
+offset = Vector2(-32, -29)
+
+[node name="Item128" parent="." instance=ExtResource("6")]
+position = Vector2(96, 174)
+
+[node name="Item129" parent="." instance=ExtResource("7")]
+position = Vector2(132, 159)
+
+[node name="Item130" parent="." instance=ExtResource("6")]
+position = Vector2(96, 286)
+
+[node name="Item131" parent="." instance=ExtResource("7")]
+position = Vector2(132, 271)
+
+[node name="Item132" parent="." instance=ExtResource("8")]
+position = Vector2(404, 174)
+
+[node name="Item133" parent="." instance=ExtResource("7")]
+position = Vector2(368, 159)
+
+[node name="Item134" parent="." instance=ExtResource("8")]
+position = Vector2(404, 286)
+
+[node name="Item135" parent="." instance=ExtResource("7")]
+position = Vector2(368, 271)
+
+[node name="Item136" parent="." instance=ExtResource("9")]
+position = Vector2(256, 205)
+
+[node name="Item137" parent="." instance=ExtResource("10")]
+position = Vector2(248, 175)
+
+[node name="Item138" parent="." instance=ExtResource("11")]
+position = Vector2(264, 233)
+
+[node name="Item139" parent="." instance=ExtResource("12")]
+position = Vector2(176, 341)
+
+[node name="Item140" type="Sprite2D" parent="Architecture"]
+position = Vector2(256, 73)
+texture = ExtResource("13")
+centered = false
+offset = Vector2(-16, -29)
+
+[node name="Item141" type="Sprite2D" parent="Architecture"]
+position = Vector2(64, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item142" type="Sprite2D" parent="Architecture"]
+position = Vector2(96, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item143" type="Sprite2D" parent="Architecture"]
+position = Vector2(128, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item144" type="Sprite2D" parent="Architecture"]
+position = Vector2(160, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item145" type="Sprite2D" parent="Architecture"]
+position = Vector2(192, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item146" type="Sprite2D" parent="Architecture"]
+position = Vector2(288, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item147" type="Sprite2D" parent="Architecture"]
+position = Vector2(320, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item148" type="Sprite2D" parent="Architecture"]
+position = Vector2(352, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item149" type="Sprite2D" parent="Architecture"]
+position = Vector2(384, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item150" type="Sprite2D" parent="Architecture"]
+position = Vector2(416, 352)
+texture = ExtResource("14")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="Item151" type="Sprite2D" parent="Architecture"]
+position = Vector2(256, 382)
+texture = ExtResource("15")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="RoomWalls" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+
+[node name="Shape0" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(256.0, 94.0)
+shape = SubResource("Shape0")
+
+[node name="Shape1" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(60.0, 224.0)
+shape = SubResource("Shape1")
+
+[node name="Shape2" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(452.0, 224.0)
+shape = SubResource("Shape2")
+
+[node name="Shape3" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(152.0, 348.0)
+shape = SubResource("Shape3")
+
+[node name="Shape4" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(360.0, 348.0)
+shape = SubResource("Shape4")
+
+[node name="Shape5" type="CollisionShape2D" parent="RoomWalls"]
+position = Vector2(256.0, 356.0)
+shape = SubResource("Shape5")
+
+[node name="Entrance" type="Marker2D" parent="Markers"]
+position = Vector2(256, 320)
+
+[node name="Exit" type="Area2D" parent="." groups=["polet_portal"]]
+position = Vector2(256, 340)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+metadata/prompt = "Выйти"
+metadata/link = "exit"
+metadata/blocked_message = "Закрыто"
+
+[node name="Trigger" type="CollisionShape2D" parent="Exit"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("Shape6")

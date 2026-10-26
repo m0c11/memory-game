@@ -2,10 +2,10 @@
 config_version=5
 
 [application]
-config/name="Воспоминания · Веневитино"
-run/main_scene="res://scenes/levels/venevitino.tscn"
+config/name="Воспоминания · Полёт"
+run/main_scene="res://scenes/levels/polet.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/description="Редактируемые уровни: актовый зал ВГУ и ночная база Веневитино."
+config/description="Редактируемые уровни: актовый зал ВГУ, пиксельный лагерь Полёт и ночная база Веневитино."
 
 [display]
 window/size/viewport_width=1280
