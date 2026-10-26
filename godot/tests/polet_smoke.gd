@@ -158,8 +158,8 @@ func run() -> void:
 	player.global_position = Vector2(896,1630)
 	await frames(22)
 	await interact()
-	check(level.current_location == level.locations.camp, "Gate does not start unfinished bicycle gameplay")
-	check(level.prompt_label.text.contains("велосипеде"), "Gate explains future bicycle trip")
+	check(level.current_location == level.locations.camp, "Gate cannot skip unfinished camp tasks")
+	check(level.prompt_label.text.contains("велосипеде"), "Gate points to bicycle")
 	check(not clear_at(Vector2(54,800)) and not clear_at(Vector2(2248,800)), "Both side boundaries are solid")
 
 	level.enter_location("camp", "Entrance")

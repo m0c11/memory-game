@@ -1,0 +1,1133 @@
+[gd_scene load_steps=48 format=3]
+
+[ext_resource type="Script" path="res://scripts/polet/story/bicycle.gd" id="R1"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/sky.png" id="R2"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/grass.png" id="R3"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/asphalt.png" id="R4"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/shoulder.png" id="R5"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R6"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R7"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R8"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R9"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R10"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R11"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R12"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R13"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R14"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R15"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R16"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R17"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R18"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R19"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R20"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R21"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R22"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R23"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R24"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R25"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R26"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R27"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R28"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R29"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_pine.png" id="R30"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/distant_tree.png" id="R31"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/pothole.png" id="R32"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/puddle.png" id="R33"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/stone.png" id="R34"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/pothole.png" id="R35"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/puddle.png" id="R36"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/stone.png" id="R37"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/pothole.png" id="R38"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/puddle.png" id="R39"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/stone.png" id="R40"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/pothole.png" id="R41"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/puddle.png" id="R42"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/stone.png" id="R43"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/pothole.png" id="R44"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/road_sideview/puddle.png" id="R45"]
+
+[ext_resource type="Texture2D" path="res://assets/polet/bicycle/sideview/bicycle_with_bag.png" id="R46"]
+
+[sub_resource type="AtlasTexture" id="AsphaltOnly"]
+atlas = ExtResource("R4")
+region = Rect2(4, 2, 120, 10)
+filter_clip = true
+
+[node name="Bicycle" type="Control"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture_filter = 1
+script = ExtResource("R1")
+
+[node name="Sky" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("R2")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="MeadowBase" type="ColorRect" parent="."]
+offset_top = 290.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.38,0.46,0.28,1)
+
+[node name="FarGrass" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = 290.0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("R3")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="RoadSurface" type="Node2D" parent="."]
+position = Vector2(0,375)
+
+[node name="Asphalt0_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_0" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,0)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_1" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,20)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_2" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,40)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_3" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,60)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_4" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,80)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_5" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,100)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_6" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,120)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_7" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,140)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_8" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,160)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_9" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,180)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_10" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,200)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_11" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,220)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt0_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(0,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt1_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(240,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt2_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(480,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt3_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(720,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt4_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(960,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Asphalt5_12" type="Sprite2D" parent="RoadSurface"]
+position = Vector2(1200,240)
+scale = Vector2(2,2)
+texture = SubResource("AsphaltOnly")
+centered = false
+
+[node name="Shoulder" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = 630.0
+offset_right = 1280.0
+offset_bottom = 694.0
+texture = ExtResource("R5")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Road" type="Node2D" parent="."]
+
+
+[node name="Tree0" type="Sprite2D" parent="Road"]
+position = Vector2(0,310)
+scale = Vector2(2,2)
+texture = ExtResource("R6")
+offset = Vector2(0,-40)
+
+[node name="Tree1" type="Sprite2D" parent="Road"]
+position = Vector2(250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R7")
+offset = Vector2(0,-40)
+
+[node name="Tree2" type="Sprite2D" parent="Road"]
+position = Vector2(500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R8")
+offset = Vector2(0,-40)
+
+[node name="Tree3" type="Sprite2D" parent="Road"]
+position = Vector2(750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R9")
+offset = Vector2(0,-40)
+
+[node name="Tree4" type="Sprite2D" parent="Road"]
+position = Vector2(1000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R10")
+offset = Vector2(0,-40)
+
+[node name="Tree5" type="Sprite2D" parent="Road"]
+position = Vector2(1250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R11")
+offset = Vector2(0,-40)
+
+[node name="Tree6" type="Sprite2D" parent="Road"]
+position = Vector2(1500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R12")
+offset = Vector2(0,-40)
+
+[node name="Tree7" type="Sprite2D" parent="Road"]
+position = Vector2(1750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R13")
+offset = Vector2(0,-40)
+
+[node name="Tree8" type="Sprite2D" parent="Road"]
+position = Vector2(2000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R14")
+offset = Vector2(0,-40)
+
+[node name="Tree9" type="Sprite2D" parent="Road"]
+position = Vector2(2250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R15")
+offset = Vector2(0,-40)
+
+[node name="Tree10" type="Sprite2D" parent="Road"]
+position = Vector2(2500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R16")
+offset = Vector2(0,-40)
+
+[node name="Tree11" type="Sprite2D" parent="Road"]
+position = Vector2(2750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R17")
+offset = Vector2(0,-40)
+
+[node name="Tree12" type="Sprite2D" parent="Road"]
+position = Vector2(3000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R18")
+offset = Vector2(0,-40)
+
+[node name="Tree13" type="Sprite2D" parent="Road"]
+position = Vector2(3250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R19")
+offset = Vector2(0,-40)
+
+[node name="Tree14" type="Sprite2D" parent="Road"]
+position = Vector2(3500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R20")
+offset = Vector2(0,-40)
+
+[node name="Tree15" type="Sprite2D" parent="Road"]
+position = Vector2(3750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R21")
+offset = Vector2(0,-40)
+
+[node name="Tree16" type="Sprite2D" parent="Road"]
+position = Vector2(4000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R22")
+offset = Vector2(0,-40)
+
+[node name="Tree17" type="Sprite2D" parent="Road"]
+position = Vector2(4250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R23")
+offset = Vector2(0,-40)
+
+[node name="Tree18" type="Sprite2D" parent="Road"]
+position = Vector2(4500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R24")
+offset = Vector2(0,-40)
+
+[node name="Tree19" type="Sprite2D" parent="Road"]
+position = Vector2(4750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R25")
+offset = Vector2(0,-40)
+
+[node name="Tree20" type="Sprite2D" parent="Road"]
+position = Vector2(5000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R26")
+offset = Vector2(0,-40)
+
+[node name="Tree21" type="Sprite2D" parent="Road"]
+position = Vector2(5250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R27")
+offset = Vector2(0,-40)
+
+[node name="Tree22" type="Sprite2D" parent="Road"]
+position = Vector2(5500,310)
+scale = Vector2(2,2)
+texture = ExtResource("R28")
+offset = Vector2(0,-40)
+
+[node name="Tree23" type="Sprite2D" parent="Road"]
+position = Vector2(5750,310)
+scale = Vector2(2,2)
+texture = ExtResource("R29")
+offset = Vector2(0,-40)
+
+[node name="Tree24" type="Sprite2D" parent="Road"]
+position = Vector2(6000,310)
+scale = Vector2(2,2)
+texture = ExtResource("R30")
+offset = Vector2(0,-40)
+
+[node name="Tree25" type="Sprite2D" parent="Road"]
+position = Vector2(6250,310)
+scale = Vector2(2,2)
+texture = ExtResource("R31")
+offset = Vector2(0,-40)
+
+[node name="Dash0" type="Polygon2D" parent="Road"]
+position = Vector2(0,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash1" type="Polygon2D" parent="Road"]
+position = Vector2(180,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash2" type="Polygon2D" parent="Road"]
+position = Vector2(360,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash3" type="Polygon2D" parent="Road"]
+position = Vector2(540,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash4" type="Polygon2D" parent="Road"]
+position = Vector2(720,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash5" type="Polygon2D" parent="Road"]
+position = Vector2(900,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash6" type="Polygon2D" parent="Road"]
+position = Vector2(1080,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash7" type="Polygon2D" parent="Road"]
+position = Vector2(1260,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash8" type="Polygon2D" parent="Road"]
+position = Vector2(1440,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash9" type="Polygon2D" parent="Road"]
+position = Vector2(1620,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash10" type="Polygon2D" parent="Road"]
+position = Vector2(1800,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash11" type="Polygon2D" parent="Road"]
+position = Vector2(1980,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash12" type="Polygon2D" parent="Road"]
+position = Vector2(2160,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash13" type="Polygon2D" parent="Road"]
+position = Vector2(2340,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash14" type="Polygon2D" parent="Road"]
+position = Vector2(2520,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash15" type="Polygon2D" parent="Road"]
+position = Vector2(2700,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash16" type="Polygon2D" parent="Road"]
+position = Vector2(2880,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash17" type="Polygon2D" parent="Road"]
+position = Vector2(3060,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash18" type="Polygon2D" parent="Road"]
+position = Vector2(3240,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash19" type="Polygon2D" parent="Road"]
+position = Vector2(3420,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash20" type="Polygon2D" parent="Road"]
+position = Vector2(3600,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash21" type="Polygon2D" parent="Road"]
+position = Vector2(3780,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash22" type="Polygon2D" parent="Road"]
+position = Vector2(3960,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash23" type="Polygon2D" parent="Road"]
+position = Vector2(4140,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash24" type="Polygon2D" parent="Road"]
+position = Vector2(4320,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash25" type="Polygon2D" parent="Road"]
+position = Vector2(4500,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash26" type="Polygon2D" parent="Road"]
+position = Vector2(4680,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash27" type="Polygon2D" parent="Road"]
+position = Vector2(4860,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash28" type="Polygon2D" parent="Road"]
+position = Vector2(5040,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash29" type="Polygon2D" parent="Road"]
+position = Vector2(5220,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash30" type="Polygon2D" parent="Road"]
+position = Vector2(5400,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash31" type="Polygon2D" parent="Road"]
+position = Vector2(5580,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash32" type="Polygon2D" parent="Road"]
+position = Vector2(5760,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash33" type="Polygon2D" parent="Road"]
+position = Vector2(5940,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash34" type="Polygon2D" parent="Road"]
+position = Vector2(6120,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash35" type="Polygon2D" parent="Road"]
+position = Vector2(6300,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash36" type="Polygon2D" parent="Road"]
+position = Vector2(6480,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Dash37" type="Polygon2D" parent="Road"]
+position = Vector2(6660,510)
+polygon = PackedVector2Array(0,0,65,0,65,4,0,4)
+color = Color(0.8,0.77,0.61,0.5)
+
+[node name="Obstacles" type="Node2D" parent="Road"]
+
+
+[node name="Obstacle0" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(680,470)
+texture = ExtResource("R32")
+scale = Vector2(2,2)
+
+[node name="Obstacle1" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(1020,420)
+texture = ExtResource("R33")
+scale = Vector2(2,2)
+
+[node name="Obstacle2" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(1310,560)
+texture = ExtResource("R34")
+scale = Vector2(2,2)
+
+[node name="Obstacle3" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(1580,485)
+texture = ExtResource("R35")
+scale = Vector2(2,2)
+
+[node name="Obstacle4" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(1900,430)
+texture = ExtResource("R36")
+scale = Vector2(2,2)
+
+[node name="Obstacle5" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(2270,570)
+texture = ExtResource("R37")
+scale = Vector2(2,2)
+
+[node name="Obstacle6" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(2540,480)
+texture = ExtResource("R38")
+scale = Vector2(2,2)
+
+[node name="Obstacle7" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(2860,410)
+texture = ExtResource("R39")
+scale = Vector2(2,2)
+
+[node name="Obstacle8" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(3200,545)
+texture = ExtResource("R40")
+scale = Vector2(2,2)
+
+[node name="Obstacle9" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(3570,470)
+texture = ExtResource("R41")
+scale = Vector2(2,2)
+
+[node name="Obstacle10" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(3890,570)
+texture = ExtResource("R42")
+scale = Vector2(2,2)
+
+[node name="Obstacle11" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(4280,420)
+texture = ExtResource("R43")
+scale = Vector2(2,2)
+
+[node name="Obstacle12" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(4620,500)
+texture = ExtResource("R44")
+scale = Vector2(2,2)
+
+[node name="Obstacle13" type="Sprite2D" parent="Road/Obstacles"]
+position = Vector2(5020,560)
+texture = ExtResource("R45")
+scale = Vector2(2,2)
+
+[node name="Shop" type="Polygon2D" parent="Road"]
+position = Vector2(5600,340)
+polygon = PackedVector2Array(-120,0,120,0,120,-170,-120,-170)
+color = Color(0.70,0.65,0.47,1)
+
+[node name="ShopSign" type="Label" parent="Road/Shop"]
+offset_left = -105.0
+offset_top = -155.0
+offset_right = 105.0
+offset_bottom = -115.0
+text = "МАГАЗИН"
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Rider" type="Node2D" parent="."]
+position = Vector2(240,470)
+
+[node name="Bike" type="Sprite2D" parent="Rider"]
+texture = ExtResource("R46")
+position = Vector2(0,-55)
+scale = Vector2(1.6,1.6)
+
+[node name="Jacket" type="Polygon2D" parent="Rider"]
+polygon = PackedVector2Array(-20,-78,-20,-112,-10,-121,3,-120,14,-110,14,-78,4,-69,-10,-69)
+color = Color(0.22,0.52,0.58,1)
+
+[node name="Head" type="Polygon2D" parent="Rider"]
+polygon = PackedVector2Array(-17,-119,-18,-139,-10,-147,4,-147,12,-139,12,-121,4,-115,-9,-115)
+color = Color(0.93,0.86,0.66,1)
+
+[node name="HUD" type="ColorRect" parent="."]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 142.0
+color = Color(0.04,0.08,0.11,0.93)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 1052.0
+offset_bottom = 62.0
+text = "ПОСЛЕДНИЙ РЕЙС · Велосипед ещё помнит молодость"
+theme_override_font_sizes/font_size = 27
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Distance" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 72.0
+offset_right = 762.0
+offset_bottom = 104.0
+text = ""
+theme_override_font_sizes/font_size = 21
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Progress" type="ProgressBar" parent="."]
+offset_left = 32.0
+offset_top = 113.0
+offset_right = 1248.0
+offset_bottom = 125.0
+show_percentage = false
+
+[node name="Bottom" type="ColorRect" parent="."]
+offset_left = 0.0
+offset_top = 665.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.04,0.08,0.11,0.93)
+
+[node name="Hint" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 676.0
+offset_right = 1232.0
+offset_bottom = 710.0
+text = ""
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 1000.0
+offset_top = 65.0
+offset_right = 1248.0
+offset_bottom = 105.0
+text = "В лагерь · Esc"
+theme_override_font_sizes/font_size = 20
+
+[node name="Result" type="Label" parent="."]
+offset_left = 450.0
+offset_top = 190.0
+offset_right = 850.0
+offset_bottom = 260.0
+text = "Приехали!"
+theme_override_font_sizes/font_size = 40
+autowrap_mode = 3
+mouse_filter = 2
+visible = false

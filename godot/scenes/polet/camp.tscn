@@ -525,7 +525,7 @@ collision_mask = 2
 monitorable = false
 metadata/prompt = "К воротам"
 metadata/link = ""
-metadata/blocked_message = "Поездка на велосипеде появится позже. Сейчас можно осмотреть лагерь."
+metadata/blocked_message = "Уехать можно на велосипеде справа от ворот, когда закончим дела в лагере."
 
 [node name="Trigger" type="CollisionShape2D" parent="GateNotice"]
 position = Vector2(0.0, 0.0)

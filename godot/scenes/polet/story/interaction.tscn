@@ -1,0 +1,20 @@
+[gd_scene load_steps=1 format=3]
+
+[node name="Interaction" type="Node2D" groups=["polet_action"]]
+metadata/action_id = ""
+metadata/title = ""
+
+[node name="Marker" type="Label" parent="."]
+offset_left = -7.0
+offset_top = -23.0
+offset_right = 11.0
+offset_bottom = -3.0
+text = "◆"
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 3
+mouse_filter = 2
+z_index = 15
+theme_override_colors/font_color = Color(1,0.82,0.40,1)
+theme_override_colors/font_shadow_color = Color(0.02,0.04,0.07,1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1

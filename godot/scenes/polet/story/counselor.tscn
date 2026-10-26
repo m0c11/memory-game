@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3]
+
+
+[sub_resource type="CircleShape2D" id="Feet"]
+radius = 8.0
+
+[node name="Player" type="StaticBody2D" groups=["polet_npc"]]
+collision_layer = 1
+collision_mask = 0
+texture_filter = 1
+
+[node name="Shadow" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(13.0, 0.0, 12.01, 1.53, 9.19, 2.83, 4.97, 3.7, 0.0, 4.0, -4.97, 3.7, -9.19, 2.83, -12.01, 1.53, -13.0, 0.0, -12.01, -1.53, -9.19, -2.83, -4.97, -3.7, -0.0, -4.0, 4.97, -3.7, 9.19, -2.83, 12.01, -1.53)
+color = Color(0.05, 0.07, 0.08, 0.25)
+
+[node name="Outline" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-11.0, -33.0, -10.16, -37.21, -7.78, -40.78, -4.21, -43.16, -0.0, -44.0, 4.21, -43.16, 7.78, -40.78, 10.16, -37.21, 11.0, -33.0, 11.0, -16.0, 10.16, -11.79, 7.78, -8.22, 4.21, -5.84, 0.0, -5.0, -4.21, -5.84, -7.78, -8.22, -10.16, -11.79, -11.0, -16.0)
+color = Color(0.10, 0.18, 0.23, 1)
+
+[node name="Capsule" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-8.8, -32.04, -8.13, -35.74, -6.22, -38.88, -3.37, -40.98, -0.0, -41.72, 3.37, -40.98, 6.22, -38.88, 8.13, -35.74, 8.8, -32.04, 8.8, -17.08, 8.13, -13.38, 6.22, -10.24, 3.37, -8.14, 0.0, -7.4, -3.37, -8.14, -6.22, -10.24, -8.13, -13.38, -8.8, -17.08)
+color = Color(0.90, 0.94, 0.83, 1)
+
+[node name="Jacket" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-8, -25, 8, -25, 8, -16, 5, -8, -5, -8, -8, -16)
+color = Color(0.71, 0.38, 0.29, 1)
+
+[node name="Face" type="Node2D" parent="."]
+position = Vector2(0, -29)
+
+[node name="LeftEye" type="Polygon2D" parent="Face"]
+polygon = PackedVector2Array(-5, -1, -3, -1, -3, 2, -5, 2)
+color = Color(0.1, 0.16, 0.18, 1)
+
+[node name="RightEye" type="Polygon2D" parent="Face"]
+polygon = PackedVector2Array(3, -1, 5, -1, 5, 2, 3, 2)
+color = Color(0.1, 0.16, 0.18, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("Feet")
+
+
+[node name="Name" type="Label" parent="."]
+offset_left = -55.0
+offset_top = -62.0
+offset_right = 55.0
+offset_bottom = -45.0
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_shadow_color = Color(0,0,0,1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "Вожатая"

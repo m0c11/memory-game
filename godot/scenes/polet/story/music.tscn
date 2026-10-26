@@ -1,0 +1,113 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/polet/story/music.gd" id="R1"]
+
+[sub_resource type="StyleBoxFlat" id="CardStyle"]
+bg_color = Color(0.055, 0.10, 0.13, 0.98)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.56, 0.67, 0.56, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_left = 14
+corner_radius_bottom_right = 14
+
+[node name="Music" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("R1")
+
+[node name="Shade" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.01,0.025,0.045,0.78)
+
+[node name="Card" type="Panel" parent="."]
+offset_left = 160.0
+offset_top = 130.0
+offset_right = 1120.0
+offset_bottom = 620.0
+theme_override_styles/panel = SubResource("CardStyle")
+
+[node name="Title" type="Label" parent="Card"]
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 928.0
+offset_bottom = 68.0
+text = "МУЗЫКА · Проверка звука"
+theme_override_font_sizes/font_size = 28
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Hint" type="Label" parent="Card"]
+offset_left = 32.0
+offset_top = 90.0
+offset_right = 928.0
+offset_bottom = 175.0
+text = ""
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Count" type="Label" parent="Card"]
+offset_left = 80.0
+offset_top = 180.0
+offset_right = 880.0
+offset_bottom = 220.0
+text = "Проверка звука · 0 / 3"
+theme_override_font_sizes/font_size = 24
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Track" type="ColorRect" parent="Card"]
+offset_left = 85.0
+offset_top = 240.0
+offset_right = 685.0
+offset_bottom = 270.0
+color = Color(0.15,0.22,0.26,1)
+
+[node name="Window" type="ColorRect" parent="Card"]
+offset_left = 297.4
+offset_top = 240.0
+offset_right = 462.6
+offset_bottom = 270.0
+color = Color(0.36,0.65,0.43,1)
+
+[node name="Cursor" type="ColorRect" parent="Card"]
+offset_left = 85.0
+offset_top = 232.0
+offset_right = 93.0
+offset_bottom = 278.0
+color = Color(1,0.84,0.46,1)
+
+[node name="Help" type="Label" parent="Card"]
+offset_left = 32.0
+offset_top = 303.0
+offset_right = 928.0
+offset_bottom = 363.0
+text = "Нажми в зелёной зоне: Space / Enter или кнопка ниже."
+theme_override_font_sizes/font_size = 21
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Hit" type="Button" parent="Card"]
+offset_left = 32.0
+offset_top = 412.0
+offset_right = 622.0
+offset_bottom = 466.0
+text = "Поймать такт · Space"
+theme_override_font_sizes/font_size = 20
+
+[node name="Close" type="Button" parent="Card"]
+offset_left = 640.0
+offset_top = 412.0
+offset_right = 928.0
+offset_bottom = 466.0
+text = "Отойти · Esc"
+theme_override_font_sizes/font_size = 20

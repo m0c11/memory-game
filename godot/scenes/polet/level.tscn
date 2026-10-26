@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=20 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/level.gd" id="1"]
 
@@ -15,6 +15,28 @@
 [ext_resource type="PackedScene" path="res://scenes/polet/rooms/glass_pavilion.tscn" id="7"]
 
 [ext_resource type="PackedScene" path="res://scenes/polet/player.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/story/story.tscn" id="story"]
+[ext_resource type="PackedScene" path="res://scenes/polet/story/interaction.tscn" id="action"]
+[ext_resource type="PackedScene" path="res://scenes/polet/story/child.tscn" id="child"]
+[ext_resource type="PackedScene" path="res://scenes/polet/story/director.tscn" id="director"]
+[ext_resource type="PackedScene" path="res://scenes/polet/story/counselor.tscn" id="counselor"]
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_bed_north_made.tscn" id="bed_n"]
+[ext_resource type="PackedScene" path="res://scenes/polet/props/interior/interiors_modern_cabin_bed_south_made.tscn" id="bed_s"]
+[ext_resource type="Texture2D" path="res://assets/polet/props/party/garland_straight_off.png" id="garland_off"]
+[ext_resource type="Texture2D" path="res://assets/polet/props/party/garland_straight_on.png" id="garland_on"]
+
+[sub_resource type="Gradient" id="WarmFalloff"]
+offsets = PackedFloat32Array(0, 0.35, 1)
+colors = PackedColorArray(1,1,1,1, 1,1,1,0.8, 1,1,1,0)
+
+[sub_resource type="GradientTexture2D" id="WarmLightTexture"]
+gradient = SubResource("WarmFalloff")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
 
 [node name="Polet" type="Node2D"]
 texture_filter = 1
@@ -121,7 +143,7 @@ offset_top = 59.0
 offset_right = 700.0
 offset_bottom = 90.0
 theme_override_font_sizes/font_size = 15
-text = "WASD / стрелки · Shift — бег · E — войти\nTab — обзор территории · R — к воротам"
+text = "WASD / стрелки · Shift — бег · E — действие\nTab — обзор территории · R — к воротам"
 
 [node name="Prompt" type="Label" parent="Interface"]
 anchors_preset = 12
@@ -150,3 +172,125 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 17
 text = "ПОЛЁТ · обзор территории     |     Tab / Esc — вернуться к персонажу"
+
+[node name="Story" parent="." instance=ExtResource("story")]
+
+[node name="Child" parent="World/Camp" instance=ExtResource("child")]
+position = Vector2(840,1155)
+
+
+[node name="TalkChild" parent="World/Camp" instance=ExtResource("action")]
+position = Vector2(840,1178)
+metadata/action_id = "child"
+metadata/title = "Поддержать ребёнка"
+
+[node name="Director" parent="World/Camp" instance=ExtResource("director")]
+position = Vector2(1945,1580)
+
+
+[node name="TalkDirector" parent="World/Camp" instance=ExtResource("action")]
+position = Vector2(1945,1604)
+metadata/action_id = "radio"
+metadata/title = "Поговорить с директрисой"
+
+[node name="Colleague" parent="World/Camp" instance=ExtResource("counselor")]
+position = Vector2(946,1400)
+
+
+[node name="TalkColleague" parent="World/Camp" instance=ExtResource("action")]
+position = Vector2(946,1424)
+metadata/action_id = "colleague"
+metadata/title = "Поговорить с вожатой"
+
+[node name="Ride" parent="World/Camp" instance=ExtResource("action")]
+position = Vector2(1016,1584)
+metadata/action_id = "bicycle"
+metadata/title = "Сесть на велосипед"
+
+[node name="Linen" parent="World/Room1" instance=ExtResource("action")]
+position = Vector2(150,202)
+metadata/action_id = "linen"
+metadata/title = "Собрать бельё и заправить кровати"
+
+[node name="Rubbish" parent="World/Room1" instance=ExtResource("action")]
+position = Vector2(312,258)
+metadata/action_id = "rubbish"
+metadata/title = "Собрать бумажки"
+
+[node name="Mop" parent="World/Room1" instance=ExtResource("action")]
+position = Vector2(268,302)
+metadata/action_id = "mop"
+metadata/title = "Вымыть пол"
+
+[node name="CleanBedNorth" parent="World/Room1" instance=ExtResource("bed_n")]
+position = Vector2(96,174)
+visible = false
+
+[node name="CleanBedSouth" parent="World/Room1" instance=ExtResource("bed_s")]
+position = Vector2(404,174)
+visible = false
+
+[node name="Garland" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(150,215)
+metadata/action_id = "garland"
+metadata/title = "Развесить гирлянду"
+
+[node name="Circuit" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(320,198)
+metadata/action_id = "circuit"
+metadata/title = "Настроить щиток"
+
+[node name="Music" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(215,184)
+metadata/action_id = "music"
+metadata/title = "Проверить звук"
+
+[node name="Outfit" parent="World/Dorm" instance=ExtResource("action")]
+position = Vector2(265,160)
+metadata/action_id = "outfit"
+metadata/title = "Выбрать наряд"
+
+[node name="GarlandOff" type="Sprite2D" parent="World/Glass"]
+visible = false
+position = Vector2(224,120)
+scale = Vector2(1.8,1.8)
+z_index = 7
+texture = ExtResource("garland_off")
+
+[node name="GarlandOn" type="Sprite2D" parent="World/Glass"]
+visible = false
+position = Vector2(224,120)
+scale = Vector2(1.8,1.8)
+z_index = 7
+texture = ExtResource("garland_on")
+
+[node name="EveningGuests" type="Node2D" parent="World/Glass"]
+visible = false
+y_sort_enabled = true
+
+[node name="Director" parent="World/Glass/EveningGuests" instance=ExtResource("director")]
+position = Vector2(290,180)
+
+
+[node name="Counselor1" parent="World/Glass/EveningGuests" instance=ExtResource("counselor")]
+position = Vector2(190,220)
+
+
+[node name="Counselor2" parent="World/Glass/EveningGuests" instance=ExtResource("counselor")]
+position = Vector2(310,240)
+
+
+[node name="Finale" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(280,210)
+metadata/action_id = "finale"
+metadata/title = "Начать последний огонёк"
+
+[node name="Daylight" type="CanvasModulate" parent="World"]
+
+[node name="EveningLight" type="PointLight2D" parent="World/Glass"]
+position = Vector2(224, 180)
+enabled = false
+color = Color(1, 0.82, 0.53, 1)
+energy = 0.8
+texture = SubResource("WarmLightTexture")
+texture_scale = 2.0

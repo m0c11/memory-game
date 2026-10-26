@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/polet/story/story.gd" id="R1"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/story/dialogue.tscn" id="R2"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/story/circuit.tscn" id="R3"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/story/music.tscn" id="R4"]
+
+[ext_resource type="PackedScene" path="res://scenes/polet/story/bicycle.tscn" id="R5"]
+
+[ext_resource type="AudioStream" path="res://assets/polet/audio/last_evening.wav" id="R6"]
+
+[node name="Story" type="Node"]
+script = ExtResource("R1")
+
+[node name="PartyMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("R6")
+volume_db = -18.0
+
+[node name="Interface" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="Quest" type="Panel" parent="Interface"]
+offset_left = 760.0
+offset_top = 18.0
+offset_right = 1260.0
+offset_bottom = 126.0
+mouse_filter = 2
+modulate = Color(0.95,1,0.91,1)
+
+[node name="Text" type="Label" parent="Interface/Quest"]
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 484.0
+offset_bottom = 110.0
+text = ""
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Hold" type="ProgressBar" parent="Interface"]
+offset_left = 470.0
+offset_top = 606.0
+offset_right = 810.0
+offset_bottom = 622.0
+visible = false
+show_percentage = false
+
+[node name="Dialogue" parent="Interface" instance=ExtResource("R2")]
+
+
+[node name="Circuit" parent="Interface" instance=ExtResource("R3")]
+
+
+[node name="Music" parent="Interface" instance=ExtResource("R4")]
+
+
+[node name="Bicycle" parent="Interface" instance=ExtResource("R5")]

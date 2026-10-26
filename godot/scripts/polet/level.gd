@@ -8,6 +8,7 @@ signal location_changed(location_id: String)
 @onready var location_label: Label = $Interface/Location
 @onready var prompt_label: Label = $Interface/Prompt
 @onready var overview_label: Label = $Interface/OverviewLegend
+@onready var story: Node = $Story
 var locations: Dictionary = {}
 var current_location: Node2D
 var overview: bool = false
@@ -24,10 +25,22 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	transition_cooldown = maxf(0.0, transition_cooldown - delta)
 	message_remaining = maxf(0.0, message_remaining - delta)
+	if story.busy:
+		prompt_label.text = ""
+		return
 	if message_remaining > 0.0:
 		return
 	var portal := nearest_portal()
+	if action_is_closer(portal):
+		prompt_label.text = story.current_prompt()
+		return
 	prompt_label.text = "E · " + str(portal.get_meta("prompt")) if portal != null and not overview else ""
+
+func action_is_closer(portal: Area2D) -> bool:
+	var target: Node2D = story.nearest_target()
+	if target == null:
+		return false
+	return portal == null or player.global_position.distance_squared_to(target.global_position) < player.global_position.distance_squared_to(portal.global_position)
 
 func nearest_portal() -> Area2D:
 	if not is_instance_valid(current_location):
@@ -45,9 +58,11 @@ func nearest_portal() -> Area2D:
 	return nearest
 
 func try_interact() -> void:
-	if overview or transition_cooldown > 0.0:
+	if overview or story.busy or transition_cooldown > 0.0:
 		return
 	var portal := nearest_portal()
+	if action_is_closer(portal) and story.try_interact():
+		return
 	if portal == null:
 		return
 	var link := str(portal.get_meta("link", ""))
@@ -92,6 +107,8 @@ func enter_location(location_id: String, marker_name: String) -> bool:
 	return true
 
 func set_overview(enabled: bool) -> void:
+	if story.busy:
+		return
 	overview = enabled and current_location == locations.get("camp")
 	player.movement_enabled = not overview
 	player.velocity = Vector2.ZERO
@@ -106,6 +123,8 @@ func set_overview(enabled: bool) -> void:
 		player_camera.force_update_scroll()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if story.busy:
+		return
 	if event is InputEventKey and event.echo:
 		return
 	if event.is_action_pressed("interact"):
