@@ -1,0 +1,9932 @@
+{
+  "name": "Polet_Camp_Last_Day",
+  "version": "1.0",
+  "format": "PNG RGBA",
+  "tile_size": [
+    32,
+    32
+  ],
+  "reference_character_height_px": 48,
+  "lighting": "neutral daylight; small self-shading from upper left; building shadows separate",
+  "coordinate_system": "pixel coordinates from image top-left; x right, y down",
+  "anchor_usage": "Sprite2D.centered=false; offset=-Vector2(anchor_px); place node at desired ground contact",
+  "collisions": "rectangles [x,y,width,height] in image coordinates; subtract anchor for node-local rectangles; drafts for base footprints only",
+  "palette": "shared 128-entry base palette plus restrained material ramps, UI accents and facade variations; stepped alpha for glass, shadow and glow",
+  "terrain_neighbor_bits": {
+    "N": 1,
+    "E": 2,
+    "S": 4,
+    "W": 8,
+    "NE": 16,
+    "SE": 32,
+    "SW": 64,
+    "NW": 128
+  },
+  "groups": [
+    {
+      "id": "oak",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/oak_trunk.png",
+        "vegetation/oak_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "birch",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/birch_trunk.png",
+        "vegetation/birch_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "maple",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/maple_trunk.png",
+        "vegetation/maple_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "linden",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/linden_trunk.png",
+        "vegetation/linden_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "pine_tall",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/pine_tall_trunk.png",
+        "vegetation/pine_tall_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "pine_broad",
+      "kind": "layered_tree",
+      "files": [
+        "vegetation/pine_broad_trunk.png",
+        "vegetation/pine_broad_canopy.png"
+      ],
+      "anchor_px": [
+        64,
+        148
+      ]
+    },
+    {
+      "id": "bed_north",
+      "kind": "states",
+      "files": [
+        "interiors/modern_cabin/bed_north_made.png",
+        "interiors/modern_cabin/bed_north_unmade.png"
+      ]
+    },
+    {
+      "id": "bed_south",
+      "kind": "states",
+      "files": [
+        "interiors/modern_cabin/bed_south_made.png",
+        "interiors/modern_cabin/bed_south_unmade.png"
+      ]
+    },
+    {
+      "id": "bed_west",
+      "kind": "states",
+      "files": [
+        "interiors/modern_cabin/bed_west_made.png",
+        "interiors/modern_cabin/bed_west_unmade.png"
+      ]
+    },
+    {
+      "id": "bed_east",
+      "kind": "states",
+      "files": [
+        "interiors/modern_cabin/bed_east_made.png",
+        "interiors/modern_cabin/bed_east_unmade.png"
+      ]
+    },
+    {
+      "id": "old_wardrobe",
+      "kind": "states",
+      "files": [
+        "interiors/old_dorm/wardrobe_closed.png",
+        "interiors/old_dorm/wardrobe_open.png"
+      ]
+    },
+    {
+      "id": "vehicle_gate",
+      "kind": "states",
+      "files": [
+        "camp_props/vehicle_gate_closed.png",
+        "camp_props/vehicle_gate_open.png"
+      ]
+    },
+    {
+      "id": "wicket",
+      "kind": "states",
+      "files": [
+        "camp_props/wicket_closed.png",
+        "camp_props/wicket_open.png"
+      ]
+    },
+    {
+      "id": "modern_cabin_door",
+      "kind": "states",
+      "files": [
+        "buildings/modern_cabin/door_closed.png",
+        "buildings/modern_cabin/door_open.png"
+      ]
+    },
+    {
+      "id": "modern_cabin",
+      "kind": "layered_building",
+      "files": [
+        "buildings/modern_cabin/assembled_walls.png",
+        "buildings/modern_cabin/assembled_roof.png",
+        "buildings/modern_cabin/assembled_shadow.png",
+        "buildings/modern_cabin/assembled_floor.png",
+        "buildings/modern_cabin/assembled_door_closed.png",
+        "buildings/modern_cabin/assembled_door_open.png",
+        "buildings/modern_cabin/assembled_steps.png"
+      ]
+    },
+    {
+      "id": "old_dorm_door",
+      "kind": "states",
+      "files": [
+        "buildings/old_dorm/door_closed.png",
+        "buildings/old_dorm/door_open.png"
+      ]
+    },
+    {
+      "id": "old_dorm",
+      "kind": "layered_building",
+      "files": [
+        "buildings/old_dorm/assembled_walls.png",
+        "buildings/old_dorm/assembled_roof.png",
+        "buildings/old_dorm/assembled_shadow.png",
+        "buildings/old_dorm/assembled_floor.png",
+        "buildings/old_dorm/assembled_door_closed.png",
+        "buildings/old_dorm/assembled_door_open.png",
+        "buildings/old_dorm/assembled_steps.png"
+      ]
+    },
+    {
+      "id": "glass_pavilion_door",
+      "kind": "states",
+      "files": [
+        "buildings/glass_pavilion/door_closed.png",
+        "buildings/glass_pavilion/door_open.png"
+      ]
+    },
+    {
+      "id": "glass_pavilion",
+      "kind": "layered_building",
+      "files": [
+        "buildings/glass_pavilion/assembled_walls.png",
+        "buildings/glass_pavilion/assembled_roof.png",
+        "buildings/glass_pavilion/assembled_shadow.png",
+        "buildings/glass_pavilion/assembled_floor.png",
+        "buildings/glass_pavilion/assembled_door_closed.png",
+        "buildings/glass_pavilion/assembled_door_open.png",
+        "buildings/glass_pavilion/assembled_steps.png"
+      ]
+    },
+    {
+      "id": "administration_door",
+      "kind": "states",
+      "files": [
+        "buildings/administration/door_closed.png"
+      ]
+    },
+    {
+      "id": "administration",
+      "kind": "layered_building",
+      "files": [
+        "buildings/administration/assembled_walls.png",
+        "buildings/administration/assembled_roof.png",
+        "buildings/administration/assembled_shadow.png",
+        "buildings/administration/assembled_door_closed.png",
+        "buildings/administration/assembled_steps.png"
+      ]
+    },
+    {
+      "id": "wall_panel",
+      "kind": "states",
+      "files": [
+        "puzzles/electrical_panel/wall_closed.png",
+        "puzzles/electrical_panel/wall_open.png"
+      ]
+    },
+    {
+      "id": "garland_straight",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_straight_off.png",
+        "props/party/garland_straight_on.png",
+        "props/party/garland_straight_glow.png"
+      ]
+    },
+    {
+      "id": "garland_sagging",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_sagging_off.png",
+        "props/party/garland_sagging_on.png",
+        "props/party/garland_sagging_glow.png"
+      ]
+    },
+    {
+      "id": "garland_corner",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_corner_off.png",
+        "props/party/garland_corner_on.png",
+        "props/party/garland_corner_glow.png"
+      ]
+    },
+    {
+      "id": "garland_bulb",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_bulb_off.png",
+        "props/party/garland_bulb_on.png",
+        "props/party/garland_bulb_glow.png"
+      ]
+    },
+    {
+      "id": "garland_bulb_small",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_bulb_small_off.png",
+        "props/party/garland_bulb_small_on.png",
+        "props/party/garland_bulb_small_glow.png"
+      ]
+    },
+    {
+      "id": "garland_bulb_large",
+      "kind": "states_and_glow",
+      "files": [
+        "props/party/garland_bulb_large_off.png",
+        "props/party/garland_bulb_large_on.png",
+        "props/party/garland_bulb_large_glow.png"
+      ]
+    },
+    {
+      "id": "bicycle",
+      "kind": "layered_bicycle",
+      "files": [
+        "bicycle/sideview/rear_wheel.png",
+        "bicycle/sideview/front_wheel.png",
+        "bicycle/sideview/frame.png",
+        "bicycle/sideview/rack_bag.png"
+      ],
+      "axles_px": {
+        "rear": [
+          30,
+          68
+        ],
+        "front": [
+          100,
+          68
+        ]
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "terrain/grass_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/grass_tufts_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/grass_dry_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/grass_clumps_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/trampled_soil_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/dirt_path_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/concrete_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "interiors/glass_pavilion/laminate_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "interiors/modern_cabin/cream_wall_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "buildings/modern_cabin/metal_roof_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "interiors/old_dorm/old_wood_wall_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "buildings/modern_cabin/concrete_wall_tile.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "repeat_axes": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "file": "terrain/base_tileset.png",
+      "size": [
+        256,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "tiles": [
+        {
+          "index": 0,
+          "name": "grass"
+        },
+        {
+          "index": 1,
+          "name": "grass_tufts"
+        },
+        {
+          "index": 2,
+          "name": "grass_dry"
+        },
+        {
+          "index": 3,
+          "name": "grass_clumps"
+        },
+        {
+          "index": 4,
+          "name": "trampled_soil"
+        },
+        {
+          "index": 5,
+          "name": "dirt_path"
+        },
+        {
+          "index": 6,
+          "name": "concrete"
+        },
+        {
+          "index": 7,
+          "name": "bare_earth"
+        }
+      ]
+    },
+    {
+      "file": "terrain/dirt_47_tileset.png",
+      "size": [
+        256,
+        192
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "tiles": [
+        {
+          "index": 0,
+          "atlas_coords": [
+            0,
+            0
+          ],
+          "neighbor_mask": 0
+        },
+        {
+          "index": 1,
+          "atlas_coords": [
+            1,
+            0
+          ],
+          "neighbor_mask": 1
+        },
+        {
+          "index": 2,
+          "atlas_coords": [
+            2,
+            0
+          ],
+          "neighbor_mask": 2
+        },
+        {
+          "index": 3,
+          "atlas_coords": [
+            3,
+            0
+          ],
+          "neighbor_mask": 3
+        },
+        {
+          "index": 4,
+          "atlas_coords": [
+            4,
+            0
+          ],
+          "neighbor_mask": 4
+        },
+        {
+          "index": 5,
+          "atlas_coords": [
+            5,
+            0
+          ],
+          "neighbor_mask": 5
+        },
+        {
+          "index": 6,
+          "atlas_coords": [
+            6,
+            0
+          ],
+          "neighbor_mask": 6
+        },
+        {
+          "index": 7,
+          "atlas_coords": [
+            7,
+            0
+          ],
+          "neighbor_mask": 7
+        },
+        {
+          "index": 8,
+          "atlas_coords": [
+            0,
+            1
+          ],
+          "neighbor_mask": 8
+        },
+        {
+          "index": 9,
+          "atlas_coords": [
+            1,
+            1
+          ],
+          "neighbor_mask": 9
+        },
+        {
+          "index": 10,
+          "atlas_coords": [
+            2,
+            1
+          ],
+          "neighbor_mask": 10
+        },
+        {
+          "index": 11,
+          "atlas_coords": [
+            3,
+            1
+          ],
+          "neighbor_mask": 11
+        },
+        {
+          "index": 12,
+          "atlas_coords": [
+            4,
+            1
+          ],
+          "neighbor_mask": 12
+        },
+        {
+          "index": 13,
+          "atlas_coords": [
+            5,
+            1
+          ],
+          "neighbor_mask": 13
+        },
+        {
+          "index": 14,
+          "atlas_coords": [
+            6,
+            1
+          ],
+          "neighbor_mask": 14
+        },
+        {
+          "index": 15,
+          "atlas_coords": [
+            7,
+            1
+          ],
+          "neighbor_mask": 15
+        },
+        {
+          "index": 16,
+          "atlas_coords": [
+            0,
+            2
+          ],
+          "neighbor_mask": 19
+        },
+        {
+          "index": 17,
+          "atlas_coords": [
+            1,
+            2
+          ],
+          "neighbor_mask": 23
+        },
+        {
+          "index": 18,
+          "atlas_coords": [
+            2,
+            2
+          ],
+          "neighbor_mask": 27
+        },
+        {
+          "index": 19,
+          "atlas_coords": [
+            3,
+            2
+          ],
+          "neighbor_mask": 31
+        },
+        {
+          "index": 20,
+          "atlas_coords": [
+            4,
+            2
+          ],
+          "neighbor_mask": 38
+        },
+        {
+          "index": 21,
+          "atlas_coords": [
+            5,
+            2
+          ],
+          "neighbor_mask": 39
+        },
+        {
+          "index": 22,
+          "atlas_coords": [
+            6,
+            2
+          ],
+          "neighbor_mask": 46
+        },
+        {
+          "index": 23,
+          "atlas_coords": [
+            7,
+            2
+          ],
+          "neighbor_mask": 47
+        },
+        {
+          "index": 24,
+          "atlas_coords": [
+            0,
+            3
+          ],
+          "neighbor_mask": 55
+        },
+        {
+          "index": 25,
+          "atlas_coords": [
+            1,
+            3
+          ],
+          "neighbor_mask": 63
+        },
+        {
+          "index": 26,
+          "atlas_coords": [
+            2,
+            3
+          ],
+          "neighbor_mask": 76
+        },
+        {
+          "index": 27,
+          "atlas_coords": [
+            3,
+            3
+          ],
+          "neighbor_mask": 77
+        },
+        {
+          "index": 28,
+          "atlas_coords": [
+            4,
+            3
+          ],
+          "neighbor_mask": 78
+        },
+        {
+          "index": 29,
+          "atlas_coords": [
+            5,
+            3
+          ],
+          "neighbor_mask": 79
+        },
+        {
+          "index": 30,
+          "atlas_coords": [
+            6,
+            3
+          ],
+          "neighbor_mask": 95
+        },
+        {
+          "index": 31,
+          "atlas_coords": [
+            7,
+            3
+          ],
+          "neighbor_mask": 110
+        },
+        {
+          "index": 32,
+          "atlas_coords": [
+            0,
+            4
+          ],
+          "neighbor_mask": 111
+        },
+        {
+          "index": 33,
+          "atlas_coords": [
+            1,
+            4
+          ],
+          "neighbor_mask": 127
+        },
+        {
+          "index": 34,
+          "atlas_coords": [
+            2,
+            4
+          ],
+          "neighbor_mask": 137
+        },
+        {
+          "index": 35,
+          "atlas_coords": [
+            3,
+            4
+          ],
+          "neighbor_mask": 139
+        },
+        {
+          "index": 36,
+          "atlas_coords": [
+            4,
+            4
+          ],
+          "neighbor_mask": 141
+        },
+        {
+          "index": 37,
+          "atlas_coords": [
+            5,
+            4
+          ],
+          "neighbor_mask": 143
+        },
+        {
+          "index": 38,
+          "atlas_coords": [
+            6,
+            4
+          ],
+          "neighbor_mask": 155
+        },
+        {
+          "index": 39,
+          "atlas_coords": [
+            7,
+            4
+          ],
+          "neighbor_mask": 159
+        },
+        {
+          "index": 40,
+          "atlas_coords": [
+            0,
+            5
+          ],
+          "neighbor_mask": 175
+        },
+        {
+          "index": 41,
+          "atlas_coords": [
+            1,
+            5
+          ],
+          "neighbor_mask": 191
+        },
+        {
+          "index": 42,
+          "atlas_coords": [
+            2,
+            5
+          ],
+          "neighbor_mask": 205
+        },
+        {
+          "index": 43,
+          "atlas_coords": [
+            3,
+            5
+          ],
+          "neighbor_mask": 207
+        },
+        {
+          "index": 44,
+          "atlas_coords": [
+            4,
+            5
+          ],
+          "neighbor_mask": 223
+        },
+        {
+          "index": 45,
+          "atlas_coords": [
+            5,
+            5
+          ],
+          "neighbor_mask": 239
+        },
+        {
+          "index": 46,
+          "atlas_coords": [
+            6,
+            5
+          ],
+          "neighbor_mask": 255
+        }
+      ],
+      "background_tile_index": 47
+    },
+    {
+      "file": "terrain/dirt_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_isolated.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_north_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_south_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_west_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_east_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_outer_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_outer_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_outer_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_outer_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_inner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_inner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_inner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/dirt_inner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_47_tileset.png",
+      "size": [
+        256,
+        192
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "tiles": [
+        {
+          "index": 0,
+          "atlas_coords": [
+            0,
+            0
+          ],
+          "neighbor_mask": 0
+        },
+        {
+          "index": 1,
+          "atlas_coords": [
+            1,
+            0
+          ],
+          "neighbor_mask": 1
+        },
+        {
+          "index": 2,
+          "atlas_coords": [
+            2,
+            0
+          ],
+          "neighbor_mask": 2
+        },
+        {
+          "index": 3,
+          "atlas_coords": [
+            3,
+            0
+          ],
+          "neighbor_mask": 3
+        },
+        {
+          "index": 4,
+          "atlas_coords": [
+            4,
+            0
+          ],
+          "neighbor_mask": 4
+        },
+        {
+          "index": 5,
+          "atlas_coords": [
+            5,
+            0
+          ],
+          "neighbor_mask": 5
+        },
+        {
+          "index": 6,
+          "atlas_coords": [
+            6,
+            0
+          ],
+          "neighbor_mask": 6
+        },
+        {
+          "index": 7,
+          "atlas_coords": [
+            7,
+            0
+          ],
+          "neighbor_mask": 7
+        },
+        {
+          "index": 8,
+          "atlas_coords": [
+            0,
+            1
+          ],
+          "neighbor_mask": 8
+        },
+        {
+          "index": 9,
+          "atlas_coords": [
+            1,
+            1
+          ],
+          "neighbor_mask": 9
+        },
+        {
+          "index": 10,
+          "atlas_coords": [
+            2,
+            1
+          ],
+          "neighbor_mask": 10
+        },
+        {
+          "index": 11,
+          "atlas_coords": [
+            3,
+            1
+          ],
+          "neighbor_mask": 11
+        },
+        {
+          "index": 12,
+          "atlas_coords": [
+            4,
+            1
+          ],
+          "neighbor_mask": 12
+        },
+        {
+          "index": 13,
+          "atlas_coords": [
+            5,
+            1
+          ],
+          "neighbor_mask": 13
+        },
+        {
+          "index": 14,
+          "atlas_coords": [
+            6,
+            1
+          ],
+          "neighbor_mask": 14
+        },
+        {
+          "index": 15,
+          "atlas_coords": [
+            7,
+            1
+          ],
+          "neighbor_mask": 15
+        },
+        {
+          "index": 16,
+          "atlas_coords": [
+            0,
+            2
+          ],
+          "neighbor_mask": 19
+        },
+        {
+          "index": 17,
+          "atlas_coords": [
+            1,
+            2
+          ],
+          "neighbor_mask": 23
+        },
+        {
+          "index": 18,
+          "atlas_coords": [
+            2,
+            2
+          ],
+          "neighbor_mask": 27
+        },
+        {
+          "index": 19,
+          "atlas_coords": [
+            3,
+            2
+          ],
+          "neighbor_mask": 31
+        },
+        {
+          "index": 20,
+          "atlas_coords": [
+            4,
+            2
+          ],
+          "neighbor_mask": 38
+        },
+        {
+          "index": 21,
+          "atlas_coords": [
+            5,
+            2
+          ],
+          "neighbor_mask": 39
+        },
+        {
+          "index": 22,
+          "atlas_coords": [
+            6,
+            2
+          ],
+          "neighbor_mask": 46
+        },
+        {
+          "index": 23,
+          "atlas_coords": [
+            7,
+            2
+          ],
+          "neighbor_mask": 47
+        },
+        {
+          "index": 24,
+          "atlas_coords": [
+            0,
+            3
+          ],
+          "neighbor_mask": 55
+        },
+        {
+          "index": 25,
+          "atlas_coords": [
+            1,
+            3
+          ],
+          "neighbor_mask": 63
+        },
+        {
+          "index": 26,
+          "atlas_coords": [
+            2,
+            3
+          ],
+          "neighbor_mask": 76
+        },
+        {
+          "index": 27,
+          "atlas_coords": [
+            3,
+            3
+          ],
+          "neighbor_mask": 77
+        },
+        {
+          "index": 28,
+          "atlas_coords": [
+            4,
+            3
+          ],
+          "neighbor_mask": 78
+        },
+        {
+          "index": 29,
+          "atlas_coords": [
+            5,
+            3
+          ],
+          "neighbor_mask": 79
+        },
+        {
+          "index": 30,
+          "atlas_coords": [
+            6,
+            3
+          ],
+          "neighbor_mask": 95
+        },
+        {
+          "index": 31,
+          "atlas_coords": [
+            7,
+            3
+          ],
+          "neighbor_mask": 110
+        },
+        {
+          "index": 32,
+          "atlas_coords": [
+            0,
+            4
+          ],
+          "neighbor_mask": 111
+        },
+        {
+          "index": 33,
+          "atlas_coords": [
+            1,
+            4
+          ],
+          "neighbor_mask": 127
+        },
+        {
+          "index": 34,
+          "atlas_coords": [
+            2,
+            4
+          ],
+          "neighbor_mask": 137
+        },
+        {
+          "index": 35,
+          "atlas_coords": [
+            3,
+            4
+          ],
+          "neighbor_mask": 139
+        },
+        {
+          "index": 36,
+          "atlas_coords": [
+            4,
+            4
+          ],
+          "neighbor_mask": 141
+        },
+        {
+          "index": 37,
+          "atlas_coords": [
+            5,
+            4
+          ],
+          "neighbor_mask": 143
+        },
+        {
+          "index": 38,
+          "atlas_coords": [
+            6,
+            4
+          ],
+          "neighbor_mask": 155
+        },
+        {
+          "index": 39,
+          "atlas_coords": [
+            7,
+            4
+          ],
+          "neighbor_mask": 159
+        },
+        {
+          "index": 40,
+          "atlas_coords": [
+            0,
+            5
+          ],
+          "neighbor_mask": 175
+        },
+        {
+          "index": 41,
+          "atlas_coords": [
+            1,
+            5
+          ],
+          "neighbor_mask": 191
+        },
+        {
+          "index": 42,
+          "atlas_coords": [
+            2,
+            5
+          ],
+          "neighbor_mask": 205
+        },
+        {
+          "index": 43,
+          "atlas_coords": [
+            3,
+            5
+          ],
+          "neighbor_mask": 207
+        },
+        {
+          "index": 44,
+          "atlas_coords": [
+            4,
+            5
+          ],
+          "neighbor_mask": 223
+        },
+        {
+          "index": 45,
+          "atlas_coords": [
+            5,
+            5
+          ],
+          "neighbor_mask": 239
+        },
+        {
+          "index": 46,
+          "atlas_coords": [
+            6,
+            5
+          ],
+          "neighbor_mask": 255
+        }
+      ],
+      "background_tile_index": 47
+    },
+    {
+      "file": "terrain/concrete_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_isolated.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_north_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_south_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_west_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_east_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_outer_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_outer_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_outer_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_outer_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_inner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_inner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_inner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/concrete_inner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_47_tileset.png",
+      "size": [
+        256,
+        192
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "tiles": [
+        {
+          "index": 0,
+          "atlas_coords": [
+            0,
+            0
+          ],
+          "neighbor_mask": 0
+        },
+        {
+          "index": 1,
+          "atlas_coords": [
+            1,
+            0
+          ],
+          "neighbor_mask": 1
+        },
+        {
+          "index": 2,
+          "atlas_coords": [
+            2,
+            0
+          ],
+          "neighbor_mask": 2
+        },
+        {
+          "index": 3,
+          "atlas_coords": [
+            3,
+            0
+          ],
+          "neighbor_mask": 3
+        },
+        {
+          "index": 4,
+          "atlas_coords": [
+            4,
+            0
+          ],
+          "neighbor_mask": 4
+        },
+        {
+          "index": 5,
+          "atlas_coords": [
+            5,
+            0
+          ],
+          "neighbor_mask": 5
+        },
+        {
+          "index": 6,
+          "atlas_coords": [
+            6,
+            0
+          ],
+          "neighbor_mask": 6
+        },
+        {
+          "index": 7,
+          "atlas_coords": [
+            7,
+            0
+          ],
+          "neighbor_mask": 7
+        },
+        {
+          "index": 8,
+          "atlas_coords": [
+            0,
+            1
+          ],
+          "neighbor_mask": 8
+        },
+        {
+          "index": 9,
+          "atlas_coords": [
+            1,
+            1
+          ],
+          "neighbor_mask": 9
+        },
+        {
+          "index": 10,
+          "atlas_coords": [
+            2,
+            1
+          ],
+          "neighbor_mask": 10
+        },
+        {
+          "index": 11,
+          "atlas_coords": [
+            3,
+            1
+          ],
+          "neighbor_mask": 11
+        },
+        {
+          "index": 12,
+          "atlas_coords": [
+            4,
+            1
+          ],
+          "neighbor_mask": 12
+        },
+        {
+          "index": 13,
+          "atlas_coords": [
+            5,
+            1
+          ],
+          "neighbor_mask": 13
+        },
+        {
+          "index": 14,
+          "atlas_coords": [
+            6,
+            1
+          ],
+          "neighbor_mask": 14
+        },
+        {
+          "index": 15,
+          "atlas_coords": [
+            7,
+            1
+          ],
+          "neighbor_mask": 15
+        },
+        {
+          "index": 16,
+          "atlas_coords": [
+            0,
+            2
+          ],
+          "neighbor_mask": 19
+        },
+        {
+          "index": 17,
+          "atlas_coords": [
+            1,
+            2
+          ],
+          "neighbor_mask": 23
+        },
+        {
+          "index": 18,
+          "atlas_coords": [
+            2,
+            2
+          ],
+          "neighbor_mask": 27
+        },
+        {
+          "index": 19,
+          "atlas_coords": [
+            3,
+            2
+          ],
+          "neighbor_mask": 31
+        },
+        {
+          "index": 20,
+          "atlas_coords": [
+            4,
+            2
+          ],
+          "neighbor_mask": 38
+        },
+        {
+          "index": 21,
+          "atlas_coords": [
+            5,
+            2
+          ],
+          "neighbor_mask": 39
+        },
+        {
+          "index": 22,
+          "atlas_coords": [
+            6,
+            2
+          ],
+          "neighbor_mask": 46
+        },
+        {
+          "index": 23,
+          "atlas_coords": [
+            7,
+            2
+          ],
+          "neighbor_mask": 47
+        },
+        {
+          "index": 24,
+          "atlas_coords": [
+            0,
+            3
+          ],
+          "neighbor_mask": 55
+        },
+        {
+          "index": 25,
+          "atlas_coords": [
+            1,
+            3
+          ],
+          "neighbor_mask": 63
+        },
+        {
+          "index": 26,
+          "atlas_coords": [
+            2,
+            3
+          ],
+          "neighbor_mask": 76
+        },
+        {
+          "index": 27,
+          "atlas_coords": [
+            3,
+            3
+          ],
+          "neighbor_mask": 77
+        },
+        {
+          "index": 28,
+          "atlas_coords": [
+            4,
+            3
+          ],
+          "neighbor_mask": 78
+        },
+        {
+          "index": 29,
+          "atlas_coords": [
+            5,
+            3
+          ],
+          "neighbor_mask": 79
+        },
+        {
+          "index": 30,
+          "atlas_coords": [
+            6,
+            3
+          ],
+          "neighbor_mask": 95
+        },
+        {
+          "index": 31,
+          "atlas_coords": [
+            7,
+            3
+          ],
+          "neighbor_mask": 110
+        },
+        {
+          "index": 32,
+          "atlas_coords": [
+            0,
+            4
+          ],
+          "neighbor_mask": 111
+        },
+        {
+          "index": 33,
+          "atlas_coords": [
+            1,
+            4
+          ],
+          "neighbor_mask": 127
+        },
+        {
+          "index": 34,
+          "atlas_coords": [
+            2,
+            4
+          ],
+          "neighbor_mask": 137
+        },
+        {
+          "index": 35,
+          "atlas_coords": [
+            3,
+            4
+          ],
+          "neighbor_mask": 139
+        },
+        {
+          "index": 36,
+          "atlas_coords": [
+            4,
+            4
+          ],
+          "neighbor_mask": 141
+        },
+        {
+          "index": 37,
+          "atlas_coords": [
+            5,
+            4
+          ],
+          "neighbor_mask": 143
+        },
+        {
+          "index": 38,
+          "atlas_coords": [
+            6,
+            4
+          ],
+          "neighbor_mask": 155
+        },
+        {
+          "index": 39,
+          "atlas_coords": [
+            7,
+            4
+          ],
+          "neighbor_mask": 159
+        },
+        {
+          "index": 40,
+          "atlas_coords": [
+            0,
+            5
+          ],
+          "neighbor_mask": 175
+        },
+        {
+          "index": 41,
+          "atlas_coords": [
+            1,
+            5
+          ],
+          "neighbor_mask": 191
+        },
+        {
+          "index": 42,
+          "atlas_coords": [
+            2,
+            5
+          ],
+          "neighbor_mask": 205
+        },
+        {
+          "index": 43,
+          "atlas_coords": [
+            3,
+            5
+          ],
+          "neighbor_mask": 207
+        },
+        {
+          "index": 44,
+          "atlas_coords": [
+            4,
+            5
+          ],
+          "neighbor_mask": 223
+        },
+        {
+          "index": 45,
+          "atlas_coords": [
+            5,
+            5
+          ],
+          "neighbor_mask": 239
+        },
+        {
+          "index": 46,
+          "atlas_coords": [
+            6,
+            5
+          ],
+          "neighbor_mask": 255
+        }
+      ],
+      "background_tile_index": 47
+    },
+    {
+      "file": "terrain/soil_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_isolated.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_north_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_south_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_west_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_east_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_outer_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_outer_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_outer_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_outer_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_inner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_inner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_inner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/soil_inner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_47_tileset.png",
+      "size": [
+        256,
+        192
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "tiles": [
+        {
+          "index": 0,
+          "atlas_coords": [
+            0,
+            0
+          ],
+          "neighbor_mask": 0
+        },
+        {
+          "index": 1,
+          "atlas_coords": [
+            1,
+            0
+          ],
+          "neighbor_mask": 1
+        },
+        {
+          "index": 2,
+          "atlas_coords": [
+            2,
+            0
+          ],
+          "neighbor_mask": 2
+        },
+        {
+          "index": 3,
+          "atlas_coords": [
+            3,
+            0
+          ],
+          "neighbor_mask": 3
+        },
+        {
+          "index": 4,
+          "atlas_coords": [
+            4,
+            0
+          ],
+          "neighbor_mask": 4
+        },
+        {
+          "index": 5,
+          "atlas_coords": [
+            5,
+            0
+          ],
+          "neighbor_mask": 5
+        },
+        {
+          "index": 6,
+          "atlas_coords": [
+            6,
+            0
+          ],
+          "neighbor_mask": 6
+        },
+        {
+          "index": 7,
+          "atlas_coords": [
+            7,
+            0
+          ],
+          "neighbor_mask": 7
+        },
+        {
+          "index": 8,
+          "atlas_coords": [
+            0,
+            1
+          ],
+          "neighbor_mask": 8
+        },
+        {
+          "index": 9,
+          "atlas_coords": [
+            1,
+            1
+          ],
+          "neighbor_mask": 9
+        },
+        {
+          "index": 10,
+          "atlas_coords": [
+            2,
+            1
+          ],
+          "neighbor_mask": 10
+        },
+        {
+          "index": 11,
+          "atlas_coords": [
+            3,
+            1
+          ],
+          "neighbor_mask": 11
+        },
+        {
+          "index": 12,
+          "atlas_coords": [
+            4,
+            1
+          ],
+          "neighbor_mask": 12
+        },
+        {
+          "index": 13,
+          "atlas_coords": [
+            5,
+            1
+          ],
+          "neighbor_mask": 13
+        },
+        {
+          "index": 14,
+          "atlas_coords": [
+            6,
+            1
+          ],
+          "neighbor_mask": 14
+        },
+        {
+          "index": 15,
+          "atlas_coords": [
+            7,
+            1
+          ],
+          "neighbor_mask": 15
+        },
+        {
+          "index": 16,
+          "atlas_coords": [
+            0,
+            2
+          ],
+          "neighbor_mask": 19
+        },
+        {
+          "index": 17,
+          "atlas_coords": [
+            1,
+            2
+          ],
+          "neighbor_mask": 23
+        },
+        {
+          "index": 18,
+          "atlas_coords": [
+            2,
+            2
+          ],
+          "neighbor_mask": 27
+        },
+        {
+          "index": 19,
+          "atlas_coords": [
+            3,
+            2
+          ],
+          "neighbor_mask": 31
+        },
+        {
+          "index": 20,
+          "atlas_coords": [
+            4,
+            2
+          ],
+          "neighbor_mask": 38
+        },
+        {
+          "index": 21,
+          "atlas_coords": [
+            5,
+            2
+          ],
+          "neighbor_mask": 39
+        },
+        {
+          "index": 22,
+          "atlas_coords": [
+            6,
+            2
+          ],
+          "neighbor_mask": 46
+        },
+        {
+          "index": 23,
+          "atlas_coords": [
+            7,
+            2
+          ],
+          "neighbor_mask": 47
+        },
+        {
+          "index": 24,
+          "atlas_coords": [
+            0,
+            3
+          ],
+          "neighbor_mask": 55
+        },
+        {
+          "index": 25,
+          "atlas_coords": [
+            1,
+            3
+          ],
+          "neighbor_mask": 63
+        },
+        {
+          "index": 26,
+          "atlas_coords": [
+            2,
+            3
+          ],
+          "neighbor_mask": 76
+        },
+        {
+          "index": 27,
+          "atlas_coords": [
+            3,
+            3
+          ],
+          "neighbor_mask": 77
+        },
+        {
+          "index": 28,
+          "atlas_coords": [
+            4,
+            3
+          ],
+          "neighbor_mask": 78
+        },
+        {
+          "index": 29,
+          "atlas_coords": [
+            5,
+            3
+          ],
+          "neighbor_mask": 79
+        },
+        {
+          "index": 30,
+          "atlas_coords": [
+            6,
+            3
+          ],
+          "neighbor_mask": 95
+        },
+        {
+          "index": 31,
+          "atlas_coords": [
+            7,
+            3
+          ],
+          "neighbor_mask": 110
+        },
+        {
+          "index": 32,
+          "atlas_coords": [
+            0,
+            4
+          ],
+          "neighbor_mask": 111
+        },
+        {
+          "index": 33,
+          "atlas_coords": [
+            1,
+            4
+          ],
+          "neighbor_mask": 127
+        },
+        {
+          "index": 34,
+          "atlas_coords": [
+            2,
+            4
+          ],
+          "neighbor_mask": 137
+        },
+        {
+          "index": 35,
+          "atlas_coords": [
+            3,
+            4
+          ],
+          "neighbor_mask": 139
+        },
+        {
+          "index": 36,
+          "atlas_coords": [
+            4,
+            4
+          ],
+          "neighbor_mask": 141
+        },
+        {
+          "index": 37,
+          "atlas_coords": [
+            5,
+            4
+          ],
+          "neighbor_mask": 143
+        },
+        {
+          "index": 38,
+          "atlas_coords": [
+            6,
+            4
+          ],
+          "neighbor_mask": 155
+        },
+        {
+          "index": 39,
+          "atlas_coords": [
+            7,
+            4
+          ],
+          "neighbor_mask": 159
+        },
+        {
+          "index": 40,
+          "atlas_coords": [
+            0,
+            5
+          ],
+          "neighbor_mask": 175
+        },
+        {
+          "index": 41,
+          "atlas_coords": [
+            1,
+            5
+          ],
+          "neighbor_mask": 191
+        },
+        {
+          "index": 42,
+          "atlas_coords": [
+            2,
+            5
+          ],
+          "neighbor_mask": 205
+        },
+        {
+          "index": 43,
+          "atlas_coords": [
+            3,
+            5
+          ],
+          "neighbor_mask": 207
+        },
+        {
+          "index": 44,
+          "atlas_coords": [
+            4,
+            5
+          ],
+          "neighbor_mask": 223
+        },
+        {
+          "index": 45,
+          "atlas_coords": [
+            5,
+            5
+          ],
+          "neighbor_mask": 239
+        },
+        {
+          "index": 46,
+          "atlas_coords": [
+            6,
+            5
+          ],
+          "neighbor_mask": 255
+        }
+      ],
+      "background_tile_index": 47
+    },
+    {
+      "file": "terrain/bare_earth_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_isolated.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_north_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_south_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_west_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_east_edge.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_outer_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_outer_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_outer_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_outer_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_inner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_inner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_inner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/bare_earth_inner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "terrain/gate_waiting_pad.png",
+      "size": [
+        160,
+        96
+      ],
+      "anchor_px": [
+        80,
+        96
+      ],
+      "category": "terrain",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "vegetation/oak_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/oak_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/birch_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/birch_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/maple_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/maple_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/linden_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/linden_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/pine_tall_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/pine_tall_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/pine_broad_trunk.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "trunk",
+      "collision_rects_px": [
+        [
+          55,
+          137,
+          18,
+          11
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "base"
+    },
+    {
+      "file": "vegetation/pine_broad_canopy.png",
+      "size": [
+        128,
+        160
+      ],
+      "anchor_px": [
+        64,
+        148
+      ],
+      "category": "vegetation",
+      "state": "canopy",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "overhead",
+      "z_index": 10
+    },
+    {
+      "file": "vegetation/bush_round.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/bush_long.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/bush_irregular.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/shrub_sparse.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/grass_tuft.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/flowers_white.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/flowers_yellow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "vegetation/flowerbed.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "vegetation",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/mop.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/bucket.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/broom.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/dustpan.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/rag.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/trash_bag_small.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/trash_bag_tied.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/papers_group.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/wrapper.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/dirt_footprints.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/linen_folded.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/linen_unfolded.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/forgotten_tshirt.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/towel.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/luggage/suitcase.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "props/luggage",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/luggage/duffel.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/luggage",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/luggage/child_backpack.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "props/luggage",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/luggage/plush_rabbit.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/luggage",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/pillow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/blanket_folded.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/hooks.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/radiator.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/ceiling_light.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/mirror.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/radios/handheld_radio.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/radios",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/radios/charging_base.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/radios",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/radios/equipment_box.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/radios",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/radios/folder.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/radios",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/radios/keys.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/radios",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/mug.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/tshirt_folded.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/shirt_folded.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/cardigan.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/trousers.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/shoes.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/small_bag.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/paper_01.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        24
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/paper_02.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        24
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/cleaning/paper_03.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        24
+      ],
+      "category": "props/cleaning",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_north_made.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        62
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "made",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          26,
+          51
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "north",
+      "headboard": "north"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_north_unmade.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        62
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "unmade",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          26,
+          51
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "north",
+      "headboard": "north"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_south_made.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        62
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "made",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          26,
+          51
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "south",
+      "headboard": "south"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_south_unmade.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        62
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "unmade",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          26,
+          51
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "south",
+      "headboard": "south"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_west_made.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "made",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          58,
+          19
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "west",
+      "headboard": "west"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_west_unmade.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "unmade",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          58,
+          19
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "west",
+      "headboard": "west"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_east_made.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "made",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          58,
+          19
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "east",
+      "headboard": "east"
+    },
+    {
+      "file": "interiors/modern_cabin/bed_east_unmade.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "unmade",
+      "collision_rects_px": [
+        [
+          3,
+          10,
+          58,
+          19
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "east",
+      "headboard": "east"
+    },
+    {
+      "file": "interiors/modern_cabin/nightstand.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          3,
+          17,
+          26,
+          12
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/table_ns.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          1,
+          25,
+          30,
+          36
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/table_ew.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          2,
+          12,
+          60,
+          17
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/wardrobe.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          13,
+          43,
+          38,
+          18
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/chair_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "south"
+    },
+    {
+      "file": "interiors/modern_cabin/chair_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "north"
+    },
+    {
+      "file": "interiors/modern_cabin/chair_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "west"
+    },
+    {
+      "file": "interiors/modern_cabin/chair_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "orientation": "east"
+    },
+    {
+      "file": "interiors/modern_cabin/hooks.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/window.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/bed_north.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          2,
+          12,
+          28,
+          49
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/wardrobe_closed.png",
+      "size": [
+        96,
+        64
+      ],
+      "anchor_px": [
+        48,
+        61
+      ],
+      "category": "interiors/old_dorm",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          27,
+          43,
+          42,
+          18
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/wardrobe_open.png",
+      "size": [
+        96,
+        64
+      ],
+      "anchor_px": [
+        48,
+        61
+      ],
+      "category": "interiors/old_dorm",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          27,
+          43,
+          42,
+          18
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/table.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          4,
+          38,
+          56,
+          23
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/chair_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          20,
+          18,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/chair_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          20,
+          18,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/chair_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          20,
+          18,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/chair_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          20,
+          18,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/speaker_small.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/speaker_tall.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/laptop.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/extension_strip.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/cable_coiled.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/cable_laid.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/decoration_box.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/clothes/hanging_clothes.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/clothes",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/table_ew.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          2,
+          12,
+          60,
+          17
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/table_ns.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          1,
+          25,
+          30,
+          36
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/chair_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/chair_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/chair_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/chair_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          7,
+          19,
+          18,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/socket.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/wall_switch.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/cup.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/bottle.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "props/party/shopping_bags.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "props/party",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/bench_south.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          3,
+          45,
+          58,
+          15
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/bench_north.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          3,
+          45,
+          58,
+          15
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/bin.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        29
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          6,
+          20,
+          20,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/street_lamp.png",
+      "size": [
+        32,
+        128
+      ],
+      "anchor_px": [
+        16,
+        125
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          13,
+          119,
+          6,
+          6
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/fence_section.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          25,
+          64,
+          5
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/fence_post.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        61
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          12,
+          55,
+          8,
+          6
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/vehicle_gate_closed.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        61
+      ],
+      "category": "camp_props",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          4,
+          53,
+          120,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/vehicle_gate_open.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        61
+      ],
+      "category": "camp_props",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          4,
+          40,
+          30,
+          21
+        ],
+        [
+          94,
+          40,
+          30,
+          21
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/wicket_closed.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "camp_props",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          16,
+          53,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/wicket_open.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "camp_props",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          16,
+          52,
+          7,
+          9
+        ],
+        [
+          43,
+          52,
+          5,
+          9
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/noticeboard.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        61
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          8,
+          53,
+          48,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/concrete_steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/wood_steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "camp_props/porch.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        29
+      ],
+      "category": "camp_props",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/wall_plain.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "wall"
+    },
+    {
+      "file": "buildings/modern_cabin/wall_window.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/door_closed.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          17,
+          88,
+          30,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/modern_cabin/door_open.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          16,
+          88,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/modern_cabin/entry_frame.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          16,
+          8
+        ],
+        [
+          48,
+          88,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/wall_return.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          16,
+          8,
+          80
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/corner_nw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/corner_ne.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/corner_sw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/corner_se.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/plinth.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          24,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_edge_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_edge_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_edge_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_edge_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_corner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_corner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_corner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/roof_corner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "ground"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_walls.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "walls",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          384,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          152
+        ],
+        [
+          408,
+          96,
+          8,
+          152
+        ],
+        [
+          32,
+          264,
+          208,
+          8
+        ],
+        [
+          272,
+          264,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "walls"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_roof.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "roof",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_shadow.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "shadow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "shadow"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_floor.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "floor",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "floor"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_door_closed.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "door_closed",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_closed"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_door_open.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "door_open",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_open"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_steps.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "steps",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "steps"
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_walls_variant_01.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          384,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          152
+        ],
+        [
+          408,
+          96,
+          8,
+          152
+        ],
+        [
+          32,
+          264,
+          208,
+          8
+        ],
+        [
+          272,
+          264,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "variant": 1
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_walls_variant_02.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          384,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          152
+        ],
+        [
+          408,
+          96,
+          8,
+          152
+        ],
+        [
+          32,
+          264,
+          208,
+          8
+        ],
+        [
+          272,
+          264,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "variant": 2
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_walls_variant_03.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          384,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          152
+        ],
+        [
+          408,
+          96,
+          8,
+          152
+        ],
+        [
+          32,
+          264,
+          208,
+          8
+        ],
+        [
+          272,
+          264,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "variant": 3
+    },
+    {
+      "file": "buildings/modern_cabin/assembled_walls_variant_04.png",
+      "size": [
+        448,
+        288
+      ],
+      "anchor_px": [
+        224,
+        272
+      ],
+      "category": "buildings/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          384,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          152
+        ],
+        [
+          408,
+          96,
+          8,
+          152
+        ],
+        [
+          32,
+          264,
+          208,
+          8
+        ],
+        [
+          272,
+          264,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "variant": 4
+    },
+    {
+      "file": "buildings/old_dorm/wall_plain.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "wall"
+    },
+    {
+      "file": "buildings/old_dorm/wall_window.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/door_closed.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          17,
+          88,
+          30,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/old_dorm/door_open.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          16,
+          88,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/old_dorm/entry_frame.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          16,
+          8
+        ],
+        [
+          48,
+          88,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/wall_return.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          16,
+          8,
+          80
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/corner_nw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/corner_ne.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/corner_sw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/corner_se.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/plinth.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          24,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/old_dorm/roof_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_edge_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_edge_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_edge_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_edge_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_corner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_corner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_corner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/roof_corner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "ground"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_walls.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "walls",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          320,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          120
+        ],
+        [
+          344,
+          96,
+          8,
+          120
+        ],
+        [
+          32,
+          232,
+          144,
+          8
+        ],
+        [
+          208,
+          232,
+          144,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "walls"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_roof.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "roof",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_shadow.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "shadow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "shadow"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_floor.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "floor",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "floor"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_door_closed.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "door_closed",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_closed"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_door_open.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "door_open",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_open"
+    },
+    {
+      "file": "buildings/old_dorm/assembled_steps.png",
+      "size": [
+        384,
+        256
+      ],
+      "anchor_px": [
+        192,
+        240
+      ],
+      "category": "buildings/old_dorm",
+      "state": "steps",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "steps"
+    },
+    {
+      "file": "buildings/glass_pavilion/wall_plain.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "wall"
+    },
+    {
+      "file": "buildings/glass_pavilion/wall_window.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/door_closed.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          17,
+          88,
+          30,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/glass_pavilion/door_open.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          16,
+          88,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/glass_pavilion/entry_frame.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          16,
+          8
+        ],
+        [
+          48,
+          88,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/wall_return.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          16,
+          8,
+          80
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/corner_nw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/corner_ne.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/corner_sw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/corner_se.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/plinth.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          24,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_edge_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_edge_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_edge_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_edge_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_corner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_corner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_corner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/roof_corner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "ground"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_walls.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "walls",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          256,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          120
+        ],
+        [
+          280,
+          96,
+          8,
+          120
+        ],
+        [
+          32,
+          232,
+          144,
+          8
+        ],
+        [
+          208,
+          232,
+          80,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "walls"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_roof.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "roof",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_shadow.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "shadow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "shadow"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_floor.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "floor",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "floor"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_door_closed.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "door_closed",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_closed"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_door_open.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "door_open",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_open"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_steps.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "steps",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "steps"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_front_glass.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "front_glass"
+    },
+    {
+      "file": "buildings/glass_pavilion/assembled_back_walls.png",
+      "size": [
+        320,
+        256
+      ],
+      "anchor_px": [
+        160,
+        240
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "back_walls"
+    },
+    {
+      "file": "buildings/glass_pavilion/glass_panel_front.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "front_glass"
+    },
+    {
+      "file": "buildings/glass_pavilion/glass_panel_back.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "back_walls"
+    },
+    {
+      "file": "buildings/glass_pavilion/steel_post.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        16,
+        96
+      ],
+      "category": "buildings/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          12,
+          88,
+          8,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/wall_plain.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "wall"
+    },
+    {
+      "file": "buildings/administration/wall_window.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/door_closed.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          17,
+          88,
+          30,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "hinge_px": [
+        16,
+        96
+      ]
+    },
+    {
+      "file": "buildings/administration/entry_frame.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          16,
+          8
+        ],
+        [
+          48,
+          88,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/wall_return.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          16,
+          8,
+          80
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/corner_nw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/corner_ne.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/corner_sw.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/corner_se.png",
+      "size": [
+        32,
+        96
+      ],
+      "anchor_px": [
+        0,
+        96
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          88,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/plinth.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          24,
+          64,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "buildings/administration/roof_center.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_edge_north.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_edge_south.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_edge_west.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_edge_east.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_corner_nw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_corner_ne.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_corner_sw.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/roof_corner_se.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ],
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/steps.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "category": "buildings/administration",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "ground"
+    },
+    {
+      "file": "buildings/administration/assembled_walls.png",
+      "size": [
+        256,
+        224
+      ],
+      "anchor_px": [
+        128,
+        208
+      ],
+      "category": "buildings/administration",
+      "state": "walls",
+      "collision_rects_px": [
+        [
+          32,
+          88,
+          192,
+          8
+        ],
+        [
+          32,
+          96,
+          8,
+          88
+        ],
+        [
+          216,
+          96,
+          8,
+          88
+        ],
+        [
+          32,
+          200,
+          80,
+          8
+        ],
+        [
+          144,
+          200,
+          80,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "layer_role": "walls"
+    },
+    {
+      "file": "buildings/administration/assembled_roof.png",
+      "size": [
+        256,
+        224
+      ],
+      "anchor_px": [
+        128,
+        208
+      ],
+      "category": "buildings/administration",
+      "state": "roof",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "roof"
+    },
+    {
+      "file": "buildings/administration/assembled_shadow.png",
+      "size": [
+        256,
+        224
+      ],
+      "anchor_px": [
+        128,
+        208
+      ],
+      "category": "buildings/administration",
+      "state": "shadow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "shadow"
+    },
+    {
+      "file": "buildings/administration/assembled_door_closed.png",
+      "size": [
+        256,
+        224
+      ],
+      "anchor_px": [
+        128,
+        208
+      ],
+      "category": "buildings/administration",
+      "state": "door_closed",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "door_closed"
+    },
+    {
+      "file": "buildings/administration/assembled_steps.png",
+      "size": [
+        256,
+        224
+      ],
+      "anchor_px": [
+        128,
+        208
+      ],
+      "category": "buildings/administration",
+      "state": "steps",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "steps"
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/corner_nw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/corner_ne.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/corner_sw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/corner_se.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/door_open.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/door_closed.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/modern_cabin/doorway.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        64
+      ],
+      "category": "interiors/modern_cabin",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          16,
+          8
+        ],
+        [
+          48,
+          56,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "interiors/old_dorm/skirting.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/corner_nw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/corner_ne.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/corner_sw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/corner_se.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/door_open.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/door_closed.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/old_dorm/doorway.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        64
+      ],
+      "category": "interiors/old_dorm",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          16,
+          8
+        ],
+        [
+          48,
+          56,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/wall.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic",
+      "tile_cell_size": [
+        32,
+        32
+      ]
+    },
+    {
+      "file": "interiors/glass_pavilion/skirting.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/corner_nw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/corner_ne.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/corner_sw.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/corner_se.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        0,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/door_open.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "open",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          7,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/door_closed.png",
+      "size": [
+        32,
+        64
+      ],
+      "anchor_px": [
+        16,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "closed",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          32,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "interiors/glass_pavilion/doorway.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        64
+      ],
+      "category": "interiors/glass_pavilion",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          0,
+          56,
+          16,
+          8
+        ],
+        [
+          48,
+          56,
+          16,
+          8
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "puzzles/electrical_panel/wall_closed.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        38,
+        58
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "closed",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "puzzles/electrical_panel/wall_open.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        38,
+        58
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "open",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_housing.png",
+      "size": [
+        320,
+        240
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "open",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "layer_role": "background"
+    },
+    {
+      "file": "puzzles/electrical_panel/switch_off.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/switch_on.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_off.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_green.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "green",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_amber.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "amber",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/icon_garland.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/icon_light.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/icon_music.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/contact_input.png",
+      "size": [
+        16,
+        16
+      ],
+      "anchor_px": [
+        8,
+        8
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/contact_output.png",
+      "size": [
+        16,
+        16
+      ],
+      "anchor_px": [
+        8,
+        8
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/contact_junction.png",
+      "size": [
+        16,
+        16
+      ],
+      "anchor_px": [
+        8,
+        8
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/empty_slot.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        16
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui"
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_amber_straight.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          31,
+          16
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_amber_elbow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_blue_straight.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          31,
+          16
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_blue_elbow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_red_straight.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          31,
+          16
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_red_elbow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_green_straight.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          31,
+          16
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/wire_green_elbow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "connection_ports_px": [
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          31
+        ]
+      ]
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_1_slots.png",
+      "size": [
+        320,
+        240
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "layer_role": "sockets"
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_2_slots.png",
+      "size": [
+        320,
+        240
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "layer_role": "sockets"
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_3_slots.png",
+      "size": [
+        320,
+        240
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "puzzles/electrical_panel",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "ui",
+      "layer_role": "sockets"
+    },
+    {
+      "file": "props/party/garland_straight_off.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_straight_on.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_straight_glow.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "props/party/garland_sagging_off.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_sagging_on.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_sagging_glow.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "props/party/garland_corner_off.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_corner_on.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_corner_glow.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "props/party/garland_bulb_off.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_on.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_glow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "props/party/garland_bulb_small_off.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_small_on.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_small_glow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "props/party/garland_bulb_large_off.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "off",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_large_on.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "on",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "prop"
+    },
+    {
+      "file": "props/party/garland_bulb_large_glow.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        8
+      ],
+      "category": "props/party",
+      "state": "glow",
+      "collision_rects_px": [],
+      "projection": "topdown_orthographic",
+      "layer_role": "glow"
+    },
+    {
+      "file": "bicycle/topdown/parked.png",
+      "size": [
+        96,
+        64
+      ],
+      "anchor_px": [
+        48,
+        61
+      ],
+      "category": "bicycle/topdown",
+      "state": "default",
+      "collision_rects_px": [
+        [
+          9,
+          50,
+          78,
+          10
+        ]
+      ],
+      "projection": "topdown_orthographic"
+    },
+    {
+      "file": "bicycle/sideview/rear_wheel.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "axle_px": [
+        30,
+        68
+      ],
+      "layer_role": "wheel"
+    },
+    {
+      "file": "bicycle/sideview/front_wheel.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "axle_px": [
+        100,
+        68
+      ],
+      "layer_role": "wheel"
+    },
+    {
+      "file": "bicycle/sideview/frame.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "axles_px": {
+        "rear": [
+          30,
+          68
+        ],
+        "front": [
+          100,
+          68
+        ]
+      }
+    },
+    {
+      "file": "bicycle/sideview/rack_bag.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "bicycle/sideview/bicycle.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "empty",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "bicycle/sideview/bicycle_with_bag.png",
+      "size": [
+        128,
+        96
+      ],
+      "anchor_px": [
+        64,
+        92
+      ],
+      "category": "bicycle/sideview",
+      "state": "with_bag",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "size": [
+        128,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "repeat_axes": [
+        "x"
+      ]
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "size": [
+        128,
+        32
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "repeat_axes": [
+        "x"
+      ]
+    },
+    {
+      "file": "road_sideview/pothole.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        30
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/puddle.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/stone.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        30
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/grass.png",
+      "size": [
+        32,
+        32
+      ],
+      "anchor_px": [
+        16,
+        30
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/bush.png",
+      "size": [
+        64,
+        64
+      ],
+      "anchor_px": [
+        32,
+        62
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/hedge.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        62
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/distant_tree.png",
+      "size": [
+        96,
+        96
+      ],
+      "anchor_px": [
+        48,
+        94
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/distant_pine.png",
+      "size": [
+        64,
+        96
+      ],
+      "anchor_px": [
+        32,
+        94
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/cloud_small.png",
+      "size": [
+        64,
+        32
+      ],
+      "anchor_px": [
+        32,
+        30
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/cloud_long.png",
+      "size": [
+        128,
+        64
+      ],
+      "anchor_px": [
+        64,
+        62
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview"
+    },
+    {
+      "file": "road_sideview/sky.png",
+      "size": [
+        320,
+        192
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "category": "road_sideview",
+      "state": "default",
+      "collision_rects_px": [],
+      "projection": "sideview",
+      "repeat_axes": [
+        "x"
+      ]
+    }
+  ],
+  "preview_files": [
+    "previews/building_variants.json",
+    "previews/building_variants.png",
+    "previews/building_variants.tscn",
+    "previews/building_variants_2x.png",
+    "previews/contact_sheet_01.png",
+    "previews/contact_sheet_02.png",
+    "previews/contact_sheet_03.png",
+    "previews/contact_sheet_04.png",
+    "previews/contact_sheet_05.png",
+    "previews/contact_sheet_06.png",
+    "previews/contact_sheet_07.png",
+    "previews/contact_sheet_08.png",
+    "previews/contact_sheet_09.png",
+    "previews/electrical_puzzle_layers.json",
+    "previews/electrical_puzzle_layers.png",
+    "previews/electrical_puzzle_layers.tscn",
+    "previews/electrical_puzzle_layers_2x.png",
+    "previews/gate_waiting_area.json",
+    "previews/gate_waiting_area.png",
+    "previews/gate_waiting_area.tscn",
+    "previews/gate_waiting_area_2x.png",
+    "previews/glass_pavilion_empty.json",
+    "previews/glass_pavilion_empty.png",
+    "previews/glass_pavilion_empty.tscn",
+    "previews/glass_pavilion_empty_2x.png",
+    "previews/glass_pavilion_prepared.json",
+    "previews/glass_pavilion_prepared.png",
+    "previews/glass_pavilion_prepared.tscn",
+    "previews/glass_pavilion_prepared_2x.png",
+    "previews/modern_corridor.json",
+    "previews/modern_corridor.png",
+    "previews/modern_corridor.tscn",
+    "previews/modern_corridor_2x.png",
+    "previews/modern_room_before_cleaning.json",
+    "previews/modern_room_before_cleaning.png",
+    "previews/modern_room_before_cleaning.tscn",
+    "previews/modern_room_before_cleaning_2x.png",
+    "previews/modern_room_clean.json",
+    "previews/modern_room_clean.png",
+    "previews/modern_room_clean.tscn",
+    "previews/modern_room_clean_2x.png",
+    "previews/old_dorm_room.json",
+    "previews/old_dorm_room.png",
+    "previews/old_dorm_room.tscn",
+    "previews/old_dorm_room_2x.png",
+    "previews/overview.png",
+    "previews/sideview_road.json",
+    "previews/sideview_road.png",
+    "previews/sideview_road.tscn",
+    "previews/sideview_road_2x.png"
+  ]
+}

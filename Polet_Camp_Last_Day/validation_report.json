@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "png_count": 405,
+    "preview_png_count": 30,
+    "rgba": true,
+    "manifest_dimensions": true,
+    "all_files_unique": true,
+    "grid_dimensions": true,
+    "valid_47_masks": true,
+    "registered_groups": true,
+    "garland_alpha_match": true,
+    "seamless_material_edges": true,
+    "transparent_objects": true,
+    "no_roof_canopy_collision": true,
+    "preview_assets_exist": true,
+    "engine_launch_tested": false,
+    "engine_launch_note": "Godot executable unavailable; resources need runtime smoke-test after import."
+  },
+  "errors": [],
+  "asset_sections": {
+    "terrain": 70,
+    "vegetation": 20,
+    "camp_props": 14,
+    "buildings": 121,
+    "interiors": 71,
+    "props": 63,
+    "puzzles": 26,
+    "bicycle": 7,
+    "road_sideview": 13
+  }
+}

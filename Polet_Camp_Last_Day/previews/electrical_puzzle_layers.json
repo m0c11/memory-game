@@ -1,0 +1,95 @@
+{
+  "name": "electrical_puzzle_layers",
+  "canvas": [
+    320,
+    240
+  ],
+  "background_rgba": [
+    198,
+    204,
+    197,
+    255
+  ],
+  "draw_order": [
+    {
+      "file": "puzzles/electrical_panel/ui_housing.png",
+      "position_px": [
+        0,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_1_slots.png",
+      "position_px": [
+        0,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_2_slots.png",
+      "position_px": [
+        0,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/ui_output_3_slots.png",
+      "position_px": [
+        0,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/switch_off.png",
+      "position_px": [
+        132,
+        53
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_off.png",
+      "position_px": [
+        200,
+        53
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/switch_off.png",
+      "position_px": [
+        132,
+        108
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_off.png",
+      "position_px": [
+        200,
+        108
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/switch_off.png",
+      "position_px": [
+        132,
+        163
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "puzzles/electrical_panel/indicator_off.png",
+      "position_px": [
+        200,
+        163
+      ],
+      "alpha": 1.0
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+{
+  "name": "old_dorm_room",
+  "canvas": [
+    384,
+    320
+  ],
+  "background_rgba": [
+    202,
+    207,
+    191,
+    255
+  ],
+  "draw_order": [
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        32,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        64,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        96,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        128,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        160,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        192,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        224,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        256,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        288,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wood_floor_tile.png",
+      "position_px": [
+        320,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        32,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        64,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        96,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        128,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        160,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        192,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        224,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        256,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        288,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wall.png",
+      "position_px": [
+        320,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/bed_north.png",
+      "position_px": [
+        48,
+        112
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/wardrobe_open.png",
+      "position_px": [
+        232,
+        64
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/mirror.png",
+      "position_px": [
+        188,
+        50
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/table.png",
+      "position_px": [
+        128,
+        164
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/chair_south.png",
+      "position_px": [
+        144,
+        150
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/mug.png",
+      "position_px": [
+        150,
+        183
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/hooks.png",
+      "position_px": [
+        104,
+        55
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/clothes/hanging_clothes.png",
+      "position_px": [
+        112,
+        80
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/luggage/duffel.png",
+      "position_px": [
+        253,
+        235
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/clothes/shoes.png",
+      "position_px": [
+        84,
+        250
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/clothes/tshirt_folded.png",
+      "position_px": [
+        162,
+        182
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/clothes/small_bag.png",
+      "position_px": [
+        212,
+        233
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/old_dorm/door_open.png",
+      "position_px": [
+        176,
+        256
+      ],
+      "alpha": 1.0
+    }
+  ]
+}

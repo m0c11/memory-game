@@ -1,0 +1,1311 @@
+{
+  "name": "modern_room_before_cleaning",
+  "canvas": [
+    512,
+    384
+  ],
+  "background_rgba": [
+    202,
+    207,
+    191,
+    255
+  ],
+  "draw_order": [
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        64,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        96,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        128,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        160,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        192,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        224,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        256,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        288,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        320,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        352,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        384,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/tile_floor_tile.png",
+      "position_px": [
+        416,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        64,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        96,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        128,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        160,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        192,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        224,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        256,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        288,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        320,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        352,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        384,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wall.png",
+      "position_px": [
+        416,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        32,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        96
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        128
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        160
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        192
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        256
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        288
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "buildings/modern_cabin/sage_wall_tile.png",
+      "position_px": [
+        448,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/window.png",
+      "position_px": [
+        112,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/window.png",
+      "position_px": [
+        336,
+        32
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/radiator.png",
+      "position_px": [
+        128,
+        80
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/radiator.png",
+      "position_px": [
+        352,
+        80
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/bed_north_unmade.png",
+      "position_px": [
+        80,
+        112
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/nightstand.png",
+      "position_px": [
+        116,
+        130
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/bed_north_made.png",
+      "position_px": [
+        80,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/nightstand.png",
+      "position_px": [
+        116,
+        242
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/bed_south_unmade.png",
+      "position_px": [
+        388,
+        112
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/nightstand.png",
+      "position_px": [
+        352,
+        130
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/bed_south_made.png",
+      "position_px": [
+        388,
+        224
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/nightstand.png",
+      "position_px": [
+        352,
+        242
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/table_ew.png",
+      "position_px": [
+        224,
+        176
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/chair_south.png",
+      "position_px": [
+        232,
+        146
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/chair_north.png",
+      "position_px": [
+        248,
+        204
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/wardrobe.png",
+      "position_px": [
+        144,
+        280
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/ceiling_light.png",
+      "position_px": [
+        240,
+        44
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        64,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        96,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        128,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        160,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        192,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        288,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        320,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        352,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        384,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/skirting.png",
+      "position_px": [
+        416,
+        320
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "interiors/modern_cabin/door_open.png",
+      "position_px": [
+        240,
+        318
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/linen_unfolded.png",
+      "position_px": [
+        126,
+        180
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/paper_01.png",
+      "position_px": [
+        184,
+        234
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/paper_02.png",
+      "position_px": [
+        312,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/wrapper.png",
+      "position_px": [
+        300,
+        170
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/dirt_footprints.png",
+      "position_px": [
+        240,
+        280
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/forgotten_tshirt.png",
+      "position_px": [
+        340,
+        280
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/bucket.png",
+      "position_px": [
+        304,
+        298
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/cleaning/mop.png",
+      "position_px": [
+        324,
+        266
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/luggage/plush_rabbit.png",
+      "position_px": [
+        126,
+        234
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "props/luggage/child_backpack.png",
+      "position_px": [
+        340,
+        192
+      ],
+      "alpha": 1.0
+    }
+  ]
+}

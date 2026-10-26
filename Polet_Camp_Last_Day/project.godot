@@ -1,0 +1,15 @@
+; Optional asset inspection project. No gameplay scripts.
+config_version=5
+[application]
+config/name="Polet_Camp_Last_Day"
+run/main_scene="res://previews/modern_room_before_cleaning.tscn"
+[display]
+window/size/viewport_width=640
+window/size/viewport_height=384
+window/size/window_width_override=1280
+window/size/window_height_override=768
+window/stretch/mode="canvas_items"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.79, 0.81, 0.75, 1)

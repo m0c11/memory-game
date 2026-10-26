@@ -1,0 +1,279 @@
+{
+  "name": "sideview_road",
+  "canvas": [
+    640,
+    320
+  ],
+  "background_rgba": [
+    168,
+    194,
+    201,
+    255
+  ],
+  "draw_order": [
+    {
+      "file": "road_sideview/sky.png",
+      "position_px": [
+        0,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/sky.png",
+      "position_px": [
+        320,
+        0
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/cloud_small.png",
+      "position_px": [
+        80,
+        33
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/cloud_long.png",
+      "position_px": [
+        352,
+        12
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_tree.png",
+      "position_px": [
+        0,
+        122
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_pine.png",
+      "position_px": [
+        80,
+        118
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_tree.png",
+      "position_px": [
+        140,
+        122
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_pine.png",
+      "position_px": [
+        220,
+        118
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_tree.png",
+      "position_px": [
+        300,
+        122
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_pine.png",
+      "position_px": [
+        380,
+        118
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_tree.png",
+      "position_px": [
+        480,
+        122
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/distant_pine.png",
+      "position_px": [
+        560,
+        118
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "position_px": [
+        0,
+        214
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        0,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        0,
+        278
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "position_px": [
+        128,
+        214
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        128,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        128,
+        278
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "position_px": [
+        256,
+        214
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        256,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        256,
+        278
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "position_px": [
+        384,
+        214
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        384,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        384,
+        278
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/shoulder.png",
+      "position_px": [
+        512,
+        214
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        512,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/asphalt.png",
+      "position_px": [
+        512,
+        278
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/bush.png",
+      "position_px": [
+        65,
+        185
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/hedge.png",
+      "position_px": [
+        450,
+        185
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/puddle.png",
+      "position_px": [
+        460,
+        246
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/pothole.png",
+      "position_px": [
+        348,
+        258
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "bicycle/sideview/bicycle_with_bag.png",
+      "position_px": [
+        185,
+        168
+      ],
+      "alpha": 1.0
+    },
+    {
+      "file": "road_sideview/stone.png",
+      "position_px": [
+        105,
+        251
+      ],
+      "alpha": 1.0
+    }
+  ]
+}
