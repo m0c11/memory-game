@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/ui_housing.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/ui_output_1_slots.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/ui_output_2_slots.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/ui_output_3_slots.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/switch_off.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/indicator_off.png" id="6"]
+
+[node name="electrical_puzzle_layers" type="Node2D"]
+texture_filter = 1
+
+[node name="Asset_0000" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0001" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0002" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("3")
+centered = false
+
+[node name="Asset_0003" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("4")
+centered = false
+
+[node name="Asset_0004" type="Sprite2D" parent="."]
+position = Vector2(132, 53)
+texture = ExtResource("5")
+centered = false
+
+[node name="Asset_0005" type="Sprite2D" parent="."]
+position = Vector2(200, 53)
+texture = ExtResource("6")
+centered = false
+
+[node name="Asset_0006" type="Sprite2D" parent="."]
+position = Vector2(132, 108)
+texture = ExtResource("5")
+centered = false
+
+[node name="Asset_0007" type="Sprite2D" parent="."]
+position = Vector2(200, 108)
+texture = ExtResource("6")
+centered = false
+
+[node name="Asset_0008" type="Sprite2D" parent="."]
+position = Vector2(132, 163)
+texture = ExtResource("5")
+centered = false
+
+[node name="Asset_0009" type="Sprite2D" parent="."]
+position = Vector2(200, 163)
+texture = ExtResource("6")
+centered = false

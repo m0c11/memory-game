@@ -1,0 +1,79 @@
+{
+  "canvas": [
+    320,
+    240
+  ],
+  "housing": "puzzles/electrical_panel/ui_housing.png",
+  "slots": [
+    {
+      "id": "switch_1",
+      "center_px": [
+        148,
+        69
+      ]
+    },
+    {
+      "id": "switch_2",
+      "center_px": [
+        148,
+        124
+      ]
+    },
+    {
+      "id": "switch_3",
+      "center_px": [
+        148,
+        179
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "kind": "garland",
+      "contact_px": [
+        188,
+        69
+      ],
+      "indicator_center_px": [
+        216,
+        69
+      ],
+      "icon_center_px": [
+        254,
+        69
+      ]
+    },
+    {
+      "kind": "light",
+      "contact_px": [
+        188,
+        124
+      ],
+      "indicator_center_px": [
+        216,
+        124
+      ],
+      "icon_center_px": [
+        254,
+        124
+      ]
+    },
+    {
+      "kind": "music",
+      "contact_px": [
+        188,
+        179
+      ],
+      "indicator_center_px": [
+        216,
+        179
+      ],
+      "icon_center_px": [
+        254,
+        179
+      ]
+    }
+  ],
+  "wires": [],
+  "solution_included": false
+}

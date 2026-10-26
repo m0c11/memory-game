@@ -1,0 +1,608 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/tile_floor_tile.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/wall.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/doorway.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/door_closed.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/polet/interiors/modern_cabin/ceiling_light.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/polet/props/cleaning/trash_bag_tied.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/polet/props/cleaning/linen_folded.png" id="7"]
+[ext_resource type="Texture2D" path="res://assets/polet/props/luggage/suitcase.png" id="8"]
+
+[node name="modern_corridor" type="Node2D"]
+texture_filter = 1
+
+[node name="Asset_0000" type="Sprite2D" parent="."]
+position = Vector2(32, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0001" type="Sprite2D" parent="."]
+position = Vector2(64, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0002" type="Sprite2D" parent="."]
+position = Vector2(96, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0003" type="Sprite2D" parent="."]
+position = Vector2(128, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0004" type="Sprite2D" parent="."]
+position = Vector2(160, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0005" type="Sprite2D" parent="."]
+position = Vector2(192, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0006" type="Sprite2D" parent="."]
+position = Vector2(224, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0007" type="Sprite2D" parent="."]
+position = Vector2(256, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0008" type="Sprite2D" parent="."]
+position = Vector2(288, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0009" type="Sprite2D" parent="."]
+position = Vector2(320, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0010" type="Sprite2D" parent="."]
+position = Vector2(352, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0011" type="Sprite2D" parent="."]
+position = Vector2(384, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0012" type="Sprite2D" parent="."]
+position = Vector2(416, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0013" type="Sprite2D" parent="."]
+position = Vector2(448, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0014" type="Sprite2D" parent="."]
+position = Vector2(480, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0015" type="Sprite2D" parent="."]
+position = Vector2(512, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0016" type="Sprite2D" parent="."]
+position = Vector2(544, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0017" type="Sprite2D" parent="."]
+position = Vector2(576, 96)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0018" type="Sprite2D" parent="."]
+position = Vector2(32, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0019" type="Sprite2D" parent="."]
+position = Vector2(64, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0020" type="Sprite2D" parent="."]
+position = Vector2(96, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0021" type="Sprite2D" parent="."]
+position = Vector2(128, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0022" type="Sprite2D" parent="."]
+position = Vector2(160, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0023" type="Sprite2D" parent="."]
+position = Vector2(192, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0024" type="Sprite2D" parent="."]
+position = Vector2(224, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0025" type="Sprite2D" parent="."]
+position = Vector2(256, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0026" type="Sprite2D" parent="."]
+position = Vector2(288, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0027" type="Sprite2D" parent="."]
+position = Vector2(320, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0028" type="Sprite2D" parent="."]
+position = Vector2(352, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0029" type="Sprite2D" parent="."]
+position = Vector2(384, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0030" type="Sprite2D" parent="."]
+position = Vector2(416, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0031" type="Sprite2D" parent="."]
+position = Vector2(448, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0032" type="Sprite2D" parent="."]
+position = Vector2(480, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0033" type="Sprite2D" parent="."]
+position = Vector2(512, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0034" type="Sprite2D" parent="."]
+position = Vector2(544, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0035" type="Sprite2D" parent="."]
+position = Vector2(576, 128)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0036" type="Sprite2D" parent="."]
+position = Vector2(32, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0037" type="Sprite2D" parent="."]
+position = Vector2(64, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0038" type="Sprite2D" parent="."]
+position = Vector2(96, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0039" type="Sprite2D" parent="."]
+position = Vector2(128, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0040" type="Sprite2D" parent="."]
+position = Vector2(160, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0041" type="Sprite2D" parent="."]
+position = Vector2(192, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0042" type="Sprite2D" parent="."]
+position = Vector2(224, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0043" type="Sprite2D" parent="."]
+position = Vector2(256, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0044" type="Sprite2D" parent="."]
+position = Vector2(288, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0045" type="Sprite2D" parent="."]
+position = Vector2(320, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0046" type="Sprite2D" parent="."]
+position = Vector2(352, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0047" type="Sprite2D" parent="."]
+position = Vector2(384, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0048" type="Sprite2D" parent="."]
+position = Vector2(416, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0049" type="Sprite2D" parent="."]
+position = Vector2(448, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0050" type="Sprite2D" parent="."]
+position = Vector2(480, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0051" type="Sprite2D" parent="."]
+position = Vector2(512, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0052" type="Sprite2D" parent="."]
+position = Vector2(544, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0053" type="Sprite2D" parent="."]
+position = Vector2(576, 160)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0054" type="Sprite2D" parent="."]
+position = Vector2(32, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0055" type="Sprite2D" parent="."]
+position = Vector2(64, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0056" type="Sprite2D" parent="."]
+position = Vector2(96, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0057" type="Sprite2D" parent="."]
+position = Vector2(128, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0058" type="Sprite2D" parent="."]
+position = Vector2(160, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0059" type="Sprite2D" parent="."]
+position = Vector2(192, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0060" type="Sprite2D" parent="."]
+position = Vector2(224, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0061" type="Sprite2D" parent="."]
+position = Vector2(256, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0062" type="Sprite2D" parent="."]
+position = Vector2(288, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0063" type="Sprite2D" parent="."]
+position = Vector2(320, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0064" type="Sprite2D" parent="."]
+position = Vector2(352, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0065" type="Sprite2D" parent="."]
+position = Vector2(384, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0066" type="Sprite2D" parent="."]
+position = Vector2(416, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0067" type="Sprite2D" parent="."]
+position = Vector2(448, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0068" type="Sprite2D" parent="."]
+position = Vector2(480, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0069" type="Sprite2D" parent="."]
+position = Vector2(512, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0070" type="Sprite2D" parent="."]
+position = Vector2(544, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0071" type="Sprite2D" parent="."]
+position = Vector2(576, 192)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0072" type="Sprite2D" parent="."]
+position = Vector2(32, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0073" type="Sprite2D" parent="."]
+position = Vector2(64, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0074" type="Sprite2D" parent="."]
+position = Vector2(96, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0075" type="Sprite2D" parent="."]
+position = Vector2(128, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0076" type="Sprite2D" parent="."]
+position = Vector2(160, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0077" type="Sprite2D" parent="."]
+position = Vector2(192, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0078" type="Sprite2D" parent="."]
+position = Vector2(224, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0079" type="Sprite2D" parent="."]
+position = Vector2(256, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0080" type="Sprite2D" parent="."]
+position = Vector2(288, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0081" type="Sprite2D" parent="."]
+position = Vector2(320, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0082" type="Sprite2D" parent="."]
+position = Vector2(352, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0083" type="Sprite2D" parent="."]
+position = Vector2(384, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0084" type="Sprite2D" parent="."]
+position = Vector2(416, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0085" type="Sprite2D" parent="."]
+position = Vector2(448, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0086" type="Sprite2D" parent="."]
+position = Vector2(480, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0087" type="Sprite2D" parent="."]
+position = Vector2(512, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0088" type="Sprite2D" parent="."]
+position = Vector2(544, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0089" type="Sprite2D" parent="."]
+position = Vector2(576, 224)
+texture = ExtResource("1")
+centered = false
+
+[node name="Asset_0090" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0091" type="Sprite2D" parent="."]
+position = Vector2(64, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0092" type="Sprite2D" parent="."]
+position = Vector2(96, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0093" type="Sprite2D" parent="."]
+position = Vector2(128, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0094" type="Sprite2D" parent="."]
+position = Vector2(160, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0095" type="Sprite2D" parent="."]
+position = Vector2(192, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0096" type="Sprite2D" parent="."]
+position = Vector2(224, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0097" type="Sprite2D" parent="."]
+position = Vector2(256, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0098" type="Sprite2D" parent="."]
+position = Vector2(288, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0099" type="Sprite2D" parent="."]
+position = Vector2(320, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0100" type="Sprite2D" parent="."]
+position = Vector2(352, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0101" type="Sprite2D" parent="."]
+position = Vector2(384, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0102" type="Sprite2D" parent="."]
+position = Vector2(416, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0103" type="Sprite2D" parent="."]
+position = Vector2(448, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0104" type="Sprite2D" parent="."]
+position = Vector2(480, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0105" type="Sprite2D" parent="."]
+position = Vector2(512, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0106" type="Sprite2D" parent="."]
+position = Vector2(544, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0107" type="Sprite2D" parent="."]
+position = Vector2(576, 32)
+texture = ExtResource("2")
+centered = false
+
+[node name="Asset_0108" type="Sprite2D" parent="."]
+position = Vector2(96, 32)
+texture = ExtResource("3")
+centered = false
+
+[node name="Asset_0109" type="Sprite2D" parent="."]
+position = Vector2(112, 32)
+texture = ExtResource("4")
+centered = false
+
+[node name="Asset_0110" type="Sprite2D" parent="."]
+position = Vector2(288, 32)
+texture = ExtResource("3")
+centered = false
+
+[node name="Asset_0111" type="Sprite2D" parent="."]
+position = Vector2(304, 32)
+texture = ExtResource("4")
+centered = false
+
+[node name="Asset_0112" type="Sprite2D" parent="."]
+position = Vector2(480, 32)
+texture = ExtResource("3")
+centered = false
+
+[node name="Asset_0113" type="Sprite2D" parent="."]
+position = Vector2(496, 32)
+texture = ExtResource("4")
+centered = false
+
+[node name="Asset_0114" type="Sprite2D" parent="."]
+position = Vector2(208, 43)
+texture = ExtResource("5")
+centered = false
+
+[node name="Asset_0115" type="Sprite2D" parent="."]
+position = Vector2(400, 43)
+texture = ExtResource("5")
+centered = false
+
+[node name="Asset_0116" type="Sprite2D" parent="."]
+position = Vector2(552, 200)
+texture = ExtResource("6")
+centered = false
+
+[node name="Asset_0117" type="Sprite2D" parent="."]
+position = Vector2(40, 205)
+texture = ExtResource("7")
+centered = false
+
+[node name="Asset_0118" type="Sprite2D" parent="."]
+position = Vector2(174, 190)
+texture = ExtResource("8")
+centered = false
