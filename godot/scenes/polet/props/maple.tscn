@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/polet/vegetation/maple_trunk.png" id="1"]
 
 [ext_resource type="Texture2D" path="res://assets/polet/vegetation/maple_canopy.png" id="2"]
+
+[ext_resource type="Material" path="res://resources/polet/leaves.tres" id="Wind"]
 
 [sub_resource type="RectangleShape2D" id="Shape0"]
 size = Vector2(18, 11)
@@ -19,6 +21,7 @@ centered = false
 offset = Vector2(-64, -148)
 
 [node name="Canopy" type="Sprite2D" parent="."]
+material = ExtResource("Wind")
 position = Vector2(0, 0)
 texture = ExtResource("2")
 centered = false

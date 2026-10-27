@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3]
+[gd_scene load_steps=51 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/story/bicycle.gd" id="R1"]
 
@@ -92,12 +92,17 @@
 
 [ext_resource type="Texture2D" path="res://assets/polet/bicycle/sideview/bicycle_with_bag.png" id="R46"]
 
+[ext_resource type="SpriteFrames" path="res://assets/polet/characters/heroine.tres" id="Hero"]
+[ext_resource type="Material" path="res://resources/polet/coat.tres" id="Coat"]
+[ext_resource type="Theme" path="res://resources/polet/ui.tres" id="Theme"]
+
 [sub_resource type="AtlasTexture" id="AsphaltOnly"]
 atlas = ExtResource("R4")
 region = Rect2(4, 2, 120, 10)
 filter_clip = true
 
 [node name="Bicycle" type="Control"]
+theme = ExtResource("Theme")
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -1054,13 +1059,13 @@ texture = ExtResource("R46")
 position = Vector2(0,-55)
 scale = Vector2(1.6,1.6)
 
-[node name="Jacket" type="Polygon2D" parent="Rider"]
-polygon = PackedVector2Array(-20,-78,-20,-112,-10,-121,3,-120,14,-110,14,-78,4,-69,-10,-69)
-color = Color(0.22,0.52,0.58,1)
-
-[node name="Head" type="Polygon2D" parent="Rider"]
-polygon = PackedVector2Array(-17,-119,-18,-139,-10,-147,4,-147,12,-139,12,-121,4,-115,-9,-115)
-color = Color(0.93,0.86,0.66,1)
+[node name="Sprite" type="AnimatedSprite2D" parent="Rider"]
+position = Vector2(-5,-93)
+scale = Vector2(3,3)
+sprite_frames = ExtResource("Hero")
+material = ExtResource("Coat")
+animation = &"ride"
+autoplay = "ride"
 
 [node name="HUD" type="ColorRect" parent="."]
 offset_left = 0.0

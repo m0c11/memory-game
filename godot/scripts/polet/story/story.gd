@@ -10,6 +10,9 @@ var dialogue_step: int = 0
 var hold_target: Node2D
 var hold_time: float = 0.0
 var outfit: int = 0
+var restoring: bool = false
+var notice_tween: Tween
+@onready var pause_panel: Control = $Interface/Pause
 @onready var level: Node2D = get_parent()
 @onready var ui: CanvasLayer = $Interface
 @onready var dialogue: Control = $Interface/Dialogue
@@ -26,7 +29,16 @@ func _ready() -> void:
 	bicycle.completed.connect(ride_complete)
 	bicycle.cancelled.connect(close_modal)
 	$PartyMusic.finished.connect(func(): $PartyMusic.play())
-	call_deferred("refresh")
+	$Interface/Pause/Card/Resume.pressed.connect(close_modal)
+	$Interface/Pause/Card/Restart.pressed.connect(confirm_restart)
+	$Interface/Pause/Card/Exit.pressed.connect(request_exit)
+	level.location_changed.connect(func(_id): $Interface/Notice.modulate.a = 0.0)
+	$Interface/Pause/Card/Volume.value_changed.connect(func(value): level.get_node("Presentation").set_volume(value); save_progress())
+	$Interface/Pause/Card/Wind.toggled.connect(func(value): level.get_node("Presentation").set_wind(value); save_progress())
+	$Interface/Pause/Card/Fullscreen.toggled.connect(func(value): DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if value else DisplayServer.WINDOW_MODE_WINDOWED))
+	for button in ui.find_children("*", "Button", true, false):
+		button.pressed.connect(func(): sound("Choice"))
+	call_deferred("startup")
 
 func _exit_tree() -> void:
 	$PartyMusic.stop()
@@ -35,7 +47,9 @@ func _process(delta: float) -> void:
 	if not is_instance_valid(level.current_location):
 		return
 	ui.get_node("Quest").visible = not busy and not level.overview
+	$Interface/Notice.visible = not busy and not level.overview
 	ui.get_node("Hold").visible = false
+	level.player.working = hold_target != null and not busy
 	$PartyMusic.volume_db = -18.0 if str(level.current_location.get_meta("location_id")) == "glass" else -45.0
 	if busy:
 		return
@@ -103,6 +117,7 @@ func try_interact() -> bool:
 		"linen", "rubbish", "mop", "garland":
 			hold_target = target
 			hold_time = 0.0
+			sound({"linen":"Cloth", "rubbish":"Paper", "mop":"Sweep", "garland":"Cloth"}[id])
 		"child":
 			if stage == Stage.SUPPORT:
 				start_dialogue("child", "Последний отъезд", "Все уже уехали… А я не хочу, чтобы смена заканчивалась.", ["Мне тоже грустно расставаться.", "Какой момент смены ты запомнишь?", "Давай немного посидим вместе."])
@@ -137,6 +152,9 @@ func finish_task(id: String) -> void:
 	if finished.has(id):
 		return
 	finished[id] = true
+	if not restoring:
+		sound("Radio" if id == "radio" else "Success")
+		notice({"linen":"Кровати готовы", "rubbish":"Бумажки собраны", "mop":"Пол чистый", "garland":"Гирлянда развешена", "circuit":"Питание включено", "music":"Можно включать музыку", "child":"До новой встречи", "radio":"Смена сдана"}.get(id, "Готово"))
 	var room: Node2D = level.get_node("World/Room1")
 	match id:
 		"linen":
@@ -152,7 +170,10 @@ func finish_task(id: String) -> void:
 		"mop": room.get_node("FloorDetails/Item156").hide()
 		"garland": level.get_node("World/Glass/GarlandOff").show()
 		"child":
-			level.get_node("World/Camp/Child").hide()
+			if restoring:
+				level.get_node("World/Camp/Child").hide()
+			else:
+				depart_child()
 			stage = Stage.RADIO
 		"radio": stage = Stage.PREPARE
 	if stage == Stage.CLEAN and finished.has_all(["linen", "rubbish", "mop"]):
@@ -163,6 +184,7 @@ func finish_task(id: String) -> void:
 	if stage == Stage.PREPARE and finished.has_all(["garland", "circuit", "music"]):
 		stage = Stage.RIDE
 	refresh()
+	save_progress()
 
 func refresh() -> void:
 	var count := 0
@@ -184,7 +206,7 @@ func refresh() -> void:
 	level.get_node("World/Glass/EveningGuests").visible = stage >= Stage.FINALE
 	level.get_node("World/Camp/Director").visible = stage < Stage.FINALE
 	level.get_node("World/Camp/Colleague").visible = stage < Stage.FINALE
-	level.get_node("World/Daylight").color = Color(0.55, 0.62, 0.78) if stage >= Stage.FINALE else Color.WHITE
+	level.get_node("World/Daylight").color = Color(0.55, 0.62, 0.78) if stage >= Stage.FINALE and not level.overview else Color.WHITE
 	level.get_node("World/Glass/EveningLight").enabled = stage >= Stage.FINALE
 	level.get_node("World/Camp/Child/CollisionShape2D").set_deferred("disabled", stage > Stage.SUPPORT)
 	for name in ["Director", "Colleague"]:
@@ -198,15 +220,17 @@ func mark(id: String) -> String:
 func open_modal(kind: String) -> void:
 	modal = kind
 	busy = true
+	$Interface/Notice.hide()
 	hold_target = null
 	hold_time = 0.0
+	level.player.working = false
 	level.player.movement_enabled = false
 	level.player.velocity = Vector2.ZERO
 	level.prompt_label.text = ""
 	ui.get_node("Hold").hide()
 
 func close_modal() -> void:
-	for panel in [dialogue, circuit, music, bicycle]:
+	for panel in [dialogue, circuit, music, bicycle, pause_panel]:
 		panel.hide()
 	bicycle.running = false
 	music.running = false
@@ -215,6 +239,7 @@ func close_modal() -> void:
 	level.player.movement_enabled = not level.overview
 	level.transition_cooldown = 0.25
 	refresh()
+	save_progress()
 
 func start_dialogue(kind: String, speaker: String, message: String, choices: Array) -> void:
 	open_modal("dialogue")
@@ -241,9 +266,7 @@ func choose(index: int) -> void:
 			close_modal()
 		"outfit":
 			outfit = index
-			var colors := [Color(0.22, 0.52, 0.58), Color(0.73, 0.34, 0.23), Color(0.93, 0.86, 0.66)]
-			level.player.get_node("Jacket").color = colors[index]
-			bicycle.get_node("Rider/Jacket").color = colors[index]
+			apply_outfit()
 			close_modal()
 		"ride_intro":
 			close_modal()
@@ -266,6 +289,15 @@ func choose(index: int) -> void:
 				stage = Stage.DONE
 				finished["finale"] = true
 				close_modal()
+				open_pause(true)
+		"exit_unsaved":
+			if index == 1: exit_game()
+			else: close_modal()
+		"restart":
+			if index == 0:
+				restart_level()
+			else:
+				close_modal()
 		_: close_modal()
 
 func ride_complete() -> void:
@@ -273,7 +305,12 @@ func ride_complete() -> void:
 	start_dialogue("ride_return", "У магазина", "Доехали! Угощения и напитки в корзине.\nОбратно катимся по знакомой дороге — в стекляшке уже ждут друзья.", ["Вернуться в лагерь."])
 
 func _unhandled_input(event: InputEvent) -> void:
-	if not busy or (event is InputEventKey and event.echo):
+	if event is InputEventKey and event.echo:
+		return
+	if not busy:
+		if event.is_action_pressed("ui_cancel") and not level.overview:
+			open_pause()
+			get_viewport().set_input_as_handled()
 		return
 	if event.is_action_pressed("ui_cancel"):
 		# Arrival and ending pages are checkpoints: finish the page before leaving.
@@ -285,3 +322,116 @@ func _unhandled_input(event: InputEvent) -> void:
 		if index >= 0 and index < 3 and dialogue.get_node("Card/Choice" + str(index + 1)).visible:
 			choose(index)
 			get_viewport().set_input_as_handled()
+
+func sound(kind: String) -> void:
+	level.get_node("Presentation").sound(kind)
+
+func notice(message: String) -> void:
+	var label: Label = $Interface/Notice
+	if notice_tween != null: notice_tween.kill()
+	label.text = message
+	label.modulate.a = 1.0
+	notice_tween = create_tween()
+	notice_tween.tween_interval(1.8)
+	notice_tween.tween_property(label, "modulate:a", 0.0, 0.6)
+
+func depart_child() -> void:
+	var child: Node2D = level.get_node("World/Camp/Child")
+	var tween := create_tween()
+	for marker in level.get_node("World/Camp/DepartureRoute").get_children():
+		tween.tween_property(child, "global_position", marker.global_position, 1.0 if marker.name == "Path1" else 4.5)
+	tween.tween_property(child, "modulate:a", 0.0, 0.6)
+	tween.tween_callback(child.hide)
+
+func apply_outfit() -> void:
+	level.player.set_outfit(outfit)
+	var sprite: AnimatedSprite2D = bicycle.get_node("Rider/Sprite")
+	sprite.material.set_shader_parameter("recolor", outfit != 0)
+	var colors := [Color(0.22,0.52,0.58), Color(0.73,0.34,0.23), Color(0.93,0.86,0.66)]
+	sprite.material.set_shader_parameter("coat_color", colors[outfit])
+
+func snapshot() -> Dictionary:
+	var presentation = level.get_node("Presentation")
+	return {"version":1, "finished":finished.keys(), "outfit":outfit, "switches":circuit.switches, "music_hits":music.hits, "volume":presentation.volume, "wind":presentation.wind}
+
+func save_progress() -> bool:
+	if restoring or level.get_meta("test_mode", false): return true
+	var error := PoletSave.write_data(snapshot())
+	if error != OK: notice("Не удалось сохранить. Можно продолжить игру.")
+	return error == OK
+
+func restore(data: Dictionary) -> void:
+	var clean := PoletSave.sanitize(data)
+	if clean.is_empty(): return
+	restoring = true
+	for id in PoletSave.TASKS:
+		if id in clean.finished: finish_task(id)
+	if finished.has("bicycle"): stage = Stage.FINALE
+	if finished.has("finale"): stage = Stage.DONE
+	outfit = int(clean.outfit)
+	apply_outfit()
+	circuit.switches.assign(clean.switches)
+	circuit.refresh()
+	music.hits = int(clean.music_hits)
+	$Interface/Pause/Card/Volume.value = clean.volume
+	$Interface/Pause/Card/Wind.button_pressed = clean.wind
+	level.get_node("Presentation").set_volume(clean.volume)
+	level.get_node("Presentation").set_wind(clean.wind)
+	if finished.has("music"): $PartyMusic.play()
+	refresh()
+	restoring = false
+
+func startup() -> void:
+	refresh()
+	if level.get_meta("test_mode", false): return
+	var data := PoletSave.read_data()
+	if not data.is_empty():
+		restore(data)
+		notice("Продолжаем последний день · прогресс восстановлен")
+		if stage == Stage.DONE: open_pause(true)
+	else:
+		start_dialogue("intro", "Полёт · Последний день", "Последние чемоданы собраны. До отъезда осталось несколько дел: привести корпус в порядок, проводить ребят и подготовить вечер для вожатых.\nНачнём с корпуса 1 — на карте он сверху слева.", ["Провести этот день вместе."])
+
+func open_pause(ending: bool = false) -> void:
+	open_modal("pause")
+	pause_panel.get_node("Card/Title").text = "Эта смена останется с тобой" if ending else "Полёт · Пауза"
+	pause_panel.get_node("Card/Subtitle").text = "Корпус сдан. Дети уехали домой. Друзья рядом.\nСпасибо за эту смену — и за заботу, которую ты подарила другим." if ending else "Прогресс сохраняется автоматически.\nМожно выйти из игры и продолжить позже."
+	pause_panel.get_node("Card/Resume").text = "Ещё немного погулять" if ending else "Продолжить"
+	for name in ["VolumeLabel", "Volume", "Wind", "Fullscreen", "Controls"]:
+		pause_panel.get_node("Card/" + name).visible = not ending
+	pause_panel.get_node("Card/EndingQuote").visible = ending
+	pause_panel.get_node("Card/Resume").position.y = 342.0 if ending else 188.0
+	pause_panel.show()
+	pause_panel.get_node("Card/Resume").grab_focus()
+
+func confirm_restart() -> void:
+	pause_panel.hide()
+	start_dialogue("restart", "Начать смену заново?", "Текущий прогресс этого уровня будет заменён новым прохождением. Настройки звука и движения листвы останутся.", ["Да, начать заново.", "Нет, вернуться."])
+
+func restart_level() -> void:
+	var fresh := snapshot()
+	fresh.finished = []
+	fresh.outfit = 0
+	fresh.switches = [false,false,false]
+	fresh.music_hits = 0
+	if not level.get_meta("test_mode", false):
+		if PoletSave.write_data(fresh) != OK:
+			close_modal()
+			notice("Не удалось начать заново: сохранение недоступно.")
+			return
+	get_tree().reload_current_scene()
+
+func request_exit() -> void:
+	if not save_progress():
+		start_dialogue("exit_unsaved", "Сохранение недоступно", "Сейчас не получилось записать прогресс. Можно остаться в игре и попробовать позже.", ["Остаться в лагере.", "Выйти без сохранения."])
+		return
+	exit_game()
+
+func exit_game() -> void:
+	level.set_process(false)
+	set_process(false)
+	level.player.set_physics_process(false)
+	for audio in level.find_children("*", "AudioStreamPlayer", true, false):
+		audio.stop()
+	await get_tree().create_timer(0.08).timeout
+	get_tree().quit()

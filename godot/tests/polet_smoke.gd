@@ -47,6 +47,7 @@ func interact() -> void:
 func run() -> void:
 	footprint.radius = 8.0
 	level = load("res://scenes/levels/polet.tscn").instantiate()
+	level.set_meta("test_mode", true)
 	root.add_child(level)
 	player = level.player
 	await frames(4)
@@ -172,7 +173,7 @@ func run() -> void:
 	check(player.movement_enabled and level.player_camera.is_current(), "Returns to player camera")
 	level.enter_location("dorm", "Entrance")
 	level.set_overview(true)
-	check(not level.overview, "Map cannot activate inside a room")
+	check(level.overview and level.locations.camp.visible and not level.current_location.visible, "Map opens from a room without moving player")
 	var reset := InputEventAction.new()
 	reset.action = "reset_position";reset.pressed = true
 	Input.parse_input_event(reset)
@@ -184,5 +185,8 @@ func run() -> void:
 	for action in ["move_left","move_right","move_forward","move_back","sprint"]:Input.action_release(action)
 	level.queue_free()
 	await frames(3)
+	OS.delay_msec(50)
+	await process_frame
+	await process_frame
 	print("POLET SMOKE: ", checks, " checks, ", failures.size(), " failures: ", failures)
 	quit(0 if failures.is_empty() else 1)

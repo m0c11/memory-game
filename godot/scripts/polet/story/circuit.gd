@@ -15,6 +15,7 @@ func outputs() -> Array[bool]:
 
 func toggle(index: int) -> void:
 	switches[index] = not switches[index]
+	get_parent().get_parent().sound("Click")
 	refresh()
 
 func refresh() -> void:

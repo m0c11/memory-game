@@ -8,6 +8,7 @@ var bumps: int = 0
 var immunity: float = 0.0
 var slow_time: float = 0.0
 var running: bool = false
+var pedal_time: float = 0.0
 const LENGTH := 5300.0
 
 func _ready() -> void:
@@ -26,6 +27,7 @@ func begin() -> void:
 		obstacle.set_meta("passed", false)
 	show()
 	$Exit.release_focus()
+	get_parent().get_parent().sound("Bell")
 
 func _process(delta: float) -> void:
 	if not visible or not running:
@@ -36,6 +38,11 @@ func _process(delta: float) -> void:
 	var speed := 230.0 if Input.is_action_pressed("sprint") else 165.0
 	if slow_time > 0.0:
 		speed = 70.0
+	pedal_time -= delta
+	if pedal_time <= 0:
+		get_parent().get_parent().sound("Click")
+		pedal_time = 0.4
+	$Rider/Sprite.speed_scale = speed / 165.0
 	distance = minf(LENGTH, distance + speed * delta)
 	$Road.position.x = -distance
 	$Rider.position = Vector2(240, rider_y)
@@ -45,6 +52,7 @@ func _process(delta: float) -> void:
 		if not obstacle.get_meta("passed", false) and absf(relative.x) < 36.0 and absf(relative.y) < 28.0 and immunity <= 0.0:
 			obstacle.set_meta("passed", true)
 			bumps += 1
+			get_parent().get_parent().sound("Bump")
 			slow_time = 1.0
 			immunity = 1.3
 			$Hint.text = "Кочка! Велосипед цел — продолжаем."

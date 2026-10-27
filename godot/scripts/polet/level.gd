@@ -17,6 +17,7 @@ var message_remaining: float = 0.0
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	get_tree().auto_accept_quit = false
 	for location in get_tree().get_nodes_in_group("polet_location"):
 		if is_ancestor_of(location):
 			locations[str(location.get_meta("location_id"))] = location
@@ -72,6 +73,7 @@ func try_interact() -> void:
 		message_remaining = 2.5
 		return
 	var destination: Array = connections[link]
+	get_node("Presentation").sound("Door")
 	enter_location(str(destination[0]), str(destination[1]))
 
 func enter_location(location_id: String, marker_name: String) -> bool:
@@ -109,18 +111,22 @@ func enter_location(location_id: String, marker_name: String) -> bool:
 func set_overview(enabled: bool) -> void:
 	if story.busy:
 		return
-	overview = enabled and current_location == locations.get("camp")
+	overview = enabled
 	player.movement_enabled = not overview
 	player.velocity = Vector2.ZERO
+	player.visible = not overview or current_location == locations.get("camp")
 	overview_label.visible = overview
 	$Interface/HeaderBackground.visible = not overview
 	location_label.visible = not overview
 	$Interface/Controls.visible = not overview
 	if overview:
+		for location: Node2D in locations.values(): location.visible = location == locations.camp
 		overview_camera.make_current()
 	else:
+		for location: Node2D in locations.values(): location.visible = location == current_location
 		player_camera.make_current()
 		player_camera.force_update_scroll()
+	story.refresh()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if story.busy:
@@ -138,3 +144,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	else:
 		return
 	get_viewport().set_input_as_handled()
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST and is_instance_valid(story):
+		story.request_exit()

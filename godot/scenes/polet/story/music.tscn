@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/story/music.gd" id="R1"]
+
+[ext_resource type="Theme" path="res://resources/polet/ui.tres" id="Theme"]
 
 [sub_resource type="StyleBoxFlat" id="CardStyle"]
 bg_color = Color(0.055, 0.10, 0.13, 0.98)
@@ -15,6 +17,7 @@ corner_radius_bottom_left = 14
 corner_radius_bottom_right = 14
 
 [node name="Music" type="Control"]
+theme = ExtResource("Theme")
 visible = false
 layout_mode = 3
 anchors_preset = 15

@@ -1,0 +1,62 @@
+[gd_scene load_steps=16 format=3]
+[ext_resource type="Script" path="res://scripts/polet/finish.gd" id="Script"]
+[ext_resource type="Shader" path="res://shaders/polet/finish.gdshader" id="Shader"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/camp_air.wav" id="Air"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/success.wav" id="Success"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/paper.wav" id="Paper"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/cloth.wav" id="Cloth"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/sweep.wav" id="Sweep"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/door.wav" id="Door"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/click.wav" id="Click"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/choice.wav" id="Choice"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/bell.wav" id="Bell"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/bump.wav" id="Bump"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/radio.wav" id="Radio"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/tick.wav" id="Tick"]
+[sub_resource type="ShaderMaterial" id="GradeMaterial"]
+shader = ExtResource("Shader")
+[node name="Presentation" type="CanvasLayer"]
+layer = 1
+script = ExtResource("Script")
+[node name="Grade" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+material = SubResource("GradeMaterial")
+[node name="Air" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Air")
+volume_db = -16.0
+[node name="Success" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Success")
+volume_db = -16.0
+[node name="Paper" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Paper")
+volume_db = -16.0
+[node name="Cloth" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Cloth")
+volume_db = -16.0
+[node name="Sweep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Sweep")
+volume_db = -16.0
+[node name="Door" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Door")
+volume_db = -16.0
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Click")
+volume_db = -16.0
+[node name="Choice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Choice")
+volume_db = -16.0
+[node name="Bell" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Bell")
+volume_db = -16.0
+[node name="Bump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Bump")
+volume_db = -16.0
+[node name="Radio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Radio")
+volume_db = -16.0
+[node name="Tick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("Tick")
+volume_db = -16.0

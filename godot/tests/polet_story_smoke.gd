@@ -95,6 +95,7 @@ func clean(path: String, id: String) -> void:
 
 func run() -> void:
 	level = load("res://scenes/levels/polet.tscn").instantiate()
+	level.set_meta("test_mode", true)
 	root.add_child(level)
 	story = level.story
 	await frames(4)
@@ -141,7 +142,7 @@ func run() -> void:
 	story.dialogue.get_node("Card/Choice1").pressed.emit()
 	await frames()
 	check(story.stage == story.Stage.RADIO, "Child farewell unlocks equipment return")
-	check(not level.get_node("World/Camp/Child").visible and level.get_node("World/Camp/Child/CollisionShape2D").disabled, "Departed child leaves no invisible collider")
+	check(level.get_node("World/Camp/Child/CollisionShape2D").disabled, "Departing child no longer blocks the path")
 	await target("World/Camp/TalkDirector")
 	await press_e()
 	story.dialogue.get_node("Card/Choice1").pressed.emit()
@@ -185,7 +186,7 @@ func run() -> void:
 	await target("World/Dorm/Outfit")
 	await press_e()
 	story.choose(1)
-	check(story.outfit == 1 and level.player.get_node("Jacket").color.r > 0.7, "Optional outfit changes capsule colour")
+	check(story.outfit == 1 and level.player.outfit == 1, "Optional outfit changes character costume")
 	level.enter_location("camp", "Entrance")
 	await target("World/Camp/Ride")
 	await press_e()
@@ -224,7 +225,8 @@ func run() -> void:
 	await press_e()
 	check(story.dialogue_kind == "finale", "Final dialogue reachable among guests")
 	for i in range(3):story.dialogue.get_node("Card/Choice1").pressed.emit()
-	check(story.stage == story.Stage.DONE and not story.busy, "Full story reaches playable ending")
+	check(story.stage == story.Stage.DONE and story.modal == "pause", "Full story reaches closing card")
+	story.pause_panel.get_node("Card/Resume").pressed.emit()
 	check(level.player.movement_enabled and not story.enabled("finale"), "Free exploration after ending, finale not repeated")
 	level.enter_location("camp", "Entrance")
 	check(story.stage == story.Stage.DONE and story.finished.has("linen"), "Returning to entrance preserves quest state")
@@ -233,4 +235,6 @@ func run() -> void:
 	await frames(4)
 	# Fixed-fps tests can finish before the audio mixing thread releases its last buffer.
 	OS.delay_msec(50)
+	await process_frame
+	await process_frame
 	quit(0 if failures.is_empty() else 1)

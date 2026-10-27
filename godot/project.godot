@@ -66,3 +66,10 @@ renderer/rendering_method.mobile="gl_compatibility"
 textures/default_filters/use_nearest_mipmap_filter=false
 anti_aliasing/quality/msaa_3d=1
 environment/defaults/default_clear_color=Color(0.09, 0.11, 0.16, 1)
+
+[shader_globals]
+
+polet_wind={
+"type": "float",
+"value": 1.0
+}

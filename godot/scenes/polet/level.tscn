@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3]
+[gd_scene load_steps=23 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/level.gd" id="1"]
 
@@ -26,6 +26,9 @@
 [ext_resource type="Texture2D" path="res://assets/polet/props/party/garland_straight_off.png" id="garland_off"]
 [ext_resource type="Texture2D" path="res://assets/polet/props/party/garland_straight_on.png" id="garland_on"]
 
+[ext_resource type="PackedScene" path="res://scenes/polet/presentation.tscn" id="Presentation"]
+[ext_resource type="PackedScene" path="res://scenes/polet/map_labels.tscn" id="MapLabels"]
+[ext_resource type="PackedScene" path="res://scenes/polet/story/counselor_male.tscn" id="Male"]
 [sub_resource type="Gradient" id="WarmFalloff"]
 offsets = PackedFloat32Array(0, 0.35, 1)
 colors = PackedColorArray(1,1,1,1, 1,1,1,0.8, 1,1,1,0)
@@ -119,6 +122,7 @@ zoom = Vector2(0.4, 0.4)
 enabled = true
 
 [node name="Interface" type="CanvasLayer" parent="."]
+layer = 5
 
 
 [node name="HeaderBackground" type="ColorRect" parent="Interface"]
@@ -143,7 +147,7 @@ offset_top = 59.0
 offset_right = 700.0
 offset_bottom = 90.0
 theme_override_font_sizes/font_size = 15
-text = "WASD / стрелки · Shift — бег · E — действие\nTab — обзор территории · R — к воротам"
+text = "WASD / стрелки · Shift — бег · E — действие\nTab — карта · Esc — пауза · R — к воротам"
 
 [node name="Prompt" type="Label" parent="Interface"]
 anchors_preset = 12
@@ -171,7 +175,7 @@ theme_override_colors/font_shadow_color = Color(0,0,0,1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 17
-text = "ПОЛЁТ · обзор территории     |     Tab / Esc — вернуться к персонажу"
+text = "КАРТА · бирюзовая стрелка — ты · жёлтый ромб — цель     |     Tab / Esc — вернуться"
 
 [node name="Story" parent="." instance=ExtResource("story")]
 
@@ -276,7 +280,7 @@ position = Vector2(290,180)
 position = Vector2(190,220)
 
 
-[node name="Counselor2" parent="World/Glass/EveningGuests" instance=ExtResource("counselor")]
+[node name="Counselor2" parent="World/Glass/EveningGuests" instance=ExtResource("Male")]
 position = Vector2(310,240)
 
 
@@ -294,3 +298,11 @@ color = Color(1, 0.82, 0.53, 1)
 energy = 0.8
 texture = SubResource("WarmLightTexture")
 texture_scale = 2.0
+
+[node name="Presentation" parent="." instance=ExtResource("Presentation")]
+[node name="MapLabels" parent="World" instance=ExtResource("MapLabels")]
+[node name="DepartureRoute" type="Node2D" parent="World/Camp"]
+[node name="Path1" type="Marker2D" parent="World/Camp/DepartureRoute"]
+position = Vector2(896,1155)
+[node name="Path2" type="Marker2D" parent="World/Camp/DepartureRoute"]
+position = Vector2(896,1590)
