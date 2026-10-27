@@ -2,10 +2,14 @@
 config_version=5
 
 [application]
+; Preserve the existing cross-platform save directory; Journey sets the window title.
 config/name="Воспоминания · Полёт"
-run/main_scene="res://scenes/levels/polet.tscn"
+run/main_scene="res://scenes/menu/main_menu.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/description="Редактируемые уровни: актовый зал ВГУ, пиксельный лагерь Полёт и ночная база Веневитино."
+
+[autoload]
+Journey="*res://scenes/menu/journey.tscn"
 
 [display]
 window/size/viewport_width=1280

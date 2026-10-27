@@ -71,11 +71,11 @@ offset_bottom = 448.0
 text = "Начать заново…"
 [node name="Controls" type="Label" parent="Card"]
 offset_left = 32.0
-offset_top = 472.0
+offset_top = 536.0
 offset_right = 648.0
 offset_bottom = 572.0
 text = "WASD — ходить · Shift — бег · E — действие\nTab — карта · Esc — пауза\nВ диалогах: мышь, ↑ ↓ + Enter или 1–3"
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 14
 autowrap_mode = 3
 
 [node name="Exit" type="Button" parent="Card"]
@@ -95,3 +95,18 @@ autowrap_mode = 3
 horizontal_alignment = 1
 theme_override_font_sizes/font_size = 24
 theme_override_colors/font_color = Color(1,0.83,0.49,1)
+
+[node name="Album" type="Button" parent="Card"]
+offset_left = 32.0
+offset_top = 468.0
+offset_right = 332.0
+offset_bottom = 518.0
+text = "В альбом"
+[node name="NextChapter" type="Button" parent="Card"]
+visible = false
+offset_left = 348.0
+offset_top = 468.0
+offset_right = 648.0
+offset_bottom = 518.0
+text = "Дальше · Веневитино →"
+theme_override_font_sizes/font_size = 18

@@ -449,7 +449,7 @@ theme_override_styles/panel = SubResource("Style_controls")
 layout_mode = 2
 theme_override_colors/font_color = Color(0.86, 0.89, 0.94, 1)
 theme_override_font_sizes/font_size = 15
-text = "WASD — идти   Shift — бег   Пробел — прыжок   E — дверь   Tab — камера   R — к входу   Esc — курсор"
+text = "WASD — идти   Shift — бег   Пробел — прыжок   E — дверь   Tab — камера   R — к входу   Esc — пауза"
 horizontal_alignment = 1
 
 [connection signal="location_changed" from="Player" to="Interface/Title/Text/Subtitle" method="set_text"]

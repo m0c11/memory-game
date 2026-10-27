@@ -75,6 +75,7 @@ func key(code: int, hold: int = 3) -> void:
 
 func run_checks() -> void:
 	hall = load("res://scenes/levels/auditorium.tscn").instantiate()
+	hall.set_meta("test_mode", true)
 	root.add_child(hall)
 	current_scene = hall
 	player = hall.get_node("Player")

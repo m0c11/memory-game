@@ -57,6 +57,7 @@ func _on_hunt_completed() -> void:
 
 func run() -> void:
 	scene = load("res://scenes/levels/venevitino.tscn").instantiate()
+	scene.set_meta("test_mode", true)
 	root.add_child(scene)
 	current_scene = scene
 	# Patrol behavior is covered separately; keep this test focused on every hiding place.

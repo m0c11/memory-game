@@ -32,6 +32,8 @@ func _ready() -> void:
 	$Interface/Pause/Card/Resume.pressed.connect(close_modal)
 	$Interface/Pause/Card/Restart.pressed.connect(confirm_restart)
 	$Interface/Pause/Card/Exit.pressed.connect(request_exit)
+	$Interface/Pause/Card/Album.pressed.connect(func(): get_node("/root/Journey").travel(-1))
+	$Interface/Pause/Card/NextChapter.pressed.connect(func(): get_node("/root/Journey").travel(2))
 	level.location_changed.connect(func(_id): $Interface/Notice.modulate.a = 0.0)
 	$Interface/Pause/Card/Volume.value_changed.connect(func(value): level.get_node("Presentation").set_volume(value); save_progress())
 	$Interface/Pause/Card/Wind.toggled.connect(func(value): level.get_node("Presentation").set_wind(value); save_progress())
@@ -400,6 +402,7 @@ func open_pause(ending: bool = false) -> void:
 	for name in ["VolumeLabel", "Volume", "Wind", "Fullscreen", "Controls"]:
 		pause_panel.get_node("Card/" + name).visible = not ending
 	pause_panel.get_node("Card/EndingQuote").visible = ending
+	pause_panel.get_node("Card/NextChapter").visible = ending
 	pause_panel.get_node("Card/Resume").position.y = 342.0 if ending else 188.0
 	pause_panel.show()
 	pause_panel.get_node("Card/Resume").grab_focus()
@@ -422,6 +425,10 @@ func restart_level() -> void:
 	get_tree().reload_current_scene()
 
 func request_exit() -> void:
+	var journey := get_node_or_null("/root/Journey")
+	if journey != null and get_tree().current_scene == level:
+		journey.request_quit()
+		return
 	if not save_progress():
 		start_dialogue("exit_unsaved", "Сохранение недоступно", "Сейчас не получилось записать прогресс. Можно остаться в игре и попробовать позже.", ["Остаться в лагере.", "Выйти без сохранения."])
 		return

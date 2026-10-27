@@ -27,11 +27,17 @@ func place_player(pos):
 	await frames(4)
 func run():
 	scene=load("res://scenes/levels/venevitino.tscn").instantiate()
+	scene.set_meta("test_mode", true)
 	root.add_child(scene);current_scene=scene
 	watch=scene.get_node("Organizers");player=scene.get_node("Player");hunt=scene.get_node("BottleHunt")
 	var map_ready_deadline=Time.get_ticks_msec()+10000
 	var navigation_map=watch.guards[0].agent.get_navigation_map()
 	while NavigationServer3D.map_get_iteration_id(navigation_map)==0 and Time.get_ticks_msec()<map_ready_deadline:
+		await physics_frame
+	# An iteration can precede asynchronous region synchronization on a busy CPU.
+	var route=watch.guards[0].route
+	while NavigationServer3D.map_get_path(navigation_map,route.get_child(0).global_position,route.get_child(1).global_position,true).size()<2 and Time.get_ticks_msec()<map_ready_deadline:
+		OS.delay_msec(1)
 		await physics_frame
 	check("saved navigation map synchronized",NavigationServer3D.map_get_iteration_id(navigation_map)>0)
 	await frames(20)
@@ -112,6 +118,8 @@ func run():
 	print("ORGANIZER RESULT ",checks," checks; failures=",failures)
 	hunt.pickup_sound.stop()
 	scene.queue_free()
+	await process_frame
+	OS.delay_msec(100)
 	await process_frame
 	await process_frame
 	quit(0 if failures.is_empty() else 1)

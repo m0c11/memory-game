@@ -21,7 +21,7 @@ func place(pos,yaw=0.0):
 func walk(action,n):
  Input.action_press(action);await frames(n);Input.action_release(action);await frames(8)
 func run():
- scene=load("res://scenes/levels/venevitino.tscn").instantiate();root.add_child(scene);current_scene=scene;player=scene.get_node("Player")
+ scene=load("res://scenes/levels/venevitino.tscn").instantiate();scene.set_meta("test_mode",true);root.add_child(scene);current_scene=scene;player=scene.get_node("Player")
  # Isolate architectural traversal; organizer_smoke covers moving patrols and encounters.
  var patrols=scene.get_node("Organizers")
  patrols.process_mode=Node.PROCESS_MODE_DISABLED
