@@ -58,7 +58,7 @@ offset_left = 40.0
 offset_top = 28.0
 offset_right = 600.0
 offset_bottom = 58.0
-text = "АЛЬБОМ ВОСПОМИНАНИЙ"
+text = "НИТЬ ВОСПОМИНАНИЙ"
 theme_override_font_sizes/font_size = 15
 autowrap_mode = 3
 mouse_filter = 2
@@ -103,7 +103,7 @@ offset_left = 40.0
 offset_top = 363.0
 offset_right = 600.0
 offset_bottom = 413.0
-text = "В альбом · Главное меню"
+text = "К нити воспоминаний"
 
 [node name="Settings" type="Button" parent="UI/Modal/Page/Card"]
 offset_left = 40.0

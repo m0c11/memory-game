@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://scenes/thread_map/thread_map.tscn" id="map"]
+[node name="FinalePreview" instance=ExtResource("map")]
+preview_finale = true

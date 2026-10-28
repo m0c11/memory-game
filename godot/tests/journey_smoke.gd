@@ -1,130 +1,131 @@
 extends SceneTree
-## Real scene transitions, paused input, checkpoint preservation and album navigation.
-## Run with an isolated XDG_DATA_HOME: this intentionally exercises actual Polet saves.
+## Actual menu → automatic map → levels → map; isolate all player files.
+var flow
 var checks := 0
 var failures: Array[String] = []
-var flow
 func _initialize() -> void: call_deferred("run")
 func check(value: bool, label: String) -> void:
 	checks += 1
-	print("PASS " if value else "FAIL ", label)
+	print("PASS " if value else "FAIL ",label)
 	if not value: failures.append(label)
 func frames(count: int = 3) -> void:
 	for i in range(count): await process_frame
-func key(code: int) -> void:
-	var event := InputEventKey.new()
-	event.physical_keycode = code; event.keycode = code; event.pressed = true
-	Input.parse_input_event(event)
-	await frames()
-	event = InputEventKey.new(); event.physical_keycode = code; event.keycode = code
-	Input.parse_input_event(event)
-	await frames()
+func wait_transition() -> void:
+	var until := Time.get_ticks_msec()+40000
+	while flow.transitioning and Time.get_ticks_msec()<until: await process_frame
+	check(not flow.transitioning,"Scene transition completes")
+	await frames(4)
 func travel(index: int) -> void:
 	flow.travel(index)
-	var start := Time.get_ticks_msec()
-	while flow.transitioning and Time.get_ticks_msec() - start < 45000:
-		await process_frame
-	check(not flow.transitioning, "Transition finishes to " + str(index))
-	await frames(5)
-func run() -> void:
-	flow = root.get_node("Journey")
-	# Do not risk touching a developer's or player's save when invoked incorrectly.
-	if not OS.get_environment("XDG_DATA_HOME").contains("journey-smoke"):
-		push_error("Use XDG_DATA_HOME=/tmp/journey-smoke/data to isolate player saves")
-		quit(2); return
-	PoletSave.write_data({"version":1,"finished":[]})
-	flow.last_chapter = -1
-	flow.bottles.clear()
-	flow.save_path = "user://journey_smoke.cfg"
-	change_scene_to_file(flow.MENU)
-	await scene_changed
-	await frames()
-	check(current_scene.has_node("Page/Chapters/Chapter2"), "All three chapters authored in album")
-	check(current_scene.get_node("Page/Continue").text == "Начать путешествие", "Fresh start opens first chapter")
-	current_scene.select_chapter(2)
-	check(current_scene.selected == 2 and current_scene.get_node("Page/Chapters/Chapter2").button_pressed, "Chapter selection updates without switching scene")
-	flow.open_settings()
-	check(paused and flow.settings.visible, "Settings freeze game and accept UI input")
-	flow.settings.get_node("Volume").value = 0.35
-	flow.settings.get_node("Motion").button_pressed = false
-	await key(KEY_ESCAPE)
-	check(not paused and not flow.modal.visible, "Esc closes settings and returns to album")
-	check(is_equal_approx(flow.volume,0.35) and not flow.motion, "Settings kept")
-	await travel(0)
-	check(current_scene.scene_file_path == flow.CHAPTERS[0], "Album opens concert hall")
-	flow.open_pause()
-	var player = current_scene.get_node("Player")
-	var before: Vector3 = player.global_position
-	Input.action_press("move_forward"); await frames(20); Input.action_release("move_forward")
-	check(player.global_position.is_equal_approx(before), "Pause freezes 3D movement")
-	check(flow.card.get_node("Next").visible, "Hall has manual next-chapter action")
-	await key(KEY_ESCAPE)
-	check(not paused and not flow.modal.visible, "Esc resumes hall")
-	# Double activation cannot enqueue a competing scene load.
-	flow.travel(1); flow.travel(2)
-	while flow.transitioning: await process_frame
-	await frames(5)
-	check(flow.chapter == 1 and current_scene.scene_file_path == flow.CHAPTERS[1], "Double activation guarded")
-	check(is_equal_approx(current_scene.get_node("Presentation").volume, 0.35), "Album volume carries into Polet")
-	var story = current_scene.get_node("Story")
-	if story.busy: story.close_modal()
-	story.finish_task("linen")
-	story.open_pause()
-	check(not story.pause_panel.get_node("Card/NextChapter").visible, "Polet next chapter waits for finale")
-	check(story.pause_panel.get_node("Card/Album").visible, "Polet pause offers album")
-	await travel(-1)
-	check(PoletSave.read_data().finished.has("linen"), "Returning to album saves Polet checkpoint")
-	check(flow.last_chapter == 1, "Album preserves last chapter for Continue")
-	await travel(1)
-	story = current_scene.get_node("Story")
-	check(story.finished.has("linen"), "Continue restores Polet completed task")
-	if story.busy: story.close_modal()
-	for id in PoletSave.TASKS: story.finish_task(id)
-	story.stage = story.Stage.DONE
-	story.open_pause(true)
-	check(story.pause_panel.get_node("Card/NextChapter").visible, "Polet ending offers Venevitino")
-	await travel(2)
-	check(current_scene.scene_file_path == flow.CHAPTERS[2], "Polet transitions to Venevitino")
-	check(current_scene.get_node("Player").first_person and (DisplayServer.get_name() == "headless" or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED), "FPS active after curtain (mouse capture checked with display)")
-	var hunt = current_scene.get_node("BottleHunt")
-	hunt.bottles[0].collect()
-	await frames()
-	check(flow.bottles.size() == 1, "Bottle stored immediately")
-	await key(KEY_ESCAPE)
-	check(paused and flow.modal.visible and Input.mouse_mode == Input.MOUSE_MODE_VISIBLE, "FPS pause frees mouse")
-	await key(KEY_ESCAPE)
-	check(not paused and (DisplayServer.get_name() == "headless" or Input.mouse_mode == Input.MOUSE_MODE_CAPTURED), "FPS resume (mouse capture checked with display)")
-	await travel(-1)
-	await travel(2)
-	hunt = current_scene.get_node("BottleHunt")
-	check(hunt.collected_count == 1 and hunt.bottles[0].is_collected and not hunt.bottles[0].visible, "Returning to Venevitino restores bottle and counter")
-	for bottle in hunt.bottles: bottle.collect()
-	await frames(5)
-	check(flow.modal.visible and paused and flow.modal_kind == "ending", "All bottles open authored chapter ending")
-	flow.resume()
-	check(not paused, "Ending allows more exploration")
-	await travel(-1)
-	var count: int = flow.bottles.size()
-	flow.bottles.clear(); flow.last_chapter = -1; flow.read_progress()
-	check(flow.bottles.size() == count and flow.last_chapter == 2, "Journey save survives reload")
-	check(current_scene.get_node("Page/Continue").text == "Продолжить путешествие", "Album offers Continue")
-	await travel(2)
-	check(current_scene.get_node("BottleHunt").collected_count == count and not current_scene.get_node("Organizers").enabled, "Completed hunt restores peaceful exploration")
-	await travel(-1)
-	flow.open_settings(); flow.close_settings()
-	check(not paused, "Menu settings still usable after round trip")
-	# Read-only path failure keeps the loaded scene and gives a recoverable modal.
-	flow.save_path = "res://missing-parent/never.cfg"
-	var original = current_scene
-	flow.travel(0)
-	check(current_scene == original and not flow.transitioning and flow.modal.visible, "Save failure cancels travel without losing current scene")
-	flow.resume()
-	flow.test_mode = true
-	flow.get_node("Music").stop()
-	current_scene.queue_free()
+	await wait_transition()
+func arrive() -> void:
+	var until := Time.get_ticks_msec()+10000
+	while current_scene.rolling and Time.get_ticks_msec()<until: await process_frame
+	check(not current_scene.rolling,"Yarn arrives automatically")
 	await frames(8)
-	flow.get_node("Music").stop()
-	OS.delay_msec(100)
-	await frames(3)
-	print("JOURNEY: %d checks, %d failures" % [checks, failures.size()])
+func key(code: int) -> void:
+	var event := InputEventKey.new();event.keycode=code;event.physical_keycode=code;event.pressed=true
+	Input.parse_input_event(event);await frames()
+	event = InputEventKey.new();event.keycode=code;event.physical_keycode=code
+	Input.parse_input_event(event);await frames()
+func run() -> void:
+	if not OS.get_environment("XDG_DATA_HOME").contains("journey-smoke"):
+		push_error("Run with XDG_DATA_HOME=/tmp/journey-smoke/data");quit(2);return
+	flow=root.get_node("Journey")
+	flow.save_path="user://thread_journey_test.cfg"
+	flow.map_started=false
+	change_scene_to_file(flow.MENU);await scene_changed;await frames()
+	check(current_scene.has_node("Page/Start") and not current_scene.has_node("Page/Chapters"),"Simple start menu replaces chapter album")
+	check(current_scene.get_node("Page/Continue").disabled,"No Continue before first run")
+	flow.start_new_game();await wait_transition();await arrive()
+	check(current_scene.scene_file_path==flow.MAP and flow.map_unlocked==0,"Start opens first map stop only")
+	check(is_equal_approx(flow.map_progress,0.055),"Arrival stores exact first stop")
+	check(float(current_scene.get_node("Thread").material.get_shader_parameter("revealed"))<0.06,"Future thread is concealed")
+	check(not current_scene.get_node("Stops/Stop1").visible,"Future chapter labels stay hidden")
+	check(not flow.can_reveal(),"Final word is locked")
+	flow.travel(2);await frames()
+	check(current_scene.scene_file_path==flow.MAP and not flow.transitioning,"Cannot bypass chapter gate")
+	current_scene.enter_chapter();flow.travel(1);await wait_transition()
+	check(flow.chapter==0,"Double activation cannot skip the hall")
+	flow.open_pause()
+	var pos: Vector3=current_scene.get_node("Player").global_position
+	Input.action_press("move_forward");await frames(12);Input.action_release("move_forward")
+	check(pos.is_equal_approx(current_scene.get_node("Player").global_position),"Pause freezes hall movement")
+	await key(KEY_ESCAPE)
+	check(not paused,"Esc resumes 3D level")
+	await travel(-2);await arrive()
+	check(flow.map_unlocked==0 and current_scene.target_stop==0,"Leaving unfinished hall does not complete it")
+	await travel(0)
+	flow.finish_and_return();await wait_transition()
+	check(current_scene.rolling and current_scene.target_stop==1,"Hall finish starts automatic roll toward Polet")
+	check(current_scene.get_node("HUD/UI/Page/Card/Enter").disabled,"Cannot enter chapter while rolling")
+	await frames(30)
+	var middle: float=flow.map_progress
+	check(middle>0.055 and middle<0.26,"Yarn travels along the saved curve")
+	await travel(-1)
+	check(not current_scene.get_node("Page/Continue").disabled,"Continue becomes available")
+	current_scene.start_game();await frames()
+	check(current_scene.get_node("NewGame").visible,"New run requires confirmation")
+	current_scene.get_node("NewGame").hide()
+	var epoch: int=flow.run_id
+	check(flow.run_id==epoch and flow.map_unlocked==1,"Dismissing confirmation preserves progress")
+	flow.open_settings();flow.settings.get_node("Volume").value=0.35;await key(KEY_ESCAPE)
+	check(not paused and is_equal_approx(flow.volume,0.35),"Settings save and return to main menu")
+	flow.read_progress()
+	check(is_equal_approx(flow.map_progress,middle),"Mid-roll position survives disk round trip")
+	await travel(-2)
+	check(flow.map_progress>=middle,"Continue resumes the unfinished segment")
+	await arrive()
+	check(current_scene.target_stop==1 and is_equal_approx(flow.map_progress,0.26),"Continue arrives at Polet")
+	await travel(1)
+	var story=current_scene.get_node("Story")
+	check(story.finished.is_empty(),"New run ignores older Polet checkpoints")
+	if story.busy:story.close_modal()
+	story.finish_task("linen")
+	await travel(-2);await arrive()
+	check(current_scene.target_stop==1 and flow.map_unlocked==1,"Incomplete Polet stays at its own stop")
+	await travel(1);story=current_scene.get_node("Story")
+	check(story.finished.has("linen"),"Same run restores Polet task")
+	if story.busy:story.close_modal()
+	for id in PoletSave.TASKS:story.finish_task(id)
+	story.stage=story.Stage.DONE
+	story.open_pause(true)
+	story.pause_panel.get_node("Card/NextChapter").pressed.emit()
+	await wait_transition();await arrive()
+	check(current_scene.target_stop==2 and 1 in flow.map_completed,"Polet finale returns through map to Venevitino")
+	await travel(2)
+	check(DisplayServer.get_name()=="headless" or Input.mouse_mode==Input.MOUSE_MODE_CAPTURED,"FPS captures cursor after transition")
+	var hunt=current_scene.get_node("BottleHunt")
+	hunt.bottles[0].collect();await frames()
+	await key(KEY_ESCAPE)
+	check(paused and flow.modal.visible,"FPS pause freezes world")
+	await key(KEY_ESCAPE);check(not paused,"FPS resumes")
+	await travel(-2);await arrive();await travel(2)
+	hunt=current_scene.get_node("BottleHunt")
+	check(hunt.collected_count==1,"Bottles survive map excursion")
+	for bottle in hunt.bottles:bottle.collect()
+	await frames(5)
+	check(flow.modal.visible and flow.modal_kind=="ending","Last bottle opens ending")
+	flow.finish_and_return();await wait_transition();await arrive()
+	check(current_scene.target_stop==3 and flow.map_unlocked==3,"Third chapter reaches reserved corporate stop")
+	check(current_scene.get_node("HUD/UI/Page/Card/Enter").disabled,"Unbuilt chapter cannot open missing resource")
+	check(not flow.can_reveal() and not current_scene.revealing,"Three levels do not expose final LOVE")
+	current_scene.go_to(2);await arrive()
+	check(flow.map_revealed>=0.70 and is_equal_approx(flow.map_progress,0.48),"Replay moves back without erasing thread")
+	await travel(2)
+	check(not current_scene.get_node("Organizers").enabled,"Completed hunt restores peaceful exploration")
+	await travel(-1)
+	flow.start_new_game();await wait_transition();await arrive()
+	check(flow.run_id==epoch+1 and flow.bottles.is_empty() and flow.map_completed.is_empty(),"New run resets route and bottles using a new save epoch")
+	flow.mark_finished(0);await travel(1)
+	check(current_scene.get_node("Story").finished.is_empty(),"New run cannot resurrect old Polet save or backup")
+	await travel(-1)
+	flow.save_path="res://missing-directory/never.cfg"
+	var saved_epoch: int=flow.run_id
+	flow.start_new_game()
+	check(flow.run_id==saved_epoch and flow.modal.visible and not flow.transitioning,"Failed new-run write rolls back all progress")
+	flow.resume();flow.test_mode=true
+	current_scene.queue_free();await frames(6)
+	flow.get_node("Music").stop();OS.delay_msec(100);await frames()
+	print("JOURNEY MAP: %d checks, %d failures" % [checks,failures.size()])
 	quit(0 if failures.is_empty() else 1)

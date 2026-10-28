@@ -24,7 +24,7 @@ static func sanitize(data: Variant) -> Dictionary:
 	if data.get("volume") is float or data.get("volume") is int: volume = clampf(float(data.volume),0.0,1.0)
 	var hits := 0
 	if data.get("music_hits") is float or data.get("music_hits") is int: hits = clampi(int(data.music_hits),0,2)
-	return {"version":1,"finished":flags,"switches":switches,"outfit":outfit,"volume":volume,"wind":data.get("wind",true) == true,"music_hits":hits}
+	return {"version":1,"run_id":maxi(0,int(data.get("run_id",0))),"finished":flags,"switches":switches,"outfit":outfit,"volume":volume,"wind":data.get("wind",true) == true,"music_hits":hits}
 
 static func read_data(path: String = PATH) -> Dictionary:
 	for candidate in [path, path + ".bak"]:

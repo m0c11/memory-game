@@ -32,8 +32,8 @@ func _ready() -> void:
 	$Interface/Pause/Card/Resume.pressed.connect(close_modal)
 	$Interface/Pause/Card/Restart.pressed.connect(confirm_restart)
 	$Interface/Pause/Card/Exit.pressed.connect(request_exit)
-	$Interface/Pause/Card/Album.pressed.connect(func(): get_node("/root/Journey").travel(-1))
-	$Interface/Pause/Card/NextChapter.pressed.connect(func(): get_node("/root/Journey").travel(2))
+	$Interface/Pause/Card/Album.pressed.connect(func(): get_node("/root/Journey").travel(-2))
+	$Interface/Pause/Card/NextChapter.pressed.connect(func(): get_node("/root/Journey").finish_and_return())
 	level.location_changed.connect(func(_id): $Interface/Notice.modulate.a = 0.0)
 	$Interface/Pause/Card/Volume.value_changed.connect(func(value): level.get_node("Presentation").set_volume(value); save_progress())
 	$Interface/Pause/Card/Wind.toggled.connect(func(value): level.get_node("Presentation").set_wind(value); save_progress())
@@ -354,7 +354,7 @@ func apply_outfit() -> void:
 
 func snapshot() -> Dictionary:
 	var presentation = level.get_node("Presentation")
-	return {"version":1, "finished":finished.keys(), "outfit":outfit, "switches":circuit.switches, "music_hits":music.hits, "volume":presentation.volume, "wind":presentation.wind}
+	return {"version":1, "run_id":get_node("/root/Journey").run_id, "finished":finished.keys(), "outfit":outfit, "switches":circuit.switches, "music_hits":music.hits, "volume":presentation.volume, "wind":presentation.wind}
 
 func save_progress() -> bool:
 	if restoring or level.get_meta("test_mode", false): return true
@@ -387,7 +387,7 @@ func startup() -> void:
 	refresh()
 	if level.get_meta("test_mode", false): return
 	var data := PoletSave.read_data()
-	if not data.is_empty():
+	if not data.is_empty() and data.get("run_id",0) == get_node("/root/Journey").run_id:
 		restore(data)
 		notice("Продолжаем последний день · прогресс восстановлен")
 		if stage == Stage.DONE: open_pause(true)

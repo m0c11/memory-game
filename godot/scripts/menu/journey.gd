@@ -1,10 +1,19 @@
 extends CanvasLayer
 ## Persistent navigation only. All UI and worlds are authored PackedScenes.
+const MAP := "res://scenes/thread_map/thread_map.tscn"
 const MENU := "res://scenes/menu/main_menu.tscn"
 const CHAPTERS := ["res://scenes/levels/auditorium.tscn", "res://scenes/levels/polet.tscn", "res://scenes/levels/venevitino.tscn"]
 const TITLES := ["Студвесна", "Полёт · Последний день", "Веневитино · После заката"]
 const QUOTES := ["Вдохнуть. Улыбнуться. Сделать шаг к свету.", "Лето заканчивается. Забота остаётся.", "За знакомой тропинкой начинается маленькое приключение."]
 var save_path := "user://journey_v1.cfg"
+var run_id := 0
+var map_started := false
+var map_advance := false
+var map_completed: Array[int] = []
+var map_unlocked := 0
+var map_stop := 0
+var map_progress := 0.0
+var map_revealed := 0.0
 var last_chapter := -1
 var chapter := -1
 var bottles: Array[String] = []
@@ -34,8 +43,8 @@ func _ready() -> void:
 	get_tree().scene_changed.connect(on_scene_changed)
 	$UI/Shortcut.pressed.connect(open_pause)
 	card.get_node("Resume").pressed.connect(resume)
-	card.get_node("Next").pressed.connect(func(): travel(chapter + 1))
-	card.get_node("Home").pressed.connect(func(): travel(-1))
+	card.get_node("Next").pressed.connect(finish_and_return)
+	card.get_node("Home").pressed.connect(func(): travel(-2) if chapter >= 0 else travel(-1))
 	card.get_node("Settings").pressed.connect(open_settings)
 	card.get_node("Exit").pressed.connect(request_quit)
 	settings.get_node("Back").pressed.connect(close_settings)
@@ -51,10 +60,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	music_delay = maxf(0.0, music_delay - delta)
 	var scene := get_tree().current_scene
-	var in_album := is_instance_valid(scene) and scene.scene_file_path == MENU and not transitioning
-	if in_album and music_delay <= 0.0 and not $Music.playing: $Music.play()
-	$Music.volume_db = move_toward($Music.volume_db, -24.0 if in_album else -60.0, delta * 60.0)
-	if not in_album and $Music.volume_db <= -59.0: $Music.stop()
+	var in_menu_or_map := is_instance_valid(scene) and scene.scene_file_path in [MENU,MAP] and not transitioning
+	if in_menu_or_map and music_delay <= 0.0 and not $Music.playing: $Music.play()
+	$Music.volume_db = move_toward($Music.volume_db, -24.0 if in_menu_or_map else -60.0, delta * 60.0)
+	if not in_menu_or_map and $Music.volume_db <= -59.0: $Music.stop()
 
 func _exit_tree() -> void:
 	$Music.stop()
@@ -72,6 +81,7 @@ func read_progress() -> void:
 		if cfg.load(path) != OK or cfg.get_value("journey", "version", 0) != 1: continue
 		var last = cfg.get_value("journey", "last", -1)
 		if last is int: last_chapter = clampi(last, -1, 2)
+		bottles.clear()
 		var found = cfg.get_value("journey", "bottles", [])
 		if found is Array:
 			for id in found:
@@ -80,17 +90,48 @@ func read_progress() -> void:
 		if loudness is float or loudness is int: volume = clampf(loudness,0.0,1.0)
 		motion = cfg.get_value("settings", "motion", true) == true
 		fullscreen = cfg.get_value("settings", "fullscreen", false) == true
+		run_id = maxi(0,int(cfg.get_value("journey","run_id",0)))
+		map_advance = cfg.get_value("map","advance",false) == true
+		map_started = cfg.get_value("map","started",last_chapter>=0) == true
+		map_unlocked = clampi(int(cfg.get_value("map","unlocked",maxi(0,last_chapter))),0,5)
+		map_stop = clampi(int(cfg.get_value("map","stop",maxi(0,last_chapter))),0,map_unlocked)
+		map_progress = clampf(float(cfg.get_value("map","progress",0.0)),0.0,1.0)
+		map_revealed = clampf(float(cfg.get_value("map","revealed",map_progress)),map_progress,1.0)
+		map_completed.clear()
+		var done = cfg.get_value("map","completed",[])
+		if done is Array:
+			for id in done:
+				if id is int and id >= 0 and id < 5 and id not in map_completed: map_completed.append(id)
+		if not cfg.has_section("map"): migrate_completion()
+		# A partial/edited config must not expose the final word ahead of the story.
+		if not can_reveal():
+			map_unlocked = mini(map_unlocked,4)
+			map_stop = mini(map_stop,map_unlocked)
+			map_progress = minf(map_progress,0.87)
+			map_revealed = minf(map_revealed,0.87)
 		return
 	# Existing Polet saves remain in place when upgrading an older project.
 	var polet := PoletSave.read_data()
 	if not polet.is_empty():
 		last_chapter = 1
 		volume = polet.volume
+		map_started = true
+		map_stop = 1
+		map_unlocked = 1
+		migrate_completion()
 
 func persist() -> bool:
 	if test_mode: return true
 	var cfg := ConfigFile.new()
 	cfg.set_value("journey", "version", 1)
+	cfg.set_value("journey","run_id",run_id)
+	cfg.set_value("map","started",map_started)
+	cfg.set_value("map","advance",map_advance)
+	cfg.set_value("map","completed",map_completed)
+	cfg.set_value("map","unlocked",map_unlocked)
+	cfg.set_value("map","stop",map_stop)
+	cfg.set_value("map","progress",map_progress)
+	cfg.set_value("map","revealed",map_revealed)
 	cfg.set_value("journey", "last", last_chapter)
 	cfg.set_value("journey", "bottles", bottles)
 	cfg.set_value("settings", "volume", volume)
@@ -118,6 +159,9 @@ func on_scene_changed() -> void:
 	get_tree().auto_accept_quit = false
 	if chapter < 0: return
 	last_chapter = chapter
+	map_started = true
+	map_stop = chapter
+	map_unlocked = maxi(map_unlocked,chapter)
 	if chapter == 2:
 		var hunt = scene.get_node("BottleHunt")
 		for bottle in hunt.bottles:
@@ -140,11 +184,60 @@ func on_bottle_collected(bottle: Node) -> void:
 	if id not in bottles: bottles.append(id)
 	if not persist(): show_error("Бутылка найдена, но сохранение недоступно. Попробуй вернуться в меню позже.")
 
+func migrate_completion() -> void:
+	var polet := PoletSave.read_data()
+	if not polet.is_empty() and polet.get("run_id",0) == run_id and "finale" in polet.finished:
+		mark_finished(1)
+	if bottles.size() >= 20: mark_finished(2)
+
+func can_reveal() -> bool:
+	for i in range(5):
+		if i not in map_completed: return false
+	return true
+
+func mark_finished(index: int) -> void:
+	if index < 0 or index > 4: return
+	if index not in map_completed: map_completed.append(index)
+	if index == map_stop: map_advance = true
+	map_unlocked = maxi(map_unlocked,mini(index+1,4))
+	if can_reveal(): map_unlocked = 5
+
+func finish_and_return() -> void:
+	if chapter == 0:
+		mark_finished(0) # Temporary explicit end of the hall walkthrough, not a quest win.
+	elif chapter == 1 and get_tree().current_scene.get_node("Story").stage == 6:
+		mark_finished(1)
+	elif chapter == 2 and get_tree().current_scene.get_node("BottleHunt").completed:
+		mark_finished(2)
+	travel(-2)
+
+func start_new_game() -> void:
+	if transitioning or get_tree().current_scene.scene_file_path != MENU: return
+	var previous := [run_id,map_started,map_completed.duplicate(),map_unlocked,map_stop,map_progress,map_revealed,last_chapter,bottles.duplicate(),map_advance]
+	run_id += 1
+	map_started = true
+	map_completed.clear()
+	map_advance = false
+	map_unlocked = 0
+	map_stop = 0
+	map_progress = 0.0
+	map_revealed = 0.0
+	last_chapter = -1
+	bottles.clear()
+	if not persist():
+		run_id=previous[0];map_started=previous[1];map_completed.assign(previous[2]);map_unlocked=previous[3];map_stop=previous[4];map_progress=previous[5];map_revealed=previous[6];last_chapter=previous[7];bottles.assign(previous[8]);map_advance=previous[9]
+		show_error("Не удалось начать новую историю. Прежнее прохождение сохранено.")
+		return
+	travel(-2)
+
 func save_current() -> bool:
 	var scene := get_tree().current_scene
 	if is_instance_valid(scene) and chapter == 1:
 		volume = scene.get_node("Presentation").volume
 		if not scene.get_node("Story").save_progress(): return false
+		if scene.get_node("Story").stage == 6: mark_finished(1)
+	if is_instance_valid(scene) and chapter == 2 and scene.get_node("BottleHunt").completed:
+		mark_finished(2)
 	return persist()
 
 func _input(event: InputEvent) -> void:
@@ -164,14 +257,19 @@ func open_pause() -> void:
 	begin_modal()
 	modal_kind = "pause"
 	card.get_node("Title").text = TITLES[chapter] if chapter >= 0 else "Наши воспоминания"
-	card.get_node("Text").text = "Можно ещё побыть здесь или открыть следующую страницу альбома." if chapter < 2 else "Можно остаться на ночную прогулку или вернуться к другим воспоминаниям."
+	card.get_node("Text").text = "Можно ещё побыть здесь или вернуться к нити воспоминаний." if chapter < 2 else "Можно остаться на ночную прогулку или вернуться к другим воспоминаниям."
 	card.get_node("Status").text = "WASD — ходить · Shift — бег · Tab — камера\nE — действие · Esc — вернуться" if chapter != 1 else "Прогресс последнего дня сохранится при переходе."
-	card.get_node("Next").visible = chapter in [0,1]
-	card.get_node("Next").text = "Дальше · " + TITLES[chapter + 1] if chapter in [0,1] else ""
+	card.get_node("Next").visible = chapter == 0 or (chapter == 2 and get_tree().current_scene.get_node("BottleHunt").completed)
+	card.get_node("Next").text = "Закончить прогулку · к нити" if chapter == 0 else "Дальше по нити"
+	card.get_node("Home").text = "Вернуться на карту" if chapter >= 0 else "Главное меню"
 	card.get_node("Resume").grab_focus()
 
 func open_ending() -> void:
 	if chapter != 2 or transitioning: return
+	mark_finished(2)
+	if not persist():
+		show_error("Не удалось сохранить завершение поиска. Можно остаться здесь и попробовать позже.")
+		return
 	open_pause()
 	modal_kind = "ending"
 	card.get_node("Title").text = "Ночь, которую запомним"
@@ -235,7 +333,8 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST and chapter != 1: request_quit()
 
 func travel(target: int) -> void:
-	if transitioning or target < -1 or target >= CHAPTERS.size(): return
+	if transitioning or target < -2 or target >= CHAPTERS.size(): return
+	if target >= 0 and target > map_unlocked: return
 	if not save_current():
 		show_error("Не удалось сохранить прогресс. Переход отменён; можно продолжить игру и попробовать позже.")
 		return
@@ -246,15 +345,15 @@ func travel(target: int) -> void:
 	$UI/Shortcut.hide()
 	curtain.show()
 	curtain.modulate.a = 0.0
-	$UI/Curtain/Page/Number.text = "АЛЬБОМ ВОСПОМИНАНИЙ" if target < 0 else "ГЛАВА %02d" % (target + 1)
-	$UI/Curtain/Page/Title.text = "Наши воспоминания" if target < 0 else TITLES[target]
+	$UI/Curtain/Page/Number.text = "НИТЬ ВОСПОМИНАНИЙ" if target < 0 else "ГЛАВА %02d" % (target + 1)
+	$UI/Curtain/Page/Title.text = ("Нить воспоминаний" if target == -2 else "Наши воспоминания") if target < 0 else TITLES[target]
 	$UI/Curtain/Page/Quote.text = "Некоторые моменты хочется прожить ещё раз." if target < 0 else QUOTES[target]
 	$UI/Curtain/Page/Loading.text = "Открываем страницу…"
 	var fade := create_tween().set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	fade.tween_property(curtain, "modulate:a", 1.0, 0.4)
 	await fade.finished
 	modal.hide()
-	var path: String = MENU if target < 0 else CHAPTERS[target]
+	var path: String = (MAP if target == -2 else MENU) if target < 0 else CHAPTERS[target]
 	var error := ResourceLoader.load_threaded_request(path)
 	if error != OK:
 		transition_failed("Не удалось начать загрузку главы.")
