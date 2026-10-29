@@ -25,9 +25,14 @@ func run():
  var chairs=[]
  for n in seating.find_children("*","Node3D",true,false):
   if n.scene_file_path in ["res://scenes/props/auditorium_chair.tscn", "res://scenes/props/chair_collision.tscn"]:chairs.append(n)
- var mm=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=combined;mm.instance_count=chairs.size()
- for i in range(chairs.size()):mm.set_instance_transform(i,relative(chairs[i],seating))
- var visual=MultiMeshInstance3D.new();visual.name="ChairsBatched";visual.multimesh=mm
- var packed=PackedScene.new();packed.pack(visual);ResourceSaver.save(packed,"res://scenes/architecture/chairs_batched.tscn")
+ var buffer=PackedFloat32Array()
+ for chair_node in chairs:
+  var t=relative(chair_node,seating)
+  buffer.append_array([t.basis.x.x,t.basis.y.x,t.basis.z.x,t.origin.x,t.basis.x.y,t.basis.y.y,t.basis.z.y,t.origin.y,t.basis.x.z,t.basis.y.z,t.basis.z.z,t.origin.z])
+ # Dummy/headless rendering does not retain MultiMesh buffers for ResourceSaver.
+ # Author the native serialized buffer explicitly so GPU rendering gets all transforms.
+ var file=FileAccess.open("res://scenes/architecture/chairs_batched.tscn",FileAccess.WRITE)
+ file.store_string('[gd_scene load_steps=3 format=3]\n[ext_resource type="ArrayMesh" path="res://assets/optimized/auditorium_chair.res" id="Mesh"]\n[sub_resource type="MultiMesh" id="Seats"]\ntransform_format = 1\ninstance_count = %d\nmesh = ExtResource("Mesh")\nbuffer = %s\n[node name="ChairsBatched" type="MultiMeshInstance3D"]\nmultimesh = SubResource("Seats")\n'%[chairs.size(),var_to_str(buffer)])
+ file.close()
  print("Authored ",chairs.size()," chairs in ",combined.get_surface_count()," surfaces")
- chair.free();seating.free();visual.free();quit()
+ chair.free();seating.free();quit()

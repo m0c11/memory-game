@@ -85,7 +85,7 @@ func advance(delta: float, steering: float, sprinting: bool, braking: bool) -> v
 		else: shop_reached.emit()
 
 func update_view() -> void:
-	$Road.position.x = -LENGTH + distance if returning else -distance
+	$Road.position.x = -LENGTH + distance + 800.0 if returning else -distance
 	$Rider.position = Vector2(1040 if returning else 240, rider_y)
 	$Rider/Sprite.speed_scale = speed / 185.0
 	$Rider.modulate.a = 0.55 if immunity > 0.0 else 1.0
