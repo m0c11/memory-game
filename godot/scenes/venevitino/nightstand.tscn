@@ -12,10 +12,10 @@ size = Vector3(0.54000, 0.60000, 0.50000)
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
-[node name="nightstand_Mesh" parent="Model/nightstand" groups=["distance_culled"]]
-visibility_range_end = 95.0
+[node name="nightstand_Mesh" parent="Model/nightstand" groups=["distance_culled", "overview_detail"]]
+visibility_range_end = 28.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 28.0
 
 [node name="Collision" type="StaticBody3D" parent="."]
 

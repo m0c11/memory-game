@@ -12,20 +12,20 @@ size = Vector3(1.22000, 2.07500, 0.71000)
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
-[node name="Wardrobe_body" parent="Model/wardrobe" groups=["distance_culled"]]
-visibility_range_end = 95.0
+[node name="Wardrobe_body" parent="Model/wardrobe" groups=["distance_culled", "overview_detail"]]
+visibility_range_end = 28.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 28.0
 
-[node name="Wardrobe_door_leaf" parent="Model/wardrobe/Wardrobe_Hinge_L" groups=["distance_culled"]]
-visibility_range_end = 95.0
+[node name="Wardrobe_door_leaf" parent="Model/wardrobe/Wardrobe_Hinge_L" groups=["distance_culled", "overview_detail"]]
+visibility_range_end = 28.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 28.0
 
-[node name="Wardrobe_door_leaf_001" parent="Model/wardrobe/Wardrobe_Hinge_R" groups=["distance_culled"]]
-visibility_range_end = 95.0
+[node name="Wardrobe_door_leaf_001" parent="Model/wardrobe/Wardrobe_Hinge_R" groups=["distance_culled", "overview_detail"]]
+visibility_range_end = 28.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 28.0
 
 [node name="Collision" type="StaticBody3D" parent="."]
 

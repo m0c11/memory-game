@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" path="res://scenes/props/auditorium_chair.tscn" id="1_chair"]
+[ext_resource type="PackedScene" path="res://scenes/props/chair_collision.tscn" id="1_chair"]
 
 [node name="SeatRow" type="Node3D"]
 

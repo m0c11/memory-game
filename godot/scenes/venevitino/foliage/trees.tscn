@@ -1,9 +1,9 @@
 [gd_scene format=3]
 
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/broadleaf_tree.res" id="1_rh2fy"]
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/pine_tree.res" id="2_bp768"]
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/birch_b.res" id="3_e0rnk"]
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/birch_a.res" id="4_bqqxd"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/broadleaf_tree.res" id="1_rh2fy"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/pine_tree.res" id="2_bp768"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/birch_b.res" id="3_e0rnk"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/birch_a.res" id="4_bqqxd"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_hx733"]
 transform_format = 1
@@ -1565,10 +1565,10 @@ radius = 0.25887498
 
 [node name="broadleaf_tree_01_04" type="MultiMeshInstance3D" parent="." unique_id=567507031 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hx733")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_04" unique_id=1395051318]
@@ -1579,10 +1579,10 @@ shape = SubResource("CylinderShape3D_a5t12")
 
 [node name="pine_tree_01_04" type="MultiMeshInstance3D" parent="." unique_id=1342041632 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8mn14")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 3
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_04" unique_id=679531175]
@@ -1601,10 +1601,10 @@ shape = SubResource("CylinderShape3D_jqiji")
 
 [node name="birch_b_02_04" type="MultiMeshInstance3D" parent="." unique_id=1007064125 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7s1n2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_02_04" unique_id=403328905]
@@ -1619,10 +1619,10 @@ shape = SubResource("CylinderShape3D_syh2d")
 
 [node name="birch_b_03_04" type="MultiMeshInstance3D" parent="." unique_id=1632960133 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eusmn")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_03_04" unique_id=1031660728]
@@ -1633,10 +1633,10 @@ shape = SubResource("CylinderShape3D_pxcxm")
 
 [node name="pine_tree_03_04" type="MultiMeshInstance3D" parent="." unique_id=1578578675 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wr0ww")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_03_04" unique_id=587825252]
@@ -1647,10 +1647,10 @@ shape = SubResource("CylinderShape3D_s0enh")
 
 [node name="birch_b_01_04" type="MultiMeshInstance3D" parent="." unique_id=513850374 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rypdt")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_04" unique_id=2055008664]
@@ -1661,10 +1661,10 @@ shape = SubResource("CylinderShape3D_t3cos")
 
 [node name="birch_a_02_04" type="MultiMeshInstance3D" parent="." unique_id=697138139 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3rjpy")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_02_04" unique_id=418525004]
@@ -1675,10 +1675,10 @@ shape = SubResource("CylinderShape3D_s338h")
 
 [node name="broadleaf_tree_03_04" type="MultiMeshInstance3D" parent="." unique_id=1620710248 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5xt7d")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_03_04" unique_id=1921726164]
@@ -1689,10 +1689,10 @@ shape = SubResource("CylinderShape3D_p6twk")
 
 [node name="broadleaf_tree_01_07" type="MultiMeshInstance3D" parent="." unique_id=1327569252 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lh0vv")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_07" unique_id=1626425351]
@@ -1707,10 +1707,10 @@ shape = SubResource("CylinderShape3D_1ypra")
 
 [node name="pine_tree_01_07" type="MultiMeshInstance3D" parent="." unique_id=1054360694 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jdh4u")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_07" unique_id=1701890006]
@@ -1721,10 +1721,10 @@ shape = SubResource("CylinderShape3D_ns08x")
 
 [node name="birch_b_01_07" type="MultiMeshInstance3D" parent="." unique_id=1335283904 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_i2cv0")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_07" unique_id=1391000116]
@@ -1735,10 +1735,10 @@ shape = SubResource("CylinderShape3D_hdx3o")
 
 [node name="broadleaf_tree_02_07" type="MultiMeshInstance3D" parent="." unique_id=103808793 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8ejhu")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_02_07" unique_id=1819936345]
@@ -1753,10 +1753,10 @@ shape = SubResource("CylinderShape3D_qwmko")
 
 [node name="pine_tree_02_07" type="MultiMeshInstance3D" parent="." unique_id=1518214569 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mp32g")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_02_07" unique_id=907132737]
@@ -1767,10 +1767,10 @@ shape = SubResource("CylinderShape3D_0m7wv")
 
 [node name="birch_b_03_07" type="MultiMeshInstance3D" parent="." unique_id=257817903 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6feyj")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_03_07" unique_id=1188626264]
@@ -1781,10 +1781,10 @@ shape = SubResource("CylinderShape3D_bq5b3")
 
 [node name="birch_a_02_07" type="MultiMeshInstance3D" parent="." unique_id=1411260129 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vypry")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_02_07" unique_id=1296603057]
@@ -1795,10 +1795,10 @@ shape = SubResource("CylinderShape3D_75fb5")
 
 [node name="birch_a_08_09" type="MultiMeshInstance3D" parent="." unique_id=1541418036 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qfkdt")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_08_09" unique_id=1190555800]
@@ -1809,10 +1809,10 @@ shape = SubResource("CylinderShape3D_gs6fm")
 
 [node name="birch_a_08_13" type="MultiMeshInstance3D" parent="." unique_id=933921836 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ebxt8")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_08_13" unique_id=130602483]
@@ -1823,10 +1823,10 @@ shape = SubResource("CylinderShape3D_5ipu1")
 
 [node name="birch_a_06_09" type="MultiMeshInstance3D" parent="." unique_id=751716713 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_po3ow")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_06_09" unique_id=1015192463]
@@ -1837,10 +1837,10 @@ shape = SubResource("CylinderShape3D_iguxu")
 
 [node name="broadleaf_tree_06_12" type="MultiMeshInstance3D" parent="." unique_id=1554796270 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l0fpp")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_12" unique_id=1058714638]
@@ -1851,10 +1851,10 @@ shape = SubResource("CylinderShape3D_umv7m")
 
 [node name="broadleaf_tree_00_00" type="MultiMeshInstance3D" parent="." unique_id=1569562045 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ocyyl")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_00" unique_id=448943141]
@@ -1865,10 +1865,10 @@ shape = SubResource("CylinderShape3D_7o41v")
 
 [node name="broadleaf_tree_00_01" type="MultiMeshInstance3D" parent="." unique_id=1578564787 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n6c42")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_01" unique_id=1049633808]
@@ -1879,10 +1879,10 @@ shape = SubResource("CylinderShape3D_aa7j1")
 
 [node name="birch_b_00_01" type="MultiMeshInstance3D" parent="." unique_id=1701966868 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rjywy")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_01" unique_id=595463848]
@@ -1893,10 +1893,10 @@ shape = SubResource("CylinderShape3D_objtu")
 
 [node name="broadleaf_tree_00_02" type="MultiMeshInstance3D" parent="." unique_id=51858622 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dycs7")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_02" unique_id=1881348989]
@@ -1907,10 +1907,10 @@ shape = SubResource("CylinderShape3D_4c5f1")
 
 [node name="pine_tree_00_02" type="MultiMeshInstance3D" parent="." unique_id=808548838 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pcpdh")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_02" unique_id=163507369]
@@ -1921,10 +1921,10 @@ shape = SubResource("CylinderShape3D_sko6p")
 
 [node name="broadleaf_tree_00_03" type="MultiMeshInstance3D" parent="." unique_id=1689989980 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tcf6g")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_03" unique_id=1126783796]
@@ -1935,10 +1935,10 @@ shape = SubResource("CylinderShape3D_snth7")
 
 [node name="birch_b_00_03" type="MultiMeshInstance3D" parent="." unique_id=865001718 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nk71j")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_03" unique_id=824460492]
@@ -1953,10 +1953,10 @@ shape = SubResource("CylinderShape3D_nonh4")
 
 [node name="birch_a_00_03" type="MultiMeshInstance3D" parent="." unique_id=1923097738 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0ptm2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_00_03" unique_id=1827870920]
@@ -1967,10 +1967,10 @@ shape = SubResource("CylinderShape3D_rinan")
 
 [node name="pine_tree_00_04" type="MultiMeshInstance3D" parent="." unique_id=1164929994 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_upvi2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_04" unique_id=1776122313]
@@ -1981,10 +1981,10 @@ shape = SubResource("CylinderShape3D_o40y3")
 
 [node name="birch_a_00_06" type="MultiMeshInstance3D" parent="." unique_id=1606245146 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d2ctm")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_00_06" unique_id=1238556292]
@@ -1999,10 +1999,10 @@ shape = SubResource("CylinderShape3D_qnn12")
 
 [node name="broadleaf_tree_00_06" type="MultiMeshInstance3D" parent="." unique_id=825167871 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1xdva")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_06" unique_id=72859289]
@@ -2013,10 +2013,10 @@ shape = SubResource("CylinderShape3D_op4pg")
 
 [node name="pine_tree_00_07" type="MultiMeshInstance3D" parent="." unique_id=1921811466 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dx31p")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_07" unique_id=383112632]
@@ -2027,10 +2027,10 @@ shape = SubResource("CylinderShape3D_fsxfy")
 
 [node name="birch_b_00_07" type="MultiMeshInstance3D" parent="." unique_id=1397193924 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vjtam")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_07" unique_id=316236198]
@@ -2041,10 +2041,10 @@ shape = SubResource("CylinderShape3D_0jl7i")
 
 [node name="birch_a_00_07" type="MultiMeshInstance3D" parent="." unique_id=138805417 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4tv80")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_00_07" unique_id=151254989]
@@ -2055,10 +2055,10 @@ shape = SubResource("CylinderShape3D_5xsrc")
 
 [node name="broadleaf_tree_00_08" type="MultiMeshInstance3D" parent="." unique_id=776810070 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0rlhg")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_08" unique_id=957327438]
@@ -2069,10 +2069,10 @@ shape = SubResource("CylinderShape3D_smnjt")
 
 [node name="pine_tree_00_09" type="MultiMeshInstance3D" parent="." unique_id=452971149 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6gk2h")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_09" unique_id=985359453]
@@ -2083,10 +2083,10 @@ shape = SubResource("CylinderShape3D_ki71o")
 
 [node name="birch_b_00_09" type="MultiMeshInstance3D" parent="." unique_id=670415961 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8cfhc")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_09" unique_id=857883015]
@@ -2097,10 +2097,10 @@ shape = SubResource("CylinderShape3D_pn0yv")
 
 [node name="broadleaf_tree_00_09" type="MultiMeshInstance3D" parent="." unique_id=1421773291 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r8wi8")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_09" unique_id=675621634]
@@ -2111,10 +2111,10 @@ shape = SubResource("CylinderShape3D_54j2b")
 
 [node name="broadleaf_tree_00_10" type="MultiMeshInstance3D" parent="." unique_id=663037734 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ohkhl")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_10" unique_id=212087109]
@@ -2125,10 +2125,10 @@ shape = SubResource("CylinderShape3D_ai80h")
 
 [node name="pine_tree_00_10" type="MultiMeshInstance3D" parent="." unique_id=1190391225 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_y5xd0")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_10" unique_id=1575100034]
@@ -2139,10 +2139,10 @@ shape = SubResource("CylinderShape3D_msg0c")
 
 [node name="birch_b_00_10" type="MultiMeshInstance3D" parent="." unique_id=1168172407 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1w2ej")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_10" unique_id=1826709365]
@@ -2153,10 +2153,10 @@ shape = SubResource("CylinderShape3D_xf6xx")
 
 [node name="birch_b_00_11" type="MultiMeshInstance3D" parent="." unique_id=1280275252 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_kg7bf")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_11" unique_id=1375972499]
@@ -2171,10 +2171,10 @@ shape = SubResource("CylinderShape3D_d0dek")
 
 [node name="broadleaf_tree_00_12" type="MultiMeshInstance3D" parent="." unique_id=1864652238 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mqrp4")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_12" unique_id=1271945158]
@@ -2189,10 +2189,10 @@ shape = SubResource("CylinderShape3D_acqbc")
 
 [node name="broadleaf_tree_00_13" type="MultiMeshInstance3D" parent="." unique_id=1167489417 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qf6w1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 3
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_13" unique_id=2085854926]
@@ -2211,10 +2211,10 @@ shape = SubResource("CylinderShape3D_2jxkd")
 
 [node name="broadleaf_tree_00_14" type="MultiMeshInstance3D" parent="." unique_id=728346730 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sacfe")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_00_14" unique_id=845580013]
@@ -2225,10 +2225,10 @@ shape = SubResource("CylinderShape3D_xof2c")
 
 [node name="pine_tree_01_12" type="MultiMeshInstance3D" parent="." unique_id=41978316 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vdt0s")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_12" unique_id=138373240]
@@ -2243,10 +2243,10 @@ shape = SubResource("CylinderShape3D_ovsig")
 
 [node name="birch_a_10_06" type="MultiMeshInstance3D" parent="." unique_id=1295877861 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ydw8v")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_06" unique_id=8183999]
@@ -2257,10 +2257,10 @@ shape = SubResource("CylinderShape3D_yre1u")
 
 [node name="birch_a_01_11" type="MultiMeshInstance3D" parent="." unique_id=2090412410 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6v8yf")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_01_11" unique_id=1517619229]
@@ -2275,10 +2275,10 @@ shape = SubResource("CylinderShape3D_3fwra")
 
 [node name="broadleaf_tree_01_00" type="MultiMeshInstance3D" parent="." unique_id=544908023 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5gn34")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_00" unique_id=584821124]
@@ -2289,10 +2289,10 @@ shape = SubResource("CylinderShape3D_c1kq2")
 
 [node name="broadleaf_tree_04_01" type="MultiMeshInstance3D" parent="." unique_id=1661881489 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fa8tc")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_04_01" unique_id=265769800]
@@ -2303,10 +2303,10 @@ shape = SubResource("CylinderShape3D_h0ev7")
 
 [node name="broadleaf_tree_06_10" type="MultiMeshInstance3D" parent="." unique_id=1194941544 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q8i6r")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_10" unique_id=871305222]
@@ -2317,10 +2317,10 @@ shape = SubResource("CylinderShape3D_p8abh")
 
 [node name="birch_a_10_09" type="MultiMeshInstance3D" parent="." unique_id=1892710741 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xry8l")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_09" unique_id=1325284875]
@@ -2331,10 +2331,10 @@ shape = SubResource("CylinderShape3D_r7k2v")
 
 [node name="birch_b_01_14" type="MultiMeshInstance3D" parent="." unique_id=1318365329 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ljcuk")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_14" unique_id=966789371]
@@ -2345,10 +2345,10 @@ shape = SubResource("CylinderShape3D_eex31")
 
 [node name="birch_a_02_12" type="MultiMeshInstance3D" parent="." unique_id=121050011 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jyeeq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_02_12" unique_id=335809784]
@@ -2359,10 +2359,10 @@ shape = SubResource("CylinderShape3D_x4rkm")
 
 [node name="birch_a_07_01" type="MultiMeshInstance3D" parent="." unique_id=605197186 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xwhes")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_07_01" unique_id=503316675]
@@ -2373,10 +2373,10 @@ shape = SubResource("CylinderShape3D_1xrfg")
 
 [node name="pine_tree_10_07" type="MultiMeshInstance3D" parent="." unique_id=1005092344 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dvo5x")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_10_07" unique_id=2001288667]
@@ -2387,10 +2387,10 @@ shape = SubResource("CylinderShape3D_lckip")
 
 [node name="pine_tree_02_11" type="MultiMeshInstance3D" parent="." unique_id=994684769 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_poult")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_02_11" unique_id=218174260]
@@ -2401,10 +2401,10 @@ shape = SubResource("CylinderShape3D_bgtxt")
 
 [node name="broadleaf_tree_10_10" type="MultiMeshInstance3D" parent="." unique_id=468783832 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sltt8")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_10_10" unique_id=2033243895]
@@ -2415,10 +2415,10 @@ shape = SubResource("CylinderShape3D_fi00a")
 
 [node name="pine_tree_06_01" type="MultiMeshInstance3D" parent="." unique_id=1964688973 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wqknb")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_06_01" unique_id=252116468]
@@ -2429,10 +2429,10 @@ shape = SubResource("CylinderShape3D_ctlj8")
 
 [node name="birch_a_08_07" type="MultiMeshInstance3D" parent="." unique_id=1559683383 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_y87ax")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_08_07" unique_id=908356506]
@@ -2443,10 +2443,10 @@ shape = SubResource("CylinderShape3D_7vpxd")
 
 [node name="birch_a_02_14" type="MultiMeshInstance3D" parent="." unique_id=318060248 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nnnv2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_02_14" unique_id=1095346701]
@@ -2457,10 +2457,10 @@ shape = SubResource("CylinderShape3D_kdk0h")
 
 [node name="birch_b_08_04" type="MultiMeshInstance3D" parent="." unique_id=519502701 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6ka4b")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_08_04" unique_id=373405906]
@@ -2471,10 +2471,10 @@ shape = SubResource("CylinderShape3D_m75d5")
 
 [node name="pine_tree_09_10" type="MultiMeshInstance3D" parent="." unique_id=2046973722 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0b8el")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_09_10" unique_id=1643899356]
@@ -2485,10 +2485,10 @@ shape = SubResource("CylinderShape3D_65f06")
 
 [node name="broadleaf_tree_09_04" type="MultiMeshInstance3D" parent="." unique_id=1134441030 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1ioom")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_04" unique_id=692364457]
@@ -2503,10 +2503,10 @@ shape = SubResource("CylinderShape3D_ovjlx")
 
 [node name="broadleaf_tree_07_02" type="MultiMeshInstance3D" parent="." unique_id=1954920560 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_kjgh0")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_07_02" unique_id=1994410239]
@@ -2517,10 +2517,10 @@ shape = SubResource("CylinderShape3D_pm8n2")
 
 [node name="pine_tree_08_14" type="MultiMeshInstance3D" parent="." unique_id=726555487 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pqb6u")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_08_14" unique_id=95425761]
@@ -2531,10 +2531,10 @@ shape = SubResource("CylinderShape3D_ago8x")
 
 [node name="birch_a_01_02" type="MultiMeshInstance3D" parent="." unique_id=1786306562 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8te60")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_01_02" unique_id=999362178]
@@ -2549,10 +2549,10 @@ shape = SubResource("CylinderShape3D_4sjyr")
 
 [node name="birch_b_10_14" type="MultiMeshInstance3D" parent="." unique_id=1405918657 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_haf1k")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_10_14" unique_id=536728336]
@@ -2563,10 +2563,10 @@ shape = SubResource("CylinderShape3D_ws4qy")
 
 [node name="birch_a_09_01" type="MultiMeshInstance3D" parent="." unique_id=934820142 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ujl0b")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_09_01" unique_id=1338609304]
@@ -2581,10 +2581,10 @@ shape = SubResource("CylinderShape3D_l34em")
 
 [node name="pine_tree_01_11" type="MultiMeshInstance3D" parent="." unique_id=156568399 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ucjmv")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_11" unique_id=1565723042]
@@ -2599,10 +2599,10 @@ shape = SubResource("CylinderShape3D_xhy47")
 
 [node name="broadleaf_tree_11_11" type="MultiMeshInstance3D" parent="." unique_id=1140319303 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_y8x3u")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_11_11" unique_id=800414502]
@@ -2613,10 +2613,10 @@ shape = SubResource("CylinderShape3D_2l1vg")
 
 [node name="birch_a_10_14" type="MultiMeshInstance3D" parent="." unique_id=1842292217 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_w1bkv")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_14" unique_id=1341342511]
@@ -2627,10 +2627,10 @@ shape = SubResource("CylinderShape3D_f0c1s")
 
 [node name="broadleaf_tree_01_12" type="MultiMeshInstance3D" parent="." unique_id=679207223 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xhxv4")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_12" unique_id=995393681]
@@ -2641,10 +2641,10 @@ shape = SubResource("CylinderShape3D_jhl25")
 
 [node name="birch_b_08_08" type="MultiMeshInstance3D" parent="." unique_id=310696798 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hm2uk")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_08_08" unique_id=404402840]
@@ -2655,10 +2655,10 @@ shape = SubResource("CylinderShape3D_k00dv")
 
 [node name="birch_b_09_04" type="MultiMeshInstance3D" parent="." unique_id=1762321941 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0pxg2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_09_04" unique_id=316220697]
@@ -2669,10 +2669,10 @@ shape = SubResource("CylinderShape3D_65n88")
 
 [node name="pine_tree_09_05" type="MultiMeshInstance3D" parent="." unique_id=551298759 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ujit5")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_09_05" unique_id=1819477134]
@@ -2683,10 +2683,10 @@ shape = SubResource("CylinderShape3D_a32da")
 
 [node name="birch_a_04_02" type="MultiMeshInstance3D" parent="." unique_id=1984945443 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_utls4")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_04_02" unique_id=415373779]
@@ -2697,10 +2697,10 @@ shape = SubResource("CylinderShape3D_7wgc7")
 
 [node name="birch_b_08_03" type="MultiMeshInstance3D" parent="." unique_id=559903869 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_617j4")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_08_03" unique_id=1279120830]
@@ -2715,10 +2715,10 @@ shape = SubResource("CylinderShape3D_ufu5p")
 
 [node name="broadleaf_tree_07_01" type="MultiMeshInstance3D" parent="." unique_id=1195637208 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t2jsk")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_07_01" unique_id=909962352]
@@ -2729,10 +2729,10 @@ shape = SubResource("CylinderShape3D_6ttlm")
 
 [node name="birch_b_04_04" type="MultiMeshInstance3D" parent="." unique_id=328915834 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_i1831")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_04_04" unique_id=1946329094]
@@ -2743,10 +2743,10 @@ shape = SubResource("CylinderShape3D_b7p84")
 
 [node name="birch_b_11_12" type="MultiMeshInstance3D" parent="." unique_id=1735810560 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x6pk2")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_11_12" unique_id=1157001059]
@@ -2757,10 +2757,10 @@ shape = SubResource("CylinderShape3D_vn2c4")
 
 [node name="broadleaf_tree_08_07" type="MultiMeshInstance3D" parent="." unique_id=294894538 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_67lgg")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_07" unique_id=1392019257]
@@ -2771,10 +2771,10 @@ shape = SubResource("CylinderShape3D_nogch")
 
 [node name="birch_a_10_08" type="MultiMeshInstance3D" parent="." unique_id=724029503 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6qwd1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_08" unique_id=369918157]
@@ -2785,10 +2785,10 @@ shape = SubResource("CylinderShape3D_bql0w")
 
 [node name="birch_a_00_08" type="MultiMeshInstance3D" parent="." unique_id=524364802 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x2pvw")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_00_08" unique_id=634490376]
@@ -2799,10 +2799,10 @@ shape = SubResource("CylinderShape3D_lxrj5")
 
 [node name="pine_tree_01_10" type="MultiMeshInstance3D" parent="." unique_id=1095506213 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r1kgt")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_10" unique_id=367065095]
@@ -2817,10 +2817,10 @@ shape = SubResource("CylinderShape3D_kbewi")
 
 [node name="broadleaf_tree_01_10" type="MultiMeshInstance3D" parent="." unique_id=1085068771 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m21o3")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_01_10" unique_id=1444369246]
@@ -2831,10 +2831,10 @@ shape = SubResource("CylinderShape3D_nbv1q")
 
 [node name="birch_b_02_09" type="MultiMeshInstance3D" parent="." unique_id=180467521 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eu1in")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_02_09" unique_id=978726192]
@@ -2845,10 +2845,10 @@ shape = SubResource("CylinderShape3D_fjlhp")
 
 [node name="broadleaf_tree_11_07" type="MultiMeshInstance3D" parent="." unique_id=1433071570 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r0tsv")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_11_07" unique_id=1634207624]
@@ -2859,10 +2859,10 @@ shape = SubResource("CylinderShape3D_rl65e")
 
 [node name="broadleaf_tree_08_08" type="MultiMeshInstance3D" parent="." unique_id=478755536 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_57oe8")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_08" unique_id=1539597437]
@@ -2873,10 +2873,10 @@ shape = SubResource("CylinderShape3D_haadc")
 
 [node name="birch_b_10_02" type="MultiMeshInstance3D" parent="." unique_id=810354261 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x2hdm")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_10_02" unique_id=1448634446]
@@ -2887,10 +2887,10 @@ shape = SubResource("CylinderShape3D_xp8h8")
 
 [node name="birch_a_10_00" type="MultiMeshInstance3D" parent="." unique_id=1337250588 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m5142")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_00" unique_id=1016149863]
@@ -2901,10 +2901,10 @@ shape = SubResource("CylinderShape3D_dqt02")
 
 [node name="birch_a_11_07" type="MultiMeshInstance3D" parent="." unique_id=481375907 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ddv8b")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_11_07" unique_id=1099103670]
@@ -2915,10 +2915,10 @@ shape = SubResource("CylinderShape3D_u01gg")
 
 [node name="birch_b_02_13" type="MultiMeshInstance3D" parent="." unique_id=1764442350 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cnuph")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_02_13" unique_id=1616423305]
@@ -2929,10 +2929,10 @@ shape = SubResource("CylinderShape3D_wlpm5")
 
 [node name="birch_a_01_14" type="MultiMeshInstance3D" parent="." unique_id=435945758 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5vpwi")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_01_14" unique_id=1788936709]
@@ -2943,10 +2943,10 @@ shape = SubResource("CylinderShape3D_lwj1q")
 
 [node name="birch_b_03_00" type="MultiMeshInstance3D" parent="." unique_id=1876679960 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_31k1m")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_03_00" unique_id=2045318258]
@@ -2961,10 +2961,10 @@ shape = SubResource("CylinderShape3D_mnwt2")
 
 [node name="broadleaf_tree_08_05" type="MultiMeshInstance3D" parent="." unique_id=2129470157 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t3yhl")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_05" unique_id=56949526]
@@ -2975,10 +2975,10 @@ shape = SubResource("CylinderShape3D_ck0vx")
 
 [node name="pine_tree_08_04" type="MultiMeshInstance3D" parent="." unique_id=179416123 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bx4kv")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_08_04" unique_id=1339726078]
@@ -2989,10 +2989,10 @@ shape = SubResource("CylinderShape3D_nfm6v")
 
 [node name="birch_b_01_03" type="MultiMeshInstance3D" parent="." unique_id=931417191 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rfsm6")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_03" unique_id=993601200]
@@ -3003,10 +3003,10 @@ shape = SubResource("CylinderShape3D_egbku")
 
 [node name="birch_a_03_07" type="MultiMeshInstance3D" parent="." unique_id=1696885964 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_usve7")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_03_07" unique_id=382564203]
@@ -3017,10 +3017,10 @@ shape = SubResource("CylinderShape3D_4ru03")
 
 [node name="broadleaf_tree_09_10" type="MultiMeshInstance3D" parent="." unique_id=681278660 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_okbap")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_10" unique_id=216176317]
@@ -3031,10 +3031,10 @@ shape = SubResource("CylinderShape3D_nryya")
 
 [node name="birch_a_06_00" type="MultiMeshInstance3D" parent="." unique_id=1251205793 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yy8xx")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_06_00" unique_id=1087906764]
@@ -3045,10 +3045,10 @@ shape = SubResource("CylinderShape3D_pvdry")
 
 [node name="broadleaf_tree_09_09" type="MultiMeshInstance3D" parent="." unique_id=998039995 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_o3mc5")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_09" unique_id=338959108]
@@ -3059,10 +3059,10 @@ shape = SubResource("CylinderShape3D_xyl8q")
 
 [node name="birch_b_01_13" type="MultiMeshInstance3D" parent="." unique_id=2096126658 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0wkyh")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_13" unique_id=1559131101]
@@ -3073,10 +3073,10 @@ shape = SubResource("CylinderShape3D_qnbjb")
 
 [node name="pine_tree_10_02" type="MultiMeshInstance3D" parent="." unique_id=1426082416 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_op2ys")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_10_02" unique_id=967547539]
@@ -3091,10 +3091,10 @@ shape = SubResource("CylinderShape3D_kxkmg")
 
 [node name="broadleaf_tree_08_00" type="MultiMeshInstance3D" parent="." unique_id=1389960614 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3hpje")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_00" unique_id=240054837]
@@ -3105,10 +3105,10 @@ shape = SubResource("CylinderShape3D_m453c")
 
 [node name="broadleaf_tree_09_02" type="MultiMeshInstance3D" parent="." unique_id=146838416 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_b7a11")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_09_02" unique_id=764033467]
@@ -3123,10 +3123,10 @@ shape = SubResource("CylinderShape3D_vyqkw")
 
 [node name="birch_b_09_13" type="MultiMeshInstance3D" parent="." unique_id=1519264879 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3t2b1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_09_13" unique_id=707152289]
@@ -3137,10 +3137,10 @@ shape = SubResource("CylinderShape3D_cvx7k")
 
 [node name="pine_tree_09_11" type="MultiMeshInstance3D" parent="." unique_id=1233232074 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_j3jsq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_09_11" unique_id=2107180829]
@@ -3151,10 +3151,10 @@ shape = SubResource("CylinderShape3D_4l7qt")
 
 [node name="birch_b_01_05" type="MultiMeshInstance3D" parent="." unique_id=870270275 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rq4jx")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_05" unique_id=1986034491]
@@ -3165,10 +3165,10 @@ shape = SubResource("CylinderShape3D_0hvnx")
 
 [node name="birch_b_10_11" type="MultiMeshInstance3D" parent="." unique_id=1527666389 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yed5s")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_10_11" unique_id=215047534]
@@ -3179,10 +3179,10 @@ shape = SubResource("CylinderShape3D_s0fed")
 
 [node name="birch_a_11_13" type="MultiMeshInstance3D" parent="." unique_id=459345968 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n0ytl")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_11_13" unique_id=1262650873]
@@ -3193,10 +3193,10 @@ shape = SubResource("CylinderShape3D_motas")
 
 [node name="pine_tree_05_01" type="MultiMeshInstance3D" parent="." unique_id=1459366613 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_aybsp")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_05_01" unique_id=625353288]
@@ -3207,10 +3207,10 @@ shape = SubResource("CylinderShape3D_op66u")
 
 [node name="pine_tree_06_11" type="MultiMeshInstance3D" parent="." unique_id=259255356 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 184)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ngc88")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_06_11" unique_id=595066423]
@@ -3221,10 +3221,10 @@ shape = SubResource("CylinderShape3D_snkob")
 
 [node name="birch_b_09_02" type="MultiMeshInstance3D" parent="." unique_id=934853158 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lf7ac")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_09_02" unique_id=1883934355]
@@ -3235,10 +3235,10 @@ shape = SubResource("CylinderShape3D_2g2l4")
 
 [node name="broadleaf_tree_08_12" type="MultiMeshInstance3D" parent="." unique_id=1708094445 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_clu8j")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_08_12" unique_id=944717072]
@@ -3249,10 +3249,10 @@ shape = SubResource("CylinderShape3D_f4abf")
 
 [node name="pine_tree_10_10" type="MultiMeshInstance3D" parent="." unique_id=531451306 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4nfho")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_10_10" unique_id=1531213444]
@@ -3263,10 +3263,10 @@ shape = SubResource("CylinderShape3D_rmvsv")
 
 [node name="birch_a_08_12" type="MultiMeshInstance3D" parent="." unique_id=1187165460 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2v2t6")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_08_12" unique_id=1832684381]
@@ -3277,10 +3277,10 @@ shape = SubResource("CylinderShape3D_hmjwg")
 
 [node name="pine_tree_04_01" type="MultiMeshInstance3D" parent="." unique_id=1568091116 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xbwk7")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_04_01" unique_id=316298606]
@@ -3291,10 +3291,10 @@ shape = SubResource("CylinderShape3D_huq62")
 
 [node name="broadleaf_tree_10_12" type="MultiMeshInstance3D" parent="." unique_id=1689789723 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_unna1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_10_12" unique_id=884230456]
@@ -3309,10 +3309,10 @@ shape = SubResource("CylinderShape3D_8pqw1")
 
 [node name="pine_tree_11_00" type="MultiMeshInstance3D" parent="." unique_id=554657367 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ywgac")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_11_00" unique_id=1629706199]
@@ -3323,10 +3323,10 @@ shape = SubResource("CylinderShape3D_76sry")
 
 [node name="birch_b_09_14" type="MultiMeshInstance3D" parent="." unique_id=1023943251 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 232)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n86dp")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_09_14" unique_id=145730053]
@@ -3337,10 +3337,10 @@ shape = SubResource("CylinderShape3D_au1m0")
 
 [node name="birch_a_02_02" type="MultiMeshInstance3D" parent="." unique_id=1539493421 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pgjvq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_02_02" unique_id=772708824]
@@ -3351,10 +3351,10 @@ shape = SubResource("CylinderShape3D_6doko")
 
 [node name="birch_a_10_03" type="MultiMeshInstance3D" parent="." unique_id=367278784 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qre3x")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_03" unique_id=573442057]
@@ -3365,10 +3365,10 @@ shape = SubResource("CylinderShape3D_1rkhk")
 
 [node name="birch_b_09_05" type="MultiMeshInstance3D" parent="." unique_id=1917814297 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_elr5g")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_09_05" unique_id=1282269596]
@@ -3379,10 +3379,10 @@ shape = SubResource("CylinderShape3D_6f1yh")
 
 [node name="pine_tree_09_03" type="MultiMeshInstance3D" parent="." unique_id=1215149661 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_snvtt")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_09_03" unique_id=1418638686]
@@ -3393,10 +3393,10 @@ shape = SubResource("CylinderShape3D_ksktg")
 
 [node name="birch_a_11_00" type="MultiMeshInstance3D" parent="." unique_id=1353739710 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_i3uoq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_11_00" unique_id=464259921]
@@ -3407,10 +3407,10 @@ shape = SubResource("CylinderShape3D_n45yi")
 
 [node name="pine_tree_01_13" type="MultiMeshInstance3D" parent="." unique_id=876639697 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_165oo")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_01_13" unique_id=157365355]
@@ -3421,10 +3421,10 @@ shape = SubResource("CylinderShape3D_7cia3")
 
 [node name="birch_b_07_02" type="MultiMeshInstance3D" parent="." unique_id=1998526183 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2mljk")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_07_02" unique_id=1688417154]
@@ -3435,10 +3435,10 @@ shape = SubResource("CylinderShape3D_js04m")
 
 [node name="birch_b_10_13" type="MultiMeshInstance3D" parent="." unique_id=2108820346 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 216)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wmmey")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 2
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_10_13" unique_id=1959186027]
@@ -3453,10 +3453,10 @@ shape = SubResource("CylinderShape3D_fjbqf")
 
 [node name="pine_tree_09_01" type="MultiMeshInstance3D" parent="." unique_id=1963732111 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8vfq1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_09_01" unique_id=514496935]
@@ -3467,10 +3467,10 @@ shape = SubResource("CylinderShape3D_bordp")
 
 [node name="birch_a_08_04" type="MultiMeshInstance3D" parent="." unique_id=1304246949 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_s6hqi")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_08_04" unique_id=2127778998]
@@ -3481,10 +3481,10 @@ shape = SubResource("CylinderShape3D_5gqh5")
 
 [node name="broadleaf_tree_06_02" type="MultiMeshInstance3D" parent="." unique_id=935757420 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tjkhl")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_02" unique_id=1496048023]
@@ -3495,10 +3495,10 @@ shape = SubResource("CylinderShape3D_vlwc5")
 
 [node name="pine_tree_02_03" type="MultiMeshInstance3D" parent="." unique_id=885183703 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5k15k")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_02_03" unique_id=1177241132]
@@ -3509,10 +3509,10 @@ shape = SubResource("CylinderShape3D_m6s8q")
 
 [node name="birch_a_10_07" type="MultiMeshInstance3D" parent="." unique_id=1309107941 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x66wd")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_10_07" unique_id=412076055]
@@ -3523,10 +3523,10 @@ shape = SubResource("CylinderShape3D_ffpbp")
 
 [node name="birch_b_00_05" type="MultiMeshInstance3D" parent="." unique_id=916217659 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cx0av")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_00_05" unique_id=789914628]
@@ -3537,10 +3537,10 @@ shape = SubResource("CylinderShape3D_csxe1")
 
 [node name="pine_tree_02_01" type="MultiMeshInstance3D" parent="." unique_id=1248638097 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3x58m")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_02_01" unique_id=633806515]
@@ -3551,10 +3551,10 @@ shape = SubResource("CylinderShape3D_1gv30")
 
 [node name="birch_b_03_01" type="MultiMeshInstance3D" parent="." unique_id=217778456 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qxxa8")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_03_01" unique_id=1383789382]
@@ -3565,10 +3565,10 @@ shape = SubResource("CylinderShape3D_xtkhg")
 
 [node name="birch_b_10_01" type="MultiMeshInstance3D" parent="." unique_id=547446055 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_s1asq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_10_01" unique_id=1318578129]
@@ -3579,10 +3579,10 @@ shape = SubResource("CylinderShape3D_t0xmx")
 
 [node name="broadleaf_tree_02_05" type="MultiMeshInstance3D" parent="." unique_id=2094184236 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cqasq")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_02_05" unique_id=704591348]
@@ -3593,10 +3593,10 @@ shape = SubResource("CylinderShape3D_86sej")
 
 [node name="pine_tree_02_12" type="MultiMeshInstance3D" parent="." unique_id=20792895 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8i5ku")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_02_12" unique_id=205581035]
@@ -3607,10 +3607,10 @@ shape = SubResource("CylinderShape3D_sv44r")
 
 [node name="broadleaf_tree_06_09" type="MultiMeshInstance3D" parent="." unique_id=973097153 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ggojk")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="broadleaf_tree_06_09" unique_id=2082738771]
@@ -3621,10 +3621,10 @@ shape = SubResource("CylinderShape3D_q8kvo")
 
 [node name="pine_tree_10_08" type="MultiMeshInstance3D" parent="." unique_id=1962953228 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_oysej")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_10_08" unique_id=1259756009]
@@ -3635,10 +3635,10 @@ shape = SubResource("CylinderShape3D_d51ex")
 
 [node name="birch_a_01_01" type="MultiMeshInstance3D" parent="." unique_id=1718021642 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7j0sw")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_01_01" unique_id=211040536]
@@ -3649,10 +3649,10 @@ shape = SubResource("CylinderShape3D_0g3wf")
 
 [node name="pine_tree_00_12" type="MultiMeshInstance3D" parent="." unique_id=28034096 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_al4bo")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_00_12" unique_id=984510181]
@@ -3663,10 +3663,10 @@ shape = SubResource("CylinderShape3D_dxxmj")
 
 [node name="pine_tree_04_02" type="MultiMeshInstance3D" parent="." unique_id=331459204 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_j7cwi")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="pine_tree_04_02" unique_id=1701465435]
@@ -3677,10 +3677,10 @@ shape = SubResource("CylinderShape3D_ff7on")
 
 [node name="birch_a_11_03" type="MultiMeshInstance3D" parent="." unique_id=2100370940 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 56)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q4hlh")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_a_11_03" unique_id=388259419]
@@ -3691,10 +3691,10 @@ shape = SubResource("CylinderShape3D_jh4f3")
 
 [node name="birch_b_01_09" type="MultiMeshInstance3D" parent="." unique_id=888947540 groups=["distance_culled"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 152)
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_h4ye1")
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 metadata/plant_count = 1
 
 [node name="Trunks" type="StaticBody3D" parent="birch_b_01_09" unique_id=1630967681]

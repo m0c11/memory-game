@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/path_straight_4m.glb" id="e1"]
+[ext_resource type="PackedScene" path="res://assets/optimized/path_straight_4m.tscn" id="e1"]
 
 
 [node name="PathTile" type="Node3D"]
@@ -12,9 +12,9 @@ rotation = Vector3(0.00000, 0.00000, 0.00000)
 scale = Vector3(1.80000, 1.00000, 1.00000)
 
 [node name="path_straight_4m_Mesh" parent="Earth/path_straight_4m" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [editable path="Earth"]

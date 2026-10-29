@@ -82,18 +82,18 @@ position = Vector3(96.80000, 0.09, 96.80000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="volleyball_court_Mesh" parent="VolleyballSurface/volleyball_court" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="VolleyballNet" parent="." instance=ExtResource("e3")]
 position = Vector3(96.80000, 0.00000, 96.80000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="volleyball_net_Mesh" parent="VolleyballNet/volleyball_net" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="NetPost0" type="StaticBody3D" parent="."]
 
@@ -114,9 +114,9 @@ position = Vector3(62.70000, 0.05500, 192.50000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="volleyball_court_Mesh" parent="TennisSurface/volleyball_court" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="TennisNet" parent="." instance=ExtResource("e3")]
 position = Vector3(62.70000, 0.00000, 192.50000)
@@ -124,9 +124,9 @@ rotation = Vector3(0.00000, 0.00000, 0.00000)
 scale = Vector3(1.00000, 0.45000, 1.00000)
 
 [node name="volleyball_net_Mesh" parent="TennisNet/volleyball_net" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Building00" parent="." instance=ExtResource("e4")]
 position = Vector3(89.10000, 0.00000, 45.10000)
@@ -265,9 +265,9 @@ position = Vector3(-1.00000, 0.05000, 89.10000)
 rotation = Vector3(0.00000, 1.57080, 0.00000)
 
 [node name="river_dock_Mesh" parent="Pier/river_dock" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="PierDeck" type="StaticBody3D" parent="."]
 

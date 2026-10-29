@@ -1,6 +1,6 @@
 [gd_scene load_steps=34 format=3]
 
-[ext_resource type="PackedScene" path="res://scenes/architecture/hall_shell.tscn" id="1_shell"]
+[ext_resource type="PackedScene" path="res://scenes/architecture/hall_shell_batched.tscn" id="1_shell"]
 [ext_resource type="PackedScene" path="res://scenes/architecture/stage.tscn" id="2_stage"]
 [ext_resource type="PackedScene" path="res://scenes/architecture/seating.tscn" id="3_seating"]
 [ext_resource type="PackedScene" path="res://scenes/player/capsule_player.tscn" id="4_player"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" path="res://assets/models/13_audio_cable_coil.glb" id="18_cable"]
 [ext_resource type="PackedScene" path="res://assets/models/17_performance_programme.glb" id="20_programme"]
 [ext_resource type="Environment" path="res://materials/hall_environment.tres" id="21_environment"]
-[ext_resource type="LightmapGIData" path="res://assets/lighting/auditorium.lmbake" id="22_lightmap"]
+[ext_resource type="LightmapGIData" path="res://assets/lighting/auditorium_optimized.lmbake" id="22_lightmap"]
 [ext_resource type="PackedScene" path="res://scenes/effects/stage_dust.tscn" id="23_dust"]
 [ext_resource type="PackedScene" path="res://scenes/rooms/backstage_left.tscn" id="24_left_room"]
 [ext_resource type="PackedScene" path="res://scenes/rooms/backstage_right.tscn" id="25_right_room"]
@@ -109,7 +109,7 @@ position = Vector3(2.7, 0.734, -2.94)
 rotation = Vector3(0, 3.141593, 0)
 
 [node name="Microphone" parent="Equipment" instance=ExtResource("7_microphone")]
-position = Vector3(4.25, 0.734, -2.9)
+position = Vector3(1.7, 0.734, -2.85)
 rotation = Vector3(0, -0.35, 0)
 
 [node name="MicrophoneCable" parent="Equipment" instance=ExtResource("18_cable")]
@@ -371,17 +371,17 @@ location_name = "Актовый зал"
 [node name="ReturnPoints" type="Node3D" parent="."]
 
 [node name="Left" type="Marker3D" parent="ReturnPoints"]
-position = Vector3(-7.25, 0.03, -0.3)
+position = Vector3(-3.3, 0.76, -4.5)
 rotation = Vector3(0, 3.141593, 0)
 
 [node name="Right" type="Marker3D" parent="ReturnPoints"]
-position = Vector3(7.25, 0.03, -0.3)
+position = Vector3(3.3, 0.76, -4.5)
 rotation = Vector3(0, 3.141593, 0)
 
 [node name="Passages" type="Node3D" parent="."]
 
 [node name="LeftEntrance" parent="Passages" instance=ExtResource("26_portal")]
-position = Vector3(-7.25, 0.95, -1.35)
+position = Vector3(-4.5, 1.68, -4.5)
 destination_path = NodePath("../../Backstage/Left/Arrival")
 camera_path = NodePath("../../Backstage/Left/OverviewCamera")
 location_name = "Левая кулиса · гримёрная"
@@ -391,7 +391,7 @@ prompt_text = "E — войти в левую кулису"
 shape = SubResource("Shape_entrance_reach")
 
 [node name="RightEntrance" parent="Passages" instance=ExtResource("26_portal")]
-position = Vector3(7.25, 0.95, -1.35)
+position = Vector3(4.5, 1.68, -4.5)
 destination_path = NodePath("../../Backstage/Right/Arrival")
 camera_path = NodePath("../../Backstage/Right/OverviewCamera")
 location_name = "Правая кулиса · рояль"
@@ -399,22 +399,6 @@ prompt_text = "E — войти в правую кулису"
 
 [node name="Reach" parent="Passages/RightEntrance" index="0"]
 shape = SubResource("Shape_entrance_reach")
-
-[node name="LeftDoorSign" type="Label3D" parent="Passages"]
-position = Vector3(-7.25, 2.35, -2.42)
-pixel_size = 0.002
-font_size = 42
-modulate = Color(0.96, 0.86, 0.65, 1)
-text = "ЛЕВАЯ КУЛИСА"
-outline_size = 8
-
-[node name="RightDoorSign" type="Label3D" parent="Passages"]
-position = Vector3(7.25, 2.35, -2.42)
-pixel_size = 0.002
-font_size = 42
-modulate = Color(0.96, 0.86, 0.65, 1)
-text = "ПРАВАЯ КУЛИСА"
-outline_size = 8
 
 [node name="Interface" type="CanvasLayer" parent="."]
 

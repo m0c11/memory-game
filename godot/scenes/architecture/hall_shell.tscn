@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="PackedScene" path="res://assets/models/22_carpet_floor_tile.glb" id="1_floor"]
 [ext_resource type="PackedScene" path="res://assets/models/24_acoustic_wall.glb" id="2_wall"]
-[ext_resource type="PackedScene" path="res://assets/models/25_recessed_door_wall.glb" id="3_door"]
 [ext_resource type="PackedScene" path="res://assets/models/31_ceiling_panel.glb" id="4_ceiling"]
 
 [sub_resource type="BoxShape3D" id="FloorShape"]
@@ -196,7 +195,7 @@ mesh = SubResource("EndWallMesh")
 
 [node name="FrontDoorPiers" type="Node3D" parent="."]
 
-[node name="LeftDoor" parent="FrontDoorPiers" instance=ExtResource("3_door")]
+[node name="LeftDoor" parent="FrontDoorPiers" instance=ExtResource("2_wall")]
 position = Vector3(-7.25, 0, -2.6)
 scale = Vector3(0.58, 1, 1)
 
@@ -204,7 +203,7 @@ scale = Vector3(0.58, 1, 1)
 position = Vector3(-7.25, 2.8, -2.6)
 scale = Vector3(0.58, 1.142857, 1)
 
-[node name="RightDoor" parent="FrontDoorPiers" instance=ExtResource("3_door")]
+[node name="RightDoor" parent="FrontDoorPiers" instance=ExtResource("2_wall")]
 position = Vector3(7.25, 0, -2.6)
 scale = Vector3(0.58, 1, 1)
 

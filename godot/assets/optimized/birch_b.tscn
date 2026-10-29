@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/birch_b_2.res" id="1_halc2"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=1295067278]
+
+[node name="birch_b" type="Node3D" parent="." unique_id=1386937147]
+metadata/extras = {
+"asset_name": "Берёза b",
+"category": "nature",
+"units": "meters"
+}
+
+[node name="Tree_001" type="MeshInstance3D" parent="birch_b" unique_id=1774053861]
+mesh = ExtResource("1_halc2")

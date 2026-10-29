@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/pine_tree_0.res" id="1_r53gm"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=1917579112]
+
+[node name="pine_tree" type="Node3D" parent="." unique_id=1004401895]
+metadata/extras = {
+"asset_name": "Сосна",
+"category": "nature",
+"units": "meters"
+}
+
+[node name="Pine" type="MeshInstance3D" parent="pine_tree" unique_id=835031346]
+mesh = ExtResource("1_r53gm")

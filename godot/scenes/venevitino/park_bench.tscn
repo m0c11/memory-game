@@ -13,9 +13,9 @@ position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="park_bench_Mesh" parent="Model/park_bench" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Collision" type="StaticBody3D" parent="."]
 

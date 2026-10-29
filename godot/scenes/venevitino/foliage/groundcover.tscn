@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/grass_clump.res" id="1_pale6"]
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/wildflowers.res" id="2_56sb6"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/grass_clump.res" id="1_pale6"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/wildflowers.res" id="2_56sb6"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_akt4u"]
 transform_format = 1
@@ -2003,2999 +2003,2999 @@ buffer = PackedFloat32Array(-0.7863291, 0, -0.77463615, -5.799301, 0, 0.9977, 0,
 
 [node name="Groundcover" type="Node3D" unique_id=1465060341]
 
-[node name="grass_clump_04_14" type="MultiMeshInstance3D" parent="." unique_id=17380413 groups=["distance_culled"]]
+[node name="grass_clump_04_14" type="MultiMeshInstance3D" parent="." unique_id=17380413 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_akt4u")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="grass_clump_04_13" type="MultiMeshInstance3D" parent="." unique_id=766099459 groups=["distance_culled"]]
+[node name="grass_clump_04_13" type="MultiMeshInstance3D" parent="." unique_id=766099459 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6r375")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 67
 
-[node name="wildflowers_04_14" type="MultiMeshInstance3D" parent="." unique_id=1691765128 groups=["distance_culled"]]
+[node name="wildflowers_04_14" type="MultiMeshInstance3D" parent="." unique_id=1691765128 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nmn0f")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_04_12" type="MultiMeshInstance3D" parent="." unique_id=1528285377 groups=["distance_culled"]]
+[node name="grass_clump_04_12" type="MultiMeshInstance3D" parent="." unique_id=1528285377 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jej6m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 39
 
-[node name="wildflowers_04_12" type="MultiMeshInstance3D" parent="." unique_id=1416990092 groups=["distance_culled"]]
+[node name="wildflowers_04_12" type="MultiMeshInstance3D" parent="." unique_id=1416990092 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pdg56")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_04_11" type="MultiMeshInstance3D" parent="." unique_id=1549899192 groups=["distance_culled"]]
+[node name="grass_clump_04_11" type="MultiMeshInstance3D" parent="." unique_id=1549899192 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_duo26")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 43
 
-[node name="wildflowers_04_11" type="MultiMeshInstance3D" parent="." unique_id=322163940 groups=["distance_culled"]]
+[node name="wildflowers_04_11" type="MultiMeshInstance3D" parent="." unique_id=322163940 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_msu1f")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_04_10" type="MultiMeshInstance3D" parent="." unique_id=1092885692 groups=["distance_culled"]]
+[node name="wildflowers_04_10" type="MultiMeshInstance3D" parent="." unique_id=1092885692 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_adjbh")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_04_10" type="MultiMeshInstance3D" parent="." unique_id=2101944613 groups=["distance_culled"]]
+[node name="grass_clump_04_10" type="MultiMeshInstance3D" parent="." unique_id=2101944613 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vh5w2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 28
 
-[node name="grass_clump_04_09" type="MultiMeshInstance3D" parent="." unique_id=1622751764 groups=["distance_culled"]]
+[node name="grass_clump_04_09" type="MultiMeshInstance3D" parent="." unique_id=1622751764 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8yifn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 39
 
-[node name="wildflowers_04_09" type="MultiMeshInstance3D" parent="." unique_id=1619439935 groups=["distance_culled"]]
+[node name="wildflowers_04_09" type="MultiMeshInstance3D" parent="." unique_id=1619439935 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eie5w")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_04_08" type="MultiMeshInstance3D" parent="." unique_id=725564942 groups=["distance_culled"]]
+[node name="grass_clump_04_08" type="MultiMeshInstance3D" parent="." unique_id=725564942 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pv1jy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 75
 
-[node name="wildflowers_04_08" type="MultiMeshInstance3D" parent="." unique_id=1341203446 groups=["distance_culled"]]
+[node name="wildflowers_04_08" type="MultiMeshInstance3D" parent="." unique_id=1341203446 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_liymy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_04_07" type="MultiMeshInstance3D" parent="." unique_id=750587516 groups=["distance_culled"]]
+[node name="grass_clump_04_07" type="MultiMeshInstance3D" parent="." unique_id=750587516 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cwx3m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 72
 
-[node name="wildflowers_04_07" type="MultiMeshInstance3D" parent="." unique_id=1924436753 groups=["distance_culled"]]
+[node name="wildflowers_04_07" type="MultiMeshInstance3D" parent="." unique_id=1924436753 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_867p7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_04_06" type="MultiMeshInstance3D" parent="." unique_id=1330056818 groups=["distance_culled"]]
+[node name="grass_clump_04_06" type="MultiMeshInstance3D" parent="." unique_id=1330056818 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3fbm1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 98
 
-[node name="wildflowers_04_06" type="MultiMeshInstance3D" parent="." unique_id=1132293422 groups=["distance_culled"]]
+[node name="wildflowers_04_06" type="MultiMeshInstance3D" parent="." unique_id=1132293422 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_k3jr1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_04_05" type="MultiMeshInstance3D" parent="." unique_id=1401298676 groups=["distance_culled"]]
+[node name="grass_clump_04_05" type="MultiMeshInstance3D" parent="." unique_id=1401298676 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2oadn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 86
 
-[node name="wildflowers_04_05" type="MultiMeshInstance3D" parent="." unique_id=1662297326 groups=["distance_culled"]]
+[node name="wildflowers_04_05" type="MultiMeshInstance3D" parent="." unique_id=1662297326 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ij6xn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_04_04" type="MultiMeshInstance3D" parent="." unique_id=663992655 groups=["distance_culled"]]
+[node name="grass_clump_04_04" type="MultiMeshInstance3D" parent="." unique_id=663992655 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_u6f5t")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 80
 
-[node name="wildflowers_04_04" type="MultiMeshInstance3D" parent="." unique_id=1250969231 groups=["distance_culled"]]
+[node name="wildflowers_04_04" type="MultiMeshInstance3D" parent="." unique_id=1250969231 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_kybtd")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_04_03" type="MultiMeshInstance3D" parent="." unique_id=1424106767 groups=["distance_culled"]]
+[node name="grass_clump_04_03" type="MultiMeshInstance3D" parent="." unique_id=1424106767 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_scojf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 64
 
-[node name="wildflowers_04_03" type="MultiMeshInstance3D" parent="." unique_id=1596267251 groups=["distance_culled"]]
+[node name="wildflowers_04_03" type="MultiMeshInstance3D" parent="." unique_id=1596267251 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_41q41")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_04_02" type="MultiMeshInstance3D" parent="." unique_id=474156013 groups=["distance_culled"]]
+[node name="grass_clump_04_02" type="MultiMeshInstance3D" parent="." unique_id=474156013 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ntfbt")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 89
 
-[node name="wildflowers_04_02" type="MultiMeshInstance3D" parent="." unique_id=1382990789 groups=["distance_culled"]]
+[node name="wildflowers_04_02" type="MultiMeshInstance3D" parent="." unique_id=1382990789 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hdvud")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_00_02" type="MultiMeshInstance3D" parent="." unique_id=783294998 groups=["distance_culled"]]
+[node name="grass_clump_00_02" type="MultiMeshInstance3D" parent="." unique_id=783294998 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mqsr1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 56
 
-[node name="grass_clump_00_03" type="MultiMeshInstance3D" parent="." unique_id=271435741 groups=["distance_culled"]]
+[node name="grass_clump_00_03" type="MultiMeshInstance3D" parent="." unique_id=271435741 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_c7buf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 136
 
-[node name="wildflowers_00_02" type="MultiMeshInstance3D" parent="." unique_id=218134767 groups=["distance_culled"]]
+[node name="wildflowers_00_02" type="MultiMeshInstance3D" parent="." unique_id=218134767 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_o5mue")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_00_03" type="MultiMeshInstance3D" parent="." unique_id=2107391818 groups=["distance_culled"]]
+[node name="wildflowers_00_03" type="MultiMeshInstance3D" parent="." unique_id=2107391818 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6gn17")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_00_04" type="MultiMeshInstance3D" parent="." unique_id=367267624 groups=["distance_culled"]]
+[node name="grass_clump_00_04" type="MultiMeshInstance3D" parent="." unique_id=367267624 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hwuh8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 65
 
-[node name="wildflowers_00_04" type="MultiMeshInstance3D" parent="." unique_id=1967624840 groups=["distance_culled"]]
+[node name="wildflowers_00_04" type="MultiMeshInstance3D" parent="." unique_id=1967624840 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bhlmo")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_00_05" type="MultiMeshInstance3D" parent="." unique_id=1384226563 groups=["distance_culled"]]
+[node name="grass_clump_00_05" type="MultiMeshInstance3D" parent="." unique_id=1384226563 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mxao1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 91
 
-[node name="grass_clump_00_06" type="MultiMeshInstance3D" parent="." unique_id=493188684 groups=["distance_culled"]]
+[node name="grass_clump_00_06" type="MultiMeshInstance3D" parent="." unique_id=493188684 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cw8na")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 121
 
-[node name="wildflowers_00_06" type="MultiMeshInstance3D" parent="." unique_id=127292246 groups=["distance_culled"]]
+[node name="wildflowers_00_06" type="MultiMeshInstance3D" parent="." unique_id=127292246 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xuwrv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="grass_clump_00_07" type="MultiMeshInstance3D" parent="." unique_id=2073025120 groups=["distance_culled"]]
+[node name="grass_clump_00_07" type="MultiMeshInstance3D" parent="." unique_id=2073025120 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bsdma")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 113
 
-[node name="wildflowers_00_07" type="MultiMeshInstance3D" parent="." unique_id=1455317920 groups=["distance_culled"]]
+[node name="wildflowers_00_07" type="MultiMeshInstance3D" parent="." unique_id=1455317920 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_b6m32")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_00_08" type="MultiMeshInstance3D" parent="." unique_id=696887729 groups=["distance_culled"]]
+[node name="grass_clump_00_08" type="MultiMeshInstance3D" parent="." unique_id=696887729 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cv3l3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 87
 
-[node name="grass_clump_00_09" type="MultiMeshInstance3D" parent="." unique_id=1501496567 groups=["distance_culled"]]
+[node name="grass_clump_00_09" type="MultiMeshInstance3D" parent="." unique_id=1501496567 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ue73x")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 93
 
-[node name="wildflowers_00_08" type="MultiMeshInstance3D" parent="." unique_id=698442307 groups=["distance_culled"]]
+[node name="wildflowers_00_08" type="MultiMeshInstance3D" parent="." unique_id=698442307 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_uiiqs")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="wildflowers_00_09" type="MultiMeshInstance3D" parent="." unique_id=1231706917 groups=["distance_culled"]]
+[node name="wildflowers_00_09" type="MultiMeshInstance3D" parent="." unique_id=1231706917 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_goe37")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_00_10" type="MultiMeshInstance3D" parent="." unique_id=370511260 groups=["distance_culled"]]
+[node name="grass_clump_00_10" type="MultiMeshInstance3D" parent="." unique_id=370511260 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r3h1u")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 106
 
-[node name="wildflowers_00_10" type="MultiMeshInstance3D" parent="." unique_id=467057709 groups=["distance_culled"]]
+[node name="wildflowers_00_10" type="MultiMeshInstance3D" parent="." unique_id=467057709 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dqnxl")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="grass_clump_01_09" type="MultiMeshInstance3D" parent="." unique_id=624857442 groups=["distance_culled"]]
+[node name="grass_clump_01_09" type="MultiMeshInstance3D" parent="." unique_id=624857442 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lroal")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 92
 
-[node name="grass_clump_02_09" type="MultiMeshInstance3D" parent="." unique_id=182539361 groups=["distance_culled"]]
+[node name="grass_clump_02_09" type="MultiMeshInstance3D" parent="." unique_id=182539361 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_s7vh2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 117
 
-[node name="grass_clump_03_09" type="MultiMeshInstance3D" parent="." unique_id=501486128 groups=["distance_culled"]]
+[node name="grass_clump_03_09" type="MultiMeshInstance3D" parent="." unique_id=501486128 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eta0x")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 100
 
-[node name="wildflowers_02_09" type="MultiMeshInstance3D" parent="." unique_id=1129231220 groups=["distance_culled"]]
+[node name="wildflowers_02_09" type="MultiMeshInstance3D" parent="." unique_id=1129231220 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_reeo8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="wildflowers_03_09" type="MultiMeshInstance3D" parent="." unique_id=83457975 groups=["distance_culled"]]
+[node name="wildflowers_03_09" type="MultiMeshInstance3D" parent="." unique_id=83457975 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vom0m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_01_08" type="MultiMeshInstance3D" parent="." unique_id=1493444540 groups=["distance_culled"]]
+[node name="grass_clump_01_08" type="MultiMeshInstance3D" parent="." unique_id=1493444540 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8ba2e")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 45
 
-[node name="wildflowers_01_08" type="MultiMeshInstance3D" parent="." unique_id=1076249173 groups=["distance_culled"]]
+[node name="wildflowers_01_08" type="MultiMeshInstance3D" parent="." unique_id=1076249173 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cp4sw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_02_08" type="MultiMeshInstance3D" parent="." unique_id=7646947 groups=["distance_culled"]]
+[node name="grass_clump_02_08" type="MultiMeshInstance3D" parent="." unique_id=7646947 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_uei7j")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 56
 
-[node name="wildflowers_02_08" type="MultiMeshInstance3D" parent="." unique_id=1294211638 groups=["distance_culled"]]
+[node name="wildflowers_02_08" type="MultiMeshInstance3D" parent="." unique_id=1294211638 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q7v5v")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_03_08" type="MultiMeshInstance3D" parent="." unique_id=1873785220 groups=["distance_culled"]]
+[node name="grass_clump_03_08" type="MultiMeshInstance3D" parent="." unique_id=1873785220 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ofjbp")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 86
 
-[node name="wildflowers_03_08" type="MultiMeshInstance3D" parent="." unique_id=2140354814 groups=["distance_culled"]]
+[node name="wildflowers_03_08" type="MultiMeshInstance3D" parent="." unique_id=2140354814 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vs8qi")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_01_07" type="MultiMeshInstance3D" parent="." unique_id=1026451320 groups=["distance_culled"]]
+[node name="grass_clump_01_07" type="MultiMeshInstance3D" parent="." unique_id=1026451320 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4364r")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 122
 
-[node name="grass_clump_01_06" type="MultiMeshInstance3D" parent="." unique_id=646515115 groups=["distance_culled"]]
+[node name="grass_clump_01_06" type="MultiMeshInstance3D" parent="." unique_id=646515115 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qf517")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 133
 
-[node name="wildflowers_01_06" type="MultiMeshInstance3D" parent="." unique_id=312120509 groups=["distance_culled"]]
+[node name="wildflowers_01_06" type="MultiMeshInstance3D" parent="." unique_id=312120509 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_40kbs")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="grass_clump_02_07" type="MultiMeshInstance3D" parent="." unique_id=454060921 groups=["distance_culled"]]
+[node name="grass_clump_02_07" type="MultiMeshInstance3D" parent="." unique_id=454060921 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7u3qq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 128
 
-[node name="wildflowers_01_07" type="MultiMeshInstance3D" parent="." unique_id=2036547267 groups=["distance_culled"]]
+[node name="wildflowers_01_07" type="MultiMeshInstance3D" parent="." unique_id=2036547267 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2h6xc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 9
 
-[node name="grass_clump_02_06" type="MultiMeshInstance3D" parent="." unique_id=973992480 groups=["distance_culled"]]
+[node name="grass_clump_02_06" type="MultiMeshInstance3D" parent="." unique_id=973992480 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yw6ic")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 50
 
-[node name="grass_clump_03_07" type="MultiMeshInstance3D" parent="." unique_id=1927659142 groups=["distance_culled"]]
+[node name="grass_clump_03_07" type="MultiMeshInstance3D" parent="." unique_id=1927659142 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_v8t2q")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 79
 
-[node name="wildflowers_03_06" type="MultiMeshInstance3D" parent="." unique_id=31503289 groups=["distance_culled"]]
+[node name="wildflowers_03_06" type="MultiMeshInstance3D" parent="." unique_id=31503289 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eeyje")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_03_06" type="MultiMeshInstance3D" parent="." unique_id=485899603 groups=["distance_culled"]]
+[node name="grass_clump_03_06" type="MultiMeshInstance3D" parent="." unique_id=485899603 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ccxdo")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 25
 
-[node name="wildflowers_03_07" type="MultiMeshInstance3D" parent="." unique_id=846807038 groups=["distance_culled"]]
+[node name="wildflowers_03_07" type="MultiMeshInstance3D" parent="." unique_id=846807038 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yf2wn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_05_07" type="MultiMeshInstance3D" parent="." unique_id=1263725184 groups=["distance_culled"]]
+[node name="grass_clump_05_07" type="MultiMeshInstance3D" parent="." unique_id=1263725184 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m8xyu")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 53
 
-[node name="grass_clump_05_06" type="MultiMeshInstance3D" parent="." unique_id=798176038 groups=["distance_culled"]]
+[node name="grass_clump_05_06" type="MultiMeshInstance3D" parent="." unique_id=798176038 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hd7kb")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 27
 
-[node name="wildflowers_05_06" type="MultiMeshInstance3D" parent="." unique_id=1313727670 groups=["distance_culled"]]
+[node name="wildflowers_05_06" type="MultiMeshInstance3D" parent="." unique_id=1313727670 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qk4bv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_06_07" type="MultiMeshInstance3D" parent="." unique_id=1072020381 groups=["distance_culled"]]
+[node name="grass_clump_06_07" type="MultiMeshInstance3D" parent="." unique_id=1072020381 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ka1on")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 46
 
-[node name="grass_clump_06_06" type="MultiMeshInstance3D" parent="." unique_id=743107109 groups=["distance_culled"]]
+[node name="grass_clump_06_06" type="MultiMeshInstance3D" parent="." unique_id=743107109 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xyr3x")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 33
 
-[node name="grass_clump_07_07" type="MultiMeshInstance3D" parent="." unique_id=1164998485 groups=["distance_culled"]]
+[node name="grass_clump_07_07" type="MultiMeshInstance3D" parent="." unique_id=1164998485 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0n1ci")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 33
 
-[node name="grass_clump_07_06" type="MultiMeshInstance3D" parent="." unique_id=406473610 groups=["distance_culled"]]
+[node name="grass_clump_07_06" type="MultiMeshInstance3D" parent="." unique_id=406473610 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hi7c1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 18
 
-[node name="wildflowers_00_05" type="MultiMeshInstance3D" parent="." unique_id=130379287 groups=["distance_culled"]]
+[node name="wildflowers_00_05" type="MultiMeshInstance3D" parent="." unique_id=130379287 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cygkg")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_01_05" type="MultiMeshInstance3D" parent="." unique_id=1602909467 groups=["distance_culled"]]
+[node name="grass_clump_01_05" type="MultiMeshInstance3D" parent="." unique_id=1602909467 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tumwk")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 45
 
-[node name="wildflowers_01_05" type="MultiMeshInstance3D" parent="." unique_id=1120976316 groups=["distance_culled"]]
+[node name="wildflowers_01_05" type="MultiMeshInstance3D" parent="." unique_id=1120976316 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m2q8j")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_02_05" type="MultiMeshInstance3D" parent="." unique_id=1410577041 groups=["distance_culled"]]
+[node name="grass_clump_02_05" type="MultiMeshInstance3D" parent="." unique_id=1410577041 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jijn1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 69
 
-[node name="wildflowers_02_05" type="MultiMeshInstance3D" parent="." unique_id=468411423 groups=["distance_culled"]]
+[node name="wildflowers_02_05" type="MultiMeshInstance3D" parent="." unique_id=468411423 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gg2c4")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_03_05" type="MultiMeshInstance3D" parent="." unique_id=974387621 groups=["distance_culled"]]
+[node name="grass_clump_03_05" type="MultiMeshInstance3D" parent="." unique_id=974387621 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_e4nnl")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 40
 
-[node name="wildflowers_03_05" type="MultiMeshInstance3D" parent="." unique_id=1492040650 groups=["distance_culled"]]
+[node name="wildflowers_03_05" type="MultiMeshInstance3D" parent="." unique_id=1492040650 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l7rnd")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_05_05" type="MultiMeshInstance3D" parent="." unique_id=2000641905 groups=["distance_culled"]]
+[node name="grass_clump_05_05" type="MultiMeshInstance3D" parent="." unique_id=2000641905 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_upmfj")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 76
 
-[node name="wildflowers_05_05" type="MultiMeshInstance3D" parent="." unique_id=761679800 groups=["distance_culled"]]
+[node name="wildflowers_05_05" type="MultiMeshInstance3D" parent="." unique_id=761679800 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lkl7l")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_06_05" type="MultiMeshInstance3D" parent="." unique_id=1864381569 groups=["distance_culled"]]
+[node name="wildflowers_06_05" type="MultiMeshInstance3D" parent="." unique_id=1864381569 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6o4o3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_06_05" type="MultiMeshInstance3D" parent="." unique_id=1312289862 groups=["distance_culled"]]
+[node name="grass_clump_06_05" type="MultiMeshInstance3D" parent="." unique_id=1312289862 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_utk07")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 74
 
-[node name="grass_clump_07_05" type="MultiMeshInstance3D" parent="." unique_id=499583418 groups=["distance_culled"]]
+[node name="grass_clump_07_05" type="MultiMeshInstance3D" parent="." unique_id=499583418 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3bcs3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 47
 
-[node name="wildflowers_07_05" type="MultiMeshInstance3D" parent="." unique_id=1303425546 groups=["distance_culled"]]
+[node name="wildflowers_07_05" type="MultiMeshInstance3D" parent="." unique_id=1303425546 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ok7h7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_02_07" type="MultiMeshInstance3D" parent="." unique_id=2131448366 groups=["distance_culled"]]
+[node name="wildflowers_02_07" type="MultiMeshInstance3D" parent="." unique_id=2131448366 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wfajo")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_05_08" type="MultiMeshInstance3D" parent="." unique_id=1777968395 groups=["distance_culled"]]
+[node name="grass_clump_05_08" type="MultiMeshInstance3D" parent="." unique_id=1777968395 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d2oel")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 48
 
-[node name="wildflowers_05_07" type="MultiMeshInstance3D" parent="." unique_id=541424583 groups=["distance_culled"]]
+[node name="wildflowers_05_07" type="MultiMeshInstance3D" parent="." unique_id=541424583 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m4rtf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_06_07" type="MultiMeshInstance3D" parent="." unique_id=2039648766 groups=["distance_culled"]]
+[node name="wildflowers_06_07" type="MultiMeshInstance3D" parent="." unique_id=2039648766 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yscr1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_07_08" type="MultiMeshInstance3D" parent="." unique_id=2116580520 groups=["distance_culled"]]
+[node name="grass_clump_07_08" type="MultiMeshInstance3D" parent="." unique_id=2116580520 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jyy3k")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 56
 
-[node name="wildflowers_07_07" type="MultiMeshInstance3D" parent="." unique_id=1223769980 groups=["distance_culled"]]
+[node name="wildflowers_07_07" type="MultiMeshInstance3D" parent="." unique_id=1223769980 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fymv8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_07_09" type="MultiMeshInstance3D" parent="." unique_id=1246840403 groups=["distance_culled"]]
+[node name="grass_clump_07_09" type="MultiMeshInstance3D" parent="." unique_id=1246840403 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dh3ox")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 50
 
-[node name="wildflowers_07_09" type="MultiMeshInstance3D" parent="." unique_id=135794743 groups=["distance_culled"]]
+[node name="wildflowers_07_09" type="MultiMeshInstance3D" parent="." unique_id=135794743 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4ul1n")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_07_10" type="MultiMeshInstance3D" parent="." unique_id=1274651158 groups=["distance_culled"]]
+[node name="grass_clump_07_10" type="MultiMeshInstance3D" parent="." unique_id=1274651158 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jku6f")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 43
 
-[node name="grass_clump_07_11" type="MultiMeshInstance3D" parent="." unique_id=1936736771 groups=["distance_culled"]]
+[node name="grass_clump_07_11" type="MultiMeshInstance3D" parent="." unique_id=1936736771 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r4apf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 58
 
-[node name="grass_clump_07_12" type="MultiMeshInstance3D" parent="." unique_id=676954735 groups=["distance_culled"]]
+[node name="grass_clump_07_12" type="MultiMeshInstance3D" parent="." unique_id=676954735 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yk35h")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 35
 
-[node name="grass_clump_07_13" type="MultiMeshInstance3D" parent="." unique_id=20194395 groups=["distance_culled"]]
+[node name="grass_clump_07_13" type="MultiMeshInstance3D" parent="." unique_id=20194395 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dsjn3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 57
 
-[node name="grass_clump_05_13" type="MultiMeshInstance3D" parent="." unique_id=2065046005 groups=["distance_culled"]]
+[node name="grass_clump_05_13" type="MultiMeshInstance3D" parent="." unique_id=2065046005 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_od1g7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 31
 
-[node name="wildflowers_05_13" type="MultiMeshInstance3D" parent="." unique_id=2064916591 groups=["distance_culled"]]
+[node name="wildflowers_05_13" type="MultiMeshInstance3D" parent="." unique_id=2064916591 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t0y6x")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_06_13" type="MultiMeshInstance3D" parent="." unique_id=1945500490 groups=["distance_culled"]]
+[node name="grass_clump_06_13" type="MultiMeshInstance3D" parent="." unique_id=1945500490 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hel01")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 78
 
-[node name="wildflowers_06_13" type="MultiMeshInstance3D" parent="." unique_id=401065343 groups=["distance_culled"]]
+[node name="wildflowers_06_13" type="MultiMeshInstance3D" parent="." unique_id=401065343 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5vmp6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_07_13" type="MultiMeshInstance3D" parent="." unique_id=1788140868 groups=["distance_culled"]]
+[node name="wildflowers_07_13" type="MultiMeshInstance3D" parent="." unique_id=1788140868 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n35jn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_08_13" type="MultiMeshInstance3D" parent="." unique_id=892774469 groups=["distance_culled"]]
+[node name="grass_clump_08_13" type="MultiMeshInstance3D" parent="." unique_id=892774469 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d16y0")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 74
 
-[node name="wildflowers_08_13" type="MultiMeshInstance3D" parent="." unique_id=2036851270 groups=["distance_culled"]]
+[node name="wildflowers_08_13" type="MultiMeshInstance3D" parent="." unique_id=2036851270 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vugsx")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_05_08" type="MultiMeshInstance3D" parent="." unique_id=2111172626 groups=["distance_culled"]]
+[node name="wildflowers_05_08" type="MultiMeshInstance3D" parent="." unique_id=2111172626 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yrd5b")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_05_09" type="MultiMeshInstance3D" parent="." unique_id=1806517673 groups=["distance_culled"]]
+[node name="grass_clump_05_09" type="MultiMeshInstance3D" parent="." unique_id=1806517673 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_266mf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 39
 
-[node name="grass_clump_06_08" type="MultiMeshInstance3D" parent="." unique_id=228296012 groups=["distance_culled"]]
+[node name="grass_clump_06_08" type="MultiMeshInstance3D" parent="." unique_id=228296012 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mnk0g")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 19
 
-[node name="grass_clump_06_09" type="MultiMeshInstance3D" parent="." unique_id=446437675 groups=["distance_culled"]]
+[node name="grass_clump_06_09" type="MultiMeshInstance3D" parent="." unique_id=446437675 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_322iq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 46
 
-[node name="wildflowers_06_08" type="MultiMeshInstance3D" parent="." unique_id=229820862 groups=["distance_culled"]]
+[node name="wildflowers_06_08" type="MultiMeshInstance3D" parent="." unique_id=229820862 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pgk8r")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_07_08" type="MultiMeshInstance3D" parent="." unique_id=1276372879 groups=["distance_culled"]]
+[node name="wildflowers_07_08" type="MultiMeshInstance3D" parent="." unique_id=1276372879 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mroxk")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_08_08" type="MultiMeshInstance3D" parent="." unique_id=852423968 groups=["distance_culled"]]
+[node name="grass_clump_08_08" type="MultiMeshInstance3D" parent="." unique_id=852423968 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_id2g3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 76
 
-[node name="grass_clump_08_09" type="MultiMeshInstance3D" parent="." unique_id=1046076806 groups=["distance_culled"]]
+[node name="grass_clump_08_09" type="MultiMeshInstance3D" parent="." unique_id=1046076806 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6igko")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="wildflowers_08_08" type="MultiMeshInstance3D" parent="." unique_id=1369420971 groups=["distance_culled"]]
+[node name="wildflowers_08_08" type="MultiMeshInstance3D" parent="." unique_id=1369420971 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0m16d")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_05_03" type="MultiMeshInstance3D" parent="." unique_id=328113404 groups=["distance_culled"]]
+[node name="grass_clump_05_03" type="MultiMeshInstance3D" parent="." unique_id=328113404 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_luaoo")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 31
 
-[node name="grass_clump_05_02" type="MultiMeshInstance3D" parent="." unique_id=1784666052 groups=["distance_culled"]]
+[node name="grass_clump_05_02" type="MultiMeshInstance3D" parent="." unique_id=1784666052 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qgjby")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 24
 
-[node name="wildflowers_05_03" type="MultiMeshInstance3D" parent="." unique_id=1790996124 groups=["distance_culled"]]
+[node name="wildflowers_05_03" type="MultiMeshInstance3D" parent="." unique_id=1790996124 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_laa7k")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_06_03" type="MultiMeshInstance3D" parent="." unique_id=356939769 groups=["distance_culled"]]
+[node name="grass_clump_06_03" type="MultiMeshInstance3D" parent="." unique_id=356939769 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nwy10")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 27
 
-[node name="grass_clump_06_02" type="MultiMeshInstance3D" parent="." unique_id=1015686715 groups=["distance_culled"]]
+[node name="grass_clump_06_02" type="MultiMeshInstance3D" parent="." unique_id=1015686715 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6m1gn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 49
 
-[node name="wildflowers_06_02" type="MultiMeshInstance3D" parent="." unique_id=91932560 groups=["distance_culled"]]
+[node name="wildflowers_06_02" type="MultiMeshInstance3D" parent="." unique_id=91932560 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qpf01")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_07_03" type="MultiMeshInstance3D" parent="." unique_id=1743547008 groups=["distance_culled"]]
+[node name="grass_clump_07_03" type="MultiMeshInstance3D" parent="." unique_id=1743547008 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bsgh0")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 20
 
-[node name="grass_clump_07_02" type="MultiMeshInstance3D" parent="." unique_id=662594729 groups=["distance_culled"]]
+[node name="grass_clump_07_02" type="MultiMeshInstance3D" parent="." unique_id=662594729 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qtafl")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 34
 
-[node name="grass_clump_01_04" type="MultiMeshInstance3D" parent="." unique_id=784405979 groups=["distance_culled"]]
+[node name="grass_clump_01_04" type="MultiMeshInstance3D" parent="." unique_id=784405979 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rdm3m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 116
 
-[node name="grass_clump_02_04" type="MultiMeshInstance3D" parent="." unique_id=1221974281 groups=["distance_culled"]]
+[node name="grass_clump_02_04" type="MultiMeshInstance3D" parent="." unique_id=1221974281 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7uigh")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 114
 
-[node name="grass_clump_03_04" type="MultiMeshInstance3D" parent="." unique_id=18827863 groups=["distance_culled"]]
+[node name="grass_clump_03_04" type="MultiMeshInstance3D" parent="." unique_id=18827863 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_esmiq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 115
 
-[node name="wildflowers_03_04" type="MultiMeshInstance3D" parent="." unique_id=1594284492 groups=["distance_culled"]]
+[node name="wildflowers_03_04" type="MultiMeshInstance3D" parent="." unique_id=1594284492 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4g5oi")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="wildflowers_08_09" type="MultiMeshInstance3D" parent="." unique_id=1856707227 groups=["distance_culled"]]
+[node name="wildflowers_08_09" type="MultiMeshInstance3D" parent="." unique_id=1856707227 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ad518")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_07_11" type="MultiMeshInstance3D" parent="." unique_id=158032510 groups=["distance_culled"]]
+[node name="wildflowers_07_11" type="MultiMeshInstance3D" parent="." unique_id=158032510 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x1uio")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_07_12" type="MultiMeshInstance3D" parent="." unique_id=359541981 groups=["distance_culled"]]
+[node name="wildflowers_07_12" type="MultiMeshInstance3D" parent="." unique_id=359541981 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nnl6e")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_06_12" type="MultiMeshInstance3D" parent="." unique_id=910428376 groups=["distance_culled"]]
+[node name="grass_clump_06_12" type="MultiMeshInstance3D" parent="." unique_id=910428376 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7l88r")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 29
 
-[node name="grass_clump_03_14" type="MultiMeshInstance3D" parent="." unique_id=1974032376 groups=["distance_culled"]]
+[node name="grass_clump_03_14" type="MultiMeshInstance3D" parent="." unique_id=1974032376 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d060e")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 25
 
-[node name="grass_clump_03_13" type="MultiMeshInstance3D" parent="." unique_id=1719091241 groups=["distance_culled"]]
+[node name="grass_clump_03_13" type="MultiMeshInstance3D" parent="." unique_id=1719091241 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pawra")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 25
 
-[node name="wildflowers_07_06" type="MultiMeshInstance3D" parent="." unique_id=228696666 groups=["distance_culled"]]
+[node name="wildflowers_07_06" type="MultiMeshInstance3D" parent="." unique_id=228696666 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xbneq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_08_06" type="MultiMeshInstance3D" parent="." unique_id=2015808787 groups=["distance_culled"]]
+[node name="grass_clump_08_06" type="MultiMeshInstance3D" parent="." unique_id=2015808787 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_krgwb")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 52
 
-[node name="grass_clump_09_13" type="MultiMeshInstance3D" parent="." unique_id=1084554890 groups=["distance_culled"]]
+[node name="grass_clump_09_13" type="MultiMeshInstance3D" parent="." unique_id=1084554890 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_e2uu1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 134
 
-[node name="wildflowers_09_13" type="MultiMeshInstance3D" parent="." unique_id=859285279 groups=["distance_culled"]]
+[node name="wildflowers_09_13" type="MultiMeshInstance3D" parent="." unique_id=859285279 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mtonp")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_10_01" type="MultiMeshInstance3D" parent="." unique_id=891230632 groups=["distance_culled"]]
+[node name="grass_clump_10_01" type="MultiMeshInstance3D" parent="." unique_id=891230632 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nw4gs")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 60
 
-[node name="grass_clump_03_03" type="MultiMeshInstance3D" parent="." unique_id=1665080090 groups=["distance_culled"]]
+[node name="grass_clump_03_03" type="MultiMeshInstance3D" parent="." unique_id=1665080090 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gby4v")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 52
 
-[node name="grass_clump_10_10" type="MultiMeshInstance3D" parent="." unique_id=748326200 groups=["distance_culled"]]
+[node name="grass_clump_10_10" type="MultiMeshInstance3D" parent="." unique_id=748326200 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6vuh0")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 96
 
-[node name="wildflowers_11_11" type="MultiMeshInstance3D" parent="." unique_id=1144820283 groups=["distance_culled"]]
+[node name="wildflowers_11_11" type="MultiMeshInstance3D" parent="." unique_id=1144820283 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iivpe")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_11_10" type="MultiMeshInstance3D" parent="." unique_id=802209712 groups=["distance_culled"]]
+[node name="grass_clump_11_10" type="MultiMeshInstance3D" parent="." unique_id=802209712 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6p48j")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="grass_clump_10_11" type="MultiMeshInstance3D" parent="." unique_id=695330983 groups=["distance_culled"]]
+[node name="grass_clump_10_11" type="MultiMeshInstance3D" parent="." unique_id=695330983 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vmuwc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 172
 
-[node name="grass_clump_11_11" type="MultiMeshInstance3D" parent="." unique_id=956056898 groups=["distance_culled"]]
+[node name="grass_clump_11_11" type="MultiMeshInstance3D" parent="." unique_id=956056898 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ikp8c")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 56
 
-[node name="wildflowers_10_10" type="MultiMeshInstance3D" parent="." unique_id=1505445861 groups=["distance_culled"]]
+[node name="wildflowers_10_10" type="MultiMeshInstance3D" parent="." unique_id=1505445861 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d4boi")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_01_00" type="MultiMeshInstance3D" parent="." unique_id=269087605 groups=["distance_culled"]]
+[node name="grass_clump_01_00" type="MultiMeshInstance3D" parent="." unique_id=269087605 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jl2i6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 155
 
-[node name="wildflowers_01_00" type="MultiMeshInstance3D" parent="." unique_id=1293856595 groups=["distance_culled"]]
+[node name="wildflowers_01_00" type="MultiMeshInstance3D" parent="." unique_id=1293856595 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4nts4")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="wildflowers_10_04" type="MultiMeshInstance3D" parent="." unique_id=1897076419 groups=["distance_culled"]]
+[node name="wildflowers_10_04" type="MultiMeshInstance3D" parent="." unique_id=1897076419 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_61vht")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_10_04" type="MultiMeshInstance3D" parent="." unique_id=1979182209 groups=["distance_culled"]]
+[node name="grass_clump_10_04" type="MultiMeshInstance3D" parent="." unique_id=1979182209 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_er8ku")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 45
 
-[node name="grass_clump_09_12" type="MultiMeshInstance3D" parent="." unique_id=106875665 groups=["distance_culled"]]
+[node name="grass_clump_09_12" type="MultiMeshInstance3D" parent="." unique_id=106875665 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7bw31")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 91
 
-[node name="grass_clump_09_11" type="MultiMeshInstance3D" parent="." unique_id=637254157 groups=["distance_culled"]]
+[node name="grass_clump_09_11" type="MultiMeshInstance3D" parent="." unique_id=637254157 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_77677")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 72
 
-[node name="wildflowers_09_11" type="MultiMeshInstance3D" parent="." unique_id=260442627 groups=["distance_culled"]]
+[node name="wildflowers_09_11" type="MultiMeshInstance3D" parent="." unique_id=260442627 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qlp5a")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_08_01" type="MultiMeshInstance3D" parent="." unique_id=989993947 groups=["distance_culled"]]
+[node name="grass_clump_08_01" type="MultiMeshInstance3D" parent="." unique_id=989993947 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tw4y0")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 118
 
-[node name="grass_clump_07_01" type="MultiMeshInstance3D" parent="." unique_id=623113410 groups=["distance_culled"]]
+[node name="grass_clump_07_01" type="MultiMeshInstance3D" parent="." unique_id=623113410 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ddd3k")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 78
 
-[node name="grass_clump_08_02" type="MultiMeshInstance3D" parent="." unique_id=913163222 groups=["distance_culled"]]
+[node name="grass_clump_08_02" type="MultiMeshInstance3D" parent="." unique_id=913163222 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7rqs0")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 64
 
-[node name="wildflowers_07_01" type="MultiMeshInstance3D" parent="." unique_id=1578108138 groups=["distance_culled"]]
+[node name="wildflowers_07_01" type="MultiMeshInstance3D" parent="." unique_id=1578108138 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_34wwh")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_08_02" type="MultiMeshInstance3D" parent="." unique_id=1942008358 groups=["distance_culled"]]
+[node name="wildflowers_08_02" type="MultiMeshInstance3D" parent="." unique_id=1942008358 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_oixd6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_08_03" type="MultiMeshInstance3D" parent="." unique_id=841804260 groups=["distance_culled"]]
+[node name="grass_clump_08_03" type="MultiMeshInstance3D" parent="." unique_id=841804260 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lknep")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 84
 
-[node name="wildflowers_08_03" type="MultiMeshInstance3D" parent="." unique_id=419876755 groups=["distance_culled"]]
+[node name="wildflowers_08_03" type="MultiMeshInstance3D" parent="." unique_id=419876755 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_inriw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 8
 
-[node name="grass_clump_10_00" type="MultiMeshInstance3D" parent="." unique_id=114052659 groups=["distance_culled"]]
+[node name="grass_clump_10_00" type="MultiMeshInstance3D" parent="." unique_id=114052659 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1r823")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 61
 
-[node name="grass_clump_09_10" type="MultiMeshInstance3D" parent="." unique_id=1420527157 groups=["distance_culled"]]
+[node name="grass_clump_09_10" type="MultiMeshInstance3D" parent="." unique_id=1420527157 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hmbcs")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 49
 
-[node name="grass_clump_08_10" type="MultiMeshInstance3D" parent="." unique_id=142054761 groups=["distance_culled"]]
+[node name="grass_clump_08_10" type="MultiMeshInstance3D" parent="." unique_id=142054761 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nk1xt")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="wildflowers_08_10" type="MultiMeshInstance3D" parent="." unique_id=2134620050 groups=["distance_culled"]]
+[node name="wildflowers_08_10" type="MultiMeshInstance3D" parent="." unique_id=2134620050 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_50ect")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_09_10" type="MultiMeshInstance3D" parent="." unique_id=822194384 groups=["distance_culled"]]
+[node name="wildflowers_09_10" type="MultiMeshInstance3D" parent="." unique_id=822194384 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4ot8h")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="grass_clump_01_01" type="MultiMeshInstance3D" parent="." unique_id=215969203 groups=["distance_culled"]]
+[node name="grass_clump_01_01" type="MultiMeshInstance3D" parent="." unique_id=215969203 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dfaon")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 84
 
-[node name="grass_clump_01_03" type="MultiMeshInstance3D" parent="." unique_id=2031041726 groups=["distance_culled"]]
+[node name="grass_clump_01_03" type="MultiMeshInstance3D" parent="." unique_id=2031041726 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iwndv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 57
 
-[node name="grass_clump_10_13" type="MultiMeshInstance3D" parent="." unique_id=311405676 groups=["distance_culled"]]
+[node name="grass_clump_10_13" type="MultiMeshInstance3D" parent="." unique_id=311405676 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_j7a4l")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 76
 
-[node name="grass_clump_08_12" type="MultiMeshInstance3D" parent="." unique_id=58863570 groups=["distance_culled"]]
+[node name="grass_clump_08_12" type="MultiMeshInstance3D" parent="." unique_id=58863570 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0ndb3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 79
 
-[node name="wildflowers_09_12" type="MultiMeshInstance3D" parent="." unique_id=1001861076 groups=["distance_culled"]]
+[node name="wildflowers_09_12" type="MultiMeshInstance3D" parent="." unique_id=1001861076 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lgwvm")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_01_01" type="MultiMeshInstance3D" parent="." unique_id=539456 groups=["distance_culled"]]
+[node name="wildflowers_01_01" type="MultiMeshInstance3D" parent="." unique_id=539456 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gdujq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="wildflowers_08_01" type="MultiMeshInstance3D" parent="." unique_id=7280214 groups=["distance_culled"]]
+[node name="wildflowers_08_01" type="MultiMeshInstance3D" parent="." unique_id=7280214 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lgrcy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_04_01" type="MultiMeshInstance3D" parent="." unique_id=1482218755 groups=["distance_culled"]]
+[node name="grass_clump_04_01" type="MultiMeshInstance3D" parent="." unique_id=1482218755 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_noux1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 77
 
-[node name="wildflowers_04_01" type="MultiMeshInstance3D" parent="." unique_id=1331211338 groups=["distance_culled"]]
+[node name="wildflowers_04_01" type="MultiMeshInstance3D" parent="." unique_id=1331211338 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yij3e")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_09_05" type="MultiMeshInstance3D" parent="." unique_id=2097346253 groups=["distance_culled"]]
+[node name="grass_clump_09_05" type="MultiMeshInstance3D" parent="." unique_id=2097346253 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cy8s2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 94
 
-[node name="grass_clump_09_06" type="MultiMeshInstance3D" parent="." unique_id=793396411 groups=["distance_culled"]]
+[node name="grass_clump_09_06" type="MultiMeshInstance3D" parent="." unique_id=793396411 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rqmyy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 65
 
-[node name="grass_clump_10_06" type="MultiMeshInstance3D" parent="." unique_id=405157849 groups=["distance_culled"]]
+[node name="grass_clump_10_06" type="MultiMeshInstance3D" parent="." unique_id=405157849 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tlq8b")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 111
 
-[node name="wildflowers_10_06" type="MultiMeshInstance3D" parent="." unique_id=619919057 groups=["distance_culled"]]
+[node name="wildflowers_10_06" type="MultiMeshInstance3D" parent="." unique_id=619919057 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hirgn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_09_06" type="MultiMeshInstance3D" parent="." unique_id=470132000 groups=["distance_culled"]]
+[node name="wildflowers_09_06" type="MultiMeshInstance3D" parent="." unique_id=470132000 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_c57jv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_03_10" type="MultiMeshInstance3D" parent="." unique_id=1436109124 groups=["distance_culled"]]
+[node name="grass_clump_03_10" type="MultiMeshInstance3D" parent="." unique_id=1436109124 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mmf3s")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 71
 
-[node name="grass_clump_05_00" type="MultiMeshInstance3D" parent="." unique_id=856886873 groups=["distance_culled"]]
+[node name="grass_clump_05_00" type="MultiMeshInstance3D" parent="." unique_id=856886873 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t2dqv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 59
 
-[node name="wildflowers_05_00" type="MultiMeshInstance3D" parent="." unique_id=1953907002 groups=["distance_culled"]]
+[node name="wildflowers_05_00" type="MultiMeshInstance3D" parent="." unique_id=1953907002 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6p0gg")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_09_08" type="MultiMeshInstance3D" parent="." unique_id=981951269 groups=["distance_culled"]]
+[node name="grass_clump_09_08" type="MultiMeshInstance3D" parent="." unique_id=981951269 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sr22a")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 71
 
-[node name="wildflowers_09_08" type="MultiMeshInstance3D" parent="." unique_id=1185977836 groups=["distance_culled"]]
+[node name="wildflowers_09_08" type="MultiMeshInstance3D" parent="." unique_id=1185977836 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l6tr3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_02_00" type="MultiMeshInstance3D" parent="." unique_id=1332989938 groups=["distance_culled"]]
+[node name="grass_clump_02_00" type="MultiMeshInstance3D" parent="." unique_id=1332989938 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gl75o")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 59
 
-[node name="wildflowers_02_00" type="MultiMeshInstance3D" parent="." unique_id=214874206 groups=["distance_culled"]]
+[node name="wildflowers_02_00" type="MultiMeshInstance3D" parent="." unique_id=214874206 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ut4yf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_07_03" type="MultiMeshInstance3D" parent="." unique_id=877132100 groups=["distance_culled"]]
+[node name="wildflowers_07_03" type="MultiMeshInstance3D" parent="." unique_id=877132100 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4o5sf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_02_10" type="MultiMeshInstance3D" parent="." unique_id=502776589 groups=["distance_culled"]]
+[node name="grass_clump_02_10" type="MultiMeshInstance3D" parent="." unique_id=502776589 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lghdg")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 82
 
-[node name="grass_clump_06_01" type="MultiMeshInstance3D" parent="." unique_id=1595501294 groups=["distance_culled"]]
+[node name="grass_clump_06_01" type="MultiMeshInstance3D" parent="." unique_id=1595501294 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rxro3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 92
 
-[node name="grass_clump_09_02" type="MultiMeshInstance3D" parent="." unique_id=1576760514 groups=["distance_culled"]]
+[node name="grass_clump_09_02" type="MultiMeshInstance3D" parent="." unique_id=1576760514 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_g11g1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 122
 
-[node name="grass_clump_09_03" type="MultiMeshInstance3D" parent="." unique_id=1797867054 groups=["distance_culled"]]
+[node name="grass_clump_09_03" type="MultiMeshInstance3D" parent="." unique_id=1797867054 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bbswh")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 78
 
-[node name="grass_clump_03_02" type="MultiMeshInstance3D" parent="." unique_id=154139658 groups=["distance_culled"]]
+[node name="grass_clump_03_02" type="MultiMeshInstance3D" parent="." unique_id=154139658 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_u1n74")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 92
 
-[node name="grass_clump_03_01" type="MultiMeshInstance3D" parent="." unique_id=1624337377 groups=["distance_culled"]]
+[node name="grass_clump_03_01" type="MultiMeshInstance3D" parent="." unique_id=1624337377 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_00v1u")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 73
 
-[node name="grass_clump_09_00" type="MultiMeshInstance3D" parent="." unique_id=542868407 groups=["distance_culled"]]
+[node name="grass_clump_09_00" type="MultiMeshInstance3D" parent="." unique_id=542868407 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mk0bk")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 76
 
-[node name="grass_clump_08_05" type="MultiMeshInstance3D" parent="." unique_id=1786727264 groups=["distance_culled"]]
+[node name="grass_clump_08_05" type="MultiMeshInstance3D" parent="." unique_id=1786727264 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m0ll1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 73
 
-[node name="grass_clump_02_11" type="MultiMeshInstance3D" parent="." unique_id=2041811007 groups=["distance_culled"]]
+[node name="grass_clump_02_11" type="MultiMeshInstance3D" parent="." unique_id=2041811007 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qxfpd")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 111
 
-[node name="wildflowers_02_11" type="MultiMeshInstance3D" parent="." unique_id=1237546531 groups=["distance_culled"]]
+[node name="wildflowers_02_11" type="MultiMeshInstance3D" parent="." unique_id=1237546531 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eauf1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_08_11" type="MultiMeshInstance3D" parent="." unique_id=1319662349 groups=["distance_culled"]]
+[node name="grass_clump_08_11" type="MultiMeshInstance3D" parent="." unique_id=1319662349 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ps33w")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 68
 
-[node name="wildflowers_08_11" type="MultiMeshInstance3D" parent="." unique_id=34470364 groups=["distance_culled"]]
+[node name="wildflowers_08_11" type="MultiMeshInstance3D" parent="." unique_id=34470364 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gs0hw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_10_05" type="MultiMeshInstance3D" parent="." unique_id=1664275737 groups=["distance_culled"]]
+[node name="grass_clump_10_05" type="MultiMeshInstance3D" parent="." unique_id=1664275737 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bbfdd")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 55
 
-[node name="grass_clump_08_14" type="MultiMeshInstance3D" parent="." unique_id=498218968 groups=["distance_culled"]]
+[node name="grass_clump_08_14" type="MultiMeshInstance3D" parent="." unique_id=498218968 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2rg6b")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 28
 
-[node name="grass_clump_09_14" type="MultiMeshInstance3D" parent="." unique_id=314686500 groups=["distance_culled"]]
+[node name="grass_clump_09_14" type="MultiMeshInstance3D" parent="." unique_id=314686500 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ucgq7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 62
 
-[node name="grass_clump_05_11" type="MultiMeshInstance3D" parent="." unique_id=169622623 groups=["distance_culled"]]
+[node name="grass_clump_05_11" type="MultiMeshInstance3D" parent="." unique_id=169622623 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_aa0k7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 38
 
-[node name="grass_clump_05_10" type="MultiMeshInstance3D" parent="." unique_id=1107765007 groups=["distance_culled"]]
+[node name="grass_clump_05_10" type="MultiMeshInstance3D" parent="." unique_id=1107765007 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rbhxf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 34
 
-[node name="wildflowers_05_11" type="MultiMeshInstance3D" parent="." unique_id=526148253 groups=["distance_culled"]]
+[node name="wildflowers_05_11" type="MultiMeshInstance3D" parent="." unique_id=526148253 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fehfu")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_05_10" type="MultiMeshInstance3D" parent="." unique_id=489367468 groups=["distance_culled"]]
+[node name="wildflowers_05_10" type="MultiMeshInstance3D" parent="." unique_id=489367468 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0pjas")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_02_01" type="MultiMeshInstance3D" parent="." unique_id=1884856859 groups=["distance_culled"]]
+[node name="grass_clump_02_01" type="MultiMeshInstance3D" parent="." unique_id=1884856859 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5vu21")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 110
 
-[node name="wildflowers_02_01" type="MultiMeshInstance3D" parent="." unique_id=539429760 groups=["distance_culled"]]
+[node name="wildflowers_02_01" type="MultiMeshInstance3D" parent="." unique_id=539429760 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_db67s")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_02_10" type="MultiMeshInstance3D" parent="." unique_id=1178801553 groups=["distance_culled"]]
+[node name="wildflowers_02_10" type="MultiMeshInstance3D" parent="." unique_id=1178801553 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_u8mbw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_05_01" type="MultiMeshInstance3D" parent="." unique_id=538791621 groups=["distance_culled"]]
+[node name="grass_clump_05_01" type="MultiMeshInstance3D" parent="." unique_id=538791621 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l3ajn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 81
 
-[node name="wildflowers_05_01" type="MultiMeshInstance3D" parent="." unique_id=811916013 groups=["distance_culled"]]
+[node name="wildflowers_05_01" type="MultiMeshInstance3D" parent="." unique_id=811916013 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gclum")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_03_02" type="MultiMeshInstance3D" parent="." unique_id=1170335446 groups=["distance_culled"]]
+[node name="wildflowers_03_02" type="MultiMeshInstance3D" parent="." unique_id=1170335446 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yc26p")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_09_07" type="MultiMeshInstance3D" parent="." unique_id=1440376622 groups=["distance_culled"]]
+[node name="grass_clump_09_07" type="MultiMeshInstance3D" parent="." unique_id=1440376622 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iwvpc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 20
 
-[node name="wildflowers_09_07" type="MultiMeshInstance3D" parent="." unique_id=196988517 groups=["distance_culled"]]
+[node name="wildflowers_09_07" type="MultiMeshInstance3D" parent="." unique_id=196988517 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mr7dh")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_08_06" type="MultiMeshInstance3D" parent="." unique_id=504378504 groups=["distance_culled"]]
+[node name="wildflowers_08_06" type="MultiMeshInstance3D" parent="." unique_id=504378504 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gh5se")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_11_06" type="MultiMeshInstance3D" parent="." unique_id=28112849 groups=["distance_culled"]]
+[node name="grass_clump_11_06" type="MultiMeshInstance3D" parent="." unique_id=28112849 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7432a")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 14
 
-[node name="grass_clump_11_05" type="MultiMeshInstance3D" parent="." unique_id=472742986 groups=["distance_culled"]]
+[node name="grass_clump_11_05" type="MultiMeshInstance3D" parent="." unique_id=472742986 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_h0us2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 22
 
-[node name="grass_clump_06_04" type="MultiMeshInstance3D" parent="." unique_id=1310805022 groups=["distance_culled"]]
+[node name="grass_clump_06_04" type="MultiMeshInstance3D" parent="." unique_id=1310805022 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_apn7w")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 79
 
-[node name="wildflowers_10_07" type="MultiMeshInstance3D" parent="." unique_id=2018748628 groups=["distance_culled"]]
+[node name="wildflowers_10_07" type="MultiMeshInstance3D" parent="." unique_id=2018748628 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bh7qe")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_10_07" type="MultiMeshInstance3D" parent="." unique_id=1970221027 groups=["distance_culled"]]
+[node name="grass_clump_10_07" type="MultiMeshInstance3D" parent="." unique_id=1970221027 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qkifw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 114
 
-[node name="grass_clump_10_12" type="MultiMeshInstance3D" parent="." unique_id=590428413 groups=["distance_culled"]]
+[node name="grass_clump_10_12" type="MultiMeshInstance3D" parent="." unique_id=590428413 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_g48nu")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 139
 
-[node name="grass_clump_10_03" type="MultiMeshInstance3D" parent="." unique_id=341502852 groups=["distance_culled"]]
+[node name="grass_clump_10_03" type="MultiMeshInstance3D" parent="." unique_id=341502852 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pr3c3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 102
 
-[node name="wildflowers_10_03" type="MultiMeshInstance3D" parent="." unique_id=1568903390 groups=["distance_culled"]]
+[node name="wildflowers_10_03" type="MultiMeshInstance3D" parent="." unique_id=1568903390 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_68iu7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_02_03" type="MultiMeshInstance3D" parent="." unique_id=126886809 groups=["distance_culled"]]
+[node name="grass_clump_02_03" type="MultiMeshInstance3D" parent="." unique_id=126886809 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jnw06")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 86
 
-[node name="wildflowers_02_02" type="MultiMeshInstance3D" parent="." unique_id=181983437 groups=["distance_culled"]]
+[node name="wildflowers_02_02" type="MultiMeshInstance3D" parent="." unique_id=181983437 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r0adr")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_00_01" type="MultiMeshInstance3D" parent="." unique_id=191138709 groups=["distance_culled"]]
+[node name="grass_clump_00_01" type="MultiMeshInstance3D" parent="." unique_id=191138709 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3qf7t")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 64
 
-[node name="grass_clump_00_00" type="MultiMeshInstance3D" parent="." unique_id=1660948052 groups=["distance_culled"]]
+[node name="grass_clump_00_00" type="MultiMeshInstance3D" parent="." unique_id=1660948052 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_w152u")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 44
 
-[node name="grass_clump_11_08" type="MultiMeshInstance3D" parent="." unique_id=20836395 groups=["distance_culled"]]
+[node name="grass_clump_11_08" type="MultiMeshInstance3D" parent="." unique_id=20836395 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wg323")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 45
 
-[node name="wildflowers_11_08" type="MultiMeshInstance3D" parent="." unique_id=1847188987 groups=["distance_culled"]]
+[node name="wildflowers_11_08" type="MultiMeshInstance3D" parent="." unique_id=1847188987 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ykbo1")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_02_02" type="MultiMeshInstance3D" parent="." unique_id=1946661482 groups=["distance_culled"]]
+[node name="grass_clump_02_02" type="MultiMeshInstance3D" parent="." unique_id=1946661482 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mjsft")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 34
 
-[node name="grass_clump_11_12" type="MultiMeshInstance3D" parent="." unique_id=1256631327 groups=["distance_culled"]]
+[node name="grass_clump_11_12" type="MultiMeshInstance3D" parent="." unique_id=1256631327 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2uq4o")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 55
 
-[node name="wildflowers_11_12" type="MultiMeshInstance3D" parent="." unique_id=1159510933 groups=["distance_culled"]]
+[node name="wildflowers_11_12" type="MultiMeshInstance3D" parent="." unique_id=1159510933 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8l3fw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_10_08" type="MultiMeshInstance3D" parent="." unique_id=648565418 groups=["distance_culled"]]
+[node name="wildflowers_10_08" type="MultiMeshInstance3D" parent="." unique_id=648565418 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3g5yy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_10_08" type="MultiMeshInstance3D" parent="." unique_id=1876149350 groups=["distance_culled"]]
+[node name="grass_clump_10_08" type="MultiMeshInstance3D" parent="." unique_id=1876149350 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_b5ge8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 56
 
-[node name="grass_clump_10_09" type="MultiMeshInstance3D" parent="." unique_id=1881136526 groups=["distance_culled"]]
+[node name="grass_clump_10_09" type="MultiMeshInstance3D" parent="." unique_id=1881136526 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_asxer")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 106
 
-[node name="wildflowers_10_09" type="MultiMeshInstance3D" parent="." unique_id=1358956389 groups=["distance_culled"]]
+[node name="wildflowers_10_09" type="MultiMeshInstance3D" parent="." unique_id=1358956389 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xo06w")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="wildflowers_09_00" type="MultiMeshInstance3D" parent="." unique_id=859481328 groups=["distance_culled"]]
+[node name="wildflowers_09_00" type="MultiMeshInstance3D" parent="." unique_id=859481328 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_85r1a")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_09_04" type="MultiMeshInstance3D" parent="." unique_id=1067175483 groups=["distance_culled"]]
+[node name="grass_clump_09_04" type="MultiMeshInstance3D" parent="." unique_id=1067175483 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eugxq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 60
 
-[node name="wildflowers_09_04" type="MultiMeshInstance3D" parent="." unique_id=1333874624 groups=["distance_culled"]]
+[node name="wildflowers_09_04" type="MultiMeshInstance3D" parent="." unique_id=1333874624 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_30xoe")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_08_05" type="MultiMeshInstance3D" parent="." unique_id=577364813 groups=["distance_culled"]]
+[node name="wildflowers_08_05" type="MultiMeshInstance3D" parent="." unique_id=577364813 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qx2bq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_11_01" type="MultiMeshInstance3D" parent="." unique_id=1793282215 groups=["distance_culled"]]
+[node name="grass_clump_11_01" type="MultiMeshInstance3D" parent="." unique_id=1793282215 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5j1qy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 27
 
-[node name="wildflowers_11_01" type="MultiMeshInstance3D" parent="." unique_id=596465725 groups=["distance_culled"]]
+[node name="wildflowers_11_01" type="MultiMeshInstance3D" parent="." unique_id=596465725 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_e01tf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_04_00" type="MultiMeshInstance3D" parent="." unique_id=1088892194 groups=["distance_culled"]]
+[node name="grass_clump_04_00" type="MultiMeshInstance3D" parent="." unique_id=1088892194 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ckaqe")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 58
 
-[node name="wildflowers_04_00" type="MultiMeshInstance3D" parent="." unique_id=1232511822 groups=["distance_culled"]]
+[node name="wildflowers_04_00" type="MultiMeshInstance3D" parent="." unique_id=1232511822 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_o2p7v")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_06_11" type="MultiMeshInstance3D" parent="." unique_id=2117053200 groups=["distance_culled"]]
+[node name="grass_clump_06_11" type="MultiMeshInstance3D" parent="." unique_id=2117053200 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m0i5k")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 37
 
-[node name="grass_clump_05_12" type="MultiMeshInstance3D" parent="." unique_id=125575342 groups=["distance_culled"]]
+[node name="grass_clump_05_12" type="MultiMeshInstance3D" parent="." unique_id=125575342 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yuoqj")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 32
 
-[node name="wildflowers_05_12" type="MultiMeshInstance3D" parent="." unique_id=1831034437 groups=["distance_culled"]]
+[node name="wildflowers_05_12" type="MultiMeshInstance3D" parent="." unique_id=1831034437 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4xkdu")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_06_12" type="MultiMeshInstance3D" parent="." unique_id=1251818221 groups=["distance_culled"]]
+[node name="wildflowers_06_12" type="MultiMeshInstance3D" parent="." unique_id=1251818221 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_o1hi7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_08_00" type="MultiMeshInstance3D" parent="." unique_id=1328177539 groups=["distance_culled"]]
+[node name="grass_clump_08_00" type="MultiMeshInstance3D" parent="." unique_id=1328177539 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pd1wl")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 55
 
-[node name="wildflowers_08_00" type="MultiMeshInstance3D" parent="." unique_id=1477559245 groups=["distance_culled"]]
+[node name="wildflowers_08_00" type="MultiMeshInstance3D" parent="." unique_id=1477559245 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0hrnt")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_10_12" type="MultiMeshInstance3D" parent="." unique_id=1445831265 groups=["distance_culled"]]
+[node name="wildflowers_10_12" type="MultiMeshInstance3D" parent="." unique_id=1445831265 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fvkuf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="wildflowers_10_11" type="MultiMeshInstance3D" parent="." unique_id=740671825 groups=["distance_culled"]]
+[node name="wildflowers_10_11" type="MultiMeshInstance3D" parent="." unique_id=740671825 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_31vip")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_11_09" type="MultiMeshInstance3D" parent="." unique_id=697472842 groups=["distance_culled"]]
+[node name="grass_clump_11_09" type="MultiMeshInstance3D" parent="." unique_id=697472842 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jdend")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 43
 
-[node name="wildflowers_11_09" type="MultiMeshInstance3D" parent="." unique_id=1407184061 groups=["distance_culled"]]
+[node name="wildflowers_11_09" type="MultiMeshInstance3D" parent="." unique_id=1407184061 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_22tc3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_10_05" type="MultiMeshInstance3D" parent="." unique_id=1444095678 groups=["distance_culled"]]
+[node name="wildflowers_10_05" type="MultiMeshInstance3D" parent="." unique_id=1444095678 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5i308")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_11_05" type="MultiMeshInstance3D" parent="." unique_id=431742157 groups=["distance_culled"]]
+[node name="wildflowers_11_05" type="MultiMeshInstance3D" parent="." unique_id=431742157 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7nbmm")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_09_01" type="MultiMeshInstance3D" parent="." unique_id=512982404 groups=["distance_culled"]]
+[node name="grass_clump_09_01" type="MultiMeshInstance3D" parent="." unique_id=512982404 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xjm1u")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 66
 
-[node name="grass_clump_01_10" type="MultiMeshInstance3D" parent="." unique_id=1721045942 groups=["distance_culled"]]
+[node name="grass_clump_01_10" type="MultiMeshInstance3D" parent="." unique_id=1721045942 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pk601")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 107
 
-[node name="wildflowers_01_10" type="MultiMeshInstance3D" parent="." unique_id=913474144 groups=["distance_culled"]]
+[node name="wildflowers_01_10" type="MultiMeshInstance3D" parent="." unique_id=913474144 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ig602")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 7
 
-[node name="grass_clump_06_00" type="MultiMeshInstance3D" parent="." unique_id=1639451798 groups=["distance_culled"]]
+[node name="grass_clump_06_00" type="MultiMeshInstance3D" parent="." unique_id=1639451798 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4cfq5")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 71
 
-[node name="wildflowers_06_00" type="MultiMeshInstance3D" parent="." unique_id=1606680244 groups=["distance_culled"]]
+[node name="wildflowers_06_00" type="MultiMeshInstance3D" parent="." unique_id=1606680244 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bin1m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_03_10" type="MultiMeshInstance3D" parent="." unique_id=2141850400 groups=["distance_culled"]]
+[node name="wildflowers_03_10" type="MultiMeshInstance3D" parent="." unique_id=2141850400 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_noi7d")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_03_11" type="MultiMeshInstance3D" parent="." unique_id=909145208 groups=["distance_culled"]]
+[node name="grass_clump_03_11" type="MultiMeshInstance3D" parent="." unique_id=909145208 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_erycb")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 39
 
-[node name="wildflowers_01_09" type="MultiMeshInstance3D" parent="." unique_id=743342392 groups=["distance_culled"]]
+[node name="wildflowers_01_09" type="MultiMeshInstance3D" parent="." unique_id=743342392 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rgesr")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_05_04" type="MultiMeshInstance3D" parent="." unique_id=231048323 groups=["distance_culled"]]
+[node name="grass_clump_05_04" type="MultiMeshInstance3D" parent="." unique_id=231048323 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mug05")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 88
 
-[node name="wildflowers_06_04" type="MultiMeshInstance3D" parent="." unique_id=1866002234 groups=["distance_culled"]]
+[node name="wildflowers_06_04" type="MultiMeshInstance3D" parent="." unique_id=1866002234 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0w4b6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_01_04" type="MultiMeshInstance3D" parent="." unique_id=575669900 groups=["distance_culled"]]
+[node name="wildflowers_01_04" type="MultiMeshInstance3D" parent="." unique_id=575669900 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l7fxy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_00_01" type="MultiMeshInstance3D" parent="." unique_id=1563155036 groups=["distance_culled"]]
+[node name="wildflowers_00_01" type="MultiMeshInstance3D" parent="." unique_id=1563155036 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mtfsw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_00_11" type="MultiMeshInstance3D" parent="." unique_id=1549960897 groups=["distance_culled"]]
+[node name="grass_clump_00_11" type="MultiMeshInstance3D" parent="." unique_id=1549960897 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ml1h2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 55
 
-[node name="wildflowers_00_11" type="MultiMeshInstance3D" parent="." unique_id=238610032 groups=["distance_culled"]]
+[node name="wildflowers_00_11" type="MultiMeshInstance3D" parent="." unique_id=238610032 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cainc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_00_12" type="MultiMeshInstance3D" parent="." unique_id=2044842405 groups=["distance_culled"]]
+[node name="grass_clump_00_12" type="MultiMeshInstance3D" parent="." unique_id=2044842405 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dxkls")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 78
 
-[node name="grass_clump_00_13" type="MultiMeshInstance3D" parent="." unique_id=1387705078 groups=["distance_culled"]]
+[node name="grass_clump_00_13" type="MultiMeshInstance3D" parent="." unique_id=1387705078 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cipsy")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 73
 
-[node name="wildflowers_00_13" type="MultiMeshInstance3D" parent="." unique_id=973973153 groups=["distance_culled"]]
+[node name="wildflowers_00_13" type="MultiMeshInstance3D" parent="." unique_id=973973153 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_081b5")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_00_12" type="MultiMeshInstance3D" parent="." unique_id=1701684116 groups=["distance_culled"]]
+[node name="wildflowers_00_12" type="MultiMeshInstance3D" parent="." unique_id=1701684116 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dikdc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_00_14" type="MultiMeshInstance3D" parent="." unique_id=163738490 groups=["distance_culled"]]
+[node name="grass_clump_00_14" type="MultiMeshInstance3D" parent="." unique_id=163738490 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0wbvw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 37
 
-[node name="grass_clump_01_12" type="MultiMeshInstance3D" parent="." unique_id=110655552 groups=["distance_culled"]]
+[node name="grass_clump_01_12" type="MultiMeshInstance3D" parent="." unique_id=110655552 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lx6pc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 78
 
-[node name="grass_clump_06_10" type="MultiMeshInstance3D" parent="." unique_id=717026110 groups=["distance_culled"]]
+[node name="grass_clump_06_10" type="MultiMeshInstance3D" parent="." unique_id=717026110 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_87lap")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 23
 
-[node name="wildflowers_06_10" type="MultiMeshInstance3D" parent="." unique_id=1430554289 groups=["distance_culled"]]
+[node name="wildflowers_06_10" type="MultiMeshInstance3D" parent="." unique_id=1430554289 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pjgqw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_01_14" type="MultiMeshInstance3D" parent="." unique_id=936467371 groups=["distance_culled"]]
+[node name="grass_clump_01_14" type="MultiMeshInstance3D" parent="." unique_id=936467371 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_oqxgm")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 53
 
-[node name="wildflowers_11_10" type="MultiMeshInstance3D" parent="." unique_id=588784785 groups=["distance_culled"]]
+[node name="wildflowers_11_10" type="MultiMeshInstance3D" parent="." unique_id=588784785 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 168)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rmg6p")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_08_04" type="MultiMeshInstance3D" parent="." unique_id=222659053 groups=["distance_culled"]]
+[node name="grass_clump_08_04" type="MultiMeshInstance3D" parent="." unique_id=222659053 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_id5gm")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 99
 
-[node name="wildflowers_08_04" type="MultiMeshInstance3D" parent="." unique_id=1239497027 groups=["distance_culled"]]
+[node name="wildflowers_08_04" type="MultiMeshInstance3D" parent="." unique_id=1239497027 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3m4h6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="grass_clump_01_02" type="MultiMeshInstance3D" parent="." unique_id=811801064 groups=["distance_culled"]]
+[node name="grass_clump_01_02" type="MultiMeshInstance3D" parent="." unique_id=811801064 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mpxit")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 85
 
-[node name="wildflowers_01_02" type="MultiMeshInstance3D" parent="." unique_id=1343433346 groups=["distance_culled"]]
+[node name="wildflowers_01_02" type="MultiMeshInstance3D" parent="." unique_id=1343433346 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jvuqq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="grass_clump_10_14" type="MultiMeshInstance3D" parent="." unique_id=1795836170 groups=["distance_culled"]]
+[node name="grass_clump_10_14" type="MultiMeshInstance3D" parent="." unique_id=1795836170 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ugrik")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 47
 
-[node name="grass_clump_01_11" type="MultiMeshInstance3D" parent="." unique_id=1529921538 groups=["distance_culled"]]
+[node name="grass_clump_01_11" type="MultiMeshInstance3D" parent="." unique_id=1529921538 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_i4caf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 76
 
-[node name="wildflowers_01_11" type="MultiMeshInstance3D" parent="." unique_id=1570300905 groups=["distance_culled"]]
+[node name="wildflowers_01_11" type="MultiMeshInstance3D" parent="." unique_id=1570300905 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n4f27")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_08_07" type="MultiMeshInstance3D" parent="." unique_id=1461962289 groups=["distance_culled"]]
+[node name="grass_clump_08_07" type="MultiMeshInstance3D" parent="." unique_id=1461962289 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xooxc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 59
 
-[node name="wildflowers_08_07" type="MultiMeshInstance3D" parent="." unique_id=1491437786 groups=["distance_culled"]]
+[node name="wildflowers_08_07" type="MultiMeshInstance3D" parent="." unique_id=1491437786 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8twn3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_03_00" type="MultiMeshInstance3D" parent="." unique_id=991033447 groups=["distance_culled"]]
+[node name="grass_clump_03_00" type="MultiMeshInstance3D" parent="." unique_id=991033447 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7trjg")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 61
 
-[node name="wildflowers_03_00" type="MultiMeshInstance3D" parent="." unique_id=2046046245 groups=["distance_culled"]]
+[node name="wildflowers_03_00" type="MultiMeshInstance3D" parent="." unique_id=2046046245 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gqrck")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_11_13" type="MultiMeshInstance3D" parent="." unique_id=236010550 groups=["distance_culled"]]
+[node name="wildflowers_11_13" type="MultiMeshInstance3D" parent="." unique_id=236010550 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cgued")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_11_13" type="MultiMeshInstance3D" parent="." unique_id=1811693007 groups=["distance_culled"]]
+[node name="grass_clump_11_13" type="MultiMeshInstance3D" parent="." unique_id=1811693007 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dhpq6")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 37
 
-[node name="wildflowers_10_13" type="MultiMeshInstance3D" parent="." unique_id=917150247 groups=["distance_culled"]]
+[node name="wildflowers_10_13" type="MultiMeshInstance3D" parent="." unique_id=917150247 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_je4sg")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="grass_clump_11_14" type="MultiMeshInstance3D" parent="." unique_id=1773415196 groups=["distance_culled"]]
+[node name="grass_clump_11_14" type="MultiMeshInstance3D" parent="." unique_id=1773415196 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6ryv8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 16
 
-[node name="grass_clump_11_00" type="MultiMeshInstance3D" parent="." unique_id=1093658339 groups=["distance_culled"]]
+[node name="grass_clump_11_00" type="MultiMeshInstance3D" parent="." unique_id=1093658339 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_82e7o")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 26
 
-[node name="wildflowers_11_00" type="MultiMeshInstance3D" parent="." unique_id=150661602 groups=["distance_culled"]]
+[node name="wildflowers_11_00" type="MultiMeshInstance3D" parent="." unique_id=150661602 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_im3jf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_10_02" type="MultiMeshInstance3D" parent="." unique_id=300562819 groups=["distance_culled"]]
+[node name="grass_clump_10_02" type="MultiMeshInstance3D" parent="." unique_id=300562819 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xpske")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 43
 
-[node name="wildflowers_09_03" type="MultiMeshInstance3D" parent="." unique_id=291727715 groups=["distance_culled"]]
+[node name="wildflowers_09_03" type="MultiMeshInstance3D" parent="." unique_id=291727715 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3vyp7")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_06_01" type="MultiMeshInstance3D" parent="." unique_id=512564507 groups=["distance_culled"]]
+[node name="wildflowers_06_01" type="MultiMeshInstance3D" parent="." unique_id=512564507 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lssgf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_03_01" type="MultiMeshInstance3D" parent="." unique_id=1546031352 groups=["distance_culled"]]
+[node name="wildflowers_03_01" type="MultiMeshInstance3D" parent="." unique_id=1546031352 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nhnab")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 5
 
-[node name="wildflowers_10_01" type="MultiMeshInstance3D" parent="." unique_id=609526039 groups=["distance_culled"]]
+[node name="wildflowers_10_01" type="MultiMeshInstance3D" parent="." unique_id=609526039 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fvmqq")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_06_09" type="MultiMeshInstance3D" parent="." unique_id=2016418324 groups=["distance_culled"]]
+[node name="wildflowers_06_09" type="MultiMeshInstance3D" parent="." unique_id=2016418324 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1v3m2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 6
 
-[node name="wildflowers_09_02" type="MultiMeshInstance3D" parent="." unique_id=1260529431 groups=["distance_culled"]]
+[node name="wildflowers_09_02" type="MultiMeshInstance3D" parent="." unique_id=1260529431 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t24fv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_11_03" type="MultiMeshInstance3D" parent="." unique_id=1646671357 groups=["distance_culled"]]
+[node name="grass_clump_11_03" type="MultiMeshInstance3D" parent="." unique_id=1646671357 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_kntaw")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 35
 
-[node name="grass_clump_11_02" type="MultiMeshInstance3D" parent="." unique_id=1605921830 groups=["distance_culled"]]
+[node name="grass_clump_11_02" type="MultiMeshInstance3D" parent="." unique_id=1605921830 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8osas")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_02_12" type="MultiMeshInstance3D" parent="." unique_id=1654247048 groups=["distance_culled"]]
+[node name="grass_clump_02_12" type="MultiMeshInstance3D" parent="." unique_id=1654247048 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_h17if")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 20
 
-[node name="wildflowers_05_04" type="MultiMeshInstance3D" parent="." unique_id=1283351651 groups=["distance_culled"]]
+[node name="wildflowers_05_04" type="MultiMeshInstance3D" parent="." unique_id=1283351651 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_p07hp")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_11_14" type="MultiMeshInstance3D" parent="." unique_id=1225569761 groups=["distance_culled"]]
+[node name="wildflowers_11_14" type="MultiMeshInstance3D" parent="." unique_id=1225569761 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dshwl")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_10_00" type="MultiMeshInstance3D" parent="." unique_id=1950081719 groups=["distance_culled"]]
+[node name="wildflowers_10_00" type="MultiMeshInstance3D" parent="." unique_id=1950081719 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4ipvf")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_03_11" type="MultiMeshInstance3D" parent="." unique_id=1464016449 groups=["distance_culled"]]
+[node name="wildflowers_03_11" type="MultiMeshInstance3D" parent="." unique_id=1464016449 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 184)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4dcek")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_01_03" type="MultiMeshInstance3D" parent="." unique_id=214940525 groups=["distance_culled"]]
+[node name="wildflowers_01_03" type="MultiMeshInstance3D" parent="." unique_id=214940525 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_brbnt")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_08_12" type="MultiMeshInstance3D" parent="." unique_id=2078426780 groups=["distance_culled"]]
+[node name="wildflowers_08_12" type="MultiMeshInstance3D" parent="." unique_id=2078426780 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_t15mb")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_09_09" type="MultiMeshInstance3D" parent="." unique_id=293366240 groups=["distance_culled"]]
+[node name="grass_clump_09_09" type="MultiMeshInstance3D" parent="." unique_id=293366240 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3d6tr")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 36
 
-[node name="wildflowers_09_09" type="MultiMeshInstance3D" parent="." unique_id=357999324 groups=["distance_culled"]]
+[node name="wildflowers_09_09" type="MultiMeshInstance3D" parent="." unique_id=357999324 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 152)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gwi3r")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="grass_clump_07_00" type="MultiMeshInstance3D" parent="." unique_id=800985923 groups=["distance_culled"]]
+[node name="grass_clump_07_00" type="MultiMeshInstance3D" parent="." unique_id=800985923 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ot6l2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 47
 
-[node name="wildflowers_09_05" type="MultiMeshInstance3D" parent="." unique_id=1691035670 groups=["distance_culled"]]
+[node name="wildflowers_09_05" type="MultiMeshInstance3D" parent="." unique_id=1691035670 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ae4ue")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 4
 
-[node name="wildflowers_09_14" type="MultiMeshInstance3D" parent="." unique_id=1110887428 groups=["distance_culled"]]
+[node name="wildflowers_09_14" type="MultiMeshInstance3D" parent="." unique_id=1110887428 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jt3bi")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_07_00" type="MultiMeshInstance3D" parent="." unique_id=2093791839 groups=["distance_culled"]]
+[node name="wildflowers_07_00" type="MultiMeshInstance3D" parent="." unique_id=2093791839 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 8)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_otb5m")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_01_13" type="MultiMeshInstance3D" parent="." unique_id=1723391578 groups=["distance_culled"]]
+[node name="grass_clump_01_13" type="MultiMeshInstance3D" parent="." unique_id=1723391578 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_27k66")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 26
 
-[node name="wildflowers_01_13" type="MultiMeshInstance3D" parent="." unique_id=303478337 groups=["distance_culled"]]
+[node name="wildflowers_01_13" type="MultiMeshInstance3D" parent="." unique_id=303478337 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pn4ub")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_03_03" type="MultiMeshInstance3D" parent="." unique_id=371598646 groups=["distance_culled"]]
+[node name="wildflowers_03_03" type="MultiMeshInstance3D" parent="." unique_id=371598646 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 56)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_24jn3")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_11_04" type="MultiMeshInstance3D" parent="." unique_id=262928546 groups=["distance_culled"]]
+[node name="grass_clump_11_04" type="MultiMeshInstance3D" parent="." unique_id=262928546 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qgky2")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 13
 
-[node name="wildflowers_11_04" type="MultiMeshInstance3D" parent="." unique_id=1861549013 groups=["distance_culled"]]
+[node name="wildflowers_11_04" type="MultiMeshInstance3D" parent="." unique_id=1861549013 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5cb8q")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_06_14" type="MultiMeshInstance3D" parent="." unique_id=97442819 groups=["distance_culled"]]
+[node name="grass_clump_06_14" type="MultiMeshInstance3D" parent="." unique_id=97442819 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wwxsc")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 14
 
-[node name="wildflowers_00_14" type="MultiMeshInstance3D" parent="." unique_id=1769627174 groups=["distance_culled"]]
+[node name="wildflowers_00_14" type="MultiMeshInstance3D" parent="." unique_id=1769627174 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8t1o8")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_01_12" type="MultiMeshInstance3D" parent="." unique_id=1449692330 groups=["distance_culled"]]
+[node name="wildflowers_01_12" type="MultiMeshInstance3D" parent="." unique_id=1449692330 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_emh6o")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="wildflowers_01_14" type="MultiMeshInstance3D" parent="." unique_id=308288475 groups=["distance_culled"]]
+[node name="wildflowers_01_14" type="MultiMeshInstance3D" parent="." unique_id=308288475 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_6d77c")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_02_14" type="MultiMeshInstance3D" parent="." unique_id=72009657 groups=["distance_culled"]]
+[node name="grass_clump_02_14" type="MultiMeshInstance3D" parent="." unique_id=72009657 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8n2d4")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 21
 
-[node name="wildflowers_10_14" type="MultiMeshInstance3D" parent="." unique_id=1836157330 groups=["distance_culled"]]
+[node name="wildflowers_10_14" type="MultiMeshInstance3D" parent="." unique_id=1836157330 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3a5ug")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_09_01" type="MultiMeshInstance3D" parent="." unique_id=852348002 groups=["distance_culled"]]
+[node name="wildflowers_09_01" type="MultiMeshInstance3D" parent="." unique_id=852348002 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0c5cr")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="grass_clump_11_07" type="MultiMeshInstance3D" parent="." unique_id=7609171 groups=["distance_culled"]]
+[node name="grass_clump_11_07" type="MultiMeshInstance3D" parent="." unique_id=7609171 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 120)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xkxei")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 23
 
-[node name="grass_clump_02_13" type="MultiMeshInstance3D" parent="." unique_id=331126742 groups=["distance_culled"]]
+[node name="grass_clump_02_13" type="MultiMeshInstance3D" parent="." unique_id=331126742 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 216)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_taryn")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 11
 
-[node name="wildflowers_10_02" type="MultiMeshInstance3D" parent="." unique_id=327640608 groups=["distance_culled"]]
+[node name="wildflowers_10_02" type="MultiMeshInstance3D" parent="." unique_id=327640608 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 40)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wb836")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 3
 
-[node name="grass_clump_07_04" type="MultiMeshInstance3D" parent="." unique_id=1512933377 groups=["distance_culled"]]
+[node name="grass_clump_07_04" type="MultiMeshInstance3D" parent="." unique_id=1512933377 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lyu38")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 23
 
-[node name="wildflowers_07_04" type="MultiMeshInstance3D" parent="." unique_id=965563937 groups=["distance_culled"]]
+[node name="wildflowers_07_04" type="MultiMeshInstance3D" parent="." unique_id=965563937 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 72)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_a0wwx")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1
 
-[node name="wildflowers_02_06" type="MultiMeshInstance3D" parent="." unique_id=1949113651 groups=["distance_culled"]]
+[node name="wildflowers_02_06" type="MultiMeshInstance3D" parent="." unique_id=1949113651 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 104)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1jjdv")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 2
 
-[node name="wildflowers_03_14" type="MultiMeshInstance3D" parent="." unique_id=702383262 groups=["distance_culled"]]
+[node name="wildflowers_03_14" type="MultiMeshInstance3D" parent="." unique_id=702383262 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 232)
 cast_shadow = 0
-visibility_range_end = 40.0
+visibility_range_end = 24.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_fejct")
-metadata/render_distance = 40.0
+metadata/render_distance = 24.0
 metadata/plant_count = 1

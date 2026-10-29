@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_wall_back.glb" id="e4"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_wall_left.glb" id="e5"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_wall_right.glb" id="e6"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_roof.glb" id="e7"]
+[ext_resource type="PackedScene" path="res://assets/optimized/cabin_roof.tscn" id="e7"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_porch.glb" id="e8"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/cabin_gutters.glb" id="e9"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/window_120x140.glb" id="e10"]
@@ -112,100 +112,100 @@ position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Floor" parent="Floor/cabin_floor" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Ceiling" parent="." instance=ExtResource("e2")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Ceiling" parent="Ceiling/cabin_ceiling" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Wall_Front" parent="." instance=ExtResource("e3")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Wall_with_openings" parent="Wall_Front/cabin_wall_front" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Wall_Back" parent="." instance=ExtResource("e4")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Wall_with_openings_001" parent="Wall_Back/cabin_wall_back" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Wall_Left" parent="." instance=ExtResource("e5")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Wall_with_openings_002" parent="Wall_Left/cabin_wall_left" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Wall_Right" parent="." instance=ExtResource("e6")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Wall_with_openings_003" parent="Wall_Right/cabin_wall_right" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Roof" parent="." instance=ExtResource("e7")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Roof_and_gables" parent="Roof/cabin_roof" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Porch" parent="." instance=ExtResource("e8")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Porch" parent="Porch/cabin_porch" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Gutters" parent="." instance=ExtResource("e9")]
 position = Vector3(0.00000, 0.00000, 0.00000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Gutters" parent="Gutters/cabin_gutters" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window00" parent="." instance=ExtResource("e10")]
 position = Vector3(-1.52000, 1.35000, 3.41000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Curtain_rod" parent="Window00/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window00/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window00/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window00"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -224,19 +224,19 @@ position = Vector3(1.52000, 1.35000, 3.41000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Curtain_rod" parent="Window01/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window01/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window01/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window01"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -255,19 +255,19 @@ position = Vector3(-1.30000, 1.35000, -3.41000)
 rotation = Vector3(0.00000, 3.14159, 0.00000)
 
 [node name="Curtain_rod" parent="Window02/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window02/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window02/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window02"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -286,19 +286,19 @@ position = Vector3(1.30000, 1.35000, -3.41000)
 rotation = Vector3(0.00000, 3.14159, 0.00000)
 
 [node name="Curtain_rod" parent="Window03/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window03/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window03/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window03"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -317,19 +317,19 @@ position = Vector3(-2.41000, 1.35000, -1.90000)
 rotation = Vector3(0.00000, -1.57080, 0.00000)
 
 [node name="Curtain_rod" parent="Window04/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window04/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window04/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window04"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -348,19 +348,19 @@ position = Vector3(-2.41000, 1.35000, 1.15000)
 rotation = Vector3(0.00000, -1.57080, 0.00000)
 
 [node name="Curtain_rod" parent="Window05/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window05/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window05/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window05"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -379,19 +379,19 @@ position = Vector3(2.41000, 1.35000, 1.90000)
 rotation = Vector3(0.00000, 1.57080, 0.00000)
 
 [node name="Curtain_rod" parent="Window06/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window06/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window06/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window06"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -410,19 +410,19 @@ position = Vector3(2.41000, 1.35000, -1.15000)
 rotation = Vector3(0.00000, 1.57080, 0.00000)
 
 [node name="Curtain_rod" parent="Window07/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Curtains" parent="Window07/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Window_frame_glazing" parent="Window07/window_120x140" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="WarmPane0" type="MeshInstance3D" parent="Window07"]
 position = Vector3(-0.28000, 0.70000, 0.03500)
@@ -441,14 +441,14 @@ position = Vector3(-0.45000, 0.50000, 3.41000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Door_frame" parent="Door/door_hinged_090x210" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Door_Leaf" parent="Door/door_hinged_090x210/Door_Hinge" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Door_Hinge" parent="Door/door_hinged_090x210"]
 rotation = Vector3(0, -1.9, 0)
@@ -458,9 +458,9 @@ position = Vector3(0.65000, 2.72000, 3.52000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Lamp_no_light" parent="PorchFixture/wall_lamp" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="PorchLight" type="OmniLight3D" parent="."]
 position = Vector3(0.65000, 2.70000, 3.90000)
@@ -469,7 +469,7 @@ light_energy = 1.8
 light_bake_mode = 0
 omni_range = 7
 omni_attenuation = 1.3
-shadow_enabled = true
+shadow_enabled = false
 distance_fade_enabled = true
 distance_fade_begin = 22.0
 distance_fade_length = 10.0

@@ -38,6 +38,7 @@ func _toggle_camera() -> void:
 	# The overview shows the full authored plan; walking uses scene-defined distances.
 	for geometry in get_tree().get_nodes_in_group("distance_culled"):
 		geometry.visibility_range_end = float(geometry.get_meta("render_distance")) if first_person else 0.0
+		if geometry.is_in_group("overview_detail"): geometry.visible = first_person
 	if night_environment:
 		night_environment.fog_enabled = first_person
 		night_environment.ambient_light_energy = night_ambient_energy if first_person else 0.85

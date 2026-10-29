@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/reeds_cattails.res" id="1_ep8jd"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/reeds_cattails.res" id="1_ep8jd"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_flyxc"]
 transform_format = 1
@@ -94,7 +94,7 @@ buffer = PackedFloat32Array(-0.24403788, 0, 0.95253575, -6.3222, 0, 0.9833, 0, 0
 
 [node name="Riverbank" type="Node3D" unique_id=1046466027]
 
-[node name="reeds_cattails_00_09" type="MultiMeshInstance3D" parent="." unique_id=445798911 groups=["distance_culled"]]
+[node name="reeds_cattails_00_09" type="MultiMeshInstance3D" parent="." unique_id=445798911 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -103,7 +103,7 @@ multimesh = SubResource("MultiMesh_flyxc")
 metadata/render_distance = 55.0
 metadata/plant_count = 15
 
-[node name="reeds_cattails_00_04" type="MultiMeshInstance3D" parent="." unique_id=1385598220 groups=["distance_culled"]]
+[node name="reeds_cattails_00_04" type="MultiMeshInstance3D" parent="." unique_id=1385598220 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 72)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -112,7 +112,7 @@ multimesh = SubResource("MultiMesh_acacj")
 metadata/render_distance = 55.0
 metadata/plant_count = 11
 
-[node name="reeds_cattails_00_01" type="MultiMeshInstance3D" parent="." unique_id=1326376954 groups=["distance_culled"]]
+[node name="reeds_cattails_00_01" type="MultiMeshInstance3D" parent="." unique_id=1326376954 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -121,7 +121,7 @@ multimesh = SubResource("MultiMesh_lgubs")
 metadata/render_distance = 55.0
 metadata/plant_count = 7
 
-[node name="reeds_cattails_00_06" type="MultiMeshInstance3D" parent="." unique_id=1291025847 groups=["distance_culled"]]
+[node name="reeds_cattails_00_06" type="MultiMeshInstance3D" parent="." unique_id=1291025847 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -130,7 +130,7 @@ multimesh = SubResource("MultiMesh_s7543")
 metadata/render_distance = 55.0
 metadata/plant_count = 11
 
-[node name="reeds_cattails_00_12" type="MultiMeshInstance3D" parent="." unique_id=1583864329 groups=["distance_culled"]]
+[node name="reeds_cattails_00_12" type="MultiMeshInstance3D" parent="." unique_id=1583864329 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -139,7 +139,7 @@ multimesh = SubResource("MultiMesh_dybhx")
 metadata/render_distance = 55.0
 metadata/plant_count = 13
 
-[node name="reeds_cattails_00_13" type="MultiMeshInstance3D" parent="." unique_id=1104159468 groups=["distance_culled"]]
+[node name="reeds_cattails_00_13" type="MultiMeshInstance3D" parent="." unique_id=1104159468 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -148,7 +148,7 @@ multimesh = SubResource("MultiMesh_q0xfq")
 metadata/render_distance = 55.0
 metadata/plant_count = 15
 
-[node name="reeds_cattails_00_00" type="MultiMeshInstance3D" parent="." unique_id=1539984820 groups=["distance_culled"]]
+[node name="reeds_cattails_00_00" type="MultiMeshInstance3D" parent="." unique_id=1539984820 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -157,7 +157,7 @@ multimesh = SubResource("MultiMesh_uek51")
 metadata/render_distance = 55.0
 metadata/plant_count = 8
 
-[node name="reeds_cattails_00_07" type="MultiMeshInstance3D" parent="." unique_id=1481204711 groups=["distance_culled"]]
+[node name="reeds_cattails_00_07" type="MultiMeshInstance3D" parent="." unique_id=1481204711 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 120)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -166,7 +166,7 @@ multimesh = SubResource("MultiMesh_4a05u")
 metadata/render_distance = 55.0
 metadata/plant_count = 9
 
-[node name="reeds_cattails_00_14" type="MultiMeshInstance3D" parent="." unique_id=1851727064 groups=["distance_culled"]]
+[node name="reeds_cattails_00_14" type="MultiMeshInstance3D" parent="." unique_id=1851727064 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -175,7 +175,7 @@ multimesh = SubResource("MultiMesh_oyfvo")
 metadata/render_distance = 55.0
 metadata/plant_count = 5
 
-[node name="reeds_cattails_00_11" type="MultiMeshInstance3D" parent="." unique_id=375769470 groups=["distance_culled"]]
+[node name="reeds_cattails_00_11" type="MultiMeshInstance3D" parent="." unique_id=375769470 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -184,7 +184,7 @@ multimesh = SubResource("MultiMesh_j6a21")
 metadata/render_distance = 55.0
 metadata/plant_count = 12
 
-[node name="reeds_cattails_00_03" type="MultiMeshInstance3D" parent="." unique_id=1632771226 groups=["distance_culled"]]
+[node name="reeds_cattails_00_03" type="MultiMeshInstance3D" parent="." unique_id=1632771226 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -193,7 +193,7 @@ multimesh = SubResource("MultiMesh_pmlu8")
 metadata/render_distance = 55.0
 metadata/plant_count = 11
 
-[node name="reeds_cattails_00_02" type="MultiMeshInstance3D" parent="." unique_id=1063781385 groups=["distance_culled"]]
+[node name="reeds_cattails_00_02" type="MultiMeshInstance3D" parent="." unique_id=1063781385 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -202,7 +202,7 @@ multimesh = SubResource("MultiMesh_lcf2x")
 metadata/render_distance = 55.0
 metadata/plant_count = 10
 
-[node name="reeds_cattails_00_08" type="MultiMeshInstance3D" parent="." unique_id=171861289 groups=["distance_culled"]]
+[node name="reeds_cattails_00_08" type="MultiMeshInstance3D" parent="." unique_id=171861289 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -211,7 +211,7 @@ multimesh = SubResource("MultiMesh_4e3s0")
 metadata/render_distance = 55.0
 metadata/plant_count = 10
 
-[node name="reeds_cattails_00_10" type="MultiMeshInstance3D" parent="." unique_id=190268588 groups=["distance_culled"]]
+[node name="reeds_cattails_00_10" type="MultiMeshInstance3D" parent="." unique_id=190268588 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
 cast_shadow = 0
 visibility_range_end = 55.0
@@ -220,7 +220,7 @@ multimesh = SubResource("MultiMesh_e21im")
 metadata/render_distance = 55.0
 metadata/plant_count = 10
 
-[node name="reeds_cattails_00_05" type="MultiMeshInstance3D" parent="." unique_id=437861514 groups=["distance_culled"]]
+[node name="reeds_cattails_00_05" type="MultiMeshInstance3D" parent="." unique_id=437861514 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
 cast_shadow = 0
 visibility_range_end = 55.0

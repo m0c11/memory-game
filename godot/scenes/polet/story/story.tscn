@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/story/story.gd" id="R1"]
 
@@ -6,7 +6,6 @@
 
 [ext_resource type="PackedScene" path="res://scenes/polet/story/circuit.tscn" id="R3"]
 
-[ext_resource type="PackedScene" path="res://scenes/polet/story/music.tscn" id="R4"]
 
 [ext_resource type="PackedScene" path="res://scenes/polet/story/bicycle.tscn" id="R5"]
 
@@ -57,7 +56,6 @@ show_percentage = false
 [node name="Circuit" parent="Interface" instance=ExtResource("R3")]
 
 
-[node name="Music" parent="Interface" instance=ExtResource("R4")]
 
 
 [node name="Bicycle" parent="Interface" instance=ExtResource("R5")]

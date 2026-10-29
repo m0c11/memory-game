@@ -1,0 +1,799 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_0.res" id="1_mkw4v"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_1.res" id="2_tcxp5"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_2.res" id="3_ggrxj"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_3.res" id="4_w3swe"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_4.res" id="5_yqdu4"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_5.res" id="6_0llmf"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_6.res" id="7_d847n"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_7.res" id="8_lrncf"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_8.res" id="9_rl5fr"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_9.res" id="10_a0vu1"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_10.res" id="11_6lklx"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_11.res" id="12_id8ks"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_12.res" id="13_wadho"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_13.res" id="14_hxips"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_14.res" id="15_jp6yj"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_15.res" id="16_3j4tn"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/hall_batch_16.res" id="17_2wbke"]
+
+[sub_resource type="BoxShape3D" id="FloorShape"]
+size = Vector3(16, 0.3, 18)
+
+[sub_resource type="BoxShape3D" id="SideWallShape"]
+size = Vector3(0.2, 6, 18)
+
+[sub_resource type="BoxShape3D" id="EndWallShape"]
+size = Vector3(16.2, 6, 0.2)
+
+[sub_resource type="BoxShape3D" id="CeilingShape"]
+size = Vector3(16, 0.2, 18)
+
+[sub_resource type="BoxShape3D" id="DoorPierShape"]
+size = Vector3(1.44, 6, 0.3)
+
+[node name="HallShell" type="Node3D" unique_id=18119226]
+
+[node name="CarpetFloor" type="Node3D" parent="." unique_id=998996103]
+transform = Transform3D(8, 0, 0, 0, 1, 0, 0, 0, 9, 0, 0, 2)
+
+[node name="22_carpet_floor_tile" type="Node3D" parent="CarpetFloor" unique_id=580959916]
+metadata/extras = {
+"asset_id": "22_carpet_floor_tile",
+"reference": "references/",
+"title_ru": "Модуль коврового пола 2 × 2 м",
+"units": "metres"
+}
+
+[node name="SideWalls" type="Node3D" parent="." unique_id=1080751535]
+
+[node name="LeftLower01" type="Node3D" parent="SideWalls" unique_id=783536878]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, -5.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower01" unique_id=512548778]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower02" type="Node3D" parent="SideWalls" unique_id=308979680]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, -3.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower02" unique_id=950111915]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower03" type="Node3D" parent="SideWalls" unique_id=356001555]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, -0.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower03" unique_id=641326589]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower04" type="Node3D" parent="SideWalls" unique_id=405179043]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, 1.5)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower04" unique_id=1889393786]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower05" type="Node3D" parent="SideWalls" unique_id=1133972088]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, 3.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower05" unique_id=1236606298]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower06" type="Node3D" parent="SideWalls" unique_id=1701650372]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, 6.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower06" unique_id=383595437]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower07" type="Node3D" parent="SideWalls" unique_id=1351405237]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, -8, 0, 8.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower07" unique_id=104248858]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftLower08" type="Node3D" parent="SideWalls" unique_id=424156912]
+transform = Transform3D(3.460318e-08, 0, 1, 0, 1, 0, -0.458333, 0, 7.54979e-08, -8, 0, 10.45)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftLower08" unique_id=758310881]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper01" type="Node3D" parent="SideWalls" unique_id=1341441160]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, -5.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper01" unique_id=1152658332]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper02" type="Node3D" parent="SideWalls" unique_id=813000536]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, -3.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper02" unique_id=990387214]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper03" type="Node3D" parent="SideWalls" unique_id=1417889506]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, -0.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper03" unique_id=583721751]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper04" type="Node3D" parent="SideWalls" unique_id=771624619]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, 1.5)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper04" unique_id=2003759719]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper05" type="Node3D" parent="SideWalls" unique_id=1511371751]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, 3.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper05" unique_id=177464091]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper06" type="Node3D" parent="SideWalls" unique_id=42859956]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, 6.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper06" unique_id=1781940761]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper07" type="Node3D" parent="SideWalls" unique_id=1131619164]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1.142857, 0, -1, 0, 7.54979e-08, -8, 2.8, 8.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper07" unique_id=362404378]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpper08" type="Node3D" parent="SideWalls" unique_id=1542415220]
+transform = Transform3D(3.460318e-08, 0, 1, 0, 1.142857, 0, -0.458333, 0, 7.54979e-08, -8, 2.8, 10.45)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/LeftUpper08" unique_id=302413944]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower01" type="Node3D" parent="SideWalls" unique_id=1949350111]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, -5.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower01" unique_id=605597064]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower02" type="Node3D" parent="SideWalls" unique_id=1655930332]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, -3.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower02" unique_id=646980355]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower03" type="Node3D" parent="SideWalls" unique_id=228731145]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, -0.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower03" unique_id=1549483707]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower04" type="Node3D" parent="SideWalls" unique_id=1089772046]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, 1.5)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower04" unique_id=1269029215]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower05" type="Node3D" parent="SideWalls" unique_id=137045483]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, 3.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower05" unique_id=154764183]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower06" type="Node3D" parent="SideWalls" unique_id=1174258441]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, 6.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower06" unique_id=1356150709]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower07" type="Node3D" parent="SideWalls" unique_id=93614478]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 8, 0, 8.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower07" unique_id=1543240476]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightLower08" type="Node3D" parent="SideWalls" unique_id=1404606933]
+transform = Transform3D(3.460318e-08, 0, -1, 0, 1, 0, 0.458333, 0, 7.54979e-08, 8, 0, 10.45)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightLower08" unique_id=822199209]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper01" type="Node3D" parent="SideWalls" unique_id=1984821233]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, -5.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper01" unique_id=1484160094]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper02" type="Node3D" parent="SideWalls" unique_id=961782263]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, -3.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper02" unique_id=876309415]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper03" type="Node3D" parent="SideWalls" unique_id=639311690]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, -0.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper03" unique_id=2114836576]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper04" type="Node3D" parent="SideWalls" unique_id=539165208]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, 1.5)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper04" unique_id=54949440]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper05" type="Node3D" parent="SideWalls" unique_id=1606451078]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, 3.9)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper05" unique_id=1408783417]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper06" type="Node3D" parent="SideWalls" unique_id=880907989]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, 6.3)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper06" unique_id=2038198436]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper07" type="Node3D" parent="SideWalls" unique_id=164656121]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1.142857, 0, 1, 0, 7.54979e-08, 8, 2.8, 8.7)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper07" unique_id=1320022596]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpper08" type="Node3D" parent="SideWalls" unique_id=1895178720]
+transform = Transform3D(3.460318e-08, 0, -1, 0, 1.142857, 0, 0.458333, 0, 7.54979e-08, 8, 2.8, 10.45)
+
+[node name="24_acoustic_wall" type="Node3D" parent="SideWalls/RightUpper08" unique_id=1793427236]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="FrontDoorPiers" type="Node3D" parent="." unique_id=1767028494]
+
+[node name="LeftDoor" type="Node3D" parent="FrontDoorPiers" unique_id=1226059580]
+transform = Transform3D(0.58, 0, 0, 0, 1, 0, 0, 0, 1, -7.25, 0, -2.6)
+
+[node name="24_acoustic_wall" type="Node3D" parent="FrontDoorPiers/LeftDoor" unique_id=1066105781]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="LeftUpperPanel" type="Node3D" parent="FrontDoorPiers" unique_id=1248546077]
+transform = Transform3D(0.58, 0, 0, 0, 1.142857, 0, 0, 0, 1, -7.25, 2.8, -2.6)
+
+[node name="24_acoustic_wall" type="Node3D" parent="FrontDoorPiers/LeftUpperPanel" unique_id=1301761867]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightDoor" type="Node3D" parent="FrontDoorPiers" unique_id=1109943450]
+transform = Transform3D(0.58, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 0, -2.6)
+
+[node name="24_acoustic_wall" type="Node3D" parent="FrontDoorPiers/RightDoor" unique_id=1178952281]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="RightUpperPanel" type="Node3D" parent="FrontDoorPiers" unique_id=2079543081]
+transform = Transform3D(0.58, 0, 0, 0, 1.142857, 0, 0, 0, 1, 7.25, 2.8, -2.6)
+
+[node name="24_acoustic_wall" type="Node3D" parent="FrontDoorPiers/RightUpperPanel" unique_id=1732481415]
+metadata/extras = {
+"asset_id": "24_acoustic_wall",
+"reference": "references/",
+"title_ru": "Кремовая акустическая стена",
+"units": "metres"
+}
+
+[node name="Ceiling" type="Node3D" parent="." unique_id=1207261730]
+
+[node name="Panel01" type="Node3D" parent="Ceiling" unique_id=861396975]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, -5.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel01" unique_id=1903835655]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel02" type="Node3D" parent="Ceiling" unique_id=154080591]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, -5.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel02" unique_id=114844180]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel03" type="Node3D" parent="Ceiling" unique_id=1162593366]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, -5.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel03" unique_id=85072508]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel04" type="Node3D" parent="Ceiling" unique_id=555767186]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, -5.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel04" unique_id=1913258553]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel05" type="Node3D" parent="Ceiling" unique_id=929355939]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, -2.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel05" unique_id=257387971]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel06" type="Node3D" parent="Ceiling" unique_id=578400929]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, -2.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel06" unique_id=2038959205]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel07" type="Node3D" parent="Ceiling" unique_id=18403519]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, -2.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel07" unique_id=51670580]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel08" type="Node3D" parent="Ceiling" unique_id=1633548324]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, -2.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel08" unique_id=1190302838]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel09" type="Node3D" parent="Ceiling" unique_id=1126110343]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, 0.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel09" unique_id=64616623]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel10" type="Node3D" parent="Ceiling" unique_id=534595247]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, 0.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel10" unique_id=993518005]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel11" type="Node3D" parent="Ceiling" unique_id=1599617736]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, 0.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel11" unique_id=871339504]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel12" type="Node3D" parent="Ceiling" unique_id=1609391449]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, 0.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel12" unique_id=715383554]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel13" type="Node3D" parent="Ceiling" unique_id=1279339228]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, 3.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel13" unique_id=248312812]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel14" type="Node3D" parent="Ceiling" unique_id=1107180135]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, 3.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel14" unique_id=1846500745]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel15" type="Node3D" parent="Ceiling" unique_id=1717682937]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, 3.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel15" unique_id=2001077855]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel16" type="Node3D" parent="Ceiling" unique_id=860051626]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, 3.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel16" unique_id=1397661669]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel17" type="Node3D" parent="Ceiling" unique_id=1302861129]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, 6.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel17" unique_id=1965737493]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel18" type="Node3D" parent="Ceiling" unique_id=2029330624]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, 6.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel18" unique_id=1535859705]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel19" type="Node3D" parent="Ceiling" unique_id=670008501]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, 6.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel19" unique_id=1053360056]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel20" type="Node3D" parent="Ceiling" unique_id=374963177]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, 6.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel20" unique_id=1973070164]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel21" type="Node3D" parent="Ceiling" unique_id=1494310631]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -6, 6, 9.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel21" unique_id=574634882]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel22" type="Node3D" parent="Ceiling" unique_id=1325774836]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, -2, 6, 9.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel22" unique_id=1819783412]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel23" type="Node3D" parent="Ceiling" unique_id=653714801]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 2, 6, 9.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel23" unique_id=876610044]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="Panel24" type="Node3D" parent="Ceiling" unique_id=27191995]
+transform = Transform3D(1.333333, 0, 0, 0, 1, 0, 0, 0, 1.25, 6, 6, 9.5)
+
+[node name="31_ceiling_panel" type="Node3D" parent="Ceiling/Panel24" unique_id=282391454]
+metadata/extras = {
+"asset_id": "31_ceiling_panel",
+"reference": "references/",
+"title_ru": "Белый панельный потолок",
+"units": "metres"
+}
+
+[node name="ShellCollision" type="StaticBody3D" parent="." unique_id=1107933763]
+
+[node name="Floor" type="CollisionShape3D" parent="ShellCollision" unique_id=507909064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.16, 2)
+shape = SubResource("FloorShape")
+
+[node name="LeftWall" type="CollisionShape3D" parent="ShellCollision" unique_id=1181000252]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, 2)
+shape = SubResource("SideWallShape")
+
+[node name="RightWall" type="CollisionShape3D" parent="ShellCollision" unique_id=226377522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 2)
+shape = SubResource("SideWallShape")
+
+[node name="RearWall" type="CollisionShape3D" parent="ShellCollision" unique_id=1685667994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 11)
+shape = SubResource("EndWallShape")
+
+[node name="StageRearWall" type="CollisionShape3D" parent="ShellCollision" unique_id=784214561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -7)
+shape = SubResource("EndWallShape")
+
+[node name="Ceiling" type="CollisionShape3D" parent="ShellCollision" unique_id=589452704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.1, 2)
+shape = SubResource("CeilingShape")
+
+[node name="LeftDoorPier" type="CollisionShape3D" parent="ShellCollision" unique_id=1770039817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.28, 3, -2.6)
+shape = SubResource("DoorPierShape")
+
+[node name="RightDoorPier" type="CollisionShape3D" parent="ShellCollision" unique_id=1445411291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.28, 3, -2.6)
+shape = SubResource("DoorPierShape")
+
+[node name="Batch0" type="MeshInstance3D" parent="." unique_id=31002938]
+mesh = ExtResource("1_mkw4v")
+
+[node name="Batch1" type="MeshInstance3D" parent="." unique_id=864514417]
+mesh = ExtResource("2_tcxp5")
+
+[node name="Batch2" type="MeshInstance3D" parent="." unique_id=823786348]
+mesh = ExtResource("3_ggrxj")
+
+[node name="Batch3" type="MeshInstance3D" parent="." unique_id=622867253]
+mesh = ExtResource("4_w3swe")
+
+[node name="Batch4" type="MeshInstance3D" parent="." unique_id=1492190482]
+mesh = ExtResource("5_yqdu4")
+
+[node name="Batch5" type="MeshInstance3D" parent="." unique_id=259920809]
+mesh = ExtResource("6_0llmf")
+
+[node name="Batch6" type="MeshInstance3D" parent="." unique_id=152376176]
+mesh = ExtResource("7_d847n")
+
+[node name="Batch7" type="MeshInstance3D" parent="." unique_id=1263981069]
+mesh = ExtResource("8_lrncf")
+
+[node name="Batch8" type="MeshInstance3D" parent="." unique_id=1104711776]
+mesh = ExtResource("9_rl5fr")
+
+[node name="Batch9" type="MeshInstance3D" parent="." unique_id=1405887909]
+layers = 2
+mesh = ExtResource("10_a0vu1")
+
+[node name="Batch10" type="MeshInstance3D" parent="." unique_id=1053359390]
+mesh = ExtResource("11_6lklx")
+
+[node name="Batch11" type="MeshInstance3D" parent="." unique_id=1333924626]
+mesh = ExtResource("12_id8ks")
+
+[node name="Batch12" type="MeshInstance3D" parent="." unique_id=469984042]
+mesh = ExtResource("13_wadho")
+
+[node name="Batch13" type="MeshInstance3D" parent="." unique_id=373802726]
+mesh = ExtResource("14_hxips")
+
+[node name="Batch14" type="MeshInstance3D" parent="." unique_id=943802166]
+mesh = ExtResource("15_jp6yj")
+
+[node name="Batch15" type="MeshInstance3D" parent="." unique_id=521010960]
+mesh = ExtResource("16_3j4tn")
+
+[node name="Batch16" type="MeshInstance3D" parent="." unique_id=328318719]
+mesh = ExtResource("17_2wbke")

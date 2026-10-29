@@ -49,7 +49,7 @@ light_energy = 2.2
 light_bake_mode = 0
 spot_range = 13.0
 spot_angle = 34.0
-shadow_enabled = true
+shadow_enabled = false
 shadow_bias = 0.03
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

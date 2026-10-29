@@ -26,7 +26,7 @@ func run() -> void:
 	for path in [FILE,FILE+".bak",FILE+".tmp"]:
 		if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
 	check(PoletSave.sanitize(null).is_empty(), "Malformed save is rejected")
-	check(PoletSave.sanitize({"version":2,"finished":[]}).is_empty(), "Unknown schema does not load")
+	check(PoletSave.sanitize({"version":99,"finished":[]}).is_empty(), "Unknown schema does not load")
 	var safe := PoletSave.sanitize({"version":1,"finished":["finale","music","unknown"],"outfit":99,"volume":-5,"switches":["bad"],"music_hits":20})
 	check(safe.finished.is_empty(), "Impossible quest skips are discarded")
 	check(safe.outfit == 2 and safe.volume == 0 and safe.music_hits == 2, "Untrusted numeric values are clamped")
@@ -40,7 +40,7 @@ func run() -> void:
 	check(PoletSave.read_data(FILE).finished == ["linen"], "Corrupt main save falls back to backup")
 	check(PoletSave.write_data(data, FILE) == OK, "Save recovers after corrupted file")
 	var checkpoints: Array = [[],["linen"],["linen","rubbish","mop"],["linen","rubbish","mop","child"],["linen","rubbish","mop","child","radio"],["linen","rubbish","mop","child","radio","circuit","garland"],["linen","rubbish","mop","child","radio","circuit","garland","music"],["linen","rubbish","mop","child","radio","circuit","garland","music","bicycle"],PoletSave.TASKS]
-	var stages := [0,0,1,2,3,3,4,5,6]
+	var stages := [0,0,1,2,3,4,4,5,6]
 	for i in range(checkpoints.size()):
 		await fresh()
 		data.finished = checkpoints[i]
@@ -48,7 +48,7 @@ func run() -> void:
 		await frames()
 		check(level.story.stage == stages[i], "Restores story stage at checkpoint %d" % i)
 		check(level.player.outfit == 1, "Restores costume at checkpoint %d" % i)
-		check(level.story.circuit.switches[0], "Restores partial puzzle at checkpoint %d" % i)
+		check(level.story.circuit.rotations[1] == 1, "Restores partial puzzle at checkpoint %d" % i)
 		check(is_equal_approx(level.get_node("Presentation").volume,0.4), "Restores volume at checkpoint %d" % i)
 		check(not level.get_node("Presentation").wind, "Restores motion preference at checkpoint %d" % i)
 		check(level.get_node("World/Room1/CleanBedNorth").visible == ("linen" in checkpoints[i]), "Restores clean bed visuals at checkpoint %d" % i)

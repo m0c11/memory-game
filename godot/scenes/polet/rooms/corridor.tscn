@@ -864,3 +864,8 @@ texture = ExtResource("9")
 centered = false
 offset = Vector2(-16, -64)
 z_index = 5
+
+[node name="LeftReturn" type="Marker2D" parent="Markers"]
+position = Vector2(128,146)
+[node name="RightReturn" type="Marker2D" parent="Markers"]
+position = Vector2(512,146)

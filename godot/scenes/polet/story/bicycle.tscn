@@ -1136,3 +1136,19 @@ theme_override_font_sizes/font_size = 40
 autowrap_mode = 3
 mouse_filter = 2
 visible = false
+
+[node name="Cargo" type="Polygon2D" parent="Rider"]
+visible = false
+position = Vector2(-42,-70)
+polygon = PackedVector2Array(-18,0,18,0,15,-25,-15,-25)
+color = Color(0.73,0.46,0.22,1)
+
+[node name="Condition" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 150.0
+offset_right = 1050.0
+offset_bottom = 186.0
+text = ""
+theme_override_colors/font_color = Color(0.15,0.22,0.19,1)
+theme_override_font_sizes/font_size = 22
+mouse_filter = 2

@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="PackedScene" path="res://assets/models/23_seating_terrace.glb" id="1_terrace"]
 [ext_resource type="PackedScene" path="res://scenes/architecture/seat_row.tscn" id="2_row"]
-[ext_resource type="PackedScene" path="res://scenes/props/auditorium_chair.tscn" id="3_chair"]
+[ext_resource type="PackedScene" path="res://scenes/props/chair_collision.tscn" id="3_chair"]
 [ext_resource type="PackedScene" path="res://assets/models/22_carpet_floor_tile.glb" id="4_floor"]
+
+[ext_resource type="PackedScene" path="res://scenes/architecture/chairs_batched.tscn" id="Batch"]
 
 [sub_resource type="ConvexPolygonShape3D" id="Shape_ramp"]
 points = PackedVector3Array(-8, -0.1, 1, 8, -0.1, 1, -8, 0, 1, 8, 0, 1, -8, -0.1, 9.45, 8, -0.1, 9.45, -8, 1.126, 9.45, 8, 1.126, 9.45)
@@ -126,3 +128,5 @@ position = Vector3(-7.2, 0, 0)
 
 [node name="Row07" parent="Rows" instance=ExtResource("2_row")]
 position = Vector3(0, 1.126, 9.3)
+
+[node name="Chairs" parent="." instance=ExtResource("Batch")]

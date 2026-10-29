@@ -1,14 +1,14 @@
 [gd_scene load_steps=220 format=3]
 
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/birch_a.glb" id="e1"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/birch_b.glb" id="e2"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/pine_tree.glb" id="e3"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/broadleaf_tree.glb" id="e4"]
+[ext_resource type="PackedScene" path="res://assets/optimized/birch_a.tscn" id="e1"]
+[ext_resource type="PackedScene" path="res://assets/optimized/birch_b.tscn" id="e2"]
+[ext_resource type="PackedScene" path="res://assets/optimized/pine_tree.tscn" id="e3"]
+[ext_resource type="PackedScene" path="res://assets/optimized/broadleaf_tree.tscn" id="e4"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/grass_clump.glb" id="e5"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/bush_small.glb" id="e6"]
+[ext_resource type="PackedScene" path="res://assets/optimized/bush_small.tscn" id="e6"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/wildflowers.glb" id="e7"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/rock_cluster.glb" id="e8"]
-[ext_resource type="PackedScene" path="res://assets/venevitino/models/bush_large.glb" id="e9"]
+[ext_resource type="PackedScene" path="res://assets/optimized/bush_large.tscn" id="e9"]
 [ext_resource type="PackedScene" path="res://assets/venevitino/models/reeds_cattails.glb" id="e10"]
 
 [sub_resource type="BoxShape3D" id="r1"]
@@ -647,9 +647,9 @@ rotation = Vector3(0.00000, 5.41083, 0.00000)
 scale = Vector3(1.02414, 1.02414, 1.02414)
 
 [node name="Tree" parent="Tree000/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk000" type="StaticBody3D" parent="."]
 
@@ -664,9 +664,9 @@ rotation = Vector3(0.00000, 1.74733, 0.00000)
 scale = Vector3(1.22904, 1.22904, 1.22904)
 
 [node name="Tree_001" parent="Tree001/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk001" type="StaticBody3D" parent="."]
 
@@ -681,9 +681,9 @@ rotation = Vector3(0.00000, 4.95890, 0.00000)
 scale = Vector3(1.26558, 1.26558, 1.26558)
 
 [node name="Pine" parent="Tree002/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk002" type="StaticBody3D" parent="."]
 
@@ -698,9 +698,9 @@ rotation = Vector3(0.00000, 2.61496, 0.00000)
 scale = Vector3(1.02593, 1.02593, 1.02593)
 
 [node name="Tree_002" parent="Tree003/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk003" type="StaticBody3D" parent="."]
 
@@ -715,9 +715,9 @@ rotation = Vector3(0.00000, 4.71475, 0.00000)
 scale = Vector3(1.09902, 1.09902, 1.09902)
 
 [node name="Tree" parent="Tree004/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk004" type="StaticBody3D" parent="."]
 
@@ -732,9 +732,9 @@ rotation = Vector3(0.00000, 6.23793, 0.00000)
 scale = Vector3(1.05681, 1.05681, 1.05681)
 
 [node name="Tree_001" parent="Tree005/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk005" type="StaticBody3D" parent="."]
 
@@ -749,9 +749,9 @@ rotation = Vector3(0.00000, 5.89344, 0.00000)
 scale = Vector3(1.27958, 1.27958, 1.27958)
 
 [node name="Pine" parent="Tree006/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk006" type="StaticBody3D" parent="."]
 
@@ -766,9 +766,9 @@ rotation = Vector3(0.00000, 2.77626, 0.00000)
 scale = Vector3(1.20650, 1.20650, 1.20650)
 
 [node name="Tree_002" parent="Tree007/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk007" type="StaticBody3D" parent="."]
 
@@ -783,9 +783,9 @@ rotation = Vector3(0.00000, 4.58182, 0.00000)
 scale = Vector3(1.24050, 1.24050, 1.24050)
 
 [node name="Tree" parent="Tree008/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk008" type="StaticBody3D" parent="."]
 
@@ -800,9 +800,9 @@ rotation = Vector3(0.00000, 3.75034, 0.00000)
 scale = Vector3(1.25330, 1.25330, 1.25330)
 
 [node name="Tree_001" parent="Tree009/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk009" type="StaticBody3D" parent="."]
 
@@ -817,9 +817,9 @@ rotation = Vector3(0.00000, 0.23793, 0.00000)
 scale = Vector3(0.91938, 0.91938, 0.91938)
 
 [node name="Pine" parent="Tree010/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk010" type="StaticBody3D" parent="."]
 
@@ -834,9 +834,9 @@ rotation = Vector3(0.00000, 4.33337, 0.00000)
 scale = Vector3(0.97944, 0.97944, 0.97944)
 
 [node name="Tree_002" parent="Tree011/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk011" type="StaticBody3D" parent="."]
 
@@ -851,9 +851,9 @@ rotation = Vector3(0.00000, 1.46266, 0.00000)
 scale = Vector3(0.91283, 0.91283, 0.91283)
 
 [node name="Tree" parent="Tree012/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk012" type="StaticBody3D" parent="."]
 
@@ -868,9 +868,9 @@ rotation = Vector3(0.00000, 2.77487, 0.00000)
 scale = Vector3(1.18869, 1.18869, 1.18869)
 
 [node name="Tree_001" parent="Tree013/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk013" type="StaticBody3D" parent="."]
 
@@ -885,9 +885,9 @@ rotation = Vector3(0.00000, 4.33542, 0.00000)
 scale = Vector3(1.13394, 1.13394, 1.13394)
 
 [node name="Pine" parent="Tree014/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk014" type="StaticBody3D" parent="."]
 
@@ -902,9 +902,9 @@ rotation = Vector3(0.00000, 5.72866, 0.00000)
 scale = Vector3(0.88063, 0.88063, 0.88063)
 
 [node name="Tree_002" parent="Tree015/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk015" type="StaticBody3D" parent="."]
 
@@ -919,9 +919,9 @@ rotation = Vector3(0.00000, 1.93060, 0.00000)
 scale = Vector3(1.12557, 1.12557, 1.12557)
 
 [node name="Tree" parent="Tree016/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk016" type="StaticBody3D" parent="."]
 
@@ -936,9 +936,9 @@ rotation = Vector3(0.00000, 5.84468, 0.00000)
 scale = Vector3(1.21417, 1.21417, 1.21417)
 
 [node name="Tree_001" parent="Tree017/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk017" type="StaticBody3D" parent="."]
 
@@ -953,9 +953,9 @@ rotation = Vector3(0.00000, 3.81450, 0.00000)
 scale = Vector3(0.99137, 0.99137, 0.99137)
 
 [node name="Pine" parent="Tree018/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk018" type="StaticBody3D" parent="."]
 
@@ -970,9 +970,9 @@ rotation = Vector3(0.00000, 1.33636, 0.00000)
 scale = Vector3(1.18753, 1.18753, 1.18753)
 
 [node name="Tree_002" parent="Tree019/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk019" type="StaticBody3D" parent="."]
 
@@ -987,9 +987,9 @@ rotation = Vector3(0.00000, 3.57873, 0.00000)
 scale = Vector3(1.16113, 1.16113, 1.16113)
 
 [node name="Tree" parent="Tree020/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk020" type="StaticBody3D" parent="."]
 
@@ -1004,9 +1004,9 @@ rotation = Vector3(0.00000, 3.48408, 0.00000)
 scale = Vector3(0.86858, 0.86858, 0.86858)
 
 [node name="Tree_001" parent="Tree021/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk021" type="StaticBody3D" parent="."]
 
@@ -1021,9 +1021,9 @@ rotation = Vector3(0.00000, 0.09343, 0.00000)
 scale = Vector3(1.27694, 1.27694, 1.27694)
 
 [node name="Pine" parent="Tree022/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk022" type="StaticBody3D" parent="."]
 
@@ -1038,9 +1038,9 @@ rotation = Vector3(0.00000, 2.11521, 0.00000)
 scale = Vector3(0.95847, 0.95847, 0.95847)
 
 [node name="Tree_002" parent="Tree023/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk023" type="StaticBody3D" parent="."]
 
@@ -1055,9 +1055,9 @@ rotation = Vector3(0.00000, 1.52374, 0.00000)
 scale = Vector3(0.91890, 0.91890, 0.91890)
 
 [node name="Tree" parent="Tree024/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk024" type="StaticBody3D" parent="."]
 
@@ -1072,9 +1072,9 @@ rotation = Vector3(0.00000, 5.85019, 0.00000)
 scale = Vector3(0.97645, 0.97645, 0.97645)
 
 [node name="Tree_001" parent="Tree025/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk025" type="StaticBody3D" parent="."]
 
@@ -1089,9 +1089,9 @@ rotation = Vector3(0.00000, 2.34932, 0.00000)
 scale = Vector3(1.25422, 1.25422, 1.25422)
 
 [node name="Pine" parent="Tree026/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk026" type="StaticBody3D" parent="."]
 
@@ -1106,9 +1106,9 @@ rotation = Vector3(0.00000, 3.44913, 0.00000)
 scale = Vector3(0.89904, 0.89904, 0.89904)
 
 [node name="Tree_002" parent="Tree027/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk027" type="StaticBody3D" parent="."]
 
@@ -1123,9 +1123,9 @@ rotation = Vector3(0.00000, 5.89513, 0.00000)
 scale = Vector3(1.12092, 1.12092, 1.12092)
 
 [node name="Tree" parent="Tree028/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk028" type="StaticBody3D" parent="."]
 
@@ -1140,9 +1140,9 @@ rotation = Vector3(0.00000, 2.13135, 0.00000)
 scale = Vector3(1.05050, 1.05050, 1.05050)
 
 [node name="Tree_001" parent="Tree029/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk029" type="StaticBody3D" parent="."]
 
@@ -1157,9 +1157,9 @@ rotation = Vector3(0.00000, 3.03721, 0.00000)
 scale = Vector3(0.96138, 0.96138, 0.96138)
 
 [node name="Pine" parent="Tree030/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk030" type="StaticBody3D" parent="."]
 
@@ -1174,9 +1174,9 @@ rotation = Vector3(0.00000, 2.10475, 0.00000)
 scale = Vector3(1.22320, 1.22320, 1.22320)
 
 [node name="Tree_002" parent="Tree031/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk031" type="StaticBody3D" parent="."]
 
@@ -1191,9 +1191,9 @@ rotation = Vector3(0.00000, 1.85013, 0.00000)
 scale = Vector3(1.04791, 1.04791, 1.04791)
 
 [node name="Tree" parent="Tree032/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk032" type="StaticBody3D" parent="."]
 
@@ -1208,9 +1208,9 @@ rotation = Vector3(0.00000, 0.87042, 0.00000)
 scale = Vector3(1.09197, 1.09197, 1.09197)
 
 [node name="Tree_001" parent="Tree033/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk033" type="StaticBody3D" parent="."]
 
@@ -1225,9 +1225,9 @@ rotation = Vector3(0.00000, 4.71814, 0.00000)
 scale = Vector3(0.95939, 0.95939, 0.95939)
 
 [node name="Pine" parent="Tree034/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk034" type="StaticBody3D" parent="."]
 
@@ -1242,9 +1242,9 @@ rotation = Vector3(0.00000, 4.88133, 0.00000)
 scale = Vector3(0.91167, 0.91167, 0.91167)
 
 [node name="Tree_002" parent="Tree035/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk035" type="StaticBody3D" parent="."]
 
@@ -1259,9 +1259,9 @@ rotation = Vector3(0.00000, 1.33292, 0.00000)
 scale = Vector3(1.09739, 1.09739, 1.09739)
 
 [node name="Tree" parent="Tree036/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk036" type="StaticBody3D" parent="."]
 
@@ -1276,9 +1276,9 @@ rotation = Vector3(0.00000, 0.05561, 0.00000)
 scale = Vector3(1.17535, 1.17535, 1.17535)
 
 [node name="Tree_001" parent="Tree037/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk037" type="StaticBody3D" parent="."]
 
@@ -1293,9 +1293,9 @@ rotation = Vector3(0.00000, 2.74411, 0.00000)
 scale = Vector3(1.14048, 1.14048, 1.14048)
 
 [node name="Pine" parent="Tree038/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk038" type="StaticBody3D" parent="."]
 
@@ -1310,9 +1310,9 @@ rotation = Vector3(0.00000, 3.55447, 0.00000)
 scale = Vector3(0.94337, 0.94337, 0.94337)
 
 [node name="Tree_002" parent="Tree039/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk039" type="StaticBody3D" parent="."]
 
@@ -1327,9 +1327,9 @@ rotation = Vector3(0.00000, 5.04084, 0.00000)
 scale = Vector3(1.00071, 1.00071, 1.00071)
 
 [node name="Tree" parent="Tree040/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk040" type="StaticBody3D" parent="."]
 
@@ -1344,9 +1344,9 @@ rotation = Vector3(0.00000, 1.32656, 0.00000)
 scale = Vector3(1.26773, 1.26773, 1.26773)
 
 [node name="Tree_001" parent="Tree041/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk041" type="StaticBody3D" parent="."]
 
@@ -1361,9 +1361,9 @@ rotation = Vector3(0.00000, 3.09411, 0.00000)
 scale = Vector3(0.85062, 0.85062, 0.85062)
 
 [node name="Pine" parent="Tree042/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk042" type="StaticBody3D" parent="."]
 
@@ -1378,9 +1378,9 @@ rotation = Vector3(0.00000, 2.53137, 0.00000)
 scale = Vector3(1.02418, 1.02418, 1.02418)
 
 [node name="Tree_002" parent="Tree043/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk043" type="StaticBody3D" parent="."]
 
@@ -1395,9 +1395,9 @@ rotation = Vector3(0.00000, 0.36180, 0.00000)
 scale = Vector3(1.18717, 1.18717, 1.18717)
 
 [node name="Tree" parent="Tree044/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk044" type="StaticBody3D" parent="."]
 
@@ -1412,9 +1412,9 @@ rotation = Vector3(0.00000, 3.45618, 0.00000)
 scale = Vector3(1.22496, 1.22496, 1.22496)
 
 [node name="Tree_001" parent="Tree045/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk045" type="StaticBody3D" parent="."]
 
@@ -1429,9 +1429,9 @@ rotation = Vector3(0.00000, 5.37700, 0.00000)
 scale = Vector3(0.93381, 0.93381, 0.93381)
 
 [node name="Pine" parent="Tree046/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk046" type="StaticBody3D" parent="."]
 
@@ -1446,9 +1446,9 @@ rotation = Vector3(0.00000, 5.53259, 0.00000)
 scale = Vector3(1.22786, 1.22786, 1.22786)
 
 [node name="Tree_002" parent="Tree047/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk047" type="StaticBody3D" parent="."]
 
@@ -1463,9 +1463,9 @@ rotation = Vector3(0.00000, 5.49860, 0.00000)
 scale = Vector3(1.19908, 1.19908, 1.19908)
 
 [node name="Tree" parent="Tree048/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk048" type="StaticBody3D" parent="."]
 
@@ -1480,9 +1480,9 @@ rotation = Vector3(0.00000, 5.08242, 0.00000)
 scale = Vector3(1.16400, 1.16400, 1.16400)
 
 [node name="Tree_001" parent="Tree049/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk049" type="StaticBody3D" parent="."]
 
@@ -1497,9 +1497,9 @@ rotation = Vector3(0.00000, 0.30634, 0.00000)
 scale = Vector3(1.00596, 1.00596, 1.00596)
 
 [node name="Pine" parent="Tree050/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk050" type="StaticBody3D" parent="."]
 
@@ -1514,9 +1514,9 @@ rotation = Vector3(0.00000, 4.32056, 0.00000)
 scale = Vector3(1.22904, 1.22904, 1.22904)
 
 [node name="Tree_002" parent="Tree051/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk051" type="StaticBody3D" parent="."]
 
@@ -1531,9 +1531,9 @@ rotation = Vector3(0.00000, 5.34909, 0.00000)
 scale = Vector3(1.18558, 1.18558, 1.18558)
 
 [node name="Tree" parent="Tree052/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk052" type="StaticBody3D" parent="."]
 
@@ -1548,9 +1548,9 @@ rotation = Vector3(0.00000, 2.41098, 0.00000)
 scale = Vector3(1.03385, 1.03385, 1.03385)
 
 [node name="Tree_001" parent="Tree053/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk053" type="StaticBody3D" parent="."]
 
@@ -1565,9 +1565,9 @@ rotation = Vector3(0.00000, 4.87845, 0.00000)
 scale = Vector3(1.09316, 1.09316, 1.09316)
 
 [node name="Pine" parent="Tree054/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk054" type="StaticBody3D" parent="."]
 
@@ -1582,9 +1582,9 @@ rotation = Vector3(0.00000, 3.99673, 0.00000)
 scale = Vector3(0.87779, 0.87779, 0.87779)
 
 [node name="Tree_002" parent="Tree055/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk055" type="StaticBody3D" parent="."]
 
@@ -1599,9 +1599,9 @@ rotation = Vector3(0.00000, 3.58736, 0.00000)
 scale = Vector3(0.92554, 0.92554, 0.92554)
 
 [node name="Tree" parent="Tree056/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk056" type="StaticBody3D" parent="."]
 
@@ -1616,9 +1616,9 @@ rotation = Vector3(0.00000, 3.85585, 0.00000)
 scale = Vector3(1.12328, 1.12328, 1.12328)
 
 [node name="Tree_001" parent="Tree057/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk057" type="StaticBody3D" parent="."]
 
@@ -1633,9 +1633,9 @@ rotation = Vector3(0.00000, 3.32132, 0.00000)
 scale = Vector3(0.94008, 0.94008, 0.94008)
 
 [node name="Pine" parent="Tree058/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk058" type="StaticBody3D" parent="."]
 
@@ -1650,9 +1650,9 @@ rotation = Vector3(0.00000, 5.00054, 0.00000)
 scale = Vector3(1.11843, 1.11843, 1.11843)
 
 [node name="Tree_002" parent="Tree059/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk059" type="StaticBody3D" parent="."]
 
@@ -1667,9 +1667,9 @@ rotation = Vector3(0.00000, 1.23416, 0.00000)
 scale = Vector3(0.96501, 0.96501, 0.96501)
 
 [node name="Tree" parent="Tree060/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk060" type="StaticBody3D" parent="."]
 
@@ -1684,9 +1684,9 @@ rotation = Vector3(0.00000, 5.93967, 0.00000)
 scale = Vector3(1.21983, 1.21983, 1.21983)
 
 [node name="Tree_001" parent="Tree061/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk061" type="StaticBody3D" parent="."]
 
@@ -1701,9 +1701,9 @@ rotation = Vector3(0.00000, 4.97585, 0.00000)
 scale = Vector3(0.85573, 0.85573, 0.85573)
 
 [node name="Pine" parent="Tree062/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk062" type="StaticBody3D" parent="."]
 
@@ -1718,9 +1718,9 @@ rotation = Vector3(0.00000, 0.13323, 0.00000)
 scale = Vector3(1.09367, 1.09367, 1.09367)
 
 [node name="Tree_002" parent="Tree063/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk063" type="StaticBody3D" parent="."]
 
@@ -1735,9 +1735,9 @@ rotation = Vector3(0.00000, 1.08816, 0.00000)
 scale = Vector3(0.88079, 0.88079, 0.88079)
 
 [node name="Tree" parent="Tree064/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk064" type="StaticBody3D" parent="."]
 
@@ -1752,9 +1752,9 @@ rotation = Vector3(0.00000, 1.06538, 0.00000)
 scale = Vector3(0.92650, 0.92650, 0.92650)
 
 [node name="Tree_001" parent="Tree065/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk065" type="StaticBody3D" parent="."]
 
@@ -1769,9 +1769,9 @@ rotation = Vector3(0.00000, 3.80146, 0.00000)
 scale = Vector3(1.21705, 1.21705, 1.21705)
 
 [node name="Pine" parent="Tree066/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk066" type="StaticBody3D" parent="."]
 
@@ -1786,9 +1786,9 @@ rotation = Vector3(0.00000, 4.01211, 0.00000)
 scale = Vector3(0.90012, 0.90012, 0.90012)
 
 [node name="Tree_002" parent="Tree067/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk067" type="StaticBody3D" parent="."]
 
@@ -1803,9 +1803,9 @@ rotation = Vector3(0.00000, 0.24540, 0.00000)
 scale = Vector3(1.14481, 1.14481, 1.14481)
 
 [node name="Tree" parent="Tree068/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk068" type="StaticBody3D" parent="."]
 
@@ -1820,9 +1820,9 @@ rotation = Vector3(0.00000, 2.90353, 0.00000)
 scale = Vector3(1.02865, 1.02865, 1.02865)
 
 [node name="Tree_001" parent="Tree069/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk069" type="StaticBody3D" parent="."]
 
@@ -1837,9 +1837,9 @@ rotation = Vector3(0.00000, 5.62496, 0.00000)
 scale = Vector3(1.04603, 1.04603, 1.04603)
 
 [node name="Pine" parent="Tree070/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk070" type="StaticBody3D" parent="."]
 
@@ -1854,9 +1854,9 @@ rotation = Vector3(0.00000, 2.89270, 0.00000)
 scale = Vector3(1.07760, 1.07760, 1.07760)
 
 [node name="Tree_002" parent="Tree071/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk071" type="StaticBody3D" parent="."]
 
@@ -1871,9 +1871,9 @@ rotation = Vector3(0.00000, 4.98785, 0.00000)
 scale = Vector3(0.85740, 0.85740, 0.85740)
 
 [node name="Tree" parent="Tree072/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk072" type="StaticBody3D" parent="."]
 
@@ -1888,9 +1888,9 @@ rotation = Vector3(0.00000, 1.83164, 0.00000)
 scale = Vector3(1.24033, 1.24033, 1.24033)
 
 [node name="Tree_001" parent="Tree073/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk073" type="StaticBody3D" parent="."]
 
@@ -1905,9 +1905,9 @@ rotation = Vector3(0.00000, 0.52360, 0.00000)
 scale = Vector3(1.19603, 1.19603, 1.19603)
 
 [node name="Pine" parent="Tree074/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk074" type="StaticBody3D" parent="."]
 
@@ -1922,9 +1922,9 @@ rotation = Vector3(0.00000, 5.60398, 0.00000)
 scale = Vector3(1.18441, 1.18441, 1.18441)
 
 [node name="Tree_002" parent="Tree075/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk075" type="StaticBody3D" parent="."]
 
@@ -1939,9 +1939,9 @@ rotation = Vector3(0.00000, 3.74849, 0.00000)
 scale = Vector3(0.94525, 0.94525, 0.94525)
 
 [node name="Tree" parent="Tree076/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk076" type="StaticBody3D" parent="."]
 
@@ -1956,9 +1956,9 @@ rotation = Vector3(0.00000, 5.46998, 0.00000)
 scale = Vector3(1.05625, 1.05625, 1.05625)
 
 [node name="Tree_001" parent="Tree077/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk077" type="StaticBody3D" parent="."]
 
@@ -1973,9 +1973,9 @@ rotation = Vector3(0.00000, 1.66674, 0.00000)
 scale = Vector3(1.24389, 1.24389, 1.24389)
 
 [node name="Pine" parent="Tree078/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk078" type="StaticBody3D" parent="."]
 
@@ -1990,9 +1990,9 @@ rotation = Vector3(0.00000, 0.07850, 0.00000)
 scale = Vector3(0.91930, 0.91930, 0.91930)
 
 [node name="Tree_002" parent="Tree079/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk079" type="StaticBody3D" parent="."]
 
@@ -2007,9 +2007,9 @@ rotation = Vector3(0.00000, 1.75464, 0.00000)
 scale = Vector3(1.13092, 1.13092, 1.13092)
 
 [node name="Tree" parent="Tree080/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk080" type="StaticBody3D" parent="."]
 
@@ -2024,9 +2024,9 @@ rotation = Vector3(0.00000, 3.64432, 0.00000)
 scale = Vector3(1.14483, 1.14483, 1.14483)
 
 [node name="Tree_001" parent="Tree081/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk081" type="StaticBody3D" parent="."]
 
@@ -2041,9 +2041,9 @@ rotation = Vector3(0.00000, 0.02566, 0.00000)
 scale = Vector3(1.23969, 1.23969, 1.23969)
 
 [node name="Pine" parent="Tree082/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk082" type="StaticBody3D" parent="."]
 
@@ -2058,9 +2058,9 @@ rotation = Vector3(0.00000, 4.75837, 0.00000)
 scale = Vector3(0.95308, 0.95308, 0.95308)
 
 [node name="Tree_002" parent="Tree083/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk083" type="StaticBody3D" parent="."]
 
@@ -2075,9 +2075,9 @@ rotation = Vector3(0.00000, 0.37579, 0.00000)
 scale = Vector3(1.29883, 1.29883, 1.29883)
 
 [node name="Tree" parent="Tree084/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk084" type="StaticBody3D" parent="."]
 
@@ -2092,9 +2092,9 @@ rotation = Vector3(0.00000, 3.70012, 0.00000)
 scale = Vector3(0.89291, 0.89291, 0.89291)
 
 [node name="Tree_001" parent="Tree085/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk085" type="StaticBody3D" parent="."]
 
@@ -2109,9 +2109,9 @@ rotation = Vector3(0.00000, 3.65021, 0.00000)
 scale = Vector3(0.95306, 0.95306, 0.95306)
 
 [node name="Pine" parent="Tree086/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk086" type="StaticBody3D" parent="."]
 
@@ -2126,9 +2126,9 @@ rotation = Vector3(0.00000, 6.12272, 0.00000)
 scale = Vector3(1.11121, 1.11121, 1.11121)
 
 [node name="Tree_002" parent="Tree087/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk087" type="StaticBody3D" parent="."]
 
@@ -2143,9 +2143,9 @@ rotation = Vector3(0.00000, 0.87687, 0.00000)
 scale = Vector3(0.85604, 0.85604, 0.85604)
 
 [node name="Tree" parent="Tree088/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk088" type="StaticBody3D" parent="."]
 
@@ -2160,9 +2160,9 @@ rotation = Vector3(0.00000, 1.39991, 0.00000)
 scale = Vector3(1.28749, 1.28749, 1.28749)
 
 [node name="Tree_001" parent="Tree089/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk089" type="StaticBody3D" parent="."]
 
@@ -2177,9 +2177,9 @@ rotation = Vector3(0.00000, 5.15321, 0.00000)
 scale = Vector3(0.88945, 0.88945, 0.88945)
 
 [node name="Pine" parent="Tree090/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk090" type="StaticBody3D" parent="."]
 
@@ -2194,9 +2194,9 @@ rotation = Vector3(0.00000, 4.46395, 0.00000)
 scale = Vector3(1.00719, 1.00719, 1.00719)
 
 [node name="Tree_002" parent="Tree091/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk091" type="StaticBody3D" parent="."]
 
@@ -2211,9 +2211,9 @@ rotation = Vector3(0.00000, 1.85764, 0.00000)
 scale = Vector3(0.86795, 0.86795, 0.86795)
 
 [node name="Tree" parent="Tree092/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk092" type="StaticBody3D" parent="."]
 
@@ -2228,9 +2228,9 @@ rotation = Vector3(0.00000, 1.16043, 0.00000)
 scale = Vector3(1.05842, 1.05842, 1.05842)
 
 [node name="Tree_001" parent="Tree093/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk093" type="StaticBody3D" parent="."]
 
@@ -2245,9 +2245,9 @@ rotation = Vector3(0.00000, 5.68492, 0.00000)
 scale = Vector3(0.93677, 0.93677, 0.93677)
 
 [node name="Pine" parent="Tree094/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk094" type="StaticBody3D" parent="."]
 
@@ -2262,9 +2262,9 @@ rotation = Vector3(0.00000, 5.58650, 0.00000)
 scale = Vector3(1.22130, 1.22130, 1.22130)
 
 [node name="Tree_002" parent="Tree095/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk095" type="StaticBody3D" parent="."]
 
@@ -2279,9 +2279,9 @@ rotation = Vector3(0.00000, 5.88302, 0.00000)
 scale = Vector3(1.21446, 1.21446, 1.21446)
 
 [node name="Tree" parent="Tree096/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk096" type="StaticBody3D" parent="."]
 
@@ -2296,9 +2296,9 @@ rotation = Vector3(0.00000, 5.08120, 0.00000)
 scale = Vector3(1.17145, 1.17145, 1.17145)
 
 [node name="Tree_001" parent="Tree097/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk097" type="StaticBody3D" parent="."]
 
@@ -2313,9 +2313,9 @@ rotation = Vector3(0.00000, 5.24567, 0.00000)
 scale = Vector3(0.90648, 0.90648, 0.90648)
 
 [node name="Pine" parent="Tree098/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk098" type="StaticBody3D" parent="."]
 
@@ -2330,9 +2330,9 @@ rotation = Vector3(0.00000, 4.96484, 0.00000)
 scale = Vector3(1.06685, 1.06685, 1.06685)
 
 [node name="Tree_002" parent="Tree099/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk099" type="StaticBody3D" parent="."]
 
@@ -2347,9 +2347,9 @@ rotation = Vector3(0.00000, 1.08686, 0.00000)
 scale = Vector3(1.24621, 1.24621, 1.24621)
 
 [node name="Tree" parent="Tree100/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk100" type="StaticBody3D" parent="."]
 
@@ -2364,9 +2364,9 @@ rotation = Vector3(0.00000, 3.70766, 0.00000)
 scale = Vector3(1.17252, 1.17252, 1.17252)
 
 [node name="Tree_001" parent="Tree101/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk101" type="StaticBody3D" parent="."]
 
@@ -2381,9 +2381,9 @@ rotation = Vector3(0.00000, 3.77839, 0.00000)
 scale = Vector3(1.09070, 1.09070, 1.09070)
 
 [node name="Pine" parent="Tree102/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk102" type="StaticBody3D" parent="."]
 
@@ -2398,9 +2398,9 @@ rotation = Vector3(0.00000, 0.23527, 0.00000)
 scale = Vector3(0.92316, 0.92316, 0.92316)
 
 [node name="Tree_002" parent="Tree103/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk103" type="StaticBody3D" parent="."]
 
@@ -2415,9 +2415,9 @@ rotation = Vector3(0.00000, 5.15509, 0.00000)
 scale = Vector3(0.97451, 0.97451, 0.97451)
 
 [node name="Tree" parent="Tree104/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk104" type="StaticBody3D" parent="."]
 
@@ -2432,9 +2432,9 @@ rotation = Vector3(0.00000, 4.88598, 0.00000)
 scale = Vector3(1.20130, 1.20130, 1.20130)
 
 [node name="Tree_001" parent="Tree105/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk105" type="StaticBody3D" parent="."]
 
@@ -2449,9 +2449,9 @@ rotation = Vector3(0.00000, 3.54299, 0.00000)
 scale = Vector3(1.15972, 1.15972, 1.15972)
 
 [node name="Pine" parent="Tree106/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk106" type="StaticBody3D" parent="."]
 
@@ -2466,9 +2466,9 @@ rotation = Vector3(0.00000, 3.53075, 0.00000)
 scale = Vector3(1.02424, 1.02424, 1.02424)
 
 [node name="Tree_002" parent="Tree107/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk107" type="StaticBody3D" parent="."]
 
@@ -2483,9 +2483,9 @@ rotation = Vector3(0.00000, 0.92497, 0.00000)
 scale = Vector3(1.12436, 1.12436, 1.12436)
 
 [node name="Tree" parent="Tree108/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk108" type="StaticBody3D" parent="."]
 
@@ -2500,9 +2500,9 @@ rotation = Vector3(0.00000, 5.11129, 0.00000)
 scale = Vector3(0.94216, 0.94216, 0.94216)
 
 [node name="Tree_001" parent="Tree109/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk109" type="StaticBody3D" parent="."]
 
@@ -2517,9 +2517,9 @@ rotation = Vector3(0.00000, 1.26867, 0.00000)
 scale = Vector3(1.11601, 1.11601, 1.11601)
 
 [node name="Pine" parent="Tree110/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk110" type="StaticBody3D" parent="."]
 
@@ -2534,9 +2534,9 @@ rotation = Vector3(0.00000, 3.10152, 0.00000)
 scale = Vector3(1.17252, 1.17252, 1.17252)
 
 [node name="Tree_002" parent="Tree111/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk111" type="StaticBody3D" parent="."]
 
@@ -2551,9 +2551,9 @@ rotation = Vector3(0.00000, 1.90233, 0.00000)
 scale = Vector3(1.00478, 1.00478, 1.00478)
 
 [node name="Tree" parent="Tree112/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk112" type="StaticBody3D" parent="."]
 
@@ -2568,9 +2568,9 @@ rotation = Vector3(0.00000, 2.28126, 0.00000)
 scale = Vector3(0.98245, 0.98245, 0.98245)
 
 [node name="Tree_001" parent="Tree113/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk113" type="StaticBody3D" parent="."]
 
@@ -2585,9 +2585,9 @@ rotation = Vector3(0.00000, 1.86505, 0.00000)
 scale = Vector3(1.16686, 1.16686, 1.16686)
 
 [node name="Pine" parent="Tree114/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk114" type="StaticBody3D" parent="."]
 
@@ -2602,9 +2602,9 @@ rotation = Vector3(0.00000, 2.92785, 0.00000)
 scale = Vector3(1.18111, 1.18111, 1.18111)
 
 [node name="Tree_002" parent="Tree115/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk115" type="StaticBody3D" parent="."]
 
@@ -2619,9 +2619,9 @@ rotation = Vector3(0.00000, 6.25460, 0.00000)
 scale = Vector3(1.18883, 1.18883, 1.18883)
 
 [node name="Tree" parent="Tree116/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk116" type="StaticBody3D" parent="."]
 
@@ -2636,9 +2636,9 @@ rotation = Vector3(0.00000, 2.37587, 0.00000)
 scale = Vector3(1.16070, 1.16070, 1.16070)
 
 [node name="Tree_001" parent="Tree117/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk117" type="StaticBody3D" parent="."]
 
@@ -2653,9 +2653,9 @@ rotation = Vector3(0.00000, 3.93342, 0.00000)
 scale = Vector3(1.07931, 1.07931, 1.07931)
 
 [node name="Pine" parent="Tree118/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk118" type="StaticBody3D" parent="."]
 
@@ -2670,9 +2670,9 @@ rotation = Vector3(0.00000, 3.64785, 0.00000)
 scale = Vector3(1.26413, 1.26413, 1.26413)
 
 [node name="Tree_002" parent="Tree119/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk119" type="StaticBody3D" parent="."]
 
@@ -2687,9 +2687,9 @@ rotation = Vector3(0.00000, 6.09461, 0.00000)
 scale = Vector3(1.21457, 1.21457, 1.21457)
 
 [node name="Tree" parent="Tree120/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk120" type="StaticBody3D" parent="."]
 
@@ -2704,9 +2704,9 @@ rotation = Vector3(0.00000, 2.15905, 0.00000)
 scale = Vector3(1.01230, 1.01230, 1.01230)
 
 [node name="Tree_001" parent="Tree121/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk121" type="StaticBody3D" parent="."]
 
@@ -2721,9 +2721,9 @@ rotation = Vector3(0.00000, 6.07641, 0.00000)
 scale = Vector3(1.08026, 1.08026, 1.08026)
 
 [node name="Pine" parent="Tree122/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk122" type="StaticBody3D" parent="."]
 
@@ -2738,9 +2738,9 @@ rotation = Vector3(0.00000, 4.11607, 0.00000)
 scale = Vector3(1.06102, 1.06102, 1.06102)
 
 [node name="Tree_002" parent="Tree123/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk123" type="StaticBody3D" parent="."]
 
@@ -2755,9 +2755,9 @@ rotation = Vector3(0.00000, 0.98807, 0.00000)
 scale = Vector3(1.09248, 1.09248, 1.09248)
 
 [node name="Tree" parent="Tree124/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk124" type="StaticBody3D" parent="."]
 
@@ -2772,9 +2772,9 @@ rotation = Vector3(0.00000, 1.03143, 0.00000)
 scale = Vector3(0.89223, 0.89223, 0.89223)
 
 [node name="Tree_001" parent="Tree125/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk125" type="StaticBody3D" parent="."]
 
@@ -2789,9 +2789,9 @@ rotation = Vector3(0.00000, 4.51215, 0.00000)
 scale = Vector3(1.20785, 1.20785, 1.20785)
 
 [node name="Pine" parent="Tree126/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk126" type="StaticBody3D" parent="."]
 
@@ -2806,9 +2806,9 @@ rotation = Vector3(0.00000, 1.49401, 0.00000)
 scale = Vector3(0.99339, 0.99339, 0.99339)
 
 [node name="Tree_002" parent="Tree127/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk127" type="StaticBody3D" parent="."]
 
@@ -2823,9 +2823,9 @@ rotation = Vector3(0.00000, 0.56999, 0.00000)
 scale = Vector3(0.89329, 0.89329, 0.89329)
 
 [node name="Tree" parent="Tree128/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk128" type="StaticBody3D" parent="."]
 
@@ -2840,9 +2840,9 @@ rotation = Vector3(0.00000, 1.99550, 0.00000)
 scale = Vector3(1.00518, 1.00518, 1.00518)
 
 [node name="Tree_001" parent="Tree129/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk129" type="StaticBody3D" parent="."]
 
@@ -2857,9 +2857,9 @@ rotation = Vector3(0.00000, 3.97844, 0.00000)
 scale = Vector3(1.27523, 1.27523, 1.27523)
 
 [node name="Pine" parent="Tree130/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk130" type="StaticBody3D" parent="."]
 
@@ -2874,9 +2874,9 @@ rotation = Vector3(0.00000, 1.39398, 0.00000)
 scale = Vector3(1.05839, 1.05839, 1.05839)
 
 [node name="Tree_002" parent="Tree131/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk131" type="StaticBody3D" parent="."]
 
@@ -2891,9 +2891,9 @@ rotation = Vector3(0.00000, 3.37499, 0.00000)
 scale = Vector3(1.10872, 1.10872, 1.10872)
 
 [node name="Tree" parent="Tree132/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk132" type="StaticBody3D" parent="."]
 
@@ -2908,9 +2908,9 @@ rotation = Vector3(0.00000, 0.79606, 0.00000)
 scale = Vector3(1.15798, 1.15798, 1.15798)
 
 [node name="Tree_001" parent="Tree133/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk133" type="StaticBody3D" parent="."]
 
@@ -2925,9 +2925,9 @@ rotation = Vector3(0.00000, 4.70974, 0.00000)
 scale = Vector3(1.29942, 1.29942, 1.29942)
 
 [node name="Pine" parent="Tree134/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk134" type="StaticBody3D" parent="."]
 
@@ -2942,9 +2942,9 @@ rotation = Vector3(0.00000, 3.76270, 0.00000)
 scale = Vector3(1.00826, 1.00826, 1.00826)
 
 [node name="Tree_002" parent="Tree135/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk135" type="StaticBody3D" parent="."]
 
@@ -2959,9 +2959,9 @@ rotation = Vector3(0.00000, 1.19088, 0.00000)
 scale = Vector3(1.01045, 1.01045, 1.01045)
 
 [node name="Tree" parent="Tree136/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk136" type="StaticBody3D" parent="."]
 
@@ -2976,9 +2976,9 @@ rotation = Vector3(0.00000, 3.92698, 0.00000)
 scale = Vector3(1.17523, 1.17523, 1.17523)
 
 [node name="Tree_001" parent="Tree137/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk137" type="StaticBody3D" parent="."]
 
@@ -2993,9 +2993,9 @@ rotation = Vector3(0.00000, 0.54747, 0.00000)
 scale = Vector3(0.89404, 0.89404, 0.89404)
 
 [node name="Pine" parent="Tree138/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk138" type="StaticBody3D" parent="."]
 
@@ -3010,9 +3010,9 @@ rotation = Vector3(0.00000, 6.20376, 0.00000)
 scale = Vector3(0.99986, 0.99986, 0.99986)
 
 [node name="Tree_002" parent="Tree139/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk139" type="StaticBody3D" parent="."]
 
@@ -3027,9 +3027,9 @@ rotation = Vector3(0.00000, 1.73510, 0.00000)
 scale = Vector3(1.21279, 1.21279, 1.21279)
 
 [node name="Tree" parent="Tree140/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk140" type="StaticBody3D" parent="."]
 
@@ -3044,9 +3044,9 @@ rotation = Vector3(0.00000, 5.92308, 0.00000)
 scale = Vector3(1.19630, 1.19630, 1.19630)
 
 [node name="Tree_001" parent="Tree141/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk141" type="StaticBody3D" parent="."]
 
@@ -3061,9 +3061,9 @@ rotation = Vector3(0.00000, 0.82668, 0.00000)
 scale = Vector3(1.23377, 1.23377, 1.23377)
 
 [node name="Pine" parent="Tree142/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk142" type="StaticBody3D" parent="."]
 
@@ -3078,9 +3078,9 @@ rotation = Vector3(0.00000, 6.15684, 0.00000)
 scale = Vector3(0.92271, 0.92271, 0.92271)
 
 [node name="Tree_002" parent="Tree143/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk143" type="StaticBody3D" parent="."]
 
@@ -3095,9 +3095,9 @@ rotation = Vector3(0.00000, 3.51319, 0.00000)
 scale = Vector3(1.08022, 1.08022, 1.08022)
 
 [node name="Tree" parent="Tree144/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk144" type="StaticBody3D" parent="."]
 
@@ -3112,9 +3112,9 @@ rotation = Vector3(0.00000, 1.18275, 0.00000)
 scale = Vector3(1.14232, 1.14232, 1.14232)
 
 [node name="Tree_001" parent="Tree145/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk145" type="StaticBody3D" parent="."]
 
@@ -3129,9 +3129,9 @@ rotation = Vector3(0.00000, 2.93105, 0.00000)
 scale = Vector3(1.01085, 1.01085, 1.01085)
 
 [node name="Pine" parent="Tree146/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk146" type="StaticBody3D" parent="."]
 
@@ -3146,9 +3146,9 @@ rotation = Vector3(0.00000, 2.37795, 0.00000)
 scale = Vector3(1.16500, 1.16500, 1.16500)
 
 [node name="Tree_002" parent="Tree147/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk147" type="StaticBody3D" parent="."]
 
@@ -3163,9 +3163,9 @@ rotation = Vector3(0.00000, 2.92839, 0.00000)
 scale = Vector3(1.12752, 1.12752, 1.12752)
 
 [node name="Tree" parent="Tree148/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk148" type="StaticBody3D" parent="."]
 
@@ -3180,9 +3180,9 @@ rotation = Vector3(0.00000, 2.78331, 0.00000)
 scale = Vector3(1.18681, 1.18681, 1.18681)
 
 [node name="Tree_001" parent="Tree149/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk149" type="StaticBody3D" parent="."]
 
@@ -3197,9 +3197,9 @@ rotation = Vector3(0.00000, 6.23599, 0.00000)
 scale = Vector3(1.28533, 1.28533, 1.28533)
 
 [node name="Pine" parent="Tree150/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk150" type="StaticBody3D" parent="."]
 
@@ -3214,9 +3214,9 @@ rotation = Vector3(0.00000, 4.31211, 0.00000)
 scale = Vector3(1.04109, 1.04109, 1.04109)
 
 [node name="Tree_002" parent="Tree151/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk151" type="StaticBody3D" parent="."]
 
@@ -3231,9 +3231,9 @@ rotation = Vector3(0.00000, 3.79725, 0.00000)
 scale = Vector3(1.28088, 1.28088, 1.28088)
 
 [node name="Tree" parent="Tree152/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk152" type="StaticBody3D" parent="."]
 
@@ -3248,9 +3248,9 @@ rotation = Vector3(0.00000, 2.43828, 0.00000)
 scale = Vector3(1.17460, 1.17460, 1.17460)
 
 [node name="Tree_001" parent="Tree153/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk153" type="StaticBody3D" parent="."]
 
@@ -3265,9 +3265,9 @@ rotation = Vector3(0.00000, 1.29462, 0.00000)
 scale = Vector3(1.09731, 1.09731, 1.09731)
 
 [node name="Pine" parent="Tree154/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk154" type="StaticBody3D" parent="."]
 
@@ -3282,9 +3282,9 @@ rotation = Vector3(0.00000, 1.69381, 0.00000)
 scale = Vector3(1.13007, 1.13007, 1.13007)
 
 [node name="Tree_002" parent="Tree155/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk155" type="StaticBody3D" parent="."]
 
@@ -3299,9 +3299,9 @@ rotation = Vector3(0.00000, 0.98227, 0.00000)
 scale = Vector3(1.23303, 1.23303, 1.23303)
 
 [node name="Tree" parent="Tree156/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk156" type="StaticBody3D" parent="."]
 
@@ -3316,9 +3316,9 @@ rotation = Vector3(0.00000, 0.42327, 0.00000)
 scale = Vector3(1.13335, 1.13335, 1.13335)
 
 [node name="Tree_001" parent="Tree157/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk157" type="StaticBody3D" parent="."]
 
@@ -3333,9 +3333,9 @@ rotation = Vector3(0.00000, 0.11430, 0.00000)
 scale = Vector3(0.90131, 0.90131, 0.90131)
 
 [node name="Pine" parent="Tree158/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk158" type="StaticBody3D" parent="."]
 
@@ -3350,9 +3350,9 @@ rotation = Vector3(0.00000, 1.79805, 0.00000)
 scale = Vector3(1.21748, 1.21748, 1.21748)
 
 [node name="Tree_002" parent="Tree159/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk159" type="StaticBody3D" parent="."]
 
@@ -3367,9 +3367,9 @@ rotation = Vector3(0.00000, 0.09892, 0.00000)
 scale = Vector3(1.24561, 1.24561, 1.24561)
 
 [node name="Tree" parent="Tree160/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk160" type="StaticBody3D" parent="."]
 
@@ -3384,9 +3384,9 @@ rotation = Vector3(0.00000, 5.72865, 0.00000)
 scale = Vector3(1.17775, 1.17775, 1.17775)
 
 [node name="Tree_001" parent="Tree161/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk161" type="StaticBody3D" parent="."]
 
@@ -3401,9 +3401,9 @@ rotation = Vector3(0.00000, 1.87600, 0.00000)
 scale = Vector3(1.04966, 1.04966, 1.04966)
 
 [node name="Pine" parent="Tree162/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk162" type="StaticBody3D" parent="."]
 
@@ -3418,9 +3418,9 @@ rotation = Vector3(0.00000, 1.55381, 0.00000)
 scale = Vector3(1.01919, 1.01919, 1.01919)
 
 [node name="Tree_002" parent="Tree163/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk163" type="StaticBody3D" parent="."]
 
@@ -3435,9 +3435,9 @@ rotation = Vector3(0.00000, 5.16036, 0.00000)
 scale = Vector3(1.03532, 1.03532, 1.03532)
 
 [node name="Tree" parent="Tree164/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk164" type="StaticBody3D" parent="."]
 
@@ -3452,9 +3452,9 @@ rotation = Vector3(0.00000, 0.41660, 0.00000)
 scale = Vector3(0.91034, 0.91034, 0.91034)
 
 [node name="Tree_001" parent="Tree165/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk165" type="StaticBody3D" parent="."]
 
@@ -3469,9 +3469,9 @@ rotation = Vector3(0.00000, 1.28932, 0.00000)
 scale = Vector3(1.04558, 1.04558, 1.04558)
 
 [node name="Pine" parent="Tree166/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk166" type="StaticBody3D" parent="."]
 
@@ -3486,9 +3486,9 @@ rotation = Vector3(0.00000, 1.49700, 0.00000)
 scale = Vector3(1.06881, 1.06881, 1.06881)
 
 [node name="Tree_002" parent="Tree167/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk167" type="StaticBody3D" parent="."]
 
@@ -3503,9 +3503,9 @@ rotation = Vector3(0.00000, 2.59260, 0.00000)
 scale = Vector3(1.12323, 1.12323, 1.12323)
 
 [node name="Tree" parent="Tree168/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk168" type="StaticBody3D" parent="."]
 
@@ -3520,9 +3520,9 @@ rotation = Vector3(0.00000, 0.08148, 0.00000)
 scale = Vector3(1.18877, 1.18877, 1.18877)
 
 [node name="Tree_001" parent="Tree169/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk169" type="StaticBody3D" parent="."]
 
@@ -3537,9 +3537,9 @@ rotation = Vector3(0.00000, 1.18511, 0.00000)
 scale = Vector3(1.07818, 1.07818, 1.07818)
 
 [node name="Pine" parent="Tree170/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk170" type="StaticBody3D" parent="."]
 
@@ -3554,9 +3554,9 @@ rotation = Vector3(0.00000, 2.92399, 0.00000)
 scale = Vector3(0.89374, 0.89374, 0.89374)
 
 [node name="Tree_002" parent="Tree171/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk171" type="StaticBody3D" parent="."]
 
@@ -3571,9 +3571,9 @@ rotation = Vector3(0.00000, 4.30115, 0.00000)
 scale = Vector3(1.06730, 1.06730, 1.06730)
 
 [node name="Tree" parent="Tree172/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk172" type="StaticBody3D" parent="."]
 
@@ -3588,9 +3588,9 @@ rotation = Vector3(0.00000, 1.43442, 0.00000)
 scale = Vector3(0.98692, 0.98692, 0.98692)
 
 [node name="Tree_001" parent="Tree173/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk173" type="StaticBody3D" parent="."]
 
@@ -3605,9 +3605,9 @@ rotation = Vector3(0.00000, 5.97853, 0.00000)
 scale = Vector3(1.21586, 1.21586, 1.21586)
 
 [node name="Pine" parent="Tree174/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk174" type="StaticBody3D" parent="."]
 
@@ -3622,9 +3622,9 @@ rotation = Vector3(0.00000, 2.11973, 0.00000)
 scale = Vector3(1.12436, 1.12436, 1.12436)
 
 [node name="Tree_002" parent="Tree175/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk175" type="StaticBody3D" parent="."]
 
@@ -3639,9 +3639,9 @@ rotation = Vector3(0.00000, 4.74612, 0.00000)
 scale = Vector3(1.21377, 1.21377, 1.21377)
 
 [node name="Tree" parent="Tree176/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk176" type="StaticBody3D" parent="."]
 
@@ -3656,9 +3656,9 @@ rotation = Vector3(0.00000, 1.18831, 0.00000)
 scale = Vector3(1.05297, 1.05297, 1.05297)
 
 [node name="Tree_001" parent="Tree177/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk177" type="StaticBody3D" parent="."]
 
@@ -3673,9 +3673,9 @@ rotation = Vector3(0.00000, 4.28327, 0.00000)
 scale = Vector3(1.28285, 1.28285, 1.28285)
 
 [node name="Pine" parent="Tree178/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk178" type="StaticBody3D" parent="."]
 
@@ -3690,9 +3690,9 @@ rotation = Vector3(0.00000, 4.60489, 0.00000)
 scale = Vector3(1.01190, 1.01190, 1.01190)
 
 [node name="Tree_002" parent="Tree179/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk179" type="StaticBody3D" parent="."]
 
@@ -3707,9 +3707,9 @@ rotation = Vector3(0.00000, 1.18356, 0.00000)
 scale = Vector3(1.06159, 1.06159, 1.06159)
 
 [node name="Tree" parent="Tree180/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk180" type="StaticBody3D" parent="."]
 
@@ -3724,9 +3724,9 @@ rotation = Vector3(0.00000, 0.58949, 0.00000)
 scale = Vector3(1.22620, 1.22620, 1.22620)
 
 [node name="Tree_001" parent="Tree181/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk181" type="StaticBody3D" parent="."]
 
@@ -3741,9 +3741,9 @@ rotation = Vector3(0.00000, 0.57006, 0.00000)
 scale = Vector3(1.26003, 1.26003, 1.26003)
 
 [node name="Pine" parent="Tree182/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk182" type="StaticBody3D" parent="."]
 
@@ -3758,9 +3758,9 @@ rotation = Vector3(0.00000, 5.70962, 0.00000)
 scale = Vector3(1.06152, 1.06152, 1.06152)
 
 [node name="Tree_002" parent="Tree183/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk183" type="StaticBody3D" parent="."]
 
@@ -3775,9 +3775,9 @@ rotation = Vector3(0.00000, 3.11722, 0.00000)
 scale = Vector3(0.98555, 0.98555, 0.98555)
 
 [node name="Tree" parent="Tree184/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk184" type="StaticBody3D" parent="."]
 
@@ -3792,9 +3792,9 @@ rotation = Vector3(0.00000, 5.63909, 0.00000)
 scale = Vector3(0.91165, 0.91165, 0.91165)
 
 [node name="Tree_001" parent="Tree185/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk185" type="StaticBody3D" parent="."]
 
@@ -3809,9 +3809,9 @@ rotation = Vector3(0.00000, 0.01093, 0.00000)
 scale = Vector3(1.14344, 1.14344, 1.14344)
 
 [node name="Pine" parent="Tree186/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk186" type="StaticBody3D" parent="."]
 
@@ -3826,9 +3826,9 @@ rotation = Vector3(0.00000, 5.23501, 0.00000)
 scale = Vector3(1.22326, 1.22326, 1.22326)
 
 [node name="Tree_002" parent="Tree187/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk187" type="StaticBody3D" parent="."]
 
@@ -3843,9 +3843,9 @@ rotation = Vector3(0.00000, 2.11482, 0.00000)
 scale = Vector3(0.85024, 0.85024, 0.85024)
 
 [node name="Tree" parent="Tree188/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk188" type="StaticBody3D" parent="."]
 
@@ -3860,9 +3860,9 @@ rotation = Vector3(0.00000, 0.97745, 0.00000)
 scale = Vector3(1.14815, 1.14815, 1.14815)
 
 [node name="Tree_001" parent="Tree189/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk189" type="StaticBody3D" parent="."]
 
@@ -3877,9 +3877,9 @@ rotation = Vector3(0.00000, 1.52295, 0.00000)
 scale = Vector3(1.19397, 1.19397, 1.19397)
 
 [node name="Pine" parent="Tree190/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk190" type="StaticBody3D" parent="."]
 
@@ -3894,9 +3894,9 @@ rotation = Vector3(0.00000, 4.64118, 0.00000)
 scale = Vector3(1.00838, 1.00838, 1.00838)
 
 [node name="Tree_002" parent="Tree191/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk191" type="StaticBody3D" parent="."]
 
@@ -3911,9 +3911,9 @@ rotation = Vector3(0.00000, 4.34288, 0.00000)
 scale = Vector3(0.91536, 0.91536, 0.91536)
 
 [node name="Tree" parent="Tree192/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk192" type="StaticBody3D" parent="."]
 
@@ -3928,9 +3928,9 @@ rotation = Vector3(0.00000, 3.75727, 0.00000)
 scale = Vector3(0.91694, 0.91694, 0.91694)
 
 [node name="Tree_001" parent="Tree193/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk193" type="StaticBody3D" parent="."]
 
@@ -3945,9 +3945,9 @@ rotation = Vector3(0.00000, 5.90968, 0.00000)
 scale = Vector3(1.26048, 1.26048, 1.26048)
 
 [node name="Pine" parent="Tree194/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk194" type="StaticBody3D" parent="."]
 
@@ -3962,9 +3962,9 @@ rotation = Vector3(0.00000, 2.77109, 0.00000)
 scale = Vector3(0.96055, 0.96055, 0.96055)
 
 [node name="Tree_002" parent="Tree195/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk195" type="StaticBody3D" parent="."]
 
@@ -3979,9 +3979,9 @@ rotation = Vector3(0.00000, 5.30183, 0.00000)
 scale = Vector3(0.88378, 0.88378, 0.88378)
 
 [node name="Tree" parent="Tree196/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk196" type="StaticBody3D" parent="."]
 
@@ -3996,9 +3996,9 @@ rotation = Vector3(0.00000, 2.66378, 0.00000)
 scale = Vector3(1.19451, 1.19451, 1.19451)
 
 [node name="Tree_001" parent="Tree197/birch_b" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk197" type="StaticBody3D" parent="."]
 
@@ -4013,9 +4013,9 @@ rotation = Vector3(0.00000, 1.36156, 0.00000)
 scale = Vector3(1.04396, 1.04396, 1.04396)
 
 [node name="Pine" parent="Tree198/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk198" type="StaticBody3D" parent="."]
 
@@ -4030,9 +4030,9 @@ rotation = Vector3(0.00000, 0.29470, 0.00000)
 scale = Vector3(0.93557, 0.93557, 0.93557)
 
 [node name="Tree_002" parent="Tree199/broadleaf_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk199" type="StaticBody3D" parent="."]
 
@@ -4047,9 +4047,9 @@ rotation = Vector3(0.00000, 2.65211, 0.00000)
 scale = Vector3(0.99974, 0.99974, 0.99974)
 
 [node name="Tree" parent="Tree200/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Trunk200" type="StaticBody3D" parent="."]
 
@@ -4092,9 +4092,9 @@ position = Vector3(164.85512, 0.00000, 88.65657)
 rotation = Vector3(0.00000, 2.43572, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory003/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory004" parent="." instance=ExtResource("e9")]
 position = Vector3(118.43071, 0.00000, 34.53786)
@@ -4149,9 +4149,9 @@ position = Vector3(168.85215, 0.00000, 211.26082)
 rotation = Vector3(0.00000, 1.32019, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory013/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory014" parent="." instance=ExtResource("e9")]
 position = Vector3(90.24667, 0.00000, 165.31618)
@@ -4196,9 +4196,9 @@ position = Vector3(12.79898, 0.00000, 135.12456)
 rotation = Vector3(0.00000, 2.24269, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory018/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory019" parent="." instance=ExtResource("e9")]
 position = Vector3(41.79012, 0.00000, 186.34230)
@@ -4262,9 +4262,9 @@ position = Vector3(45.22680, 0.00000, 178.72305)
 rotation = Vector3(0.00000, 0.13752, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory028/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory030" parent="." instance=ExtResource("e5")]
 position = Vector3(81.41975, 0.00000, 33.48116)
@@ -4290,9 +4290,9 @@ position = Vector3(66.56084, 0.00000, 159.94129)
 rotation = Vector3(0.00000, 0.93937, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory033/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory034" parent="." instance=ExtResource("e9")]
 position = Vector3(22.44731, 0.00000, 174.29788)
@@ -4308,9 +4308,9 @@ position = Vector3(179.27719, 0.00000, 57.54222)
 rotation = Vector3(0.00000, 0.08536, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory038/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory041" parent="." instance=ExtResource("e6")]
 position = Vector3(171.22655, 0.00000, 208.76157)
@@ -4403,9 +4403,9 @@ position = Vector3(170.38236, 0.00000, 224.29243)
 rotation = Vector3(0.00000, 2.82904, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory053/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory057" parent="." instance=ExtResource("e7")]
 position = Vector3(131.48924, 0.00000, 58.42463)
@@ -4422,9 +4422,9 @@ position = Vector3(130.37645, 0.00000, 79.70141)
 rotation = Vector3(0.00000, 1.91412, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory058/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory060" parent="." instance=ExtResource("e5")]
 position = Vector3(162.95245, 0.00000, 173.10798)
@@ -4450,9 +4450,9 @@ position = Vector3(104.45024, 0.00000, 6.35776)
 rotation = Vector3(0.00000, 3.82222, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory063/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory064" parent="." instance=ExtResource("e9")]
 position = Vector3(154.24580, 0.00000, 230.89454)
@@ -4497,9 +4497,9 @@ position = Vector3(79.67620, 0.00000, 59.41504)
 rotation = Vector3(0.00000, 4.84777, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory068/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory069" parent="." instance=ExtResource("e9")]
 position = Vector3(28.00725, 0.00000, 7.65587)
@@ -4534,9 +4534,9 @@ position = Vector3(105.32452, 0.00000, 20.68974)
 rotation = Vector3(0.00000, 5.57138, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory073/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory074" parent="." instance=ExtResource("e9")]
 position = Vector3(51.92565, 0.00000, 30.02831)
@@ -4571,9 +4571,9 @@ position = Vector3(138.00934, 0.00000, 27.51506)
 rotation = Vector3(0.00000, 0.76338, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory078/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory079" parent="." instance=ExtResource("e9")]
 position = Vector3(62.30950, 0.00000, 10.57499)
@@ -4646,9 +4646,9 @@ position = Vector3(3.86999, 0.00000, 63.15838)
 rotation = Vector3(0.00000, 1.08218, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory088/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory089" parent="." instance=ExtResource("e9")]
 position = Vector3(179.14116, 0.00000, 168.35327)
@@ -4683,9 +4683,9 @@ position = Vector3(37.89892, 0.00000, 100.59227)
 rotation = Vector3(0.00000, 1.05741, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory093/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory094" parent="." instance=ExtResource("e9")]
 position = Vector3(130.67383, 0.00000, 98.35823)
@@ -4758,9 +4758,9 @@ position = Vector3(32.63404, 0.00000, 213.88231)
 rotation = Vector3(0.00000, 6.06503, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory103/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory104" parent="." instance=ExtResource("e9")]
 position = Vector3(79.29825, 0.00000, 119.62013)
@@ -4795,9 +4795,9 @@ position = Vector3(134.00221, 0.00000, 59.19523)
 rotation = Vector3(0.00000, 5.17097, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory108/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory109" parent="." instance=ExtResource("e9")]
 position = Vector3(159.55362, 0.00000, 21.59523)
@@ -4813,9 +4813,9 @@ position = Vector3(153.44520, 0.00000, 186.31116)
 rotation = Vector3(0.00000, 1.92474, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory113/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory114" parent="." instance=ExtResource("e9")]
 position = Vector3(38.35681, 0.00000, 225.47723)
@@ -4841,9 +4841,9 @@ position = Vector3(23.02772, 0.00000, 46.90657)
 rotation = Vector3(0.00000, 1.57390, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory118/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory119" parent="." instance=ExtResource("e9")]
 position = Vector3(126.61665, 0.00000, 131.75098)
@@ -4888,9 +4888,9 @@ position = Vector3(52.14304, 0.00000, 230.19720)
 rotation = Vector3(0.00000, 4.50978, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory123/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory124" parent="." instance=ExtResource("e9")]
 position = Vector3(77.76328, 0.00000, 105.20125)
@@ -4955,9 +4955,9 @@ position = Vector3(10.97326, 0.00000, 177.80651)
 rotation = Vector3(0.00000, 5.41010, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory133/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory134" parent="." instance=ExtResource("e9")]
 position = Vector3(121.73509, 0.00000, 8.09196)
@@ -5031,9 +5031,9 @@ position = Vector3(19.29943, 0.00000, 41.53118)
 rotation = Vector3(0.00000, 0.52509, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory143/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory144" parent="." instance=ExtResource("e9")]
 position = Vector3(153.99449, 0.00000, 11.95347)
@@ -5068,9 +5068,9 @@ position = Vector3(150.90762, 0.00000, 48.64504)
 rotation = Vector3(0.00000, 2.95798, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory148/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory149" parent="." instance=ExtResource("e9")]
 position = Vector3(50.71048, 0.00000, 217.65848)
@@ -5105,9 +5105,9 @@ position = Vector3(150.67352, 0.00000, 174.53120)
 rotation = Vector3(0.00000, 1.52024, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory158/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory159" parent="." instance=ExtResource("e9")]
 position = Vector3(169.36044, 0.00000, 203.15355)
@@ -5180,9 +5180,9 @@ position = Vector3(76.19857, 0.00000, 65.19949)
 rotation = Vector3(0.00000, 4.28597, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory168/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory169" parent="." instance=ExtResource("e9")]
 position = Vector3(95.37349, 0.00000, 26.37450)
@@ -5244,9 +5244,9 @@ position = Vector3(181.89524, 0.00000, 55.72609)
 rotation = Vector3(0.00000, 4.85833, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory183/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory184" parent="." instance=ExtResource("e9")]
 position = Vector3(146.63807, 0.00000, 85.83408)
@@ -5281,9 +5281,9 @@ position = Vector3(158.08014, 0.00000, 138.05130)
 rotation = Vector3(0.00000, 4.45604, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory188/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory190" parent="." instance=ExtResource("e5")]
 position = Vector3(162.19392, 0.00000, 30.34040)
@@ -5338,9 +5338,9 @@ position = Vector3(138.42526, 0.00000, 124.27632)
 rotation = Vector3(0.00000, 5.15324, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory198/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory200" parent="." instance=ExtResource("e5")]
 position = Vector3(141.77473, 0.00000, 178.18659)
@@ -5432,9 +5432,9 @@ position = Vector3(57.09291, 0.00000, 143.82501)
 rotation = Vector3(0.00000, 3.16462, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory218/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory221" parent="." instance=ExtResource("e6")]
 position = Vector3(72.14589, 0.00000, 16.43220)
@@ -5460,9 +5460,9 @@ position = Vector3(64.73446, 0.00000, 15.50577)
 rotation = Vector3(0.00000, 3.63634, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory223/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory224" parent="." instance=ExtResource("e9")]
 position = Vector3(84.37675, 0.00000, 169.95940)
@@ -5507,9 +5507,9 @@ position = Vector3(39.23260, 0.00000, 45.47390)
 rotation = Vector3(0.00000, 0.00634, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory228/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory229" parent="." instance=ExtResource("e9")]
 position = Vector3(3.78696, 0.00000, 26.68098)
@@ -5544,9 +5544,9 @@ position = Vector3(174.14374, 0.00000, 213.58639)
 rotation = Vector3(0.00000, 3.76299, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory233/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory234" parent="." instance=ExtResource("e9")]
 position = Vector3(110.60768, 0.00000, 218.55993)
@@ -5591,9 +5591,9 @@ position = Vector3(62.63646, 0.00000, 43.43182)
 rotation = Vector3(0.00000, 0.55487, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory238/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory240" parent="." instance=ExtResource("e5")]
 position = Vector3(177.31743, 0.00000, 169.81736)
@@ -5704,9 +5704,9 @@ position = Vector3(179.88003, 0.00000, 31.02786)
 rotation = Vector3(0.00000, 0.35654, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory258/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory259" parent="." instance=ExtResource("e9")]
 position = Vector3(97.46268, 0.00000, 18.63930)
@@ -5741,9 +5741,9 @@ position = Vector3(85.21581, 0.00000, 199.38194)
 rotation = Vector3(0.00000, 2.76562, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory263/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory265" parent="." instance=ExtResource("e5")]
 position = Vector3(37.58824, 0.00000, 106.64383)
@@ -5770,9 +5770,9 @@ position = Vector3(152.29679, 0.00000, 17.52205)
 rotation = Vector3(0.00000, 3.76347, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory268/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory271" parent="." instance=ExtResource("e6")]
 position = Vector3(33.88975, 0.00000, 208.64294)
@@ -5827,9 +5827,9 @@ position = Vector3(16.38281, 0.00000, 193.33324)
 rotation = Vector3(0.00000, 4.15114, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory278/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory279" parent="." instance=ExtResource("e9")]
 position = Vector3(116.98880, 0.00000, 4.72762)
@@ -5864,9 +5864,9 @@ position = Vector3(54.42542, 0.00000, 124.19121)
 rotation = Vector3(0.00000, 2.71889, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory283/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory284" parent="." instance=ExtResource("e9")]
 position = Vector3(39.03747, 0.00000, 217.50978)
@@ -5902,9 +5902,9 @@ position = Vector3(141.91474, 0.00000, 139.58861)
 rotation = Vector3(0.00000, 2.62705, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory288/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory289" parent="." instance=ExtResource("e9")]
 position = Vector3(20.53443, 0.00000, 183.25947)
@@ -5949,9 +5949,9 @@ position = Vector3(49.05197, 0.00000, 28.29852)
 rotation = Vector3(0.00000, 2.81653, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory293/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory295" parent="." instance=ExtResource("e5")]
 position = Vector3(163.08622, 0.00000, 88.89884)
@@ -5977,9 +5977,9 @@ position = Vector3(12.14335, 0.00000, 55.50016)
 rotation = Vector3(0.00000, 3.15892, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory298/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory299" parent="." instance=ExtResource("e9")]
 position = Vector3(142.99469, 0.00000, 162.84597)
@@ -6014,9 +6014,9 @@ position = Vector3(31.33606, 0.00000, 58.36765)
 rotation = Vector3(0.00000, 0.10414, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory303/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory304" parent="." instance=ExtResource("e9")]
 position = Vector3(65.65617, 0.00000, 95.58724)
@@ -6070,9 +6070,9 @@ position = Vector3(168.37747, 0.00000, 210.35812)
 rotation = Vector3(0.00000, 4.20362, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory313/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory314" parent="." instance=ExtResource("e9")]
 position = Vector3(137.24810, 0.00000, 177.29971)
@@ -6107,9 +6107,9 @@ position = Vector3(59.07215, 0.00000, 227.89293)
 rotation = Vector3(0.00000, 5.19892, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory318/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory319" parent="." instance=ExtResource("e9")]
 position = Vector3(50.96521, 0.00000, 225.47088)
@@ -6144,9 +6144,9 @@ position = Vector3(15.49553, 0.00000, 198.35906)
 rotation = Vector3(0.00000, 4.82672, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory323/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory325" parent="." instance=ExtResource("e5")]
 position = Vector3(153.44320, 0.00000, 177.80517)
@@ -6192,9 +6192,9 @@ position = Vector3(123.82932, 0.00000, 130.16203)
 rotation = Vector3(0.00000, 0.10545, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory338/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory341" parent="." instance=ExtResource("e6")]
 position = Vector3(127.46899, 0.00000, 123.66120)
@@ -6248,9 +6248,9 @@ position = Vector3(162.11130, 0.00000, 204.92802)
 rotation = Vector3(0.00000, 4.21438, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory348/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory350" parent="." instance=ExtResource("e5")]
 position = Vector3(145.73929, 0.00000, 83.60899)
@@ -6286,9 +6286,9 @@ position = Vector3(151.86201, 0.00000, 12.44515)
 rotation = Vector3(0.00000, 0.61945, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory353/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory354" parent="." instance=ExtResource("e9")]
 position = Vector3(37.93959, 0.00000, 95.69829)
@@ -6371,9 +6371,9 @@ position = Vector3(172.04733, 0.00000, 51.14402)
 rotation = Vector3(0.00000, 1.51646, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory368/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory369" parent="." instance=ExtResource("e9")]
 position = Vector3(126.12673, 0.00000, 111.14895)
@@ -6409,9 +6409,9 @@ position = Vector3(147.31156, 0.00000, 42.28513)
 rotation = Vector3(0.00000, 1.97063, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory373/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory374" parent="." instance=ExtResource("e9")]
 position = Vector3(18.41695, 0.00000, 223.36599)
@@ -6465,9 +6465,9 @@ position = Vector3(21.84855, 0.00000, 34.12211)
 rotation = Vector3(0.00000, 5.28904, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory383/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory384" parent="." instance=ExtResource("e9")]
 position = Vector3(41.10582, 0.00000, 179.73458)
@@ -6492,9 +6492,9 @@ position = Vector3(92.09998, 0.00000, 160.73002)
 rotation = Vector3(0.00000, 2.13027, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory388/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory389" parent="." instance=ExtResource("e9")]
 position = Vector3(9.68602, 0.00000, 197.16355)
@@ -6510,18 +6510,18 @@ position = Vector3(137.29545, 0.00000, 91.48715)
 rotation = Vector3(0.00000, 3.77483, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory393/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory398" parent="." instance=ExtResource("e8")]
 position = Vector3(143.53264, 0.00000, 97.63802)
 rotation = Vector3(0.00000, 0.45493, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory398/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory399" parent="." instance=ExtResource("e9")]
 position = Vector3(32.16165, 0.00000, 229.84838)
@@ -6755,9 +6755,9 @@ position = Vector3(12.96071, 0.00000, 198.68365)
 rotation = Vector3(0.00000, 4.25087, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory433/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory434" parent="." instance=ExtResource("e9")]
 position = Vector3(112.05384, 0.00000, 209.82622)
@@ -6802,9 +6802,9 @@ position = Vector3(175.47569, 0.00000, 65.80560)
 rotation = Vector3(0.00000, 6.23283, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory438/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory440" parent="." instance=ExtResource("e5")]
 position = Vector3(76.60156, 0.00000, 4.45323)
@@ -6840,9 +6840,9 @@ position = Vector3(145.49253, 0.00000, 119.16110)
 rotation = Vector3(0.00000, 2.27101, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory443/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory444" parent="." instance=ExtResource("e9")]
 position = Vector3(172.95222, 0.00000, 226.00486)
@@ -6925,9 +6925,9 @@ position = Vector3(144.48880, 0.00000, 58.52856)
 rotation = Vector3(0.00000, 5.34276, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory453/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory454" parent="." instance=ExtResource("e9")]
 position = Vector3(147.59720, 0.00000, 91.40159)
@@ -6963,9 +6963,9 @@ position = Vector3(178.13833, 0.00000, 137.79796)
 rotation = Vector3(0.00000, 4.12491, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory458/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory459" parent="." instance=ExtResource("e9")]
 position = Vector3(39.61561, 0.00000, 216.37075)
@@ -7011,9 +7011,9 @@ position = Vector3(178.94935, 0.00000, 117.72487)
 rotation = Vector3(0.00000, 3.99761, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory468/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory469" parent="." instance=ExtResource("e9")]
 position = Vector3(52.37608, 0.00000, 171.60757)
@@ -7058,9 +7058,9 @@ position = Vector3(155.92433, 0.00000, 65.50185)
 rotation = Vector3(0.00000, 5.09487, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory473/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory474" parent="." instance=ExtResource("e9")]
 position = Vector3(47.28357, 0.00000, 185.71427)
@@ -7124,9 +7124,9 @@ position = Vector3(131.25184, 0.00000, 76.02635)
 rotation = Vector3(0.00000, 0.31308, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory483/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory484" parent="." instance=ExtResource("e9")]
 position = Vector3(60.50445, 0.00000, 60.12648)
@@ -7152,9 +7152,9 @@ position = Vector3(138.84723, 0.00000, 216.51416)
 rotation = Vector3(0.00000, 5.30023, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory488/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory489" parent="." instance=ExtResource("e9")]
 position = Vector3(75.92288, 0.00000, 16.03049)
@@ -7189,9 +7189,9 @@ position = Vector3(123.38121, 0.00000, 19.44612)
 rotation = Vector3(0.00000, 2.60281, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory493/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory494" parent="." instance=ExtResource("e9")]
 position = Vector3(160.85208, 0.00000, 85.27353)
@@ -7236,9 +7236,9 @@ position = Vector3(177.07488, 0.00000, 63.44542)
 rotation = Vector3(0.00000, 4.84387, 0.00000)
 
 [node name="rock_cluster_Mesh" parent="Understory498/rock_cluster" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="Understory499" parent="." instance=ExtResource("e9")]
 position = Vector3(175.64413, 0.00000, 74.68508)
@@ -8001,9 +8001,9 @@ position = Vector3(89.60000, 0.00000, 74.20000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Pine" parent="ShelterTree0_0/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk0_0" type="StaticBody3D" parent="."]
 
@@ -8017,9 +8017,9 @@ position = Vector3(99.60000, 0.00000, 74.20000)
 rotation = Vector3(0.00000, 0.80000, 0.00000)
 
 [node name="Tree" parent="ShelterTree0_1/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk0_1" type="StaticBody3D" parent="."]
 
@@ -8033,9 +8033,9 @@ position = Vector3(88.60000, 0.00000, 79.20000)
 rotation = Vector3(0.00000, 1.60000, 0.00000)
 
 [node name="Pine" parent="ShelterTree0_2/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk0_2" type="StaticBody3D" parent="."]
 
@@ -8049,9 +8049,9 @@ position = Vector3(100.60000, 0.00000, 79.20000)
 rotation = Vector3(0.00000, 2.40000, 0.00000)
 
 [node name="Tree" parent="ShelterTree0_3/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk0_3" type="StaticBody3D" parent="."]
 
@@ -8185,9 +8185,9 @@ position = Vector3(18.10000, 0.00000, 98.40000)
 rotation = Vector3(0.00000, 0.00000, 0.00000)
 
 [node name="Pine" parent="ShelterTree1_0/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk1_0" type="StaticBody3D" parent="."]
 
@@ -8201,9 +8201,9 @@ position = Vector3(28.10000, 0.00000, 98.40000)
 rotation = Vector3(0.00000, 0.80000, 0.00000)
 
 [node name="Tree" parent="ShelterTree1_1/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk1_1" type="StaticBody3D" parent="."]
 
@@ -8217,9 +8217,9 @@ position = Vector3(17.10000, 0.00000, 103.40000)
 rotation = Vector3(0.00000, 1.60000, 0.00000)
 
 [node name="Pine" parent="ShelterTree1_2/pine_tree" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk1_2" type="StaticBody3D" parent="."]
 
@@ -8233,9 +8233,9 @@ position = Vector3(29.10000, 0.00000, 103.40000)
 rotation = Vector3(0.00000, 2.40000, 0.00000)
 
 [node name="Tree" parent="ShelterTree1_3/birch_a" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 
 [node name="ShelterTrunk1_3" type="StaticBody3D" parent="."]
 

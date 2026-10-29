@@ -51,7 +51,7 @@ func run() -> void:
 	root.add_child(level)
 	player = level.player
 	await frames(4)
-	check(level.locations.size() == 11, "All 11 authored locations exist")
+	check(level.locations.size() == 13, "All 13 authored locations exist")
 	check(level.current_location == level.locations.camp, "Starts at camp")
 	check(player.global_position.is_equal_approx(Vector2(896, 1576)), "Starts at entrance")
 	for location: Node2D in level.locations.values():
@@ -101,6 +101,17 @@ func run() -> void:
 		await interact()
 		check(level.current_location == level.locations.camp, "Corridor returns outside " + str(i))
 		check(player.global_position.distance_to(level.locations.camp.get_node("Markers/Cabin"+str(i)).global_position) < 1, "Returns to correct building " + str(i))
+
+	# Side bedroom doors are real portals, with correct return markers.
+	for pair in [["b","LeftReturn"],["c","RightReturn"]]:
+		level.enter_location("corridor_1",pair[1])
+		await frames(22)
+		await walk("move_forward",6)
+		await interact()
+		check(str(level.current_location.get_meta("location_id")) == "room_1"+pair[0],"Side room door opens "+pair[0])
+		await frames(22)
+		await interact()
+		check(level.current_location == level.locations.corridor_1,"Side room returns to corridor "+pair[0])
 
 	for pair in [["Dorm", "dorm"], ["Glass", "glass"]]:
 		level.enter_location("camp", pair[0])

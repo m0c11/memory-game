@@ -1,208 +1,211 @@
-[gd_scene load_steps=7 format=3]
-
-[ext_resource type="Script" path="res://scripts/polet/story/circuit.gd" id="R1"]
-
-[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/icon_light.png" id="R2"]
-
-[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/icon_garland.png" id="R3"]
-
-[ext_resource type="Texture2D" path="res://assets/polet/puzzles/electrical_panel/icon_music.png" id="R4"]
-
-[ext_resource type="Theme" path="res://resources/polet/ui.tres" id="Theme"]
-
-[sub_resource type="StyleBoxFlat" id="CardStyle"]
-bg_color = Color(0.055, 0.10, 0.13, 0.98)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.56, 0.67, 0.56, 1)
-corner_radius_top_left = 14
-corner_radius_top_right = 14
-corner_radius_bottom_left = 14
-corner_radius_bottom_right = 14
-
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/polet/story/circuit.gd" id="script"]
+[ext_resource type="Theme" path="res://resources/polet/ui.tres" id="theme"]
 [node name="Circuit" type="Control"]
-theme = ExtResource("Theme")
 visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource("R1")
-
+theme = ExtResource("theme")
+script = ExtResource("script")
 [node name="Shade" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.01,0.025,0.045,0.78)
-
+color = Color(0.01,0.025,0.045,0.8)
 [node name="Card" type="Panel" parent="."]
 offset_left = 160.0
-offset_top = 130.0
+offset_top = 65.0
 offset_right = 1120.0
-offset_bottom = 620.0
-theme_override_styles/panel = SubResource("CardStyle")
+offset_bottom = 675.0
 
 [node name="Title" type="Label" parent="Card"]
-offset_left = 32.0
-offset_top = 24.0
-offset_right = 928.0
-offset_bottom = 68.0
-text = "ЩИТОК · Три линии"
-theme_override_font_sizes/font_size = 28
-autowrap_mode = 3
+offset_left = 30.0
+offset_top = 18.0
+offset_right = 930.0
+offset_bottom = 58.0
+text = "СТЕКЛЯШКА · Собираем вечерний свет"
+theme_override_font_sizes/font_size = 27
+autowrap_mode = 2
 mouse_filter = 2
 
 [node name="Description" type="Label" parent="Card"]
-offset_left = 32.0
-offset_top = 80.0
-offset_right = 928.0
-offset_bottom = 150.0
-text = "Включи свет, гирлянду и музыку. Рычаг меняет состояние подписанных линий; повторное нажатие отменяет его действие."
-theme_override_font_sizes/font_size = 21
-autowrap_mode = 3
-mouse_filter = 2
-
-[node name="Lamp1" type="TextureRect" parent="Card"]
-offset_left = 114.0
-offset_top = 155.0
-offset_right = 162.0
-offset_bottom = 203.0
-texture = ExtResource("R2")
-expand_mode = 1
-stretch_mode = 5
-texture_filter = 1
-
-[node name="LampName1" type="Label" parent="Card"]
-offset_left = 60.0
-offset_top = 210.0
-offset_right = 305.0
-offset_bottom = 238.0
-text = "СВЕТ"
-theme_override_font_sizes/font_size = 20
-autowrap_mode = 3
-mouse_filter = 2
-
-[node name="State1" type="Label" parent="Card"]
-offset_left = 60.0
-offset_top = 242.0
-offset_right = 305.0
-offset_bottom = 266.0
-text = ""
-theme_override_font_sizes/font_size = 16
-autowrap_mode = 3
-mouse_filter = 2
-
-[node name="Switch1" type="Button" parent="Card"]
 offset_left = 30.0
-offset_top = 285.0
-offset_right = 315.0
-offset_bottom = 339.0
-text = "A · Свет + гирлянда"
+offset_top = 65.0
+offset_right = 930.0
+offset_bottom = 130.0
+text = "Поворачивай дорожки. Соедини источник слева с тремя секциями гирлянды справа. Золотым отмечено то, куда уже дошёл свет."
 theme_override_font_sizes/font_size = 20
-toggle_mode = true
-
-[node name="Lamp2" type="TextureRect" parent="Card"]
-offset_left = 414.0
-offset_top = 155.0
-offset_right = 462.0
-offset_bottom = 203.0
-texture = ExtResource("R3")
-expand_mode = 1
-stretch_mode = 5
-texture_filter = 1
-
-[node name="LampName2" type="Label" parent="Card"]
-offset_left = 360.0
-offset_top = 210.0
-offset_right = 605.0
-offset_bottom = 238.0
-text = "ГИРЛЯНДА"
-theme_override_font_sizes/font_size = 20
-autowrap_mode = 3
+autowrap_mode = 2
 mouse_filter = 2
 
-[node name="State2" type="Label" parent="Card"]
-offset_left = 360.0
-offset_top = 242.0
-offset_right = 605.0
-offset_bottom = 266.0
-text = ""
-theme_override_font_sizes/font_size = 16
-autowrap_mode = 3
+[node name="Source" type="Label" parent="Card"]
+offset_left = 35.0
+offset_top = 252.0
+offset_right = 205.0
+offset_bottom = 304.0
+text = "24 V →"
+theme_override_font_sizes/font_size = 26
+autowrap_mode = 2
 mouse_filter = 2
 
-[node name="Switch2" type="Button" parent="Card"]
-offset_left = 330.0
-offset_top = 285.0
-offset_right = 615.0
-offset_bottom = 339.0
-text = "B · Гирлянда + музыка"
-theme_override_font_sizes/font_size = 20
-toggle_mode = true
+[node name="Tile0" type="Button" parent="Card"]
+offset_left = 220.0
+offset_top = 148.0
+offset_right = 306.0
+offset_bottom = 226.0
+text = "─"
+theme_override_font_sizes/font_size = 42
 
-[node name="Lamp3" type="TextureRect" parent="Card"]
-offset_left = 714.0
-offset_top = 155.0
-offset_right = 762.0
-offset_bottom = 203.0
-texture = ExtResource("R4")
-expand_mode = 1
-stretch_mode = 5
-texture_filter = 1
+[node name="Tile1" type="Button" parent="Card"]
+offset_left = 316.0
+offset_top = 148.0
+offset_right = 402.0
+offset_bottom = 226.0
+text = "─"
+theme_override_font_sizes/font_size = 42
 
-[node name="LampName3" type="Label" parent="Card"]
-offset_left = 660.0
-offset_top = 210.0
+[node name="Tile2" type="Button" parent="Card"]
+offset_left = 412.0
+offset_top = 148.0
+offset_right = 498.0
+offset_bottom = 226.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile3" type="Button" parent="Card"]
+offset_left = 508.0
+offset_top = 148.0
+offset_right = 594.0
+offset_bottom = 226.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile4" type="Button" parent="Card"]
+offset_left = 220.0
+offset_top = 236.0
+offset_right = 306.0
+offset_bottom = 314.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile5" type="Button" parent="Card"]
+offset_left = 316.0
+offset_top = 236.0
+offset_right = 402.0
+offset_bottom = 314.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile6" type="Button" parent="Card"]
+offset_left = 412.0
+offset_top = 236.0
+offset_right = 498.0
+offset_bottom = 314.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile7" type="Button" parent="Card"]
+offset_left = 508.0
+offset_top = 236.0
+offset_right = 594.0
+offset_bottom = 314.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile8" type="Button" parent="Card"]
+offset_left = 220.0
+offset_top = 324.0
+offset_right = 306.0
+offset_bottom = 402.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile9" type="Button" parent="Card"]
+offset_left = 316.0
+offset_top = 324.0
+offset_right = 402.0
+offset_bottom = 402.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile10" type="Button" parent="Card"]
+offset_left = 412.0
+offset_top = 324.0
+offset_right = 498.0
+offset_bottom = 402.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Tile11" type="Button" parent="Card"]
+offset_left = 508.0
+offset_top = 324.0
+offset_right = 594.0
+offset_bottom = 402.0
+text = "─"
+theme_override_font_sizes/font_size = 42
+
+[node name="Output0" type="Label" parent="Card"]
+offset_left = 625.0
+offset_top = 170.0
 offset_right = 905.0
-offset_bottom = 238.0
-text = "МУЗЫКА"
-theme_override_font_sizes/font_size = 20
-autowrap_mode = 3
+offset_bottom = 225.0
+text = "→ Левый край"
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
 mouse_filter = 2
 
-[node name="State3" type="Label" parent="Card"]
-offset_left = 660.0
-offset_top = 242.0
+[node name="Output1" type="Label" parent="Card"]
+offset_left = 625.0
+offset_top = 258.0
 offset_right = 905.0
-offset_bottom = 266.0
-text = ""
-theme_override_font_sizes/font_size = 16
-autowrap_mode = 3
+offset_bottom = 313.0
+text = "→ Середина"
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
 mouse_filter = 2
 
-[node name="Switch3" type="Button" parent="Card"]
-offset_left = 630.0
-offset_top = 285.0
-offset_right = 915.0
-offset_bottom = 339.0
-text = "C · Музыка"
-theme_override_font_sizes/font_size = 20
-toggle_mode = true
+[node name="Output2" type="Label" parent="Card"]
+offset_left = 625.0
+offset_top = 346.0
+offset_right = 905.0
+offset_bottom = 401.0
+text = "→ Правый край"
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
+mouse_filter = 2
 
 [node name="Hint" type="Label" parent="Card"]
-offset_left = 32.0
-offset_top = 355.0
-offset_right = 928.0
-offset_bottom = 407.0
-text = "Подсказка: начни со света. Затем проверь, чего ещё не хватает."
+offset_left = 30.0
+offset_top = 420.0
+offset_right = 930.0
+offset_bottom = 490.0
+text = "У каждой дорожки должны совпасть вход и выход. Можно начать с любой секции."
 theme_override_font_sizes/font_size = 19
-autowrap_mode = 3
+autowrap_mode = 2
 mouse_filter = 2
 
 [node name="Check" type="Button" parent="Card"]
-offset_left = 32.0
-offset_top = 422.0
-offset_right = 622.0
-offset_bottom = 470.0
-text = "Проверить питание"
+offset_left = 30.0
+offset_top = 515.0
+offset_right = 320.0
+offset_bottom = 569.0
+text = "Проверить свет"
+theme_override_font_sizes/font_size = 20
+
+[node name="Help" type="Button" parent="Card"]
+offset_left = 335.0
+offset_top = 515.0
+offset_right = 625.0
+offset_bottom = 569.0
+text = "Подсказать участок"
 theme_override_font_sizes/font_size = 20
 
 [node name="Close" type="Button" parent="Card"]
 offset_left = 640.0
-offset_top = 422.0
-offset_right = 928.0
-offset_bottom = 470.0
-text = "Отойти · Esc"
+offset_top = 515.0
+offset_right = 930.0
+offset_bottom = 569.0
+text = "Вернуться в зал"
 theme_override_font_sizes/font_size = 20

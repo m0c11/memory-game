@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/path_straight_4m_7.res" id="1_l72qf"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=471554561]
+
+[node name="path_straight_4m" type="Node3D" parent="." unique_id=1908558319]
+metadata/extras = {
+"asset_name": "Прямая дорожка — 4 м",
+"category": "terrain",
+"units": "meters"
+}
+
+[node name="path_straight_4m_Mesh" type="MeshInstance3D" parent="path_straight_4m" unique_id=183901612]
+mesh = ExtResource("1_l72qf")

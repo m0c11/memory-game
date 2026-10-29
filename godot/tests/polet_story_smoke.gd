@@ -88,7 +88,7 @@ func tap_keyboard(code: Key) -> void:
 func clean(path: String, id: String) -> void:
 	await target(path)
 	key("interact", true)
-	await frames(85)
+	await frames(200)
 	key("interact", false)
 	await frames(3)
 	check(story.finished.has(id), "Hold E completes " + id)
@@ -129,7 +129,13 @@ func run() -> void:
 	await clean("World/Room1/Rubbish", "rubbish")
 	check(not level.get_node("World/Room1/FloorDetails/Item153").visible, "Collected paper disappears")
 	await clean("World/Room1/Mop", "mop")
-	check(story.stage == story.Stage.SUPPORT, "All three tasks unlock support dialogue")
+	check(story.stage == story.Stage.CLEAN, "One room cannot complete a three-room building")
+	for suffix in ["b","c"]:
+		level.enter_location("room_1"+suffix,"Entrance")
+		check(not story.enabled("mop_"+suffix),"Sweep floor only after collecting things")
+		for task in [["Linen","linen"],["Rubbish","rubbish"],["Mop","mop"]]:
+			await clean("World/Room1"+suffix+"/"+task[0],task[1]+"_"+suffix)
+	check(story.stage == story.Stage.SUPPORT, "All nine tasks unlock support dialogue")
 	check(not level.get_node("World/Room1/FloorDetails/Item156").visible, "Mopping removes footprints")
 	level.enter_location("camp", "Entrance")
 	await target("World/Camp/TalkChild")
@@ -148,39 +154,31 @@ func run() -> void:
 	story.dialogue.get_node("Card/Choice1").pressed.emit()
 	check(story.stage == story.Stage.PREPARE, "Radio handover unlocks preparation")
 	level.enter_location("glass", "Entrance")
-	await target("World/Glass/Music")
-	await press_e()
-	check(story.dialogue_kind == "chat" and story.modal == "dialogue", "Music requires garland and electricity")
-	story.choose(0)
-	await clean("World/Glass/Garland", "garland")
-	check(level.get_node("World/Glass/GarlandOff").visible, "Hung garland appears unlit")
+	check(not story.enabled("circuit"),"Routing waits for hanging the garland")
+	await clean("World/Glass/Garland", "garland_box")
+	check(not story.enabled("garland_middle"),"Secure ends before adjusting sag")
+	for part in ["left","right","middle"]:
+		await clean("World/Glass/Garland"+part,"garland_"+part)
+		check(level.get_node("World/Glass/Section"+part).visible,"Hung section visible: "+part)
+	check(story.finished.has("garland"),"Three mounted sections finish garland")
 	await target("World/Glass/Circuit")
 	await press_e()
-	check(story.modal == "circuit", "Electrical minigame opens")
+	check(story.modal == "circuit", "Routing puzzle opens")
 	story.circuit.get_node("Card/Check").pressed.emit()
-	check(not story.finished.has("circuit"), "Incorrect circuit is not accepted")
-	story.circuit.get_node("Card/Switch1").pressed.emit()
+	check(not story.finished.has("circuit"), "Broken route is not accepted")
+	story.circuit.get_node("Card/Tile1").pressed.emit()
+	var rotation: int = story.circuit.rotations[1]
 	story.circuit.get_node("Card/Close").pressed.emit()
 	await frames(20)
 	await press_e()
-	check(story.circuit.switches[0], "Circuit retains partial solution after closing")
-	story.circuit.get_node("Card/Switch3").pressed.emit()
+	check(story.circuit.rotations[1] == rotation, "Partial routing survives closing")
+	for i in range(12):
+		while story.circuit.rotations[i] != 0: story.circuit.turn(i)
+	check(story.circuit.outputs() == [true,true,true], "One source reaches all three outputs")
 	story.circuit.get_node("Card/Check").pressed.emit()
-	check(story.finished.has("circuit") and not story.busy, "Solving actual circuit completes it")
+	check(story.finished.has("circuit") and not story.busy, "Solving circuit completes it")
 	check(level.get_node("World/Glass/GarlandOn").visible and not level.get_node("World/Glass/GarlandOff").visible, "Solved circuit lights garland")
-	await target("World/Glass/Music")
-	await press_e()
-	check(story.modal == "music", "Music timing minigame opens")
-	story.music.elapsed = 0.0
-	story.music.get_node("Card/Hit").pressed.emit()
-	check(story.music.hits == 0, "Missed music cue does not score")
-	story.music.elapsed = 0.8
-	await tap_keyboard(KEY_SPACE)
-	check(story.music.hits == 1, "Space activates focused timing button")
-	for i in range(2):
-		story.music.elapsed = 0.9
-		story.music.get_node("Card/Hit").pressed.emit()
-	check(story.stage == story.Stage.RIDE and not story.busy, "Three successful cues unlock bicycle")
+	check(story.stage == story.Stage.RIDE, "Preparation unlocks bicycle without music minigame")
 	check(story.get_node("PartyMusic").playing, "Music actually plays")
 	level.enter_location("dorm", "Entrance")
 	await target("World/Dorm/Outfit")
@@ -199,6 +197,7 @@ func run() -> void:
 	story.choose(0)
 	story.bicycle.set_process(false)
 	story.bicycle.distance = 400.0
+	story.bicycle.speed = 185.0
 	story.bicycle.rider_y = 470.0
 	story.bicycle._process(0.15)
 	check(story.bicycle.bumps == 1 and story.bicycle.slow_time > 0.0, "Authored obstacle triggers a slowdown")
@@ -215,7 +214,17 @@ func run() -> void:
 		if not story.bicycle.running: break
 		story.bicycle._process(0.05)
 	Input.action_release("sprint")
-	check(story.dialogue_kind == "ride_return" and story.busy, "Reaching the shop opens return page")
+	check(story.dialogue_kind == "ride_shop" and story.busy, "Reaching shop starts purchase dialogue")
+	check(not story.finished.has("bicycle"),"Outward trip cannot finish the ride")
+	story.choose(0)
+	check(story.bicycle.returning and story.finished.has("ride_shop"),"Purchased cargo starts return trip")
+	story.bicycle.balance = 10.0
+	story.bicycle.advance(1.0,0.0,false,true)
+	check(story.bicycle.balance > 10.0 and story.bicycle.speed <= 100.0,"Braking steadies the basket")
+	for i in range(1600):
+		if not story.bicycle.running: break
+		story.bicycle.advance(0.05,0.0,true,false)
+	check(story.dialogue_kind == "ride_return", "Real return journey reaches the camp")
 	story.choose(0)
 	await frames()
 	check(story.stage == story.Stage.FINALE and level.current_location == level.locations.camp, "Shopping returns player to camp")

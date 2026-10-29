@@ -11,7 +11,7 @@ for folder in (ART/'frames').iterdir():
  ext='[ext_resource type="Texture2D" path="res://assets/polet/characters/'+folder.name+'.png" id="1"]\n'
  sub=[];anim={}
  for i,file in enumerate(files):
-  atlas.paste(Image.open(file),((i%8)*64,(i//8)*64));kind,d,f=file.stem.split('_');direction=['down','left','up','right'][int(d)];name=kind if kind=='ride' else kind+'_'+direction
+  atlas.paste(Image.open(file),((i%8)*64,(i//8)*64));kind,d,f=file.stem.split('_');direction=['down','right','up','left'][int(d)];name=kind if kind=='ride' else kind+'_'+direction
   anim.setdefault(name,[]).append((int(f),i))
   sub.append(f'[sub_resource type="AtlasTexture" id="F{i}"]\natlas = ExtResource("1")\nregion = Rect2({i%8*64}, {i//8*64}, 64, 64)')
  atlas.save(OUT/(folder.name+'.png'))

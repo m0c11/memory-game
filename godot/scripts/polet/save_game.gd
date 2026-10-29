@@ -1,16 +1,26 @@
 class_name PoletSave
 extends RefCounted
 const PATH := "user://polet_last_day_v1.json"
-const TASKS := ["linen", "rubbish", "mop", "child", "radio", "garland", "circuit", "music", "bicycle", "finale"]
+const CLEANING := ["linen", "rubbish", "mop", "linen_b", "rubbish_b", "mop_b", "linen_c", "rubbish_c", "mop_c"]
+const GARLAND := ["garland_box", "garland_left", "garland_right", "garland_middle"]
+const TASKS := ["linen","rubbish","mop","linen_b","rubbish_b","mop_b","linen_c","rubbish_c","mop_c","child","radio","garland_box","garland_left","garland_right","garland_middle","garland","circuit","music","ride_shop","bicycle","finale"]
 
 static func sanitize(data: Variant) -> Dictionary:
-	if not data is Dictionary or data.get("version") != 1 or not data.get("finished") is Array:
+	if not data is Dictionary or (data.get("version") != 1 and data.get("version") != 2) or not data.get("finished") is Array:
 		return {}
 	var flags: Array[String] = []
 	for task in TASKS:
 		if task in data.finished: flags.append(task)
+	if data.get("version") == 1:
+		if flags.has("child") or ("linen" in flags and "rubbish" in flags and "mop" in flags):
+			for id in CLEANING:
+				if id not in flags: flags.append(id)
+		if "garland" in flags:
+			for id in GARLAND:
+				if id not in flags: flags.append(id)
+		if "bicycle" in flags: flags.append("ride_shop")
 	# Reject impossible progression rather than loading a soft-locked quest.
-	var requirements := {"child": ["linen","rubbish","mop"], "radio": ["child"], "garland": ["radio"], "circuit": ["radio"], "music": ["garland","circuit"], "bicycle": ["music"], "finale": ["bicycle"]}
+	var requirements := {"child": CLEANING, "radio": ["child"], "garland_box": ["radio"], "garland_left": ["garland_box"], "garland_right": ["garland_box"], "garland_middle": ["garland_left","garland_right"], "garland": GARLAND, "circuit": ["garland"], "music": ["garland","circuit"], "ride_shop": ["music"], "bicycle": ["ride_shop"], "finale": ["bicycle"]}
 	for task in TASKS:
 		if task in flags and requirements.has(task):
 			for required in requirements[task]:
@@ -24,7 +34,11 @@ static func sanitize(data: Variant) -> Dictionary:
 	if data.get("volume") is float or data.get("volume") is int: volume = clampf(float(data.volume),0.0,1.0)
 	var hits := 0
 	if data.get("music_hits") is float or data.get("music_hits") is int: hits = clampi(int(data.music_hits),0,2)
-	return {"version":1,"run_id":maxi(0,int(data.get("run_id",0))),"finished":flags,"switches":switches,"outfit":outfit,"volume":volume,"wind":data.get("wind",true) == true,"music_hits":hits}
+	var routing: Array = [0,1,1,0,1,0,0,1,0,2,1,1]
+	if data.get("routing") is Array and data.routing.size()==12:
+		for i in range(12):
+			if data.routing[i] is int or data.routing[i] is float: routing[i]=clampi(int(data.routing[i]),0,3)
+	return {"version":2,"routing":routing,"run_id":maxi(0,int(data.get("run_id",0))),"finished":flags,"switches":switches,"outfit":outfit,"volume":volume,"wind":data.get("wind",true) == true,"music_hits":hits}
 
 static func read_data(path: String = PATH) -> Dictionary:
 	for candidate in [path, path + ".bak"]:

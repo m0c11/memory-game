@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/bush_small.res" id="1_kk30k"]
-[ext_resource type="ArrayMesh" path="res://assets/venevitino/foliage/bush_large.res" id="2_cyg2a"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/bush_small.res" id="1_kk30k"]
+[ext_resource type="ArrayMesh" path="res://assets/optimized/bush_large.res" id="2_cyg2a"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_hg7sg"]
 transform_format = 1
@@ -1163,1546 +1163,1546 @@ buffer = PackedFloat32Array(-0.113698095, 0, 0.6969872, -5.0139008, 0, 0.7281, 0
 
 [node name="Shrubs" type="Node3D" unique_id=447896244]
 
-[node name="bush_small_08_06" type="MultiMeshInstance3D" parent="." unique_id=521594902 groups=["distance_culled"]]
+[node name="bush_small_08_06" type="MultiMeshInstance3D" parent="." unique_id=521594902 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hg7sg")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_09_13" type="MultiMeshInstance3D" parent="." unique_id=220922973 groups=["distance_culled"]]
+[node name="bush_large_09_13" type="MultiMeshInstance3D" parent="." unique_id=220922973 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_47mjg")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_small_09_13" type="MultiMeshInstance3D" parent="." unique_id=392348918 groups=["distance_culled"]]
+[node name="bush_small_09_13" type="MultiMeshInstance3D" parent="." unique_id=392348918 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qf8xr")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_10_01" type="MultiMeshInstance3D" parent="." unique_id=1012193482 groups=["distance_culled"]]
+[node name="bush_large_10_01" type="MultiMeshInstance3D" parent="." unique_id=1012193482 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3t66j")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_03" type="MultiMeshInstance3D" parent="." unique_id=663309195 groups=["distance_culled"]]
+[node name="bush_small_03_03" type="MultiMeshInstance3D" parent="." unique_id=663309195 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_on4vw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_10_10" type="MultiMeshInstance3D" parent="." unique_id=1451311113 groups=["distance_culled"]]
+[node name="bush_large_10_10" type="MultiMeshInstance3D" parent="." unique_id=1451311113 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eq7bl")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_10_10" type="MultiMeshInstance3D" parent="." unique_id=1992382123 groups=["distance_culled"]]
+[node name="bush_small_10_10" type="MultiMeshInstance3D" parent="." unique_id=1992382123 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rsh56")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_01_00" type="MultiMeshInstance3D" parent="." unique_id=1457411908 groups=["distance_culled"]]
+[node name="bush_large_01_00" type="MultiMeshInstance3D" parent="." unique_id=1457411908 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q8fcs")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_01_00" type="MultiMeshInstance3D" parent="." unique_id=845455047 groups=["distance_culled"]]
+[node name="bush_small_01_00" type="MultiMeshInstance3D" parent="." unique_id=845455047 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_krrr3")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 6
 
-[node name="bush_large_10_04" type="MultiMeshInstance3D" parent="." unique_id=783216710 groups=["distance_culled"]]
+[node name="bush_large_10_04" type="MultiMeshInstance3D" parent="." unique_id=783216710 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r6uuv")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_09_12" type="MultiMeshInstance3D" parent="." unique_id=1791871753 groups=["distance_culled"]]
+[node name="bush_large_09_12" type="MultiMeshInstance3D" parent="." unique_id=1791871753 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_udj7s")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_large_08_01" type="MultiMeshInstance3D" parent="." unique_id=711746528 groups=["distance_culled"]]
+[node name="bush_large_08_01" type="MultiMeshInstance3D" parent="." unique_id=711746528 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0447x")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_small_08_02" type="MultiMeshInstance3D" parent="." unique_id=1657680602 groups=["distance_culled"]]
+[node name="bush_small_08_02" type="MultiMeshInstance3D" parent="." unique_id=1657680602 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0286j")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_08_03" type="MultiMeshInstance3D" parent="." unique_id=1687090221 groups=["distance_culled"]]
+[node name="bush_small_08_03" type="MultiMeshInstance3D" parent="." unique_id=1687090221 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_b3bs3")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_10_00" type="MultiMeshInstance3D" parent="." unique_id=588749963 groups=["distance_culled"]]
+[node name="bush_small_10_00" type="MultiMeshInstance3D" parent="." unique_id=588749963 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jy5q8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_04_06" type="MultiMeshInstance3D" parent="." unique_id=279945480 groups=["distance_culled"]]
+[node name="bush_large_04_06" type="MultiMeshInstance3D" parent="." unique_id=279945480 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_w3smx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_03_04" type="MultiMeshInstance3D" parent="." unique_id=1591325366 groups=["distance_culled"]]
+[node name="bush_large_03_04" type="MultiMeshInstance3D" parent="." unique_id=1591325366 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xt1sm")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_04_04" type="MultiMeshInstance3D" parent="." unique_id=1207866354 groups=["distance_culled"]]
+[node name="bush_small_04_04" type="MultiMeshInstance3D" parent="." unique_id=1207866354 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_einjx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_09_10" type="MultiMeshInstance3D" parent="." unique_id=783298851 groups=["distance_culled"]]
+[node name="bush_small_09_10" type="MultiMeshInstance3D" parent="." unique_id=783298851 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5ujxv")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_01_01" type="MultiMeshInstance3D" parent="." unique_id=863461025 groups=["distance_culled"]]
+[node name="bush_small_01_01" type="MultiMeshInstance3D" parent="." unique_id=863461025 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_d7jjb")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_01_01" type="MultiMeshInstance3D" parent="." unique_id=1786110922 groups=["distance_culled"]]
+[node name="bush_large_01_01" type="MultiMeshInstance3D" parent="." unique_id=1786110922 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vbklj")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_01_03" type="MultiMeshInstance3D" parent="." unique_id=1352992580 groups=["distance_culled"]]
+[node name="bush_large_01_03" type="MultiMeshInstance3D" parent="." unique_id=1352992580 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pwf24")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_02_05" type="MultiMeshInstance3D" parent="." unique_id=1166542102 groups=["distance_culled"]]
+[node name="bush_large_02_05" type="MultiMeshInstance3D" parent="." unique_id=1166542102 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_awwy6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_10_13" type="MultiMeshInstance3D" parent="." unique_id=1963470045 groups=["distance_culled"]]
+[node name="bush_large_10_13" type="MultiMeshInstance3D" parent="." unique_id=1963470045 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sgkkd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_small_08_12" type="MultiMeshInstance3D" parent="." unique_id=1023035921 groups=["distance_culled"]]
+[node name="bush_small_08_12" type="MultiMeshInstance3D" parent="." unique_id=1023035921 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3va5n")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_02_04" type="MultiMeshInstance3D" parent="." unique_id=596820652 groups=["distance_culled"]]
+[node name="bush_small_02_04" type="MultiMeshInstance3D" parent="." unique_id=596820652 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mvayk")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_04_01" type="MultiMeshInstance3D" parent="." unique_id=581205896 groups=["distance_culled"]]
+[node name="bush_small_04_01" type="MultiMeshInstance3D" parent="." unique_id=581205896 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_opsqk")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_09_05" type="MultiMeshInstance3D" parent="." unique_id=510788514 groups=["distance_culled"]]
+[node name="bush_large_09_05" type="MultiMeshInstance3D" parent="." unique_id=510788514 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_aqvor")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_09_06" type="MultiMeshInstance3D" parent="." unique_id=34370810 groups=["distance_culled"]]
+[node name="bush_small_09_06" type="MultiMeshInstance3D" parent="." unique_id=34370810 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qvdoa")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_09_06" type="MultiMeshInstance3D" parent="." unique_id=2027850469 groups=["distance_culled"]]
+[node name="bush_large_09_06" type="MultiMeshInstance3D" parent="." unique_id=2027850469 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0tuyx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_10" type="MultiMeshInstance3D" parent="." unique_id=1601597016 groups=["distance_culled"]]
+[node name="bush_small_03_10" type="MultiMeshInstance3D" parent="." unique_id=1601597016 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n3k8x")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_00_05" type="MultiMeshInstance3D" parent="." unique_id=980152365 groups=["distance_culled"]]
+[node name="bush_large_00_05" type="MultiMeshInstance3D" parent="." unique_id=980152365 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bo0d5")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_05_00" type="MultiMeshInstance3D" parent="." unique_id=673112135 groups=["distance_culled"]]
+[node name="bush_small_05_00" type="MultiMeshInstance3D" parent="." unique_id=673112135 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ffiw7")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_09_08" type="MultiMeshInstance3D" parent="." unique_id=641179598 groups=["distance_culled"]]
+[node name="bush_large_09_08" type="MultiMeshInstance3D" parent="." unique_id=641179598 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jn82t")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_02_00" type="MultiMeshInstance3D" parent="." unique_id=1464849310 groups=["distance_culled"]]
+[node name="bush_small_02_00" type="MultiMeshInstance3D" parent="." unique_id=1464849310 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jcsr6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_10_06" type="MultiMeshInstance3D" parent="." unique_id=1115334092 groups=["distance_culled"]]
+[node name="bush_large_10_06" type="MultiMeshInstance3D" parent="." unique_id=1115334092 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iwcqa")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_large_02_00" type="MultiMeshInstance3D" parent="." unique_id=733092813 groups=["distance_culled"]]
+[node name="bush_large_02_00" type="MultiMeshInstance3D" parent="." unique_id=733092813 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qylwq")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_07_03" type="MultiMeshInstance3D" parent="." unique_id=2127716429 groups=["distance_culled"]]
+[node name="bush_small_07_03" type="MultiMeshInstance3D" parent="." unique_id=2127716429 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_v7emc")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_13" type="MultiMeshInstance3D" parent="." unique_id=1165616725 groups=["distance_culled"]]
+[node name="bush_small_06_13" type="MultiMeshInstance3D" parent="." unique_id=1165616725 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xem32")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_02_10" type="MultiMeshInstance3D" parent="." unique_id=1894426771 groups=["distance_culled"]]
+[node name="bush_small_02_10" type="MultiMeshInstance3D" parent="." unique_id=1894426771 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1lg7v")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_06_01" type="MultiMeshInstance3D" parent="." unique_id=1617653569 groups=["distance_culled"]]
+[node name="bush_small_06_01" type="MultiMeshInstance3D" parent="." unique_id=1617653569 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nqias")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_09_02" type="MultiMeshInstance3D" parent="." unique_id=249758490 groups=["distance_culled"]]
+[node name="bush_small_09_02" type="MultiMeshInstance3D" parent="." unique_id=249758490 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_km6wd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 6
 
-[node name="bush_large_06_01" type="MultiMeshInstance3D" parent="." unique_id=2112610661 groups=["distance_culled"]]
+[node name="bush_large_06_01" type="MultiMeshInstance3D" parent="." unique_id=2112610661 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_a60vm")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_03_01" type="MultiMeshInstance3D" parent="." unique_id=570810845 groups=["distance_culled"]]
+[node name="bush_small_03_01" type="MultiMeshInstance3D" parent="." unique_id=570810845 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pg5f4")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_08_05" type="MultiMeshInstance3D" parent="." unique_id=441370764 groups=["distance_culled"]]
+[node name="bush_small_08_05" type="MultiMeshInstance3D" parent="." unique_id=441370764 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nagpf")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_02_11" type="MultiMeshInstance3D" parent="." unique_id=790552652 groups=["distance_culled"]]
+[node name="bush_small_02_11" type="MultiMeshInstance3D" parent="." unique_id=790552652 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xlqly")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_08_11" type="MultiMeshInstance3D" parent="." unique_id=1057320785 groups=["distance_culled"]]
+[node name="bush_small_08_11" type="MultiMeshInstance3D" parent="." unique_id=1057320785 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x7ifq")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_08_11" type="MultiMeshInstance3D" parent="." unique_id=1408654853 groups=["distance_culled"]]
+[node name="bush_large_08_11" type="MultiMeshInstance3D" parent="." unique_id=1408654853 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0qalf")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_05" type="MultiMeshInstance3D" parent="." unique_id=1656441788 groups=["distance_culled"]]
+[node name="bush_small_10_05" type="MultiMeshInstance3D" parent="." unique_id=1656441788 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3docx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_08_02" type="MultiMeshInstance3D" parent="." unique_id=2287970 groups=["distance_culled"]]
+[node name="bush_large_08_02" type="MultiMeshInstance3D" parent="." unique_id=2287970 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mcf00")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_07_13" type="MultiMeshInstance3D" parent="." unique_id=2001992085 groups=["distance_culled"]]
+[node name="bush_large_07_13" type="MultiMeshInstance3D" parent="." unique_id=2001992085 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x51nv")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_09_14" type="MultiMeshInstance3D" parent="." unique_id=591483358 groups=["distance_culled"]]
+[node name="bush_small_09_14" type="MultiMeshInstance3D" parent="." unique_id=591483358 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_homme")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_05_09" type="MultiMeshInstance3D" parent="." unique_id=1983989614 groups=["distance_culled"]]
+[node name="bush_small_05_09" type="MultiMeshInstance3D" parent="." unique_id=1983989614 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_a5qmf")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_05_11" type="MultiMeshInstance3D" parent="." unique_id=1920394042 groups=["distance_culled"]]
+[node name="bush_small_05_11" type="MultiMeshInstance3D" parent="." unique_id=1920394042 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_e4dp2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_05_10" type="MultiMeshInstance3D" parent="." unique_id=531399866 groups=["distance_culled"]]
+[node name="bush_small_05_10" type="MultiMeshInstance3D" parent="." unique_id=531399866 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yvjcd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_06" type="MultiMeshInstance3D" parent="." unique_id=26840822 groups=["distance_culled"]]
+[node name="bush_small_10_06" type="MultiMeshInstance3D" parent="." unique_id=26840822 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vnmib")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_02_01" type="MultiMeshInstance3D" parent="." unique_id=621639841 groups=["distance_culled"]]
+[node name="bush_large_02_01" type="MultiMeshInstance3D" parent="." unique_id=621639841 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xhab2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_04_02" type="MultiMeshInstance3D" parent="." unique_id=1124167356 groups=["distance_culled"]]
+[node name="bush_small_04_02" type="MultiMeshInstance3D" parent="." unique_id=1124167356 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gf50y")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_02_10" type="MultiMeshInstance3D" parent="." unique_id=220468570 groups=["distance_culled"]]
+[node name="bush_large_02_10" type="MultiMeshInstance3D" parent="." unique_id=220468570 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4h02e")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_05_01" type="MultiMeshInstance3D" parent="." unique_id=1589906840 groups=["distance_culled"]]
+[node name="bush_large_05_01" type="MultiMeshInstance3D" parent="." unique_id=1589906840 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_1d04w")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_small_05_01" type="MultiMeshInstance3D" parent="." unique_id=218527956 groups=["distance_culled"]]
+[node name="bush_small_05_01" type="MultiMeshInstance3D" parent="." unique_id=218527956 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_114l1")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_03_02" type="MultiMeshInstance3D" parent="." unique_id=1368154273 groups=["distance_culled"]]
+[node name="bush_large_03_02" type="MultiMeshInstance3D" parent="." unique_id=1368154273 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_dluw1")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_08_01" type="MultiMeshInstance3D" parent="." unique_id=474767723 groups=["distance_culled"]]
+[node name="bush_small_08_01" type="MultiMeshInstance3D" parent="." unique_id=474767723 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5suqm")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_05_10" type="MultiMeshInstance3D" parent="." unique_id=401429701 groups=["distance_culled"]]
+[node name="bush_large_05_10" type="MultiMeshInstance3D" parent="." unique_id=401429701 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_uoidt")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_04_06" type="MultiMeshInstance3D" parent="." unique_id=1282086161 groups=["distance_culled"]]
+[node name="bush_small_04_06" type="MultiMeshInstance3D" parent="." unique_id=1282086161 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n1r4a")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_08_06" type="MultiMeshInstance3D" parent="." unique_id=1030513559 groups=["distance_culled"]]
+[node name="bush_large_08_06" type="MultiMeshInstance3D" parent="." unique_id=1030513559 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bkleg")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_03" type="MultiMeshInstance3D" parent="." unique_id=877914464 groups=["distance_culled"]]
+[node name="bush_small_06_03" type="MultiMeshInstance3D" parent="." unique_id=877914464 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_tq062")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_06_04" type="MultiMeshInstance3D" parent="." unique_id=605617634 groups=["distance_culled"]]
+[node name="bush_large_06_04" type="MultiMeshInstance3D" parent="." unique_id=605617634 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_215hy")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_10_07" type="MultiMeshInstance3D" parent="." unique_id=1475705316 groups=["distance_culled"]]
+[node name="bush_large_10_07" type="MultiMeshInstance3D" parent="." unique_id=1475705316 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_siglx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_10_12" type="MultiMeshInstance3D" parent="." unique_id=1635838191 groups=["distance_culled"]]
+[node name="bush_large_10_12" type="MultiMeshInstance3D" parent="." unique_id=1635838191 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_whflu")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_10_03" type="MultiMeshInstance3D" parent="." unique_id=1707270131 groups=["distance_culled"]]
+[node name="bush_large_10_03" type="MultiMeshInstance3D" parent="." unique_id=1707270131 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8kue0")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_10_03" type="MultiMeshInstance3D" parent="." unique_id=101936914 groups=["distance_culled"]]
+[node name="bush_small_10_03" type="MultiMeshInstance3D" parent="." unique_id=101936914 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_nqptm")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_02_03" type="MultiMeshInstance3D" parent="." unique_id=1112891945 groups=["distance_culled"]]
+[node name="bush_small_02_03" type="MultiMeshInstance3D" parent="." unique_id=1112891945 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vxapb")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_small_00_01" type="MultiMeshInstance3D" parent="." unique_id=59121300 groups=["distance_culled"]]
+[node name="bush_small_00_01" type="MultiMeshInstance3D" parent="." unique_id=59121300 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ny4pj")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_09_08" type="MultiMeshInstance3D" parent="." unique_id=193477084 groups=["distance_culled"]]
+[node name="bush_small_09_08" type="MultiMeshInstance3D" parent="." unique_id=193477084 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_30xpa")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_08" type="MultiMeshInstance3D" parent="." unique_id=1182511419 groups=["distance_culled"]]
+[node name="bush_small_11_08" type="MultiMeshInstance3D" parent="." unique_id=1182511419 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hh31t")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_11_08" type="MultiMeshInstance3D" parent="." unique_id=563018053 groups=["distance_culled"]]
+[node name="bush_large_11_08" type="MultiMeshInstance3D" parent="." unique_id=563018053 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x5eee")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_03_01" type="MultiMeshInstance3D" parent="." unique_id=1590710670 groups=["distance_culled"]]
+[node name="bush_large_03_01" type="MultiMeshInstance3D" parent="." unique_id=1590710670 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m6fns")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_11" type="MultiMeshInstance3D" parent="." unique_id=1013373616 groups=["distance_culled"]]
+[node name="bush_small_10_11" type="MultiMeshInstance3D" parent="." unique_id=1013373616 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7750v")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_03_02" type="MultiMeshInstance3D" parent="." unique_id=883703931 groups=["distance_culled"]]
+[node name="bush_small_03_02" type="MultiMeshInstance3D" parent="." unique_id=883703931 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_awpy4")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_11_12" type="MultiMeshInstance3D" parent="." unique_id=1376008932 groups=["distance_culled"]]
+[node name="bush_small_11_12" type="MultiMeshInstance3D" parent="." unique_id=1376008932 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_y03ut")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_11_12" type="MultiMeshInstance3D" parent="." unique_id=782248194 groups=["distance_culled"]]
+[node name="bush_large_11_12" type="MultiMeshInstance3D" parent="." unique_id=782248194 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7ftw3")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_04" type="MultiMeshInstance3D" parent="." unique_id=1800456242 groups=["distance_culled"]]
+[node name="bush_small_03_04" type="MultiMeshInstance3D" parent="." unique_id=1800456242 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3icbi")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_10_08" type="MultiMeshInstance3D" parent="." unique_id=1147727084 groups=["distance_culled"]]
+[node name="bush_small_10_08" type="MultiMeshInstance3D" parent="." unique_id=1147727084 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cu7k2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_10_09" type="MultiMeshInstance3D" parent="." unique_id=1124548687 groups=["distance_culled"]]
+[node name="bush_small_10_09" type="MultiMeshInstance3D" parent="." unique_id=1124548687 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_g1xrq")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_10_08" type="MultiMeshInstance3D" parent="." unique_id=4757622 groups=["distance_culled"]]
+[node name="bush_large_10_08" type="MultiMeshInstance3D" parent="." unique_id=4757622 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8elxw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_09_03" type="MultiMeshInstance3D" parent="." unique_id=397250307 groups=["distance_culled"]]
+[node name="bush_small_09_03" type="MultiMeshInstance3D" parent="." unique_id=397250307 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bpp6p")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_02_01" type="MultiMeshInstance3D" parent="." unique_id=1274867289 groups=["distance_culled"]]
+[node name="bush_small_02_01" type="MultiMeshInstance3D" parent="." unique_id=1274867289 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n8ty1")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_09_00" type="MultiMeshInstance3D" parent="." unique_id=868993300 groups=["distance_culled"]]
+[node name="bush_small_09_00" type="MultiMeshInstance3D" parent="." unique_id=868993300 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_4rfja")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_09_04" type="MultiMeshInstance3D" parent="." unique_id=1497414381 groups=["distance_culled"]]
+[node name="bush_small_09_04" type="MultiMeshInstance3D" parent="." unique_id=1497414381 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3yvu2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_08_05" type="MultiMeshInstance3D" parent="." unique_id=308011117 groups=["distance_culled"]]
+[node name="bush_large_08_05" type="MultiMeshInstance3D" parent="." unique_id=308011117 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wggk1")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_11_01" type="MultiMeshInstance3D" parent="." unique_id=1358804229 groups=["distance_culled"]]
+[node name="bush_large_11_01" type="MultiMeshInstance3D" parent="." unique_id=1358804229 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gp5mg")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_01" type="MultiMeshInstance3D" parent="." unique_id=1080490150 groups=["distance_culled"]]
+[node name="bush_small_11_01" type="MultiMeshInstance3D" parent="." unique_id=1080490150 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mwi4i")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_02_09" type="MultiMeshInstance3D" parent="." unique_id=230659799 groups=["distance_culled"]]
+[node name="bush_small_02_09" type="MultiMeshInstance3D" parent="." unique_id=230659799 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_g1suo")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_02_09" type="MultiMeshInstance3D" parent="." unique_id=146422036 groups=["distance_culled"]]
+[node name="bush_large_02_09" type="MultiMeshInstance3D" parent="." unique_id=146422036 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_asrvp")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_11_11" type="MultiMeshInstance3D" parent="." unique_id=2042320796 groups=["distance_culled"]]
+[node name="bush_large_11_11" type="MultiMeshInstance3D" parent="." unique_id=2042320796 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_uhom3")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_04_00" type="MultiMeshInstance3D" parent="." unique_id=1674845271 groups=["distance_culled"]]
+[node name="bush_small_04_00" type="MultiMeshInstance3D" parent="." unique_id=1674845271 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0n17k")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_04_00" type="MultiMeshInstance3D" parent="." unique_id=1601132882 groups=["distance_culled"]]
+[node name="bush_large_04_00" type="MultiMeshInstance3D" parent="." unique_id=1601132882 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2gpvd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_05_12" type="MultiMeshInstance3D" parent="." unique_id=852364041 groups=["distance_culled"]]
+[node name="bush_small_05_12" type="MultiMeshInstance3D" parent="." unique_id=852364041 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_y8rlo")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_12" type="MultiMeshInstance3D" parent="." unique_id=34717606 groups=["distance_culled"]]
+[node name="bush_small_06_12" type="MultiMeshInstance3D" parent="." unique_id=34717606 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qwpdr")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_08_00" type="MultiMeshInstance3D" parent="." unique_id=1742832070 groups=["distance_culled"]]
+[node name="bush_small_08_00" type="MultiMeshInstance3D" parent="." unique_id=1742832070 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_olryd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_10_12" type="MultiMeshInstance3D" parent="." unique_id=276205545 groups=["distance_culled"]]
+[node name="bush_small_10_12" type="MultiMeshInstance3D" parent="." unique_id=276205545 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iiwc8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_05_07" type="MultiMeshInstance3D" parent="." unique_id=897907469 groups=["distance_culled"]]
+[node name="bush_small_05_07" type="MultiMeshInstance3D" parent="." unique_id=897907469 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5bbb7")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_10_11" type="MultiMeshInstance3D" parent="." unique_id=802340772 groups=["distance_culled"]]
+[node name="bush_large_10_11" type="MultiMeshInstance3D" parent="." unique_id=802340772 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ve5b0")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_07_05" type="MultiMeshInstance3D" parent="." unique_id=1560167466 groups=["distance_culled"]]
+[node name="bush_large_07_05" type="MultiMeshInstance3D" parent="." unique_id=1560167466 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q3l50")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_11_09" type="MultiMeshInstance3D" parent="." unique_id=38384530 groups=["distance_culled"]]
+[node name="bush_large_11_09" type="MultiMeshInstance3D" parent="." unique_id=38384530 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cwb7i")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_09" type="MultiMeshInstance3D" parent="." unique_id=1538802836 groups=["distance_culled"]]
+[node name="bush_small_11_09" type="MultiMeshInstance3D" parent="." unique_id=1538802836 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bhmfi")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_07" type="MultiMeshInstance3D" parent="." unique_id=2126621917 groups=["distance_culled"]]
+[node name="bush_small_01_07" type="MultiMeshInstance3D" parent="." unique_id=2126621917 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_5iahh")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 6
 
-[node name="bush_large_10_09" type="MultiMeshInstance3D" parent="." unique_id=1413204438 groups=["distance_culled"]]
+[node name="bush_large_10_09" type="MultiMeshInstance3D" parent="." unique_id=1413204438 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rndvr")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_11_05" type="MultiMeshInstance3D" parent="." unique_id=1099001131 groups=["distance_culled"]]
+[node name="bush_large_11_05" type="MultiMeshInstance3D" parent="." unique_id=1099001131 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_yd4f5")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_10_05" type="MultiMeshInstance3D" parent="." unique_id=183582869 groups=["distance_culled"]]
+[node name="bush_large_10_05" type="MultiMeshInstance3D" parent="." unique_id=183582869 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_28not")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_05" type="MultiMeshInstance3D" parent="." unique_id=779227253 groups=["distance_culled"]]
+[node name="bush_small_11_05" type="MultiMeshInstance3D" parent="." unique_id=779227253 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_m1aia")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_09_01" type="MultiMeshInstance3D" parent="." unique_id=202163127 groups=["distance_culled"]]
+[node name="bush_small_09_01" type="MultiMeshInstance3D" parent="." unique_id=202163127 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_705l2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_10" type="MultiMeshInstance3D" parent="." unique_id=9697933 groups=["distance_culled"]]
+[node name="bush_small_01_10" type="MultiMeshInstance3D" parent="." unique_id=9697933 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vgfib")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 7
 
-[node name="bush_large_06_00" type="MultiMeshInstance3D" parent="." unique_id=1686739968 groups=["distance_culled"]]
+[node name="bush_large_06_00" type="MultiMeshInstance3D" parent="." unique_id=1686739968 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_kwmda")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_03_10" type="MultiMeshInstance3D" parent="." unique_id=2119390282 groups=["distance_culled"]]
+[node name="bush_large_03_10" type="MultiMeshInstance3D" parent="." unique_id=2119390282 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_no5lt")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_09" type="MultiMeshInstance3D" parent="." unique_id=1035694463 groups=["distance_culled"]]
+[node name="bush_small_03_09" type="MultiMeshInstance3D" parent="." unique_id=1035694463 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vmuxq")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_05_12" type="MultiMeshInstance3D" parent="." unique_id=1871474493 groups=["distance_culled"]]
+[node name="bush_large_05_12" type="MultiMeshInstance3D" parent="." unique_id=1871474493 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ejx12")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_03_03" type="MultiMeshInstance3D" parent="." unique_id=377720434 groups=["distance_culled"]]
+[node name="bush_large_03_03" type="MultiMeshInstance3D" parent="." unique_id=377720434 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_xif5h")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_00_09" type="MultiMeshInstance3D" parent="." unique_id=120537890 groups=["distance_culled"]]
+[node name="bush_large_00_09" type="MultiMeshInstance3D" parent="." unique_id=120537890 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2p60j")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_10" type="MultiMeshInstance3D" parent="." unique_id=342528305 groups=["distance_culled"]]
+[node name="bush_small_00_10" type="MultiMeshInstance3D" parent="." unique_id=342528305 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2h5ql")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_05_04" type="MultiMeshInstance3D" parent="." unique_id=1358732526 groups=["distance_culled"]]
+[node name="bush_small_05_04" type="MultiMeshInstance3D" parent="." unique_id=1358732526 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_gtqoy")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_05_04" type="MultiMeshInstance3D" parent="." unique_id=255445988 groups=["distance_culled"]]
+[node name="bush_large_05_04" type="MultiMeshInstance3D" parent="." unique_id=255445988 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_7gg7j")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_05_05" type="MultiMeshInstance3D" parent="." unique_id=868468696 groups=["distance_culled"]]
+[node name="bush_small_05_05" type="MultiMeshInstance3D" parent="." unique_id=868468696 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sqmuv")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_06_04" type="MultiMeshInstance3D" parent="." unique_id=2027926565 groups=["distance_culled"]]
+[node name="bush_small_06_04" type="MultiMeshInstance3D" parent="." unique_id=2027926565 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_so2en")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_01_06" type="MultiMeshInstance3D" parent="." unique_id=1726402923 groups=["distance_culled"]]
+[node name="bush_large_01_06" type="MultiMeshInstance3D" parent="." unique_id=1726402923 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rtsr7")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 5
 
-[node name="bush_small_01_06" type="MultiMeshInstance3D" parent="." unique_id=642320121 groups=["distance_culled"]]
+[node name="bush_small_01_06" type="MultiMeshInstance3D" parent="." unique_id=642320121 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qw6oc")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_01_04" type="MultiMeshInstance3D" parent="." unique_id=612118118 groups=["distance_culled"]]
+[node name="bush_small_01_04" type="MultiMeshInstance3D" parent="." unique_id=612118118 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eqoas")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_02_04" type="MultiMeshInstance3D" parent="." unique_id=889105626 groups=["distance_culled"]]
+[node name="bush_large_02_04" type="MultiMeshInstance3D" parent="." unique_id=889105626 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_c22m2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_01_04" type="MultiMeshInstance3D" parent="." unique_id=1149813722 groups=["distance_culled"]]
+[node name="bush_large_01_04" type="MultiMeshInstance3D" parent="." unique_id=1149813722 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jm0ep")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_01_07" type="MultiMeshInstance3D" parent="." unique_id=888754979 groups=["distance_culled"]]
+[node name="bush_large_01_07" type="MultiMeshInstance3D" parent="." unique_id=888754979 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mwso4")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_02_07" type="MultiMeshInstance3D" parent="." unique_id=1462802438 groups=["distance_culled"]]
+[node name="bush_small_02_07" type="MultiMeshInstance3D" parent="." unique_id=1462802438 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_608r2")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 6
 
-[node name="bush_large_02_07" type="MultiMeshInstance3D" parent="." unique_id=1974719052 groups=["distance_culled"]]
+[node name="bush_large_02_07" type="MultiMeshInstance3D" parent="." unique_id=1974719052 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jtsac")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_06_09" type="MultiMeshInstance3D" parent="." unique_id=9875240 groups=["distance_culled"]]
+[node name="bush_large_06_09" type="MultiMeshInstance3D" parent="." unique_id=9875240 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hopyh")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_00_02" type="MultiMeshInstance3D" parent="." unique_id=777606635 groups=["distance_culled"]]
+[node name="bush_large_00_02" type="MultiMeshInstance3D" parent="." unique_id=777606635 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_pdl81")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_03" type="MultiMeshInstance3D" parent="." unique_id=339042895 groups=["distance_culled"]]
+[node name="bush_small_00_03" type="MultiMeshInstance3D" parent="." unique_id=339042895 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_068bx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_00_05" type="MultiMeshInstance3D" parent="." unique_id=1710233438 groups=["distance_culled"]]
+[node name="bush_small_00_05" type="MultiMeshInstance3D" parent="." unique_id=1710233438 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_eum28")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_06" type="MultiMeshInstance3D" parent="." unique_id=298563922 groups=["distance_culled"]]
+[node name="bush_small_00_06" type="MultiMeshInstance3D" parent="." unique_id=298563922 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bc6s5")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_large_00_06" type="MultiMeshInstance3D" parent="." unique_id=51139873 groups=["distance_culled"]]
+[node name="bush_large_00_06" type="MultiMeshInstance3D" parent="." unique_id=51139873 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 104)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_n8p6d")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_09" type="MultiMeshInstance3D" parent="." unique_id=1920590081 groups=["distance_culled"]]
+[node name="bush_small_00_09" type="MultiMeshInstance3D" parent="." unique_id=1920590081 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_876ct")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_00_10" type="MultiMeshInstance3D" parent="." unique_id=1405113681 groups=["distance_culled"]]
+[node name="bush_large_00_10" type="MultiMeshInstance3D" parent="." unique_id=1405113681 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mfvhh")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_11" type="MultiMeshInstance3D" parent="." unique_id=2114044833 groups=["distance_culled"]]
+[node name="bush_small_00_11" type="MultiMeshInstance3D" parent="." unique_id=2114044833 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jkvun")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_00_11" type="MultiMeshInstance3D" parent="." unique_id=782055155 groups=["distance_culled"]]
+[node name="bush_large_00_11" type="MultiMeshInstance3D" parent="." unique_id=782055155 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_q8xm8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_12" type="MultiMeshInstance3D" parent="." unique_id=1460156542 groups=["distance_culled"]]
+[node name="bush_small_00_12" type="MultiMeshInstance3D" parent="." unique_id=1460156542 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0emxs")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_00_12" type="MultiMeshInstance3D" parent="." unique_id=1577960811 groups=["distance_culled"]]
+[node name="bush_large_00_12" type="MultiMeshInstance3D" parent="." unique_id=1577960811 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_lqsh8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_13" type="MultiMeshInstance3D" parent="." unique_id=590054898 groups=["distance_culled"]]
+[node name="bush_small_00_13" type="MultiMeshInstance3D" parent="." unique_id=590054898 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ineiy")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_00_13" type="MultiMeshInstance3D" parent="." unique_id=1232398750 groups=["distance_culled"]]
+[node name="bush_large_00_13" type="MultiMeshInstance3D" parent="." unique_id=1232398750 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_it322")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_00_14" type="MultiMeshInstance3D" parent="." unique_id=256729453 groups=["distance_culled"]]
+[node name="bush_small_00_14" type="MultiMeshInstance3D" parent="." unique_id=256729453 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qbd30")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_01_12" type="MultiMeshInstance3D" parent="." unique_id=1281676827 groups=["distance_culled"]]
+[node name="bush_small_01_12" type="MultiMeshInstance3D" parent="." unique_id=1281676827 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_p00t8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_04_01" type="MultiMeshInstance3D" parent="." unique_id=1223566957 groups=["distance_culled"]]
+[node name="bush_large_04_01" type="MultiMeshInstance3D" parent="." unique_id=1223566957 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0ct27")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_10" type="MultiMeshInstance3D" parent="." unique_id=1746918050 groups=["distance_culled"]]
+[node name="bush_small_06_10" type="MultiMeshInstance3D" parent="." unique_id=1746918050 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 168)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_770rj")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_01_14" type="MultiMeshInstance3D" parent="." unique_id=273410776 groups=["distance_culled"]]
+[node name="bush_large_01_14" type="MultiMeshInstance3D" parent="." unique_id=273410776 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_j3t7l")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_14" type="MultiMeshInstance3D" parent="." unique_id=1495522194 groups=["distance_culled"]]
+[node name="bush_small_01_14" type="MultiMeshInstance3D" parent="." unique_id=1495522194 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_rxk3b")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_07_01" type="MultiMeshInstance3D" parent="." unique_id=1721343958 groups=["distance_culled"]]
+[node name="bush_large_07_01" type="MultiMeshInstance3D" parent="." unique_id=1721343958 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8dkiw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_07" type="MultiMeshInstance3D" parent="." unique_id=2067937595 groups=["distance_culled"]]
+[node name="bush_small_10_07" type="MultiMeshInstance3D" parent="." unique_id=2067937595 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wt0hp")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_08_04" type="MultiMeshInstance3D" parent="." unique_id=1473948872 groups=["distance_culled"]]
+[node name="bush_small_08_04" type="MultiMeshInstance3D" parent="." unique_id=1473948872 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bh5he")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_07_02" type="MultiMeshInstance3D" parent="." unique_id=1675162749 groups=["distance_culled"]]
+[node name="bush_small_07_02" type="MultiMeshInstance3D" parent="." unique_id=1675162749 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_r1efd")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_08_14" type="MultiMeshInstance3D" parent="." unique_id=1455207692 groups=["distance_culled"]]
+[node name="bush_small_08_14" type="MultiMeshInstance3D" parent="." unique_id=1455207692 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_jsh2m")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_02" type="MultiMeshInstance3D" parent="." unique_id=1824408173 groups=["distance_culled"]]
+[node name="bush_small_01_02" type="MultiMeshInstance3D" parent="." unique_id=1824408173 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_e2evk")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_01_02" type="MultiMeshInstance3D" parent="." unique_id=30978229 groups=["distance_culled"]]
+[node name="bush_large_01_02" type="MultiMeshInstance3D" parent="." unique_id=30978229 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3a31r")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_14" type="MultiMeshInstance3D" parent="." unique_id=1227908525 groups=["distance_culled"]]
+[node name="bush_small_10_14" type="MultiMeshInstance3D" parent="." unique_id=1227908525 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_oar0v")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_01_11" type="MultiMeshInstance3D" parent="." unique_id=1689187038 groups=["distance_culled"]]
+[node name="bush_small_01_11" type="MultiMeshInstance3D" parent="." unique_id=1689187038 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_f3ix6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_11_11" type="MultiMeshInstance3D" parent="." unique_id=2110700005 groups=["distance_culled"]]
+[node name="bush_small_11_11" type="MultiMeshInstance3D" parent="." unique_id=2110700005 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bf7fy")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_08_08" type="MultiMeshInstance3D" parent="." unique_id=309870912 groups=["distance_culled"]]
+[node name="bush_small_08_08" type="MultiMeshInstance3D" parent="." unique_id=309870912 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mbahr")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_08_08" type="MultiMeshInstance3D" parent="." unique_id=417906610 groups=["distance_culled"]]
+[node name="bush_large_08_08" type="MultiMeshInstance3D" parent="." unique_id=417906610 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_l6yei")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_04_02" type="MultiMeshInstance3D" parent="." unique_id=1659920684 groups=["distance_culled"]]
+[node name="bush_large_04_02" type="MultiMeshInstance3D" parent="." unique_id=1659920684 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_iii40")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_07_01" type="MultiMeshInstance3D" parent="." unique_id=1552604808 groups=["distance_culled"]]
+[node name="bush_small_07_01" type="MultiMeshInstance3D" parent="." unique_id=1552604808 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_2vt7q")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_04_04" type="MultiMeshInstance3D" parent="." unique_id=890311542 groups=["distance_culled"]]
+[node name="bush_large_04_04" type="MultiMeshInstance3D" parent="." unique_id=890311542 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_agemk")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_08_07" type="MultiMeshInstance3D" parent="." unique_id=531909996 groups=["distance_culled"]]
+[node name="bush_large_08_07" type="MultiMeshInstance3D" parent="." unique_id=531909996 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_3hbjt")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_00" type="MultiMeshInstance3D" parent="." unique_id=149124859 groups=["distance_culled"]]
+[node name="bush_small_03_00" type="MultiMeshInstance3D" parent="." unique_id=149124859 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x52lf")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 4
 
-[node name="bush_large_08_04" type="MultiMeshInstance3D" parent="." unique_id=1183789905 groups=["distance_culled"]]
+[node name="bush_large_08_04" type="MultiMeshInstance3D" parent="." unique_id=1183789905 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 72)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_i3hc6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_06_00" type="MultiMeshInstance3D" parent="." unique_id=1255187728 groups=["distance_culled"]]
+[node name="bush_small_06_00" type="MultiMeshInstance3D" parent="." unique_id=1255187728 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_glfxc")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_14" type="MultiMeshInstance3D" parent="." unique_id=8103880 groups=["distance_culled"]]
+[node name="bush_small_11_14" type="MultiMeshInstance3D" parent="." unique_id=8103880 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 232)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_bp30s")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_11_13" type="MultiMeshInstance3D" parent="." unique_id=2131585543 groups=["distance_culled"]]
+[node name="bush_large_11_13" type="MultiMeshInstance3D" parent="." unique_id=2131585543 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 216)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_qsw5b")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_11" type="MultiMeshInstance3D" parent="." unique_id=1919010431 groups=["distance_culled"]]
+[node name="bush_small_06_11" type="MultiMeshInstance3D" parent="." unique_id=1919010431 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_efd6s")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_08_03" type="MultiMeshInstance3D" parent="." unique_id=1978382133 groups=["distance_culled"]]
+[node name="bush_large_08_03" type="MultiMeshInstance3D" parent="." unique_id=1978382133 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cuo6t")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_11_00" type="MultiMeshInstance3D" parent="." unique_id=1982318808 groups=["distance_culled"]]
+[node name="bush_large_11_00" type="MultiMeshInstance3D" parent="." unique_id=1982318808 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 8)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ys7f8")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_09_03" type="MultiMeshInstance3D" parent="." unique_id=1439817501 groups=["distance_culled"]]
+[node name="bush_large_09_03" type="MultiMeshInstance3D" parent="." unique_id=1439817501 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_mt82o")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_large_01_11" type="MultiMeshInstance3D" parent="." unique_id=398247134 groups=["distance_culled"]]
+[node name="bush_large_01_11" type="MultiMeshInstance3D" parent="." unique_id=398247134 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 184)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_og0rx")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_06_02" type="MultiMeshInstance3D" parent="." unique_id=1245682173 groups=["distance_culled"]]
+[node name="bush_small_06_02" type="MultiMeshInstance3D" parent="." unique_id=1245682173 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_k4ar6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_09_12" type="MultiMeshInstance3D" parent="." unique_id=266773699 groups=["distance_culled"]]
+[node name="bush_small_09_12" type="MultiMeshInstance3D" parent="." unique_id=266773699 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 200)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_o03x6")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_10_01" type="MultiMeshInstance3D" parent="." unique_id=393399146 groups=["distance_culled"]]
+[node name="bush_small_10_01" type="MultiMeshInstance3D" parent="." unique_id=393399146 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, 24)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_hsmph")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_02_05" type="MultiMeshInstance3D" parent="." unique_id=1136144165 groups=["distance_culled"]]
+[node name="bush_small_02_05" type="MultiMeshInstance3D" parent="." unique_id=1136144165 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0eefs")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_09_02" type="MultiMeshInstance3D" parent="." unique_id=1147921532 groups=["distance_culled"]]
+[node name="bush_large_09_02" type="MultiMeshInstance3D" parent="." unique_id=1147921532 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, 40)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_sjxmh")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_11_03" type="MultiMeshInstance3D" parent="." unique_id=1986808829 groups=["distance_culled"]]
+[node name="bush_small_11_03" type="MultiMeshInstance3D" parent="." unique_id=1986808829 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, 56)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_0bvmq")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_03_07" type="MultiMeshInstance3D" parent="." unique_id=384136163 groups=["distance_culled"]]
+[node name="bush_small_03_07" type="MultiMeshInstance3D" parent="." unique_id=384136163 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 120)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_p02bw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_00_08" type="MultiMeshInstance3D" parent="." unique_id=1288611542 groups=["distance_culled"]]
+[node name="bush_small_00_08" type="MultiMeshInstance3D" parent="." unique_id=1288611542 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_cdsj3")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_01_08" type="MultiMeshInstance3D" parent="." unique_id=444465887 groups=["distance_culled"]]
+[node name="bush_large_01_08" type="MultiMeshInstance3D" parent="." unique_id=444465887 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_427n7")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_08" type="MultiMeshInstance3D" parent="." unique_id=2145363075 groups=["distance_culled"]]
+[node name="bush_small_01_08" type="MultiMeshInstance3D" parent="." unique_id=2145363075 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_vp2vw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_large_02_08" type="MultiMeshInstance3D" parent="." unique_id=1357445779 groups=["distance_culled"]]
+[node name="bush_large_02_08" type="MultiMeshInstance3D" parent="." unique_id=1357445779 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_ejawi")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 2
 
-[node name="bush_small_02_08" type="MultiMeshInstance3D" parent="." unique_id=1940339295 groups=["distance_culled"]]
+[node name="bush_small_02_08" type="MultiMeshInstance3D" parent="." unique_id=1940339295 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 136)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_8b1el")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1
 
-[node name="bush_small_01_09" type="MultiMeshInstance3D" parent="." unique_id=1465630647 groups=["distance_culled"]]
+[node name="bush_small_01_09" type="MultiMeshInstance3D" parent="." unique_id=1465630647 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 152)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_x2k2i")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 3
 
-[node name="bush_small_06_05" type="MultiMeshInstance3D" parent="." unique_id=1190602429 groups=["distance_culled"]]
+[node name="bush_small_06_05" type="MultiMeshInstance3D" parent="." unique_id=1190602429 groups=["distance_culled", "overview_detail"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 88)
-visibility_range_end = 55.0
+visibility_range_end = 48.0
 visibility_range_end_margin = 5.0
 multimesh = SubResource("MultiMesh_wfajw")
-metadata/render_distance = 55.0
+metadata/render_distance = 48.0
 metadata/plant_count = 1

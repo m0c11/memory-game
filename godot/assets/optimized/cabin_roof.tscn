@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/cabin_roof_6.res" id="1_uom47"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=1951480056]
+
+[node name="cabin_roof" type="Node3D" parent="." unique_id=2009172106]
+metadata/extras = {
+"asset_name": "Двускатная кровля с фронтонами",
+"category": "architecture",
+"units": "meters"
+}
+
+[node name="Roof_and_gables" type="MeshInstance3D" parent="cabin_roof" unique_id=1435014263]
+mesh = ExtResource("1_uom47")

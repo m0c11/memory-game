@@ -17,15 +17,13 @@ var notice_tween: Tween
 @onready var ui: CanvasLayer = $Interface
 @onready var dialogue: Control = $Interface/Dialogue
 @onready var circuit: Control = $Interface/Circuit
-@onready var music: Control = $Interface/Music
 @onready var bicycle: Control = $Interface/Bicycle
 
 func _ready() -> void:
 	dialogue.chosen.connect(choose)
 	circuit.completed.connect(func(): finish_task("circuit"); close_modal())
 	circuit.cancelled.connect(close_modal)
-	music.completed.connect(func(): finish_task("music"); $PartyMusic.play(); close_modal())
-	music.cancelled.connect(close_modal)
+	bicycle.shop_reached.connect(arrive_shop)
 	bicycle.completed.connect(ride_complete)
 	bicycle.cancelled.connect(close_modal)
 	$PartyMusic.finished.connect(func(): $PartyMusic.play())
@@ -63,21 +61,36 @@ func _process(delta: float) -> void:
 		else:
 			hold_time += delta
 			ui.get_node("Hold").visible = true
-			ui.get_node("Hold").value = hold_time / 1.2 * 100.0
-			if hold_time >= 1.2:
+			ui.get_node("Hold").value = hold_time / hold_duration() * 100.0
+			if hold_time >= hold_duration():
 				var id := str(hold_target.get_meta("action_id"))
 				hold_target = null
 				hold_time = 0.0
 				finish_task(id)
 
+func hold_duration() -> float:
+	if hold_target == null: return 2.5
+	var id := str(hold_target.get_meta("action_id"))
+	return 3.0 if id.begins_with("mop") else 2.5
+
+func is_work(id: String) -> bool:
+	return id in PoletSave.CLEANING or id in PoletSave.GARLAND
+
 func enabled(id: String) -> bool:
 	if finished.has(id):
 		return false
+	if id in PoletSave.CLEANING:
+		if id.begins_with("mop"):
+			var suffix := id.trim_prefix("mop")
+			return stage == Stage.CLEAN and finished.has_all(["linen"+suffix,"rubbish"+suffix])
+		return stage == Stage.CLEAN
 	match id:
-		"linen", "rubbish", "mop": return stage == Stage.CLEAN
 		"child": return stage <= Stage.SUPPORT
 		"radio": return stage <= Stage.RADIO
-		"garland", "circuit", "music": return stage == Stage.PREPARE
+		"garland_box": return stage == Stage.PREPARE
+		"garland_left", "garland_right": return stage == Stage.PREPARE and finished.has("garland_box")
+		"garland_middle": return stage == Stage.PREPARE and finished.has_all(["garland_left","garland_right"])
+		"circuit": return stage == Stage.PREPARE and finished.has("garland")
 		"bicycle": return stage == Stage.RIDE
 		"finale": return stage == Stage.FINALE
 		"outfit", "colleague": return stage != Stage.DONE
@@ -107,7 +120,7 @@ func current_prompt() -> String:
 	if target == null:
 		return ""
 	var id := str(target.get_meta("action_id"))
-	var prefix := "Удерживай E · " if id in ["linen", "rubbish", "mop", "garland"] else "E · "
+	var prefix := "Удерживай E · " if is_work(id) else "E · "
 	return prefix + str(target.get_meta("title"))
 
 func try_interact() -> bool:
@@ -115,11 +128,12 @@ func try_interact() -> bool:
 	if target == null:
 		return false
 	var id := str(target.get_meta("action_id"))
+	if is_work(id):
+		hold_target = target
+		hold_time = 0.0
+		sound("Sweep" if id.begins_with("mop") else "Paper" if id.begins_with("rubbish") else "Cloth")
+		return true
 	match id:
-		"linen", "rubbish", "mop", "garland":
-			hold_target = target
-			hold_time = 0.0
-			sound({"linen":"Cloth", "rubbish":"Paper", "mop":"Sweep", "garland":"Cloth"}[id])
 		"child":
 			if stage == Stage.SUPPORT:
 				start_dialogue("child", "Последний отъезд", "Все уже уехали… А я не хочу, чтобы смена заканчивалась.", ["Мне тоже грустно расставаться.", "Какой момент смены ты запомнишь?", "Давай немного посидим вместе."])
@@ -133,15 +147,9 @@ func try_interact() -> bool:
 		"circuit":
 			open_modal("circuit")
 			circuit.show()
-			circuit.get_node("Card/Switch1").grab_focus()
-		"music":
-			if not finished.has("circuit") or not finished.has("garland"):
-				start_dialogue("chat", "Подготовка музыки", "Сначала развесим гирлянду и включим все три линии на щитке. Потом проверим звук.", ["Хорошо."])
-			else:
-				open_modal("music")
-				music.begin()
+			circuit.get_node("Card/Tile1").grab_focus()
 		"bicycle":
-			start_dialogue("ride_intro", "Старый велосипед", "Всё готово, а угощений на всех мало. Прокатимся до магазина? Велосипед поскрипывает, но ещё повозит нас.", ["Поехали!", "Сначала ещё погуляю."])
+			start_dialogue("ride_intro", "Старый велосипед", "Надо ехать за добавкой — иначе «Архангельской» нам на всех не хватит. Старый велосипед ещё повозит! До магазина можно разогнаться, а обратно береги корзину: перед кочками тормози пробелом.", ["Поехали!", "Сначала ещё погуляю."])
 		"finale":
 			start_dialogue("finale", "Директриса", "Вот и закончилась смена. Сегодня вы убирали, провожали, поддерживали друг друга — и всё равно нашли силы собраться вместе.", ["Слушать дальше."])
 		"outfit":
@@ -157,8 +165,10 @@ func finish_task(id: String) -> void:
 	if not restoring:
 		sound("Radio" if id == "radio" else "Success")
 		notice({"linen":"Кровати готовы", "rubbish":"Бумажки собраны", "mop":"Пол чистый", "garland":"Гирлянда развешена", "circuit":"Питание включено", "music":"Можно включать музыку", "child":"До новой встречи", "radio":"Смена сдана"}.get(id, "Готово"))
-	var room: Node2D = level.get_node("World/Room1")
-	match id:
+	var suffix := "b" if id.ends_with("_b") else "c" if id.ends_with("_c") else ""
+	var room: Node2D = level.get_node("World/Room1" + suffix)
+	var base_id := id.trim_suffix("_b").trim_suffix("_c")
+	match base_id:
 		"linen":
 			room.get_node("Item128").hide()
 			room.get_node("Item132").hide()
@@ -178,9 +188,14 @@ func finish_task(id: String) -> void:
 				depart_child()
 			stage = Stage.RADIO
 		"radio": stage = Stage.PREPARE
-	if stage == Stage.CLEAN and finished.has_all(["linen", "rubbish", "mop"]):
+	if stage == Stage.CLEAN and finished.has_all(PoletSave.CLEANING):
 		stage = Stage.SUPPORT
+	for part in ["left","right","middle"]:
+		level.get_node("World/Glass/Section"+part).visible = finished.has("garland_"+part) and not finished.has("circuit")
+	if finished.has_all(PoletSave.GARLAND): finished["garland"] = true
 	if finished.has_all(["garland", "circuit"]):
+		finished["music"] = true
+		if not restoring and not $PartyMusic.playing: $PartyMusic.play()
 		level.get_node("World/Glass/GarlandOff").hide()
 		level.get_node("World/Glass/GarlandOn").show()
 	if stage == Stage.PREPARE and finished.has_all(["garland", "circuit", "music"]):
@@ -190,14 +205,14 @@ func finish_task(id: String) -> void:
 
 func refresh() -> void:
 	var count := 0
-	for id in ["linen", "rubbish", "mop"]:
+	for id in PoletSave.CLEANING:
 		if finished.has(id): count += 1
 	var objectives := [
-		"01 / 06   Сдать корпус\nКорпус 1, сверху слева → комната\nБельё · мусор · пол: %d / 3" % count,
+		"01 / 06   Сдать корпус\nКорпус 1 → три комнаты\nБельё и мусор, затем пол: %d / 9" % count,
 		"02 / 06   Не оставлять одного\nПоговори с ребёнком на центральной площадке.",
 		"03 / 06   Смена сдана\nОтнеси рацию директрисе у админки справа внизу.",
-		"04 / 06   Наш последний вечер\nВ стекляшке: гирлянда %s · щиток %s · музыка %s" % [mark("garland"), mark("circuit"), mark("music")],
-		"05 / 06   За угощениями\nВелосипед у южных ворот.\nМожно заглянуть за нарядом в общагу.",
+		"04 / 06   Наш последний вечер\nВозьми коробку → закрепи края и середину.\nГирлянда %s · световые дорожки %s" % [mark("garland"), mark("circuit")],
+		"05 / 06   За добавкой\nВелосипед у южных ворот.\nМожно заглянуть за нарядом в общагу.",
 		"06 / 06   Все уже собрались\nВернись в стекляшку и поговори с директрисой.",
 		"ПОЛЁТ · Последний день\nСмена закончилась. Воспоминания остаются.\nМожно ещё погулять по лагерю."
 	]
@@ -232,10 +247,9 @@ func open_modal(kind: String) -> void:
 	ui.get_node("Hold").hide()
 
 func close_modal() -> void:
-	for panel in [dialogue, circuit, music, bicycle, pause_panel]:
+	for panel in [dialogue, circuit, bicycle, pause_panel]:
 		panel.hide()
 	bicycle.running = false
-	music.running = false
 	modal = ""
 	busy = false
 	level.player.movement_enabled = not level.overview
@@ -274,7 +288,12 @@ func choose(index: int) -> void:
 			close_modal()
 			if index == 0:
 				open_modal("bicycle")
-				bicycle.begin()
+				bicycle.begin(finished.has("ride_shop"))
+		"ride_shop":
+			finish_task("ride_shop")
+			close_modal()
+			open_modal("bicycle")
+			bicycle.begin(true)
 		"ride_return":
 			finished["bicycle"] = true
 			stage = Stage.FINALE
@@ -302,9 +321,13 @@ func choose(index: int) -> void:
 				close_modal()
 		_: close_modal()
 
+func arrive_shop() -> void:
+	bicycle.hide()
+	start_dialogue("ride_shop", "У магазина", "Добавку купили! Закрепим пакет в корзине и вернёмся к ребятам.\nНа обратном пути груз раскачивается: объезжай ямы, а если не успеваешь — тормози пробелом.", ["Закрепить пакет и ехать обратно."])
+
 func ride_complete() -> void:
 	bicycle.hide()
-	start_dialogue("ride_return", "У магазина", "Доехали! Угощения и напитки в корзине.\nОбратно катимся по знакомой дороге — в стекляшке уже ждут друзья.", ["Вернуться в лагерь."])
+	start_dialogue("ride_return", "Снова в лагере", "Доехали! Корзина на месте, а из стекляшки уже слышна музыка. Пора к ребятам.", ["Отнести добавку в стекляшку."])
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.echo:
@@ -354,7 +377,7 @@ func apply_outfit() -> void:
 
 func snapshot() -> Dictionary:
 	var presentation = level.get_node("Presentation")
-	return {"version":1, "run_id":get_node("/root/Journey").run_id, "finished":finished.keys(), "outfit":outfit, "switches":circuit.switches, "music_hits":music.hits, "volume":presentation.volume, "wind":presentation.wind}
+	return {"version":2, "run_id":get_node("/root/Journey").run_id, "finished":finished.keys(), "outfit":outfit, "routing":circuit.rotations, "volume":presentation.volume, "wind":presentation.wind}
 
 func save_progress() -> bool:
 	if restoring or level.get_meta("test_mode", false): return true
@@ -372,9 +395,8 @@ func restore(data: Dictionary) -> void:
 	if finished.has("finale"): stage = Stage.DONE
 	outfit = int(clean.outfit)
 	apply_outfit()
-	circuit.switches.assign(clean.switches)
+	circuit.rotations.assign(clean.routing)
 	circuit.refresh()
-	music.hits = int(clean.music_hits)
 	$Interface/Pause/Card/Volume.value = clean.volume
 	$Interface/Pause/Card/Wind.button_pressed = clean.wind
 	level.get_node("Presentation").set_volume(clean.volume)
@@ -392,7 +414,7 @@ func startup() -> void:
 		notice("Продолжаем последний день · прогресс восстановлен")
 		if stage == Stage.DONE: open_pause(true)
 	else:
-		start_dialogue("intro", "Полёт · Последний день", "Последние чемоданы собраны. До отъезда осталось несколько дел: привести корпус в порядок, проводить ребят и подготовить вечер для вожатых.\nНачнём с корпуса 1 — на карте он сверху слева.", ["Провести этот день вместе."])
+		start_dialogue("intro", "Полёт · Последний день", "Последние чемоданы собраны. До отъезда осталось несколько дел: привести корпус в порядок, проводить ребят и подготовить вечер для вожатых.\nНачнём с корпуса 1 — на карте он сверху слева. Нужно привести в порядок три комнаты: в каждой собрать вещи и мусор, затем помыть пол.", ["Провести этот день вместе."])
 
 func open_pause(ending: bool = false) -> void:
 	open_modal("pause")
@@ -415,8 +437,7 @@ func restart_level() -> void:
 	var fresh := snapshot()
 	fresh.finished = []
 	fresh.outfit = 0
-	fresh.switches = [false,false,false]
-	fresh.music_hits = 0
+	fresh.routing = circuit.INITIAL.duplicate()
 	if not level.get_meta("test_mode", false):
 		if PoletSave.write_data(fresh) != OK:
 			close_modal()

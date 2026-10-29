@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3]
+[gd_scene load_steps=25 format=3]
 
 [ext_resource type="Script" path="res://scripts/polet/level.gd" id="1"]
 
@@ -29,6 +29,9 @@
 [ext_resource type="PackedScene" path="res://scenes/polet/presentation.tscn" id="Presentation"]
 [ext_resource type="PackedScene" path="res://scenes/polet/map_labels.tscn" id="MapLabels"]
 [ext_resource type="PackedScene" path="res://scenes/polet/story/counselor_male.tscn" id="Male"]
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/cabin_room_b.tscn" id="room_b"]
+[ext_resource type="PackedScene" path="res://scenes/polet/rooms/cabin_room_c.tscn" id="room_c"]
+
 [sub_resource type="Gradient" id="WarmFalloff"]
 offsets = PackedFloat32Array(0, 0.35, 1)
 colors = PackedColorArray(1,1,1,1, 1,1,1,0.8, 1,1,1,0)
@@ -57,12 +60,12 @@ metadata/connections = {"Cabin1": ["corridor_1", "Entrance"], "Cabin2": ["corrid
 position = Vector2(4096, 0)
 metadata/location_id = "corridor_1"
 metadata/display_name = "корпус 1 · коридор"
-metadata/connections = {"exit": ["camp", "Cabin1"], "room": ["room_1", "Entrance"]}
+metadata/connections = {"exit": ["camp", "Cabin1"], "room": ["room_1", "Entrance"], "left": ["room_1b", "Entrance"], "right": ["room_1c", "Entrance"]}
 
 [node name="Room1" parent="World" instance=ExtResource("4")]
 position = Vector2(4096, 1024)
 metadata/location_id = "room_1"
-metadata/display_name = "корпус 1 · комната"
+metadata/display_name = "корпус 1 · комната 1"
 metadata/connections = {"exit": ["corridor_1", "RoomReturn"]}
 
 [node name="Corridor2" parent="World" instance=ExtResource("3")]
@@ -236,18 +239,13 @@ visible = false
 
 [node name="Garland" parent="World/Glass" instance=ExtResource("action")]
 position = Vector2(150,215)
-metadata/action_id = "garland"
-metadata/title = "Развесить гирлянду"
+metadata/action_id = "garland_box"
+metadata/title = "Взять коробку с гирляндой"
 
 [node name="Circuit" parent="World/Glass" instance=ExtResource("action")]
 position = Vector2(320,198)
 metadata/action_id = "circuit"
-metadata/title = "Настроить щиток"
-
-[node name="Music" parent="World/Glass" instance=ExtResource("action")]
-position = Vector2(215,184)
-metadata/action_id = "music"
-metadata/title = "Проверить звук"
+metadata/title = "Собрать световые дорожки"
 
 [node name="Outfit" parent="World/Dorm" instance=ExtResource("action")]
 position = Vector2(265,160)
@@ -306,3 +304,105 @@ texture_scale = 2.0
 position = Vector2(896,1155)
 [node name="Path2" type="Marker2D" parent="World/Camp/DepartureRoute"]
 position = Vector2(896,1590)
+
+[node name="LeftDoor" parent="World/Corridor1"]
+metadata/link = "left"
+metadata/prompt = "Комната 2 · Открытки"
+[node name="RightDoor" parent="World/Corridor1"]
+metadata/link = "right"
+metadata/prompt = "Комната 3 · Солнечная"
+[editable path="World/Corridor1"]
+
+[node name="Room1b" parent="World" instance=ExtResource("room_b")]
+position = Vector2(8192,1024)
+metadata/location_id = "room_1b"
+metadata/display_name = "корпус 1 · комната 2"
+metadata/connections = {"exit": ["corridor_1", "LeftReturn"]}
+
+[node name="Linen" parent="World/Room1b" instance=ExtResource("action")]
+position = Vector2(150, 202)
+metadata/action_id = "linen_b"
+metadata/title = "Собрать бельё и заправить кровати"
+
+[node name="Rubbish" parent="World/Room1b" instance=ExtResource("action")]
+position = Vector2(312, 258)
+metadata/action_id = "rubbish_b"
+metadata/title = "Собрать бумажки"
+
+[node name="Mop" parent="World/Room1b" instance=ExtResource("action")]
+position = Vector2(268, 302)
+metadata/action_id = "mop_b"
+metadata/title = "Вымыть пол"
+
+[node name="CleanBedNorth" parent="World/Room1b" instance=ExtResource("bed_n")]
+position = Vector2(96, 174)
+visible = false
+
+[node name="CleanBedSouth" parent="World/Room1b" instance=ExtResource("bed_s")]
+position = Vector2(404, 174)
+visible = false
+
+[node name="Room1c" parent="World" instance=ExtResource("room_c")]
+position = Vector2(9216,1024)
+metadata/location_id = "room_1c"
+metadata/display_name = "корпус 1 · комната 3"
+metadata/connections = {"exit": ["corridor_1", "RightReturn"]}
+
+[node name="Linen" parent="World/Room1c" instance=ExtResource("action")]
+position = Vector2(150, 202)
+metadata/action_id = "linen_c"
+metadata/title = "Собрать бельё и заправить кровати"
+
+[node name="Rubbish" parent="World/Room1c" instance=ExtResource("action")]
+position = Vector2(312, 258)
+metadata/action_id = "rubbish_c"
+metadata/title = "Собрать бумажки"
+
+[node name="Mop" parent="World/Room1c" instance=ExtResource("action")]
+position = Vector2(268, 302)
+metadata/action_id = "mop_c"
+metadata/title = "Вымыть пол"
+
+[node name="CleanBedNorth" parent="World/Room1c" instance=ExtResource("bed_n")]
+position = Vector2(96, 174)
+visible = false
+
+[node name="CleanBedSouth" parent="World/Room1c" instance=ExtResource("bed_s")]
+position = Vector2(404, 174)
+visible = false
+
+[node name="Garlandleft" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(118,160)
+metadata/action_id = "garland_left"
+metadata/title = "Закрепить левый край"
+
+[node name="Sectionleft" type="Sprite2D" parent="World/Glass"]
+position = Vector2(128,132)
+texture = ExtResource("garland_off")
+scale = Vector2(0.75,0.75)
+visible = false
+z_index = 7
+
+[node name="Garlandmiddle" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(232,145)
+metadata/action_id = "garland_middle"
+metadata/title = "Закрепить середину гирлянды"
+
+[node name="Sectionmiddle" type="Sprite2D" parent="World/Glass"]
+position = Vector2(232,132)
+texture = ExtResource("garland_off")
+scale = Vector2(0.75,0.75)
+visible = false
+z_index = 7
+
+[node name="Garlandright" parent="World/Glass" instance=ExtResource("action")]
+position = Vector2(324,140)
+metadata/action_id = "garland_right"
+metadata/title = "Закрепить правый край"
+
+[node name="Sectionright" type="Sprite2D" parent="World/Glass"]
+position = Vector2(328,132)
+texture = ExtResource("garland_off")
+scale = Vector2(0.75,0.75)
+visible = false
+z_index = 7

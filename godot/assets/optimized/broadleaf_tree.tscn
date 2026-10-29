@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/broadleaf_tree_3.res" id="1_005b6"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=358126304]
+
+[node name="broadleaf_tree" type="Node3D" parent="." unique_id=1034388575]
+metadata/extras = {
+"asset_name": "Лиственное дерево e",
+"category": "nature",
+"units": "meters"
+}
+
+[node name="Tree_002" type="MeshInstance3D" parent="broadleaf_tree" unique_id=129425001]
+mesh = ExtResource("1_005b6")

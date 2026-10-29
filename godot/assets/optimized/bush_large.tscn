@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/optimized/bush_large_4.res" id="1_cb43y"]
+
+[node name="ASSET_LIBRARY" type="Node3D" unique_id=1743541942]
+
+[node name="bush_large" type="Node3D" parent="." unique_id=1725161555]
+metadata/extras = {
+"asset_name": "Куст широкий",
+"category": "nature",
+"units": "meters"
+}
+
+[node name="Bush" type="MeshInstance3D" parent="bush_large" unique_id=1842113640]
+mesh = ExtResource("1_cb43y")

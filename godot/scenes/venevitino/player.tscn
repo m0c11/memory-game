@@ -32,69 +32,69 @@ rotation = Vector3(0.00000, 3.14159, 0.00000)
 scale = Vector3(0.80000, 0.80000, 0.80000)
 
 [node name="Bezel" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Body" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip_001" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip_002" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip_003" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip_004" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Grip_005" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Lens" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Reflector" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [node name="Switch" parent="Head/FirstPersonCamera/TorchModel/hand_flashlight/Torch_body" groups=["distance_culled"]]
-visibility_range_end = 95.0
+visibility_range_end = 90.0
 visibility_range_end_margin = 5.0
-metadata/render_distance = 95.0
+metadata/render_distance = 90.0
 cast_shadow = 0
 
 [editable path="Head/FirstPersonCamera/TorchModel"]
