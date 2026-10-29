@@ -17,6 +17,7 @@ var map_revealed := 0.0
 var last_chapter := -1
 var chapter := -1
 var bottles: Array[String] = []
+var hall_state: Dictionary = {}
 var volume := 0.7
 var motion := true
 var fullscreen := false
@@ -81,6 +82,8 @@ func read_progress() -> void:
 		if cfg.load(path) != OK or cfg.get_value("journey", "version", 0) != 1: continue
 		var last = cfg.get_value("journey", "last", -1)
 		if last is int: last_chapter = clampi(last, -1, 2)
+		var saved_hall = cfg.get_value("journey", "hall", {})
+		hall_state = saved_hall if saved_hall is Dictionary else {}
 		bottles.clear()
 		var found = cfg.get_value("journey", "bottles", [])
 		if found is Array:
@@ -134,6 +137,7 @@ func persist() -> bool:
 	cfg.set_value("map","revealed",map_revealed)
 	cfg.set_value("journey", "last", last_chapter)
 	cfg.set_value("journey", "bottles", bottles)
+	cfg.set_value("journey", "hall", hall_state)
 	cfg.set_value("settings", "volume", volume)
 	cfg.set_value("settings", "motion", motion)
 	cfg.set_value("settings", "fullscreen", fullscreen)
@@ -204,7 +208,8 @@ func mark_finished(index: int) -> void:
 
 func finish_and_return() -> void:
 	if chapter == 0:
-		mark_finished(0) # Temporary explicit end of the hall walkthrough, not a quest win.
+		if get_tree().current_scene.get_node("Story").stage != 6: return
+		mark_finished(0)
 	elif chapter == 1 and get_tree().current_scene.get_node("Story").stage == 6:
 		mark_finished(1)
 	elif chapter == 2 and get_tree().current_scene.get_node("BottleHunt").completed:
@@ -213,7 +218,8 @@ func finish_and_return() -> void:
 
 func start_new_game() -> void:
 	if transitioning or get_tree().current_scene.scene_file_path != MENU: return
-	var previous := [run_id,map_started,map_completed.duplicate(),map_unlocked,map_stop,map_progress,map_revealed,last_chapter,bottles.duplicate(),map_advance]
+	var previous := [run_id,map_started,map_completed.duplicate(),map_unlocked,map_stop,map_progress,map_revealed,last_chapter,bottles.duplicate(),map_advance,hall_state.duplicate(true)]
+	hall_state = {}
 	run_id += 1
 	map_started = true
 	map_completed.clear()
@@ -225,13 +231,16 @@ func start_new_game() -> void:
 	last_chapter = -1
 	bottles.clear()
 	if not persist():
-		run_id=previous[0];map_started=previous[1];map_completed.assign(previous[2]);map_unlocked=previous[3];map_stop=previous[4];map_progress=previous[5];map_revealed=previous[6];last_chapter=previous[7];bottles.assign(previous[8]);map_advance=previous[9]
+		run_id=previous[0];map_started=previous[1];map_completed.assign(previous[2]);map_unlocked=previous[3];map_stop=previous[4];map_progress=previous[5];map_revealed=previous[6];last_chapter=previous[7];bottles.assign(previous[8]);map_advance=previous[9];hall_state=previous[10]
 		show_error("Не удалось начать новую историю. Прежнее прохождение сохранено.")
 		return
 	travel(-2)
 
 func save_current() -> bool:
 	var scene := get_tree().current_scene
+	if is_instance_valid(scene) and chapter == 0 and scene.has_node("Story"):
+		if not scene.get_node("Story").save_progress(): return false
+		if scene.get_node("Story").stage == 6: mark_finished(0)
 	if is_instance_valid(scene) and chapter == 1:
 		volume = scene.get_node("Presentation").volume
 		if not scene.get_node("Story").save_progress(): return false
@@ -259,8 +268,8 @@ func open_pause() -> void:
 	card.get_node("Title").text = TITLES[chapter] if chapter >= 0 else "Наши воспоминания"
 	card.get_node("Text").text = "Можно ещё побыть здесь или вернуться к нити воспоминаний." if chapter < 2 else "Можно остаться на ночную прогулку или вернуться к другим воспоминаниям."
 	card.get_node("Status").text = "WASD — ходить · Shift — бег · Tab — камера\nE — действие · Esc — вернуться" if chapter != 1 else "Прогресс последнего дня сохранится при переходе."
-	card.get_node("Next").visible = chapter == 0 or (chapter == 2 and get_tree().current_scene.get_node("BottleHunt").completed)
-	card.get_node("Next").text = "Закончить прогулку · к нити" if chapter == 0 else "Дальше по нити"
+	card.get_node("Next").visible = (chapter == 0 and get_tree().current_scene.get_node("Story").stage == 6) or (chapter == 2 and get_tree().current_scene.get_node("BottleHunt").completed)
+	card.get_node("Next").text = "Дальше по нити"
 	card.get_node("Home").text = "Вернуться на карту" if chapter >= 0 else "Главное меню"
 	card.get_node("Resume").grab_focus()
 

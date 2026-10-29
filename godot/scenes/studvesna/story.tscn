@@ -1,0 +1,570 @@
+[gd_scene format=3]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/dasha.tscn" id="dasha"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/marina.tscn" id="marina"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/gleb.tscn" id="gleb"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/ensemble_a.tscn" id="ensemble_a"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/ensemble_b.tscn" id="ensemble_b"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/ensemble_c.tscn" id="ensemble_c"]
+[ext_resource type="Script" path="res://scripts/studvesna/story.gd" id="script"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/point.tscn" id="point"]
+[ext_resource type="PackedScene" path="res://scenes/studvesna/performance.tscn" id="performance"]
+[ext_resource type="AudioStream" path="res://assets/studvesna/audio/dance.ogg" id="music"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/choice.wav" id="choice"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/cloth.wav" id="cloth"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/success.wav" id="success"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/step.wav" id="step"]
+[ext_resource type="AudioStream" path="res://assets/studvesna/audio/applause.wav" id="applause"]
+[ext_resource type="Theme" path="res://resources/studvesna/theme.tres" id="theme"]
+
+[sub_resource type="StyleBoxFlat" id="panel"]
+bg_color = Color(0.035,0.047,0.078,0.95)
+border_width_left = 3
+border_color = Color(0.85,0.65,0.36,1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+corner_radius_bottom_right = 10
+[sub_resource type="StyleBoxFlat" id="bar"]
+bg_color = Color(0.93,0.67,0.32,1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_left = 4
+corner_radius_bottom_right = 4
+
+[node name="Story" type="Node3D"]
+script = ExtResource("script")
+
+[node name="Cast" type="Node3D" parent="."]
+
+
+[node name="Marina" parent="Cast" instance=ExtResource("marina")]
+position = Vector3(-20.2,0,-4.5)
+
+[node name="Gleb" parent="Cast" instance=ExtResource("gleb")]
+position = Vector3(20.6,0,-4.7)
+costume = true
+
+[node name="Participant0" parent="Cast" instance=ExtResource("ensemble_a")]
+position = Vector3(-22,0,-4)
+costume = true
+
+[node name="Participant1" parent="Cast" instance=ExtResource("ensemble_b")]
+position = Vector3(-19,0,-5)
+costume = true
+
+[node name="Participant2" parent="Cast" instance=ExtResource("ensemble_c")]
+position = Vector3(-3.5,0,-0.9)
+costume = true
+
+[node name="Participant3" parent="Cast" instance=ExtResource("ensemble_a")]
+position = Vector3(3.5,0,-0.6)
+costume = true
+
+[node name="Participant4" parent="Cast" instance=ExtResource("ensemble_b")]
+position = Vector3(18.4,0,-3.9)
+costume = true
+
+[node name="Participant5" parent="Cast" instance=ExtResource("ensemble_c")]
+position = Vector3(1.8,0,-1.2)
+costume = true
+
+[node name="RehearsalCast" type="Node3D" parent="."]
+visible = false
+
+[node name="Participant0" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(-3.15,0.734,-5.05)
+costume = true
+
+[node name="Participant1" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(-2.4499999999999997,0.734,-5.05)
+costume = true
+
+[node name="Participant2" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(-1.75,0.734,-5.05)
+costume = true
+
+[node name="Participant3" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(-1.0499999999999998,0.734,-5.05)
+costume = true
+
+[node name="Participant4" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(-0.35,0.734,-5.05)
+costume = true
+
+[node name="Participant5" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(0.35,0.734,-5.05)
+costume = true
+
+[node name="Participant6" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(1.0499999999999998,0.734,-5.05)
+costume = true
+
+[node name="Participant7" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(1.75,0.734,-5.05)
+costume = true
+
+[node name="Participant8" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(2.4499999999999997,0.734,-5.05)
+costume = true
+
+[node name="Participant9" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(3.15,0.734,-5.05)
+costume = true
+
+[node name="Participant10" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(-3.15,0.734,-5.7)
+costume = true
+
+[node name="Participant11" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(-2.4499999999999997,0.734,-5.7)
+costume = true
+
+[node name="Participant12" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(-1.75,0.734,-5.7)
+costume = true
+
+[node name="Participant13" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(-1.0499999999999998,0.734,-5.7)
+costume = true
+
+[node name="Participant14" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(-0.35,0.734,-5.7)
+costume = true
+
+[node name="Participant15" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(0.35,0.734,-5.7)
+costume = true
+
+[node name="Participant16" parent="RehearsalCast" instance=ExtResource("ensemble_b")]
+position = Vector3(1.0499999999999998,0.734,-5.7)
+costume = true
+
+[node name="Participant17" parent="RehearsalCast" instance=ExtResource("ensemble_c")]
+position = Vector3(1.75,0.734,-5.7)
+costume = true
+
+[node name="Participant18" parent="RehearsalCast" instance=ExtResource("ensemble_a")]
+position = Vector3(2.4499999999999997,0.734,-5.7)
+costume = true
+
+[node name="Points" type="Node3D" parent="."]
+
+
+[node name="Bag" parent="Points" instance=ExtResource("point")]
+position = Vector3(-21.1, 0, -2.45)
+metadata/label = "Оставить вещи"
+
+[node name="Rehearsal0" parent="Points" instance=ExtResource("point")]
+position = Vector3(-2, 0.734, -4.3)
+metadata/label = "Репетиция · 1"
+
+[node name="Rehearsal1" parent="Points" instance=ExtResource("point")]
+position = Vector3(0, 0.734, -4)
+metadata/label = "Репетиция · 2"
+
+[node name="Rehearsal2" parent="Points" instance=ExtResource("point")]
+position = Vector3(2, 0.734, -4.3)
+metadata/label = "Репетиция · 3"
+
+[node name="Costume" parent="Points" instance=ExtResource("point")]
+position = Vector3(-18.9, 0, -2.6)
+metadata/label = "Сценический костюм"
+
+[node name="Makeup" parent="Points" instance=ExtResource("point")]
+position = Vector3(-18.9, 0, -5.65)
+metadata/label = "Подготовить грим"
+
+[node name="Marina" parent="Points" instance=ExtResource("point")]
+position = Vector3(-20.2, 0, -4.5)
+metadata/label = "Марина"
+
+[node name="Gleb" parent="Points" instance=ExtResource("point")]
+position = Vector3(20.6, 0, -4.7)
+metadata/label = "Глеб"
+
+[node name="Ready" parent="Points" instance=ExtResource("point")]
+position = Vector3(-4.7, 0.734, -3.25)
+metadata/label = "Готовность к выходу"
+
+[node name="Performance" parent="." instance=ExtResource("performance")]
+visible = false
+
+[node name="Celebration" type="Node3D" parent="."]
+visible = false
+
+[node name="Person0" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(-3.5,0,-0.65)
+costume = true
+
+[node name="Person1" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(-2.8,0,-0.65)
+costume = true
+
+[node name="Person2" parent="Celebration" instance=ExtResource("dasha")]
+position = Vector3(-2.0999999999999996,0,-0.65)
+costume = true
+
+[node name="Person3" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(-1.4,0,-0.65)
+costume = true
+
+[node name="Person4" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(-0.7,0,-0.65)
+costume = true
+
+[node name="Person5" parent="Celebration" instance=ExtResource("ensemble_c")]
+position = Vector3(0.0,0,-0.65)
+costume = true
+
+[node name="Person6" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(0.7,0,-0.65)
+costume = true
+
+[node name="Person7" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(1.4,0,-0.65)
+costume = true
+
+[node name="Person8" parent="Celebration" instance=ExtResource("gleb")]
+position = Vector3(2.0999999999999996,0,-0.65)
+costume = true
+
+[node name="Person9" parent="Celebration" instance=ExtResource("marina")]
+position = Vector3(2.8,0,-0.65)
+costume = false
+
+[node name="Person10" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(3.5,0,-0.65)
+costume = true
+
+[node name="Person11" parent="Celebration" instance=ExtResource("ensemble_c")]
+position = Vector3(-3.5,0.734,-2.9)
+costume = true
+
+[node name="Person12" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(-2.8,0.734,-2.9)
+costume = true
+
+[node name="Person13" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(-2.0999999999999996,0.734,-2.9)
+costume = true
+
+[node name="Person14" parent="Celebration" instance=ExtResource("ensemble_c")]
+position = Vector3(-1.4,0.734,-2.9)
+costume = true
+
+[node name="Person15" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(-0.7,0.734,-2.9)
+costume = true
+
+[node name="Person16" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(0.0,0.734,-2.9)
+costume = true
+
+[node name="Person17" parent="Celebration" instance=ExtResource("ensemble_c")]
+position = Vector3(0.7,0.734,-2.9)
+costume = true
+
+[node name="Person18" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(1.4,0.734,-2.9)
+costume = true
+
+[node name="Person19" parent="Celebration" instance=ExtResource("ensemble_b")]
+position = Vector3(2.0999999999999996,0.734,-2.9)
+costume = true
+
+[node name="Person20" parent="Celebration" instance=ExtResource("ensemble_c")]
+position = Vector3(2.8,0.734,-2.9)
+costume = true
+
+[node name="Person21" parent="Celebration" instance=ExtResource("ensemble_a")]
+position = Vector3(3.5,0.734,-2.9)
+costume = true
+
+[node name="FinalCamera" type="Camera3D" parent="."]
+position = Vector3(0,3.3,8)
+rotation = Vector3(-0.18,0,0)
+fov = 53.0
+current = false
+
+[node name="DanceAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("music")
+volume_db = -4
+
+[node name="Choice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("choice")
+volume_db = -14
+
+[node name="Cloth" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("cloth")
+volume_db = -12
+
+[node name="Success" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("success")
+volume_db = -14
+
+[node name="Applause" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("applause")
+volume_db = -15
+
+[node name="Footstep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("step")
+volume_db = -24
+
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 6
+
+[node name="Page" type="Control" parent="HUD"]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+theme = ExtResource("theme")
+
+[node name="Objective" type="Panel" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 674.0
+offset_bottom = 132.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("panel")
+
+[node name="Chapter" type="Label" parent="HUD/Page/Objective"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 9.0
+offset_right = 630.0
+offset_bottom = 37.0
+text = "СТУДВЕСНА · РАННЕЕ УТРО"
+theme_override_font_sizes/font_size = 17
+mouse_filter = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.94,0.74,0.45,1)
+
+[node name="Task" type="Label" parent="HUD/Page/Objective"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = 630.0
+offset_bottom = 102.0
+text = "Оставить вещи в левой кулисе"
+theme_override_font_sizes/font_size = 22
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Prompt" type="Label" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 625.0
+offset_right = 1060.0
+offset_bottom = 663.0
+text = ""
+theme_override_font_sizes/font_size = 22
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Controls" type="Label" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 682.0
+offset_right = 1180.0
+offset_bottom = 712.0
+text = "WASD — идти · E — действие · Tab — камера · Esc — пауза"
+theme_override_font_sizes/font_size = 15
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Notice" type="Label" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 145.0
+offset_right = 990.0
+offset_bottom = 200.0
+text = ""
+theme_override_font_sizes/font_size = 19
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Dialog" type="Panel" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 420.0
+offset_right = 1040.0
+offset_bottom = 672.0
+visible = false
+theme_override_styles/panel = SubResource("panel")
+
+[node name="Speaker" type="Label" parent="HUD/Page/Dialog"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 12.0
+offset_right = 772.0
+offset_bottom = 40.0
+text = ""
+theme_override_font_sizes/font_size = 22
+mouse_filter = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.94,0.74,0.45,1)
+
+[node name="Text" type="Label" parent="HUD/Page/Dialog"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 46.0
+offset_right = 772.0
+offset_bottom = 119.0
+text = ""
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Option0" type="Button" parent="HUD/Page/Dialog"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 125.0
+offset_right = 772.0
+offset_bottom = 161.0
+text = "Продолжить"
+mouse_default_cursor_shape = 2
+
+[node name="Option1" type="Button" parent="HUD/Page/Dialog"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 165.0
+offset_right = 772.0
+offset_bottom = 201.0
+text = "Продолжить"
+mouse_default_cursor_shape = 2
+
+[node name="Option2" type="Button" parent="HUD/Page/Dialog"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 205.0
+offset_right = 772.0
+offset_bottom = 241.0
+text = "Продолжить"
+mouse_default_cursor_shape = 2
+
+[node name="Rhythm" type="Panel" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 510.0
+offset_right = 1020.0
+offset_bottom = 668.0
+visible = false
+theme_override_styles/panel = SubResource("panel")
+
+[node name="Title" type="Label" parent="HUD/Page/Rhythm"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 740.0
+offset_bottom = 38.0
+text = "Вместе в ритме"
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Cue" type="Label" parent="HUD/Page/Rhythm"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 42.0
+offset_right = 735.0
+offset_bottom = 84.0
+text = "←    →"
+theme_override_font_sizes/font_size = 30
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Timing" type="ProgressBar" parent="HUD/Page/Rhythm"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 92.0
+offset_right = 650.0
+offset_bottom = 100.0
+show_percentage = false
+max_value = 1.0
+theme_override_styles/fill = SubResource("bar")
+
+[node name="Feedback" type="Label" parent="HUD/Page/Rhythm"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 110.0
+offset_right = 470.0
+offset_bottom = 145.0
+text = "Ошибки не прерывают танец"
+theme_override_font_sizes/font_size = 16
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Watch" type="Button" parent="HUD/Page/Rhythm"]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 109.0
+offset_right = 740.0
+offset_bottom = 145.0
+text = "Просто смотреть"
+mouse_default_cursor_shape = 2
+
+[node name="Subtitle" type="Label" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 445.0
+offset_right = 1060.0
+offset_bottom = 499.0
+text = ""
+theme_override_font_sizes/font_size = 25
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Curtain" type="ColorRect" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+mouse_filter = 0
+color = Color(0.015,0.02,0.035,1)
+
+[node name="Title" type="Label" parent="HUD/Page/Curtain"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 280.0
+offset_right = 1120.0
+offset_bottom = 370.0
+text = ""
+theme_override_font_sizes/font_size = 34
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Small" type="Label" parent="HUD/Page/Curtain"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 380.0
+offset_right = 1120.0
+offset_bottom = 450.0
+text = ""
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="FinalReturn" type="Button" parent="HUD/Page"]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 615.0
+offset_right = 820.0
+offset_bottom = 665.0
+text = "Дальше по нити воспоминаний"
+mouse_default_cursor_shape = 2
+visible = false

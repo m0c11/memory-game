@@ -1,0 +1,238 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/studvesna/actor.gd" id="script"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/torso.svg" id="torso"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/arm.svg" id="arm"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/leg.svg" id="leg"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/scarf.svg" id="scarf"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/bow.svg" id="bow"]
+[ext_resource type="Texture2D" path="res://assets/studvesna/characters/ensemble_b_head.svg" id="ensemble_b_head"]
+
+[sub_resource type="Animation" id="idle"]
+resource_name = "idle"
+length = 3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Facing/Rig/LeftArm:rotation:z")
+tracks/0/interp = 1
+tracks/0/enabled = true
+tracks/0/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0, -0.025, 0]}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Facing/Rig/RightArm:rotation:z")
+tracks/1/interp = 1
+tracks/1/enabled = true
+tracks/1/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0, 0.025, 0]}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Facing/Rig/LeftLeg:rotation:z")
+tracks/2/interp = 1
+tracks/2/enabled = true
+tracks/2/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [-0.0, -0.015, -0.0]}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Facing/Rig/RightLeg:rotation:z")
+tracks/3/interp = 1
+tracks/3/enabled = true
+tracks/3/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0.0, 0.015, 0.0]}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Facing/Rig:position:y")
+tracks/4/interp = 1
+tracks/4/enabled = true
+tracks/4/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0.0, 0.0006, 0.0]}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Facing/Rig:rotation:z")
+tracks/5/interp = 1
+tracks/5/enabled = true
+tracks/5/keys = {"times": PackedFloat32Array(0, 1.5, 3), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0, 0, 0]}
+
+[sub_resource type="Animation" id="walk"]
+resource_name = "walk"
+length = 0.65
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Facing/Rig/LeftArm:rotation:z")
+tracks/0/interp = 1
+tracks/0/enabled = true
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0.28, 0, -0.28, 0, 0.28]}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Facing/Rig/RightArm:rotation:z")
+tracks/1/interp = 1
+tracks/1/enabled = true
+tracks/1/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [-0.28, 0, 0.28, 0, -0.28]}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Facing/Rig/LeftLeg:rotation:z")
+tracks/2/interp = 1
+tracks/2/enabled = true
+tracks/2/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0.168, -0.0, -0.168, -0.0, 0.168]}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Facing/Rig/RightLeg:rotation:z")
+tracks/3/interp = 1
+tracks/3/enabled = true
+tracks/3/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [-0.168, 0.0, 0.168, 0.0, -0.168]}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Facing/Rig:position:y")
+tracks/4/interp = 1
+tracks/4/enabled = true
+tracks/4/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0.007, 0.0, 0.007, 0.0, 0.007]}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Facing/Rig:rotation:z")
+tracks/5/interp = 1
+tracks/5/enabled = true
+tracks/5/keys = {"times": PackedFloat32Array(0, 0.1625, 0.325, 0.4875, 0.65), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0, 0, 0, 0, 0]}
+
+[sub_resource type="Animation" id="dance"]
+resource_name = "dance"
+length = 8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Facing/Rig/LeftArm:rotation:z")
+tracks/0/interp = 1
+tracks/0/enabled = true
+tracks/0/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [-0.1, -1.1, -0.6, 0.3, 1.1, 0.4, -0.3, -0.9, -0.1]}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Facing/Rig/RightArm:rotation:z")
+tracks/1/interp = 1
+tracks/1/enabled = true
+tracks/1/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [0.1, 1.1, 0.6, -0.3, -1.1, -0.4, 0.3, 0.9, 0.1]}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Facing/Rig/LeftLeg:rotation:z")
+tracks/2/interp = 1
+tracks/2/enabled = true
+tracks/2/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [-0.015, -0.165, -0.09, 0.045, 0.165, 0.06, -0.045, -0.135, -0.015]}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Facing/Rig/RightLeg:rotation:z")
+tracks/3/interp = 1
+tracks/3/enabled = true
+tracks/3/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [0.015, 0.165, 0.09, -0.045, -0.165, -0.06, 0.045, 0.135, 0.015]}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Facing/Rig:position:y")
+tracks/4/interp = 1
+tracks/4/enabled = true
+tracks/4/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [0.0025, 0.0275, 0.015, 0.0075, 0.0275, 0.01, 0.0075, 0.0225, 0.0025]}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Facing/Rig:rotation:z")
+tracks/5/interp = 1
+tracks/5/enabled = true
+tracks/5/keys = {"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8), "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1), "update": 0, "values": [0.009, 0.099, 0.054, -0.027, -0.099, -0.036, 0.027, 0.081, 0.009]}
+
+[sub_resource type="Animation" id="cheer"]
+resource_name = "cheer"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Facing/Rig/LeftArm:rotation:z")
+tracks/0/interp = 1
+tracks/0/enabled = true
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [-1.8, -2.4, -1.8, -2.4, -1.8]}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Facing/Rig/RightArm:rotation:z")
+tracks/1/interp = 1
+tracks/1/enabled = true
+tracks/1/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [1.8, 2.4, 1.8, 2.4, 1.8]}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Facing/Rig/LeftLeg:rotation:z")
+tracks/2/interp = 1
+tracks/2/enabled = true
+tracks/2/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [-0.27, -0.36, -0.27, -0.36, -0.27]}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Facing/Rig/RightLeg:rotation:z")
+tracks/3/interp = 1
+tracks/3/enabled = true
+tracks/3/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0.27, 0.36, 0.27, 0.36, 0.27]}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Facing/Rig:position:y")
+tracks/4/interp = 1
+tracks/4/enabled = true
+tracks/4/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0.045, 0.06, 0.045, 0.06, 0.045]}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Facing/Rig:rotation:z")
+tracks/5/interp = 1
+tracks/5/enabled = true
+tracks/5/keys = {"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4), "transitions": PackedFloat32Array(1, 1, 1, 1, 1), "update": 0, "values": [0, 0, 0, 0, 0]}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {"idle": SubResource("idle"), "walk": SubResource("walk"), "dance": SubResource("dance"), "cheer": SubResource("cheer")}
+
+[node name="Ensemble_B" type="Node3D"]
+script = ExtResource("script")
+scarf = false
+
+[node name="Facing" type="Node3D" parent="."]
+
+[node name="Rig" type="Node3D" parent="Facing"]
+
+[node name="LeftLeg" type="Node3D" parent="Facing/Rig"]
+position = Vector3(-0.13, 0.73, 0)
+
+[node name="Sprite" type="Sprite3D" parent="Facing/Rig/LeftLeg"]
+position = Vector3(0, 0, 0.004)
+pixel_size = 0.0045
+texture = ExtResource("leg")
+offset = Vector2(0, -75)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="RightLeg" type="Node3D" parent="Facing/Rig"]
+position = Vector3(0.13, 0.73, 0)
+
+[node name="Sprite" type="Sprite3D" parent="Facing/Rig/RightLeg"]
+position = Vector3(0, 0, 0.004)
+pixel_size = 0.0045
+texture = ExtResource("leg")
+offset = Vector2(0, -75)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="LeftArm" type="Node3D" parent="Facing/Rig"]
+position = Vector3(-0.26, 1.28, 0)
+
+[node name="Sprite" type="Sprite3D" parent="Facing/Rig/LeftArm"]
+position = Vector3(0, 0, 0.004)
+pixel_size = 0.0045
+texture = ExtResource("arm")
+offset = Vector2(0, -65)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="RightArm" type="Node3D" parent="Facing/Rig"]
+position = Vector3(0.26, 1.28, 0)
+
+[node name="Sprite" type="Sprite3D" parent="Facing/Rig/RightArm"]
+position = Vector3(0, 0, 0.004)
+pixel_size = 0.0045
+texture = ExtResource("arm")
+offset = Vector2(0, -65)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="Torso" type="Sprite3D" parent="Facing/Rig"]
+position = Vector3(0, 1.05, 0.018)
+pixel_size = 0.0045
+texture = ExtResource("torso")
+offset = Vector2(0, 0)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="Head" type="Sprite3D" parent="Facing/Rig"]
+position = Vector3(0, 1.56, 0.025)
+pixel_size = 0.0042
+texture = ExtResource("ensemble_b_head")
+offset = Vector2(0, 0)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="Scarf" type="Sprite3D" parent="Facing/Rig"]
+position = Vector3(0.16, 0.69, 0.035)
+pixel_size = 0.0045
+texture = ExtResource("scarf")
+offset = Vector2(0, 0)
+shaded = false
+alpha_cut = 1
+texture_filter = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"
