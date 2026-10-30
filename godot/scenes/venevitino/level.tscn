@@ -94,7 +94,7 @@ far = 220.0
 [node name="Hint" type="Label" parent="Interface"]
 offset_left = 24.0
 offset_top = 674.0
-offset_right = 1256.0
+offset_right = 1050.0
 offset_bottom = 708.0
 mouse_filter = 2
 theme_override_colors/font_color = Color(0.92, 0.89, 0.8, 1)
@@ -102,5 +102,5 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 16
-text = "WASD — идти · Shift — бег · E — подобрать · F — фонарик · Tab — план · R — ко входу · Esc — пауза"
+text = "WASD — идти · E — подобрать · F — фонарик · H — подсказка · Tab — план · Esc — пауза"
 horizontal_alignment = 1

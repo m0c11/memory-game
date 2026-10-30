@@ -76,11 +76,27 @@ func refresh() -> void:
 	var enter: Button = ui.get_node("Card/Enter")
 	enter.disabled = rolling or target_stop >= journey.CHAPTERS.size()
 	enter.text = "Клубок катится…" if rolling else "Войти в воспоминание"
+	if not rolling and target_stop < journey.CHAPTERS.size():
+		var descriptions := ["Утро, репетиция, волнение — и ваш общий выход.", "Последний день смены. Забота, прощания и вечер вместе.", "Ночная база, фонарик и маленькие тайники на знакомых тропах."]
+		ui.get_node("Card/Description").text = descriptions[target_stop]
+		if target_stop in journey.map_completed:
+			enter.text = "Вернуться в воспоминание"
+			ui.get_node("Card/Description").text += "\nУже пройдено. Можно ещё побыть здесь."
+		elif has_checkpoint():
+			enter.text = "Продолжить воспоминание"
 	if not rolling and target_stop >= journey.CHAPTERS.size():
 		ui.get_node("Card/Description").text = "Эта глава ещё создаётся. Можно вернуться к уже открытым воспоминаниям."
 		enter.text = "Продолжение впереди"
 	ui.get_node("Card/Previous").disabled = rolling or target_stop == 0
 	ui.get_node("Card/Next").disabled = rolling or target_stop >= journey.map_unlocked
+
+func has_checkpoint() -> bool:
+	if target_stop == 0: return int(journey.hall_state.get("stage", 0)) > 0
+	if target_stop == 2: return not journey.bottles.is_empty()
+	if target_stop == 1:
+		var data := PoletSave.read_data()
+		return not data.is_empty() and data.get("run_id", 0) == journey.run_id and not data.finished.is_empty()
+	return false
 
 func go_to(index: int) -> void:
 	if rolling or revealing or index < 0 or index > journey.map_unlocked or index >= stops.size(): return

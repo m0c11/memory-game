@@ -1123,7 +1123,7 @@ offset_left = 1000.0
 offset_top = 65.0
 offset_right = 1248.0
 offset_bottom = 105.0
-text = "В лагерь · Esc"
+text = "Пауза · Esc"
 theme_override_font_sizes/font_size = 20
 
 [node name="Result" type="Label" parent="."]
@@ -1152,3 +1152,47 @@ text = ""
 theme_override_colors/font_color = Color(0.15,0.22,0.19,1)
 theme_override_font_sizes/font_size = 22
 mouse_filter = 2
+
+[node name="Pause" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.02,0.04,0.06,0.85)
+
+[node name="Card" type="Panel" parent="Pause"]
+offset_left = 340.0
+offset_top = 210.0
+offset_right = 940.0
+offset_bottom = 530.0
+
+[node name="Title" type="Label" parent="Pause/Card"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 572.0
+offset_bottom = 62.0
+text = "Остановимся на минутку"
+theme_override_font_sizes/font_size = 28
+
+[node name="Text" type="Label" parent="Pause/Card"]
+offset_left = 28.0
+offset_top = 78.0
+offset_right = 572.0
+offset_bottom = 145.0
+text = "Поездка на паузе. Продолжишь с этого же места.
+При выходе к воротам текущий участок начнётся заново; покупка останется."
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 19
+
+[node name="Resume" type="Button" parent="Pause/Card"]
+offset_left = 28.0
+offset_top = 165.0
+offset_right = 572.0
+offset_bottom = 215.0
+text = "Продолжить поездку · Esc"
+
+[node name="Leave" type="Button" parent="Pause/Card"]
+offset_left = 28.0
+offset_top = 232.0
+offset_right = 572.0
+offset_bottom = 282.0
+text = "Вернуться к воротам"

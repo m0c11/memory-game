@@ -48,6 +48,10 @@ func sees_player() -> bool:
 
 
 func _physics_process(delta: float) -> void:
+	if is_instance_valid(player) and not player.first_person:
+		velocity = Vector3.ZERO
+		animation.pause()
+		return
 	if NavigationServer3D.map_get_iteration_id(agent.get_navigation_map()) == 0:
 		return
 	var visible_player := can_detect and sees_player()

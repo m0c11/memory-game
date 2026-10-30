@@ -98,3 +98,14 @@ metadata/render_distance = 90.0
 cast_shadow = 0
 
 [editable path="Head/FirstPersonCamera/TorchModel"]
+
+[node name="PlanMarker" type="Label3D" parent="."]
+visible = false
+position = Vector3(0, 6, 0)
+billboard = 1
+no_depth_test = true
+pixel_size = 0.10
+font_size = 80
+outline_size = 14
+modulate = Color(0.25,0.88,1,1)
+text = "●"

@@ -64,7 +64,7 @@ offset_right = 366.0
 offset_bottom = 100.0
 mouse_filter = 2
 theme_override_font_sizes/font_size = 16
-text = "Найди все бутылки на базе.\nПроверяй домики, кусты и рюкзаки."
+text = "Ищи в домиках, кустах и рюкзаках.\nH — подсказка · Tab — план базы."
 
 [node name="Crosshair" type="Label" parent="HUD"]
 anchor_left = 0.5
@@ -142,3 +142,34 @@ text = "Все бутылки найдены!\nПоиск завершён. Мо
 horizontal_alignment = 1
 
 [connection signal="timeout" from="CompletionTimer" to="HUD/Completion" method="hide"]
+
+[node name="SearchHint" type="Panel" parent="HUD"]
+visible = false
+offset_left = 24.0
+offset_top = 154.0
+offset_right = 580.0
+offset_bottom = 264.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("PanelStyle")
+
+[node name="Text" type="Label" parent="HUD/SearchHint"]
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 538.0
+offset_bottom = 100.0
+mouse_filter = 2
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 17
+text = ""
+
+[node name="HintMarker" type="Node3D" parent="."]
+visible = false
+
+[node name="Sign" type="Label3D" parent="HintMarker"]
+billboard = 1
+no_depth_test = true
+pixel_size = 0.08
+font_size = 60
+outline_size = 12
+modulate = Color(1, 0.84, 0.4, 1)
+text = "◆\nПроверить здесь"

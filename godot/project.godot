@@ -19,6 +19,10 @@ window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 
 [input]
+request_hint={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":72)]
+}
 toggle_flashlight={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"physical_keycode":70)]

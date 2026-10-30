@@ -191,6 +191,7 @@ func run() -> void:
 	story.choose(0)
 	check(story.modal == "bicycle" and story.bicycle.running, "Bicycle starts through world interaction")
 	story.bicycle.get_node("Exit").pressed.emit()
+	story.bicycle.get_node("Pause/Card/Leave").pressed.emit()
 	check(story.stage == story.Stage.RIDE and not story.finished.has("bicycle"), "Aborting trip awards no completion")
 	await frames(20)
 	await press_e()

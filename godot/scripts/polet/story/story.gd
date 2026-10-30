@@ -203,12 +203,25 @@ func finish_task(id: String) -> void:
 	refresh()
 	save_progress()
 
+func room_progress(suffix: String) -> int:
+	var count := 0
+	for task in ["linen", "rubbish", "mop"]:
+		if finished.has(task + suffix): count += 1
+	return count
+
 func refresh() -> void:
+	var room_status: Array[String] = []
+	for i in range(3):
+		var progress := room_progress(["", "_b", "_c"][i])
+		var status := "сдана" if progress == 3 else "%d/3" % progress
+		room_status.append("%d: %s" % [i+1, status])
+		var door: Area2D = level.get_node("World/Corridor1/" + ["RoomDoor", "LeftDoor", "RightDoor"][i])
+		door.set_meta("prompt", "Комната %d · %s" % [i+1, status])
 	var count := 0
 	for id in PoletSave.CLEANING:
 		if finished.has(id): count += 1
 	var objectives := [
-		"01 / 06   Сдать корпус\nКорпус 1 → три комнаты\nБельё и мусор, затем пол: %d / 9" % count,
+		"01 / 06   Корпус 1 · Уборка %d / 9\nКомнаты — %s\nВещи и мусор → затем пол" % [count, " · ".join(room_status)],
 		"02 / 06   Не оставлять одного\nПоговори с ребёнком на центральной площадке.",
 		"03 / 06   Смена сдана\nОтнеси рацию директрисе у админки справа внизу.",
 		"04 / 06   Наш последний вечер\nВозьми коробку → закрепи края и середину.\nГирлянда %s · световые дорожки %s" % [mark("garland"), mark("circuit")],
@@ -250,6 +263,7 @@ func close_modal() -> void:
 	for panel in [dialogue, circuit, bicycle, pause_panel]:
 		panel.hide()
 	bicycle.running = false
+	bicycle.trip_paused = false
 	modal = ""
 	busy = false
 	level.player.movement_enabled = not level.overview
@@ -338,6 +352,11 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 		return
 	if event.is_action_pressed("ui_cancel"):
+		if modal == "bicycle":
+			if bicycle.trip_paused: bicycle.resume_trip()
+			else: bicycle.pause_trip()
+			get_viewport().set_input_as_handled()
+			return
 		# Arrival and ending pages are checkpoints: finish the page before leaving.
 		if dialogue_kind not in ["ride_return", "finale"] or modal != "dialogue":
 			close_modal()

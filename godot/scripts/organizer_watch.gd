@@ -23,6 +23,11 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if not player.first_person:
+		panel.hide()
+		warning.hide()
+		for guard in guards: guard.can_detect = false
+		return
 	grace_time = maxf(0.0, grace_time - delta)
 	warning_time = maxf(0.0, warning_time - delta)
 	warning.visible = warning_time > 0.0
@@ -48,7 +53,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_player_caught(_guard: OrganizerPatrol) -> void:
-	if not enabled or grace_time > 0.0:
+	if not enabled or grace_time > 0.0 or not player.first_person:
 		return
 	encounters += 1
 	grace_time = 10.0

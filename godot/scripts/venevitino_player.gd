@@ -20,6 +20,13 @@ func _ready() -> void:
 		night_ambient_color = night_environment.ambient_light_color
 		night_ambient_energy = night_environment.ambient_light_energy
 
+func _physics_process(delta: float) -> void:
+	# The plan is a safe inspection mode, not remote control of an unseen character.
+	if not first_person:
+		velocity = Vector3.ZERO
+		return
+	super._physics_process(delta)
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_flashlight") and not event.is_echo():
 		flashlight.visible = not flashlight.visible
@@ -35,6 +42,10 @@ func _unhandled_input(event: InputEvent) -> void:
 func _toggle_camera() -> void:
 	super._toggle_camera()
 	interaction_enabled = first_person
+	$PlanMarker.visible = not first_person
+	get_parent().get_node("Interface/Hint").text = "WASD — идти · E — подобрать · F — фонарик · H — подсказка · Tab — план · Esc — пауза" if first_person else "ПЛАН БАЗЫ · голубая точка — ты · H — подсказка · Tab — вернуться · время остановлено"
+	for name in ["Vegetation", "LushVegetation"]:
+		get_parent().get_node(name).visible = first_person
 	# The overview shows the full authored plan; walking uses scene-defined distances.
 	for geometry in get_tree().get_nodes_in_group("distance_culled"):
 		geometry.visibility_range_end = float(geometry.get_meta("render_distance")) if first_person else 0.0

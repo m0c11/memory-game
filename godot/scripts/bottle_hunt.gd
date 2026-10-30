@@ -19,6 +19,10 @@ var focused: BottlePickup
 var collected_count: int = 0
 var completed: bool = false
 var notice_time: float = 0.0
+var hint_enabled := false
+var hint_target: BottlePickup
+var hint_spot: Marker3D
+var inspection_spots: Array[Node] = []
 
 
 func _ready() -> void:
@@ -26,12 +30,14 @@ func _ready() -> void:
 		if get_parent().is_ancestor_of(item):
 			bottles.append(item)
 			item.collected.connect(_on_bottle_collected)
+	inspection_spots = get_parent().get_node("Bottles/InspectionSpots").get_children()
 	_update_counter()
 
 
 func _physics_process(delta: float) -> void:
 	notice_time = maxf(0.0, notice_time - delta)
 	notice.visible = notice_time > 0.0
+	_update_hint()
 	crosshair.visible = player.first_person
 	_set_focus(find_target())
 	if focused and Input.is_action_just_pressed("interact"):
@@ -92,3 +98,55 @@ func _on_bottle_collected(bottle: BottlePickup) -> void:
 
 func _update_counter() -> void:
 	counter.text = "Бутылки: %d / %d" % [collected_count, bottles.size()]
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("request_hint") and not event.is_echo():
+		hint_enabled = not hint_enabled and not completed
+		if hint_enabled: _choose_hint()
+		_update_hint()
+		get_viewport().set_input_as_handled()
+
+func _choose_hint() -> void:
+	hint_target = null
+	hint_spot = null
+	var closest := INF
+	var placements := get_parent().get_node("Bottles")
+	for spot: Marker3D in inspection_spots:
+		var candidate := placements.get_node(spot.get_meta("bottle_path")) as BottlePickup
+		if candidate.is_collected: continue
+		var distance: float = player.global_position.distance_squared_to(spot.global_position)
+		if distance < closest:
+			closest = distance
+			hint_target = candidate
+			hint_spot = spot
+
+func _update_hint() -> void:
+	$HUD/Objective.size = Vector2(384,114) if player.first_person else Vector2(240,64)
+	$HUD/Objective/Counter.size.x = 360 if player.first_person else 208
+	$HUD/Objective/Task.visible = player.first_person
+	$HUD/SearchHint.size = Vector2(556,110) if player.first_person else Vector2(240,220)
+	$HUD/SearchHint/Text.size = Vector2(520,90) if player.first_person else Vector2(204,198)
+	$HUD/SearchHint.visible = hint_enabled and not completed
+	$HintMarker.visible = hint_enabled and not completed and not player.first_person
+	if not hint_enabled or completed: return
+	if not is_instance_valid(hint_target) or hint_target.is_collected: _choose_hint()
+	if hint_spot == null:
+		$HUD/SearchHint.hide()
+		$HintMarker.hide()
+		return
+	$HintMarker.global_position = hint_spot.global_position + Vector3.UP * 4.0
+	var offset: Vector3 = hint_spot.global_position - player.global_position
+	offset.y = 0.0
+	var distance := ceili(offset.length())
+	var direction := "рядом"
+	if distance > 3:
+		var camera: Camera3D = player.first_person_camera
+		var forward := -camera.global_basis.z
+		var right := camera.global_basis.x
+		var ahead := forward.dot(offset.normalized())
+		var side := right.dot(offset.normalized())
+		direction = "прямо" if ahead > 0.7 else "позади" if ahead < -0.7 else "справа" if side > 0.0 else "слева"
+	var clue := str(hint_spot.get_meta("hint_text", hint_target.discovery_text))
+	var footer := "Золотая отметка — место поиска. Tab — вернуться." if not player.first_person else "%s · около %d м · Tab — посмотреть на плане" % [direction.capitalize(), distance]
+	$HUD/SearchHint/Text.text = "Подсказка · H — скрыть\n%s\n%s" % [clue, footer]

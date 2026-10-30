@@ -10,6 +10,8 @@ var bumps: int = 0
 var immunity: float = 0.0
 var slow_time: float = 0.0
 var running: bool = false
+var trip_paused: bool = false
+var exhausted: bool = false
 var returning: bool = false
 var speed: float = 0.0
 var stamina: float = 100.0
@@ -17,9 +19,32 @@ var balance: float = 100.0
 var pedal_time: float = 0.0
 
 func _ready() -> void:
-	$Exit.pressed.connect(func(): running = false; cancelled.emit())
+	$Exit.pressed.connect(pause_trip)
+	$Pause/Card/Resume.pressed.connect(resume_trip)
+	$Pause/Card/Leave.pressed.connect(func():
+		trip_paused = false
+		running = false
+		$Pause.hide()
+		cancelled.emit())
+
+func pause_trip() -> void:
+	if not running: return
+	running = false
+	trip_paused = true
+	$Pause.show()
+	$Pause/Card/Resume.grab_focus()
+
+func resume_trip() -> void:
+	if not trip_paused: return
+	trip_paused = false
+	running = true
+	$Pause.hide()
+	$Exit.release_focus()
 
 func begin(return_trip: bool = false) -> void:
+	trip_paused = false
+	exhausted = false
+	$Pause.hide()
 	returning = return_trip
 	distance = 0.0
 	rider_y = 470.0
@@ -47,7 +72,9 @@ func _process(delta: float) -> void:
 
 func advance(delta: float, steering: float, sprinting: bool, braking: bool) -> void:
 	if not running: return
-	var accelerating := sprinting and stamina > 5.0 and not braking
+	if stamina <= 5.0: exhausted = true
+	if not sprinting or stamina >= 35.0: exhausted = false
+	var accelerating := sprinting and not exhausted and not braking
 	var target_speed := 300.0 if accelerating else 185.0
 	if braking: target_speed = 65.0
 	if slow_time > 0.0: target_speed = 60.0
