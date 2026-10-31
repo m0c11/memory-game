@@ -17,34 +17,36 @@ func run() -> void:
 	flow.test_mode=true
 	flow.map_started=true
 	flow.map_completed.assign([0,1,2])
-	flow.map_unlocked=3;flow.map_stop=3;flow.map_progress=0.70;flow.map_revealed=0.70;flow.map_advance=false
+	flow.map_unlocked=3;flow.map_stop=3;flow.map_progress=0.80;flow.map_revealed=0.80;flow.map_advance=false
 	change_scene_to_file(flow.MAP);await scene_changed;await frames()
 	var map=current_scene
-	check(map.get_node("Stops").get_child_count()==6,"Five authored chapter stops plus final knot")
+	check(map.get_node("Stops").get_child_count()==5,"Four authored chapter stops plus final knot")
 	check(map.get_node("Route").curve.get_point_count()>100,"Route is saved Curve2D geometry")
 	check(map.get_node("Thread").points.size()==map.get_node("Route").curve.get_point_count(),"Visible thread and movement share authored points")
 	check(not map.revealing and not map.get_node("HUD/UI/Page/Ending").visible,"Unfinished chapters keep final camera closed")
-	check(not map.get_node("Stops/Stop5").visible,"Final knot label hidden")
-	map.go_to(5);check(map.target_stop==3,"Cannot jump past locked stops")
+	check(not map.get_node("Stops/Stop4").visible,"Final knot label hidden")
+	map.go_to(4);check(map.target_stop==3,"Cannot jump past locked stops")
 	map.go_to(2)
 	var before: float=map.ball.progress
 	await frames(20)
 	check(map.ball.progress<before,"Replays roll backward along same curve")
-	check(is_equal_approx(flow.map_revealed,0.70),"Replays keep all revealed thread")
+	check(is_equal_approx(flow.map_revealed,0.80),"Replays keep all revealed thread")
 	flow.open_settings()
 	before=map.ball.progress;await frames(20)
 	check(is_equal_approx(map.ball.progress,before),"Global settings pause the automatic movement")
 	flow.close_settings()
 	# Only the complete planned story enables the final segment.
-	flow.mark_finished(3);check(not flow.can_reveal(),"Four chapters still do not expose the surprise")
-	flow.mark_finished(4);check(flow.can_reveal() and flow.map_unlocked==5,"Five chapters unlock final knot")
-	flow.map_stop=4;flow.map_progress=0.87;flow.map_revealed=0.87;flow.map_advance=true
+	check(not flow.can_reveal(),"Three chapters still do not expose the surprise")
+	flow.mark_finished(3);check(flow.can_reveal() and flow.map_unlocked==4,"Four chapters unlock final knot")
+	flow.map_stop=3;flow.map_progress=0.80;flow.map_revealed=0.80;flow.map_advance=true
 	change_scene_to_file(flow.MAP);await scene_changed;await frames()
 	map=current_scene
-	check(map.target_stop==5 and map.rolling,"Final segment starts automatically after last chapter")
-	var until:=Time.get_ticks_msec()+10000
+	check(map.target_stop==4 and map.rolling,"Final segment starts automatically after last chapter")
+	var until:=Time.get_ticks_msec()+20000
 	while (map.rolling or not map.get_node("HUD/UI/Page/Ending").visible) and Time.get_ticks_msec()<until: await process_frame
 	check(map.revealing and map.get_node("HUD/UI/Page/Ending").visible,"Final pan reveals dedication")
+	check(map.get_node("Underline/Ball").progress_ratio == 1.0, "Ball completes authored underline before dedication")
+	check(not map.get_node("HUD/UI/Page/Menu").visible, "Gift reveal hides menu until explicit Continue")
 	check(map.camera.zoom.x<0.3,"Camera pulls back to the whole word")
 	check(map.get_node("Stops").get_children().all(func(n):return not n.visible),"Chapter labels stay hidden during reveal")
 	check(not map.get_node("HUD/UI/Page/Card").visible,"Gameplay card clears the final view")
@@ -69,7 +71,7 @@ func run() -> void:
 	# Hostile/incomplete route flags cannot zoom out prematurely.
 	cfg=ConfigFile.new();cfg.set_value("journey","version",1);cfg.set_value("map","unlocked",5);cfg.set_value("map","stop",5);cfg.set_value("map","progress",1.0);cfg.set_value("map","revealed",1.0);cfg.save(FILE)
 	flow.read_progress()
-	check(flow.map_unlocked<=4 and flow.map_progress<=0.87 and flow.map_revealed<=0.87,"Incomplete save clamps hidden final stretch")
+	check(flow.map_unlocked<=3 and flow.map_progress<=0.80 and flow.map_revealed<=0.80,"Incomplete save clamps hidden final stretch")
 	flow.test_mode=true
 	for file in [FILE,FILE+".bak",FILE+".tmp"]:
 		if FileAccess.file_exists(file):DirAccess.remove_absolute(file)

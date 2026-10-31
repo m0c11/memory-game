@@ -16,11 +16,17 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(fit_ui)
 	fit_ui()
 	ui.get_node("Menu").pressed.connect(func(): journey.travel(-1))
+	ui.get_node("Ending/Continue").pressed.connect(func():
+		ui.get_node("Ending/Continue").hide()
+		ui.get_node("Ending/Replay").show()
+		ui.get_node("Menu").show()
+		ui.get_node("Ending/Replay").grab_focus())
+	ui.get_node("Ending/Replay").pressed.connect(func(): journey.travel(3))
 	ui.get_node("Card/Enter").pressed.connect(enter_chapter)
 	ui.get_node("Card/Previous").pressed.connect(func(): go_to(target_stop - 1))
 	ui.get_node("Card/Next").pressed.connect(func(): go_to(target_stop + 1))
-	ball.progress_ratio = journey.map_progress if not preview_finale else 0.87
-	target_stop = journey.map_stop if not preview_finale else 5
+	ball.progress_ratio = journey.map_progress if not preview_finale else 0.80
+	target_stop = journey.map_stop if not preview_finale else 4
 	camera.position = ball.position + Vector2(0,90)
 	if preview_finale:
 		rolling = true
@@ -32,7 +38,7 @@ func _ready() -> void:
 			journey.map_advance = false
 		rolling = absf(ball.progress_ratio - stop_fraction(target_stop)) > 0.0001
 	refresh()
-	if target_stop == 5 and not rolling and journey.can_reveal(): call_deferred("reveal_word")
+	if target_stop == 4 and not rolling and journey.can_reveal(): call_deferred("reveal_word")
 
 func fit_ui() -> void:
 	var size := get_viewport().get_visible_rect().size
@@ -57,7 +63,7 @@ func _process(delta: float) -> void:
 			if not preview_finale:
 				journey.map_stop = target_stop
 				if not journey.persist(): journey.show_error("Не удалось сохранить путь. Клубок останется здесь; можно попробовать ещё раз.")
-			if target_stop == 5 and (preview_finale or journey.can_reveal()):
+			if target_stop == 4 and (preview_finale or journey.can_reveal()):
 				reveal_word()
 				return
 			else:
@@ -74,10 +80,10 @@ func refresh() -> void:
 	ui.get_node("Card/Title").text = str(stops[target_stop].get_meta("title"))
 	ui.get_node("Card/Description").text = "Нить ведёт к следующему воспоминанию…" if rolling else "Клубок на месте. Можно войти и прожить этот момент."
 	var enter: Button = ui.get_node("Card/Enter")
-	enter.disabled = rolling or target_stop >= journey.CHAPTERS.size()
+	enter.disabled = rolling or target_stop > journey.map_unlocked or target_stop >= journey.CHAPTERS.size()
 	enter.text = "Клубок катится…" if rolling else "Войти в воспоминание"
 	if not rolling and target_stop < journey.CHAPTERS.size():
-		var descriptions := ["Утро, репетиция, волнение — и ваш общий выход.", "Последний день смены. Забота, прощания и вечер вместе.", "Ночная база, фонарик и маленькие тайники на знакомых тропах."]
+		var descriptions := ["Утро, репетиция, волнение — и ваш общий выход.", "Последний день смены. Забота, прощания и вечер вместе.", "Ночная база, фонарик и маленькие тайники на знакомых тропах.", "Сборы, сообщения и обычный вечер, которого хочется ждать."]
 		ui.get_node("Card/Description").text = descriptions[target_stop]
 		if target_stop in journey.map_completed:
 			enter.text = "Вернуться в воспоминание"
@@ -91,6 +97,7 @@ func refresh() -> void:
 	ui.get_node("Card/Next").disabled = rolling or target_stop >= journey.map_unlocked
 
 func has_checkpoint() -> bool:
+	if target_stop == 3: return not journey.novel_state.is_empty()
 	if target_stop == 0: return int(journey.hall_state.get("stage", 0)) > 0
 	if target_stop == 2: return not journey.bottles.is_empty()
 	if target_stop == 1:
@@ -106,7 +113,7 @@ func go_to(index: int) -> void:
 	refresh()
 
 func enter_chapter() -> void:
-	if rolling or revealing or target_stop >= journey.CHAPTERS.size(): return
+	if rolling or revealing or target_stop > journey.map_unlocked or target_stop >= journey.CHAPTERS.size(): return
 	journey.travel(target_stop)
 
 func reveal_word() -> void:
@@ -115,20 +122,37 @@ func reveal_word() -> void:
 	ui.get_node("Card").hide()
 	ui.get_node("Heading").hide()
 	ui.get_node("Hint").hide()
-	$Thread.material.set_shader_parameter("revealed",1.0)
-	var final_zoom := minf(get_viewport_rect().size.x/5200.0,get_viewport_rect().size.y/2900.0)
+	ui.get_node("Menu").hide()
+	$Route/Ball.hide()
+	$Underline.show()
+	$Underline/Ball.show()
+	# Same ball continues along an authored underline; no geometry is built at runtime.
 	reveal_tween = create_tween().set_parallel(true)
-	reveal_tween.tween_property($Thread,"width",18.0,5.0)
+	reveal_tween.tween_property($Underline/Ball, "progress_ratio", 1.0, 3.0)
+	reveal_tween.tween_property($Underline/Line.material, "shader_parameter/revealed", 1.0, 3.0)
+	reveal_tween.tween_property($Underline/Ball/Yarn, "rotation", -24.0, 3.0)
+	reveal_tween.tween_property(camera, "position", Vector2(2265,1200), 3.0).set_trans(Tween.TRANS_CUBIC)
+	reveal_tween.tween_property(camera, "zoom", Vector2.ONE * 0.36, 3.0)
+	$Thread.material.set_shader_parameter("revealed",1.0)
+	var final_zoom := minf(get_viewport_rect().size.x/5600.0,get_viewport_rect().size.y/3200.0)
+	reveal_tween.chain().tween_property($Thread,"width",18.0,5.0)
 	reveal_tween.tween_property($Glow,"width",70.0,5.0)
-	reveal_tween.tween_property(camera,"position",Vector2(2265,1050),5.0).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
+	reveal_tween.tween_property(camera,"position",Vector2(2450,1420),5.0).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
 	reveal_tween.tween_property(camera,"zoom",Vector2.ONE*final_zoom,5.0).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
 	reveal_tween.tween_property($Atmosphere/Mist.material,"shader_parameter/reveal",1.0,4.0)
-	await reveal_tween.finished
-	ui.get_node("Ending").modulate.a = 0.0
-	ui.get_node("Ending").show()
-	create_tween().tween_property(ui.get_node("Ending"),"modulate:a",1.0,1.5)
+	reveal_tween.chain().tween_callback(func():
+		ui.get_node("Ending").modulate.a = 0.0
+		ui.get_node("Ending").show())
+	reveal_tween.chain().tween_property(ui.get_node("Ending"),"modulate:a",1.0,1.5)
+	reveal_tween.chain().tween_interval(1.5)
+	reveal_tween.chain().tween_callback(func():
+		ui.get_node("Ending/Look").show()
+		# Hold indefinitely for the physical gift. Only an explicit press shows navigation.
+		ui.get_node("Ending/Continue").show()
+		ui.get_node("Ending/Continue").grab_focus())
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel") and not event.is_echo():
+		if revealing and not ui.get_node("Menu").visible: return
 		journey.travel(-1)
 		get_viewport().set_input_as_handled()

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DecemberFilm" load_steps=5 format=3]
+[ext_resource type="Script" path="res://scripts/last_december/film.gd" id="script"]
+[ext_resource type="Texture2D" path="res://assets/last_december/memory_hall.jpg" id="m0"]
+[ext_resource type="Texture2D" path="res://assets/last_december/memory_polet.jpg" id="m1"]
+[ext_resource type="Texture2D" path="res://assets/last_december/memory_venevitino.jpg" id="m2"]
+[resource]
+script = ExtResource("script")
+memories = Array[Texture2D]([ExtResource("m0"), ExtResource("m1"), ExtResource("m2")])
+captions = PackedStringArray("Утро, которое стало общим воспоминанием.", "Лето заканчивается. Тепло остаётся.", "Столько всего было. И столько ещё будет.")
+seconds_per_memory = 7.0

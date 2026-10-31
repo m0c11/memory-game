@@ -93,7 +93,7 @@ func run():
  flow.map_completed.append(0);scene.refresh()
  check(scene.ui.get_node("Card/Enter").text.contains("Вернуться"),"Map distinguishes a completed memory")
  scene.target_stop=3;scene.refresh()
- check(scene.ui.get_node("Card/Enter").disabled,"Unwritten chapter remains honestly unavailable")
+ check(scene.ui.get_node("Card/Enter").disabled,"Locked cinema chapter cannot open before the third memory")
  await dispose(scene)
  flow.get_node("Music").stop()
  OS.delay_msec(80)

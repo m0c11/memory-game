@@ -1,0 +1,497 @@
+[gd_scene load_steps=13 format=3]
+[ext_resource type="Script" path="res://scripts/last_december/novel.gd" id="script"]
+[ext_resource type="Theme" path="res://resources/menu/theme.tres" id="theme"]
+[ext_resource type="Resource" path="res://resources/last_december/film.tres" id="film"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/last_evening.wav" id="music"]
+[ext_resource type="AudioStream" path="res://assets/polet/audio/choice.wav" id="click"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/room.tscn" id="room"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/kitchen.tscn" id="kitchen"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/stop.tscn" id="stop"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/bus.tscn" id="bus"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/foyer.tscn" id="foyer"]
+[ext_resource type="PackedScene" path="res://scenes/last_december/cinema.tscn" id="cinema"]
+[sub_resource type="StyleBoxFlat" id="dialog"]
+bg_color = Color(0.045, 0.065, 0.10, 0.98)
+border_width_top = 2
+border_color = Color(0.77, 0.60, 0.37, 0.85)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_left = 18
+corner_radius_bottom_right = 18
+
+[node name="LastDecember" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("script")
+theme = ExtResource("theme")
+film = ExtResource("film")
+
+[node name="Letterbox" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.025,0.035,0.055,1)
+mouse_filter = 2
+
+[node name="Page" type="Control" parent="."]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Backgrounds" type="Control" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="room" parent="Page/Backgrounds" instance=ExtResource("room")]
+visible = true
+
+[node name="kitchen" parent="Page/Backgrounds" instance=ExtResource("kitchen")]
+visible = false
+
+[node name="stop" parent="Page/Backgrounds" instance=ExtResource("stop")]
+visible = false
+
+[node name="bus" parent="Page/Backgrounds" instance=ExtResource("bus")]
+visible = false
+
+[node name="foyer" parent="Page/Backgrounds" instance=ExtResource("foyer")]
+visible = false
+
+[node name="cinema" parent="Page/Backgrounds" instance=ExtResource("cinema")]
+visible = false
+
+[node name="Shade" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.025,0.04,0.08,0.14)
+mouse_filter = 2
+
+[node name="Portrait" type="TextureRect" parent="Page"]
+offset_left = 70.0
+offset_top = 80.0
+offset_right = 460.0
+offset_bottom = 715.0
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="SceneFade" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.03,0.05,0.08,1)
+modulate = Color(1,1,1,0)
+mouse_filter = 2
+
+[node name="Header" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 86.0
+color = Color(0.03,0.05,0.08,0.8)
+mouse_filter = 2
+
+[node name="Chapter" type="Label" parent="Page"]
+offset_left = 40.0
+offset_top = 19.0
+offset_right = 840.0
+offset_bottom = 45.0
+text = "01 / ДОМА"
+theme_override_font_sizes/font_size = 17
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Location" type="Label" parent="Page"]
+offset_left = 40.0
+offset_top = 48.0
+offset_right = 840.0
+offset_bottom = 74.0
+text = "КВАРТИРА · ВЕЧЕР"
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="History" type="Button" parent="Page"]
+offset_left = 915.0
+offset_top = 22.0
+offset_right = 1045.0
+offset_bottom = 66.0
+text = "История"
+
+[node name="Pause" type="Button" parent="Page"]
+offset_left = 1060.0
+offset_top = 22.0
+offset_right = 1240.0
+offset_bottom = 66.0
+text = "Пауза · Esc"
+
+[node name="Phone" type="Panel" parent="Page"]
+offset_left = 820.0
+offset_top = 108.0
+offset_right = 1210.0
+offset_bottom = 452.0
+visible = false
+
+[node name="Header" type="Label" parent="Page/Phone"]
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 365.0
+offset_bottom = 50.0
+text = "СООБЩЕНИЯ"
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Sender" type="Label" parent="Page/Phone"]
+offset_left = 25.0
+offset_top = 65.0
+offset_right = 365.0
+offset_bottom = 115.0
+text = "Глеб"
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Message" type="Label" parent="Page/Phone"]
+offset_left = 25.0
+offset_top = 127.0
+offset_right = 365.0
+offset_bottom = 307.0
+text = ""
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Clip" type="Panel" parent="Page"]
+offset_left = 815.0
+offset_top = 105.0
+offset_right = 1210.0
+offset_bottom = 455.0
+visible = false
+
+[node name="Header" type="Label" parent="Page/Clip"]
+offset_left = 24.0
+offset_top = 15.0
+offset_right = 364.0
+offset_bottom = 45.0
+text = "ОДНО ВИДЕО"
+theme_override_font_sizes/font_size = 15
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Image" type="TextureRect" parent="Page/Clip"]
+offset_left = 60.0
+offset_top = 40.0
+offset_right = 335.0
+offset_bottom = 275.0
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Caption" type="Label" parent="Page/Clip"]
+offset_left = 24.0
+offset_top = 285.0
+offset_right = 369.0
+offset_bottom = 343.0
+text = ""
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Choices" type="VBoxContainer" parent="Page"]
+offset_left = 605.0
+offset_top = 270.0
+offset_right = 1210.0
+offset_bottom = 476.0
+theme_override_constants/separation = 12
+visible = false
+
+[node name="Option0" type="Button" parent="Page/Choices"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,58)
+alignment = 0
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 20
+text = "Ответ"
+
+[node name="Option1" type="Button" parent="Page/Choices"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,58)
+alignment = 0
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 20
+text = "Ответ"
+
+[node name="Option2" type="Button" parent="Page/Choices"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,58)
+alignment = 0
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 20
+text = "Ответ"
+
+[node name="Bag" type="VBoxContainer" parent="Page"]
+offset_left = 690.0
+offset_top = 220.0
+offset_right = 1190.0
+offset_bottom = 450.0
+theme_override_constants/separation = 18
+visible = false
+
+[node name="Item0" type="Button" parent="Page/Bag"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,62)
+text = "Телефон"
+
+[node name="Item1" type="Button" parent="Page/Bag"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,62)
+text = "Ключи"
+
+[node name="Item2" type="Button" parent="Page/Bag"]
+layout_mode = 2
+custom_minimum_size = Vector2(0,62)
+text = "Кошелёк"
+
+[node name="Dialog" type="Panel" parent="Page"]
+offset_left = 40.0
+offset_top = 500.0
+offset_right = 1240.0
+offset_bottom = 692.0
+theme_override_styles/panel = SubResource("dialog")
+
+[node name="Speaker" type="Label" parent="Page/Dialog"]
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 1028.0
+offset_bottom = 48.0
+text = "ДАША"
+theme_override_font_sizes/font_size = 21
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Text" type="Label" parent="Page/Dialog"]
+offset_left = 28.0
+offset_top = 57.0
+offset_right = 1163.0
+offset_bottom = 147.0
+text = ""
+theme_override_font_sizes/font_size = 24
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Next" type="Button" parent="Page/Dialog"]
+offset_left = 970.0
+offset_top = 140.0
+offset_right = 1176.0
+offset_bottom = 180.0
+text = "Дальше  →"
+
+[node name="Help" type="Label" parent="Page/Dialog"]
+offset_left = 28.0
+offset_top = 152.0
+offset_right = 878.0
+offset_bottom = 176.0
+text = "Пробел / Enter · читать дальше"
+theme_override_font_sizes/font_size = 13
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Journal" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+color = Color(0.02,0.035,0.06,0.92)
+
+[node name="Card" type="Panel" parent="Page/Journal"]
+offset_left = 160.0
+offset_top = 70.0
+offset_right = 1120.0
+offset_bottom = 650.0
+
+
+[node name="Title" type="Label" parent="Page/Journal/Card"]
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 680.0
+offset_bottom = 65.0
+text = "Наш разговор"
+theme_override_font_sizes/font_size = 27
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Scroll" type="ScrollContainer" parent="Page/Journal/Card"]
+offset_left = 30.0
+offset_top = 85.0
+offset_right = 930.0
+offset_bottom = 495.0
+horizontal_scroll_mode = 0
+
+[node name="Entries" type="Label" parent="Page/Journal/Card/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 21
+text = ""
+
+[node name="Close" type="Button" parent="Page/Journal/Card"]
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+offset_left = 580.0
+offset_top = 515.0
+offset_right = 930.0
+offset_bottom = 559.0
+text = "Вернуться к разговору"
+
+[node name="Film" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+color = Color(0,0,0,1)
+
+[node name="Memory" type="TextureRect" parent="Page/Film"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="MemoryShade" type="ColorRect" parent="Page/Film"]
+offset_left = 0.0
+offset_top = 575.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+color = Color(0.015,0.025,0.04,0.8)
+mouse_filter = 2
+
+[node name="Video" type="VideoStreamPlayer" parent="Page/Film"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+expand = true
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="Page/Film"]
+offset_left = 200.0
+offset_top = 315.0
+offset_right = 1080.0
+offset_bottom = 405.0
+horizontal_alignment = 1
+text = "Последний сеанс декабря"
+theme_override_font_sizes/font_size = 36
+autowrap_mode = 3
+mouse_filter = 2
+
+
+[node name="Caption" type="Label" parent="Page/Film"]
+horizontal_alignment = 1
+offset_left = 70.0
+offset_top = 600.0
+offset_right = 1210.0
+offset_bottom = 690.0
+text = ""
+theme_override_font_sizes/font_size = 24
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Skip" type="Button" parent="Page/Film"]
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+offset_left = 1040.0
+offset_top = 28.0
+offset_right = 1240.0
+offset_bottom = 72.0
+text = "Пропустить…"
+
+[node name="Confirm" type="ColorRect" parent="Page/Film"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+color = Color(0.02,0.035,0.06,0.92)
+
+[node name="Card" type="Panel" parent="Page/Film/Confirm"]
+offset_left = 330.0
+offset_top = 220.0
+offset_right = 950.0
+offset_bottom = 500.0
+
+
+[node name="Title" type="Label" parent="Page/Film/Confirm/Card"]
+offset_left = 30.0
+offset_top = 25.0
+offset_right = 590.0
+offset_bottom = 80.0
+text = "Перейти к последней нити?"
+theme_override_font_sizes/font_size = 26
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Text" type="Label" parent="Page/Film/Confirm/Card"]
+offset_left = 30.0
+offset_top = 90.0
+offset_right = 590.0
+offset_bottom = 160.0
+text = "Можно досмотреть воспоминания или продолжить к финалу."
+theme_override_font_sizes/font_size = 21
+autowrap_mode = 3
+mouse_filter = 2
+
+[node name="Back" type="Button" parent="Page/Film/Confirm/Card"]
+focus_next = NodePath("../Continue")
+focus_previous = NodePath("../Continue")
+offset_left = 30.0
+offset_top = 195.0
+offset_right = 300.0
+offset_bottom = 250.0
+text = "Смотреть дальше"
+
+[node name="Continue" type="Button" parent="Page/Film/Confirm/Card"]
+focus_next = NodePath("../Back")
+focus_previous = NodePath("../Back")
+offset_left = 320.0
+offset_top = 195.0
+offset_right = 590.0
+offset_bottom = 250.0
+text = "Перейти к финалу"
+
+[node name="Blackout" type="ColorRect" parent="Page"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+color = Color(0,0,0,1)
+
+[node name="Retry" type="Button" parent="Page/Blackout"]
+offset_left = 460.0
+offset_top = 330.0
+offset_right = 820.0
+offset_bottom = 390.0
+text = "Дальше по нити"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("music")
+volume_db = -24.0
+
+[node name="Foley" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("click")
+volume_db = -20.0

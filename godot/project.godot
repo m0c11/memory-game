@@ -6,7 +6,7 @@ config_version=5
 config/name="Воспоминания · Полёт"
 run/main_scene="res://scenes/menu/main_menu.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/description="Редактируемые уровни: актовый зал ВГУ, пиксельный лагерь Полёт и ночная база Веневитино."
+config/description="Четыре воспоминания: Студвесна, Полёт, Веневитино и Последний сеанс декабря."
 
 [autoload]
 Journey="*res://scenes/menu/journey.tscn"

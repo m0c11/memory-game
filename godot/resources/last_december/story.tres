@@ -1,0 +1,1049 @@
+[gd_resource type="Resource" script_class="DecemberStory" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/last_december/story_data.gd" id="script"]
+[resource]
+script = ExtResource("script")
+beats = {
+  "start": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Так. Собраться, проверить сумку, выйти заранее. Времени достаточно.",
+    "next": "start2",
+    "portrait": "dasha",
+    "mood": "soft",
+    "chapter": "01 / ДОМА"
+  },
+  "start2": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Главное — сейчас не начать делать что-нибудь ещё.",
+    "next": "hello",
+    "portrait": "dasha"
+  },
+  "hello": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Ну что, свидание с самым красивым человеком сегодня в силе?",
+    "next": "who",
+    "phone": true
+  },
+  "who": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Ты сейчас про кого?",
+    "next": "joke",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "joke": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Я рассчитывал, что про тебя, но спасибо за возможность.",
+    "next": "",
+    "phone": true,
+    "choices": [
+      {
+        "text": "Очень скромно с твоей стороны",
+        "next": "modest",
+        "flags": {
+          "greeting": "joke"
+        }
+      },
+      {
+        "text": "В силе. Во сколько выходить?",
+        "next": "time",
+        "flags": {
+          "greeting": "time"
+        }
+      },
+      {
+        "text": "Я ещё даже не собралась",
+        "next": "not_ready",
+        "flags": {
+          "greeting": "ready"
+        }
+      }
+    ]
+  },
+  "modest": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Скромность оставим на следующий год. Сегодня у нас кино.",
+    "next": "time",
+    "phone": true
+  },
+  "not_ready": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Тогда собирайся спокойно. Билеты у меня, время сейчас пришлю.",
+    "next": "time",
+    "phone": true
+  },
+  "time": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Сеанс в 19:30. Встречу тебя у входа. Напиши, когда сядешь в автобус.",
+    "next": "room_look",
+    "phone": true
+  },
+  "room_look": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "До выхода ещё есть время. С чего начать?",
+    "next": "",
+    "kind": "choices",
+    "choices": [
+      {
+        "text": "Посмотреть одежду",
+        "next": "outfit",
+        "flags": {}
+      },
+      {
+        "text": "Проверить сумку",
+        "next": "bag_look",
+        "flags": {}
+      },
+      {
+        "text": "Посмотреть в окно",
+        "next": "window",
+        "flags": {}
+      }
+    ]
+  },
+  "bag_look": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Сумка здесь. Ключи положу перед выходом — иначе потом опять начну их искать.",
+    "next": "outfit",
+    "portrait": "dasha"
+  },
+  "window": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Уже совсем темно. В окнах напротив загораются гирлянды. Хорошо, что сегодня можно просто сходить в кино.",
+    "next": "outfit",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "outfit": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Что надеть? Хочется и красиво, и чтобы не замёрзнуть.",
+    "next": "",
+    "portrait": "dasha",
+    "choices": [
+      {
+        "text": "Светлый свитер",
+        "next": "outfit_cream",
+        "flags": {
+          "outfit": "cream"
+        }
+      },
+      {
+        "text": "Синий кардиган",
+        "next": "outfit_blue",
+        "flags": {
+          "outfit": "blue"
+        }
+      }
+    ]
+  },
+  "outfit_cream": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Вот так хорошо. И мягко. Пальто и шарф надену перед выходом.",
+    "next": "water",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "outfit_blue": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Синий мне нравится. Всё, больше ничего не перемеряю.",
+    "next": "water",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "water": {
+    "background": "kitchen",
+    "speaker": "",
+    "text": "На кухне горит свет. Даша наливает себе воды.",
+    "next": "mother",
+    "chapter": "02 / НА КУХНЕ"
+  },
+  "mother": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Ты куда собираешься?",
+    "next": "cinema_reply",
+    "portrait": "mother"
+  },
+  "cinema_reply": {
+    "background": "kitchen",
+    "speaker": "Даша",
+    "text": "В кино. С Глебом.",
+    "next": "study",
+    "portrait": "dasha"
+  },
+  "study": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "А с учёбой всё сделала?",
+    "next": "",
+    "portrait": "mother",
+    "choices": [
+      {
+        "text": "Да, мам. Всё сделала",
+        "next": "study_yes",
+        "flags": {
+          "study": "yes"
+        }
+      },
+      {
+        "text": "Я даже проверила. Дважды",
+        "next": "study_twice",
+        "flags": {
+          "study": "twice"
+        }
+      },
+      {
+        "text": "Сегодня можно я просто схожу в кино?",
+        "next": "study_rest",
+        "flags": {
+          "study": "rest"
+        }
+      }
+    ]
+  },
+  "study_yes": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Ну и хорошо. Можно отдохнуть.",
+    "next": "food",
+    "portrait": "mother"
+  },
+  "study_twice": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Вся в меня. Только третий раз уже не надо, а то никуда не уйдёшь.",
+    "next": "food",
+    "portrait": "mother",
+    "mood": "smile"
+  },
+  "study_rest": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Можно, конечно. Я спрашиваю, чтобы ты потом ночью не сидела.",
+    "next": "food",
+    "portrait": "mother"
+  },
+  "food": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Ты ела вообще?",
+    "next": "popcorn_dinner",
+    "portrait": "mother"
+  },
+  "popcorn_dinner": {
+    "background": "kitchen",
+    "speaker": "Даша",
+    "text": "Мы там попкорн возьмём.",
+    "next": "not_dinner",
+    "portrait": "dasha"
+  },
+  "not_dinner": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Попкорн — это не ужин.",
+    "next": "",
+    "portrait": "mother",
+    "choices": [
+      {
+        "text": "Взять небольшой перекус",
+        "next": "snack",
+        "flags": {
+          "snack": true
+        }
+      },
+      {
+        "text": "Мы поедим вместе с Глебом",
+        "next": "eat_later",
+        "flags": {
+          "snack": false
+        }
+      }
+    ]
+  },
+  "snack": {
+    "background": "kitchen",
+    "speaker": "Даша",
+    "text": "Ладно, возьму. В автобусе как раз успею.",
+    "next": "mother_bye",
+    "portrait": "dasha"
+  },
+  "eat_later": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Хорошо. Только не забудьте поесть.",
+    "next": "mother_bye",
+    "portrait": "mother"
+  },
+  "mother_bye": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "Напиши, как доедешь. И когда обратно соберёшься.",
+    "next": "promise",
+    "portrait": "mother"
+  },
+  "promise": {
+    "background": "kitchen",
+    "speaker": "Даша",
+    "text": "Напишу, мам.",
+    "next": "scarf",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "scarf": {
+    "background": "kitchen",
+    "speaker": "Мама",
+    "text": "И шарф возьми. Там холодно.",
+    "next": "cat",
+    "portrait": "mother",
+    "mood": "soft"
+  },
+  "cat": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Иржик? Ты обычно ко мне вообще не приходишь. А сейчас мне выходить.",
+    "next": "",
+    "portrait": "cat",
+    "chapter": "03 / СОБРАТЬСЯ",
+    "choices": [
+      {
+        "text": "Осторожно погладить",
+        "next": "cat_pet",
+        "flags": {
+          "cat": "pet"
+        }
+      },
+      {
+        "text": "Попросить разрешение забрать сумку",
+        "next": "cat_permission",
+        "flags": {
+          "cat": "permission"
+        }
+      },
+      {
+        "text": "Сфотографировать и отправить Глебу",
+        "next": "cat_photo",
+        "flags": {
+          "cat": "photo"
+        }
+      }
+    ]
+  },
+  "cat_pet": {
+    "background": "room",
+    "speaker": "",
+    "text": "Иржик терпит ровно одно поглаживание. Потом хвост коротко дёргается. Даша убирает руку.",
+    "next": "cat_pet_reply",
+    "portrait": "cat"
+  },
+  "cat_pet_reply": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Всё, поняла. Приём окончен.",
+    "next": "cat_leave",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "cat_permission": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Ваше Величество, можно я заберу сумку?",
+    "next": "cat_stare",
+    "portrait": "cat"
+  },
+  "cat_stare": {
+    "background": "room",
+    "speaker": "",
+    "text": "Иржик смотрит молча. Кажется, просьбу приняли на рассмотрение.",
+    "next": "cat_leave",
+    "portrait": "cat"
+  },
+  "cat_photo": {
+    "background": "room",
+    "speaker": "Даша · сообщение",
+    "text": "Меня не выпускают.",
+    "next": "cat_demands",
+    "phone": true,
+    "portrait": "cat"
+  },
+  "cat_demands": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Каковы требования?",
+    "next": "cat_judgment",
+    "phone": true
+  },
+  "cat_judgment": {
+    "background": "room",
+    "speaker": "Даша · сообщение",
+    "text": "Пока смотрит с осуждением.",
+    "next": "cat_position",
+    "phone": true
+  },
+  "cat_position": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Сильная переговорная позиция.",
+    "next": "cat_leave",
+    "phone": true
+  },
+  "cat_leave": {
+    "background": "room",
+    "speaker": "",
+    "text": "Иржик встаёт, потягивается и уходит по своим делам. Сумка освобождена.",
+    "next": "pack"
+  },
+  "pack": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Проверю самое важное. Телефон, ключи, кошелёк.",
+    "next": "packed",
+    "kind": "pack",
+    "portrait": "dasha"
+  },
+  "packed": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Телефон есть. Ключи есть. Всё.",
+    "next": "keys_again",
+    "portrait": "dasha"
+  },
+  "keys_again": {
+    "background": "room",
+    "speaker": "",
+    "text": "Даша касается кармана. Ключи тихо звякают.",
+    "next": "sure",
+    "sound": "keys"
+  },
+  "sure": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Теперь точно.",
+    "next": "",
+    "portrait": "dasha",
+    "mood": "smile",
+    "choices": [
+      {
+        "text": "Выйти заранее",
+        "next": "early",
+        "flags": {
+          "departure": "early"
+        }
+      },
+      {
+        "text": "Посмотреть одно видео",
+        "next": "clip1",
+        "flags": {
+          "departure": "clips"
+        }
+      },
+      {
+        "text": "Написать Глебу",
+        "next": "ready_text",
+        "flags": {
+          "departure": "text"
+        }
+      }
+    ]
+  },
+  "early": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Лучше спокойно подожду автобус. Мам, я пошла!",
+    "next": "stop",
+    "portrait": "dasha"
+  },
+  "clip1": {
+    "background": "room",
+    "speaker": "",
+    "text": "«Я: сегодня точно лягу пораньше»\n\nТакже я в два часа ночи:",
+    "next": "clip1_choice",
+    "kind": "clip",
+    "portrait": "cat"
+  },
+  "clip1_choice": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Ладно, смешно.",
+    "next": "",
+    "portrait": "dasha",
+    "mood": "smile",
+    "choices": [
+      {
+        "text": "Закрыть телефон и выйти",
+        "next": "stop",
+        "flags": {}
+      },
+      {
+        "text": "Ещё одно — и точно всё",
+        "next": "clip2",
+        "flags": {}
+      }
+    ]
+  },
+  "clip2": {
+    "background": "room",
+    "speaker": "",
+    "text": "«Собраться за пять минут»\n\nДесятая кофта. Первая всё-таки была лучше.",
+    "next": "clips_end",
+    "kind": "clip",
+    "portrait": "dasha"
+  },
+  "clips_end": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Так. Это уже было не одно. Всё, одеваюсь и выхожу.",
+    "next": "stop",
+    "portrait": "dasha",
+    "mood": "worried"
+  },
+  "ready_text": {
+    "background": "room",
+    "speaker": "Даша · сообщение",
+    "text": "Ты уже собираешься?",
+    "next": "gleb_ready",
+    "phone": true
+  },
+  "gleb_ready": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Да, я практически готов.",
+    "next": "practically",
+    "phone": true
+  },
+  "practically": {
+    "background": "room",
+    "speaker": "Даша · сообщение",
+    "text": "Что значит практически?",
+    "next": "truth",
+    "phone": true
+  },
+  "truth": {
+    "background": "room",
+    "speaker": "Глеб · сообщение",
+    "text": "Осталось превратить это утверждение в правду.",
+    "next": "leave_text",
+    "phone": true
+  },
+  "leave_text": {
+    "background": "room",
+    "speaker": "Даша",
+    "text": "Тогда я тоже выхожу.",
+    "next": "stop",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "stop": {
+    "background": "stop",
+    "speaker": "",
+    "text": "Шарф, пальто, холодный воздух. На остановке уже зажгли фонарь. За поворотом появляется автобус.",
+    "next": "bus",
+    "chapter": "04 / В ДОРОГЕ"
+  },
+  "bus": {
+    "background": "bus",
+    "speaker": "",
+    "text": "В стекле отражаются фонари. Автобус проезжает пару остановок и медленно замирает в потоке машин.",
+    "next": "bus_thought"
+  },
+  "bus_thought": {
+    "background": "bus",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "branch",
+    "flag": "departure",
+    "equals": "early",
+    "yes": "bus_early",
+    "no": "bus_late"
+  },
+  "bus_early": {
+    "background": "bus",
+    "speaker": "Даша",
+    "text": "Хорошо, что вышла пораньше. Хотя… почему мы совсем не едем?",
+    "next": "how_are_you",
+    "portrait": "dasha",
+    "mood": "worried"
+  },
+  "bus_late": {
+    "background": "bus",
+    "speaker": "Даша",
+    "text": "Ну вот. А если теперь не успею?",
+    "next": "how_are_you",
+    "portrait": "dasha",
+    "mood": "worried"
+  },
+  "how_are_you": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Как ты там?",
+    "next": "",
+    "phone": true,
+    "choices": [
+      {
+        "text": "Стою в пробке. Кажется, опоздаю",
+        "next": "traffic",
+        "flags": {
+          "worry": "traffic"
+        }
+      },
+      {
+        "text": "Скажи, что реклама будет очень длинной",
+        "next": "ads",
+        "flags": {
+          "worry": "ads"
+        }
+      },
+      {
+        "text": "Можно я сейчас немножко попаникую?",
+        "next": "panic",
+        "flags": {
+          "worry": "panic"
+        }
+      }
+    ]
+  },
+  "traffic": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Я уже у кинотеатра. Сейчас посмотрю, сколько до начала.",
+    "next": "time_left",
+    "phone": true
+  },
+  "ads": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Надеюсь, нам подробно расскажут обо всех машинах и тарифах. Сейчас проверю время.",
+    "next": "time_left",
+    "phone": true
+  },
+  "panic": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Можно. Я пока посмотрю, сколько до начала.",
+    "next": "time_left",
+    "phone": true
+  },
+  "time_left": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Ещё успеваем. Встречу тебя у входа.",
+    "next": "what_if",
+    "phone": true
+  },
+  "what_if": {
+    "background": "bus",
+    "speaker": "Даша · сообщение",
+    "text": "А если всё-таки опоздаю?",
+    "next": "care",
+    "phone": true
+  },
+  "care": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Тогда зайдём чуть позже. Ты только от остановки не беги, там скользко.",
+    "next": "ad_joke",
+    "phone": true
+  },
+  "ad_joke": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Рекламу машины, которую мы не купим, я могу посмотреть за двоих.",
+    "next": "",
+    "phone": true,
+    "choices": [
+      {
+        "text": "Посмотреть в окно",
+        "next": "bus_window",
+        "flags": {}
+      },
+      {
+        "text": "Ещё немного переписываться",
+        "next": "bus_chat",
+        "flags": {}
+      }
+    ]
+  },
+  "bus_window": {
+    "background": "bus",
+    "speaker": "",
+    "text": "За стеклом проплывают гирлянды. Автобус снова движется. Можно выдохнуть.",
+    "next": "snack_check"
+  },
+  "bus_chat": {
+    "background": "bus",
+    "speaker": "Даша · сообщение",
+    "text": "Только машину без меня не выбирай.",
+    "next": "bus_chat_reply",
+    "phone": true
+  },
+  "bus_chat_reply": {
+    "background": "bus",
+    "speaker": "Глеб · сообщение",
+    "text": "Договорились. С попкорном тоже дождусь.",
+    "next": "snack_check",
+    "phone": true
+  },
+  "snack_check": {
+    "background": "bus",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "branch",
+    "flag": "snack",
+    "equals": true,
+    "yes": "bus_snack",
+    "no": "arriving"
+  },
+  "bus_snack": {
+    "background": "bus",
+    "speaker": "Даша",
+    "text": "Ладно. В одном мама точно была права.",
+    "next": "arriving",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "arriving": {
+    "background": "bus",
+    "speaker": "Даша · сообщение",
+    "text": "Я подъезжаю. Уже почти у тебя.",
+    "next": "meet",
+    "phone": true
+  },
+  "meet": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Привет.",
+    "next": "late_question",
+    "portrait": "gleb",
+    "mood": "smile",
+    "chapter": "05 / ВСТРЕЧА"
+  },
+  "late_question": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Сильно опоздала?",
+    "next": "hello_time",
+    "portrait": "dasha",
+    "mood": "worried"
+  },
+  "hello_time": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "На привет — вовремя.",
+    "next": "",
+    "portrait": "gleb",
+    "mood": "smile",
+    "choices": [
+      {
+        "text": "Улыбнуться",
+        "next": "smile",
+        "flags": {}
+      },
+      {
+        "text": "Закатить глаза",
+        "next": "eyes",
+        "flags": {}
+      },
+      {
+        "text": "Обнять",
+        "next": "hug",
+        "flags": {}
+      }
+    ]
+  },
+  "smile": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Ну хоть куда-то я точно успела.",
+    "next": "compliment_check",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "eyes": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Ты невозможный.",
+    "next": "eyes_reply",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "eyes_reply": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Зато узнаваемый.",
+    "next": "compliment_check",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "hug": {
+    "background": "foyer",
+    "speaker": "",
+    "text": "Глеб обнимает Дашу. С улицы ещё тянет холодом, а здесь уже тепло.",
+    "next": "compliment_check",
+    "portrait": "gleb",
+    "mood": "soft"
+  },
+  "compliment_check": {
+    "background": "foyer",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "branch",
+    "flag": "outfit",
+    "equals": "blue",
+    "yes": "compliment_blue",
+    "no": "compliment_cream"
+  },
+  "compliment_blue": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Тебе очень идёт синий. Красиво выглядишь.",
+    "next": "quick",
+    "portrait": "gleb",
+    "mood": "soft"
+  },
+  "compliment_cream": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Какой уютный свитер. Красиво выглядишь.",
+    "next": "quick",
+    "portrait": "gleb",
+    "mood": "soft"
+  },
+  "quick": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Я вообще-то быстро собиралась.",
+    "next": "beautiful",
+    "portrait": "dasha"
+  },
+  "beautiful": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Я и не спорю. Говорю — красиво.",
+    "next": "cat_check",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "cat_check": {
+    "background": "foyer",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "branch",
+    "flag": "cat",
+    "equals": "photo",
+    "yes": "security",
+    "no": "mother_message"
+  },
+  "security": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Как удалось договориться с охраной?",
+    "next": "cat_gone",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "cat_gone": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Он ушёл. Кажется, я ему надоела.",
+    "next": "permission",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "permission": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Главное — разрешение получено.",
+    "next": "mother_message",
+    "portrait": "gleb"
+  },
+  "mother_message": {
+    "background": "foyer",
+    "speaker": "Даша · сообщение маме",
+    "text": "Я доехала. Мы встретились, сейчас пойдём в зал.",
+    "next": "mother_ok",
+    "phone": true
+  },
+  "mother_ok": {
+    "background": "foyer",
+    "speaker": "Мама · сообщение",
+    "text": "Хорошо. Приятного просмотра!",
+    "next": "popcorn",
+    "phone": true
+  },
+  "popcorn": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Какой попкорн берём?",
+    "next": "",
+    "portrait": "gleb",
+    "choices": [
+      {
+        "text": "Сладкий",
+        "next": "sweet",
+        "flags": {
+          "popcorn": "sweet"
+        }
+      },
+      {
+        "text": "Солёный",
+        "next": "salty",
+        "flags": {
+          "popcorn": "salty"
+        }
+      },
+      {
+        "text": "Смешанный",
+        "next": "mixed",
+        "flags": {
+          "popcorn": "mixed"
+        }
+      }
+    ]
+  },
+  "sweet": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Сладкий — так сладкий.",
+    "next": "size",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "salty": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Тогда ещё воды возьмём.",
+    "next": "size",
+    "portrait": "gleb"
+  },
+  "mixed": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Отлично. Каждый следующий — маленький сюрприз.",
+    "next": "size",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "size": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Только большой не бери.",
+    "next": "okay",
+    "portrait": "dasha"
+  },
+  "okay": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "Хорошо.",
+    "next": "large",
+    "portrait": "gleb"
+  },
+  "large": {
+    "background": "foyer",
+    "speaker": "",
+    "text": "Через минуту Глеб возвращается с большим попкорном.",
+    "next": "gleb_name"
+  },
+  "gleb_name": {
+    "background": "foyer",
+    "speaker": "Даша",
+    "text": "Глеб.",
+    "next": "sizes",
+    "portrait": "dasha"
+  },
+  "sizes": {
+    "background": "foyer",
+    "speaker": "Глеб",
+    "text": "У нас разные представления о размерах.",
+    "next": "seats",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "seats": {
+    "background": "cinema",
+    "speaker": "",
+    "text": "Вы находите свои места. В зале тихо переговариваются, кто-то шуршит курткой. Свет становится мягче.",
+    "next": "movie_question",
+    "chapter": "06 / ПОСЛЕДНИЙ СЕАНС ДЕКАБРЯ"
+  },
+  "movie_question": {
+    "background": "cinema",
+    "speaker": "Даша",
+    "text": "Так, а что мы всё-таки смотрим?",
+    "next": "movie_title",
+    "portrait": "dasha"
+  },
+  "movie_title": {
+    "background": "cinema",
+    "speaker": "Глеб",
+    "text": "«Последний сеанс декабря».",
+    "next": "about",
+    "portrait": "gleb"
+  },
+  "about": {
+    "background": "cinema",
+    "speaker": "Даша",
+    "text": "И про что?",
+    "next": "watch",
+    "portrait": "dasha"
+  },
+  "watch": {
+    "background": "cinema",
+    "speaker": "Глеб",
+    "text": "Сейчас посмотрим.",
+    "next": "know",
+    "portrait": "gleb",
+    "mood": "smile"
+  },
+  "know": {
+    "background": "cinema",
+    "speaker": "Даша",
+    "text": "Ты сам не знаешь?",
+    "next": "like",
+    "portrait": "dasha",
+    "mood": "smile"
+  },
+  "like": {
+    "background": "cinema",
+    "speaker": "Глеб",
+    "text": "Мне кажется, тебе понравится.",
+    "next": "lights",
+    "portrait": "gleb",
+    "mood": "soft"
+  },
+  "lights": {
+    "background": "cinema",
+    "speaker": "",
+    "text": "Свет гаснет. Остаётся только экран.",
+    "next": "film"
+  },
+  "film": {
+    "background": "cinema",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "film"
+  },
+  "done": {
+    "background": "cinema",
+    "speaker": "",
+    "text": "",
+    "next": "",
+    "kind": "done"
+  }
+}
